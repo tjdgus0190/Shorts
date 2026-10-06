@@ -1,0 +1,50 @@
+# 자동 쇼츠 파이프라인 설정
+channel:
+  geo: KR                  # Google 트렌드 지역
+  timezone: Asia/Seoul
+  topic_count: 10          # 마케터가 선정할 주제 수
+
+llm:
+  # auto: CLAUDE_CODE_OAUTH_TOKEN(Claude Pro) → GEMINI_API_KEY(무료 티어) → mock 순으로 선택
+  provider: auto           # auto | claude_cli | gemini | mock
+  claude_model: sonnet
+  gemini_model: gemini-2.5-flash
+  timeout_seconds: 300
+
+images:
+  # auto: Cloudflare Workers AI(CF_ACCOUNT_ID/CF_API_TOKEN, 무료 ~100장/일) → Pollinations → 텍스트 카드
+  provider: auto           # auto | cloudflare | pollinations | placeholder
+  cloudflare_steps: 8      # FLUX.1 schnell 최대 8
+  pollinations_model: flux
+  width: 720
+  height: 1280
+
+tts:
+  provider: edge           # edge(무료 Microsoft Edge TTS) | mock(무음)
+  voice: ko-KR-SunHiNeural # 남성: ko-KR-InJoonNeural
+  rate: "+12%"
+
+video:
+  width: 1080
+  height: 1920
+  fps: 30
+  max_seconds: 58
+  font: Noto Sans CJK KR
+  bgm_dir: assets/bgm      # mp3를 넣어두면 무작위로 깔림(저작권 free 음원만!)
+  bgm_volume: 0.12
+
+qa:
+  pass_score: 70
+  max_retries: 2
+
+upload:
+  enabled: true
+  # API 감사를 통과하기 전에는 public으로 올려도 YouTube가 비공개로 잠급니다.
+  privacy: private         # private | unlisted | public
+  category_id: "24"        # 24 = Entertainment
+  contains_synthetic_media: true
+
+safety:
+  # 이 단어가 들어간 트렌드는 마케터 단계에서 제외(사건·사고·정치 등)
+  blocked_keywords: [사망, 숨져, 숨진, 별세, 부고, 사고, 참사, 화재, 살인, 살해, 자살, 극단적, 폭행, 성범죄, 성폭행,
+                     마약, 실종, 학대, 테러, 전쟁, 지진, 추락, 선거, 대통령, 국회, 탄핵, 검찰, 구속, 기소, 재판]

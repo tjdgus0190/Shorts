@@ -1,0 +1,51 @@
+name: dashboard
+
+on:
+  push:
+    branches: [main]
+    paths: ["dashboard/**", "data/**"]
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}   # make 잡이 방금 커밋한 data/를 포함
+
+      - name: 사이트 구성
+        env:
+          GH_TOKEN: ${{ github.token }}
+          KEEP_VIDEOS: "14"   # 대시보드에서 바로 재생할 최근 영상 수
+        run: |
+          mkdir -p _site/videos
+          cp -r dashboard/* _site/
+          cp -r data _site/data
+          gh release list --limit 100 --json tagName -q '.[].tagName' \
+            | grep '^shorts-' | sort -r | head -n "$KEEP_VIDEOS" \
+            | while read -r tag; do
+                d=${tag#shorts-}
+                gh release download "$tag" -p "$d.mp4" -D _site/videos --clobber || true
+              done
+          ls -la _site/videos
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

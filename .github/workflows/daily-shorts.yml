@@ -1,0 +1,119 @@
+name: daily-shorts
+
+on:
+  schedule:
+    - cron: "0 8 * * *"   # 매일 17:00 KST (UTC 08:00)
+  workflow_dispatch:
+    inputs:
+      mock:
+        description: "mock 모드 (LLM/TTS/이미지 없이 흐름만 검증)"
+        type: boolean
+        default: false
+      upload:
+        description: "YouTube 업로드"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-shorts
+  cancel-in-progress: false
+
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    outputs:
+      date: ${{ steps.date.outputs.date }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: 시스템 패키지 (ffmpeg, 한글 폰트)
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q ffmpeg fonts-noto-cjk
+
+      - name: Python 패키지
+        run: pip install -r requirements.txt
+
+      - name: Claude Code CLI (기획·QA 에이전트용, Pro 구독 토큰으로 인증)
+        run: npm install -g @anthropic-ai/claude-code
+
+      - id: date
+        run: echo "date=$(TZ=Asia/Seoul date +%F)" >> "$GITHUB_OUTPUT"
+
+      - name: 쇼츠 제작 파이프라인
+        id: run
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          POLLINATIONS_TOKEN: ${{ secrets.POLLINATIONS_TOKEN }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          set +e
+          ARGS="--date ${{ steps.date.outputs.date }}"
+          if [ "${{ inputs.mock }}" = "true" ]; then ARGS="$ARGS --mock"; fi
+          if [ "${{ inputs.upload }}" = "false" ]; then ARGS="$ARGS --no-upload"; fi
+          python -m shorts run $ARGS
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+
+      - name: 영상을 GitHub Release에 보관
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          D=${{ steps.date.outputs.date }}
+          F=runs/$D/final.mp4
+          [ -f "$F" ] || { echo "영상 없음"; exit 0; }
+          cp "$F" "runs/$D/$D.mp4"
+          TITLE=$(python -c "import json;print(json.load(open('data/runs/$D.json')).get('plan',{}).get('title','$D'))")
+          gh release view "shorts-$D" >/dev/null 2>&1 || \
+            gh release create "shorts-$D" --title "$D · $TITLE" --notes "자동 생성 쇼츠 ($D)" --latest=false
+          gh release upload "shorts-$D" "runs/$D/$D.mp4" --clobber
+
+      - name: 디버깅용 중간 산출물
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: run-${{ steps.date.outputs.date }}
+          path: |
+            runs/${{ steps.date.outputs.date }}/*.json
+            runs/${{ steps.date.outputs.date }}/*.ass
+            runs/${{ steps.date.outputs.date }}/images_*/
+            runs/${{ steps.date.outputs.date }}/qa_frames_*/
+          retention-days: 14
+          if-no-files-found: ignore
+
+      - name: 대시보드 데이터 커밋
+        if: always()
+        run: |
+          git config user.name "shorts-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet && exit 0
+          git commit -m "data: ${{ steps.date.outputs.date }} 실행 결과"
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
+
+      - name: 결과 판정
+        if: steps.run.outputs.code != '0'
+        run: |
+          echo "::error::파이프라인 실패 (대시보드에서 원인 확인)"
+          exit 1
+
+  dashboard:
+    needs: make
+    if: always()
+    uses: ./.github/workflows/dashboard.yml
