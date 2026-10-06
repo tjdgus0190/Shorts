@@ -58,7 +58,11 @@ def resolve_provider(cfg: dict) -> str:
         return "claude_cli"
     if os.environ.get("GEMINI_API_KEY"):
         return "gemini"
-    return "mock"
+    # 키가 없을 때 조용히 가짜(mock) 결과를 만들면 실패를 알아채기 어렵다 → 명확히 실패시킨다
+    raise LLMError(
+        "LLM 인증 정보가 없습니다. GitHub 시크릿 CLAUDE_CODE_OAUTH_TOKEN(또는 GEMINI_API_KEY)을 확인하세요. "
+        "키 없이 흐름만 보려면 --mock 옵션을 쓰세요."
+    )
 
 
 class LLM:

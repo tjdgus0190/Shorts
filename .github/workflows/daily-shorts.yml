@@ -48,6 +48,22 @@ jobs:
       - name: Claude Code CLI (기획·QA 에이전트용, Pro 구독 토큰으로 인증)
         run: npm install -g @anthropic-ai/claude-code
 
+      - name: 시크릿 점검 (값은 출력하지 않음)
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          for k in CLAUDE_CODE_OAUTH_TOKEN GEMINI_API_KEY CF_ACCOUNT_ID CF_API_TOKEN YT_REFRESH_TOKEN; do
+            if [ -n "${!k}" ]; then echo "✅ $k 등록됨"; else echo "::warning::❌ $k 없음"; fi
+          done
+          if [ -n "$CLAUDE_CODE_OAUTH_TOKEN" ]; then
+            claude -p "OK라고만 답하세요" --output-format json --tools "" >/tmp/c.json 2>&1 \
+              && echo "✅ Claude 인증 성공" || { echo "::error::Claude 인증 실패"; head -c 400 /tmp/c.json; }
+          fi
+
       - id: date
         run: echo "date=$(TZ=Asia/Seoul date +%F)" >> "$GITHUB_OUTPUT"
 

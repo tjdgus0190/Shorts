@@ -5,7 +5,7 @@ import logging
 import sys
 
 from .config import ROOT, load_config
-from .llm import LLM
+from .llm import LLM, LLMError
 from .pipeline import Run, rebuild_index, today
 
 
@@ -34,7 +34,12 @@ def main() -> int:
     date = args.date or today(cfg)
     run_dir = ROOT / "runs" / date
     run_dir.mkdir(parents=True, exist_ok=True)
-    summary = Run(cfg, date, run_dir, LLM(cfg, args.llm)).execute(upload=not args.no_upload)
+    try:
+        llm = LLM(cfg, args.llm)
+    except LLMError as e:
+        logging.error("%s", e)
+        return 1
+    summary = Run(cfg, date, run_dir, llm).execute(upload=not args.no_upload)
     print(f"\n결과: {summary['status']}  ({run_dir / 'final.mp4'})")
     return 0 if summary["status"] in ("success", "qa_failed") else 1
 
