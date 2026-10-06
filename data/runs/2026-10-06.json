@@ -1,14 +1,14 @@
 {
   "date": "2026-10-06",
   "status": "success",
-  "started_at": "2026-10-06T19:42:45+09:00",
+  "started_at": "2026-10-06T21:45:36+09:00",
   "llm_provider": "mock",
   "stages": [
     {
       "name": "marketer",
       "label": "마케터",
       "status": "done",
-      "started_at": "2026-10-06T19:42:45+09:00",
+      "started_at": "2026-10-06T21:45:36+09:00",
       "note": "",
       "seconds": 0.2
     },
@@ -16,7 +16,7 @@
       "name": "planner",
       "label": "기획자",
       "status": "done",
-      "started_at": "2026-10-06T19:42:45+09:00",
+      "started_at": "2026-10-06T21:45:37+09:00",
       "note": "",
       "seconds": 0.0
     },
@@ -24,25 +24,33 @@
       "name": "producer",
       "label": "제작자",
       "status": "done",
-      "started_at": "2026-10-06T19:42:45+09:00",
+      "started_at": "2026-10-06T21:45:37+09:00",
       "note": "",
-      "seconds": 144.9
+      "seconds": 142.2
     },
     {
       "name": "effector",
       "label": "이펙터",
       "status": "done",
-      "started_at": "2026-10-06T19:45:10+09:00",
+      "started_at": "2026-10-06T21:47:59+09:00",
       "note": "",
-      "seconds": 20.1
+      "seconds": 21.8
     },
     {
       "name": "qa",
       "label": "QA",
       "status": "done",
-      "started_at": "2026-10-06T19:45:30+09:00",
+      "started_at": "2026-10-06T21:48:21+09:00",
       "note": "1차",
       "seconds": 1.2
+    },
+    {
+      "name": "uploader",
+      "label": "업로드",
+      "status": "done",
+      "started_at": "2026-10-06T21:48:22+09:00",
+      "note": "",
+      "seconds": 0.0
     }
   ],
   "qa": [
@@ -70,9 +78,9 @@
     "topics": [
       {
         "rank": 1,
-        "keyword": "ssg 대 한화",
-        "topic": "ssg 대 한화 몰랐던 사실 3가지",
-        "traffic": "5000+",
+        "keyword": "한국 대 우즈베키스탄",
+        "topic": "한국 대 우즈베키스탄 몰랐던 사실 3가지",
+        "traffic": "100000+",
         "why_now": "오늘 검색량 급상승",
         "angle": "몰랐던 사실 3가지",
         "target": "10~30대",
@@ -82,9 +90,9 @@
       },
       {
         "rank": 2,
-        "keyword": "전원주",
-        "topic": "전원주 의외의 반전",
-        "traffic": "5000+",
+        "keyword": "삼성 갤럭시",
+        "topic": "삼성 갤럭시 의외의 반전",
+        "traffic": "2000+",
         "why_now": "오늘 검색량 급상승",
         "angle": "의외의 반전",
         "target": "10~30대",
@@ -94,8 +102,8 @@
       },
       {
         "rank": 3,
-        "keyword": "카를로스 알카라스",
-        "topic": "카를로스 알카라스 1분 요약",
+        "keyword": "자녀",
+        "topic": "자녀 1분 요약",
         "traffic": "2000+",
         "why_now": "오늘 검색량 급상승",
         "angle": "1분 요약",
@@ -106,8 +114,8 @@
       },
       {
         "rank": 4,
-        "keyword": "ssg 랜더스",
-        "topic": "ssg 랜더스 꿀팁 랭킹",
+        "keyword": "횡성한우축제",
+        "topic": "횡성한우축제 꿀팁 랭킹",
         "traffic": "1000+",
         "why_now": "오늘 검색량 급상승",
         "angle": "꿀팁 랭킹",
@@ -118,9 +126,9 @@
       },
       {
         "rank": 5,
-        "keyword": "리오넬 스칼로니",
-        "topic": "리오넬 스칼로니 진짜 vs 가짜",
-        "traffic": "500+",
+        "keyword": "노바크 조코비치",
+        "topic": "노바크 조코비치 진짜 vs 가짜",
+        "traffic": "1000+",
         "why_now": "오늘 검색량 급상승",
         "angle": "진짜 vs 가짜",
         "target": "10~30대",
@@ -130,9 +138,9 @@
       },
       {
         "rank": 6,
-        "keyword": "최지만",
-        "topic": "최지만 몰랐던 사실 3가지",
-        "traffic": "500+",
+        "keyword": "south korea vs uzbekistan",
+        "topic": "south korea vs uzbekistan 몰랐던 사실 3가지",
+        "traffic": "1000+",
         "why_now": "오늘 검색량 급상승",
         "angle": "몰랐던 사실 3가지",
         "target": "10~30대",
@@ -142,8 +150,8 @@
       },
       {
         "rank": 7,
-        "keyword": "두산그룹",
-        "topic": "두산그룹 의외의 반전",
+        "keyword": "xrp",
+        "topic": "xrp 의외의 반전",
         "traffic": "500+",
         "why_now": "오늘 검색량 급상승",
         "angle": "의외의 반전",
@@ -154,9 +162,9 @@
       },
       {
         "rank": 8,
-        "keyword": "ssg 대 한화",
-        "topic": "ssg 대 한화 1분 요약",
-        "traffic": "5000+",
+        "keyword": "южная корея – узбекистан",
+        "topic": "южная корея – узбекистан 1분 요약",
+        "traffic": "500+",
         "why_now": "오늘 검색량 급상승",
         "angle": "1분 요약",
         "target": "10~30대",
@@ -166,9 +174,9 @@
       },
       {
         "rank": 9,
-        "keyword": "전원주",
-        "topic": "전원주 꿀팁 랭킹",
-        "traffic": "5000+",
+        "keyword": "김제덕",
+        "topic": "김제덕 꿀팁 랭킹",
+        "traffic": "500+",
         "why_now": "오늘 검색량 급상승",
         "angle": "꿀팁 랭킹",
         "target": "10~30대",
@@ -178,9 +186,9 @@
       },
       {
         "rank": 10,
-        "keyword": "카를로스 알카라스",
-        "topic": "카를로스 알카라스 진짜 vs 가짜",
-        "traffic": "2000+",
+        "keyword": "tvn",
+        "topic": "tvn 진짜 vs 가짜",
+        "traffic": "200+",
         "why_now": "오늘 검색량 급상승",
         "angle": "진짜 vs 가짜",
         "target": "10~30대",
@@ -190,69 +198,56 @@
       }
     ],
     "trend_count": 10,
-    "excluded": [
-      {
-        "keyword": "삼성 대 kia",
-        "blocked_by": "추락"
-      },
-      {
-        "keyword": "태양광 발전",
-        "blocked_by": "대통령"
-      },
-      {
-        "keyword": "소금",
-        "blocked_by": "극단적"
-      }
-    ]
+    "excluded": []
   },
   "selected_attempt": 1,
   "plan": {
     "chosen_rank": 1,
     "reason": "[mock] fun_score 최상위",
-    "title": "ssg 대 한화, 아무도 몰랐던 사실",
-    "hook": "ssg 대 한화, 이거 진짜 알고 계셨어요?",
+    "title": "한국 대 우즈베키스탄, 아무도 몰랐던 사실",
+    "hook": "한국 대 우즈베키스탄, 이거 진짜 알고 계셨어요?",
     "style": "vibrant 3D cartoon illustration, soft studio lighting, high detail",
     "scenes": [
       {
         "id": 1,
-        "narration": "ssg 대 한화, 이거 진짜 알고 계셨어요?",
+        "narration": "한국 대 우즈베키스탄, 이거 진짜 알고 계셨어요?",
         "on_screen_text": "잠깐만요!",
-        "image_prompt": "a playful scene about ssg 대 한화, scene 1, vertical composition"
+        "image_prompt": "a playful scene about 한국 대 우즈베키스탄, scene 1, vertical composition"
       },
       {
         "id": 2,
-        "narration": "오늘 다들 ssg 대 한화 검색하고 난리인데요.",
+        "narration": "오늘 다들 한국 대 우즈베키스탄 검색하고 난리인데요.",
         "on_screen_text": "검색량 폭발",
-        "image_prompt": "a playful scene about ssg 대 한화, scene 2, vertical composition"
+        "image_prompt": "a playful scene about 한국 대 우즈베키스탄, scene 2, vertical composition"
       },
       {
         "id": 3,
         "narration": "사실 여기엔 아무도 말 안 해준 비밀이 있습니다.",
         "on_screen_text": "숨은 비밀",
-        "image_prompt": "a playful scene about ssg 대 한화, scene 3, vertical composition"
+        "image_prompt": "a playful scene about 한국 대 우즈베키스탄, scene 3, vertical composition"
       },
       {
         "id": 4,
         "narration": "첫 번째, 생각보다 훨씬 오래된 이야기라는 것.",
         "on_screen_text": "첫 번째",
-        "image_prompt": "a playful scene about ssg 대 한화, scene 4, vertical composition"
+        "image_prompt": "a playful scene about 한국 대 우즈베키스탄, scene 4, vertical composition"
       },
       {
         "id": 5,
         "narration": "두 번째, 알고 보면 우리 일상과 엄청 가깝다는 것.",
         "on_screen_text": "두 번째",
-        "image_prompt": "a playful scene about ssg 대 한화, scene 5, vertical composition"
+        "image_prompt": "a playful scene about 한국 대 우즈베키스탄, scene 5, vertical composition"
       },
       {
         "id": 6,
         "narration": "여러분은 어떻게 생각하세요? 댓글로 알려주세요.",
         "on_screen_text": "당신의 생각은?",
-        "image_prompt": "a playful scene about ssg 대 한화, scene 6, vertical composition"
+        "image_prompt": "a playful scene about 한국 대 우즈베키스탄, scene 6, vertical composition"
       }
     ],
-    "description": "ssg 대 한화에 대한 의외의 사실!\n#쇼츠 #ssg대한화 #상식",
+    "description": "한국 대 우즈베키스탄에 대한 의외의 사실!\n#쇼츠 #한국대우즈베키스탄 #상식",
     "tags": [
-      "ssg 대 한화",
+      "한국 대 우즈베키스탄",
       "쇼츠",
       "상식"
     ],
@@ -265,7 +260,7 @@
     }
   },
   "effects": {
-    "duration": 26.03,
+    "duration": 26.53,
     "tts_provider": "edge",
     "voice": "ko-KR-SunHiNeural",
     "bgm": null
@@ -273,14 +268,14 @@
   "storyboard": [
     {
       "id": 1,
-      "narration": "ssg 대 한화, 이거 진짜 알고 계셨어요?",
+      "narration": "한국 대 우즈베키스탄, 이거 진짜 알고 계셨어요?",
       "on_screen_text": "잠깐만요!",
       "image": "runs/2026-10-06/scene_01.jpg",
       "provider": "pollinations"
     },
     {
       "id": 2,
-      "narration": "오늘 다들 ssg 대 한화 검색하고 난리인데요.",
+      "narration": "오늘 다들 한국 대 우즈베키스탄 검색하고 난리인데요.",
       "on_screen_text": "검색량 폭발",
       "image": "runs/2026-10-06/scene_02.jpg",
       "provider": "placeholder"
@@ -318,7 +313,7 @@
   "video_file": "videos/2026-10-06.mp4",
   "upload": {
     "status": "skipped",
-    "reason": "--no-upload"
+    "reason": "YT_* 시크릿 없음"
   },
-  "finished_at": "2026-10-06T19:45:31+09:00"
+  "finished_at": "2026-10-06T21:48:22+09:00"
 }
