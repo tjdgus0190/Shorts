@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-07",
+  "status": "failed",
+  "started_at": "2026-10-07T23:48:07+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "failed",
+      "started_at": "2026-10-07T23:48:07+09:00",
+      "note": "",
+      "error": "LLMError: 모든 LLM 호출 실패: claude 종료코드 1: \"unset\":0},\"started_in_background\":0,\"max_depth\":0,\"spawned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num_turns\":1,\"subtype\":\"success\",\"api_error_status\":401,\"result\":\"Failed to authenticate. API Error: 401 Invalid bearer token\",\"type\":\"result\",\"duration_ms\":1928,\"uuid\":\"2ebca071-8796-417b-aebc-e5884106d680\",\"queued_turn_count\":0,\"result_index\":0}\n",
+      "seconds": 6.6
+    }
+  ],
+  "qa": [],
+  "error": "LLMError: 모든 LLM 호출 실패: claude 종료코드 1: \"unset\":0},\"started_in_background\":0,\"max_depth\":0,\"spawned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num_turns\":1,\"subtype\":\"success\",\"api_error_status\":401,\"result\":\"Failed to authenticate. API Error: 401 Invalid bearer token\",\"type\":\"result\",\"duration_ms\":1928,\"uuid\":\"2ebca071-8796-417b-aebc-e5884106d680\",\"queued_turn_count\":0,\"result_index\":0}\n",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/Shorts/Shorts/shorts/pipeline.py\", line 62, in execute\n    report = self.stage(\"marketer\", marketer.run)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/Shorts/Shorts/shorts/pipeline.py\", line 50, in stage\n    result = fn(self.ctx, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/Shorts/Shorts/shorts/agents/marketer.py\", line 54, in run\n    report = ctx.llm.complete_json(\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/Shorts/Shorts/shorts/llm.py\", line 104, in complete_json\n    raise LLMError(f\"모든 LLM 호출 실패: {last}\")\nshorts.llm.LLMError: 모든 LLM 호출 실패: claude 종료코드 1: \"unset\":0},\"started_in_background\":0,\"max_depth\":0,\"spawned_by_subagents\":0,\"completed\":0,\"failed\":0,\"killed\":{\"parent\":0,\"user\":0,\"system\":0},\"refused\":{\"depth_limit\":0,\"concurrency_limit\":0,\"budget\":0},\"by_type\":{}},\"safety_stops\":0,\"is_error\":true,\"num_turns\":1,\"subtype\":\"success\",\"api_error_status\":401,\"result\":\"Failed to authenticate. API Error: 401 Invalid bearer token\",\"type\":\"result\",\"duration_ms\":1928,\"uuid\":\"2ebca071-8796-417b-aebc-e5884106d680\",\"queued_turn_count\":0,\"result_index\":0}\n\n",
+  "finished_at": "2026-10-07T23:48:14+09:00"
+}

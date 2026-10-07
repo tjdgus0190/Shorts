@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-10-07",
+    "status": "failed",
+    "title": null,
+    "overall": null,
+    "qa_attempts": 0,
+    "thumbnail": null,
+    "youtube_url": null,
+    "upload_status": null,
+    "duration": null
+  },
+  {
     "date": "2026-10-06",
     "status": "success",
     "title": "한국 대 우즈베키스탄, 아무도 몰랐던 사실",
