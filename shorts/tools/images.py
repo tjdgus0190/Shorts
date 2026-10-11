@@ -71,9 +71,8 @@ _disabled: set[str] = set()  # 설정 오류가 난 provider는 이번 실행 �
 def cloudflare(prompt: str, seed: int | None = None, steps: int = 8, timeout: int = 120) -> Image.Image:
     # 복사·붙여넣기 때 섞인 공백/줄바꿈 제거
     account, token = os.environ["CF_ACCOUNT_ID"].strip(), os.environ["CF_API_TOKEN"].strip()
+    # FLUX.1 schnell은 prompt·steps 외 파라미터(seed 등)를 받으면 400을 반환한다
     body = {"prompt": prompt[:2000], "steps": steps}
-    if seed is not None:
-        body["seed"] = seed
     r = requests.post(
         f"https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/black-forest-labs/flux-1-schnell",
         headers={"Authorization": f"Bearer {token}"}, json=body, timeout=timeout)
