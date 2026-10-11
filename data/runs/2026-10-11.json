@@ -1,473 +1,457 @@
 {
   "date": "2026-10-11",
   "status": "qa_failed",
-  "started_at": "2026-10-11T15:23:15+09:00",
+  "started_at": "2026-10-11T23:25:52+09:00",
   "llm_provider": "claude_cli",
   "stages": [
     {
       "name": "marketer",
       "label": "마케터",
       "status": "done",
-      "started_at": "2026-10-11T15:23:15+09:00",
+      "started_at": "2026-10-11T23:25:52+09:00",
       "note": "",
-      "seconds": 19.8
+      "seconds": 22.2
     },
     {
       "name": "planner",
       "label": "기획자",
       "status": "done",
-      "started_at": "2026-10-11T15:23:35+09:00",
+      "started_at": "2026-10-11T23:26:14+09:00",
       "note": "",
-      "seconds": 13.7
+      "seconds": 17.3
     },
     {
       "name": "producer",
       "label": "제작자",
       "status": "done",
-      "started_at": "2026-10-11T15:23:49+09:00",
+      "started_at": "2026-10-11T23:26:32+09:00",
       "note": "",
-      "seconds": 124.8
+      "seconds": 317.2
     },
     {
       "name": "effector",
       "label": "이펙터",
       "status": "done",
-      "started_at": "2026-10-11T15:25:53+09:00",
+      "started_at": "2026-10-11T23:31:49+09:00",
       "note": "",
-      "seconds": 45.1
+      "seconds": 34.3
     },
     {
       "name": "qa",
       "label": "QA",
       "status": "done",
-      "started_at": "2026-10-11T15:26:39+09:00",
+      "started_at": "2026-10-11T23:32:23+09:00",
       "note": "1차",
-      "seconds": 22.4
-    },
-    {
-      "name": "planner",
-      "label": "기획자",
-      "status": "done",
-      "started_at": "2026-10-11T15:27:01+09:00",
-      "note": "QA 1차 피드백 반영",
-      "seconds": 23.2
+      "seconds": 23.9
     },
     {
       "name": "producer",
       "label": "제작자",
       "status": "done",
-      "started_at": "2026-10-11T15:27:24+09:00",
+      "started_at": "2026-10-11T23:32:47+09:00",
       "note": "QA 1차 피드백 반영",
-      "seconds": 188.2
+      "seconds": 302.9
     },
     {
       "name": "effector",
       "label": "이펙터",
       "status": "done",
-      "started_at": "2026-10-11T15:30:32+09:00",
+      "started_at": "2026-10-11T23:37:50+09:00",
       "note": "QA 1차 피드백 반영",
-      "seconds": 39.0
+      "seconds": 34.1
     },
     {
       "name": "qa",
       "label": "QA",
       "status": "done",
-      "started_at": "2026-10-11T15:31:11+09:00",
+      "started_at": "2026-10-11T23:38:24+09:00",
       "note": "2차",
-      "seconds": 26.6
+      "seconds": 28.9
     },
     {
       "name": "producer",
       "label": "제작자",
       "status": "done",
-      "started_at": "2026-10-11T15:31:38+09:00",
+      "started_at": "2026-10-11T23:38:53+09:00",
       "note": "QA 2차 피드백 반영",
-      "seconds": 348.1
+      "seconds": 328.6
     },
     {
       "name": "effector",
       "label": "이펙터",
       "status": "done",
-      "started_at": "2026-10-11T15:37:26+09:00",
+      "started_at": "2026-10-11T23:44:22+09:00",
       "note": "QA 2차 피드백 반영",
-      "seconds": 34.9
+      "seconds": 31.6
     },
     {
       "name": "qa",
       "label": "QA",
       "status": "done",
-      "started_at": "2026-10-11T15:38:01+09:00",
+      "started_at": "2026-10-11T23:44:53+09:00",
       "note": "3차",
-      "seconds": 24.4
+      "seconds": 21.7
     }
   ],
   "qa": [
     {
       "attempt": 1,
       "scores": {
-        "fun": 52,
-        "hook": 65,
-        "clarity": 58,
-        "visual": 62,
-        "subtitle": 75,
+        "fun": 45,
+        "hook": 60,
+        "clarity": 60,
+        "visual": 30,
+        "subtitle": 65,
         "safety": 70
       },
-      "overall": 62,
+      "overall": 54,
       "pass": false,
       "issues": [
-        "6번 장면 나레이션 '이게 안 비기면 이상한 거였는데'는 논리가 거꾸로다. 수적 우위에 골 같은 슈팅이었다면 '안 이기면 이상한'이어야 한다. 바로 뒤의 '명예 회복할 일만 남았습니다'도 맥락과 맞지 않는다.",
-        "2번 장면에서 '밴쿠버가 10명으로 뛰게 됐다'고 했으므로 1번 훅의 '상대가 10명'과 호응하는 것은 맞다. 다만 '손흥민 7호골 같은 슈팅'은 무슨 뜻인지 불분명하다. 7호골이 실제로 있었는지, 다른 골과 혼동한 것인지 확인 필요.",
-        "'일본 골키퍼'로만 소개해 선수 이름이 없고 정보가 모호하다. 밴쿠버 골키퍼가 일본 국적인지 확인 필요.",
-        "5번 장면의 '전반 0 대 1'과 최종 1 대 1 사이에 누가 언제 득점했는지 설명이 없다. LAFC가 먼저 실점했는지, 동점골을 누가 넣었는지 빠져 있어 흐름이 끊긴다.",
-        "첫 프레임(f0) 이미지에 FC바르셀로나 엠블럼과 나이키 로고가 보이고, 전광판 글자는 '5:6', 'NCT 2016' 등으로 깨져 있다. 저작권·상표 위험이 있고, 기사 내용(LAFC 1-1)과도 맞지 않는다. 훅 장면이라 가장 눈에 띈다.",
-        "동물 캐릭터가 손흥민이나 LAFC, 밴쿠버와 연결되는 시각적 단서가 없다. 매 장면 유니폼과 캐릭터가 달라(고양이, 호랑이, 너구리) 같은 경기 이야기로 이어지지 않는다.",
-        "전체 톤이 경기 결과를 요약하는 뉴스 전달에 가깝다. 반전이나 드립이 약하고 마지막 댓글 유도만 있다. 50초는 이 내용에 비해 길다.",
-        "자막이 화면 중하단 인물 위에 놓여 일부 장면에서 캐릭터 몸통을 가린다. 상단 제목 박스는 검은 박스라 답답하다. 가독성 자체는 괜찮다."
+        "6개 장면 중 3개가 placeholder 이미지입니다. 확인한 프레임 f3(85% 지점)은 주황색 그라데이션 배경뿐이라 장면 5의 '공항 게이트의 곰' 프롬프트와 전혀 맞지 않습니다.",
+        "장면 2 프레임(f1)은 프롬프트의 '토끼 골퍼, 바람, 황금 새'가 아니라 노란 셔츠를 입은 실사풍 사람 골퍼입니다. 캐릭터 일관성이 깨졌고, 화면 위쪽에 이상한 주황색 얼룩이 있습니다.",
+        "장면 1 프레임(f0)의 여우는 입이 어색하게 늘어나 있습니다. 프롬프트에 있던 '황금 새 11마리'도 없어서 '버디 11개' 개그가 전달되지 않습니다.",
+        "장면 4 프레임(f2)은 곰이 트로피 없이 서 있고 색감이 탁합니다. 자막 시점에는 우승컵 장면이어야 하는데 화면과 어긋납니다.",
+        "프레임 하단에 pollinations.ai 워터마크가 보입니다. 업로드용으로 부적절합니다.",
+        "f3에서 on_screen_text '다음은 미국'과 자막 '다음은 미국'이 같은 화면에 중복됩니다. 상단 검은 박스 텍스트도 투박합니다.",
+        "내용이 교과서식 결과 요약에 가깝습니다. 안지현 11버디, 유현조 1점 차 우승, 시즌 2승·통산 4승, Q스쿨 도전을 나열할 뿐 반전이나 드립이 약합니다. 끝의 '댓글로 싸워보세요'는 형식적입니다.",
+        "서사 확인 필요: 제목과 훅은 '버디 11개를 치고도 졌다'는 구도이고 장면 2는 '마지막에 11개를 몰아쳤다'는 구도입니다. 11버디가 한 라운드인지 대회 전체인지 불분명합니다. 골프는 보통 '타 차'를 쓰므로 '1점 차'가 맞는 표현인지(점수제 대회인지)도 확인 필요합니다. 선수 기록(시즌 2승, 통산 4승, 데뷔 첫 다승, 안지현 11버디)은 사실 확인 필요합니다.",
+        "description에는 '30초 정리'라고 쓰여 있지만 실제 길이는 38.75초입니다.",
+        "실존 선수 이름을 쓰면서 한쪽은 '억울하다'는 식으로 묘사합니다. 사실 확인이 안 되면 명예훼손 소지는 낮지만 주의가 필요합니다."
       ],
-      "retry_target": "planner",
-      "feedback": "대본을 먼저 고쳐 주세요. (1) 6번 장면의 '안 비기면 이상한'을 '안 이기면 이상한'으로 바로잡고, '명예 회복할 일만 남았다'는 맥락에 맞게 삭제하거나 바꾸세요. (2) 득점 흐름(누가 먼저 실점했는지, 동점골은 누구였는지)을 한 장면에 넣어 0-1에서 1-1로 가는 과정이 보이게 하세요. (3) '7호골 같은 슈팅'은 정확한 표현으로 바꾸거나 근거가 불확실하면 빼세요. 골키퍼 국적도 확인이 안 되면 '상대 골키퍼'로만 쓰세요. (4) 첫 3초 훅을 '10명인데 못 이긴 팀' 같은 상황 드립으로 더 세게 만들고, 중간에 웃음 포인트를 1~2개 넣어 뉴스 요약 톤에서 벗어나세요. 길이는 35~40초로 줄이세요. (5) 이미지 프롬프트에는 'no logos, no text, no brand marks, plain scoreboard'를 추가하고, 같은 캐릭터가 한 팀 유니폼으로 이어지게 통일하세요. 첫 장면 이미지는 로고와 글자 깨짐 때문에 재생성이 필요합니다."
+      "retry_target": "producer",
+      "feedback": "producer 담당: 1) placeholder 3컷을 모두 실제 생성 이미지로 교체하세요. 특히 장면 5(공항 게이트의 곰)와 장면 6(환호하는 곰과 시무룩한 토끼 분할 구도)이 필요합니다. 2) 장면 2는 사람이 아닌 '토끼 골퍼' 카툰으로 다시 뽑으세요. 장면 4는 곰이 황금 트로피를 안고 있고 색종이가 날리는 구도로 다시 뽑으세요. 3) 주인공 캐릭터(곰=유현조, 토끼=안지현, 여우)의 스타일을 통일하세요. 프롬프트 앞에 'consistent cute 3D cartoon animals, no humans, no text, no watermark'를 고정으로 넣으세요. 4) 워터마크가 보이지 않는 해상도로 생성하거나 크롭하세요. 5) 장면 1에는 황금 새 11마리가 실제로 보이게 하세요. 그래야 '버디 11개' 훅이 시각적으로 살아납니다. 6) 이미지 생성이 실패해도 그라데이션 폴백을 쓰지 말고 재시도하세요. 개선 팁(planner 참고): '1점 차'가 정확한 표현인지 먼저 확인하고, 11버디가 한 라운드인지 대회 전체인지 분명히 하세요. 중반에 반전이나 드립 한 줄을 넣고, 영상 길이를 30초대 초반으로 줄이세요. 화면 텍스트와 자막이 같은 말을 반복하지 않게 하세요."
     },
     {
       "attempt": 2,
       "scores": {
-        "fun": 60,
-        "hook": 62,
-        "clarity": 64,
-        "visual": 66,
-        "subtitle": 72,
-        "safety": 70
+        "fun": 45,
+        "hook": 55,
+        "clarity": 60,
+        "visual": 38,
+        "subtitle": 70,
+        "safety": 75
       },
-      "overall": 64,
+      "overall": 55,
       "pass": false,
       "issues": [
-        "scene 2 (f1): 여우 흰 유니폼 가슴에 나이키 스우시와 엠블럼이 선명하게 보임. 프롬프트가 'plain blank chest'를 지정했는데 무시됨. 실제 브랜드 로고라 저작권·상표 위험이 있음",
-        "scene 4 (f2): 골키퍼 앞발의 노란 구체가 공처럼 보이지만 아래의 실제 축구공과 따로 놀아 공이 두 개로 보임. 이미지가 어색하고 슈퍼세이브 장면이 불명확함",
-        "scene 4 (f2): 자막이 캐릭터 몸통과 공 위에 겹침. scene 1(f0)에서는 자막이 고양이 다리를 가림. 자막 위치를 아래쪽 검은 여백으로 내리면 해결됨",
-        "scene 6 (f3): 자막 두 줄 '무승부라니 이게 되네요 / 판이었잖아요 그게'의 순서가 나레이션('이상한 판이었잖아요… 그게 무승부라니, 이게 되네요')과 달라 읽기 어색함. 청크 분할이나 싱크 확인 필요",
-        "흐름 모순: scene 2에서 밴쿠버가 10명이 됐다고 하고 scene 3·5에서는 전반 0-1 열세라고 함. 퇴장 시점과 득점 시점이 불명확해 'ㅇㅇ분 퇴장 후 동점' 같은 인과가 없음. 실제 경기 기록(퇴장 시점, 득점자) 확인 필요",
-        "description에 '30초 정리'라고 썼지만 실제 길이는 45.41초라 불일치",
-        "scene 1~7 모두 주인공이 '고양이'이고 손흥민이라는 단서가 없음. 제목의 '손흥민 검색량 터진 이유'가 영상에서 해소되지 않음(검색량 이야기가 없고 단순 경기 요약). 훅 약속과 본문이 어긋남",
-        "fun: 반전 구조('여기서 반전')가 있지만 대부분 경기 결과를 순서대로 읽는 요약 톤이라 드립 밀도가 낮음"
+        "0.6초 프레임(씬1): 기획은 '주황 여우 1마리 + 로프 위 황금 새 11마리'인데, 실제 이미지는 노란 개·여우 3마리가 서 있고 새는 양손 끝에 2개뿐입니다. 팔·옷이 뭉개져 해부학적으로 이상하고 '버디 11개'라는 핵심 훅이 그림으로 전달되지 않습니다.",
+        "씬2 프레임: 토끼가 스윙이 아니라 기우뚱한 자세이고, 클럽이 공중에 떠 있는 검은 막대처럼 보이며 얼굴·손이 일그러져 있습니다. 파란 바이저 등 프롬프트 디테일이 빠졌고 3D 카툰 톤도 씬1과 다릅니다.",
+        "씬4 프레임(55%): 프롬프트의 황금 트로피와 색종이가 보이지 않고, 곰이 무표정으로 정면만 봅니다. 우승 순간의 환호가 없어 '우승컵은 유현조'라는 자막과 맞지 않습니다.",
+        "씬5 프레임(85%): 골프백이 아니라 빨간 캐리어로 그려졌고 배경 공항도 흐립니다. 곰 얼굴이 단순하게 뭉개졌습니다.",
+        "캐릭터 일관성 부족: 씬1은 노란 여우류, 씬2는 사실적 질감의 토끼, 씬3~5는 서로 다른 화풍의 곰으로 보여 같은 시리즈로 느껴지지 않습니다.",
+        "프레임 우하단에 'pollinations.ai' 워터마크가 보입니다. 업로드 영상으로는 부적절합니다.",
+        "자막: 상단 검은 박스(on_screen_text)와 하단 자막이 동시에 나오고, 상단 박스가 캐릭터 머리·귀를 가립니다. 하단 자막은 가독성이 좋지만 한 번에 두 줄이 나와 시선이 분산됩니다.",
+        "대본 흐름: 훅에서 '버디 11개를 친 사람'이 누구인지 바로 알기 어렵고, 씬2에서 안지현이라고 밝힙니다. 씬3~4는 결과를 전달하는 뉴스 요약 톤이라 반전과 드립이 약하고, 재미는 마지막 댓글 유도에 의존합니다.",
+        "사실 확인 필요: 골프 타수 차이를 '1점 차'로 표현한 것이 맞는지 확인이 필요합니다(대회 방식이 점수제인지 확인).",
+        "사실 확인 필요: '버디 11개'가 최종 라운드 기록인지 대회 전체 기록인지, '마지막에 몰아치면서'라는 서술과 맞는지 확인이 필요합니다.",
+        "사실 확인 필요: '시즌 2승, 통산 4승'인데 '데뷔 첫 다승'이라고 한 점이 서로 모순되지 않는지 확인이 필요합니다(첫 시즌 다승인지 확인).",
+        "실존 선수 실명을 쓰므로 승패·소감 내용은 출처로 재검증해야 합니다. 선수를 동물로 표현한 점은 문제 없습니다.",
+        "설명란은 '30초 정리'라고 했지만 실제 길이는 38.8초라 약간 어긋납니다."
       ],
       "retry_target": "producer",
-      "feedback": "1) scene 2 이미지를 다시 생성하세요. 프롬프트에 'no logos, no brand marks, no text, no emblem, blank chest'를 negative 조건으로 명시하고, 결과에서 스우시나 엠블럼이 보이면 재생성하세요. 다른 장면도 로고 유무를 확인하세요. 2) scene 4는 공을 하나만 그리세요. 'one single soccer ball, no glowing orb, paw touching the ball'로 바꿔 슈퍼세이브 장면이 분명하게 보이게 하세요. 3) 자막은 인물 얼굴·몸통·공을 가리지 않도록 하단 여백이나 이미지 하단 20% 영역에 두는 것을 권장합니다. 4) (planner 참고) 손흥민이 누구인지 한 컷에서 드러나게 하세요(예: 등번호 7 같은 일반 요소, 자막 '손흥민'). 퇴장 시점과 득점 순서를 정리하고 사실은 확인한 뒤 쓰세요. '검색량 터진 이유'를 마지막에 회수하거나 제목을 바꾸세요. description의 '30초'는 실제 길이에 맞게 고치세요."
+      "feedback": "이미지를 전면 재생성하세요. (1) pollinations 무료 결과가 손·팔·얼굴이 뭉개지고 워터마크가 남으므로, 가능하면 다른 생성기를 쓰거나 워터마크가 없는 해상도로 다시 뽑거나 하단을 크롭하세요. (2) 씬1은 '주황 여우 1마리가 놀란 표정으로 서 있고, 머리 위 로프에 황금 새가 일렬로 앉은 모습'을 단순하게 구성하세요. 프롬프트 앞부분에 'single character, no duplicates, no text'를 넣고 새 개수는 많이 그리게 하되 11개 정확도에 매달리지 마세요. (3) 씬2는 토끼가 스윙하는 전신 구도, 씬4는 곰이 트로피를 안고 색종이가 날리는 모습, 씬5는 골프백을 든 곰으로 맞추세요. (4) 모든 씬에 같은 화풍 키워드(3D clay cartoon, same character design: 곰=빨간 캡, 토끼=파란 바이저)를 고정하고 시드나 레퍼런스를 맞춰 캐릭터 일관성을 확보하세요. (5) 재작업 후 기획자에게 전달할 개선 팁: 훅을 '버디 11개 치고도 2등?' 같은 대결 구도로 바꾸고, 씬3~4에 반전 한 줄을 넣어 재미를 올리세요. 길이를 30초 안팎으로 줄이고, 1점 차·다승 표현은 출처로 검증하세요."
     },
     {
       "attempt": 3,
       "scores": {
-        "fun": 55,
-        "hook": 60,
+        "fun": 45,
+        "hook": 40,
         "clarity": 65,
-        "visual": 30,
-        "subtitle": 45,
+        "visual": 35,
+        "subtitle": 55,
         "safety": 80
       },
-      "overall": 56,
+      "overall": 51,
       "pass": false,
       "issues": [
-        "장면 4(슈퍼세이브)가 placeholder 이미지(청록 그라데이션 배경)로 나갔습니다. 55% 프레임에는 골키퍼 그림이 없어 반전 장면이 비어 있습니다. 감점 대상입니다.",
-        "장면 2 이미지가 기획과 다릅니다. 프롬프트는 심판이 여우에게 레드카드를 보이는 장면인데, 실제 프레임은 검정 유니폼 소년 캐릭터가 공을 안고 있습니다. 심판, 레드카드, 상대 선수가 없어서 '퇴장 유도'가 전달되지 않습니다.",
-        "장면 6 이미지가 기획과 다릅니다. 프롬프트는 고양이 선수가 머리를 감싸는 장면인데, 실제 프레임은 유니폼 없는 사실적인 고양이가 풀밭에 엎드려 있습니다. 스타일도 장면 1의 3D 카툰과 달라 캐릭터 일관성이 깨집니다.",
-        "장면 1 캐릭터는 목과 몸의 비율이 어색하고 얼굴이 일그러져 있습니다. 유니폼 로고와 숫자도 뭉개져 있습니다. 장면 2의 유니폼 글자는 깨져 있습니다(GOnn 같은 형태).",
-        "자막 문제: 장면 6 프레임에서 하단 자막이 '무승부라니 이게 되네요 / 판이었잖아요 그게'로 어순이 뒤섞여 있고 하이라이트 단어도 어색합니다. 장면 4 프레임의 '분은 오늘 퇴근'은 문장 앞부분이 잘린 조각이라 음성과의 싱크를 확인해야 합니다.",
-        "장면 4 placeholder 프레임에서는 상단 on_screen_text '여기서 반전'과 하단 자막 '여기서 반전'이 같은 문구로 중복됩니다.",
-        "장면 1 프레임에서 하단 자막이 캐릭터 몸통을 가립니다. 상단 검정 박스 문구는 얼굴 바로 위에 걸쳐 있어 답답합니다.",
-        "길이 정합성: 영상은 45.41초인데 description은 '30초 정리'라고 적었습니다. 쇼츠로는 다소 길고 설명과도 맞지 않습니다.",
-        "내용 확인 필요: 'LAFC vs 밴쿠버 1-1, 상대 퇴장 유도, 전반 0-1 후 후반 동점'은 실제 경기 기록과 맞는지 확인이 필요합니다. 확정된 오류는 아닙니다. 또한 장면 3·4의 '전반 슈팅 후 세이브'와 장면 5의 '전반 0-1' 사이 시간 순서가 모호합니다. 퇴장이 언제 나왔는지도 설명이 없습니다.",
-        "재미 요소: '퇴근 안 합니다', '댓글로 붙어봅시다' 같은 드립은 있습니다. 하지만 대본이 경기 경과를 나열하는 구조에 가깝고 반전의 강도는 약합니다. 마지막 장면의 대결 구도도 이미지로 충분히 살아나지 않습니다."
+        "첫 프레임(0.6초)이 placeholder 단색 초록 그라데이션이다. 여우와 버디 새 줄이라는 훅 이미지가 없어 스크롤을 멈출 시각 요소가 없다. 자동 측정치에도 placeholder 2장이 잡혔다.",
+        "첫 프레임에서 '버디 11개?!'가 상단 검은 박스와 중앙 자막에 두 번 겹쳐 나온다. 화면이 중복되고 지저분하다.",
+        "씬 2 토끼 이미지가 깨져 있다. 몸과 귀가 반투명하게 겹치고 얼굴과 팔이 뭉개졌으며 골프채도 없다. 우하단에 'pollinations' 워터마크도 보인다. 프롬프트의 '스윙 중인 토끼'와 맞지 않는다.",
+        "씬 4 곰은 우승컵 대신 작은 동물 인형을 안고 있다. 프롬프트의 황금 트로피와 불일치한다. 인물 디자인도 씬 5 곰과 달라 보인다(빨간 모자가 안 보임).",
+        "씬 5 곰은 비율이 어색하고 골프채가 막대기처럼 뒤틀려 보인다. 골프백은 거의 식별이 안 된다. 캐릭터 일관성이 약하다.",
+        "골프 용어 오류 가능성: 골프 스코어 차이는 '점'이 아니라 '타'로 말하는 것이 일반적이다('1타 차'). 제목·대본·자막의 '1점 차'는 어색하다. 확인 필요.",
+        "씬 2 '마지막에 버디를 11개나 몰아치면서'는 한 라운드 11개인지 대회 전체 합계인지 불분명하다. 핵심 소재의 사실관계는 원문 확인이 필요하다.",
+        "대본이 결과를 순서대로 나열하는 뉴스 요약 톤이다. 반전이나 드립이 약해서 재미가 부족하다. 마지막 댓글 유도만 약간 재미있다.",
+        "영상 길이는 38.8초인데 설명에는 '30초 정리'라고 적혀 있다. 소소한 불일치다."
       ],
       "retry_target": "producer",
-      "feedback": "1) 장면 4는 placeholder가 나갔습니다. 라쿤 골키퍼가 슈퍼히어로 자세로 공을 쳐내는 이미지를 재생성하고, 실패하면 재시도하거나 프롬프트를 단순화하세요. 2) 장면 2는 심판 개와 레드카드, 놀란 여우 선수가 실제로 보이도록 재생성하세요. 사람 소년 캐릭터가 나오지 않도록 'cat/dog/fox animal character, no human boy'를 명시하세요. 3) 장면 6은 유니폼을 입은 고양이 선수가 머리를 감싸는 3D 카툰으로 다시 뽑으세요. 사실적 고양이 사진체는 금지입니다. 4) 모든 장면에서 캐릭터 스타일(3D cartoon)과 유니폼 색을 일관되게 유지하고, 유니폼에 글자나 숫자가 생기지 않게 'no text, no logo, no numbers on jersey'를 추가하세요. 5) 하단 자막 영역(화면 아래 25%)은 풀밭으로 비워 캐릭터를 상단 2/3에 배치하세요. 6) 이미지 수정 후에도 자막 어순과 싱크 문제가 남으면 effector에게 넘기세요. 'description'의 '30초'는 실제 길이(약 45초)에 맞게 고치거나 대본을 줄이도록 planner에게 전달하는 것을 권합니다."
+      "feedback": "producer 담당: (1) 씬 1 placeholder를 반드시 실제 이미지로 교체하세요. 주황 여우가 놀란 표정으로 서 있고 머리 위 줄에 황금 새 여러 마리가 앉아 있는 장면이 훅 이미지입니다. 생성이 실패하면 재시도하세요. (2) 씬 2 토끼는 깨졌으니 재생성하세요. 프롬프트를 단순화해서 토끼 한 마리가 골프채를 휘두르는 전신 모습만 남기고, 워터마크가 없는 결과를 쓰세요. (3) 씬 4는 곰이 작은 동물 인형이 아니라 큰 황금 트로피를 안도록 다시 만드세요. 곰의 빨간 모자와 디자인을 씬 3·5와 통일하세요. (4) 씬 5는 골프채와 골프백이 분명히 보이도록 재생성하세요. 참고로 planner에게 전달할 사항은 대본의 '1점 차'를 '1타 차'로 바꾸는 것과 11버디의 기준(최종 라운드 여부)을 확인하는 것입니다. 또한 on_screen_text와 자막이 같은 말을 반복하지 않게 정리하세요."
     }
   ],
   "marketer": {
-    "summary": "오늘은 손흥민의 LAFC 경기(퇴장 유도·슈퍼세이브)와 K리그 수원삼성·천안 14경기 만의 승리 같은 스포츠 이슈, 유도 세계선수권 이현지 우승, 그리고 5만원권 위조지폐 판결이 검색을 이끌었다.",
+    "summary": "오늘은 골프 유현조의 시즌 2승과 리버풀-맨시티 빅매치, 머스크 1조 달러 보상안과 삼성전자·SK하이닉스 55조 자사주 논란까지 스포츠와 돈 이야기가 트렌드를 이끈다.",
     "topics": [
       {
         "rank": 1,
-        "keyword": "손흥민",
-        "traffic": "10000+",
-        "traffic_num": 10000,
+        "keyword": "pakistan vs sri lanka",
+        "traffic": "1000+",
+        "traffic_num": 1000,
         "news": [
-          "손흥민이 퇴장 끌어냈지만…LAFC, 10명이 뛴 밴쿠버와 1-1 비겨",
-          "'리더십 상처' 손흥민, 소속팀에서 명예 회복할까?",
-          "‘손흥민 7호골, 일본 골키퍼가 막았다!’ 한 골이나 마찬가지였던 손흥민 완벽한 슈팅, 슈퍼세이브에 막혔다…LAFC 0-1 뒤지고 전반종료"
+          "PAK vs SL 2026/27, PAK vs SL 2nd T20I Match Preview - Sri Lanka hope to get out of T20I rut and keep series alive",
+          "Pakistan cricket at a crossroads: Build a system, not just a team through experiments | Sports",
+          "Aakash Chopra Slams Pakistan T20I Captaincy After Sahibzada Farhan Appointment"
         ],
-        "topic": "손흥민이 퇴장 끌어낸 LAFC vs 밴쿠버 1-1 경기, 7호골 같았던 슈팅을 막은 골키퍼 슈퍼세이브 30초 정리",
-        "why_now": "'손흥민이 퇴장 끌어냈지만…LAFC, 10명이 뛴 밴쿠버와 1-1 비겨', '손흥민 7호골, 일본 골키퍼가 막았다' 기사가 연이어 나옴",
-        "angle": "'수적 우위인데 왜 못 이겼나' 상황극 + 골이나 다름없던 슈팅 장면을 슬로모션으로 보며 '이게 안 들어가?' 드립. 마지막은 명예 회복 관전 포인트로 마무리",
-        "target": "축구팬, 해외축구·MLS 시청층, 20~40대 남성",
-        "fun_score": 8,
+        "topic": "파키스탄 vs 스리랑카 T20 2차전, 시리즈 살리려는 스리랑카와 새 주장 체제의 파키스탄",
+        "why_now": "'PAK vs SL 2nd T20I Match Preview - Sri Lanka hope to get out of T20I rut and keep series alive', 'Aakash Chopra Slams Pakistan T20I Captaincy After Sahibzada Farhan Appointment' 등 경기 프리뷰와 주장 선임 논란 기사가 나옴",
+        "angle": "크리켓을 처음 보는 한국인을 위한 '이 경기가 왜 난리냐면' 30초 정리. 주장 교체 논란과 시리즈 생존 걸린 2차전 구도를 야구에 빗대 설명",
+        "target": "스포츠 이슈 팬, 해외 스포츠 입문자, 남아시아 커뮤니티",
+        "fun_score": 4,
         "risk": "low",
-        "risk_note": "선수 개인 비하 없이 경기 내용 중심으로 다룰 것"
+        "risk_note": ""
       },
       {
         "rank": 2,
-        "keyword": "can vs nep",
-        "traffic": "500+",
-        "traffic_num": 500,
+        "keyword": "유현 조",
+        "traffic": "1000+",
+        "traffic_num": 1000,
         "news": [
-          "Match Predictions: ICC CWC League 2 2026 - Match 133 - Nepal vs Canada and Match 134 - USA vs UAE - October 11th",
-          "Nepal to take on Canada in League 2 cricket",
-          "Nepal’s Last Chance in the World Cup League 2 Campaign"
+          "안지현 버디 11개 폭풍 추격에도 … 유현조, 1점 차 극적 승부로 통산 4승",
+          "유현조, 여자골프 HJ중공업·동부건설 챔피언십 우승…시즌 2승",
+          "'시즌 2승' 유현조 \"데뷔 첫 다승 기뻐…LPGA Q스쿨 도전할 것\"(종합)"
         ],
-        "topic": "네팔 vs 캐나다 크리켓 월드컵 리그2 경기, 네팔의 마지막 기회라는 이유",
-        "why_now": "'Nepal’s Last Chance in the World Cup League 2 Campaign', 'Nepal to take on Canada in League 2 cricket' 등 경기 예고 기사",
-        "angle": "크리켓을 모르는 사람을 위한 '이 경기가 왜 마지막 기회냐면' 30초 정리 + 낯선 스포츠 입문 드립",
-        "target": "스포츠 호기심층, 크리켓·남아시아 관심층",
-        "fun_score": 4,
-        "risk": "low",
-        "risk_note": "국내 관심이 낮고 뉴스 제목 외 정보가 부족해 사실 확인이 필요함"
-      },
-      {
-        "rank": 3,
-        "keyword": "김호영",
-        "traffic": "200+",
-        "traffic_num": 200,
-        "news": [
-          "김호영, 유튜브 출연 미성년 향한 악플에 영상 삭제…“법적 대응 진행”",
-          "김호영, 사과하는 법 알고 있네..3개월째 '옥장판 침묵'과 극과 극 [Oh!쎈 이슈] - 조선비즈",
-          "김호영 \"학생, 부모님들께 진심으로 죄송\"..부적절 댓글에 법적 대응 경고 [전문]"
-        ],
-        "topic": "김호영, 유튜브 출연 미성년자를 향한 악플에 영상 삭제 후 법적 대응 경고",
-        "why_now": "'유튜브 출연 미성년 향한 악플에 영상 삭제…법적 대응 진행', '학생, 부모님들께 진심으로 죄송' 입장문 보도",
-        "angle": "'영상이 왜 사라졌나' 타임라인 정리 + 악플이 미성년자에게 어떤 영향을 주는지 짚는 공감형 구성. 인물 조롱 없이 상황만 정리",
-        "target": "예능·연예 뉴스 소비층, 20~40대",
-        "fun_score": 4,
-        "risk": "high",
-        "risk_note": "실존 인물의 논란과 미성년자 관련 이슈여서 조롱·추측은 금지. 3개월째 침묵 등 다른 논란은 제목 외 사실 확인 없이 다루지 말 것"
-      },
-      {
-        "rank": 4,
-        "keyword": "안양 정관장 대 창원 lg",
-        "traffic": "200+",
-        "traffic_num": 200,
-        "news": [
-          "[포토] 박지훈, 양준석 가볍게 처리 - 머니투데이",
-          "[포토] 아반도-양홍석 '리바운드 쟁탈전' - 머니투데이",
-          "‘3점슛 성공률 12%’ 유도훈 감독 “찬스에서 머뭇거려…더 자신감 가져야”"
-        ],
-        "topic": "정관장 vs LG 경기에서 3점슛 성공률 12%에 그친 유도훈 감독의 '찬스에서 머뭇거렸다' 발언",
-        "why_now": "'3점슛 성공률 12%' 유도훈 감독 \"찬스에서 머뭇거려…더 자신감 가져야\" 기사",
-        "angle": "숫자로 보는 충격: 12%가 얼마나 낮은지 비교 + '오픈 찬스에서 슛을 망설이는 순간' 과장 상황극",
-        "target": "KBL 팬, 농구 팬",
-        "fun_score": 5,
-        "risk": "low",
-        "risk_note": "어느 팀의 기록인지 제목만으로 불분명하므로 확인 후 표기"
-      },
-      {
-        "rank": 5,
-        "keyword": "k리그2",
-        "traffic": "200+",
-        "traffic_num": 200,
-        "news": [
-          "'드디어 끝났다'…천안시티FC 경남에 신승, 무승행진 14경기서 종지부",
-          "K리그2 천안, 경남 1-0 제압…14경기·5개월 만에 승리",
-          "'경남은 걸을수록 축구를 잘한다?' 배성재 감독의 열띤 축구 강의 [케터뷰]"
-        ],
-        "topic": "천안시티FC, 14경기 5개월 만에 드디어 승리 (경남에 1-0)",
-        "why_now": "'드디어 끝났다…천안, 무승행진 14경기서 종지부' 보도",
-        "angle": "'5개월 만의 승리' 감동 서사 + 14경기 동안의 기다림을 달력·숫자로 환산하는 코믹 구성. 선수들 환호 반응 소개",
-        "target": "K리그 팬, 언더독 서사 좋아하는 20~30대",
+        "topic": "유현조 시즌 2승, 안지현 버디 11개 추격을 1점 차로 뿌리친 역전 승부",
+        "why_now": "'안지현 버디 11개 폭풍 추격에도 … 유현조, 1점 차 극적 승부로 통산 4승', 'HJ중공업·동부건설 챔피언십 우승…시즌 2승', 'LPGA Q스쿨 도전할 것'",
+        "angle": "숫자로 보는 승부: 버디 11개를 몰아쳤는데도 1점 차로 졌다는 반전 포인트와 데뷔 첫 다승, LPGA Q스쿨 도전 선언까지 30초 정리",
+        "target": "골프 팬, 20~40대 스포츠 뉴스 소비자",
         "fun_score": 7,
         "risk": "low",
         "risk_note": ""
       },
       {
+        "rank": 3,
+        "keyword": "리버풀 맨시티",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "이사크·각포 맨시티전 결장 확정…홀란 막을 리버풀의 선택은?",
+          "2018년엔 병·벽돌·플레어 날아왔다… 스캔들 후 첫 경기가 하필 리버풀 안필드, 맨시티 버스 공격 우려에 英 경찰 비상",
+          "리버풀 대 맨체스터 시티: 만만치 않은 안필드 구장이 맨체스터 시티를 기다리고 있다."
+        ],
+        "topic": "이사크·각포 결장 확정, 홀란 막을 리버풀의 선택과 스캔들 후 첫 안필드 원정",
+        "why_now": "'이사크·각포 맨시티전 결장 확정…홀란 막을 리버풀의 선택은?', '스캔들 후 첫 경기가 하필 리버풀 안필드, 맨시티 버스 공격 우려에 英 경찰 비상'",
+        "angle": "'이 경기가 왜 난리냐면' 형식. 결장 소식, 2018년 버스에 병·벽돌·플레어가 날아온 과거, 경찰 비상 상황을 묶어 긴장감 있게 정리하고 라인업 예측 드립을 얹음",
+        "target": "EPL 팬, 축구 커뮤니티 이용자",
+        "fun_score": 8,
+        "risk": "medium",
+        "risk_note": "맨시티 '스캔들'의 구체 내용은 제목에 없으므로 언급하지 않을 것. 버스 공격 우려는 과거 사례와 경찰 대응 중심으로만 다루고 팬 폭력을 미화하거나 조롱하지 않기"
+      },
+      {
+        "rank": 4,
+        "keyword": "주주",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "\"1조달러 보상해달라\" 머스크 제안에…주주들 열광한 이유",
+          "자사주매입 5배 늘었지만 삼닉 빼면 13%↓",
+          "주가 방패 아닌 외국인 엑싯 유도였나…삼전·하닉 '55조 자사주' 매입 역설"
+        ],
+        "topic": "머스크 1조 달러 보상안에 주주들이 열광한 이유 vs 삼전·하닉 55조 자사주 매입의 역설",
+        "why_now": "'\"1조달러 보상해달라\" 머스크 제안에…주주들 열광한 이유', '주가 방패 아닌 외국인 엑싯 유도였나…삼전·하닉 55조 자사주 매입 역설', '자사주매입 5배 늘었지만 삼닉 빼면 13%↓'",
+        "angle": "숫자로 보는 충격 비교: 1조 달러가 얼마인지, 55조 자사주 매입이 어떤 논란인지, 삼닉을 빼면 13% 감소라는 반전 포인트를 상황극으로 풀기",
+        "target": "개미 투자자, 재테크·주식에 관심 있는 20~40대",
+        "fun_score": 7,
+        "risk": "medium",
+        "risk_note": "투자 권유로 보이지 않게 하고 제목에 없는 수치나 전망을 만들어내지 않기. '외국인 엑싯 유도' 표현은 기사 시각임을 밝히고 단정하지 않기"
+      },
+      {
+        "rank": 5,
+        "keyword": "김승수",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "미운 우리 새끼 : [선공개] “여기에 오면 어떻게 해?” 김승수, 훈훈한 비주얼 뽐내는 송종호에 긴장",
+          "김승수·송종호, 母와 '합숙 맞선' 나섰다…서장훈, 맞선녀 미모에 “정말 감사합니다” - 조선비즈",
+          "'미우새' 맞선녀 박혜연·민지수 등장…김승수·송종호 관심↑"
+        ],
+        "topic": "미우새 김승수·송종호, 어머니들과 합숙 맞선에 나서다",
+        "why_now": "'김승수·송종호, 母와 합숙 맞선 나섰다…서장훈, 맞선녀 미모에 \"정말 감사합니다\"', '맞선녀 박혜연·민지수 등장…김승수·송종호 관심↑'",
+        "angle": "예능 하이라이트 + 드립: 어머니 앞에서 맞선 보는 상황극과 서장훈의 반응을 짧게 정리하고 '엄마랑 맞선 가면 벌어지는 일' 공감 포인트로 연결",
+        "target": "예능 시청층, 30~50대",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": "출연자 외모나 연애사를 조롱하지 않고 방송 장면 중심으로만 다룰 것. 방송사 영상 사용 시 저작권 유의"
+      },
+      {
         "rank": 6,
-        "keyword": "지폐",
+        "keyword": "persib bandung vs dewa united",
         "traffic": "200+",
         "traffic_num": 200,
         "news": [
-          "컬러 프린터로 5만원권 위조지폐 20장 제작한 20대…항소심도 실형",
-          "휴대폰으로 찍고 A4 용지에 뽑았다…어르신들 일하는 편의점서 사용한 20대 결국",
-          "집에서 5만원권 위조해 편의점서 사용…20대 항소심도 징역 2년"
+          "Link Live Streaming Persib vs Dewa United: Igor Tolic Waspadai Taktik Fleksibel Dewa United, Tayang di TV",
+          "Gol Balsa Sekulic dan Marc Klok bikin \"come back\" Persib",
+          "Berburu Kartu Koleksi Persib di Stadion Si Jalak Harupat, Ungkapan Kegembiraan Bobotoh Jelang Laga"
         ],
-        "topic": "컬러 프린터로 5만원권 20장을 위조해 편의점에서 쓴 20대, 항소심도 징역 2년",
-        "why_now": "'5만원권 위조지폐 20장 제작한 20대…항소심도 실형' 기사 다수",
-        "angle": "'휴대폰으로 찍고 A4에 뽑았다'는 황당한 수법과 결과를 짧게 정리하며 '이 계산이 안 맞는 이유' 숫자 비교. 범죄 미화나 수법 상세 설명은 피하고 처벌 결과 중심",
-        "target": "사건·사고 이슈 소비층, 자영업·편의점 종사자",
-        "fun_score": 5,
-        "risk": "high",
-        "risk_note": "범죄 사건이므로 제작 방법을 자세히 설명하면 안 되고, 어르신 근무 편의점 피해 언급은 조롱 없이 다룰 것"
+        "topic": "페르십 반둥 vs 데와 유나이티드, 발사 세쿨리치·마르크 클록 골로 만든 역전",
+        "why_now": "'Gol Balsa Sekulic dan Marc Klok bikin \"come back\" Persib', 'Igor Tolic Waspadai Taktik Fleksibel Dewa United'",
+        "angle": "인도네시아 리그를 처음 보는 사람을 위한 '역전극 30초 요약'. 홈 팬 열기와 응원 문화를 곁들인 해외 리그 입문 영상",
+        "target": "해외 축구 팬, 동남아 리그 관심층, 인도네시아 교민",
+        "fun_score": 4,
+        "risk": "low",
+        "risk_note": ""
       },
       {
         "rank": 7,
-        "keyword": "씨름",
+        "keyword": "정친원",
         "traffic": "200+",
         "traffic_num": 200,
         "news": [
-          "씨름선수 딸 이현지, 19세에 유도 세계 제패…\"내 능력 믿었다\"",
-          "유도 AG '銀' 8일 만에 생애 첫 세계선수권 '金'…제주출신 이현지 '쾌거'",
-          "이현지, 유도 세계선수권 여자 최중량급 우승"
+          "정친원, 메르텐스 잡고 차이나오픈 결승행",
+          "정친원, 차이나 오픈 8강전서 스비톨리나와 맞대결",
+          "정친원, 차이나오픈 8강…승패보다 깊게 보는 테니스"
         ],
-        "topic": "씨름선수 딸 이현지, 19세에 유도 세계선수권 여자 최중량급 우승",
-        "why_now": "'씨름선수 딸 이현지, 19세에 유도 세계 제패', 'AG 銀 8일 만에 생애 첫 세계선수권 金' 기사",
-        "angle": "'씨름 집안 DNA' 반전 서사: 아버지는 씨름, 딸은 유도 세계 1위. 8일 만에 은메달에서 금메달까지의 타임라인으로 '이게 가능해?' 구성",
-        "target": "스포츠 팬, 가족 서사 좋아하는 전 연령",
-        "fun_score": 8,
+        "topic": "정친원, 메르텐스 꺾고 차이나오픈 결승행",
+        "why_now": "'정친원, 메르텐스 잡고 차이나오픈 결승행', '차이나 오픈 8강전서 스비톨리나와 맞대결'",
+        "angle": "8강 스비톨리나전부터 결승까지 이어진 흐름을 한 번에 정리하는 '이 선수가 왜 결승까지 갔냐면' 영상. 테니스를 모르는 사람도 보게 만드는 반전 중심 구성",
+        "target": "테니스 팬, 스포츠 뉴스 소비자",
+        "fun_score": 6,
         "risk": "low",
-        "risk_note": "제주 출신, 19세 등 기사에 나온 정보만 사용"
+        "risk_note": "뉴스 제목에 없는 전적이나 기록은 넣지 말고 확인된 경기 결과만 사용"
       },
       {
         "rank": 8,
-        "keyword": "수원삼성",
-        "traffic": "100+",
-        "traffic_num": 100,
+        "keyword": "cuaca besok",
+        "traffic": "200+",
+        "traffic_num": 200,
         "news": [
-          "'1위 굳히기' 나서는 수원, 안산전 베스트11 공개...루이스-페신 투톱 가동+'전역' 김주찬 '대기'[현장 라인업]",
-          "이정효 수원 감독 \"김주찬, 생각보다 어려서 놀랐다...준홍이한테는 킥 자제하자고 농담했다\"",
-          "[if.preview] ‘4연승’ 이정효의 수원, 안산에 설욕하고 우승에 더 가까이 갈까?"
+          "Prakiraan Cuaca Besok 12 Oktober 2026 Wilayah Makassar dan Sekitarnya, Cek di Sini!",
+          "BMKG: Waspada Udara Panas dan Angin Kencang di Sejumlah Wilayah Sulsel",
+          "Suhu Kota Makassar Diprakirakan Capai 33,0°C"
         ],
-        "topic": "이정효 감독의 수원 4연승, 안산전 앞두고 1위 굳히기",
-        "why_now": "'1위 굳히기' 나서는 수원, 안산전 베스트11 공개, '4연승의 이정효의 수원' 프리뷰 기사",
-        "angle": "이정효 감독의 입담(김주찬 '생각보다 어려서 놀랐다', 킥 자제 농담)을 모은 어록 숏츠 + 루이스-페신 투톱 기대 포인트",
-        "target": "수원삼성·K리그 팬, 축구 커뮤니티",
-        "fun_score": 7,
+        "topic": "내일(10월 12일) 인도네시아 마카사르 날씨, 33도 더위와 강풍 주의보",
+        "why_now": "'Prakiraan Cuaca Besok 12 Oktober 2026 Wilayah Makassar', 'BMKG: Waspada Udara Panas dan Angin Kencang', 'Suhu Kota Makassar Diprakirakan Capai 33,0°C'",
+        "angle": "'10월 중순 33도' 같은 해외 날씨를 한국 가을과 비교하는 숫자 대조 쇼츠. 한국 시청자 확장성이 낮아 보조 소재로 적합",
+        "target": "인도네시아 교민·여행객, 동남아 날씨 관심층",
+        "fun_score": 2,
         "risk": "low",
-        "risk_note": "경기 결과는 아직 알 수 없으므로 프리뷰 형태로 제작"
+        "risk_note": ""
       }
     ],
     "trend_count": 10,
     "excluded": [
       {
-        "keyword": "호랑이",
-        "blocked_by": "사망"
+        "keyword": "한화 이글스",
+        "blocked_by": "추락"
       },
       {
-        "keyword": "윤호중",
-        "blocked_by": "검찰"
+        "keyword": "엑소 크리스",
+        "blocked_by": "사망"
       }
     ]
   },
   "selected_attempt": 2,
   "plan": {
-    "chosen_rank": 1,
-    "reason": "검색량 10000+로 가장 높고 재미 포인트도 충분함. 사용한 사실은 제목에 있는 내용뿐: 손흥민이 상대 퇴장을 끌어냄, 밴쿠버가 10명으로 뜀, 한 골이나 마찬가지였던 완벽한 슈팅이 슈퍼세이브에 막힘, 전반 LAFC 0-1 뒤진 채 종료, 최종 1-1 무승부. 득점 흐름은 LAFC가 0-1로 뒤지다 1-1이 된 것까지만 쓰고, 누가 먼저 넣었는지와 동점골 득점자는 제목에 없어 뺐음. QA 반영으로 7호골 표현을 '한 골이나 마찬가지였던 완벽한 슈팅'으로 바꾸고 골키퍼는 '상대 골키퍼'로만 표기, 6번 장면은 '안 이기면 이상한'으로 수정하고 '명예 회복' 문구는 삭제함. 이미지 프롬프트는 FLUX가 부정 표현을 오히려 그리므로 'no logos' 대신 '무지 유니폼, 빈 스코어보드, 매끈한 표면' 같은 긍정형으로 같은 효과를 냄. 계산이나 숫자 가공 없음.",
-    "title": "10명인데 못 이긴 팀? 손흥민 검색량 터진 이유",
-    "hook": "상대가 10명인데 못 이긴 팀이 있다?",
-    "bgm_mood": "funny",
-    "style": "vibrant 3D cartoon, soft lighting, high detail, bright stadium colors, expressive characters, plain solid-color jerseys with smooth blank surfaces, plain blank scoreboard",
+    "chosen_rank": 2,
+    "reason": "검색량은 1위(파키스탄 vs 스리랑카)와 2위(유현조)가 모두 1000+로 같다. 그중 재미 점수가 7로 더 높고 한국 시청자에게 친숙한 유현조를 골랐다. '버디 11개를 몰아쳤는데 1점 차로 우승을 놓쳤다'는 반전이 분명하고, LPGA Q스쿨 도전 선언까지 있어 댓글 소재도 된다. 계산은 없고, 숫자는 11개, 1점 차, 시즌 2승, 통산 4승만 제목 그대로 썼다.",
+    "title": "버디 11개 쳤는데 1점 차로 졌다고?",
+    "hook": "버디를 열한 개나 쳤는데 우승을 못 했다고요?",
+    "bgm_mood": "hype",
+    "style": "vibrant 3D cartoon, soft lighting, bright golf course colors, high detail, vertical composition",
     "scenes": [
       {
         "id": 1,
-        "narration": "상대가 10명인데 못 이긴 팀이 있다? 지금 손흥민 검색량 터진 이유입니다.",
-        "on_screen_text": "10명인데 무승부?",
-        "image_prompt": "an orange tabby cat soccer player in a plain solid black-and-gold jersey with a smooth blank chest, standing on a green pitch with a stunned open-mouth face, a plain blank scoreboard in the background, bright stadium, vibrant 3D cartoon, soft lighting, high detail, bright stadium colors, expressive characters"
+        "narration": "버디를 열한 개나 쳤는데 우승을 못 했다고요?",
+        "on_screen_text": "버디 11개?!",
+        "image_prompt": "consistent cute 3D cartoon animal characters, clean polished render, vertical 9:16 composition. A surprised orange fox golfer with big round eyes and open mouth, wearing a yellow polo shirt, standing on a bright green golf course, with a neat row of eleven small shiny golden birds perched evenly spaced on a rope above its head, blue sky"
       },
       {
         "id": 2,
-        "narration": "LAFC 경기에서 손흥민이 상대 퇴장을 끌어냈어요. 밴쿠버는 졸지에 10명이 됐죠.",
-        "on_screen_text": "퇴장 유도!",
-        "image_prompt": "a cute dog referee holding up a big red card toward a surprised white-jerseyed fox soccer player in a plain solid white jersey with a smooth blank chest, green pitch, vibrant 3D cartoon, soft lighting, high detail, bright stadium colors, expressive characters"
+        "narration": "이게 오늘 골프판 난리 난 이유예요. 안지현 선수가 마지막에 버디를 11개나 몰아치면서 폭풍처럼 따라붙었거든요.",
+        "on_screen_text": "폭풍 추격",
+        "image_prompt": "consistent cute 3D cartoon animal characters, clean polished render, vertical 9:16 composition. A determined white rabbit golfer with long pink-lined ears and a blue visor cap, mid-swing with a golf club, swirling green wind streaks around it, a few small golden birds flying behind, green golf course fairway background"
       },
       {
         "id": 3,
-        "narration": "근데 전반에 한 골이나 마찬가지였던 완벽한 슈팅이 나왔어요. 다들 골인 줄 알았을 겁니다.",
-        "on_screen_text": "이건 골이지",
-        "image_prompt": "an orange tabby cat soccer player in a plain solid black-and-gold jersey kicking a glowing soccer ball with a bright motion trail toward the goal, dramatic angle, stadium lights, vibrant 3D cartoon, soft lighting, high detail, bright stadium colors, expressive characters"
+        "narration": "근데 유현조 선수가 안 넘어갔어요. 딱 1점 차로 끝까지 버텼습니다.",
+        "on_screen_text": "딱 1점 차",
+        "image_prompt": "consistent cute 3D cartoon animal characters, clean polished render, vertical 9:16 composition. A calm brown bear golfer in a red cap standing in the foreground with a golf club, a small white rabbit golfer in a blue visor cap close behind it, a single red flag on a pole between them, tight close finish on a sunny green"
       },
       {
         "id": 4,
-        "narration": "그런데 상대 골키퍼가 슈퍼세이브로 쳐냈어요. 이 분은 오늘 퇴근 안 합니다.",
-        "on_screen_text": "여기서 반전",
-        "image_prompt": "a raccoon goalkeeper in a plain solid white jersey diving in mid-air in a superhero pose, one paw stopping a glowing soccer ball just before the goal line, dramatic lighting, vibrant 3D cartoon, soft lighting, high detail, bright stadium colors, expressive characters"
+        "narration": "숨 막히는 승부 끝에 우승컵은 유현조 선수 품으로. 이걸로 시즌 2승, 통산 4승입니다.",
+        "on_screen_text": "시즌 2승",
+        "image_prompt": "consistent cute 3D cartoon animal characters, clean polished render, vertical 9:16 composition. A joyful brown bear in a red cap hugging a large shiny golden trophy against its chest, colorful paper confetti in pink, blue and yellow flying through the air all around, bright green golf course and blue sky behind"
       },
       {
         "id": 5,
-        "narration": "결국 전반은 LAFC가 0 대 1로 뒤진 채 끝났고, 후반에 1 대 1 동점을 만들었습니다.",
-        "on_screen_text": "0-1에서 1-1",
-        "image_prompt": "an orange tabby cat soccer player in a plain solid black-and-gold jersey with raised paws celebrating, a soccer ball resting in the goal net behind, a plain blank scoreboard above the stands, vibrant 3D cartoon, soft lighting, high detail, bright stadium colors, expressive characters"
+        "narration": "데뷔 첫 다승이라 기쁘다면서, 바로 LPGA Q스쿨에 도전하겠대요. 우승하고 나서 다음 판을 벌린 거죠.",
+        "on_screen_text": "다음은 미국",
+        "image_prompt": "consistent cute 3D cartoon animal characters, clean polished render, vertical 9:16 composition. A happy brown bear in a red cap standing at a bright airport boarding gate beside a red golf bag, large window behind it showing a white airplane on the runway under a sunny blue sky"
       },
       {
         "id": 6,
-        "narration": "근데 10명 상대로 안 이기면 이상한 판이었잖아요. 그게 무승부라니, 이게 되네요.",
-        "on_screen_text": "이게 왜 안 돼",
-        "image_prompt": "an orange tabby cat soccer player in a plain solid black-and-gold jersey holding its head with both paws in disbelief, a floating soccer ball with a question mark above it, green pitch, vibrant 3D cartoon, soft lighting, high detail, bright stadium colors, expressive characters"
-      },
-      {
-        "id": 7,
-        "narration": "10명 상대로 1 대 1, 아쉬운 무승부냐 당연한 결과냐? 댓글로 붙어봅시다.",
-        "on_screen_text": "아쉽다 vs 당연",
-        "image_prompt": "an orange tabby cat in a plain solid black-and-gold jersey facing a white-jerseyed fox in a plain solid white jersey, angry sparks between them, green pitch and stadium background, vibrant 3D cartoon, soft lighting, high detail, bright stadium colors, expressive characters"
+        "narration": "버디 11개로도 못 넘은 1점 차. 이거 누가 더 억울할까요? 댓글로 싸워보세요.",
+        "on_screen_text": "1점이 뭐길래",
+        "image_prompt": "consistent cute 3D cartoon animal characters, clean polished render, vertical 9:16 split composition with a clear vertical divide. Left half: a brown bear in a red cap cheering with arms raised and a golden trophy at its feet. Right half: a white rabbit in a blue visor cap with drooping ears and a sulking face, leaning on a golf club. Green golf course background on both sides"
       }
     ],
-    "description": "손흥민이 상대 퇴장을 끌어냈지만 LAFC는 10명이 뛴 밴쿠버와 1-1로 비겼다. 0-1에서 1-1까지, 슈퍼세이브에 막힌 장면까지 30초 정리! #손흥민 #LAFC #축구쇼츠",
+    "description": "버디 11개를 몰아치고도 1점 차로 못 넘은 승부. 유현조 시즌 2승, 통산 4승 그리고 LPGA Q스쿨 도전 선언까지 30초 정리!\n데뷔 첫 다승을 만든 극적인 1점 차 승부를 확인하세요.\n#유현조 #여자골프 #KLPGA",
     "tags": [
-      "손흥민",
-      "LAFC",
-      "밴쿠버",
-      "MLS",
-      "축구",
-      "슈퍼세이브",
-      "퇴장",
-      "무승부",
-      "쇼츠"
+      "유현조",
+      "안지현",
+      "KLPGA",
+      "여자골프",
+      "시즌2승",
+      "LPGA Q스쿨",
+      "골프 쇼츠",
+      "HJ중공업 동부건설 챔피언십"
     ],
-    "comment_question": "10명 상대로 1-1, 아쉬운 무승부일까 당연한 결과일까? 여러분의 생각은?"
+    "comment_question": "버디 11개 몰아친 사람과 1점 차로 끝까지 버틴 사람, 누가 더 대단해요? 댓글로 편 갈라봅시다!"
   },
   "production": {
     "image_providers": {
-      "cloudflare": 7
+      "pollinations": 6
     }
   },
   "effects": {
-    "duration": 48.31,
+    "duration": 41.65,
     "tts_provider": "edge",
     "voice": "ko-KR-SunHiNeural",
-    "bgm": "Daily Beetle",
-    "bgm_mood": "funny",
-    "bgm_credit": "Music: \"Daily Beetle\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+    "bgm": "Movement Proposition",
+    "bgm_mood": "hype",
+    "bgm_credit": "Music: \"Movement Proposition\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
   },
   "storyboard": [
     {
       "id": 1,
-      "narration": "상대가 10명인데 못 이긴 팀이 있다? 지금 손흥민 검색량 터진 이유입니다.",
-      "on_screen_text": "10명인데 무승부?",
+      "narration": "버디를 열한 개나 쳤는데 우승을 못 했다고요?",
+      "on_screen_text": "버디 11개?!",
       "image": "runs/2026-10-11/scene_01.jpg",
-      "provider": "cloudflare"
+      "provider": "pollinations"
     },
     {
       "id": 2,
-      "narration": "LAFC 경기에서 손흥민이 상대 퇴장을 끌어냈어요. 밴쿠버는 졸지에 10명이 됐죠.",
-      "on_screen_text": "퇴장 유도!",
+      "narration": "이게 오늘 골프판 난리 난 이유예요. 안지현 선수가 마지막에 버디를 11개나 몰아치면서 폭풍처럼 따라붙었거든요.",
+      "on_screen_text": "폭풍 추격",
       "image": "runs/2026-10-11/scene_02.jpg",
-      "provider": "cloudflare"
+      "provider": "pollinations"
     },
     {
       "id": 3,
-      "narration": "근데 전반에 한 골이나 마찬가지였던 완벽한 슈팅이 나왔어요. 다들 골인 줄 알았을 겁니다.",
-      "on_screen_text": "이건 골이지",
+      "narration": "근데 유현조 선수가 안 넘어갔어요. 딱 1점 차로 끝까지 버텼습니다.",
+      "on_screen_text": "딱 1점 차",
       "image": "runs/2026-10-11/scene_03.jpg",
-      "provider": "cloudflare"
+      "provider": "pollinations"
     },
     {
       "id": 4,
-      "narration": "그런데 상대 골키퍼가 슈퍼세이브로 쳐냈어요. 이 분은 오늘 퇴근 안 합니다.",
-      "on_screen_text": "여기서 반전",
+      "narration": "숨 막히는 승부 끝에 우승컵은 유현조 선수 품으로. 이걸로 시즌 2승, 통산 4승입니다.",
+      "on_screen_text": "시즌 2승",
       "image": "runs/2026-10-11/scene_04.jpg",
-      "provider": "cloudflare"
+      "provider": "pollinations"
     },
     {
       "id": 5,
-      "narration": "결국 전반은 LAFC가 0 대 1로 뒤진 채 끝났고, 후반에 1 대 1 동점을 만들었습니다.",
-      "on_screen_text": "0-1에서 1-1",
+      "narration": "데뷔 첫 다승이라 기쁘다면서, 바로 LPGA Q스쿨에 도전하겠대요. 우승하고 나서 다음 판을 벌린 거죠.",
+      "on_screen_text": "다음은 미국",
       "image": "runs/2026-10-11/scene_05.jpg",
-      "provider": "cloudflare"
+      "provider": "pollinations"
     },
     {
       "id": 6,
-      "narration": "근데 10명 상대로 안 이기면 이상한 판이었잖아요. 그게 무승부라니, 이게 되네요.",
-      "on_screen_text": "이게 왜 안 돼",
+      "narration": "버디 11개로도 못 넘은 1점 차. 이거 누가 더 억울할까요? 댓글로 싸워보세요.",
+      "on_screen_text": "1점이 뭐길래",
       "image": "runs/2026-10-11/scene_06.jpg",
-      "provider": "cloudflare"
-    },
-    {
-      "id": 7,
-      "narration": "10명 상대로 1 대 1, 아쉬운 무승부냐 당연한 결과냐? 댓글로 붙어봅시다.",
-      "on_screen_text": "아쉽다 vs 당연",
-      "image": "runs/2026-10-11/scene_07.jpg",
-      "provider": "cloudflare"
+      "provider": "pollinations"
     }
   ],
   "thumbnail": "runs/2026-10-11/thumbnail.jpg",
@@ -476,5 +460,5 @@
     "status": "skipped",
     "reason": "QA 불합격"
   },
-  "finished_at": "2026-10-11T15:38:26+09:00"
+  "finished_at": "2026-10-11T23:45:15+09:00"
 }
