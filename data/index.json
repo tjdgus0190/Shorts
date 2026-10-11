@@ -1,14 +1,14 @@
 [
   {
     "date": "2026-10-11",
-    "status": "qa_failed",
-    "title": "김밥을 스시라고 부르면 안 되는 3가지 이유",
-    "overall": 66,
-    "qa_attempts": 3,
+    "status": "success",
+    "title": "손흥민이 퇴장까지 끌어냈는데 왜 못 이겼냐면",
+    "overall": 74,
+    "qa_attempts": 2,
     "thumbnail": "runs/2026-10-11/thumbnail.jpg",
     "youtube_url": null,
     "upload_status": "skipped",
-    "duration": 47.51
+    "duration": 42.84
   },
   {
     "date": "2026-10-10",

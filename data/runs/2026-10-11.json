@@ -1,379 +1,362 @@
 {
   "date": "2026-10-11",
-  "status": "qa_failed",
-  "started_at": "2026-10-11T14:58:29+09:00",
+  "status": "success",
+  "started_at": "2026-10-11T15:16:57+09:00",
   "llm_provider": "claude_cli",
   "stages": [
     {
       "name": "marketer",
       "label": "마케터",
       "status": "done",
-      "started_at": "2026-10-11T14:58:29+09:00",
+      "started_at": "2026-10-11T15:16:57+09:00",
       "note": "",
-      "seconds": 21.8
+      "seconds": 45.6
     },
     {
       "name": "planner",
       "label": "기획자",
       "status": "done",
-      "started_at": "2026-10-11T14:58:51+09:00",
+      "started_at": "2026-10-11T15:17:43+09:00",
       "note": "",
-      "seconds": 19.5
+      "seconds": 17.6
     },
     {
       "name": "producer",
       "label": "제작자",
       "status": "done",
-      "started_at": "2026-10-11T14:59:10+09:00",
+      "started_at": "2026-10-11T15:18:00+09:00",
       "note": "",
-      "seconds": 27.8
+      "seconds": 38.2
     },
     {
       "name": "effector",
       "label": "이펙터",
       "status": "done",
-      "started_at": "2026-10-11T14:59:38+09:00",
+      "started_at": "2026-10-11T15:18:38+09:00",
       "note": "",
-      "seconds": 39.6
+      "seconds": 35.4
     },
     {
       "name": "qa",
       "label": "QA",
       "status": "done",
-      "started_at": "2026-10-11T15:00:18+09:00",
+      "started_at": "2026-10-11T15:19:14+09:00",
       "note": "1차",
-      "seconds": 23.9
-    },
-    {
-      "name": "producer",
-      "label": "제작자",
-      "status": "done",
-      "started_at": "2026-10-11T15:00:42+09:00",
-      "note": "QA 1차 피드백 반영",
-      "seconds": 35.2
+      "seconds": 22.0
     },
     {
       "name": "effector",
       "label": "이펙터",
       "status": "done",
-      "started_at": "2026-10-11T15:01:17+09:00",
+      "started_at": "2026-10-11T15:19:36+09:00",
       "note": "QA 1차 피드백 반영",
-      "seconds": 37.0
+      "seconds": 38.6
     },
     {
       "name": "qa",
       "label": "QA",
       "status": "done",
-      "started_at": "2026-10-11T15:01:54+09:00",
+      "started_at": "2026-10-11T15:20:14+09:00",
       "note": "2차",
-      "seconds": 30.4
-    },
-    {
-      "name": "producer",
-      "label": "제작자",
-      "status": "done",
-      "started_at": "2026-10-11T15:02:24+09:00",
-      "note": "QA 2차 피드백 반영",
-      "seconds": 39.3
-    },
-    {
-      "name": "effector",
-      "label": "이펙터",
-      "status": "done",
-      "started_at": "2026-10-11T15:03:03+09:00",
-      "note": "QA 2차 피드백 반영",
-      "seconds": 35.8
-    },
-    {
-      "name": "qa",
-      "label": "QA",
-      "status": "done",
-      "started_at": "2026-10-11T15:03:39+09:00",
-      "note": "3차",
-      "seconds": 24.3
+      "seconds": 17.9
     }
   ],
   "qa": [
     {
       "attempt": 1,
       "scores": {
-        "fun": 60,
-        "hook": 70,
+        "fun": 68,
+        "hook": 68,
         "clarity": 75,
-        "visual": 55,
-        "subtitle": 72,
+        "visual": 72,
+        "subtitle": 50,
         "safety": 85
       },
-      "overall": 68,
+      "overall": 69,
       "pass": false,
       "issues": [
-        "장면 1 프레임: 왼쪽 캐릭터는 스시, 오른쪽은 겉이 밥인 롤인데 김(검은 면)이 거의 안 보이고 안쪽에 파인애플 같은 그림이 있어 김밥으로 읽히지 않습니다. '김밥 vs 스시' 대결 구도가 모호합니다.",
-        "장면 3 프레임: 병 라벨 글자가 깨져 있습니다('STAN VAL' 같은 의미 없는 영문). 왼쪽 병은 식초보다 간장·갈색 액체에 가깝고, 오른쪽에서는 젓가락과 기름이 밥에 떨어지는 구도가 어색합니다. 스시 밥과 김밥 밥이 한눈에 구분되지 않습니다.",
-        "장면 4 프레임: 단면 김밥에 김이 없고 밥이 겉을 감싸고 있습니다. 나레이션의 단무지가 보이지 않고, 햄이 많이 보이며 주인공 재료는 달걀프라이입니다. 나레이션과 이미지가 어긋납니다.",
-        "장면 6 프레임: 도시락 안에 핫도그나 소시지 같은 막대와 호박 모양이 섞여 있어 '다양한 김밥'으로 보이지 않습니다. 김밥보다 캘리포니아롤 느낌이 강합니다.",
-        "영상 길이는 47.5초인데 description에는 '30초 만에 정리'라고 적혀 있어 서로 맞지 않습니다. 쇼츠로는 길고 중간에 이탈할 수 있습니다.",
-        "'김밥은 소풍 도시락에서 태어난 완전히 다른 한국 음식'이라는 기원 단정은 확인 필요입니다. 일본 노리마키와의 역사적 연관 논쟁이 있어 단정하면 댓글 반박이 생길 수 있습니다.",
-        "제목은 '3가지 이유'인데 장면 2의 '정답은 김밥'은 이유가 아닌 정의여서 구조가 약간 어긋납니다. '고유명사' 설명도 논리적으로 약합니다.",
-        "자막이 화면 중앙 하단의 음식 위에 놓여 일부 재료를 가립니다. 상단 on_screen_text의 검은 박스는 이미지와 어울리지 않고 투박합니다. 나레이션 자막이 2~3단어씩 끊겨 가독성은 보통입니다.",
-        "훅은 질문형이라 무난하지만 '발끈'의 갈등이나 충격이 약하고, 첫 프레임의 캐릭터 이미지만으로는 호기심이 크지 않습니다."
+        "자막 줄 순서 오류: 마지막 장면(f3) 자막이 위 줄 '거야 아니면 LAFC가', 아래 줄 '이건 골키퍼가 미친'으로 뒤바뀌어 나옴. 대본은 '이건 골키퍼가 미친 거야, 아니면 LAFC가'라서 읽는 순서가 틀려 의미가 헷갈림.",
+        "자막 위치: 하단 자막이 캐릭터 몸통과 얼굴 아래쪽(f0 고양이 상체, f1 강아지 다리, f3 두 캐릭터 발과 몸)을 가림.",
+        "자막이 '상대가 10명인데 못' 처럼 문장 중간에서 끊겨 의미 단위로 읽히지 않음.",
+        "캐릭터 일관성 부족: 같은 'LAFC 강아지'가 장면 3에서는 갈색 털, 장면 7에서는 주황색 털로 다름. 장면 1 고양이 유니폼은 파란색이라 LAFC 검정·금색과 맞지 않음.",
+        "장면 3(f1) 강아지가 경기장이 아니라 공원 벤치에 앉아 있어 기획서에 적은 경기장 맥락과 다소 어긋남.",
+        "영상 길이가 38.5초인데 description에는 '30초 썰'이라고 적혀 있어 맞지 않음.",
+        "사실 확인 필요: '7호골 될 뻔한 슈팅', '일본 골키퍼', 전반 0대1, 최종 1대1 등 경기 내용은 이 자료만으로 검증할 수 없음.",
+        "후킹 부족: 첫 3초가 질문 한 줄과 놀란 고양이뿐이라 스크롤을 멈출 만한 강한 포인트가 없음."
       ],
-      "retry_target": "producer",
-      "feedback": "이미지를 다시 생성하세요. (1) 장면 1: 검은 김으로 싼 김밥 단면(단무지·시금치·달걀·당근)과 생선 올린 니기리 스시를 명확히 대비시키고, 'seaweed-wrapped, rice inside'를 프롬프트에 넣으세요. (2) 장면 3: 라벨 없는 병이나 'no text, no labels'를 지정하고, 식초병과 참기름병을 색과 형태로 구분하세요. 젓가락은 빼세요. (3) 장면 4: 김이 바깥을 감싼 단면에 노란 단무지, 시금치, 달걀지단, 당근이 보이게 하고 햄은 줄이세요. 생선회는 작은 접시로만 두세요. (4) 장면 6: 소시지나 호박을 빼고 김밥만 도시락에 담으세요. 이미지 프롬프트에는 'no text, no letters'를 일괄 추가하세요. 기획 쪽에는 두 가지를 전달하세요. description의 '30초'는 실제 길이에 맞게 고치고, '소풍 도시락에서 태어났다'는 단정은 '소풍 도시락으로 사랑받는'처럼 완화해야 합니다. 자막은 음식이 덜 가리도록 하단으로 내리고 상단 박스는 반투명 처리를 권장합니다."
+      "retry_target": "effector",
+      "feedback": "1) 자막 줄바꿈과 순서 버그를 고치세요. 한 자막 덩어리의 줄을 항상 위에서 아래로 대본 순서대로 배치하세요. 마지막 장면은 '이건 골키퍼가 미친 거야,' 다음 줄에 '아니면 LAFC가 아쉬웠던 거야?' 순서가 되어야 합니다. 2) 자막은 의미 단위(어절/구)로 끊고, 조사나 어미 앞에서 끊지 마세요. 3) 자막 y 위치를 하단 안전영역(대략 화면 높이 78~85%)으로 내려서 캐릭터 얼굴과 몸통을 가리지 않게 하세요. 4) 가능하면 자막 단위와 음성 싱크를 다시 확인하세요. 개선 팁: 이미지 프롬프트에서 LAFC 강아지의 털색과 유니폼(검정·금색)을 고정해 장면 간 일관성을 높이세요. 첫 장면에는 '10명 vs 11명' 같은 숫자나 반전 문구를 더 강하게 넣으세요."
     },
     {
       "attempt": 2,
       "scores": {
-        "fun": 55,
-        "hook": 62,
-        "clarity": 78,
-        "visual": 55,
-        "subtitle": 68,
-        "safety": 80
+        "fun": 68,
+        "hook": 72,
+        "clarity": 74,
+        "visual": 80,
+        "subtitle": 78,
+        "safety": 85
       },
-      "overall": 64,
-      "pass": false,
+      "overall": 74,
+      "pass": true,
       "issues": [
-        "[visual] 장면 6(85% 프레임): 도시락 속 김밥이 연어 같은 주황 속재료가 보이는 겉밥(inside-out) 롤처럼 생겼습니다. 김(검은색) 겉면이 없어 김밥이 아니라 캘리포니아롤처럼 보입니다. 영상 마지막 메시지가 '김밥'인데 그림이 이를 뒷받침하지 못합니다. 옆의 녹색 원뿔 모양 물체와 왼쪽 가장자리의 둥근 물체도 정체불명입니다.",
-        "[visual] 장면 4(55% 프레임): 속재료가 단무지·시금치·계란·당근으로 읽히지 않습니다. 망고 같은 주황색 큐브와 정체불명의 흰색 소용돌이 덩어리가 보이고, 김 질감은 구겨진 종이처럼 보입니다. 나레이션에서 말하는 재료와 화면이 불일치합니다.",
-        "[visual] 장면 1(0.6초 프레임): 니기리의 연어 초밥 둘레에 김 띠가 아니라 두꺼운 김 원통이 감겨 있어 형태가 어색합니다. 김밥의 속은 노란 큐브(망고 느낌)가 많아 단무지 막대와 다릅니다. 가장 중요한 훅 프레임인데도 비교 대상의 정확성이 떨어집니다.",
-        "[visual] 장면 3(30% 프레임): 병 이미지는 깨끗하고 글자도 없어 양호합니다. 다만 식초(투명·연한 색)와 참기름(진한 색)의 대비가 약해서, 둘 다 호박색 액체로 보여 구분이 잘 안 됩니다.",
-        "[subtitle] 나레이션 자막이 화면 중앙 하단에 있어서 장면 4, 6에서 김밥 단면과 도시락의 핵심 부분을 가립니다. 자막이 한 번에 2~3어절씩만 나와서 호흡은 괜찮지만 위치 조정이 필요합니다.",
-        "[subtitle] 상단 장면 문구는 검은 박스에 흰 글씨라 가독성은 좋지만, 박스가 이미지 위 배경 영역에 떠 있고 나레이션 자막과 스타일이 달라 정돈된 느낌이 약합니다.",
-        "[safety/사실] '김밥은 소풍 도시락에서 태어난 완전히 다른 한국 음식'이라는 단정은 확인 필요입니다. 김밥의 기원은 일본 김초밥(후토마키)의 영향이라는 설과 한국 고유 음식이라는 설이 함께 있어 논란의 소지가 있습니다. 영어로도 '그냥 김밥(gimbap)'이라는 표현은 대체로 통용되지만, 해외에서는 'Korean sushi'로 소개되는 일도 많아서 '정답'이라는 단정은 과합니다.",
-        "[fun] 3가지 차이(밥 간·속재료·먹는 법)는 평범한 정보 나열이고 반전이 없습니다. '스시는 생선 위주'라는 설명도 일반화입니다. 마지막 질문이 댓글을 유도하지만 서사의 클라이맥스가 약합니다.",
-        "[hook] 첫 문장이 '왜 발끈할까요?'라는 질문인데 구체적인 갈등이나 놀라움이 없습니다. 시각적 비교는 좋지만 첫 3초의 긴장감이 약합니다.",
-        "[길이/메타] 영상 길이는 47.5초인데 설명란에는 '30초 만에 정리'라고 적혀 있어 불일치합니다. 장면 2가 장면 1의 질문을 곧바로 답하는 구조라 중복 느낌도 있습니다."
+        "description에 '30초 썰'이라고 썼는데 실제 영상 길이는 42.8초라 맞지 않음. 쇼츠 길이로는 다소 긴 편임.",
+        "씬 3~4의 흐름이 매끄럽지 않음. 전반 0대1로 뒤진 상황을 먼저 말하고, 이어서 7호골 직전 슈팅이 막혔다고 설명함. 이 슈팅이 전반 장면인지, 0대1 실점과 어떤 순서인지 불분명함.",
+        "확인 필요: '일본 골키퍼', '7호골 될 뻔한 슈팅', '전반 0대1 후 1대1 무승부', '밴쿠버 10명' 등 경기 사실관계는 실제 경기 기록과 대조해야 함.",
+        "확인 필요: 실존 선수 손흥민의 이름을 쓰고 일본 골키퍼를 언급하므로, 선수 실명을 어떤 톤으로 다루는지 점검할 것.",
+        "캐릭터 일관성이 부족함. LAFC를 나타내는 캐릭터가 씬 3에서는 갈색 강아지이고, 씬 7에서는 주황색 코기풍 강아지로 바뀜. 씬 1의 고양이는 파란 유니폼이라 LAFC 검정·금색과 다름.",
+        "자막 표기가 어색함. 하단 자막이 캐릭터 몸통이나 문 위에 겹치고, 상단 검은 박스(on_screen_text)와 하단 자막이 따로 놀아 화면이 다소 답답함. 씬 2~3 구간 자막도 조각나게 끊김.",
+        "씬 2~4는 재미 요소가 약하고 설명 위주임. 문 닫았다·선물 미개봉 드립 외에는 반전이 부족함."
       ],
-      "retry_target": "producer",
-      "feedback": "이미지 재생성이 필요합니다. 특히 장면 6, 4, 1을 다시 만드세요. (1) 장면 6: 도시락에는 겉이 검은 김으로 감싸인 전형적인 김밥 단면(단무지·시금치·계란·당근·햄)만 담고, 연어색 속재료나 겉밥 롤이 나오지 않게 'black nori on outside, no salmon, no inside-out roll, no green cones'를 프롬프트와 네거티브에 넣으세요. 도시락 바깥 소품(밤·떡 등)은 단순화하세요. (2) 장면 4: 김밥 단면 1~2개를 접시에 단순하게 놓고, 속재료는 '노란 단무지 막대, 초록 시금치, 노란 계란 지단, 주황 당근 막대'를 세로 막대 형태로 명시하세요. 망고 같은 큐브와 정체불명의 흰 소용돌이가 생기지 않도록 하고, 배경 접시의 생선은 작게 두세요. (3) 장면 1: 니기리는 김 띠가 아니라 밥 위에 연어 한 점만 올린 형태로 지정하고, 김밥은 속재료가 막대형으로 보이게 하세요. (4) 장면 3: 식초 병은 투명에 가까운 연한 색, 참기름 병은 진한 갈색으로 대비를 키우세요. 자막은 effector에게 넘기되, 화면 하단 3분의 1에 핵심 피사체가 오지 않도록 구도를 상단 중앙 위주로 잡으면 가림 문제를 줄일 수 있습니다. 참고로 planner 쪽에서는 '김밥은 소풍 도시락에서 태어났다'는 기원 단정을 완화하고(예: '한국에서 소풍 대표 음식으로 사랑받는'), 설명란의 '30초'를 실제 길이에 맞게 수정하면 좋습니다."
-    },
-    {
-      "attempt": 3,
-      "scores": {
-        "fun": 60,
-        "hook": 65,
-        "clarity": 80,
-        "visual": 58,
-        "subtitle": 65,
-        "safety": 80
-      },
-      "overall": 66,
-      "pass": false,
-      "issues": [
-        "장면 1(0.6초 프레임): 니기리에 김 띠가 둘러져 있음. 프롬프트의 negative(seaweed strip on nigiri)를 어겼고, 김밥과 스시의 대비가 흐려져 훅의 핵심 비교가 약해짐. 김밥 단면도 속재료가 뭉개져 있고 단무지 대신 당근·햄처럼 보임.",
-        "장면 4(55% 프레임): 접시 앞에 망고 큐브 모양의 노란 덩어리와 소스 방울이 있음. negative(mango cubes, sauce drizzle)를 어겼고, 나레이션의 '단무지'와 혼동됨. 배경에 작은 접시들이 여러 개 있어 요청한 구성과 다름.",
-        "장면 3(30% 프레임): 병 두 개 모두 라벨 없이 잘 나왔지만 오른쪽 병이 참기름보다 간장처럼 보임. 왼쪽 식초는 노란 액체로 투명하지 않음. 메시지는 대체로 전달됨.",
-        "장면 6(85% 프레임): 김밥 속재료가 삼각형 모양이거나 연어처럼 보이는 주황색 덩어리로 나옴. 지시한 '세로 막대 속재료'와 다르고, 소풍 도시락 상자 안에 담긴 모습도 부자연스러움. 주황 꽃은 가을 낙엽 소품과 어긋남.",
-        "자막 위치: 나레이션 자막이 화면 중앙~하단 요소(접시, 김밥, 도시락)를 직접 가림. 프롬프트는 하단 1/3을 비우도록 했지만 자막이 그 아래가 아닌 이미지 위에 놓임. 상단 on_screen_text의 검은 박스도 투박함.",
-        "길이 불일치: 실측 47.5초인데 description에는 '30초 만에 정리'라고 적혀 있음. 쇼츠 리텐션에도 다소 길음.",
-        "사실 확인 필요: '소풍 도시락에서 태어난 완전히 다른 음식'이라는 단정은 김밥 기원에 일본 마키즈시 영향설이 있어 논란 여지가 있음. '스시 vs 김밥 간 차이(식초 vs 참기름·소금)'는 일반적으로 맞음. 김밥에 생선이나 날것이 아예 없다는 식으로 읽히는 부분도 확인 필요.",
-        "제목 '부르면 안 되는 3가지 이유'는 훈계조이고 실제 내용은 '차이점 3가지'라 어긋남. 반전이나 놀라운 정보가 약해 재미가 평이함."
-      ],
-      "retry_target": "producer",
-      "feedback": "장면 1, 4, 6 이미지를 다시 생성하세요. (1) 장면 1: 니기리는 김 띠 없이 흰 밥 위에 연어 한 점만 올리고, 김밥 단면은 단무지(노랑)·시금치(초록)·계란(노랑)·당근(주황)이 세로 막대로 보이게 하세요. (2) 장면 4: 망고 큐브처럼 보이는 노란 덩어리와 소스는 확실히 제거하세요. 접시에는 김밥 단면만 두고 negative에 'yellow cubes, mango, sauce, small side dishes'를 더 강하게 넣으세요. (3) 장면 6: 삼각형·연어색 속재료를 피하고 세로 막대 속재료가 보이게 하세요. 가을 꽃 대신 낙엽만 남기세요. (4) 장면 3: 오른쪽 병이 간장이 아닌 참기름으로 읽히도록 작은 병과 참깨를 더 가까이 배치하세요. 재작업 뒤에는 자막이 이미지 핵심을 가리지 않도록 effector가 자막 위치를 하단 안전 영역으로 내리는 것도 검토하세요. 기획 쪽 팁: description의 '30초'를 실제 길이에 맞게 고치고, '소풍 도시락에서 태어났다'는 단정은 '한국식으로 발전한'처럼 완화하세요."
+      "retry_target": null,
+      "feedback": "합격. 개선 팁: (1) 영상 길이를 30초 안팎으로 줄이거나 description의 '30초'를 실제 길이에 맞게 고칠 것. (2) 씬 3과 4의 순서를 '슈퍼세이브 → 전반 0대1 → 퇴장 후에도 못 넣음'처럼 시간순으로 정리하면 이해하기 쉬움. (3) LAFC 캐릭터의 외형과 유니폼 색을 전 씬에서 통일하도록 image_prompt에 고정 묘사를 넣을 것. (4) 상단 on_screen_text 박스와 하단 자막이 겹치거나 중복되지 않도록 위치를 조정할 것. (5) 업로드 전에 점수, 득점 순번, 골키퍼 국적을 실제 경기 기록과 대조할 것. (6) 중간 씬에 한두 개 더 강한 드립이나 반전을 넣어 중반 이탈을 줄일 것."
     }
   ],
   "marketer": {
-    "summary": "프로야구 시즌 막바지 레이예스 최다안타 신기록 경쟁과 손흥민 LAFC 소식이 검색을 이끌고, 김천김밥축제 등 먹거리·상식 주제가 틈새로 뜨는 날",
+    "summary": "오늘은 '퇴장 끌어내고도 비긴 손흥민'과 '10만 원 김밥 축제'가 이끌고, K리그2 무승 탈출·위조지폐 사건·유도 세계 제패 등 스포츠와 생활 이슈가 고르게 뜬 하루",
     "topics": [
       {
         "rank": 1,
-        "keyword": "김밥",
-        "topic": "김밥을 영어로 하면? 외국인이 헷갈리는 한국 음식 이름 TOP5 (김밥 vs 스시 vs 롤)",
-        "traffic": "500+",
-        "why_now": "김천김밥축제가 전국 1위 축제로 뽑히며 화제, CU 중화식 고추잡채 김밥 출시",
-        "angle": "'김밥≠스시'를 반전 퀴즈로 풀고, 이색 김밥 랭킹으로 마무리. 음식 이미지는 AI 생성이 쉬움",
-        "target": "10~30대 전반, 음식·한국 문화 관심층",
-        "fun_score": 9,
+        "keyword": "손흥민",
+        "traffic": "10000+",
+        "traffic_num": 10000,
+        "news": [
+          "손흥민이 퇴장 끌어냈지만…LAFC, 10명이 뛴 밴쿠버와 1-1 비겨",
+          "'리더십 상처' 손흥민, 소속팀에서 명예 회복할까?",
+          "‘손흥민 7호골, 일본 골키퍼가 막았다!’ 한 골이나 마찬가지였던 손흥민 완벽한 슈팅, 슈퍼세이브에 막혔다…LAFC 0-1 뒤지고 전반종료"
+        ],
+        "topic": "손흥민이 퇴장 끌어냈는데 LAFC는 왜 10명 밴쿠버와 1-1? 슈퍼세이브에 막힌 7호골 '거의 골' 장면 30초 정리",
+        "why_now": "'손흥민이 퇴장 끌어냈지만…LAFC, 10명이 뛴 밴쿠버와 1-1 비겨', '일본 골키퍼가 막았다! 슈퍼세이브' 기사가 나왔다",
+        "angle": "'이게 왜 안 들어가?' 상황극 + 골키퍼 선방 리플레이식 30초 정리. 수적 우위인데 비긴 아이러니를 드립으로 풀고 팬 반응 투표 유도",
+        "target": "축구 팬, 해외축구·MLS 시청층 20~40대",
+        "fun_score": 8,
         "risk": "low",
-        "risk_note": ""
+        "risk_note": "선수 개인 비난·조롱 없이 경기 상황 중심으로. '리더십 상처' 같은 평가성 표현은 인용 시 주의"
       },
       {
         "rank": 2,
-        "keyword": "롯데 대 kia",
-        "topic": "KBO 한 시즌 최다안타 기록, 레이예스가 깨는 중! 역대 안타왕 비교 랭킹",
-        "traffic": "20000+",
-        "why_now": "레이예스가 KIA전에서 206안타를 달성하며 기록 경신 중, KT 최원준과 안타왕 경쟁",
-        "angle": "숫자 비교와 '하루에 한 개씩 늘어나는 기록' 카운트다운 구성. 얼굴 대신 유니폼 실루엣 일러스트로 처리",
-        "target": "10~40대 야구팬",
+        "keyword": "김밥",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "CU, 김천김밥축제 경연 우승작 '중화식 고추잡채 김밥' 출시",
+          "김밥에 10만 원 썼는데 안 아깝다…역대급 호평으로 전국 1위 오른 ‘축제’",
+          "“김밥을 영어로 하면 바비킴?”…2년 만에 전국 1위 오른 김천김밥축제 [제철축제]"
+        ],
+        "topic": "김밥 한 줄이 아니라 10만 원 쓰고도 안 아깝다? 전국 1위 김천김밥축제와 CU 중화식 고추잡채 김밥 출시",
+        "why_now": "'김밥에 10만 원 썼는데 안 아깝다…전국 1위 축제', 'CU, 경연 우승작 중화식 고추잡채 김밥 출시' 기사가 나왔다",
+        "angle": "'김밥을 영어로 하면 바비킴?' 드립으로 시작해 우승작이 편의점까지 온 과정을 정리. 직접 먹어보는 후기형 또는 '축제 우승작 vs 편의점 김밥' 비교",
+        "target": "먹방·편의점 신상 관심층, 10~30대",
         "fun_score": 8,
-        "risk": "medium",
-        "risk_note": "실존 선수 얼굴 묘사는 피하고 실루엣·캐릭터로 표현. 기록 수치는 게시 전 최신 확인 필요"
+        "risk": "low",
+        "risk_note": ""
       },
       {
         "rank": 3,
-        "keyword": "김밥",
-        "topic": "김밥 속재료 궁합 랭킹: 최고의 조합 vs 최악의 조합 (꿀팁)",
-        "traffic": "파생",
-        "why_now": "김밥 관심 급증과 가을 소풍철이 겹침",
-        "angle": "재료를 하나씩 올리며 점수를 매기는 랭킹 형식, 마지막에 의외의 1위 공개",
-        "target": "10~20대, 자취생",
-        "fun_score": 8,
+        "keyword": "can vs nep",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "Match Predictions: ICC CWC League 2 2026 - Match 133 - Nepal vs Canada and Match 134 - USA vs UAE - October 11th",
+          "Nepal to take on Canada in League 2 cricket",
+          "Nepal’s Last Chance in the World Cup League 2 Campaign"
+        ],
+        "topic": "네팔 vs 캐나다, 월드컵 리그2 크리켓 '마지막 기회' 경기 30초 요약",
+        "why_now": "'Nepal vs Canada ICC CWC League 2 Match 133', 'Nepal's Last Chance in the World Cup League 2 Campaign' 기사가 나왔다",
+        "angle": "크리켓을 모르는 한국인 눈높이로 '왜 마지막 기회인지'만 짧게 설명하는 입문형 이슈 정리. 경기 결과는 뉴스 확인 후 반영",
+        "target": "크리켓·해외 스포츠 관심층, 재한 네팔·남아시아 커뮤니티",
+        "fun_score": 4,
         "risk": "low",
-        "risk_note": ""
+        "risk_note": "한국 내 수요가 작고 제공된 기사가 예측 위주라 결과를 단정하면 안 됨"
       },
       {
         "rank": 4,
-        "keyword": "롯데 대 kia",
-        "topic": "야구 용어 5초 상식: 안타·2루타·타율, 모르면 야구장에서 당황하는 단어들",
-        "traffic": "파생",
-        "why_now": "시즌 막바지 포스트시즌을 앞두고 야구 입문자가 늘어남",
-        "angle": "초보 눈높이 퀴즈와 귀여운 캐릭터 일러스트로 쉽게 설명",
-        "target": "10~20대 야구 입문자",
-        "fun_score": 7,
-        "risk": "low",
-        "risk_note": ""
+        "keyword": "윤호중",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "행안장관 \"임은정 광주중수청장 감찰 지시…중수청 정치기관 착각\"",
+          "[속보]윤호중 행안장관 “임은정 광주중수청장 감찰 지시…중수청을 정치 기관으로 착각해”",
+          "김지용 중수청장 후보 인선에 '격랑'…14일 인사청문회 주목 - 머니투데이"
+        ],
+        "topic": "행안장관 '중수청을 정치기관으로 착각' 발언, 임은정 광주중수청장 감찰 지시가 왜 논란인지 30초 정리",
+        "why_now": "'행안장관 임은정 광주중수청장 감찰 지시…중수청 정치기관 착각', '김지용 중수청장 후보 인선에 격랑, 14일 인사청문회' 기사가 나왔다",
+        "angle": "인물 평가 없이 '누가 누구를 왜 감찰했나'와 14일 청문회 관전 포인트를 타임라인으로 정리하는 중립 요약",
+        "target": "시사 관심층 30~50대",
+        "fun_score": 4,
+        "risk": "high",
+        "risk_note": "정치 사안이라 한쪽 편들기·조롱 금지. 속보 기반이라 사실관계 변동 가능, 중립 표현 필수"
       },
       {
         "rank": 5,
-        "keyword": "씨름",
-        "topic": "씨름 vs 유도 vs 레슬링, 규칙 차이 한 번에 비교",
-        "traffic": "100+",
-        "why_now": "유도 세계선수권에서 씨름선수 딸 이현지 선수가 우승하며 격투 종목에 관심 상승",
-        "angle": "세 종목을 VS 형식으로 비교하고 '이기는 조건'을 한 컷씩 보여줌. 인물 대신 픽토그램 스타일 사용",
-        "target": "10~30대 스포츠 관심층",
-        "fun_score": 7,
+        "keyword": "안양 정관장 대 창원 lg",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "[포토] 박지훈, 양준석 가볍게 처리 - 머니투데이",
+          "[포토] 아반도-양홍석 '리바운드 쟁탈전' - 머니투데이",
+          "‘3점슛 성공률 12%’ 유도훈 감독 “찬스에서 머뭇거려…더 자신감 가져야”"
+        ],
+        "topic": "3점슛 성공률 12%…정관장전에서 LG는 왜 찬스에서 머뭇거렸나, 감독의 한마디",
+        "why_now": "'3점슛 성공률 12% 유도훈 감독 \"찬스에서 머뭇거려…더 자신감 가져야\"' 기사가 나왔다",
+        "angle": "'12%가 얼마나 낮은 숫자인지' 숫자로 보는 충격 비교 + 감독 멘트 자막 드립. 경기 사진 속 리바운드 쟁탈전 장면 활용",
+        "target": "KBL·농구 팬 20~40대",
+        "fun_score": 5,
         "risk": "low",
-        "risk_note": "특정 선수 얼굴 없이 종목 설명 중심으로 구성"
+        "risk_note": "경기 결과(승패)는 기사 제목에 없으므로 단정하지 말 것"
       },
       {
         "rank": 6,
-        "keyword": "손흥민",
-        "topic": "축구에서 수적 우위(10명 vs 11명)가 되면 실제로 얼마나 유리할까?",
-        "traffic": "파생",
-        "why_now": "LAFC가 상대 퇴장을 끌어냈는데도 1-1로 비긴 경기가 화제",
-        "angle": "'11 vs 10인데 왜 못 이길까?'를 반전 상식으로 풀이. 선수 얼굴 대신 전술 보드 스타일로 시각화",
-        "target": "10~30대 축구팬",
+        "keyword": "k리그2",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "'드디어 끝났다'…천안시티FC 경남에 신승, 무승행진 14경기서 종지부",
+          "K리그2 천안, 경남 1-0 제압…14경기·5개월 만에 승리",
+          "'경남은 걸을수록 축구를 잘한다?' 배성재 감독의 열띤 축구 강의 [케터뷰]"
+        ],
+        "topic": "14경기·5개월 만에 드디어 승리! 천안시티FC 무승 탈출 순간",
+        "why_now": "'드디어 끝났다…천안시티FC 경남에 신승, 무승행진 14경기서 종지부' 기사가 나왔다",
+        "angle": "'5개월간 못 이긴 팀의 14경기 여정'을 숫자로 압축한 감동+웃음 스토리. '드디어 끝났다' 자막과 환호 반응 중심",
+        "target": "K리그 팬, 언더독 서사를 좋아하는 20~30대",
         "fun_score": 7,
         "risk": "low",
-        "risk_note": "실존 선수 얼굴 묘사 금지, 전술 도식만 사용"
+        "risk_note": "경남 팀이나 감독을 깎아내리지 않도록 주의"
       },
       {
         "rank": 7,
-        "keyword": "김밥",
-        "topic": "김밥 10만 원어치 먹방 가능? 김천김밥축제 가는 법과 먹는 순서 꿀팁",
-        "traffic": "500+",
-        "why_now": "'10만 원 써도 안 아깝다'는 호평으로 축제가 입소문을 탐",
-        "angle": "예산 10만 원으로 먹을 수 있는 걸 계산해 보는 가상 먹방 형식",
-        "target": "10~30대 여행·맛집 관심층",
+        "keyword": "지폐",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "컬러 프린터로 5만원권 위조지폐 20장 제작한 20대…항소심도 실형",
+          "휴대폰으로 찍고 A4 용지에 뽑았다…어르신들 일하는 편의점서 사용한 20대 결국",
+          "집에서 5만원권 위조해 편의점서 사용…20대 항소심도 징역 2년"
+        ],
+        "topic": "컬러 프린터로 5만원권 20장 위조, 편의점에서 쓴 20대 항소심도 징역 2년",
+        "why_now": "'컬러 프린터로 5만원권 위조지폐 20장 제작한 20대…항소심도 실형' 기사가 나왔다",
+        "angle": "'휴대폰으로 찍고 A4 용지에 뽑았다'는 수법이 왜 결국 걸렸는지 경각심 중심으로 정리. 진짜 지폐 식별법은 사건과 연결해 짧게 곁들이기",
+        "target": "자영업자, 편의점 알바생, 일반 시청자 전연령",
         "fun_score": 6,
-        "risk": "low",
-        "risk_note": "축제 일정·가격은 게시 전 확인 필요"
+        "risk": "high",
+        "risk_note": "범죄 사건이라 수법을 따라 할 수 있게 상세히 설명하면 안 됨. 피고인 조롱 금지, 피해 업소(어르신 근무 편의점) 중심 경각심 톤 유지"
       },
       {
         "rank": 8,
-        "keyword": "오선진",
-        "topic": "프로야구 선수가 19년을 버티는 법: 한 선수가 거친 팀 5곳 여정 지도",
+        "keyword": "씨름",
         "traffic": "200+",
-        "why_now": "오선진이 19년 선수 생활을 마치고 은퇴를 발표",
-        "angle": "팀을 옮겨 다닌 경로를 지도처럼 그리는 스토리텔링과 은퇴 소감 인용으로 따뜻하게 마무리",
-        "target": "20~40대 야구팬",
-        "fun_score": 6,
+        "traffic_num": 200,
+        "news": [
+          "씨름선수 딸 이현지, 19세에 유도 세계 제패…\"내 능력 믿었다\"",
+          "유도 AG '銀' 8일 만에 생애 첫 세계선수권 '金'…제주출신 이현지 '쾌거'",
+          "이현지, 유도 세계선수권 여자 최중량급 우승"
+        ],
+        "topic": "씨름선수 딸이 19세에 유도 세계 제패! 아시안게임 은메달 8일 만에 세계선수권 금메달",
+        "why_now": "'씨름선수 딸 이현지, 19세에 유도 세계 제패', '유도 AG 銀 8일 만에 생애 첫 세계선수권 金' 기사가 나왔다",
+        "angle": "'아빠는 씨름, 딸은 유도' 가족 서사 + '8일 만에 은에서 금' 숫자 반전. '내 능력 믿었다' 소감을 자막 포인트로",
+        "target": "스포츠 팬, 감동 서사 선호층 전연령",
+        "fun_score": 8,
         "risk": "low",
-        "risk_note": "실존 인물 얼굴 없이 유니폼 아이콘으로 표현"
+        "risk_note": "미성년 직전 연령(19세) 선수의 사생활·가족 사항은 기사에 나온 범위로만"
       },
       {
         "rank": 9,
-        "keyword": "김혜성",
-        "topic": "야구 포스트시즌 로스터는 어떻게 짜일까? 26명 안에 들어가는 조건",
-        "traffic": "2000+",
-        "why_now": "다저스 NLCS 로스터에서 김혜성이 빠질지 관심이 높음",
-        "angle": "'엔트리 한 자리를 두고 벌어지는 생존 게임' 컨셉의 쉬운 설명",
-        "target": "10~30대 MLB 팬",
-        "fun_score": 5,
-        "risk": "medium",
-        "risk_note": "로스터 확정 전 추측성 보도라 단정 표현 금지, 특정 선수 비하 없이 제도 설명 중심"
-      },
-      {
-        "rank": 10,
-        "keyword": "can vs nep",
-        "topic": "크리켓 규칙 30초 요약: 야구와 뭐가 다를까?",
-        "traffic": "500+",
-        "why_now": "네팔 vs 캐나다 크리켓 월드컵 리그2 경기가 검색에 오름",
-        "angle": "야구와 닮은 점·다른 점을 비교하는 '세계 2위 인기 스포츠' 호기심 자극형",
-        "target": "10~20대 스포츠 호기심층",
-        "fun_score": 5,
+        "keyword": "수원삼성",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "'1위 굳히기' 나서는 수원, 안산전 베스트11 공개...루이스-페신 투톱 가동+'전역' 김주찬 '대기'[현장 라인업]",
+          "이정효 수원 감독 \"김주찬, 생각보다 어려서 놀랐다...준홍이한테는 킥 자제하자고 농담했다\"",
+          "[if.preview] ‘4연승’ 이정효의 수원, 안산에 설욕하고 우승에 더 가까이 갈까?"
+        ],
+        "topic": "4연승 이정효호 수원, 안산전 라인업 공개…루이스-페신 투톱에 전역 김주찬 대기",
+        "why_now": "'1위 굳히기 나서는 수원, 안산전 베스트11 공개', '4연승의 이정효 수원' 기사가 나왔다",
+        "angle": "'이정효 감독의 농담' 멘트 중심 라인업 해설. '전역하자마자 대기명단' 김주찬을 소개하는 복귀 서사와 1위 굳히기 관전 포인트",
+        "target": "수원 삼성·K리그 팬 20~40대",
+        "fun_score": 6,
         "risk": "low",
-        "risk_note": ""
+        "risk_note": "경기 결과는 제목에 없으므로 승패 단정 금지"
       }
     ],
     "trend_count": 10,
     "excluded": [
       {
-        "keyword": "암살자(들)",
-        "blocked_by": "전쟁"
-      },
-      {
-        "keyword": "승용차",
+        "keyword": "호랑이",
         "blocked_by": "사망"
       }
     ]
   },
-  "selected_attempt": 1,
+  "selected_attempt": 2,
   "plan": {
     "chosen_rank": 1,
-    "reason": "fun_score 9에 위험도 낮음, 김천김밥축제와 CU 신상 김밥으로 검색 관심이 붙은 시점이다. 김밥과 스시는 다르다는 반전 퀴즈 구조라 첫 3초 훅이 강하다. 음식 이미지는 AI 생성이 쉽고, 실존 인물과 수치 계산이 없어 사실 오류 위험이 작다. 밥 간, 속재료, 먹는 방식 세 가지 차이만 다뤄 불확실한 주장을 피했다.",
-    "title": "김밥을 스시라고 부르면 안 되는 3가지 이유",
-    "hook": "외국인한테 김밥을 스시라고 하면 한국 사람은 왜 발끈할까요?",
-    "style": "vibrant 3D cartoon food illustration, soft warm lighting, glossy textures, bright pastel colors, high detail, clean background, vertical 9:16 composition, no text, no logos, no real people",
+    "reason": "검색량이 10000+로 가장 높고, 수적 우위인데 비긴 아이러니와 슈퍼세이브 장면이 드립 소재로 충분해서 선택. 계산이 들어가는 숫자는 없고, 스코어(1-1, 0-1)와 7호골 언급은 news 제목 내용만 사용함.",
+    "title": "손흥민이 퇴장까지 끌어냈는데 왜 못 이겼냐면",
+    "hook": "상대가 10명인데 못 이겼다고?",
+    "style": "vibrant 3D cartoon, soft lighting, high detail, bright colors, expressive characters, vertical composition",
     "scenes": [
       {
         "id": 1,
-        "narration": "외국인한테 김밥을 스시라고 하면 한국 사람은 왜 발끈할까요?",
-        "on_screen_text": "김밥 = 스시?",
-        "image_prompt": "A cute cartoon gimbap roll and a sushi roll standing side by side like rivals, with a big glowing question mark floating between them, dramatic spotlight, playful mood"
+        "narration": "상대가 10명인데 못 이겼다고?",
+        "on_screen_text": "실화냐",
+        "image_prompt": "A shocked cartoon cat in a soccer jersey holding its head with both paws on a green football pitch, huge wide eyes, dramatic stadium lights, vibrant 3D cartoon, soft lighting, high detail, bright colors, expressive characters, vertical composition"
       },
       {
         "id": 2,
-        "narration": "정답부터 말할게요. 김밥은 영어로도 그냥 김밥이에요. 이름 자체가 고유명사거든요.",
-        "on_screen_text": "정답은 김밥",
-        "image_prompt": "A proud gimbap roll wearing a tiny golden crown on a pedestal, sparkles around it, a blank name plate in front, festive celebratory atmosphere"
+        "narration": "손흥민이 상대 퇴장을 끌어냈거든. 밴쿠버는 그대로 10명이 됐어.",
+        "on_screen_text": "퇴장 유도",
+        "image_prompt": "A surprised cartoon owl referee holding up a big red card on a football pitch, a small cartoon fox player walking off the field in the background, vibrant 3D cartoon, soft lighting, high detail, bright colors, expressive characters, vertical composition"
       },
       {
         "id": 3,
-        "narration": "첫 번째 차이는 밥 간이에요. 스시는 식초로 새콤하게, 김밥은 참기름과 소금으로 고소하게 맛을 내요.",
-        "on_screen_text": "1. 밥 간",
-        "image_prompt": "Split composition: on the left a small vinegar bottle beside sushi rice, on the right a sesame oil bottle with sesame seeds beside warm gimbap rice, golden drizzle of oil, close-up food view"
+        "narration": "근데 전반이 끝났을 때 LAFC가 0대1로 지고 있었어.",
+        "on_screen_text": "전반 0대1",
+        "image_prompt": "A gloomy cartoon puppy in a black and gold soccer jersey sitting on a bench looking at the ground, a small rain cloud above its head, vibrant 3D cartoon, soft lighting, high detail, bright colors, expressive characters, vertical composition"
       },
       {
         "id": 4,
-        "narration": "두 번째 차이는 속재료예요. 스시는 생선이 주인공이지만 김밥은 단무지, 계란, 시금치처럼 익힌 재료가 많아요.",
-        "on_screen_text": "2. 속재료",
-        "image_prompt": "A gimbap roll cut open showing colorful fillings: yellow pickled radish, egg, spinach, carrot, ham, arranged in a neat circle, next to a small plate with a slice of raw fish, bright cheerful colors"
+        "narration": "7호골 될 뻔한 완벽한 슈팅이 있었는데, 일본 골키퍼가 슈퍼세이브로 막아버린 거야.",
+        "on_screen_text": "이게 안 들어가?",
+        "image_prompt": "A cartoon raccoon goalkeeper in mid-air diving sideways and stretching one paw to stop a glowing soccer ball just before the goal net, motion lines, dramatic stadium lighting, vibrant 3D cartoon, soft lighting, high detail, bright colors, expressive characters, vertical composition"
       },
       {
         "id": 5,
-        "narration": "세 번째 차이는 먹는 방식이에요. 스시는 간장에 콕 찍지만 김밥은 소스 없이 그대로 한입에 쏙!",
-        "on_screen_text": "3. 먹는 법",
-        "image_prompt": "Left: a sushi piece dipping into a small soy sauce dish with chopsticks. Right: a whole gimbap slice being lifted straight toward a happy open mouth cartoon character, no sauce, playful motion lines"
+        "narration": "한 골이나 마찬가지였는데 골키퍼가 그냥 문을 닫아버렸어.",
+        "on_screen_text": "문 닫았다",
+        "image_prompt": "A cartoon goal net with a giant closed wooden door in front of it, a smug cartoon raccoon goalkeeper leaning on the door with crossed arms, football pitch background, vibrant 3D cartoon, soft lighting, high detail, bright colors, expressive characters, vertical composition"
       },
       {
         "id": 6,
-        "narration": "그러니 김밥은 스시의 사촌이 아니라 소풍 도시락에서 태어난 완전히 다른 한국 음식이에요. 여러분은 어떤 김밥이 최고예요?",
-        "on_screen_text": "최고의 김밥?",
-        "image_prompt": "A picnic scene on a sunny autumn hill with a lunch box full of assorted gimbap rolls, a checkered blanket, falling leaves, warm golden hour light, inviting and cozy"
+        "narration": "결국 1대1 무승부. 퇴장은 선물인데 포장도 못 뜯은 셈이지.",
+        "on_screen_text": "선물 미개봉",
+        "image_prompt": "A cartoon cat in a soccer jersey staring at a large unopened gift box with a ribbon on the center of a football pitch, tilted head, confused expression, vibrant 3D cartoon, soft lighting, high detail, bright colors, expressive characters, vertical composition"
+      },
+      {
+        "id": 7,
+        "narration": "이건 골키퍼가 미친 거야, 아니면 LAFC가 아쉬웠던 거야? 댓글로 편 갈라보자.",
+        "on_screen_text": "너의 선택은?",
+        "image_prompt": "Split screen cartoon scene, left side a heroic raccoon goalkeeper with a gold glove, right side a sad puppy in a black and gold jersey, glowing versus spark in the middle, vibrant 3D cartoon, soft lighting, high detail, bright colors, expressive characters, vertical composition"
       }
     ],
-    "description": "김밥과 스시, 비슷해 보이지만 완전히 다른 음식이에요! 밥 간, 속재료, 먹는 방식 3가지 차이를 30초 만에 정리했어요.\n여러분이 제일 좋아하는 김밥 속재료는 뭔가요? 댓글로 알려주세요.\n#김밥 #한국음식 #쇼츠",
+    "description": "손흥민이 퇴장까지 끌어냈는데 LAFC는 왜 10명 밴쿠버와 1-1이었을까? 슈퍼세이브에 막힌 7호골 장면까지 30초 썰.\n골키퍼가 미쳤다 vs LAFC가 아쉬웠다, 댓글로 편 갈라보세요!\n#손흥민 #LAFC #쇼츠",
     "tags": [
-      "김밥",
-      "김밥 스시 차이",
-      "한국 음식",
-      "김천김밥축제",
-      "외국인 한국 음식",
-      "음식 상식",
-      "쇼츠",
-      "gimbap"
+      "손흥민",
+      "LAFC",
+      "밴쿠버",
+      "MLS",
+      "슈퍼세이브",
+      "축구",
+      "손흥민7호골",
+      "쇼츠"
     ],
-    "comment_question": "여러분이 생각하는 최고의 김밥 속재료는 뭔가요? 참치, 치즈, 아니면 의외의 조합?"
+    "comment_question": "10명 상대로 비긴 건 골키퍼가 미친 걸까, LAFC가 아쉬웠던 걸까? 너의 선택은?"
   },
   "production": {
     "image_providers": {
-      "cloudflare": 6
+      "cloudflare": 7
     }
   },
   "effects": {
-    "duration": 47.51,
+    "duration": 42.84,
     "tts_provider": "edge",
     "voice": "ko-KR-SunHiNeural",
     "bgm": null
@@ -381,44 +364,51 @@
   "storyboard": [
     {
       "id": 1,
-      "narration": "외국인한테 김밥을 스시라고 하면 한국 사람은 왜 발끈할까요?",
-      "on_screen_text": "김밥 = 스시?",
+      "narration": "상대가 10명인데 못 이겼다고?",
+      "on_screen_text": "실화냐",
       "image": "runs/2026-10-11/scene_01.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 2,
-      "narration": "정답부터 말할게요. 김밥은 영어로도 그냥 김밥이에요. 이름 자체가 고유명사거든요.",
-      "on_screen_text": "정답은 김밥",
+      "narration": "손흥민이 상대 퇴장을 끌어냈거든. 밴쿠버는 그대로 10명이 됐어.",
+      "on_screen_text": "퇴장 유도",
       "image": "runs/2026-10-11/scene_02.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 3,
-      "narration": "첫 번째 차이는 밥 간이에요. 스시는 식초로 새콤하게, 김밥은 참기름과 소금으로 고소하게 맛을 내요.",
-      "on_screen_text": "1. 밥 간",
+      "narration": "근데 전반이 끝났을 때 LAFC가 0대1로 지고 있었어.",
+      "on_screen_text": "전반 0대1",
       "image": "runs/2026-10-11/scene_03.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 4,
-      "narration": "두 번째 차이는 속재료예요. 스시는 생선이 주인공이지만 김밥은 단무지, 계란, 시금치처럼 익힌 재료가 많아요.",
-      "on_screen_text": "2. 속재료",
+      "narration": "7호골 될 뻔한 완벽한 슈팅이 있었는데, 일본 골키퍼가 슈퍼세이브로 막아버린 거야.",
+      "on_screen_text": "이게 안 들어가?",
       "image": "runs/2026-10-11/scene_04.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 5,
-      "narration": "세 번째 차이는 먹는 방식이에요. 스시는 간장에 콕 찍지만 김밥은 소스 없이 그대로 한입에 쏙!",
-      "on_screen_text": "3. 먹는 법",
+      "narration": "한 골이나 마찬가지였는데 골키퍼가 그냥 문을 닫아버렸어.",
+      "on_screen_text": "문 닫았다",
       "image": "runs/2026-10-11/scene_05.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 6,
-      "narration": "그러니 김밥은 스시의 사촌이 아니라 소풍 도시락에서 태어난 완전히 다른 한국 음식이에요. 여러분은 어떤 김밥이 최고예요?",
-      "on_screen_text": "최고의 김밥?",
+      "narration": "결국 1대1 무승부. 퇴장은 선물인데 포장도 못 뜯은 셈이지.",
+      "on_screen_text": "선물 미개봉",
       "image": "runs/2026-10-11/scene_06.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 7,
+      "narration": "이건 골키퍼가 미친 거야, 아니면 LAFC가 아쉬웠던 거야? 댓글로 편 갈라보자.",
+      "on_screen_text": "너의 선택은?",
+      "image": "runs/2026-10-11/scene_07.jpg",
       "provider": "cloudflare"
     }
   ],
@@ -426,7 +416,7 @@
   "video_file": "videos/2026-10-11.mp4",
   "upload": {
     "status": "skipped",
-    "reason": "QA 불합격"
+    "reason": "--no-upload"
   },
-  "finished_at": "2026-10-11T15:04:04+09:00"
+  "finished_at": "2026-10-11T15:20:32+09:00"
 }
