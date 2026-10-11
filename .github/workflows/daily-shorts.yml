@@ -42,6 +42,13 @@ jobs:
           sudo apt-get update -q
           sudo apt-get install -y -q ffmpeg fonts-noto-cjk
 
+      - name: 배경음악 캐시
+        uses: actions/cache@v4
+        with:
+          path: assets/bgm/cache
+          key: bgm-${{ hashFiles('assets/bgm/library.yaml') }}-${{ github.run_id }}
+          restore-keys: bgm-
+
       - name: Python 패키지
         run: pip install -r requirements.txt
 

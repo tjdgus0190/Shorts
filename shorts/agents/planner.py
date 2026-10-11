@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 
+from ..tools import music
 from .base import Context, prompt
 
 
@@ -20,6 +21,7 @@ def mock_plan(report: dict) -> dict:
     return {
         "chosen_rank": t["rank"], "reason": "[mock] fun_score 최상위",
         "title": f"{kw}, 아무도 몰랐던 사실", "hook": lines[0][0],
+        "bgm_mood": "funny",
         "style": "vibrant 3D cartoon illustration, soft studio lighting, high detail",
         "scenes": [
             {"id": i + 1, "narration": n, "on_screen_text": o,
@@ -55,6 +57,8 @@ def run(ctx: Context, report: dict, feedback: str | None = None) -> dict:
     allowed = {t["rank"] for t in topics}
     if plan.get("chosen_rank") not in allowed:  # 후보 밖을 고르면 검색량 1위 후보로 고정
         plan["chosen_rank"] = topics[0]["rank"]
+    if plan.get("bgm_mood") not in music.moods():
+        plan["bgm_mood"] = "upbeat"
     plan["scenes"] = [s for s in plan.get("scenes", []) if s.get("narration")][:8]
     if not plan["scenes"]:
         raise ValueError("기획에 장면이 없습니다")

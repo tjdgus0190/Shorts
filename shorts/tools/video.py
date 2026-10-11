@@ -83,15 +83,22 @@ def concat_audio(parts: list[tuple[Path, float]], out: Path) -> Path:
     return out
 
 
-def compose_final(video: Path, voice: Path, ass: Path, out: Path, bgm: Path | None, bgm_volume: float) -> Path:
+def compose_final(video: Path, voice: Path, ass: Path, out: Path, bgm: Path | None, bgm_volume: float,
+                  total: float | None = None) -> Path:
     args = ["-i", str(video.resolve()), "-i", str(voice.resolve())]
-    fc = [f"[0:v]ass={ass.name}[v]", "[1:a]loudnorm=I=-14:TP=-1.5:LRA=11[voice]"]
+    fc = [f"[0:v]ass={ass.name}[v]", "[1:a]loudnorm=I=-14:TP=-1.5:LRA=11,asplit=2[voice][key]"]
     if bgm:
         args += ["-stream_loop", "-1", "-i", str(bgm.resolve())]
-        fc += [f"[2:a]volume={bgm_volume},afade=t=in:d=1[bgm]",
-               "[voice][bgm]amix=inputs=2:duration=first:dropout_transition=0:normalize=0[a]"]
+        fade_out = f",afade=t=out:st={max(total - 1.5, 0):.2f}:d=1.5" if total else ""
+        fc += [
+            f"[2:a]aresample=44100,volume={bgm_volume},afade=t=in:d=0.8{fade_out}[bgmraw]",
+            # 목소리가 나올 때 배경음악을 자동으로 줄인다(사이드체인 덕킹)
+            "[bgmraw][key]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=400[bgm]",
+            "[voice][bgm]amix=inputs=2:duration=first:dropout_transition=0:normalize=0[a]",
+        ]
         amap = "[a]"
     else:
+        fc[-1] = "[1:a]loudnorm=I=-14:TP=-1.5:LRA=11[voice]"
         amap = "[voice]"
     run_ffmpeg([*args, "-filter_complex", ";".join(fc), "-map", "[v]", "-map", amap,
                 "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",

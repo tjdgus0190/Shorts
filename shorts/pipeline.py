@@ -99,7 +99,8 @@ class Run:
             shutil.copy(self.run_dir / "best_thumbnail.jpg", self.run_dir / eff["thumbnail"])
             self.summary["selected_attempt"] = review["attempt"]
             self.summary.update(plan=plan, production={"image_providers": prod["image_providers"]},
-                                effects={k: eff[k] for k in ("duration", "tts_provider", "voice", "bgm")})
+                                effects={k: eff.get(k) for k in ("duration", "tts_provider", "voice", "bgm",
+                                                                  "bgm_mood", "bgm_credit")})
             self.export_media(plan, prod, eff)
 
             if not review["pass"]:

@@ -1,0 +1,60 @@
+# 영상 분위기별 배경음악 라이브러리
+# 출처: Kevin MacLeod (incompetech.com) — Creative Commons Attribution 4.0 (CC BY 4.0)
+# 수익화 영상에 사용 가능, 단 영상 설명에 크레딧 필수(업로더가 자동으로 추가).
+# mp3는 저장소에 넣지 않고 실행 시 내려받아 assets/bgm/cache/에 캐시한다.
+#
+# 무드 목록 (기획자가 이 중 하나를 고른다)
+#   funny    : 웃기고 엉뚱한, 허당·실수·황당 이슈
+#   upbeat   : 밝고 경쾌한, 좋은 소식·신제품·먹거리
+#   hype     : 빠르고 박진감, 스포츠·대결·기록 경신
+#   suspense : 긴장·미스터리, 반전·사건의 전말·추리
+#   epic     : 웅장·드라마틱, 대기록·역사적 순간
+#   chill    : 잔잔·여유, 일상·라이프스타일·정보
+#   sad      : 아쉬움·감성, 이별·은퇴·아쉬운 패배
+#   retro    : 8비트 게임풍, 게임·IT·밈
+source:
+  base_url: https://incompetech.com/music/royalty-free/mp3-royaltyfree/
+  credit: |-
+    Music: "{title}" Kevin MacLeod (incompetech.com)
+    Licensed under Creative Commons: By Attribution 4.0
+    https://creativecommons.org/licenses/by/4.0/
+tracks:
+  - {title: Monkeys Spinning Monkeys, moods: [funny, upbeat]}
+  - {title: Fluffing a Duck, moods: [funny]}
+  - {title: Sneaky Snitch, moods: [funny, suspense]}
+  - {title: Scheming Weasel faster, moods: [funny]}
+  - {title: Daily Beetle, moods: [funny, upbeat]}
+  - {title: Thatched Villagers, moods: [funny, chill]}
+  - {title: Hep Cats, moods: [funny, upbeat]}
+  - {title: Carefree, moods: [upbeat, funny]}
+  - {title: Wallpaper, moods: [upbeat, chill]}
+  - {title: Happy Alley, moods: [upbeat]}
+  - {title: Life of Riley, moods: [upbeat]}
+  - {title: Cheery Monday, moods: [upbeat]}
+  - {title: Off to Osaka, moods: [upbeat]}
+  - {title: Galway, moods: [upbeat, hype]}
+  - {title: Inspired, moods: [upbeat, epic]}
+  - {title: Volatile Reaction, moods: [hype, epic]}
+  - {title: Movement Proposition, moods: [hype]}
+  - {title: Hyperfun, moods: [hype, upbeat]}
+  - {title: Run Amok, moods: [hype, funny]}
+  - {title: Funkorama, moods: [hype, upbeat]}
+  - {title: Spy Glass, moods: [suspense]}
+  - {title: Hitman, moods: [suspense, hype]}
+  - {title: Investigations, moods: [suspense]}
+  - {title: Comfortable Mystery 4, moods: [suspense, chill]}
+  - {title: Ghost Story, moods: [suspense]}
+  - {title: Impact Prelude, moods: [epic]}
+  - {title: Five Armies, moods: [epic, hype]}
+  - {title: Sovereign Quarter, moods: [epic]}
+  - {title: Stay the Course, moods: [epic, sad]}
+  - {title: Local Forecast - Elevator, moods: [chill, funny]}
+  - {title: Easy Lemon, moods: [chill, upbeat]}
+  - {title: Wholesome, moods: [chill]}
+  - {title: Bossa Antigua, moods: [chill]}
+  - {title: Night on the Docks - Sax, moods: [chill, sad]}
+  - {title: Sad Trio, moods: [sad]}
+  - {title: Heartbreaking, moods: [sad]}
+  - {title: Aftermath, moods: [sad, epic]}
+  - {title: Pixel Peeker Polka - faster, moods: [retro, funny]}
+  - {title: Itty Bitty 8 Bit, moods: [retro, upbeat]}

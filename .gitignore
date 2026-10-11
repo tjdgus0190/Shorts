@@ -6,3 +6,4 @@ __pycache__/
 /_site/
 client_secret*.json
 token*.json
+assets/bgm/cache/

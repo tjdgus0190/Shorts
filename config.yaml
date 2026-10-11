@@ -30,8 +30,10 @@ video:
   fps: 30
   max_seconds: 58
   font: Noto Sans CJK KR
-  bgm_dir: assets/bgm      # mp3를 넣어두면 무작위로 깔림(저작권 free 음원만!)
-  bgm_volume: 0.12
+  # 배경음악: assets/bgm/library.yaml(분위기별 CC BY 음원)에서 기획자가 고른 무드로 자동 선택.
+  # 라이브러리를 못 쓰면 bgm_dir에 직접 넣어둔 음원(저작권 확인된 것만!)을 사용
+  bgm_dir: assets/bgm
+  bgm_volume: 0.18         # 목소리가 나올 때는 자동으로 더 줄어듦
 
 qa:
   pass_score: 70

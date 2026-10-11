@@ -2,23 +2,15 @@
 from __future__ import annotations
 
 import logging
-import random
 from pathlib import Path
 
-from ..config import ROOT
-from ..tools import subtitles, tts, video
+from ..tools import music, subtitles, tts, video
 from .base import Context
 from .producer import render_scene_clips
 
 log = logging.getLogger(__name__)
 
 GAP = 0.25  # 장면 사이 숨 고르기(초)
-
-
-def pick_bgm(cfg: dict, seed: str) -> Path | None:
-    bgm_dir = ROOT / cfg["video"].get("bgm_dir", "assets/bgm")
-    files = sorted(p for p in bgm_dir.glob("*") if p.suffix.lower() in {".mp3", ".wav", ".m4a", ".ogg"})
-    return random.Random(seed).choice(files) if files else None
 
 
 def run(ctx: Context, plan: dict, production: dict, feedback: str | None = None) -> dict:
@@ -55,9 +47,10 @@ def run(ctx: Context, plan: dict, production: dict, feedback: str | None = None)
     ass.write_text(subtitles.build_ass(words, tops, vcfg["width"], vcfg["height"],
                                        vcfg.get("font", "Noto Sans CJK KR")), encoding="utf-8")
 
-    bgm = pick_bgm(cfg, ctx.date)
-    final = video.compose_final(base, voice, ass, ctx.run_dir / "final.mp4", bgm,
-                                vcfg.get("bgm_volume", 0.12))
+    bgm = music.pick(cfg, plan.get("bgm_mood"), seed=f"{ctx.date}-{plan.get('title', '')}")
+    final = video.compose_final(base, voice, ass, ctx.run_dir / "final.mp4",
+                                bgm["path"] if bgm else None, vcfg.get("bgm_volume", 0.18),
+                                total=sum(durations))
     thumb = video.extract_frame(final, min(1.0, sum(durations) / 2), ctx.run_dir / "thumbnail.jpg", 360)
     result = {
         "final": str(final.relative_to(ctx.run_dir)),
@@ -66,7 +59,9 @@ def run(ctx: Context, plan: dict, production: dict, feedback: str | None = None)
         "scene_durations": durations,
         "tts_provider": voices[0]["provider"],
         "voice": cfg["tts"]["voice"],
-        "bgm": bgm.name if bgm else None,
+        "bgm": bgm["title"] if bgm else None,
+        "bgm_mood": plan.get("bgm_mood"),
+        "bgm_credit": bgm["credit"] if bgm else "",
         "word_count": len(words),
     }
     ctx.state["effects"] = result

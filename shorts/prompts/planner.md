@@ -18,6 +18,11 @@
 - narration에는 이모지·괄호·특수기호를 쓰지 마세요(TTS가 읽습니다).
 - on_screen_text: 화면 상단 큰 글씨, 12자 이내, 밈 자막처럼 짧고 세게(예: "실화냐", "여기서 반전"). 없으면 빈 문자열.
 
+배경음악
+- bgm_mood: 영상 분위기에 맞는 무드를 아래에서 **하나** 고르세요.
+  funny(웃기고 엉뚱) / upbeat(밝고 경쾌) / hype(박진감, 스포츠·대결) / suspense(긴장·반전·미스터리)
+  / epic(웅장, 대기록) / chill(잔잔·일상) / sad(아쉬움·감성) / retro(8비트, 게임·IT·밈)
+
 이미지
 - image_prompt는 **영어**. 실존 인물 얼굴은 그리지 마세요(AI 얼굴은 어색하고 초상권 문제). 대신 상황을 상징하는
   귀여운 캐릭터·동물·사물·과장된 표정의 카툰 장면으로 표현하세요(예: 축구 → 빨간 카드를 든 깜짝 놀란 고양이 심판).
@@ -31,6 +36,7 @@
   "reason": "이 주제를 고른 이유",
   "title": "유튜브 제목(40자 이내, 호기심 유발)",
   "hook": "첫 문장",
+  "bgm_mood": "funny|upbeat|hype|suspense|epic|chill|sad|retro",
   "style": "image style suffix in English (e.g. 'vibrant 3D cartoon, soft lighting, high detail')",
   "scenes": [
     {"id": 1, "narration": "읽을 대사", "on_screen_text": "상단 문구", "image_prompt": "English prompt"}

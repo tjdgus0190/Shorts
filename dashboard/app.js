@@ -10,6 +10,7 @@ const UPLOAD = {
   skipped: ["mute", "업로드 안 함"],
 };
 const SCORE_LABELS = { hook: "훅", fun: "재미", clarity: "명확성", visual: "비주얼", subtitle: "자막", safety: "안전" };
+const MOOD_LABELS = { funny: "웃김", upbeat: "경쾌", hype: "박진감", suspense: "긴장", epic: "웅장", chill: "잔잔", sad: "감성", retro: "8비트" };
 const TARGET_LABELS = { planner: "기획자", producer: "제작자", effector: "이펙터" };
 
 const $ = (sel) => document.querySelector(sel);
@@ -78,7 +79,7 @@ function heroCard(run) {
         <dt>LLM</dt><dd>${esc(run.llm_provider)}</dd>
         <dt>이미지</dt><dd>${esc(Object.entries(imgs).map(([k, v]) => `${k} ${v}장`).join(", ") || "-")}</dd>
         <dt>음성</dt><dd>${esc([eff.tts_provider, eff.voice].filter(Boolean).join(" · ") || "-")}</dd>
-        <dt>BGM</dt><dd>${esc(eff.bgm || "없음")}</dd>
+        <dt>BGM</dt><dd>${esc(eff.bgm ? `${eff.bgm}${eff.bgm_mood ? ` · ${MOOD_LABELS[eff.bgm_mood] || eff.bgm_mood}` : ""}` : "없음")}</dd>
         ${up.reason ? `<dt>업로드</dt><dd>${esc(up.reason)}</dd>` : ""}
         ${plan.reason ? `<dt>선정 이유</dt><dd>${esc(plan.reason)}</dd>` : ""}
       </dl>

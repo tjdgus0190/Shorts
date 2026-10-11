@@ -39,6 +39,8 @@ def run(ctx: Context, plan: dict, effects: dict) -> dict:
     description = plan.get("description", "")
     if plan.get("comment_question"):
         description += f"\n\n💬 {plan['comment_question']}"
+    if effects.get("bgm_credit"):  # CC BY 4.0 음원은 크레딧 표기가 사용 조건
+        description += f"\n\n{effects['bgm_credit']}"
     body = {
         "snippet": {
             "title": title[:100],

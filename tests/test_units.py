@@ -69,3 +69,13 @@ def test_build_prompt_does_not_duplicate_style():
     p = build_prompt("a cat, vibrant 3D cartoon", style)
     assert p.count(style) == 1
     assert build_prompt("a dog", style).count(style) == 1
+
+
+def test_music_candidates_prefer_primary_mood():
+    from shorts.tools.music import candidates, load_library, moods
+    lib = load_library()
+    assert {"funny", "hype", "sad", "chill"} <= set(moods(lib))
+    c = candidates(lib, "sad")
+    assert c[0]["moods"][0] == "sad"
+    assert all("sad" in t["moods"] for t in c)
+    assert candidates(lib, "unknown-mood") == lib["tracks"]
