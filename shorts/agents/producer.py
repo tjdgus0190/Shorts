@@ -30,6 +30,9 @@ def render_scene_clips(ctx: Context, scenes: list[dict], durations: list[float],
 
 REVISE_SYSTEM = """당신은 쇼츠 제작자입니다. QA 피드백을 반영해 장면별 이미지 생성 프롬프트(영어)를 고쳐 씁니다.
 FLUX 모델이 정확히 그릴 수 있도록, 한 장면에 핵심 피사체 1~2개만, 구체적인 사물·색·구도로 묘사하세요.
+중요: FLUX는 부정 프롬프트를 지원하지 않습니다. "no X", "without X", "avoid X"처럼 쓰면 오히려 X가 그려집니다.
+원하지 않는 요소는 아예 언급하지 말고, 보여야 할 것만 긍정형으로 묘사하세요.
+복잡한 음식 단면·손·글자처럼 AI가 자주 틀리는 대상은 단순화하거나 귀여운 캐릭터/아이콘형 일러스트로 바꾸세요.
 글자·숫자·로고·실존 인물은 넣지 마세요(모델이 글자를 망칩니다).
 출력: {"prompts": [{"id": 1, "image_prompt": "..."}]}"""
 
@@ -47,7 +50,7 @@ def build_prompt(base: str, style: str) -> str:
     parts = [base.strip().rstrip(",.")]
     if style and style.lower() not in base.lower():
         parts.append(style)
-    parts.append("centered subject, no text, no watermark")
+    parts.append("centered subject, clean simple background")
     return ", ".join(parts)
 
 
