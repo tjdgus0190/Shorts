@@ -1,14 +1,14 @@
 [
   {
     "date": "2026-10-11",
-    "status": "success",
-    "title": "손흥민이 퇴장까지 끌어냈는데 왜 못 이겼냐면",
-    "overall": 74,
-    "qa_attempts": 2,
+    "status": "qa_failed",
+    "title": "10명인데 못 이긴 팀? 손흥민 검색량 터진 이유",
+    "overall": 56,
+    "qa_attempts": 3,
     "thumbnail": "runs/2026-10-11/thumbnail.jpg",
     "youtube_url": null,
     "upload_status": "skipped",
-    "duration": 42.84
+    "duration": 48.31
   },
   {
     "date": "2026-10-10",

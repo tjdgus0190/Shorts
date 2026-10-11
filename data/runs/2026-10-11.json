@@ -1,119 +1,187 @@
 {
   "date": "2026-10-11",
-  "status": "success",
-  "started_at": "2026-10-11T15:16:57+09:00",
+  "status": "qa_failed",
+  "started_at": "2026-10-11T15:23:15+09:00",
   "llm_provider": "claude_cli",
   "stages": [
     {
       "name": "marketer",
       "label": "마케터",
       "status": "done",
-      "started_at": "2026-10-11T15:16:57+09:00",
+      "started_at": "2026-10-11T15:23:15+09:00",
       "note": "",
-      "seconds": 45.6
+      "seconds": 19.8
     },
     {
       "name": "planner",
       "label": "기획자",
       "status": "done",
-      "started_at": "2026-10-11T15:17:43+09:00",
+      "started_at": "2026-10-11T15:23:35+09:00",
       "note": "",
-      "seconds": 17.6
+      "seconds": 13.7
     },
     {
       "name": "producer",
       "label": "제작자",
       "status": "done",
-      "started_at": "2026-10-11T15:18:00+09:00",
+      "started_at": "2026-10-11T15:23:49+09:00",
       "note": "",
-      "seconds": 38.2
+      "seconds": 124.8
     },
     {
       "name": "effector",
       "label": "이펙터",
       "status": "done",
-      "started_at": "2026-10-11T15:18:38+09:00",
+      "started_at": "2026-10-11T15:25:53+09:00",
       "note": "",
-      "seconds": 35.4
+      "seconds": 45.1
     },
     {
       "name": "qa",
       "label": "QA",
       "status": "done",
-      "started_at": "2026-10-11T15:19:14+09:00",
+      "started_at": "2026-10-11T15:26:39+09:00",
       "note": "1차",
-      "seconds": 22.0
+      "seconds": 22.4
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-11T15:27:01+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 23.2
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-11T15:27:24+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 188.2
     },
     {
       "name": "effector",
       "label": "이펙터",
       "status": "done",
-      "started_at": "2026-10-11T15:19:36+09:00",
+      "started_at": "2026-10-11T15:30:32+09:00",
       "note": "QA 1차 피드백 반영",
-      "seconds": 38.6
+      "seconds": 39.0
     },
     {
       "name": "qa",
       "label": "QA",
       "status": "done",
-      "started_at": "2026-10-11T15:20:14+09:00",
+      "started_at": "2026-10-11T15:31:11+09:00",
       "note": "2차",
-      "seconds": 17.9
+      "seconds": 26.6
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-11T15:31:38+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 348.1
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-11T15:37:26+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 34.9
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-11T15:38:01+09:00",
+      "note": "3차",
+      "seconds": 24.4
     }
   ],
   "qa": [
     {
       "attempt": 1,
       "scores": {
-        "fun": 68,
-        "hook": 68,
-        "clarity": 75,
-        "visual": 72,
-        "subtitle": 50,
-        "safety": 85
+        "fun": 52,
+        "hook": 65,
+        "clarity": 58,
+        "visual": 62,
+        "subtitle": 75,
+        "safety": 70
       },
-      "overall": 69,
+      "overall": 62,
       "pass": false,
       "issues": [
-        "자막 줄 순서 오류: 마지막 장면(f3) 자막이 위 줄 '거야 아니면 LAFC가', 아래 줄 '이건 골키퍼가 미친'으로 뒤바뀌어 나옴. 대본은 '이건 골키퍼가 미친 거야, 아니면 LAFC가'라서 읽는 순서가 틀려 의미가 헷갈림.",
-        "자막 위치: 하단 자막이 캐릭터 몸통과 얼굴 아래쪽(f0 고양이 상체, f1 강아지 다리, f3 두 캐릭터 발과 몸)을 가림.",
-        "자막이 '상대가 10명인데 못' 처럼 문장 중간에서 끊겨 의미 단위로 읽히지 않음.",
-        "캐릭터 일관성 부족: 같은 'LAFC 강아지'가 장면 3에서는 갈색 털, 장면 7에서는 주황색 털로 다름. 장면 1 고양이 유니폼은 파란색이라 LAFC 검정·금색과 맞지 않음.",
-        "장면 3(f1) 강아지가 경기장이 아니라 공원 벤치에 앉아 있어 기획서에 적은 경기장 맥락과 다소 어긋남.",
-        "영상 길이가 38.5초인데 description에는 '30초 썰'이라고 적혀 있어 맞지 않음.",
-        "사실 확인 필요: '7호골 될 뻔한 슈팅', '일본 골키퍼', 전반 0대1, 최종 1대1 등 경기 내용은 이 자료만으로 검증할 수 없음.",
-        "후킹 부족: 첫 3초가 질문 한 줄과 놀란 고양이뿐이라 스크롤을 멈출 만한 강한 포인트가 없음."
+        "6번 장면 나레이션 '이게 안 비기면 이상한 거였는데'는 논리가 거꾸로다. 수적 우위에 골 같은 슈팅이었다면 '안 이기면 이상한'이어야 한다. 바로 뒤의 '명예 회복할 일만 남았습니다'도 맥락과 맞지 않는다.",
+        "2번 장면에서 '밴쿠버가 10명으로 뛰게 됐다'고 했으므로 1번 훅의 '상대가 10명'과 호응하는 것은 맞다. 다만 '손흥민 7호골 같은 슈팅'은 무슨 뜻인지 불분명하다. 7호골이 실제로 있었는지, 다른 골과 혼동한 것인지 확인 필요.",
+        "'일본 골키퍼'로만 소개해 선수 이름이 없고 정보가 모호하다. 밴쿠버 골키퍼가 일본 국적인지 확인 필요.",
+        "5번 장면의 '전반 0 대 1'과 최종 1 대 1 사이에 누가 언제 득점했는지 설명이 없다. LAFC가 먼저 실점했는지, 동점골을 누가 넣었는지 빠져 있어 흐름이 끊긴다.",
+        "첫 프레임(f0) 이미지에 FC바르셀로나 엠블럼과 나이키 로고가 보이고, 전광판 글자는 '5:6', 'NCT 2016' 등으로 깨져 있다. 저작권·상표 위험이 있고, 기사 내용(LAFC 1-1)과도 맞지 않는다. 훅 장면이라 가장 눈에 띈다.",
+        "동물 캐릭터가 손흥민이나 LAFC, 밴쿠버와 연결되는 시각적 단서가 없다. 매 장면 유니폼과 캐릭터가 달라(고양이, 호랑이, 너구리) 같은 경기 이야기로 이어지지 않는다.",
+        "전체 톤이 경기 결과를 요약하는 뉴스 전달에 가깝다. 반전이나 드립이 약하고 마지막 댓글 유도만 있다. 50초는 이 내용에 비해 길다.",
+        "자막이 화면 중하단 인물 위에 놓여 일부 장면에서 캐릭터 몸통을 가린다. 상단 제목 박스는 검은 박스라 답답하다. 가독성 자체는 괜찮다."
       ],
-      "retry_target": "effector",
-      "feedback": "1) 자막 줄바꿈과 순서 버그를 고치세요. 한 자막 덩어리의 줄을 항상 위에서 아래로 대본 순서대로 배치하세요. 마지막 장면은 '이건 골키퍼가 미친 거야,' 다음 줄에 '아니면 LAFC가 아쉬웠던 거야?' 순서가 되어야 합니다. 2) 자막은 의미 단위(어절/구)로 끊고, 조사나 어미 앞에서 끊지 마세요. 3) 자막 y 위치를 하단 안전영역(대략 화면 높이 78~85%)으로 내려서 캐릭터 얼굴과 몸통을 가리지 않게 하세요. 4) 가능하면 자막 단위와 음성 싱크를 다시 확인하세요. 개선 팁: 이미지 프롬프트에서 LAFC 강아지의 털색과 유니폼(검정·금색)을 고정해 장면 간 일관성을 높이세요. 첫 장면에는 '10명 vs 11명' 같은 숫자나 반전 문구를 더 강하게 넣으세요."
+      "retry_target": "planner",
+      "feedback": "대본을 먼저 고쳐 주세요. (1) 6번 장면의 '안 비기면 이상한'을 '안 이기면 이상한'으로 바로잡고, '명예 회복할 일만 남았다'는 맥락에 맞게 삭제하거나 바꾸세요. (2) 득점 흐름(누가 먼저 실점했는지, 동점골은 누구였는지)을 한 장면에 넣어 0-1에서 1-1로 가는 과정이 보이게 하세요. (3) '7호골 같은 슈팅'은 정확한 표현으로 바꾸거나 근거가 불확실하면 빼세요. 골키퍼 국적도 확인이 안 되면 '상대 골키퍼'로만 쓰세요. (4) 첫 3초 훅을 '10명인데 못 이긴 팀' 같은 상황 드립으로 더 세게 만들고, 중간에 웃음 포인트를 1~2개 넣어 뉴스 요약 톤에서 벗어나세요. 길이는 35~40초로 줄이세요. (5) 이미지 프롬프트에는 'no logos, no text, no brand marks, plain scoreboard'를 추가하고, 같은 캐릭터가 한 팀 유니폼으로 이어지게 통일하세요. 첫 장면 이미지는 로고와 글자 깨짐 때문에 재생성이 필요합니다."
     },
     {
       "attempt": 2,
       "scores": {
-        "fun": 68,
-        "hook": 72,
-        "clarity": 74,
-        "visual": 80,
-        "subtitle": 78,
-        "safety": 85
+        "fun": 60,
+        "hook": 62,
+        "clarity": 64,
+        "visual": 66,
+        "subtitle": 72,
+        "safety": 70
       },
-      "overall": 74,
-      "pass": true,
+      "overall": 64,
+      "pass": false,
       "issues": [
-        "description에 '30초 썰'이라고 썼는데 실제 영상 길이는 42.8초라 맞지 않음. 쇼츠 길이로는 다소 긴 편임.",
-        "씬 3~4의 흐름이 매끄럽지 않음. 전반 0대1로 뒤진 상황을 먼저 말하고, 이어서 7호골 직전 슈팅이 막혔다고 설명함. 이 슈팅이 전반 장면인지, 0대1 실점과 어떤 순서인지 불분명함.",
-        "확인 필요: '일본 골키퍼', '7호골 될 뻔한 슈팅', '전반 0대1 후 1대1 무승부', '밴쿠버 10명' 등 경기 사실관계는 실제 경기 기록과 대조해야 함.",
-        "확인 필요: 실존 선수 손흥민의 이름을 쓰고 일본 골키퍼를 언급하므로, 선수 실명을 어떤 톤으로 다루는지 점검할 것.",
-        "캐릭터 일관성이 부족함. LAFC를 나타내는 캐릭터가 씬 3에서는 갈색 강아지이고, 씬 7에서는 주황색 코기풍 강아지로 바뀜. 씬 1의 고양이는 파란 유니폼이라 LAFC 검정·금색과 다름.",
-        "자막 표기가 어색함. 하단 자막이 캐릭터 몸통이나 문 위에 겹치고, 상단 검은 박스(on_screen_text)와 하단 자막이 따로 놀아 화면이 다소 답답함. 씬 2~3 구간 자막도 조각나게 끊김.",
-        "씬 2~4는 재미 요소가 약하고 설명 위주임. 문 닫았다·선물 미개봉 드립 외에는 반전이 부족함."
+        "scene 2 (f1): 여우 흰 유니폼 가슴에 나이키 스우시와 엠블럼이 선명하게 보임. 프롬프트가 'plain blank chest'를 지정했는데 무시됨. 실제 브랜드 로고라 저작권·상표 위험이 있음",
+        "scene 4 (f2): 골키퍼 앞발의 노란 구체가 공처럼 보이지만 아래의 실제 축구공과 따로 놀아 공이 두 개로 보임. 이미지가 어색하고 슈퍼세이브 장면이 불명확함",
+        "scene 4 (f2): 자막이 캐릭터 몸통과 공 위에 겹침. scene 1(f0)에서는 자막이 고양이 다리를 가림. 자막 위치를 아래쪽 검은 여백으로 내리면 해결됨",
+        "scene 6 (f3): 자막 두 줄 '무승부라니 이게 되네요 / 판이었잖아요 그게'의 순서가 나레이션('이상한 판이었잖아요… 그게 무승부라니, 이게 되네요')과 달라 읽기 어색함. 청크 분할이나 싱크 확인 필요",
+        "흐름 모순: scene 2에서 밴쿠버가 10명이 됐다고 하고 scene 3·5에서는 전반 0-1 열세라고 함. 퇴장 시점과 득점 시점이 불명확해 'ㅇㅇ분 퇴장 후 동점' 같은 인과가 없음. 실제 경기 기록(퇴장 시점, 득점자) 확인 필요",
+        "description에 '30초 정리'라고 썼지만 실제 길이는 45.41초라 불일치",
+        "scene 1~7 모두 주인공이 '고양이'이고 손흥민이라는 단서가 없음. 제목의 '손흥민 검색량 터진 이유'가 영상에서 해소되지 않음(검색량 이야기가 없고 단순 경기 요약). 훅 약속과 본문이 어긋남",
+        "fun: 반전 구조('여기서 반전')가 있지만 대부분 경기 결과를 순서대로 읽는 요약 톤이라 드립 밀도가 낮음"
       ],
-      "retry_target": null,
-      "feedback": "합격. 개선 팁: (1) 영상 길이를 30초 안팎으로 줄이거나 description의 '30초'를 실제 길이에 맞게 고칠 것. (2) 씬 3과 4의 순서를 '슈퍼세이브 → 전반 0대1 → 퇴장 후에도 못 넣음'처럼 시간순으로 정리하면 이해하기 쉬움. (3) LAFC 캐릭터의 외형과 유니폼 색을 전 씬에서 통일하도록 image_prompt에 고정 묘사를 넣을 것. (4) 상단 on_screen_text 박스와 하단 자막이 겹치거나 중복되지 않도록 위치를 조정할 것. (5) 업로드 전에 점수, 득점 순번, 골키퍼 국적을 실제 경기 기록과 대조할 것. (6) 중간 씬에 한두 개 더 강한 드립이나 반전을 넣어 중반 이탈을 줄일 것."
+      "retry_target": "producer",
+      "feedback": "1) scene 2 이미지를 다시 생성하세요. 프롬프트에 'no logos, no brand marks, no text, no emblem, blank chest'를 negative 조건으로 명시하고, 결과에서 스우시나 엠블럼이 보이면 재생성하세요. 다른 장면도 로고 유무를 확인하세요. 2) scene 4는 공을 하나만 그리세요. 'one single soccer ball, no glowing orb, paw touching the ball'로 바꿔 슈퍼세이브 장면이 분명하게 보이게 하세요. 3) 자막은 인물 얼굴·몸통·공을 가리지 않도록 하단 여백이나 이미지 하단 20% 영역에 두는 것을 권장합니다. 4) (planner 참고) 손흥민이 누구인지 한 컷에서 드러나게 하세요(예: 등번호 7 같은 일반 요소, 자막 '손흥민'). 퇴장 시점과 득점 순서를 정리하고 사실은 확인한 뒤 쓰세요. '검색량 터진 이유'를 마지막에 회수하거나 제목을 바꾸세요. description의 '30초'는 실제 길이에 맞게 고치세요."
+    },
+    {
+      "attempt": 3,
+      "scores": {
+        "fun": 55,
+        "hook": 60,
+        "clarity": 65,
+        "visual": 30,
+        "subtitle": 45,
+        "safety": 80
+      },
+      "overall": 56,
+      "pass": false,
+      "issues": [
+        "장면 4(슈퍼세이브)가 placeholder 이미지(청록 그라데이션 배경)로 나갔습니다. 55% 프레임에는 골키퍼 그림이 없어 반전 장면이 비어 있습니다. 감점 대상입니다.",
+        "장면 2 이미지가 기획과 다릅니다. 프롬프트는 심판이 여우에게 레드카드를 보이는 장면인데, 실제 프레임은 검정 유니폼 소년 캐릭터가 공을 안고 있습니다. 심판, 레드카드, 상대 선수가 없어서 '퇴장 유도'가 전달되지 않습니다.",
+        "장면 6 이미지가 기획과 다릅니다. 프롬프트는 고양이 선수가 머리를 감싸는 장면인데, 실제 프레임은 유니폼 없는 사실적인 고양이가 풀밭에 엎드려 있습니다. 스타일도 장면 1의 3D 카툰과 달라 캐릭터 일관성이 깨집니다.",
+        "장면 1 캐릭터는 목과 몸의 비율이 어색하고 얼굴이 일그러져 있습니다. 유니폼 로고와 숫자도 뭉개져 있습니다. 장면 2의 유니폼 글자는 깨져 있습니다(GOnn 같은 형태).",
+        "자막 문제: 장면 6 프레임에서 하단 자막이 '무승부라니 이게 되네요 / 판이었잖아요 그게'로 어순이 뒤섞여 있고 하이라이트 단어도 어색합니다. 장면 4 프레임의 '분은 오늘 퇴근'은 문장 앞부분이 잘린 조각이라 음성과의 싱크를 확인해야 합니다.",
+        "장면 4 placeholder 프레임에서는 상단 on_screen_text '여기서 반전'과 하단 자막 '여기서 반전'이 같은 문구로 중복됩니다.",
+        "장면 1 프레임에서 하단 자막이 캐릭터 몸통을 가립니다. 상단 검정 박스 문구는 얼굴 바로 위에 걸쳐 있어 답답합니다.",
+        "길이 정합성: 영상은 45.41초인데 description은 '30초 정리'라고 적었습니다. 쇼츠로는 다소 길고 설명과도 맞지 않습니다.",
+        "내용 확인 필요: 'LAFC vs 밴쿠버 1-1, 상대 퇴장 유도, 전반 0-1 후 후반 동점'은 실제 경기 기록과 맞는지 확인이 필요합니다. 확정된 오류는 아닙니다. 또한 장면 3·4의 '전반 슈팅 후 세이브'와 장면 5의 '전반 0-1' 사이 시간 순서가 모호합니다. 퇴장이 언제 나왔는지도 설명이 없습니다.",
+        "재미 요소: '퇴근 안 합니다', '댓글로 붙어봅시다' 같은 드립은 있습니다. 하지만 대본이 경기 경과를 나열하는 구조에 가깝고 반전의 강도는 약합니다. 마지막 장면의 대결 구도도 이미지로 충분히 살아나지 않습니다."
+      ],
+      "retry_target": "producer",
+      "feedback": "1) 장면 4는 placeholder가 나갔습니다. 라쿤 골키퍼가 슈퍼히어로 자세로 공을 쳐내는 이미지를 재생성하고, 실패하면 재시도하거나 프롬프트를 단순화하세요. 2) 장면 2는 심판 개와 레드카드, 놀란 여우 선수가 실제로 보이도록 재생성하세요. 사람 소년 캐릭터가 나오지 않도록 'cat/dog/fox animal character, no human boy'를 명시하세요. 3) 장면 6은 유니폼을 입은 고양이 선수가 머리를 감싸는 3D 카툰으로 다시 뽑으세요. 사실적 고양이 사진체는 금지입니다. 4) 모든 장면에서 캐릭터 스타일(3D cartoon)과 유니폼 색을 일관되게 유지하고, 유니폼에 글자나 숫자가 생기지 않게 'no text, no logo, no numbers on jersey'를 추가하세요. 5) 하단 자막 영역(화면 아래 25%)은 풀밭으로 비워 캐릭터를 상단 2/3에 배치하세요. 6) 이미지 수정 후에도 자막 어순과 싱크 문제가 남으면 effector에게 넘기세요. 'description'의 '30초'는 실제 길이(약 45초)에 맞게 고치거나 대본을 줄이도록 planner에게 전달하는 것을 권합니다."
     }
   ],
   "marketer": {
-    "summary": "오늘은 '퇴장 끌어내고도 비긴 손흥민'과 '10만 원 김밥 축제'가 이끌고, K리그2 무승 탈출·위조지폐 사건·유도 세계 제패 등 스포츠와 생활 이슈가 고르게 뜬 하루",
+    "summary": "오늘은 손흥민의 LAFC 경기(퇴장 유도·슈퍼세이브)와 K리그 수원삼성·천안 14경기 만의 승리 같은 스포츠 이슈, 유도 세계선수권 이현지 우승, 그리고 5만원권 위조지폐 판결이 검색을 이끌었다.",
     "topics": [
       {
         "rank": 1,
@@ -125,34 +193,16 @@
           "'리더십 상처' 손흥민, 소속팀에서 명예 회복할까?",
           "‘손흥민 7호골, 일본 골키퍼가 막았다!’ 한 골이나 마찬가지였던 손흥민 완벽한 슈팅, 슈퍼세이브에 막혔다…LAFC 0-1 뒤지고 전반종료"
         ],
-        "topic": "손흥민이 퇴장 끌어냈는데 LAFC는 왜 10명 밴쿠버와 1-1? 슈퍼세이브에 막힌 7호골 '거의 골' 장면 30초 정리",
-        "why_now": "'손흥민이 퇴장 끌어냈지만…LAFC, 10명이 뛴 밴쿠버와 1-1 비겨', '일본 골키퍼가 막았다! 슈퍼세이브' 기사가 나왔다",
-        "angle": "'이게 왜 안 들어가?' 상황극 + 골키퍼 선방 리플레이식 30초 정리. 수적 우위인데 비긴 아이러니를 드립으로 풀고 팬 반응 투표 유도",
-        "target": "축구 팬, 해외축구·MLS 시청층 20~40대",
+        "topic": "손흥민이 퇴장 끌어낸 LAFC vs 밴쿠버 1-1 경기, 7호골 같았던 슈팅을 막은 골키퍼 슈퍼세이브 30초 정리",
+        "why_now": "'손흥민이 퇴장 끌어냈지만…LAFC, 10명이 뛴 밴쿠버와 1-1 비겨', '손흥민 7호골, 일본 골키퍼가 막았다' 기사가 연이어 나옴",
+        "angle": "'수적 우위인데 왜 못 이겼나' 상황극 + 골이나 다름없던 슈팅 장면을 슬로모션으로 보며 '이게 안 들어가?' 드립. 마지막은 명예 회복 관전 포인트로 마무리",
+        "target": "축구팬, 해외축구·MLS 시청층, 20~40대 남성",
         "fun_score": 8,
         "risk": "low",
-        "risk_note": "선수 개인 비난·조롱 없이 경기 상황 중심으로. '리더십 상처' 같은 평가성 표현은 인용 시 주의"
+        "risk_note": "선수 개인 비하 없이 경기 내용 중심으로 다룰 것"
       },
       {
         "rank": 2,
-        "keyword": "김밥",
-        "traffic": "1000+",
-        "traffic_num": 1000,
-        "news": [
-          "CU, 김천김밥축제 경연 우승작 '중화식 고추잡채 김밥' 출시",
-          "김밥에 10만 원 썼는데 안 아깝다…역대급 호평으로 전국 1위 오른 ‘축제’",
-          "“김밥을 영어로 하면 바비킴?”…2년 만에 전국 1위 오른 김천김밥축제 [제철축제]"
-        ],
-        "topic": "김밥 한 줄이 아니라 10만 원 쓰고도 안 아깝다? 전국 1위 김천김밥축제와 CU 중화식 고추잡채 김밥 출시",
-        "why_now": "'김밥에 10만 원 썼는데 안 아깝다…전국 1위 축제', 'CU, 경연 우승작 중화식 고추잡채 김밥 출시' 기사가 나왔다",
-        "angle": "'김밥을 영어로 하면 바비킴?' 드립으로 시작해 우승작이 편의점까지 온 과정을 정리. 직접 먹어보는 후기형 또는 '축제 우승작 vs 편의점 김밥' 비교",
-        "target": "먹방·편의점 신상 관심층, 10~30대",
-        "fun_score": 8,
-        "risk": "low",
-        "risk_note": ""
-      },
-      {
-        "rank": 3,
         "keyword": "can vs nep",
         "traffic": "500+",
         "traffic_num": 500,
@@ -161,34 +211,34 @@
           "Nepal to take on Canada in League 2 cricket",
           "Nepal’s Last Chance in the World Cup League 2 Campaign"
         ],
-        "topic": "네팔 vs 캐나다, 월드컵 리그2 크리켓 '마지막 기회' 경기 30초 요약",
-        "why_now": "'Nepal vs Canada ICC CWC League 2 Match 133', 'Nepal's Last Chance in the World Cup League 2 Campaign' 기사가 나왔다",
-        "angle": "크리켓을 모르는 한국인 눈높이로 '왜 마지막 기회인지'만 짧게 설명하는 입문형 이슈 정리. 경기 결과는 뉴스 확인 후 반영",
-        "target": "크리켓·해외 스포츠 관심층, 재한 네팔·남아시아 커뮤니티",
+        "topic": "네팔 vs 캐나다 크리켓 월드컵 리그2 경기, 네팔의 마지막 기회라는 이유",
+        "why_now": "'Nepal’s Last Chance in the World Cup League 2 Campaign', 'Nepal to take on Canada in League 2 cricket' 등 경기 예고 기사",
+        "angle": "크리켓을 모르는 사람을 위한 '이 경기가 왜 마지막 기회냐면' 30초 정리 + 낯선 스포츠 입문 드립",
+        "target": "스포츠 호기심층, 크리켓·남아시아 관심층",
         "fun_score": 4,
         "risk": "low",
-        "risk_note": "한국 내 수요가 작고 제공된 기사가 예측 위주라 결과를 단정하면 안 됨"
+        "risk_note": "국내 관심이 낮고 뉴스 제목 외 정보가 부족해 사실 확인이 필요함"
       },
       {
-        "rank": 4,
-        "keyword": "윤호중",
+        "rank": 3,
+        "keyword": "김호영",
         "traffic": "200+",
         "traffic_num": 200,
         "news": [
-          "행안장관 \"임은정 광주중수청장 감찰 지시…중수청 정치기관 착각\"",
-          "[속보]윤호중 행안장관 “임은정 광주중수청장 감찰 지시…중수청을 정치 기관으로 착각해”",
-          "김지용 중수청장 후보 인선에 '격랑'…14일 인사청문회 주목 - 머니투데이"
+          "김호영, 유튜브 출연 미성년 향한 악플에 영상 삭제…“법적 대응 진행”",
+          "김호영, 사과하는 법 알고 있네..3개월째 '옥장판 침묵'과 극과 극 [Oh!쎈 이슈] - 조선비즈",
+          "김호영 \"학생, 부모님들께 진심으로 죄송\"..부적절 댓글에 법적 대응 경고 [전문]"
         ],
-        "topic": "행안장관 '중수청을 정치기관으로 착각' 발언, 임은정 광주중수청장 감찰 지시가 왜 논란인지 30초 정리",
-        "why_now": "'행안장관 임은정 광주중수청장 감찰 지시…중수청 정치기관 착각', '김지용 중수청장 후보 인선에 격랑, 14일 인사청문회' 기사가 나왔다",
-        "angle": "인물 평가 없이 '누가 누구를 왜 감찰했나'와 14일 청문회 관전 포인트를 타임라인으로 정리하는 중립 요약",
-        "target": "시사 관심층 30~50대",
+        "topic": "김호영, 유튜브 출연 미성년자를 향한 악플에 영상 삭제 후 법적 대응 경고",
+        "why_now": "'유튜브 출연 미성년 향한 악플에 영상 삭제…법적 대응 진행', '학생, 부모님들께 진심으로 죄송' 입장문 보도",
+        "angle": "'영상이 왜 사라졌나' 타임라인 정리 + 악플이 미성년자에게 어떤 영향을 주는지 짚는 공감형 구성. 인물 조롱 없이 상황만 정리",
+        "target": "예능·연예 뉴스 소비층, 20~40대",
         "fun_score": 4,
         "risk": "high",
-        "risk_note": "정치 사안이라 한쪽 편들기·조롱 금지. 속보 기반이라 사실관계 변동 가능, 중립 표현 필수"
+        "risk_note": "실존 인물의 논란과 미성년자 관련 이슈여서 조롱·추측은 금지. 3개월째 침묵 등 다른 논란은 제목 외 사실 확인 없이 다루지 말 것"
       },
       {
-        "rank": 5,
+        "rank": 4,
         "keyword": "안양 정관장 대 창원 lg",
         "traffic": "200+",
         "traffic_num": 200,
@@ -197,16 +247,16 @@
           "[포토] 아반도-양홍석 '리바운드 쟁탈전' - 머니투데이",
           "‘3점슛 성공률 12%’ 유도훈 감독 “찬스에서 머뭇거려…더 자신감 가져야”"
         ],
-        "topic": "3점슛 성공률 12%…정관장전에서 LG는 왜 찬스에서 머뭇거렸나, 감독의 한마디",
-        "why_now": "'3점슛 성공률 12% 유도훈 감독 \"찬스에서 머뭇거려…더 자신감 가져야\"' 기사가 나왔다",
-        "angle": "'12%가 얼마나 낮은 숫자인지' 숫자로 보는 충격 비교 + 감독 멘트 자막 드립. 경기 사진 속 리바운드 쟁탈전 장면 활용",
-        "target": "KBL·농구 팬 20~40대",
+        "topic": "정관장 vs LG 경기에서 3점슛 성공률 12%에 그친 유도훈 감독의 '찬스에서 머뭇거렸다' 발언",
+        "why_now": "'3점슛 성공률 12%' 유도훈 감독 \"찬스에서 머뭇거려…더 자신감 가져야\" 기사",
+        "angle": "숫자로 보는 충격: 12%가 얼마나 낮은지 비교 + '오픈 찬스에서 슛을 망설이는 순간' 과장 상황극",
+        "target": "KBL 팬, 농구 팬",
         "fun_score": 5,
         "risk": "low",
-        "risk_note": "경기 결과(승패)는 기사 제목에 없으므로 단정하지 말 것"
+        "risk_note": "어느 팀의 기록인지 제목만으로 불분명하므로 확인 후 표기"
       },
       {
-        "rank": 6,
+        "rank": 5,
         "keyword": "k리그2",
         "traffic": "200+",
         "traffic_num": 200,
@@ -215,16 +265,16 @@
           "K리그2 천안, 경남 1-0 제압…14경기·5개월 만에 승리",
           "'경남은 걸을수록 축구를 잘한다?' 배성재 감독의 열띤 축구 강의 [케터뷰]"
         ],
-        "topic": "14경기·5개월 만에 드디어 승리! 천안시티FC 무승 탈출 순간",
-        "why_now": "'드디어 끝났다…천안시티FC 경남에 신승, 무승행진 14경기서 종지부' 기사가 나왔다",
-        "angle": "'5개월간 못 이긴 팀의 14경기 여정'을 숫자로 압축한 감동+웃음 스토리. '드디어 끝났다' 자막과 환호 반응 중심",
-        "target": "K리그 팬, 언더독 서사를 좋아하는 20~30대",
+        "topic": "천안시티FC, 14경기 5개월 만에 드디어 승리 (경남에 1-0)",
+        "why_now": "'드디어 끝났다…천안, 무승행진 14경기서 종지부' 보도",
+        "angle": "'5개월 만의 승리' 감동 서사 + 14경기 동안의 기다림을 달력·숫자로 환산하는 코믹 구성. 선수들 환호 반응 소개",
+        "target": "K리그 팬, 언더독 서사 좋아하는 20~30대",
         "fun_score": 7,
         "risk": "low",
-        "risk_note": "경남 팀이나 감독을 깎아내리지 않도록 주의"
+        "risk_note": ""
       },
       {
-        "rank": 7,
+        "rank": 6,
         "keyword": "지폐",
         "traffic": "200+",
         "traffic_num": 200,
@@ -233,16 +283,16 @@
           "휴대폰으로 찍고 A4 용지에 뽑았다…어르신들 일하는 편의점서 사용한 20대 결국",
           "집에서 5만원권 위조해 편의점서 사용…20대 항소심도 징역 2년"
         ],
-        "topic": "컬러 프린터로 5만원권 20장 위조, 편의점에서 쓴 20대 항소심도 징역 2년",
-        "why_now": "'컬러 프린터로 5만원권 위조지폐 20장 제작한 20대…항소심도 실형' 기사가 나왔다",
-        "angle": "'휴대폰으로 찍고 A4 용지에 뽑았다'는 수법이 왜 결국 걸렸는지 경각심 중심으로 정리. 진짜 지폐 식별법은 사건과 연결해 짧게 곁들이기",
-        "target": "자영업자, 편의점 알바생, 일반 시청자 전연령",
-        "fun_score": 6,
+        "topic": "컬러 프린터로 5만원권 20장을 위조해 편의점에서 쓴 20대, 항소심도 징역 2년",
+        "why_now": "'5만원권 위조지폐 20장 제작한 20대…항소심도 실형' 기사 다수",
+        "angle": "'휴대폰으로 찍고 A4에 뽑았다'는 황당한 수법과 결과를 짧게 정리하며 '이 계산이 안 맞는 이유' 숫자 비교. 범죄 미화나 수법 상세 설명은 피하고 처벌 결과 중심",
+        "target": "사건·사고 이슈 소비층, 자영업·편의점 종사자",
+        "fun_score": 5,
         "risk": "high",
-        "risk_note": "범죄 사건이라 수법을 따라 할 수 있게 상세히 설명하면 안 됨. 피고인 조롱 금지, 피해 업소(어르신 근무 편의점) 중심 경각심 톤 유지"
+        "risk_note": "범죄 사건이므로 제작 방법을 자세히 설명하면 안 되고, 어르신 근무 편의점 피해 언급은 조롱 없이 다룰 것"
       },
       {
-        "rank": 8,
+        "rank": 7,
         "keyword": "씨름",
         "traffic": "200+",
         "traffic_num": 200,
@@ -251,16 +301,16 @@
           "유도 AG '銀' 8일 만에 생애 첫 세계선수권 '金'…제주출신 이현지 '쾌거'",
           "이현지, 유도 세계선수권 여자 최중량급 우승"
         ],
-        "topic": "씨름선수 딸이 19세에 유도 세계 제패! 아시안게임 은메달 8일 만에 세계선수권 금메달",
-        "why_now": "'씨름선수 딸 이현지, 19세에 유도 세계 제패', '유도 AG 銀 8일 만에 생애 첫 세계선수권 金' 기사가 나왔다",
-        "angle": "'아빠는 씨름, 딸은 유도' 가족 서사 + '8일 만에 은에서 금' 숫자 반전. '내 능력 믿었다' 소감을 자막 포인트로",
-        "target": "스포츠 팬, 감동 서사 선호층 전연령",
+        "topic": "씨름선수 딸 이현지, 19세에 유도 세계선수권 여자 최중량급 우승",
+        "why_now": "'씨름선수 딸 이현지, 19세에 유도 세계 제패', 'AG 銀 8일 만에 생애 첫 세계선수권 金' 기사",
+        "angle": "'씨름 집안 DNA' 반전 서사: 아버지는 씨름, 딸은 유도 세계 1위. 8일 만에 은메달에서 금메달까지의 타임라인으로 '이게 가능해?' 구성",
+        "target": "스포츠 팬, 가족 서사 좋아하는 전 연령",
         "fun_score": 8,
         "risk": "low",
-        "risk_note": "미성년 직전 연령(19세) 선수의 사생활·가족 사항은 기사에 나온 범위로만"
+        "risk_note": "제주 출신, 19세 등 기사에 나온 정보만 사용"
       },
       {
-        "rank": 9,
+        "rank": 8,
         "keyword": "수원삼성",
         "traffic": "100+",
         "traffic_num": 100,
@@ -269,13 +319,13 @@
           "이정효 수원 감독 \"김주찬, 생각보다 어려서 놀랐다...준홍이한테는 킥 자제하자고 농담했다\"",
           "[if.preview] ‘4연승’ 이정효의 수원, 안산에 설욕하고 우승에 더 가까이 갈까?"
         ],
-        "topic": "4연승 이정효호 수원, 안산전 라인업 공개…루이스-페신 투톱에 전역 김주찬 대기",
-        "why_now": "'1위 굳히기 나서는 수원, 안산전 베스트11 공개', '4연승의 이정효 수원' 기사가 나왔다",
-        "angle": "'이정효 감독의 농담' 멘트 중심 라인업 해설. '전역하자마자 대기명단' 김주찬을 소개하는 복귀 서사와 1위 굳히기 관전 포인트",
-        "target": "수원 삼성·K리그 팬 20~40대",
-        "fun_score": 6,
+        "topic": "이정효 감독의 수원 4연승, 안산전 앞두고 1위 굳히기",
+        "why_now": "'1위 굳히기' 나서는 수원, 안산전 베스트11 공개, '4연승의 이정효의 수원' 프리뷰 기사",
+        "angle": "이정효 감독의 입담(김주찬 '생각보다 어려서 놀랐다', 킥 자제 농담)을 모은 어록 숏츠 + 루이스-페신 투톱 기대 포인트",
+        "target": "수원삼성·K리그 팬, 축구 커뮤니티",
+        "fun_score": 7,
         "risk": "low",
-        "risk_note": "경기 결과는 제목에 없으므로 승패 단정 금지"
+        "risk_note": "경기 결과는 아직 알 수 없으므로 프리뷰 형태로 제작"
       }
     ],
     "trend_count": 10,
@@ -283,72 +333,78 @@
       {
         "keyword": "호랑이",
         "blocked_by": "사망"
+      },
+      {
+        "keyword": "윤호중",
+        "blocked_by": "검찰"
       }
     ]
   },
   "selected_attempt": 2,
   "plan": {
     "chosen_rank": 1,
-    "reason": "검색량이 10000+로 가장 높고, 수적 우위인데 비긴 아이러니와 슈퍼세이브 장면이 드립 소재로 충분해서 선택. 계산이 들어가는 숫자는 없고, 스코어(1-1, 0-1)와 7호골 언급은 news 제목 내용만 사용함.",
-    "title": "손흥민이 퇴장까지 끌어냈는데 왜 못 이겼냐면",
-    "hook": "상대가 10명인데 못 이겼다고?",
-    "style": "vibrant 3D cartoon, soft lighting, high detail, bright colors, expressive characters, vertical composition",
+    "reason": "검색량 10000+로 가장 높고 재미 포인트도 충분함. 사용한 사실은 제목에 있는 내용뿐: 손흥민이 상대 퇴장을 끌어냄, 밴쿠버가 10명으로 뜀, 한 골이나 마찬가지였던 완벽한 슈팅이 슈퍼세이브에 막힘, 전반 LAFC 0-1 뒤진 채 종료, 최종 1-1 무승부. 득점 흐름은 LAFC가 0-1로 뒤지다 1-1이 된 것까지만 쓰고, 누가 먼저 넣었는지와 동점골 득점자는 제목에 없어 뺐음. QA 반영으로 7호골 표현을 '한 골이나 마찬가지였던 완벽한 슈팅'으로 바꾸고 골키퍼는 '상대 골키퍼'로만 표기, 6번 장면은 '안 이기면 이상한'으로 수정하고 '명예 회복' 문구는 삭제함. 이미지 프롬프트는 FLUX가 부정 표현을 오히려 그리므로 'no logos' 대신 '무지 유니폼, 빈 스코어보드, 매끈한 표면' 같은 긍정형으로 같은 효과를 냄. 계산이나 숫자 가공 없음.",
+    "title": "10명인데 못 이긴 팀? 손흥민 검색량 터진 이유",
+    "hook": "상대가 10명인데 못 이긴 팀이 있다?",
+    "bgm_mood": "funny",
+    "style": "vibrant 3D cartoon, soft lighting, high detail, bright stadium colors, expressive characters, plain solid-color jerseys with smooth blank surfaces, plain blank scoreboard",
     "scenes": [
       {
         "id": 1,
-        "narration": "상대가 10명인데 못 이겼다고?",
-        "on_screen_text": "실화냐",
-        "image_prompt": "A shocked cartoon cat in a soccer jersey holding its head with both paws on a green football pitch, huge wide eyes, dramatic stadium lights, vibrant 3D cartoon, soft lighting, high detail, bright colors, expressive characters, vertical composition"
+        "narration": "상대가 10명인데 못 이긴 팀이 있다? 지금 손흥민 검색량 터진 이유입니다.",
+        "on_screen_text": "10명인데 무승부?",
+        "image_prompt": "an orange tabby cat soccer player in a plain solid black-and-gold jersey with a smooth blank chest, standing on a green pitch with a stunned open-mouth face, a plain blank scoreboard in the background, bright stadium, vibrant 3D cartoon, soft lighting, high detail, bright stadium colors, expressive characters"
       },
       {
         "id": 2,
-        "narration": "손흥민이 상대 퇴장을 끌어냈거든. 밴쿠버는 그대로 10명이 됐어.",
-        "on_screen_text": "퇴장 유도",
-        "image_prompt": "A surprised cartoon owl referee holding up a big red card on a football pitch, a small cartoon fox player walking off the field in the background, vibrant 3D cartoon, soft lighting, high detail, bright colors, expressive characters, vertical composition"
+        "narration": "LAFC 경기에서 손흥민이 상대 퇴장을 끌어냈어요. 밴쿠버는 졸지에 10명이 됐죠.",
+        "on_screen_text": "퇴장 유도!",
+        "image_prompt": "a cute dog referee holding up a big red card toward a surprised white-jerseyed fox soccer player in a plain solid white jersey with a smooth blank chest, green pitch, vibrant 3D cartoon, soft lighting, high detail, bright stadium colors, expressive characters"
       },
       {
         "id": 3,
-        "narration": "근데 전반이 끝났을 때 LAFC가 0대1로 지고 있었어.",
-        "on_screen_text": "전반 0대1",
-        "image_prompt": "A gloomy cartoon puppy in a black and gold soccer jersey sitting on a bench looking at the ground, a small rain cloud above its head, vibrant 3D cartoon, soft lighting, high detail, bright colors, expressive characters, vertical composition"
+        "narration": "근데 전반에 한 골이나 마찬가지였던 완벽한 슈팅이 나왔어요. 다들 골인 줄 알았을 겁니다.",
+        "on_screen_text": "이건 골이지",
+        "image_prompt": "an orange tabby cat soccer player in a plain solid black-and-gold jersey kicking a glowing soccer ball with a bright motion trail toward the goal, dramatic angle, stadium lights, vibrant 3D cartoon, soft lighting, high detail, bright stadium colors, expressive characters"
       },
       {
         "id": 4,
-        "narration": "7호골 될 뻔한 완벽한 슈팅이 있었는데, 일본 골키퍼가 슈퍼세이브로 막아버린 거야.",
-        "on_screen_text": "이게 안 들어가?",
-        "image_prompt": "A cartoon raccoon goalkeeper in mid-air diving sideways and stretching one paw to stop a glowing soccer ball just before the goal net, motion lines, dramatic stadium lighting, vibrant 3D cartoon, soft lighting, high detail, bright colors, expressive characters, vertical composition"
+        "narration": "그런데 상대 골키퍼가 슈퍼세이브로 쳐냈어요. 이 분은 오늘 퇴근 안 합니다.",
+        "on_screen_text": "여기서 반전",
+        "image_prompt": "a raccoon goalkeeper in a plain solid white jersey diving in mid-air in a superhero pose, one paw stopping a glowing soccer ball just before the goal line, dramatic lighting, vibrant 3D cartoon, soft lighting, high detail, bright stadium colors, expressive characters"
       },
       {
         "id": 5,
-        "narration": "한 골이나 마찬가지였는데 골키퍼가 그냥 문을 닫아버렸어.",
-        "on_screen_text": "문 닫았다",
-        "image_prompt": "A cartoon goal net with a giant closed wooden door in front of it, a smug cartoon raccoon goalkeeper leaning on the door with crossed arms, football pitch background, vibrant 3D cartoon, soft lighting, high detail, bright colors, expressive characters, vertical composition"
+        "narration": "결국 전반은 LAFC가 0 대 1로 뒤진 채 끝났고, 후반에 1 대 1 동점을 만들었습니다.",
+        "on_screen_text": "0-1에서 1-1",
+        "image_prompt": "an orange tabby cat soccer player in a plain solid black-and-gold jersey with raised paws celebrating, a soccer ball resting in the goal net behind, a plain blank scoreboard above the stands, vibrant 3D cartoon, soft lighting, high detail, bright stadium colors, expressive characters"
       },
       {
         "id": 6,
-        "narration": "결국 1대1 무승부. 퇴장은 선물인데 포장도 못 뜯은 셈이지.",
-        "on_screen_text": "선물 미개봉",
-        "image_prompt": "A cartoon cat in a soccer jersey staring at a large unopened gift box with a ribbon on the center of a football pitch, tilted head, confused expression, vibrant 3D cartoon, soft lighting, high detail, bright colors, expressive characters, vertical composition"
+        "narration": "근데 10명 상대로 안 이기면 이상한 판이었잖아요. 그게 무승부라니, 이게 되네요.",
+        "on_screen_text": "이게 왜 안 돼",
+        "image_prompt": "an orange tabby cat soccer player in a plain solid black-and-gold jersey holding its head with both paws in disbelief, a floating soccer ball with a question mark above it, green pitch, vibrant 3D cartoon, soft lighting, high detail, bright stadium colors, expressive characters"
       },
       {
         "id": 7,
-        "narration": "이건 골키퍼가 미친 거야, 아니면 LAFC가 아쉬웠던 거야? 댓글로 편 갈라보자.",
-        "on_screen_text": "너의 선택은?",
-        "image_prompt": "Split screen cartoon scene, left side a heroic raccoon goalkeeper with a gold glove, right side a sad puppy in a black and gold jersey, glowing versus spark in the middle, vibrant 3D cartoon, soft lighting, high detail, bright colors, expressive characters, vertical composition"
+        "narration": "10명 상대로 1 대 1, 아쉬운 무승부냐 당연한 결과냐? 댓글로 붙어봅시다.",
+        "on_screen_text": "아쉽다 vs 당연",
+        "image_prompt": "an orange tabby cat in a plain solid black-and-gold jersey facing a white-jerseyed fox in a plain solid white jersey, angry sparks between them, green pitch and stadium background, vibrant 3D cartoon, soft lighting, high detail, bright stadium colors, expressive characters"
       }
     ],
-    "description": "손흥민이 퇴장까지 끌어냈는데 LAFC는 왜 10명 밴쿠버와 1-1이었을까? 슈퍼세이브에 막힌 7호골 장면까지 30초 썰.\n골키퍼가 미쳤다 vs LAFC가 아쉬웠다, 댓글로 편 갈라보세요!\n#손흥민 #LAFC #쇼츠",
+    "description": "손흥민이 상대 퇴장을 끌어냈지만 LAFC는 10명이 뛴 밴쿠버와 1-1로 비겼다. 0-1에서 1-1까지, 슈퍼세이브에 막힌 장면까지 30초 정리! #손흥민 #LAFC #축구쇼츠",
     "tags": [
       "손흥민",
       "LAFC",
       "밴쿠버",
       "MLS",
-      "슈퍼세이브",
       "축구",
-      "손흥민7호골",
+      "슈퍼세이브",
+      "퇴장",
+      "무승부",
       "쇼츠"
     ],
-    "comment_question": "10명 상대로 비긴 건 골키퍼가 미친 걸까, LAFC가 아쉬웠던 걸까? 너의 선택은?"
+    "comment_question": "10명 상대로 1-1, 아쉬운 무승부일까 당연한 결과일까? 여러분의 생각은?"
   },
   "production": {
     "image_providers": {
@@ -356,58 +412,60 @@
     }
   },
   "effects": {
-    "duration": 42.84,
+    "duration": 48.31,
     "tts_provider": "edge",
     "voice": "ko-KR-SunHiNeural",
-    "bgm": null
+    "bgm": "Daily Beetle",
+    "bgm_mood": "funny",
+    "bgm_credit": "Music: \"Daily Beetle\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
   },
   "storyboard": [
     {
       "id": 1,
-      "narration": "상대가 10명인데 못 이겼다고?",
-      "on_screen_text": "실화냐",
+      "narration": "상대가 10명인데 못 이긴 팀이 있다? 지금 손흥민 검색량 터진 이유입니다.",
+      "on_screen_text": "10명인데 무승부?",
       "image": "runs/2026-10-11/scene_01.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 2,
-      "narration": "손흥민이 상대 퇴장을 끌어냈거든. 밴쿠버는 그대로 10명이 됐어.",
-      "on_screen_text": "퇴장 유도",
+      "narration": "LAFC 경기에서 손흥민이 상대 퇴장을 끌어냈어요. 밴쿠버는 졸지에 10명이 됐죠.",
+      "on_screen_text": "퇴장 유도!",
       "image": "runs/2026-10-11/scene_02.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 3,
-      "narration": "근데 전반이 끝났을 때 LAFC가 0대1로 지고 있었어.",
-      "on_screen_text": "전반 0대1",
+      "narration": "근데 전반에 한 골이나 마찬가지였던 완벽한 슈팅이 나왔어요. 다들 골인 줄 알았을 겁니다.",
+      "on_screen_text": "이건 골이지",
       "image": "runs/2026-10-11/scene_03.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 4,
-      "narration": "7호골 될 뻔한 완벽한 슈팅이 있었는데, 일본 골키퍼가 슈퍼세이브로 막아버린 거야.",
-      "on_screen_text": "이게 안 들어가?",
+      "narration": "그런데 상대 골키퍼가 슈퍼세이브로 쳐냈어요. 이 분은 오늘 퇴근 안 합니다.",
+      "on_screen_text": "여기서 반전",
       "image": "runs/2026-10-11/scene_04.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 5,
-      "narration": "한 골이나 마찬가지였는데 골키퍼가 그냥 문을 닫아버렸어.",
-      "on_screen_text": "문 닫았다",
+      "narration": "결국 전반은 LAFC가 0 대 1로 뒤진 채 끝났고, 후반에 1 대 1 동점을 만들었습니다.",
+      "on_screen_text": "0-1에서 1-1",
       "image": "runs/2026-10-11/scene_05.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 6,
-      "narration": "결국 1대1 무승부. 퇴장은 선물인데 포장도 못 뜯은 셈이지.",
-      "on_screen_text": "선물 미개봉",
+      "narration": "근데 10명 상대로 안 이기면 이상한 판이었잖아요. 그게 무승부라니, 이게 되네요.",
+      "on_screen_text": "이게 왜 안 돼",
       "image": "runs/2026-10-11/scene_06.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 7,
-      "narration": "이건 골키퍼가 미친 거야, 아니면 LAFC가 아쉬웠던 거야? 댓글로 편 갈라보자.",
-      "on_screen_text": "너의 선택은?",
+      "narration": "10명 상대로 1 대 1, 아쉬운 무승부냐 당연한 결과냐? 댓글로 붙어봅시다.",
+      "on_screen_text": "아쉽다 vs 당연",
       "image": "runs/2026-10-11/scene_07.jpg",
       "provider": "cloudflare"
     }
@@ -416,7 +474,7 @@
   "video_file": "videos/2026-10-11.mp4",
   "upload": {
     "status": "skipped",
-    "reason": "--no-upload"
+    "reason": "QA 불합격"
   },
-  "finished_at": "2026-10-11T15:20:32+09:00"
+  "finished_at": "2026-10-11T15:38:26+09:00"
 }
