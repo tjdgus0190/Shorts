@@ -59,6 +59,11 @@ jobs:
           for k in CLAUDE_CODE_OAUTH_TOKEN GEMINI_API_KEY CF_ACCOUNT_ID CF_API_TOKEN YT_REFRESH_TOKEN; do
             if [ -n "${!k}" ]; then echo "✅ $k 등록됨"; else echo "::warning::❌ $k 없음"; fi
           done
+          if [ -n "$CF_ACCOUNT_ID" ]; then
+            ID=$(echo -n "$CF_ACCOUNT_ID" | tr -d '[:space:]')
+            if [[ "$ID" =~ ^[0-9a-f]{32}$ ]]; then echo "✅ CF_ACCOUNT_ID 형식 정상(32자리)";
+            else echo "::error::CF_ACCOUNT_ID 형식이 계정 ID(32자리 영문·숫자)가 아닙니다 (길이 ${#ID})"; fi
+          fi
           if [ -n "$CLAUDE_CODE_OAUTH_TOKEN" ]; then
             claude -p "OK라고만 답하세요" --output-format json --tools "" >/tmp/c.json 2>&1 \
               && echo "✅ Claude 인증 성공" || { echo "::error::Claude 인증 실패"; head -c 400 /tmp/c.json; }

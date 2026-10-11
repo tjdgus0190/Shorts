@@ -61,14 +61,29 @@ def fit_vertical(img: Image.Image, w: int, h: int, allow_pad: bool = True) -> Im
     return img.resize((w, h), Image.LANCZOS)
 
 
+class ConfigError(RuntimeError):
+    """재시도해도 소용없는 설정 오류(잘못된 계정 ID·토큰 권한 등)."""
+
+
+_disabled: set[str] = set()  # 설정 오류가 난 provider는 이번 실행 동안 건너뛴다
+
+
 def cloudflare(prompt: str, seed: int | None = None, steps: int = 8, timeout: int = 120) -> Image.Image:
-    account, token = os.environ["CF_ACCOUNT_ID"], os.environ["CF_API_TOKEN"]
+    # 복사·붙여넣기 때 섞인 공백/줄바꿈 제거
+    account, token = os.environ["CF_ACCOUNT_ID"].strip(), os.environ["CF_API_TOKEN"].strip()
     body = {"prompt": prompt[:2000], "steps": steps}
     if seed is not None:
         body["seed"] = seed
     r = requests.post(
         f"https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/@cf/black-forest-labs/flux-1-schnell",
         headers={"Authorization": f"Bearer {token}"}, json=body, timeout=timeout)
+    if r.status_code in (400, 401, 403, 404):
+        hint = {
+            401: "CF_API_TOKEN이 올바르지 않습니다",
+            403: "CF_API_TOKEN에 'Workers AI' 권한이 없습니다",
+            404: "CF_ACCOUNT_ID가 올바르지 않습니다(계정 ID는 32자리 영문·숫자)",
+        }.get(r.status_code, "요청 형식 오류")
+        raise ConfigError(f"cloudflare HTTP {r.status_code} — {hint}: {r.text[:200]}")
     if r.status_code != 200:
         raise RuntimeError(f"cloudflare HTTP {r.status_code}: {r.text[:300]}")
     return Image.open(BytesIO(base64.b64decode(r.json()["result"]["image"])))
@@ -135,11 +150,15 @@ def generate_image(cfg: dict, prompt: str, fallback_text: str, out: Path, seed: 
     }
     img, used = None, "placeholder"
     for name in chain:
-        if name not in calls:
+        if name not in calls or name in _disabled:
             continue
         for attempt in range(3):
             try:
                 img, used = calls[name](), name
+                break
+            except ConfigError as e:
+                log.error("%s 설정 오류 → 이번 실행에서는 사용 안 함: %s", name, e)
+                _disabled.add(name)
                 break
             except Exception as e:  # noqa: BLE001
                 log.warning("%s 실패(%d): %s", name, attempt + 1, str(e)[:200])
