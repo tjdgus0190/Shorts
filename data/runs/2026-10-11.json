@@ -1,211 +1,213 @@
 {
   "date": "2026-10-11",
   "status": "qa_failed",
-  "started_at": "2026-10-11T14:46:24+09:00",
+  "started_at": "2026-10-11T14:58:29+09:00",
   "llm_provider": "claude_cli",
   "stages": [
     {
       "name": "marketer",
       "label": "마케터",
       "status": "done",
-      "started_at": "2026-10-11T14:46:24+09:00",
+      "started_at": "2026-10-11T14:58:29+09:00",
       "note": "",
-      "seconds": 21.0
+      "seconds": 21.8
     },
     {
       "name": "planner",
       "label": "기획자",
       "status": "done",
-      "started_at": "2026-10-11T14:46:45+09:00",
+      "started_at": "2026-10-11T14:58:51+09:00",
       "note": "",
-      "seconds": 20.7
+      "seconds": 19.5
     },
     {
       "name": "producer",
       "label": "제작자",
       "status": "done",
-      "started_at": "2026-10-11T14:47:06+09:00",
+      "started_at": "2026-10-11T14:59:10+09:00",
       "note": "",
-      "seconds": 141.9
+      "seconds": 27.8
     },
     {
       "name": "effector",
       "label": "이펙터",
       "status": "done",
-      "started_at": "2026-10-11T14:49:28+09:00",
+      "started_at": "2026-10-11T14:59:38+09:00",
       "note": "",
-      "seconds": 28.6
+      "seconds": 39.6
     },
     {
       "name": "qa",
       "label": "QA",
       "status": "done",
-      "started_at": "2026-10-11T14:49:57+09:00",
+      "started_at": "2026-10-11T15:00:18+09:00",
       "note": "1차",
-      "seconds": 17.8
+      "seconds": 23.9
     },
     {
       "name": "producer",
       "label": "제작자",
       "status": "done",
-      "started_at": "2026-10-11T14:50:14+09:00",
+      "started_at": "2026-10-11T15:00:42+09:00",
       "note": "QA 1차 피드백 반영",
-      "seconds": 148.3
+      "seconds": 35.2
     },
     {
       "name": "effector",
       "label": "이펙터",
       "status": "done",
-      "started_at": "2026-10-11T14:52:43+09:00",
+      "started_at": "2026-10-11T15:01:17+09:00",
       "note": "QA 1차 피드백 반영",
-      "seconds": 26.3
+      "seconds": 37.0
     },
     {
       "name": "qa",
       "label": "QA",
       "status": "done",
-      "started_at": "2026-10-11T14:53:09+09:00",
+      "started_at": "2026-10-11T15:01:54+09:00",
       "note": "2차",
-      "seconds": 19.3
+      "seconds": 30.4
     },
     {
       "name": "producer",
       "label": "제작자",
       "status": "done",
-      "started_at": "2026-10-11T14:53:29+09:00",
+      "started_at": "2026-10-11T15:02:24+09:00",
       "note": "QA 2차 피드백 반영",
-      "seconds": 118.0
+      "seconds": 39.3
     },
     {
       "name": "effector",
       "label": "이펙터",
       "status": "done",
-      "started_at": "2026-10-11T14:55:27+09:00",
+      "started_at": "2026-10-11T15:03:03+09:00",
       "note": "QA 2차 피드백 반영",
-      "seconds": 27.6
+      "seconds": 35.8
     },
     {
       "name": "qa",
       "label": "QA",
       "status": "done",
-      "started_at": "2026-10-11T14:55:54+09:00",
+      "started_at": "2026-10-11T15:03:39+09:00",
       "note": "3차",
-      "seconds": 19.0
+      "seconds": 24.3
     }
   ],
   "qa": [
     {
       "attempt": 1,
       "scores": {
-        "fun": 55,
-        "hook": 58,
-        "clarity": 70,
-        "visual": 25,
-        "subtitle": 60,
-        "safety": 65
+        "fun": 60,
+        "hook": 70,
+        "clarity": 75,
+        "visual": 55,
+        "subtitle": 72,
+        "safety": 85
       },
-      "overall": 56,
+      "overall": 68,
       "pass": false,
       "issues": [
-        "6장면 중 3장면이 placeholder 이미지입니다. 프레임 f2(55%)와 f3(85%)은 단색 그라데이션과 원 무늬뿐이라 장면 내용(이색 김밥 4종, 고민하는 캐릭터)이 전혀 전달되지 않습니다.",
-        "첫 프레임(f0)의 pollinations 이미지가 깨져 있습니다. 김밥인지 얼굴인지 알아볼 수 없고, 주황색 덩어리가 입처럼 보여 기괴합니다. 프롬프트의 '단면이 보이는 김밥+고추잡채'와 맞지 않아 훅이 약합니다.",
-        "f0 우하단에 'pollinations.ai' 워터마크가 보입니다. 업로드 시 출처 표기와 품질 면에서 감점입니다.",
-        "f1(장면 3)은 대나무 발 위에 초록 천과 주황 조각이 놓인 모습입니다. 밥, 김, 다양한 재료가 날아드는 프롬프트 의도와 달라 장면이 맞지 않습니다.",
-        "placeholder 장면(f2, f3)에서 상단 검은 박스의 on_screen_text와 중앙의 큰 글씨가 똑같은 문구로 중복됩니다. 하단 자막까지 합치면 화면에 글이 세 겹입니다. 상단 검은 박스는 배경이 없는 장면에서 투박해 보입니다.",
-        "장면 2의 '김밥 축제 우승', '편의점 신상품 출시' 주장은 출처가 없습니다. 실제 사례인지 확인 필요하며, 근거 없이 '~대요'로 전하면 허위 정보 위험이 있습니다.",
-        "서사가 약합니다. 반전이 장면 2에서 끝나고 이후는 일반론(김밥은 뭐든 말아요)이 이어집니다. 43초에 비해 정보 밀도가 낮고, 고추잡채 김밥의 구체적 맛이나 만드는 법도 없습니다.",
-        "자동 측정은 문제없음입니다(1080x1920, 오디오 -14.9dB). TTS는 edge로 정상입니다."
+        "장면 1 프레임: 왼쪽 캐릭터는 스시, 오른쪽은 겉이 밥인 롤인데 김(검은 면)이 거의 안 보이고 안쪽에 파인애플 같은 그림이 있어 김밥으로 읽히지 않습니다. '김밥 vs 스시' 대결 구도가 모호합니다.",
+        "장면 3 프레임: 병 라벨 글자가 깨져 있습니다('STAN VAL' 같은 의미 없는 영문). 왼쪽 병은 식초보다 간장·갈색 액체에 가깝고, 오른쪽에서는 젓가락과 기름이 밥에 떨어지는 구도가 어색합니다. 스시 밥과 김밥 밥이 한눈에 구분되지 않습니다.",
+        "장면 4 프레임: 단면 김밥에 김이 없고 밥이 겉을 감싸고 있습니다. 나레이션의 단무지가 보이지 않고, 햄이 많이 보이며 주인공 재료는 달걀프라이입니다. 나레이션과 이미지가 어긋납니다.",
+        "장면 6 프레임: 도시락 안에 핫도그나 소시지 같은 막대와 호박 모양이 섞여 있어 '다양한 김밥'으로 보이지 않습니다. 김밥보다 캘리포니아롤 느낌이 강합니다.",
+        "영상 길이는 47.5초인데 description에는 '30초 만에 정리'라고 적혀 있어 서로 맞지 않습니다. 쇼츠로는 길고 중간에 이탈할 수 있습니다.",
+        "'김밥은 소풍 도시락에서 태어난 완전히 다른 한국 음식'이라는 기원 단정은 확인 필요입니다. 일본 노리마키와의 역사적 연관 논쟁이 있어 단정하면 댓글 반박이 생길 수 있습니다.",
+        "제목은 '3가지 이유'인데 장면 2의 '정답은 김밥'은 이유가 아닌 정의여서 구조가 약간 어긋납니다. '고유명사' 설명도 논리적으로 약합니다.",
+        "자막이 화면 중앙 하단의 음식 위에 놓여 일부 재료를 가립니다. 상단 on_screen_text의 검은 박스는 이미지와 어울리지 않고 투박합니다. 나레이션 자막이 2~3단어씩 끊겨 가독성은 보통입니다.",
+        "훅은 질문형이라 무난하지만 '발끈'의 갈등이나 충격이 약하고, 첫 프레임의 캐릭터 이미지만으로는 호기심이 크지 않습니다."
       ],
       "retry_target": "producer",
-      "feedback": "1) placeholder 3장을 모두 실제 생성 이미지로 교체하세요. 특히 장면 4(이색 김밥 4종 단면 라인업)와 장면 6(갈림길의 캐릭터)은 내용이 보여야 합니다. 2) 장면 1은 재생성하세요. 프롬프트를 'cross-section of a kimbap roll showing stir-fried peppers and pork, centered, food photography style'처럼 단순하고 구체적으로 바꾸고, 캐릭터 요소는 빼서 형태가 깨지지 않게 하세요. 3) 장면 3은 '밥과 김 위에 재료가 올라가는 탑뷰'가 드러나게 재생성하세요. 4) 워터마크가 없는 결과물을 쓰거나 크롭하세요. 5) placeholder가 불가피하면 상단 박스와 중앙 큰 글씨 중 하나만 남겨 문구 중복을 없애세요. 6) 참고로 planner에게 전달할 사항입니다. 장면 2의 우승/편의점 출시 주장은 출처를 확인하거나 '이런 조합도 화제가 됐대요'처럼 완화하는 편이 안전합니다. 또한 후반부에 반전이나 구체적 정보를 하나 더 넣으면 재미가 올라갑니다."
+      "feedback": "이미지를 다시 생성하세요. (1) 장면 1: 검은 김으로 싼 김밥 단면(단무지·시금치·달걀·당근)과 생선 올린 니기리 스시를 명확히 대비시키고, 'seaweed-wrapped, rice inside'를 프롬프트에 넣으세요. (2) 장면 3: 라벨 없는 병이나 'no text, no labels'를 지정하고, 식초병과 참기름병을 색과 형태로 구분하세요. 젓가락은 빼세요. (3) 장면 4: 김이 바깥을 감싼 단면에 노란 단무지, 시금치, 달걀지단, 당근이 보이게 하고 햄은 줄이세요. 생선회는 작은 접시로만 두세요. (4) 장면 6: 소시지나 호박을 빼고 김밥만 도시락에 담으세요. 이미지 프롬프트에는 'no text, no letters'를 일괄 추가하세요. 기획 쪽에는 두 가지를 전달하세요. description의 '30초'는 실제 길이에 맞게 고치고, '소풍 도시락에서 태어났다'는 단정은 '소풍 도시락으로 사랑받는'처럼 완화해야 합니다. 자막은 음식이 덜 가리도록 하단으로 내리고 상단 박스는 반투명 처리를 권장합니다."
     },
     {
       "attempt": 2,
       "scores": {
-        "fun": 50,
-        "hook": 60,
-        "clarity": 70,
-        "visual": 35,
-        "subtitle": 65,
-        "safety": 70
+        "fun": 55,
+        "hook": 62,
+        "clarity": 78,
+        "visual": 55,
+        "subtitle": 68,
+        "safety": 80
       },
-      "overall": 57,
+      "overall": 64,
       "pass": false,
       "issues": [
-        "6개 장면 중 3개가 placeholder 이미지입니다. 확인한 프레임 f2(장면 4 부근)와 f3(장면 6 부근)은 이미지 없이 단색 그라데이션 배경에 글자만 있습니다. 장면 4의 김밥 4종 비교와 장면 6의 갈림길 캐릭터가 전달되지 않습니다.",
-        "첫 프레임(f0)이 훅 장면인데 품질이 낮습니다. 흐릿하고 형태가 뭉개졌으며, 프롬프트에 적은 고추잡채 단면이 아니라 김과 토마토 같은 것이 어색하게 놓인 접시로 보입니다. 첫 3초의 시선 끌기가 약합니다.",
-        "f0 우하단에 'pollinations.ai' 워터마크가 보입니다. 업로드 전에 제거하거나 가려야 합니다. 출처 표기와 저작권 관점에서도 정리가 필요합니다.",
-        "placeholder 장면에서 상단 박스 문구와 중앙 큰 글자가 같은 내용으로 중복됩니다(예: '이미 이색 조합'이 두 번, '당신의 선택은?'이 두 번). 시각 정보 없이 글자만 반복되어 지루합니다.",
-        "상단 on_screen_text는 검은 박스 안에 있고 하단 자막은 화면 중하단에 있습니다. 이 때문에 f0과 f1에서 음식 이미지 일부를 가립니다. 자막이 잘 보이긴 하지만 화면 구성이 답답합니다.",
-        "'김밥 축제에서 우승', '편의점 신상품으로 출시'는 근거가 없는 사실 주장입니다. 실제 사례인지 확인 필요하며, 출처를 못 찾으면 표현을 완화해야 합니다. 설명란의 #편의점신상 해시태그도 같은 이유로 확인이 필요합니다.",
-        "f1(장면 3) 이미지는 단무지, 당근, 오이로 보이는 재료가 밥 위에 놓인 모습이라 장면과 맞습니다. 다만 당근이 반투명하게 번져 있어 AI 이미지 특유의 뭉개짐이 있습니다.",
-        "내용 구조가 '반전 주장 → 일반론 → 댓글 유도'라 몰입 요소가 약합니다. 고추잡채 김밥이 실제로 어떻게 생겼는지 보여주는 장면이 후반에 없습니다. 총 길이 43.6초에 비해 정보 밀도가 낮습니다."
+        "[visual] 장면 6(85% 프레임): 도시락 속 김밥이 연어 같은 주황 속재료가 보이는 겉밥(inside-out) 롤처럼 생겼습니다. 김(검은색) 겉면이 없어 김밥이 아니라 캘리포니아롤처럼 보입니다. 영상 마지막 메시지가 '김밥'인데 그림이 이를 뒷받침하지 못합니다. 옆의 녹색 원뿔 모양 물체와 왼쪽 가장자리의 둥근 물체도 정체불명입니다.",
+        "[visual] 장면 4(55% 프레임): 속재료가 단무지·시금치·계란·당근으로 읽히지 않습니다. 망고 같은 주황색 큐브와 정체불명의 흰색 소용돌이 덩어리가 보이고, 김 질감은 구겨진 종이처럼 보입니다. 나레이션에서 말하는 재료와 화면이 불일치합니다.",
+        "[visual] 장면 1(0.6초 프레임): 니기리의 연어 초밥 둘레에 김 띠가 아니라 두꺼운 김 원통이 감겨 있어 형태가 어색합니다. 김밥의 속은 노란 큐브(망고 느낌)가 많아 단무지 막대와 다릅니다. 가장 중요한 훅 프레임인데도 비교 대상의 정확성이 떨어집니다.",
+        "[visual] 장면 3(30% 프레임): 병 이미지는 깨끗하고 글자도 없어 양호합니다. 다만 식초(투명·연한 색)와 참기름(진한 색)의 대비가 약해서, 둘 다 호박색 액체로 보여 구분이 잘 안 됩니다.",
+        "[subtitle] 나레이션 자막이 화면 중앙 하단에 있어서 장면 4, 6에서 김밥 단면과 도시락의 핵심 부분을 가립니다. 자막이 한 번에 2~3어절씩만 나와서 호흡은 괜찮지만 위치 조정이 필요합니다.",
+        "[subtitle] 상단 장면 문구는 검은 박스에 흰 글씨라 가독성은 좋지만, 박스가 이미지 위 배경 영역에 떠 있고 나레이션 자막과 스타일이 달라 정돈된 느낌이 약합니다.",
+        "[safety/사실] '김밥은 소풍 도시락에서 태어난 완전히 다른 한국 음식'이라는 단정은 확인 필요입니다. 김밥의 기원은 일본 김초밥(후토마키)의 영향이라는 설과 한국 고유 음식이라는 설이 함께 있어 논란의 소지가 있습니다. 영어로도 '그냥 김밥(gimbap)'이라는 표현은 대체로 통용되지만, 해외에서는 'Korean sushi'로 소개되는 일도 많아서 '정답'이라는 단정은 과합니다.",
+        "[fun] 3가지 차이(밥 간·속재료·먹는 법)는 평범한 정보 나열이고 반전이 없습니다. '스시는 생선 위주'라는 설명도 일반화입니다. 마지막 질문이 댓글을 유도하지만 서사의 클라이맥스가 약합니다.",
+        "[hook] 첫 문장이 '왜 발끈할까요?'라는 질문인데 구체적인 갈등이나 놀라움이 없습니다. 시각적 비교는 좋지만 첫 3초의 긴장감이 약합니다.",
+        "[길이/메타] 영상 길이는 47.5초인데 설명란에는 '30초 만에 정리'라고 적혀 있어 불일치합니다. 장면 2가 장면 1의 질문을 곧바로 답하는 구조라 중복 느낌도 있습니다."
       ],
       "retry_target": "producer",
-      "feedback": "1) placeholder 3장을 모두 실제 생성 이미지로 교체하세요(장면 4 김밥 4종, 장면 6 갈림길 캐릭터 포함). 그라데이션 배경만 남는 장면이 없어야 합니다. 2) 장면 1 훅 이미지는 흐릿하므로 다시 생성하세요. 고추잡채가 보이는 김밥 단면을 선명하게 클로즈업하고, 결과물에 김밥과 피망, 고기가 실제로 보이는지 확인하세요. 3) pollinations.ai 워터마크가 영상에 남지 않게 하세요(크롭 또는 다른 생성 경로). 4) 이미지가 제대로 들어가면 상단 박스와 하단 자막이 같은 문구를 반복하지 않도록 on_screen_text는 짧은 키워드 위주로 두세요. 5) 기획자 참고: '김밥 축제 우승'과 '편의점 신상품'은 실제 출처를 확인하세요. 확인이 안 되면 '이런 조합도 있대요'처럼 단정하지 않는 표현으로 바꾸는 편이 안전합니다. 6) 후반에 고추잡채 김밥 완성 컷을 넣으면 재미가 올라갑니다."
+      "feedback": "이미지 재생성이 필요합니다. 특히 장면 6, 4, 1을 다시 만드세요. (1) 장면 6: 도시락에는 겉이 검은 김으로 감싸인 전형적인 김밥 단면(단무지·시금치·계란·당근·햄)만 담고, 연어색 속재료나 겉밥 롤이 나오지 않게 'black nori on outside, no salmon, no inside-out roll, no green cones'를 프롬프트와 네거티브에 넣으세요. 도시락 바깥 소품(밤·떡 등)은 단순화하세요. (2) 장면 4: 김밥 단면 1~2개를 접시에 단순하게 놓고, 속재료는 '노란 단무지 막대, 초록 시금치, 노란 계란 지단, 주황 당근 막대'를 세로 막대 형태로 명시하세요. 망고 같은 큐브와 정체불명의 흰 소용돌이가 생기지 않도록 하고, 배경 접시의 생선은 작게 두세요. (3) 장면 1: 니기리는 김 띠가 아니라 밥 위에 연어 한 점만 올린 형태로 지정하고, 김밥은 속재료가 막대형으로 보이게 하세요. (4) 장면 3: 식초 병은 투명에 가까운 연한 색, 참기름 병은 진한 갈색으로 대비를 키우세요. 자막은 effector에게 넘기되, 화면 하단 3분의 1에 핵심 피사체가 오지 않도록 구도를 상단 중앙 위주로 잡으면 가림 문제를 줄일 수 있습니다. 참고로 planner 쪽에서는 '김밥은 소풍 도시락에서 태어났다'는 기원 단정을 완화하고(예: '한국에서 소풍 대표 음식으로 사랑받는'), 설명란의 '30초'를 실제 길이에 맞게 수정하면 좋습니다."
     },
     {
       "attempt": 3,
       "scores": {
-        "fun": 50,
-        "hook": 55,
-        "clarity": 65,
-        "visual": 35,
-        "subtitle": 70,
-        "safety": 70
+        "fun": 60,
+        "hook": 65,
+        "clarity": 80,
+        "visual": 58,
+        "subtitle": 65,
+        "safety": 80
       },
-      "overall": 56,
+      "overall": 66,
       "pass": false,
       "issues": [
-        "첫 프레임(0.6초)이 기획한 '반으로 자른 김밥 단면'이 아니라 그릇에 담긴 밥과 초록색·주황색 덩어리입니다. 고추잡채나 김밥으로 보이지 않고 형태가 뭉개져 있어서 훅의 핵심 장면이 전달되지 않습니다.",
-        "장면 3의 프레임에는 김, 대나무발, 단무지가 없습니다. 오이와 노란 채소만 밥 위에 어색하게 얹혀 있고 형태가 녹아 있습니다.",
-        "장면 4의 프레임은 김밥 단면이 아니라 젤리나 양갱 같은 붉은색·노란색·베이지색 블록입니다. 참치마요, 돈가스, 치즈, 제육으로 읽히지 않아 나레이션과 맞지 않습니다.",
-        "장면 6의 프레임에는 김밥도 갈림길도 없습니다. 숲길에 서 있는 캐릭터뿐이라 '어떤 조합을 고를까'라는 질문과 연결되지 않습니다.",
-        "프레임 0에 'pollinations.ai' 워터마크가 보입니다. 외부 서비스 로고가 노출되므로 크롭하거나 제거해야 합니다.",
-        "자동 측정 로그에 이미지 6장 중 placeholder가 2장이고 TTS는 edge입니다. 품질 감점 대상입니다.",
-        "나레이션의 '김밥 축제 우승'과 '편의점 신상품 출시'는 근거나 출처가 없습니다. 사실 여부는 확인 필요입니다. 사실이 아니라면 허위 정보가 됩니다.",
-        "영상 길이는 약 43.6초입니다. 장면 3~5는 정보 밀도가 낮고, 장면 1에서 던진 질문에 대한 반전이나 증거 장면이 없어 후반 이탈 가능성이 큽니다.",
-        "상단 on_screen_text와 하단 나레이션 자막이 모두 검은 박스나 굵은 외곽선으로 표시되어 화면이 답답합니다. 읽기에는 문제가 없습니다."
+        "장면 1(0.6초 프레임): 니기리에 김 띠가 둘러져 있음. 프롬프트의 negative(seaweed strip on nigiri)를 어겼고, 김밥과 스시의 대비가 흐려져 훅의 핵심 비교가 약해짐. 김밥 단면도 속재료가 뭉개져 있고 단무지 대신 당근·햄처럼 보임.",
+        "장면 4(55% 프레임): 접시 앞에 망고 큐브 모양의 노란 덩어리와 소스 방울이 있음. negative(mango cubes, sauce drizzle)를 어겼고, 나레이션의 '단무지'와 혼동됨. 배경에 작은 접시들이 여러 개 있어 요청한 구성과 다름.",
+        "장면 3(30% 프레임): 병 두 개 모두 라벨 없이 잘 나왔지만 오른쪽 병이 참기름보다 간장처럼 보임. 왼쪽 식초는 노란 액체로 투명하지 않음. 메시지는 대체로 전달됨.",
+        "장면 6(85% 프레임): 김밥 속재료가 삼각형 모양이거나 연어처럼 보이는 주황색 덩어리로 나옴. 지시한 '세로 막대 속재료'와 다르고, 소풍 도시락 상자 안에 담긴 모습도 부자연스러움. 주황 꽃은 가을 낙엽 소품과 어긋남.",
+        "자막 위치: 나레이션 자막이 화면 중앙~하단 요소(접시, 김밥, 도시락)를 직접 가림. 프롬프트는 하단 1/3을 비우도록 했지만 자막이 그 아래가 아닌 이미지 위에 놓임. 상단 on_screen_text의 검은 박스도 투박함.",
+        "길이 불일치: 실측 47.5초인데 description에는 '30초 만에 정리'라고 적혀 있음. 쇼츠 리텐션에도 다소 길음.",
+        "사실 확인 필요: '소풍 도시락에서 태어난 완전히 다른 음식'이라는 단정은 김밥 기원에 일본 마키즈시 영향설이 있어 논란 여지가 있음. '스시 vs 김밥 간 차이(식초 vs 참기름·소금)'는 일반적으로 맞음. 김밥에 생선이나 날것이 아예 없다는 식으로 읽히는 부분도 확인 필요.",
+        "제목 '부르면 안 되는 3가지 이유'는 훈계조이고 실제 내용은 '차이점 3가지'라 어긋남. 반전이나 놀라운 정보가 약해 재미가 평이함."
       ],
       "retry_target": "producer",
-      "feedback": "이미지 품질과 장면 불일치가 가장 큰 문제이므로 producer가 다시 작업하세요. 1) 장면 1은 김밥 단면 클로즈업이 핵심입니다. 흰 밥, 검은 김 테두리, 피망과 고기 채가 보이는 구도로 다시 생성하고, 그릇이나 밥만 있는 이미지는 쓰지 마세요. 2) 장면 3은 김, 대나무발, 단무지·당근·오이 세 가지가 보이게 하세요. 장면 4는 김밥 단면이 서 있는 모습으로 다시 생성하세요. 젤리처럼 보이는 덩어리는 피하고, 프롬프트에 'kimbap slices with visible rice and seaweed outer ring'을 강조하세요. 3) 장면 6은 갈림길 끝에 김밥이 각각 있는 구도가 나오지 않았으니, 단순한 구도로 바꾸거나 시드를 바꿔 재생성하세요. 4) placeholder 2장을 모두 실제 생성 이미지로 교체하고, 'pollinations.ai' 워터마크가 영상에 나오지 않게 하세요(하단 크롭이나 다른 생성 경로). 5) planner에게는 '축제 우승·편의점 출시'가 실제 사례인지 출처를 확인하거나, 확인되지 않으면 '이런 김밥이 있다면'이라는 가정형으로 바꾸도록 전달하세요."
+      "feedback": "장면 1, 4, 6 이미지를 다시 생성하세요. (1) 장면 1: 니기리는 김 띠 없이 흰 밥 위에 연어 한 점만 올리고, 김밥 단면은 단무지(노랑)·시금치(초록)·계란(노랑)·당근(주황)이 세로 막대로 보이게 하세요. (2) 장면 4: 망고 큐브처럼 보이는 노란 덩어리와 소스는 확실히 제거하세요. 접시에는 김밥 단면만 두고 negative에 'yellow cubes, mango, sauce, small side dishes'를 더 강하게 넣으세요. (3) 장면 6: 삼각형·연어색 속재료를 피하고 세로 막대 속재료가 보이게 하세요. 가을 꽃 대신 낙엽만 남기세요. (4) 장면 3: 오른쪽 병이 간장이 아닌 참기름으로 읽히도록 작은 병과 참깨를 더 가까이 배치하세요. 재작업 뒤에는 자막이 이미지 핵심을 가리지 않도록 effector가 자막 위치를 하단 안전 영역으로 내리는 것도 검토하세요. 기획 쪽 팁: description의 '30초'를 실제 길이에 맞게 고치고, '소풍 도시락에서 태어났다'는 단정은 '한국식으로 발전한'처럼 완화하세요."
     }
   ],
   "marketer": {
-    "summary": "프로야구 레이예스 단일 시즌 최다안타 질주와 김밥 축제 등 먹거리 이슈가 뜨는 가운데, 스포츠 기록·음식 상식 중심의 가벼운 주제가 쇼츠에 적합한 날",
+    "summary": "프로야구 시즌 막바지 레이예스 최다안타 신기록 경쟁과 손흥민 LAFC 소식이 검색을 이끌고, 김천김밥축제 등 먹거리·상식 주제가 틈새로 뜨는 날",
     "topics": [
       {
         "rank": 1,
-        "keyword": "롯데 대 kia",
-        "traffic": "20000+",
-        "why_now": "롯데 레이예스가 KIA전에서 206안타를 기록하며 시즌 안타 기록 경신 중",
-        "topic": "안타 1개 더! 레이예스가 깨는 KBO 최다안타 기록, 하루에 몇 번 휘둘러야 가능할까? (숫자로 보는 안타왕)",
-        "angle": "시즌 144경기 기준 경기당 안타 수를 시각화하고 '치킨 한 마리 값으로 환산' 같은 비유로 기록의 대단함을 풀어줌",
-        "target": "10~20대 야구 팬, 스포츠 입문자",
-        "fun_score": 9,
-        "risk": "low",
-        "risk_note": "실존 선수 얼굴 대신 실루엣·캐릭터 스타일로 표현 필요"
-      },
-      {
-        "rank": 2,
         "keyword": "김밥",
+        "topic": "김밥을 영어로 하면? 외국인이 헷갈리는 한국 음식 이름 TOP5 (김밥 vs 스시 vs 롤)",
         "traffic": "500+",
-        "why_now": "김천김밥축제가 전국 축제 1위에 오르고 CU가 우승작 중화식 고추잡채 김밥을 출시",
-        "topic": "김밥 속 재료로 알아보는 '김밥 천국 vs 축제 김밥' 상상 랭킹 TOP5와 의외의 김밥 조합",
-        "angle": "고추잡채 김밥 같은 이색 조합을 랭킹 형식으로 보여주고 '당신의 선택은?' 댓글 유도",
-        "target": "10~30대 음식·편의점 관심층",
+        "why_now": "김천김밥축제가 전국 1위 축제로 뽑히며 화제, CU 중화식 고추잡채 김밥 출시",
+        "angle": "'김밥≠스시'를 반전 퀴즈로 풀고, 이색 김밥 랭킹으로 마무리. 음식 이미지는 AI 생성이 쉬움",
+        "target": "10~30대 전반, 음식·한국 문화 관심층",
         "fun_score": 9,
         "risk": "low",
         "risk_note": ""
       },
       {
+        "rank": 2,
+        "keyword": "롯데 대 kia",
+        "topic": "KBO 한 시즌 최다안타 기록, 레이예스가 깨는 중! 역대 안타왕 비교 랭킹",
+        "traffic": "20000+",
+        "why_now": "레이예스가 KIA전에서 206안타를 달성하며 기록 경신 중, KT 최원준과 안타왕 경쟁",
+        "angle": "숫자 비교와 '하루에 한 개씩 늘어나는 기록' 카운트다운 구성. 얼굴 대신 유니폼 실루엣 일러스트로 처리",
+        "target": "10~40대 야구팬",
+        "fun_score": 8,
+        "risk": "medium",
+        "risk_note": "실존 선수 얼굴 묘사는 피하고 실루엣·캐릭터로 표현. 기록 수치는 게시 전 최신 확인 필요"
+      },
+      {
         "rank": 3,
         "keyword": "김밥",
+        "topic": "김밥 속재료 궁합 랭킹: 최고의 조합 vs 최악의 조합 (꿀팁)",
         "traffic": "파생",
-        "why_now": "김밥 축제 화제로 김밥 관련 상식에 대한 관심이 높아짐",
-        "topic": "김밥을 영어로 하면? 외국인이 헷갈리는 한국 음식 영어 이름 퀴즈",
-        "angle": "'바비킴'이라는 농담 기사에서 착안해 퀴즈 반전 형식으로 구성, 정답 공개 전 3초 긴장감",
-        "target": "10~20대, 영어 학습층",
+        "why_now": "김밥 관심 급증과 가을 소풍철이 겹침",
+        "angle": "재료를 하나씩 올리며 점수를 매기는 랭킹 형식, 마지막에 의외의 1위 공개",
+        "target": "10~20대, 자취생",
         "fun_score": 8,
         "risk": "low",
         "risk_note": ""
@@ -213,86 +215,86 @@
       {
         "rank": 4,
         "keyword": "롯데 대 kia",
+        "topic": "야구 용어 5초 상식: 안타·2루타·타율, 모르면 야구장에서 당황하는 단어들",
         "traffic": "파생",
-        "why_now": "프로야구 시즌 막바지로 기록 경쟁과 순위 관심이 높아짐",
-        "topic": "야구 처음 보는 사람을 위한 용어 5초 정리: 안타·2루타·타율·출루율 쉬운 비유 설명",
-        "angle": "치킨·학교 시험 점수 같은 일상 비유로 풀어 입문자도 이해하게 만듦",
+        "why_now": "시즌 막바지 포스트시즌을 앞두고 야구 입문자가 늘어남",
+        "angle": "초보 눈높이 퀴즈와 귀여운 캐릭터 일러스트로 쉽게 설명",
         "target": "10~20대 야구 입문자",
-        "fun_score": 8,
+        "fun_score": 7,
         "risk": "low",
         "risk_note": ""
       },
       {
         "rank": 5,
-        "keyword": "허정한",
-        "traffic": "파생",
-        "why_now": "전국당구대회에서 3쿠션 선수들이 연이어 우승해 당구 관심이 올라감",
-        "topic": "당구 3쿠션의 과학: 공이 벽을 3번 맞고 가는 길을 각도 공식으로 보는 법",
-        "angle": "'당구는 수학이다'라는 반전과 시각적인 공 궤적 애니메이션 느낌 연출",
-        "target": "10~30대 취미·상식 관심층",
-        "fun_score": 8,
+        "keyword": "씨름",
+        "topic": "씨름 vs 유도 vs 레슬링, 규칙 차이 한 번에 비교",
+        "traffic": "100+",
+        "why_now": "유도 세계선수권에서 씨름선수 딸 이현지 선수가 우승하며 격투 종목에 관심 상승",
+        "angle": "세 종목을 VS 형식으로 비교하고 '이기는 조건'을 한 컷씩 보여줌. 인물 대신 픽토그램 스타일 사용",
+        "target": "10~30대 스포츠 관심층",
+        "fun_score": 7,
         "risk": "low",
-        "risk_note": "특정 선수 얼굴 사용 금지, 당구대와 공 일러스트 중심"
+        "risk_note": "특정 선수 얼굴 없이 종목 설명 중심으로 구성"
       },
       {
         "rank": 6,
         "keyword": "손흥민",
-        "traffic": "10000+",
-        "why_now": "LAFC 경기에서 손흥민 슈팅이 골키퍼 선방에 막히는 장면이 화제",
-        "topic": "골키퍼는 어떻게 슈팅을 막을까? 페널티킥 0.4초의 세계와 골키퍼 반응속도 비교",
-        "angle": "사람의 눈 깜빡임, 번개 반응속도와 비교하는 수치 랭킹으로 구성",
-        "target": "10~20대 축구 팬",
-        "fun_score": 8,
+        "topic": "축구에서 수적 우위(10명 vs 11명)가 되면 실제로 얼마나 유리할까?",
+        "traffic": "파생",
+        "why_now": "LAFC가 상대 퇴장을 끌어냈는데도 1-1로 비긴 경기가 화제",
+        "angle": "'11 vs 10인데 왜 못 이길까?'를 반전 상식으로 풀이. 선수 얼굴 대신 전술 보드 스타일로 시각화",
+        "target": "10~30대 축구팬",
+        "fun_score": 7,
         "risk": "low",
-        "risk_note": "실존 선수 얼굴 없이 일반 선수 캐릭터로 표현해야 함"
+        "risk_note": "실존 선수 얼굴 묘사 금지, 전술 도식만 사용"
       },
       {
         "rank": 7,
         "keyword": "김밥",
-        "traffic": "파생",
-        "why_now": "축제와 편의점 신제품으로 김밥 관심이 급증",
-        "topic": "김밥이 안 터지게 마는 꿀팁 3가지: 밥 양, 물기, 말기 각도",
-        "angle": "실패 vs 성공 비교 구도로 전후 대비를 보여주는 꿀팁 형식",
-        "target": "10~40대 자취생·요리 초보",
-        "fun_score": 7,
+        "topic": "김밥 10만 원어치 먹방 가능? 김천김밥축제 가는 법과 먹는 순서 꿀팁",
+        "traffic": "500+",
+        "why_now": "'10만 원 써도 안 아깝다'는 호평으로 축제가 입소문을 탐",
+        "angle": "예산 10만 원으로 먹을 수 있는 걸 계산해 보는 가상 먹방 형식",
+        "target": "10~30대 여행·맛집 관심층",
+        "fun_score": 6,
         "risk": "low",
-        "risk_note": ""
+        "risk_note": "축제 일정·가격은 게시 전 확인 필요"
       },
       {
         "rank": 8,
-        "keyword": "김혜성",
-        "traffic": "2000+",
-        "why_now": "다저스의 NLCS 로스터 포함 여부를 두고 관심이 집중됨",
-        "topic": "메이저리그 포스트시즌 로스터는 어떻게 정해질까? 26명 안에 들기 위한 생존 게임",
-        "angle": "서바이벌 게임처럼 '탈락 위기' 연출로 규칙을 쉽게 풀어줌",
-        "target": "10~30대 야구 팬",
-        "fun_score": 7,
-        "risk": "medium",
-        "risk_note": "특정 선수 거취 단정 표현 및 얼굴 묘사는 피하고 제도 설명 중심으로 구성"
+        "keyword": "오선진",
+        "topic": "프로야구 선수가 19년을 버티는 법: 한 선수가 거친 팀 5곳 여정 지도",
+        "traffic": "200+",
+        "why_now": "오선진이 19년 선수 생활을 마치고 은퇴를 발표",
+        "angle": "팀을 옮겨 다닌 경로를 지도처럼 그리는 스토리텔링과 은퇴 소감 인용으로 따뜻하게 마무리",
+        "target": "20~40대 야구팬",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": "실존 인물 얼굴 없이 유니폼 아이콘으로 표현"
       },
       {
         "rank": 9,
-        "keyword": "오선진",
-        "traffic": "파생",
-        "why_now": "19년 프로 생활을 마친 선수 은퇴 소식이 알려짐",
-        "topic": "프로야구 선수의 하루: 19년을 버티는 선수들의 루틴과 숫자로 보는 야구 인생",
-        "angle": "19년 = 약 2,700경기 같은 숫자를 일상 비유로 환산해 감동 포인트 부여",
-        "target": "20~30대 야구 팬",
-        "fun_score": 6,
-        "risk": "low",
-        "risk_note": "특정 선수 이력은 공식 발표 내용 범위 내에서만 사용"
+        "keyword": "김혜성",
+        "topic": "야구 포스트시즌 로스터는 어떻게 짜일까? 26명 안에 들어가는 조건",
+        "traffic": "2000+",
+        "why_now": "다저스 NLCS 로스터에서 김혜성이 빠질지 관심이 높음",
+        "angle": "'엔트리 한 자리를 두고 벌어지는 생존 게임' 컨셉의 쉬운 설명",
+        "target": "10~30대 MLB 팬",
+        "fun_score": 5,
+        "risk": "medium",
+        "risk_note": "로스터 확정 전 추측성 보도라 단정 표현 금지, 특정 선수 비하 없이 제도 설명 중심"
       },
       {
         "rank": 10,
-        "keyword": "윤하정",
-        "traffic": "파생",
-        "why_now": "체중 감량과 건강검진 결과가 화제가 되며 건강 관리 관심이 증가",
-        "topic": "건강검진 결과표 보는 법: 헷갈리는 수치 용어 5가지를 쉽게 정리",
-        "angle": "어려운 의학 용어를 일상 비유로 번역하는 정보형 구성",
-        "target": "20~40대 건강 관심층",
+        "keyword": "can vs nep",
+        "topic": "크리켓 규칙 30초 요약: 야구와 뭐가 다를까?",
+        "traffic": "500+",
+        "why_now": "네팔 vs 캐나다 크리켓 월드컵 리그2 경기가 검색에 오름",
+        "angle": "야구와 닮은 점·다른 점을 비교하는 '세계 2위 인기 스포츠' 호기심 자극형",
+        "target": "10~20대 스포츠 호기심층",
         "fun_score": 5,
-        "risk": "medium",
-        "risk_note": "의료 단정 표현 금지, '일반 상식이며 진단은 의사와 상담' 안내 문구 필수"
+        "risk": "low",
+        "risk_note": ""
       }
     ],
     "trend_count": 10,
@@ -307,73 +309,71 @@
       }
     ]
   },
-  "selected_attempt": 2,
+  "selected_attempt": 1,
   "plan": {
-    "chosen_rank": 2,
-    "reason": "1위 야구 주제는 기록 수치가 불확실해 팩트 리스크가 있고 실존 선수 묘사 제약도 큽니다. 김밥 주제는 수치 없이도 고추잡채 김밥이라는 반전 소재로 첫 3초 훅이 강합니다. 누구나 의견을 낼 수 있어 댓글 유도에도 유리하고 리스크가 없습니다. 참고로 이 영상에는 계산이 들어가지 않아 단위 검산은 해당 없음입니다.",
-    "title": "김밥에 고추잡채를 넣는다고요?",
-    "hook": "김밥 안에 고추잡채를 넣는다고요?",
-    "style": "vibrant 3D cartoon, soft warm lighting, bright saturated colors, high detail, clean composition, no text, no logos",
+    "chosen_rank": 1,
+    "reason": "fun_score 9에 위험도 낮음, 김천김밥축제와 CU 신상 김밥으로 검색 관심이 붙은 시점이다. 김밥과 스시는 다르다는 반전 퀴즈 구조라 첫 3초 훅이 강하다. 음식 이미지는 AI 생성이 쉽고, 실존 인물과 수치 계산이 없어 사실 오류 위험이 작다. 밥 간, 속재료, 먹는 방식 세 가지 차이만 다뤄 불확실한 주장을 피했다.",
+    "title": "김밥을 스시라고 부르면 안 되는 3가지 이유",
+    "hook": "외국인한테 김밥을 스시라고 하면 한국 사람은 왜 발끈할까요?",
+    "style": "vibrant 3D cartoon food illustration, soft warm lighting, glossy textures, bright pastel colors, high detail, clean background, vertical 9:16 composition, no text, no logos, no real people",
     "scenes": [
       {
         "id": 1,
-        "narration": "김밥 안에 고추잡채를 넣는다고요? 처음 듣고는 다들 고개를 갸웃했대요.",
-        "on_screen_text": "김밥에 고추잡채?",
-        "image_prompt": "Vertical 9:16 cross-section of a kimbap roll showing stir-fried peppers and pork, centered, food photography style, white plate, soft warm lighting, sharp focus, clean background, no text, no logos"
+        "narration": "외국인한테 김밥을 스시라고 하면 한국 사람은 왜 발끈할까요?",
+        "on_screen_text": "김밥 = 스시?",
+        "image_prompt": "A cute cartoon gimbap roll and a sushi roll standing side by side like rivals, with a big glowing question mark floating between them, dramatic spotlight, playful mood"
       },
       {
         "id": 2,
-        "narration": "그런데 이게 김밥 축제에서 당당히 우승하고, 편의점 신상품으로까지 나왔습니다.",
-        "on_screen_text": "축제 우승 반전",
-        "image_prompt": "Vertical 9:16 golden trophy cup on a small podium, colorful confetti falling around it, bright festival stage background, vibrant 3D cartoon, soft warm lighting, bright saturated colors, clean composition, no text, no logos"
+        "narration": "정답부터 말할게요. 김밥은 영어로도 그냥 김밥이에요. 이름 자체가 고유명사거든요.",
+        "on_screen_text": "정답은 김밥",
+        "image_prompt": "A proud gimbap roll wearing a tiny golden crown on a pedestal, sparkles around it, a blank name plate in front, festive celebratory atmosphere"
       },
       {
         "id": 3,
-        "narration": "생각해보면 김밥은 원래 뭐든 말아 넣는 음식이에요. 밥과 김만 있으면 준비 끝이거든요.",
-        "on_screen_text": "뭐든 말아요",
-        "image_prompt": "Vertical 9:16 top-down view of a bamboo rolling mat with a layer of white rice spread over a black seaweed sheet, strips of yellow pickled radish, orange carrot and green cucumber placed in a line across the rice, food photography style, soft warm lighting, bright colors, clean composition, no text, no logos"
+        "narration": "첫 번째 차이는 밥 간이에요. 스시는 식초로 새콤하게, 김밥은 참기름과 소금으로 고소하게 맛을 내요.",
+        "on_screen_text": "1. 밥 간",
+        "image_prompt": "Split composition: on the left a small vinegar bottle beside sushi rice, on the right a sesame oil bottle with sesame seeds beside warm gimbap rice, golden drizzle of oil, close-up food view"
       },
       {
         "id": 4,
-        "narration": "참치마요, 돈가스, 치즈, 제육까지. 우린 이미 이색 조합을 매일 먹고 있었던 거죠.",
-        "on_screen_text": "이미 이색 조합",
-        "image_prompt": "Vertical 9:16 row of four kimbap rolls cut open on a wooden table, each cross-section showing a different filling in a different color: pale tuna mayo, golden pork cutlet, yellow melted cheese, red spicy pork, food photography style, soft warm lighting, bright saturated colors, sharp focus, clean composition, no text, no logos"
+        "narration": "두 번째 차이는 속재료예요. 스시는 생선이 주인공이지만 김밥은 단무지, 계란, 시금치처럼 익힌 재료가 많아요.",
+        "on_screen_text": "2. 속재료",
+        "image_prompt": "A gimbap roll cut open showing colorful fillings: yellow pickled radish, egg, spinach, carrot, ham, arranged in a neat circle, next to a small plate with a slice of raw fish, bright cheerful colors"
       },
       {
         "id": 5,
-        "narration": "짭짤한 소스와 아삭한 채소를 밥이 감싸 안으면, 상상만 해도 궁합이 나쁘지 않죠.",
-        "on_screen_text": "궁합 어때요",
-        "image_prompt": "Vertical 9:16 close-up of a kimbap roll being rolled, white rice wrapping around glossy stir-fried pepper strips and meat, steam rising, food photography style, soft warm lighting, bright saturated colors, high detail, clean composition, no text, no logos"
+        "narration": "세 번째 차이는 먹는 방식이에요. 스시는 간장에 콕 찍지만 김밥은 소스 없이 그대로 한입에 쏙!",
+        "on_screen_text": "3. 먹는 법",
+        "image_prompt": "Left: a sushi piece dipping into a small soy sauce dish with chopsticks. Right: a whole gimbap slice being lifted straight toward a happy open mouth cartoon character, no sauce, playful motion lines"
       },
       {
         "id": 6,
-        "narration": "결국 김밥은 속재료가 곧 취향 선언이에요. 여러분이라면 어떤 조합에 도전하시겠어요? 댓글로 알려주세요.",
-        "on_screen_text": "당신의 선택은?",
-        "image_prompt": "Vertical 9:16 a single cute cartoon character seen from behind standing at a fork in a path, three paths each leading to one giant kimbap roll in red, yellow and green, vibrant 3D cartoon, soft warm lighting, bright saturated colors, clean composition, no text, no logos"
+        "narration": "그러니 김밥은 스시의 사촌이 아니라 소풍 도시락에서 태어난 완전히 다른 한국 음식이에요. 여러분은 어떤 김밥이 최고예요?",
+        "on_screen_text": "최고의 김밥?",
+        "image_prompt": "A picnic scene on a sunny autumn hill with a lunch box full of assorted gimbap rolls, a checkered blanket, falling leaves, warm golden hour light, inviting and cozy"
       }
     ],
-    "description": "고추잡채 김밥이라니, 처음엔 의아하지만 생각해보면 김밥은 뭐든 어울리는 음식입니다. 여러분이 도전하고 싶은 이색 김밥 조합을 댓글로 알려주세요.\n#김밥 #이색김밥 #편의점신상",
+    "description": "김밥과 스시, 비슷해 보이지만 완전히 다른 음식이에요! 밥 간, 속재료, 먹는 방식 3가지 차이를 30초 만에 정리했어요.\n여러분이 제일 좋아하는 김밥 속재료는 뭔가요? 댓글로 알려주세요.\n#김밥 #한국음식 #쇼츠",
     "tags": [
       "김밥",
-      "고추잡채김밥",
-      "김밥축제",
-      "편의점신상",
-      "이색김밥",
-      "김밥조합",
-      "음식쇼츠",
-      "먹방",
-      "쇼츠"
+      "김밥 스시 차이",
+      "한국 음식",
+      "김천김밥축제",
+      "외국인 한국 음식",
+      "음식 상식",
+      "쇼츠",
+      "gimbap"
     ],
-    "comment_question": "여러분이 도전하고 싶은 이색 김밥 속재료 조합은 뭔가요?"
+    "comment_question": "여러분이 생각하는 최고의 김밥 속재료는 뭔가요? 참치, 치즈, 아니면 의외의 조합?"
   },
   "production": {
     "image_providers": {
-      "placeholder": 3,
-      "pollinations": 3
+      "cloudflare": 6
     }
   },
   "effects": {
-    "duration": 43.55,
+    "duration": 47.51,
     "tts_provider": "edge",
     "voice": "ko-KR-SunHiNeural",
     "bgm": null
@@ -381,45 +381,45 @@
   "storyboard": [
     {
       "id": 1,
-      "narration": "김밥 안에 고추잡채를 넣는다고요? 처음 듣고는 다들 고개를 갸웃했대요.",
-      "on_screen_text": "김밥에 고추잡채?",
+      "narration": "외국인한테 김밥을 스시라고 하면 한국 사람은 왜 발끈할까요?",
+      "on_screen_text": "김밥 = 스시?",
       "image": "runs/2026-10-11/scene_01.jpg",
-      "provider": "pollinations"
+      "provider": "cloudflare"
     },
     {
       "id": 2,
-      "narration": "그런데 이게 김밥 축제에서 당당히 우승하고, 편의점 신상품으로까지 나왔습니다.",
-      "on_screen_text": "축제 우승 반전",
+      "narration": "정답부터 말할게요. 김밥은 영어로도 그냥 김밥이에요. 이름 자체가 고유명사거든요.",
+      "on_screen_text": "정답은 김밥",
       "image": "runs/2026-10-11/scene_02.jpg",
-      "provider": "placeholder"
+      "provider": "cloudflare"
     },
     {
       "id": 3,
-      "narration": "생각해보면 김밥은 원래 뭐든 말아 넣는 음식이에요. 밥과 김만 있으면 준비 끝이거든요.",
-      "on_screen_text": "뭐든 말아요",
+      "narration": "첫 번째 차이는 밥 간이에요. 스시는 식초로 새콤하게, 김밥은 참기름과 소금으로 고소하게 맛을 내요.",
+      "on_screen_text": "1. 밥 간",
       "image": "runs/2026-10-11/scene_03.jpg",
-      "provider": "pollinations"
+      "provider": "cloudflare"
     },
     {
       "id": 4,
-      "narration": "참치마요, 돈가스, 치즈, 제육까지. 우린 이미 이색 조합을 매일 먹고 있었던 거죠.",
-      "on_screen_text": "이미 이색 조합",
+      "narration": "두 번째 차이는 속재료예요. 스시는 생선이 주인공이지만 김밥은 단무지, 계란, 시금치처럼 익힌 재료가 많아요.",
+      "on_screen_text": "2. 속재료",
       "image": "runs/2026-10-11/scene_04.jpg",
-      "provider": "placeholder"
+      "provider": "cloudflare"
     },
     {
       "id": 5,
-      "narration": "짭짤한 소스와 아삭한 채소를 밥이 감싸 안으면, 상상만 해도 궁합이 나쁘지 않죠.",
-      "on_screen_text": "궁합 어때요",
+      "narration": "세 번째 차이는 먹는 방식이에요. 스시는 간장에 콕 찍지만 김밥은 소스 없이 그대로 한입에 쏙!",
+      "on_screen_text": "3. 먹는 법",
       "image": "runs/2026-10-11/scene_05.jpg",
-      "provider": "pollinations"
+      "provider": "cloudflare"
     },
     {
       "id": 6,
-      "narration": "결국 김밥은 속재료가 곧 취향 선언이에요. 여러분이라면 어떤 조합에 도전하시겠어요? 댓글로 알려주세요.",
-      "on_screen_text": "당신의 선택은?",
+      "narration": "그러니 김밥은 스시의 사촌이 아니라 소풍 도시락에서 태어난 완전히 다른 한국 음식이에요. 여러분은 어떤 김밥이 최고예요?",
+      "on_screen_text": "최고의 김밥?",
       "image": "runs/2026-10-11/scene_06.jpg",
-      "provider": "placeholder"
+      "provider": "cloudflare"
     }
   ],
   "thumbnail": "runs/2026-10-11/thumbnail.jpg",
@@ -428,5 +428,5 @@
     "status": "skipped",
     "reason": "QA 불합격"
   },
-  "finished_at": "2026-10-11T14:56:13+09:00"
+  "finished_at": "2026-10-11T15:04:04+09:00"
 }
