@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-13",
+  "status": "failed",
+  "started_at": "2026-10-13T02:03:43+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "failed",
+      "started_at": "2026-10-13T02:03:43+09:00",
+      "note": "",
+      "error": "LLMError: 모든 LLM 호출 실패: JSON 파싱 실패: Invalid \\escape: line 87 column 75 (char 4120): {\n  \"summary\": \"삼성전자 100조 실적에도 코스피가 급락하며 '왜 떨어지냐' 한탄이 터진 가운데, 차준환 활동 중단 선언과 한국 축구 혼돈 등 스포츠·연예 이슈가 함께 뜬 하루\",\n  \"angles\": [\n    {\n      \"keyword\": \"주식시장\",\n      \"topic\": \"삼성전자 100조 실적 나왔는데 코스피 3%대 급락, '",
+      "seconds": 51.6
+    }
+  ],
+  "qa": [],
+  "error": "LLMError: 모든 LLM 호출 실패: JSON 파싱 실패: Invalid \\escape: line 87 column 75 (char 4120): {\n  \"summary\": \"삼성전자 100조 실적에도 코스피가 급락하며 '왜 떨어지냐' 한탄이 터진 가운데, 차준환 활동 중단 선언과 한국 축구 혼돈 등 스포츠·연예 이슈가 함께 뜬 하루\",\n  \"angles\": [\n    {\n      \"keyword\": \"주식시장\",\n      \"topic\": \"삼성전자 100조 실적 나왔는데 코스피 3%대 급락, '",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/Shorts/Shorts/shorts/pipeline.py\", line 62, in execute\n    report = self.stage(\"marketer\", marketer.run)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/Shorts/Shorts/shorts/pipeline.py\", line 50, in stage\n    result = fn(self.ctx, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/Shorts/Shorts/shorts/agents/marketer.py\", line 52, in run\n    out = ctx.llm.complete_json(prompt(\"marketer\"), user, mock=lambda: mock_angles(candidates))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/Shorts/Shorts/shorts/llm.py\", line 104, in complete_json\n    raise LLMError(f\"모든 LLM 호출 실패: {last}\")\nshorts.llm.LLMError: 모든 LLM 호출 실패: JSON 파싱 실패: Invalid \\escape: line 87 column 75 (char 4120): {\n  \"summary\": \"삼성전자 100조 실적에도 코스피가 급락하며 '왜 떨어지냐' 한탄이 터진 가운데, 차준환 활동 중단 선언과 한국 축구 혼돈 등 스포츠·연예 이슈가 함께 뜬 하루\",\n  \"angles\": [\n    {\n      \"keyword\": \"주식시장\",\n      \"topic\": \"삼성전자 100조 실적 나왔는데 코스피 3%대 급락, '\n",
+  "finished_at": "2026-10-13T02:04:35+09:00"
+}

@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-10-13",
+    "status": "failed",
+    "title": null,
+    "overall": null,
+    "qa_attempts": 0,
+    "thumbnail": null,
+    "youtube_url": null,
+    "upload_status": null,
+    "duration": null
+  },
+  {
     "date": "2026-10-11",
     "status": "qa_failed",
     "title": "버디 11개 쳤는데 1점 차로 졌다고?",
