@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-10-14",
+    "status": "qa_failed",
+    "title": "파키스탄이 스리랑카 상대로 역사를 썼다는데",
+    "overall": 60,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-10-14/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 29.38
+  },
+  {
     "date": "2026-10-13",
     "status": "failed",
     "title": null,
