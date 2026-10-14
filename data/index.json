@@ -1,14 +1,14 @@
 [
   {
     "date": "2026-10-14",
-    "status": "qa_failed",
-    "title": "파키스탄이 스리랑카 상대로 역사를 썼다는데",
-    "overall": 60,
-    "qa_attempts": 3,
+    "status": "success",
+    "title": "지옥철 9호선 급행 늘린다는데 진짜 될까?",
+    "overall": 71,
+    "qa_attempts": 1,
     "thumbnail": "runs/2026-10-14/thumbnail.jpg",
     "youtube_url": null,
     "upload_status": "skipped",
-    "duration": 29.38
+    "duration": 44.85
   },
   {
     "date": "2026-10-13",

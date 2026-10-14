@@ -1,479 +1,368 @@
 {
   "date": "2026-10-14",
-  "status": "qa_failed",
-  "started_at": "2026-10-14T00:20:09+09:00",
+  "status": "success",
+  "started_at": "2026-10-14T22:08:29+09:00",
   "llm_provider": "claude_cli",
   "stages": [
     {
       "name": "marketer",
       "label": "마케터",
       "status": "done",
-      "started_at": "2026-10-14T00:20:09+09:00",
-      "note": "",
-      "seconds": 27.1
-    },
-    {
-      "name": "planner",
-      "label": "기획자",
-      "status": "done",
-      "started_at": "2026-10-14T00:20:36+09:00",
+      "started_at": "2026-10-14T22:08:29+09:00",
       "note": "",
       "seconds": 20.3
     },
     {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-14T22:08:49+09:00",
+      "note": "",
+      "seconds": 17.2
+    },
+    {
       "name": "producer",
       "label": "제작자",
       "status": "done",
-      "started_at": "2026-10-14T00:20:57+09:00",
+      "started_at": "2026-10-14T22:09:07+09:00",
       "note": "",
-      "seconds": 35.4
+      "seconds": 26.2
     },
     {
       "name": "effector",
       "label": "이펙터",
       "status": "done",
-      "started_at": "2026-10-14T00:21:32+09:00",
+      "started_at": "2026-10-14T22:09:33+09:00",
       "note": "",
-      "seconds": 33.6
+      "seconds": 62.5
     },
     {
       "name": "qa",
       "label": "QA",
       "status": "done",
-      "started_at": "2026-10-14T00:22:06+09:00",
+      "started_at": "2026-10-14T22:10:35+09:00",
       "note": "1차",
-      "seconds": 19.5
+      "seconds": 19.3
     },
     {
-      "name": "planner",
-      "label": "기획자",
+      "name": "uploader",
+      "label": "업로드",
       "status": "done",
-      "started_at": "2026-10-14T00:22:25+09:00",
-      "note": "QA 1차 피드백 반영",
-      "seconds": 28.2
-    },
-    {
-      "name": "producer",
-      "label": "제작자",
-      "status": "done",
-      "started_at": "2026-10-14T00:22:53+09:00",
-      "note": "QA 1차 피드백 반영",
-      "seconds": 27.7
-    },
-    {
-      "name": "effector",
-      "label": "이펙터",
-      "status": "done",
-      "started_at": "2026-10-14T00:23:21+09:00",
-      "note": "QA 1차 피드백 반영",
-      "seconds": 24.2
-    },
-    {
-      "name": "qa",
-      "label": "QA",
-      "status": "done",
-      "started_at": "2026-10-14T00:23:45+09:00",
-      "note": "2차",
-      "seconds": 24.3
-    },
-    {
-      "name": "planner",
-      "label": "기획자",
-      "status": "done",
-      "started_at": "2026-10-14T00:24:10+09:00",
-      "note": "QA 2차 피드백 반영",
-      "seconds": 23.5
-    },
-    {
-      "name": "producer",
-      "label": "제작자",
-      "status": "done",
-      "started_at": "2026-10-14T00:24:33+09:00",
-      "note": "QA 2차 피드백 반영",
-      "seconds": 30.5
-    },
-    {
-      "name": "effector",
-      "label": "이펙터",
-      "status": "done",
-      "started_at": "2026-10-14T00:25:04+09:00",
-      "note": "QA 2차 피드백 반영",
-      "seconds": 23.3
-    },
-    {
-      "name": "qa",
-      "label": "QA",
-      "status": "done",
-      "started_at": "2026-10-14T00:25:27+09:00",
-      "note": "3차",
-      "seconds": 22.2
+      "started_at": "2026-10-14T22:10:55+09:00",
+      "note": "",
+      "seconds": 0.0
     }
   ],
   "qa": [
     {
       "attempt": 1,
       "scores": {
-        "fun": 42,
-        "hook": 58,
-        "clarity": 58,
-        "visual": 66,
-        "subtitle": 72,
-        "safety": 68
-      },
-      "overall": 57,
-      "pass": false,
-      "issues": [
-        "'역사가 쓰였다'고 했지만 어떤 기록인지(점수, 승리 내용, 대회 등) 끝까지 나오지 않습니다. 훅이 낚시처럼 느껴지고 결말에 보상이 없습니다.",
-        "내용이 '파키스탄이 이겼고 스리랑카는 전패 위기'라는 뉴스 요약에 그칩니다. 반전이나 드립이 약하고, 화이트워시 설명 장면만 교과서 톤입니다.",
-        "장면 4의 자막 '하얗게 불태웠어'는 '화이트워시(싹 쓸림)' 설명과 뜻이 어긋나 혼란을 줍니다. 이미지도 거의 흰 화면에 사자가 아주 작게 나와 시선이 갈 곳이 없습니다.",
-        "장면 6 이미지의 배트에 아디다스 로고와 비슷한 마크가 있고, 장면 1 유니폼에도 엠블럼이 보입니다. 상표·저작권 리스크이므로 확인 필요입니다.",
-        "TTS가 mock입니다. 평균 볼륨도 -33.2dB로 매우 작아 업로드하기엔 부족합니다.",
-        "영상 길이는 38.5초인데 설명란에는 '30초로 정리'라고 적혀 있어 맞지 않습니다.",
-        "장면 5의 'T20에서 새 출발'은 근거 없이 '~거 아니냐는 말까지'라고 쓴 표현입니다. 사실 여부는 확인 필요입니다.",
-        "고양이와 사자 캐릭터가 장면마다 다른 모습입니다(장면 3의 사자와 장면 6의 사자가 서로 다름). 캐릭터 일관성이 부족합니다."
-      ],
-      "retry_target": "planner",
-      "feedback": "1) 훅에서 구체적인 사실이나 숫자를 먼저 보여 주세요. 예를 들면 '파키스탄이 스리랑카를 ○○점 차로 눌렀다'처럼 어떤 기록인지 밝히고, 결말에서 그 기록을 다시 짚어 보상을 주세요. 2) 화이트워시 설명은 '흰 빨래 → 스리랑카 탈색' 같은 한 줄 개그 하나로 줄이고, 자막은 화이트워시 설명에 맞게 고치세요('하얗게 불태웠어'는 삭제). 3) 장면 4는 큰 캐릭터가 화면을 채우도록 프롬프트를 바꾸세요. 4) 이미지 프롬프트에는 'no logos, no brand marks, no text'를 넣어 상표 노출을 막으세요. 5) 설명란의 '30초' 표기는 실제 길이에 맞게 고치거나 대본을 30초 안으로 줄이세요. 6) 사실이 불확실한 문구(T20 새 출발 등)는 확인된 내용으로만 쓰세요. 7) 별도로, 실제 TTS를 쓰고 볼륨을 -16dB 안팎으로 정규화하도록 effector에게 전달해 주세요."
-    },
-    {
-      "attempt": 2,
-      "scores": {
-        "fun": 55,
-        "hook": 52,
-        "clarity": 58,
-        "visual": 68,
-        "subtitle": 70,
+        "fun": 58,
+        "hook": 62,
+        "clarity": 78,
+        "visual": 85,
+        "subtitle": 78,
         "safety": 85
       },
-      "overall": 62,
-      "pass": false,
+      "overall": 71,
+      "pass": true,
       "issues": [
-        "훅이 비어 있음: '역사를 썼다'라고만 하고 무슨 기록인지(첫 승, 최다 점수, 시리즈 전승 등) 끝까지 말하지 않는다. 검색량이 터진 이유를 알려 준다고 해 놓고 알려 주지 않아서 시청자가 허탈하다.",
-        "재미가 한 군데에 몰려 있음: 화이트워시/탈색 말장난은 장면 3에서만 통한다. 나머지 장면은 상황 설명이고 반전이 없다. 결말('여러분의 선택은?')도 평범하다.",
-        "크리켓을 모르는 시청자에게 화이트워시 설명이 부족함. 장면 2에서 '시리즈를 싹 내주는'이라고 한 번 풀 뿐이다. 장면 3과 4에서 같은 말장난이 반복된다.",
-        "장면 3 이미지가 대본과 안 맞음: 사자 저지가 탈색된 연한 파랑으로는 보이지만 사자 자체는 선명한 주황색이다. 세탁기 로고도 'SANILIS'로 깨져 있다. 프롬프트의 '문 밖으로 걸린 저지'와 달리 사자가 세탁기 안에 서 있다.",
-        "장면 2 이미지의 파란 저지에 나이키로 보이는 로고가 있음: 상표 문제 가능성이 있다. 장면 1과 4의 고양이는 프롬프트가 'plain green jersey'인데 하나는 초록 폴로셔츠에 신발까지 신은 형태라 장면마다 모습이 다르다.",
-        "자막이 화면 중앙의 캐릭터 몸통과 얼굴 아래를 가림(장면 2, 3). 상단 검은 박스 텍스트와 하단 자막이 중복되어 화면이 답답하다.",
-        "mock TTS를 썼고 평균 음량이 -33dB로 매우 작음(권장 -14~-20dB). 음성이 자연스럽지 않고 잘 안 들릴 위험이 크다.",
-        "사실 확인 필요: 라왈핀디 경기와 스리랑카의 화이트워시 위기는 기획서에 근거가 없다. 단정적인 서술은 확인 후 수정해야 한다.",
-        "영상 길이 26.48초와 해상도는 문제 없음."
+        "훅 약함: '지옥철 9호선이 드디어 움직입니다'는 무슨 일인지 알 수 없고, '움직인다'가 급행 확대라는 뜻이라는 것도 바로 전달되지 않음. 첫 장면 이미지(불꽃 뿜는 놀란 열차)는 시선을 끌지만 나레이션이 이를 받쳐주지 못함.",
+        "재미 부족: 공감 드립(발이 공중에 뜬다)은 괜찮지만 반전이나 펀치라인이 약함. 전체 흐름이 '소식 → 공감 → 기대 → 현실' 순서로 예상 가능하고, 마지막은 흔한 댓글 유도형 vs 질문임.",
+        "사실 확인 필요: '9호선 급행열차 확대'와 '버스 급행 도입'이 실제 발표된 내용인지 기획서만으로는 확인할 수 없음. 근거나 출처 없이 단정적으로 말하고 있어, 업로드 전 확인이 필요함.",
+        "자막 가림: 하단 자막이 고양이 넥타이와 햄스터 무리 위에 겹쳐, 주인공 주변이 다소 복잡해 보임. 가독성은 유지되지만 상단 검은 박스 텍스트와 하단 자막이 중복되어 화면이 답답함.",
+        "프레임 일관성: 장면마다 캐릭터와 화풍이 다름(열차, 펭귄, 고양이, 햄스터). 사진풍 배경과 3D 캐릭터가 섞여 있어 통일감이 약함. 다만 깨진 손가락이나 글자 깨짐은 없음. 장면 6 문 위 'SUBWAY' 간판 글자가 일부 뭉개짐(경미)."
       ],
-      "retry_target": "planner",
-      "feedback": "1) 훅을 구체적으로 다시 써 주세요. 어떤 기록인지 첫 문장에 숫자나 결과로 넣어야 합니다(예: '파키스탄이 ○○를 처음으로 해냈다'). 사실은 확인된 것만 쓰고, 불확실하면 단정하지 마세요. 2) 반전이 있는 구조로 바꿔 주세요. 말장난 하나로 끌고 가지 말고 '기대 → 뒤집기 → 한 줄 마무리' 리듬으로, 드립을 최소 2~3군데 넣어 주세요. 3) 화이트워시는 한 번만 짧게 풀고, 결말 질문은 댓글을 부를 만한 것으로 바꿔 주세요. 4) 이미지 프롬프트에 'no text, no logo, no brand'를 넣고, 캐릭터 외형(주황 고양이+초록 저지, 갈기 사자+파란 저지)을 모든 장면에서 같게 고정해 주세요. 장면 3은 사자의 털색도 탈색된 연한 색으로 쓰고, 저지가 세탁기 밖으로 걸린 구도를 유지하세요. 5) (effector 참고) TTS는 mock이 아니라 실제 음성으로 바꾸고 평균 음량을 -16dB 안팎으로 올려 주세요. 자막은 화면 하단 1/4 쪽으로 내려서 캐릭터 얼굴을 가리지 않게 하고, 상단 텍스트와 중복되지 않게 해 주세요."
-    },
-    {
-      "attempt": 3,
-      "scores": {
-        "fun": 52,
-        "hook": 48,
-        "clarity": 62,
-        "visual": 66,
-        "subtitle": 68,
-        "safety": 85
-      },
-      "overall": 60,
-      "pass": false,
-      "issues": [
-        "훅이 모호함: '역사를 썼다'만 말하고 무슨 기록인지(점수, 연승, 최초 등)를 밝히지 않아 첫 3초에 궁금증이 생기지 않음. 크리켓을 모르는 시청자에게 '라왈핀디', '화이트워시', '시리즈 전패'는 진입장벽이 높음.",
-        "재미가 약함: 세탁기 비유가 하나뿐이고 장면 3~5에서 같은 말을 반복함. 4번 장면의 '반전'은 '스리랑카가 한 판 이길 수도 있다'는 뜻이라 반전이라 하기 어렵고, 사실상 정보 나열에 가까움.",
-        "사실 확인 필요: '시리즈 전패 위기'와 '역사를 썼다'의 구체적 내용(어떤 기록인지, 현재 스코어)이 기획서에 없음. 근거 없이 단정하고 있음. 날짜나 경기 형식(테스트/ODI/T20)도 없음.",
-        "장면 3 이미지가 프롬프트와 다름: 빛바랜 털색의 사자가 아니라 평소 털색 사자가 나왔고, 프롬프트에 없는 고양이가 추가됨. 옷은 세탁기 안에 걸려 있어 '탈색돼서 나온' 느낌이 약함. 비유가 시각적으로 전달되지 않음.",
-        "장면 1 이미지: 고양이 표정이 승리의 기쁨이 아니라 굳어 있거나 어색해 보임. 프롬프트의 'shocked' 표정은 구현됐지만 우승 장면과 어울리지 않음. 패배한 사자는 배경에 아주 작게 나옴.",
-        "자막 위치: 하단 자막이 인물의 몸통(장면 3, 4)을 가림. 상단 on_screen_text 박스는 검은 배경이라 투박함. 이미지 위아래 흐린 확장 영역이 넓어 화면이 비어 보임.",
-        "오디오: TTS가 mock이고 평균 음량이 -36.5dB로 매우 작음(보통 -14~-20dB). 이 상태로는 업로드할 수 없음. 음성 합성을 실제 TTS로 교체하고 정규화해야 함.",
-        "길이 25.36초에 6장면이라 장면당 약 4초. 대사 반복이 많아 늘어지는 느낌이 있음."
-      ],
-      "retry_target": "planner",
-      "feedback": "가장 큰 문제는 훅과 재미(가중치 50%)입니다. 1) 첫 문장에 구체적인 사실을 넣으세요. 예: '파키스탄이 스리랑카를 상대로 ○○ 기록을 세웠습니다'처럼 숫자나 기록을 명시하고, 실제 경기 결과와 대조해 확인한 내용만 쓰세요. 확인되지 않으면 '시리즈 전패 위기' 같은 단정은 빼세요. 2) 크리켓 용어(화이트워시, 라왈핀디)는 훅에서 빼고 중반에 쉬운 말로 풀어 주세요. 3) 세탁기 비유는 한 번만 쓰고, 나머지 장면에는 새로운 웃음 포인트(역전 상황, 의외의 디테일, 캐릭터 대사)를 넣어 반전다운 반전을 만드세요. 4) 장면 3은 'faded pale cream fur lion'이 확실히 보이도록 프롬프트를 단순화하고 고양이는 빼세요. 5) 별도로 effector 쪽에서 실제 TTS로 교체하고 음량을 -16dB 안팎으로 맞춰야 합니다. 하단 자막은 인물 얼굴과 몸통을 가리지 않도록 위치를 조정하세요."
+      "retry_target": null,
+      "feedback": "합격이지만 다음 작업에서 개선하세요. (1) 첫 문장을 구체적이고 자극적으로 바꾸세요. 예: '9호선 급행이 늘면 내 발이 드디어 바닥에 닿을까요?'처럼 질문이나 과장 드립으로 시작합니다. (2) 중반에 반전 한 번을 넣으세요. 예: 급행을 타도 결국 사람이 더 몰려 똑같다는 식의 짧은 개그입니다. (3) 급행·버스 급행 확대는 출처를 확인하고, 불확실하면 '~라고 합니다'나 '검토 중'으로 표현을 낮추세요. (4) 상단 박스 텍스트와 하단 자막 중복을 줄이고, 하단 자막을 주인공 얼굴과 소품에서 조금 더 아래로 내리세요. (5) 캐릭터 화풍(3D 카툰)과 프롬프트에 'no text'를 통일해 간판 글자 뭉개짐을 막으세요."
     }
   ],
   "marketer": {
-    "summary": "저축은행 해킹 유출 파문, 애플 HomeView 스마트홈 허브 공개, 창작자 저작권법 개정 요구, SM 이수만 신인 데뷔까지 — 불안과 호기심이 섞인 하루",
+    "summary": "오늘 트렌드는 '지옥철 9호선 급행 증편'과 '비행기 속 우즈벡 의사의 기적', 그리고 와일드카드전에서 터진 두산 양의지 무릎 부상 소식에 한화 류지현 신임 감독 부임까지 일상 공감과 야구 이슈가 크게 섞여 있습니다.",
     "topics": [
       {
         "rank": 1,
-        "keyword": "pakistan vs sri lanka",
-        "traffic": "1000+",
-        "traffic_num": 1000,
+        "keyword": "열차",
+        "traffic": "2000+",
+        "traffic_num": 2000,
         "news": [
-          "Deflated Sri Lanka look to prevent whitewash against dominant Pakistan",
-          "Are Pakistan turning over a new leaf in T20 cricket?",
-          "Pakistan create history against Sri Lanka in Rawalpindi"
+          "'지옥철' 서울 9호선, 급행열차 늘린다",
+          "9호선 급행 늘리고, 버스도 ‘급행’ 도입…출근 시간 줄까?",
+          "‘지옥철’ 서울 지하철 9호선, ‘급행’ 늘린다"
         ],
-        "topic": "파키스탄, 라왈핀디에서 스리랑카 상대로 '역사' 썼다 — 30초 요약",
-        "why_now": "뉴스 제목: 'Pakistan create history against Sri Lanka in Rawalpindi', 'Deflated Sri Lanka look to prevent whitewash against dominant Pakistan'",
-        "angle": "크리켓 모르는 사람도 이해하는 '이게 왜 역사냐면' 30초 정리 + 스리랑카 3연패(whitewash) 위기를 상황극으로 표현. 크리켓 팬 커뮤니티 반응 한 줄 요약",
-        "target": "스포츠 뉴스 관심층, 크리켓/남아시아 팬, 해외 스포츠 입문자",
-        "fun_score": 5,
+        "topic": "지옥철 9호선, 급행 늘린다는데 출근길 진짜 달라질까? 30초 정리",
+        "why_now": "'지옥철' 서울 9호선 급행열차를 늘리고 버스도 '급행'을 도입한다는 보도가 나옴",
+        "angle": "'이게 왜 난리냐면' 형식으로 급행 증편 핵심만 30초 정리 + 9호선 출근러 공감 상황극(발 안 닿는 출근길 vs 급행 늘어난 출근길 비교)",
+        "target": "수도권 직장인, 9호선 이용자, 20~40대",
+        "fun_score": 7,
         "risk": "low",
-        "risk_note": "뉴스 제목에 구체적 기록 내용이 없으므로 기록의 세부 수치는 단정하지 말고 확인된 내용만 사용"
+        "risk_note": ""
       },
       {
         "rank": 2,
-        "keyword": "저축은행",
-        "traffic": "1000+",
-        "traffic_num": 1000,
+        "keyword": "persib bandung vs viettel fc",
+        "traffic": "500+",
+        "traffic_num": 500,
         "news": [
-          "OK저축은행 “해킹 공격 정황 포착…183명 고객 정보 유출 가능성”",
-          "OK저축은행서도 해킹 시도…\"정보유출 여부 아직 몰라, 조사 진행 중\" - 머니투데이",
-          "금융감독원, '해킹 유출' 예가람·웰컴저축은행 현장점검(종합)"
+          "Persib vs The Cong–Viettel FC Live Score: ACL Two 2026 Updates",
+          "Persib Bandung vs The Cong-Viettel: Maung Bandung Target Second ACL Two Victory",
+          "Getting to Know The Cong–Viettel FC, Persib's ACL 2 Opponent"
         ],
-        "topic": "OK저축은행·예가람·웰컴저축은행까지… 저축은행 해킹 연쇄 유출, 내 정보는 괜찮을까?",
-        "why_now": "뉴스 제목: 'OK저축은행 해킹 공격 정황 포착…183명 고객 정보 유출 가능성', '금융감독원, 해킹 유출 예가람·웰컴저축은행 현장점검'",
-        "angle": "'저축은행 3곳이 줄줄이 뚫렸다' 타임라인 30초 정리 + 지금 당장 할 수 있는 3가지 체크(내 계좌 알림, 비밀번호 변경, 금융사 공지 확인). 공포 조장 대신 실용 팁 중심",
-        "target": "20~50대 금융 이용자, 예금·적금 이용자",
-        "fun_score": 6,
-        "risk": "high",
-        "risk_note": "해킹·개인정보 유출 사건. OK저축은행은 '유출 가능성/조사 중' 단계이므로 유출 확정처럼 표현 금지. 특정 회사 비방 없이 공식 발표 기준으로만 서술"
+        "topic": "ACL2 페르시브 반둥 vs 비엣텔, 인도네시아 팬들이 몰려 검색한 이유",
+        "why_now": "Persib Bandung이 ACL Two 2026에서 The Cong-Viettel FC를 상대로 두 번째 승리를 노리는 경기라 검색이 몰림",
+        "angle": "한국 팬이 잘 모르는 ACL2 동남아 매치업을 '이 경기 왜 한국에서 검색됨?' 호기심형으로 30초 소개하고 경기 결과 반응 정리",
+        "target": "축구 팬, 동남아 축구·K리그 ACL 관심층",
+        "fun_score": 4,
+        "risk": "low",
+        "risk_note": "뉴스 제목에 경기 결과가 없으므로 결과는 확인된 내용만 다뤄야 함"
       },
       {
         "rank": 3,
-        "keyword": "애플",
+        "keyword": "비행기",
         "traffic": "500+",
         "traffic_num": 500,
         "news": [
-          "LG전자, 애플과 스마트홈 기기 공동 개발…12월 북미에서 출시",
-          "애플, 美 ADT와 스마트홈 동맹 임박…북미 보안 시장 ’판도 변화’ By The Guru",
-          "애플, 시리 AI 탑재 ‘홈뷰’ 공개 임박…LG와 스마트홈 공략"
+          "한국 의술 배우던 우즈벡 의사…비행기서 한국인 생명 구했다 [잇슈#태그]",
+          "인천행 비행기서 사람 살린 우즈베키스탄 의사…’특별한 한국 인연’",
+          "\"우즈베크 사람들에 감동\"…한국행 비행기 '기적'의 장면"
         ],
-        "topic": "LG와 애플이 손잡았다? 스마트홈 공동 개발, 12월 북미 출시",
-        "why_now": "뉴스 제목: 'LG전자, 애플과 스마트홈 기기 공동 개발…12월 북미에서 출시', '애플, 시리 AI 탑재 홈뷰 공개 임박'",
-        "angle": "'우리집 가전이 아이폰 말을 알아듣는 날' 상황극 + 'LG 냉장고가 시리한테 반말하는 중' 같은 드립. 애플-LG 협업이 왜 놀라운지 반전 포인트로 설명",
-        "target": "IT/가전 관심층, 아이폰 유저, LG 가전 사용자",
-        "fun_score": 7,
+        "topic": "인천행 비행기에서 한국인 생명 구한 우즈벡 의사, 한국 의술 배우던 인연",
+        "why_now": "한국 의술을 배우던 우즈베키스탄 의사가 인천행 비행기에서 한국인의 생명을 구한 '기적의 장면'이 화제",
+        "angle": "'기내 방송 나왔을 때 아무도 몰랐던 반전' 스토리텔링 + 한국 인연이 이어진 감동 포인트, 댓글 반응 형식",
+        "target": "전 연령, 감동·훈훈 콘텐츠 선호층",
+        "fun_score": 8,
         "risk": "low",
-        "risk_note": "출시 시기·기능은 뉴스 제목 범위 내에서만 언급. 구체 스펙 추측 금지"
+        "risk_note": "승객의 건강 상태 등 개인 정보는 보도된 범위를 넘지 않도록 주의"
       },
       {
         "rank": 4,
-        "keyword": "사미자",
-        "traffic": "500+",
-        "traffic_num": 500,
+        "keyword": "김택연",
+        "traffic": "200+",
+        "traffic_num": 200,
         "news": [
-          "사미자 \"죽을 때까지 쓸 돈 모았지만 백수 생활 걱정\"",
-          "사미자, 버젓이 며느리 있는데..윤유선에 눈독 \"제일 예쁘다\" - 조선비즈",
-          "사미자, 결혼 사진 공개…전원주도 시기 질투한 미모"
+          "[포토] 김택연 '내일도 마운드 오르리' - 머니투데이",
+          "[포토] 김택연, 오스틴은 잡았는데... - 머니투데이",
+          "[사진]김텍연, 휴~"
         ],
-        "topic": "사미자 '죽을 때까지 쓸 돈 모았지만 백수 생활이 걱정' — 베테랑 배우의 솔직 고백",
-        "why_now": "뉴스 제목: '사미자 \"죽을 때까지 쓸 돈 모았지만 백수 생활 걱정\"', '사미자, 결혼 사진 공개…전원주도 시기 질투한 미모'",
-        "angle": "'돈은 있는데 할 일이 없는 게 제일 무섭다'는 공감 포인트 + 공개된 결혼 사진 에피소드를 따뜻하게 소개하는 30초 하이라이트",
-        "target": "중장년층, 노후/은퇴 고민층, 방송 시청자",
-        "fun_score": 5,
-        "risk": "medium",
-        "risk_note": "실존 인물의 가족·사생활 관련 내용 포함. 조롱 없이 방송에서 공개된 발언만 인용하고, 며느리·특정인 언급 관련 내용은 부각 금지"
+        "topic": "김택연, 오스틴은 잡았는데... 마운드 위 '휴~' 한숨의 순간",
+        "why_now": "머니투데이 포토 기사로 '오스틴은 잡았는데...', '내일도 마운드 오르리', '휴~' 등 김택연의 표정과 상황이 연달아 보도됨",
+        "angle": "사진 속 표정을 자막 드립으로 풀어보는 '마무리투수의 하루' 상황극 + 연투 각오 포인트",
+        "target": "두산·KBO 팬, 야구 커뮤니티 이용자",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": "경기 결과·세부 내용은 제목에 없으므로 추측하지 말 것"
       },
       {
         "rank": 5,
-        "keyword": "apple",
-        "traffic": "200+",
-        "traffic_num": 200,
+        "keyword": "l g 에너지 솔루션",
+        "traffic": "100+",
+        "traffic_num": 100,
         "news": [
-          "Meet Apple HomeView, a new way to enjoy entertainment, stay connected, and manage the home",
-          "Apple Unveils $299 HomeView Hub as Part of New Smart Home Push",
-          "Apple Introduces HomeView, a $299 Tablet for the Home"
+          "LG디스플레이·LG엔솔, 전 임원 75억 원대 배임 혐의로 고소",
+          "경찰, 가족 연계 업체에 '100억 자문료' 준 혐의로 LG엔솔 전 사장 수사",
+          "LG에너지솔루션 전 사장, 100억원대 배임 혐의 경찰 수사"
         ],
-        "topic": "애플 HomeView 공개: 299달러짜리 '집 전용 태블릿', 뭐가 되는데?",
-        "why_now": "뉴스 제목: 'Apple Unveils $299 HomeView Hub as Part of New Smart Home Push', 'Apple Introduces HomeView, a $299 Tablet for the Home'",
-        "angle": "'299달러에 집이 똑똑해진다' 숫자로 보는 가격 비교(환율 환산) + '냉장고에 붙이는 아이패드?' 식 드립. 공식 소개 문구 기반 기능 요약",
-        "target": "IT 얼리어답터, 애플 팬, 스마트홈 관심층",
-        "fun_score": 7,
-        "risk": "low",
-        "risk_note": "한국 출시 여부·가격은 제목에 없으므로 언급 금지. 환산 시 '환율에 따라 다름' 명시"
+        "topic": "LG엔솔 전 사장, 가족 연계 업체에 '100억 자문료' 의혹 경찰 수사",
+        "why_now": "LG디스플레이·LG엔솔이 전 임원을 75억 원대 배임 혐의로 고소했고, 경찰은 LG엔솔 전 사장을 가족 연계 업체에 100억 자문료를 준 혐의로 수사 중",
+        "angle": "'숫자로 보는 충격 비교' 형식으로 보도된 금액만 쉽게 정리, 수사 중인 혐의라는 점을 분명히 하고 '자문료 100억'의 규모를 일상 비교",
+        "target": "직장인, 경제·주식 관심층",
+        "fun_score": 5,
+        "risk": "high",
+        "risk_note": "실존 인물 관련 수사 중 사안이므로 혐의 단정·조롱 금지, '혐의'와 '수사 중'을 명확히 표기"
       },
       {
         "rank": 6,
-        "keyword": "박해영",
-        "traffic": "200+",
-        "traffic_num": 200,
+        "keyword": "twitch",
+        "traffic": "100+",
+        "traffic_num": 100,
         "news": [
-          "'모자무싸' 박해영 등 창작자들 \"정당한 보상 위해 저작권법 개정해야\"",
-          "배우 임호 “평균 출연료 연 758만원 현실…저작권법 개정하라”",
-          "창작자연대 \"글로벌 OTT 저작권 포기 강요…정당한 보상해야\""
+          "WoW Forever Twitch Drops Guide: How to Get the Free Golden Murloc Plush",
+          "Twitch streamer Valkyrae abruptly steps away after nephew's shocking death",
+          "Valkyrae Shares Heartbreaking News About Her Nephew Before Ending Her 48-Hour Gaming Livestream"
         ],
-        "topic": "'모자무싸' 박해영 작가 등 창작자들이 저작권법 개정을 외치는 이유 — 평균 출연료 연 758만원?",
-        "why_now": "뉴스 제목: '모자무싸 박해영 등 창작자들 정당한 보상 위해 저작권법 개정해야', '배우 임호 평균 출연료 연 758만원 현실', '글로벌 OTT 저작권 포기 강요'",
-        "angle": "'우리가 정주행한 드라마, 정작 만든 사람은?' 숫자 충격 포인트(연 758만원) 중심의 이게 왜 난리냐면 형식. 시청자 입장에서 쉽게 풀어주는 30초 정리",
-        "target": "드라마/OTT 시청자, 창작·콘텐츠 업계 종사자, 20~40대",
+        "topic": "WoW Forever 트위치 드롭으로 '황금 멀록 인형' 받는 법",
+        "why_now": "WoW Forever Twitch Drops로 무료 Golden Murloc Plush를 얻는 가이드가 화제",
+        "angle": "'공짜로 멀록 인형 받는 법' 30초 가이드 + 멀록 울음소리 밈 드립",
+        "target": "WoW·게임 팬, 트위치 시청자",
         "fun_score": 6,
-        "risk": "medium",
-        "risk_note": "저작권법 개정이라는 정책·업계 갈등 이슈. 특정 OTT 비난 대신 창작자연대 주장임을 명확히 하고 한쪽 입장으로 단정 금지"
+        "risk": "low",
+        "risk_note": "드롭 조건과 기간은 공식 안내를 확인해야 함"
       },
       {
         "rank": 7,
-        "keyword": "a20 soul",
+        "keyword": "양의지",
         "traffic": "100+",
         "traffic_num": 100,
         "news": [
-          "SM founder introduces alien-themed idols, cutting-edge technology in return to K-pop",
-          "Song Review: A2O Lite – Neon",
-          "SM founder Lee Soo-man returns home with tech-driven double debut"
+          "두산 양의지, 2루타 치고 교체…\"주루 도중 무릎 불편\"[WC]",
+          "두산 초비상! 양의지가 사라졌다, 무릎 부상 악재…야속한 박해민 호수비, 양석환 대타 희생플라이→LG 1-2 턱밑 추격 [WC1]",
+          "[스경X현장]LG 카라스코에게 2루타 친 두산 양의지, 왜 대주자로 교체?…“우측 무릎 불편함 느껴”"
         ],
-        "topic": "이수만이 돌아왔다! 외계인 콘셉트 신인 더블 데뷔, 이게 무슨 그룹?",
-        "why_now": "뉴스 제목: 'SM founder introduces alien-themed idols, cutting-edge technology in return to K-pop', 'SM founder Lee Soo-man returns home with tech-driven double debut'",
-        "angle": "'외계인 아이돌이 지구에 왔다' 콘셉트 상황극 + 데뷔 소식 30초 정리. 팬 반응·첫 곡 관련 인터넷 반응 소개. 검색어 표기가 A2O 계열로 혼재되어 있어 표기 정리 포인트로도 활용",
-        "target": "K-pop 팬, 10~30대, 아이돌 신인 관심층",
-        "fun_score": 8,
+        "topic": "WC 경기 중 2루타 치고 교체된 양의지, 두산이 초비상인 이유",
+        "why_now": "두산 양의지가 LG 카라스코에게 2루타를 친 뒤 우측 무릎 불편으로 교체됐고, 이후 양석환의 대타 희생플라이로 LG 1-2까지 추격하는 상황이 보도됨",
+        "angle": "'2루타 치고 대주자가 나온 이유' 장면 순서 정리 + 두산 팬 심정 상황극",
+        "target": "두산·LG 팬, KBO 포스트시즌 시청층",
+        "fun_score": 7,
         "risk": "medium",
-        "risk_note": "키워드 표기('a20 soul')와 뉴스상 표기(A2O)가 달라 팀명·곡명 확인 필요. 실존 인물(이수만) 관련은 경력·논란 언급 없이 데뷔 소식 중심으로만 다룰 것"
+        "risk_note": "부상 정도는 보도된 '무릎 불편함' 이상으로 단정하지 말 것"
       },
       {
         "rank": 8,
-        "keyword": "장도연",
+        "keyword": "류현진",
         "traffic": "100+",
         "traffic_num": 100,
         "news": [
-          "설인아♥임시완, 묘한 핑크빛 딱 걸렸다..\"나 설렌다\" 고백한 이유('살롱드립') - 조선비즈",
-          "‘살롱드립’, 10월 게스트 최종 라인업 보니…세븐틴-에이티즈→임시완·설인아-서인영 방문",
-          "설인아, 임시완과 드라마 밖에서도 핑크빛 기류...\"설렌다\""
+          "'연봉 16억' 6승 올린 류현진 전 동료, 반전 예고…\"1년 내내 팀에 기여하겠다\"",
+          "한화 새 사령탑 류지현 \"최고의 팬과 행복한 야구 하겠다\"",
+          "‘꾀돌이’ 류지현 감독, 한화에 신바람 가져올까?"
         ],
-        "topic": "'살롱드립' 임시완×설인아 핑크빛 기류, '나 설렌다' 고백의 진짜 이유",
-        "why_now": "뉴스 제목: '설인아♥임시완, 묘한 핑크빛 딱 걸렸다..나 설렌다 고백한 이유(살롱드립)', '살롱드립 10월 게스트 최종 라인업'",
-        "angle": "'드라마 밖에서도 케미 폭발?' 예고편 포인트 하이라이트 + 장도연 토크 스타일 드립 따라잡기. 10월 게스트 라인업(세븐틴, 에이티즈 등)도 한 줄로 소개",
-        "target": "예능 팬, 임시완·설인아 팬, 20~30대 여성층",
-        "fun_score": 7,
-        "risk": "medium",
-        "risk_note": "실존 연예인 연애 암시 소지. 방송 콘셉트상의 케미임을 명시하고 열애 단정 금지"
-      },
-      {
-        "rank": 9,
-        "keyword": "bangladesh vs afghanistan",
-        "traffic": "100+",
-        "traffic_num": 100,
-        "news": [
-          "Afghanistan Star Rahmat Shah Joins Virat Kohli In Elite Test Captains List",
-          "Litton ton puts Bangladesh on brink of victory",
-          "Litton Das sets historic world record in Test cricket"
-        ],
-        "topic": "리턴 다스 테스트 크리켓 세계 기록 + 아프간 주장 라마트 샤, 코힐리와 나란히?",
-        "why_now": "뉴스 제목: 'Litton Das sets historic world record in Test cricket', 'Afghanistan Star Rahmat Shah Joins Virat Kohli In Elite Test Captains List'",
-        "angle": "'크리켓 경기 하나에 세계 기록 두 개' 임팩트 정리. 기록의 의미를 쉽게 풀어주는 이게 왜 난리냐면 형식 + 방글라데시 승리 직전 반전 흐름",
-        "target": "크리켓 팬, 남아시아 커뮤니티, 해외 스포츠 관심층",
-        "fun_score": 4,
+        "topic": "한화 새 사령탑 류지현 감독, '꾀돌이'가 한화에 신바람을 몰고 올까",
+        "why_now": "한화 새 사령탑 류지현 감독이 \"최고의 팬과 행복한 야구를 하겠다\"고 밝혔고, '꾀돌이' 별명과 함께 기대 기사가 이어짐",
+        "angle": "'한화 팬이 새 감독 소식 듣고 보인 반응' 상황극 + 취임 포부 한 줄 요약. 류현진 연관 검색 흐름에 맞춰 한화 야구 기대감 포인트로 연결",
+        "target": "한화 팬, KBO 팬",
+        "fun_score": 6,
         "risk": "low",
-        "risk_note": "기록의 구체적 내용은 뉴스 제목에 없으므로 수치 단정 금지. 선수 이름 표기('Litton Das') 확인 후 사용"
+        "risk_note": "류현진 본인의 직접 이슈는 뉴스 제목에 없으므로 감독 소식 중심으로 다루고 선수 관련 내용을 지어내지 말 것"
       }
     ],
     "trend_count": 10,
     "excluded": [
       {
-        "keyword": "롤러코스터",
+        "keyword": "발전소",
+        "blocked_by": "살인"
+      },
+      {
+        "keyword": "동대문구청",
         "blocked_by": "사망"
       }
     ]
   },
-  "selected_attempt": 2,
+  "selected_attempt": 1,
   "plan": {
     "chosen_rank": 1,
-    "reason": "눈에 띄게 재미 포인트가 압도적인 주제가 없어서 검색량 1위(traffic 1000+)를 유지했다. QA 1번의 '○○점 차' 같은 구체 수치는 뉴스 제목 3개에 없다. 제목에서 확인되는 사실은 '라왈핀디에서 파키스탄이 스리랑카 상대로 역사를 썼다'와 '풀 죽은 스리랑카가 화이트워시(시리즈 전패)를 막으려 한다'뿐이다. 그래서 점수나 기록 종류를 지어내지 않고, 훅에 '라왈핀디에서 스리랑카 상대로 역사를 썼다'를 먼저 던진 뒤 마지막 장면에서 '역사의 파키스탄 대 탈색 위기 스리랑카'로 다시 짚어 보상을 주게 했다. 화이트워시 설명은 '흰 빨래를 돌렸더니 스리랑카만 탈색'이라는 한 줄 개그 하나로 줄였고 자막도 맞췄다. '하얗게 불태웠어'는 삭제했다. 확인되지 않은 'T20 새 출발' 문구도 뺐다. 장면 4는 스리랑카 사자 얼굴이 화면을 꽉 채우는 클로즈업으로 바꿨다. 이미지 프롬프트의 상표 노출 방지는 QA가 말한 'no logos, no brand marks, no text' 대신 긍정형으로 처리했다. FLUX는 부정 표현을 오히려 그리기 때문에, style에 '무지 단색 유니폼, 매끈하고 아무 표시 없는 표면'이라고 써서 같은 효과를 노렸다. 대본은 약 205자, 6장면으로 30초 안이라 설명란의 '30초' 표기도 맞는다. 계산은 없다. 이펙터 전달 사항: 실제 TTS를 사용하고 최종 오디오 볼륨을 약 -16dB(LUFS 기준)로 정규화할 것.",
-    "title": "파키스탄이 스리랑카 상대로 역사를 썼다는데",
-    "hook": "파키스탄이 라왈핀디에서 스리랑카 상대로 역사를 썼습니다.",
-    "bgm_mood": "hype",
-    "style": "vibrant 3D cartoon, soft lighting, high detail, bold colors, plain solid-color jerseys with smooth blank surfaces, clean unmarked props",
+    "reason": "검색량이 2000+로 압도적으로 높고, 지옥철 출근 공감대라 드립과 댓글 싸움이 붙기 쉬움. 사실은 뉴스 제목에 있는 내용(9호선 급행열차 증편, 버스 급행 도입, 출근 시간 단축 여부)만 사용하고 숫자는 쓰지 않음.",
+    "title": "지옥철 9호선 급행 늘린다는데 진짜 될까?",
+    "hook": "지옥철 9호선이 드디어 움직입니다.",
+    "bgm_mood": "funny",
+    "style": "vibrant 3D cartoon, soft lighting, high detail, cute characters, bright colors",
     "scenes": [
       {
         "id": 1,
-        "narration": "파키스탄이 라왈핀디에서 스리랑카 상대로 역사를 썼습니다. 이게 검색량 터진 이유예요.",
-        "on_screen_text": "역사 썼다",
-        "image_prompt": "A shocked cartoon cat in a plain green jersey holding a golden trophy above its head in a huge cricket stadium, confetti falling, dramatic lighting"
+        "narration": "지옥철 9호선이 드디어 움직입니다. 이게 왜 난리냐면요.",
+        "on_screen_text": "지옥철 실화",
+        "image_prompt": "A cute cartoon subway train glowing with fiery red steam, wide-eyed shocked expression on the front of the train, dramatic station platform background"
       },
       {
         "id": 2,
-        "narration": "근데 스리랑카는 풀이 죽었어요. 이대로면 시리즈를 싹 내주는 화이트워시 위기.",
-        "on_screen_text": "풀 죽은 사자",
-        "image_prompt": "A droopy sad cartoon lion in a plain blue jersey sitting alone on a cricket field with a small rain cloud over its head"
+        "narration": "서울 9호선에서 급행열차를 늘린다고 합니다. 심지어 버스도 급행을 도입한대요.",
+        "on_screen_text": "급행 늘린다",
+        "image_prompt": "A speedy cartoon express train zooming past a stopped little bus on a city road, motion lines, cheerful sunny Seoul-like skyline"
       },
       {
         "id": 3,
-        "narration": "화이트워시? 흰 빨래 돌렸더니 스리랑카만 탈색돼서 나오는 겁니다.",
-        "on_screen_text": "흰 빨래 탈색",
-        "image_prompt": "A cartoon washing machine with its round door open and a faded pale blue cartoon lion jersey hanging out of it, soap bubbles floating, laundry room"
+        "narration": "9호선 타본 사람은 압니다. 출근길에 내 발이 땅에 닿는지도 모르겠다는 거.",
+        "on_screen_text": "발이 공중",
+        "image_prompt": "A squished cartoon penguin commuter in a packed subway car, feet floating above the floor, eyes wide with a startled expression"
       },
       {
         "id": 4,
-        "narration": "그래서 스리랑카 목표는 딱 하나, 한 판이라도 건져서 탈색을 피하는 거예요.",
-        "on_screen_text": "한 판만!",
-        "image_prompt": "Extreme close-up of a determined cartoon lion face filling the whole frame, fiery glow in its eyes, sweat drop on its forehead, blurred cricket stadium far behind"
+        "narration": "그래서 다들 속으로 이러죠. 이번엔 진짜 출근 시간이 줄어드나?",
+        "on_screen_text": "진짜 줄어?",
+        "image_prompt": "A doubtful cartoon cat in a business tie looking up at a big clock, one eyebrow raised, thought bubble with a tiny train"
       },
       {
         "id": 5,
-        "narration": "역사 쓴 파키스탄은 기세 그대로 싹 쓸어버릴 분위기고요.",
-        "on_screen_text": "기세 미쳤다",
-        "image_prompt": "A confident cartoon cat in a plain green jersey holding a cricket bat on its shoulder, glowing sunrise behind a cricket pitch, wide grin"
+        "narration": "급행이 늘어난 아침, 여유롭게 앉아서 커피 마시는 나. 상상만 해도 눈물 나네요.",
+        "on_screen_text": "상상만 해도",
+        "image_prompt": "A relaxed cartoon bear sitting on a comfortable subway seat holding a coffee cup, sparkles around, happy teary eyes, empty bright train car"
       },
       {
         "id": 6,
-        "narration": "역사의 파키스탄 대 탈색 위기 스리랑카, 여러분의 선택은?",
-        "on_screen_text": "너의 선택은?",
-        "image_prompt": "A cartoon green cat and a blue lion facing each other across a cricket pitch, lightning bolt between them, split background half green and half blue"
+        "narration": "근데 현실은 또 한 칸에 사람이 가득일지도 모릅니다. 믿어도 될까요?",
+        "on_screen_text": "현실은?",
+        "image_prompt": "A cartoon subway door opening and a crowd of cute round animals spilling out, a surprised small hamster in the middle, comedic chaos"
+      },
+      {
+        "id": 7,
+        "narration": "급행 늘면 출근길 진짜 편해진다 vs 어차피 지옥철은 지옥철. 당신의 선택은 어느 쪽인가요?",
+        "on_screen_text": "너의 선택은",
+        "image_prompt": "Two cartoon doors side by side, one glowing with golden light and a smiling train, the other with a gloomy red cloud, a small rabbit commuter standing in the middle deciding"
       }
     ],
-    "description": "파키스탄이 라왈핀디에서 스리랑카 상대로 역사를 썼다는데, 스리랑카는 시리즈 전패 위기? 지금 검색량 터진 이유를 짧게 풀었어요.\n크리켓 몰라도 이해되는 썰 풀이!\n#파키스탄 #스리랑카 #크리켓",
+    "description": "9호선 급행열차 늘린다는 소식, 출근길 진짜 달라질까? 지옥철 출근러라면 공감 100%! 여러분의 생각은 댓글로 남겨주세요.\n#9호선 #지옥철 #출근길",
     "tags": [
-      "파키스탄",
-      "스리랑카",
-      "크리켓",
-      "pakistan vs sri lanka",
-      "라왈핀디",
-      "화이트워시",
+      "9호선",
+      "지옥철",
+      "급행열차",
+      "출근길",
+      "서울지하철",
+      "버스급행",
       "쇼츠",
-      "스포츠이슈"
+      "이슈"
     ],
-    "comment_question": "역사 쓴 파키스탄이 싹 쓸어버린다 vs 스리랑카가 한 판 건져서 탈색 피한다, 어느 쪽에 걸래요?"
+    "comment_question": "9호선 급행 늘면 출근길 진짜 편해진다 vs 어차피 지옥철은 지옥철, 여러분은 어느 쪽?"
   },
   "production": {
     "image_providers": {
-      "cloudflare": 6
+      "cloudflare": 7
     }
   },
   "effects": {
-    "duration": 29.38,
-    "tts_provider": "mock",
+    "duration": 44.85,
+    "tts_provider": "edge",
     "voice": "ko-KR-SunHiNeural",
-    "bgm": "Run Amok",
-    "bgm_mood": "hype",
-    "bgm_credit": "Music: \"Run Amok\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+    "bgm": "Monkeys Spinning Monkeys",
+    "bgm_mood": "funny",
+    "bgm_credit": "Music: \"Monkeys Spinning Monkeys\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
   },
   "storyboard": [
     {
       "id": 1,
-      "narration": "파키스탄이 라왈핀디에서 스리랑카 상대로 역사를 썼습니다. 이게 검색량 터진 이유예요.",
-      "on_screen_text": "역사 썼다",
+      "narration": "지옥철 9호선이 드디어 움직입니다. 이게 왜 난리냐면요.",
+      "on_screen_text": "지옥철 실화",
       "image": "runs/2026-10-14/scene_01.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 2,
-      "narration": "근데 스리랑카는 풀이 죽었어요. 이대로면 시리즈를 싹 내주는 화이트워시 위기.",
-      "on_screen_text": "풀 죽은 사자",
+      "narration": "서울 9호선에서 급행열차를 늘린다고 합니다. 심지어 버스도 급행을 도입한대요.",
+      "on_screen_text": "급행 늘린다",
       "image": "runs/2026-10-14/scene_02.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 3,
-      "narration": "화이트워시? 흰 빨래 돌렸더니 스리랑카만 탈색돼서 나오는 겁니다.",
-      "on_screen_text": "흰 빨래 탈색",
+      "narration": "9호선 타본 사람은 압니다. 출근길에 내 발이 땅에 닿는지도 모르겠다는 거.",
+      "on_screen_text": "발이 공중",
       "image": "runs/2026-10-14/scene_03.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 4,
-      "narration": "그래서 스리랑카 목표는 딱 하나, 한 판이라도 건져서 탈색을 피하는 거예요.",
-      "on_screen_text": "한 판만!",
+      "narration": "그래서 다들 속으로 이러죠. 이번엔 진짜 출근 시간이 줄어드나?",
+      "on_screen_text": "진짜 줄어?",
       "image": "runs/2026-10-14/scene_04.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 5,
-      "narration": "역사 쓴 파키스탄은 기세 그대로 싹 쓸어버릴 분위기고요.",
-      "on_screen_text": "기세 미쳤다",
+      "narration": "급행이 늘어난 아침, 여유롭게 앉아서 커피 마시는 나. 상상만 해도 눈물 나네요.",
+      "on_screen_text": "상상만 해도",
       "image": "runs/2026-10-14/scene_05.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 6,
-      "narration": "역사의 파키스탄 대 탈색 위기 스리랑카, 여러분의 선택은?",
-      "on_screen_text": "너의 선택은?",
+      "narration": "근데 현실은 또 한 칸에 사람이 가득일지도 모릅니다. 믿어도 될까요?",
+      "on_screen_text": "현실은?",
       "image": "runs/2026-10-14/scene_06.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 7,
+      "narration": "급행 늘면 출근길 진짜 편해진다 vs 어차피 지옥철은 지옥철. 당신의 선택은 어느 쪽인가요?",
+      "on_screen_text": "너의 선택은",
+      "image": "runs/2026-10-14/scene_07.jpg",
       "provider": "cloudflare"
     }
   ],
@@ -481,7 +370,7 @@
   "video_file": "videos/2026-10-14.mp4",
   "upload": {
     "status": "skipped",
-    "reason": "QA 불합격"
+    "reason": "YT_* 시크릿 없음"
   },
-  "finished_at": "2026-10-14T00:25:49+09:00"
+  "finished_at": "2026-10-14T22:10:55+09:00"
 }
