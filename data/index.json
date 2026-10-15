@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-10-15",
+    "status": "failed",
+    "title": null,
+    "overall": null,
+    "qa_attempts": 0,
+    "thumbnail": null,
+    "youtube_url": null,
+    "upload_status": null,
+    "duration": null
+  },
+  {
     "date": "2026-10-14",
     "status": "success",
     "title": "지옥철 9호선 급행 늘린다는데 진짜 될까?",
