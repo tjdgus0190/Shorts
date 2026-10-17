@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-10-17",
+    "status": "success",
+    "title": "에버턴 이기면 쐈는데 친구가 계좌번호부터",
+    "overall": 70,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-10-17/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 41.77
+  },
+  {
     "date": "2026-10-16",
     "status": "failed",
     "title": null,

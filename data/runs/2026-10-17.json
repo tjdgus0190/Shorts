@@ -1,0 +1,505 @@
+{
+  "date": "2026-10-17",
+  "status": "success",
+  "started_at": "2026-10-17T20:47:38+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-10-17T20:47:38+09:00",
+      "note": "",
+      "seconds": 25.3
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-17T20:48:03+09:00",
+      "note": "",
+      "seconds": 17.0
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-17T20:48:20+09:00",
+      "note": "",
+      "seconds": 133.1
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-17T20:50:33+09:00",
+      "note": "",
+      "seconds": 31.8
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-17T20:51:05+09:00",
+      "note": "1차",
+      "seconds": 24.0
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-17T20:51:29+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 20.8
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-17T20:51:50+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 81.8
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-17T20:53:12+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 29.9
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-17T20:53:41+09:00",
+      "note": "2차",
+      "seconds": 22.6
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-17T20:54:04+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 24.9
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-17T20:54:29+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 59.4
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-17T20:55:28+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 33.4
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-17T20:56:02+09:00",
+      "note": "3차",
+      "seconds": 21.5
+    },
+    {
+      "name": "uploader",
+      "label": "업로드",
+      "status": "done",
+      "started_at": "2026-10-17T20:56:23+09:00",
+      "note": "",
+      "seconds": 0.0
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 45,
+        "hook": 55,
+        "clarity": 65,
+        "visual": 58,
+        "subtitle": 75,
+        "safety": 70
+      },
+      "overall": 58,
+      "pass": false,
+      "issues": [
+        "fun: 반전이 '예측은 예측일 뿐, 공은 둥글다'라는 상투적인 말뿐이라 웃음 포인트가 없습니다. 경기 정보(순위, 맞대결, 키 플레이어)도 없어서 프리뷰로서도 알맹이가 없습니다.",
+        "hook: 첫 3초가 '치킨 걸 준비 됐어?'라는 질문 하나입니다. 에버턴과 첼시가 언급되지 않아 어떤 경기인지 알 수 없고, 스크롤을 멈출 만한 장치가 약합니다.",
+        "visual(장면 2): 시계 바늘이 대략 1시 20분을 가리키는데, 나레이션과 프롬프트는 6시 30분입니다. 장면의 핵심 정보와 이미지가 어긋납니다.",
+        "visual(장면 4): 프롬프트는 '큰 공이 점쟁이 수정구를 굴러 넘는' 장면인데, 결과물은 입이 달린 공이 수정구 위에 얹혀 있습니다. 수정구 안 캐릭터도 형체가 이상하고, 파란색 계열 에버턴 요소도 없습니다.",
+        "visual(장면 5): 프롬프트의 치킨 버킷이 팝콘 통으로 바뀌어 '치킨 걸고'라는 나레이션과 맞지 않습니다. 동물 캐릭터 중 하나는 닭과 개가 섞인 형태로 보입니다. TV 화면은 노란색 빈 화면이라 허전합니다.",
+        "clarity: 장면 3의 '도전이 될 거라는 얘기'는 누가 누구에게 도전인지, 사비 알론소가 어느 팀 감독인지 설명이 없어 이해하기 어렵습니다. 장면 6의 '에버턴 치킨/첼시 치킨'도 장면 1의 치킨 내기와 연결이 약합니다.",
+        "safety/사실 확인 필요: '사비 알론소 팀'이 현재 첼시 감독을 가리키는지 확인이 필요합니다. 한국 시간 18:30 킥오프가 실제 경기 시각과 맞는지도 확인이 필요합니다. 치킨 '내기'는 도박을 연상시킬 수 있어 '치킨 내기'보다 '치킨 쏘기/응원 내기' 같은 표현이 안전합니다.",
+        "길이: 36.4초로 설명문의 '30초 프리뷰'와 다릅니다. 장면 1·2·5에서 반복되는 내용을 줄이면 좋습니다.",
+        "subtitle: 가독성은 괜찮고 강조색도 적절합니다. 다만 하단 자막이 캐릭터의 몸통과 겹치는 프레임이 있고, 상단 on_screen_text 박스가 단조롭습니다."
+      ],
+      "retry_target": "planner",
+      "feedback": "기획 단계에서 다시 작업해 주세요. (1) 훅은 첫 문장에 팀 이름과 구체적인 도발을 넣으세요. 예: '에버턴이 첼시를 잡으면 치킨 쏩니다'. (2) 재미는 반전과 드립을 실제로 만드세요. 예를 들어 양 팀 팬의 치킨 내기 입장, 약팀을 응원하다 치킨값만 날리는 상황극, 순위나 최근 맞대결 한 줄을 이용한 반전을 쓸 수 있습니다. '공은 둥글다' 같은 상투구는 빼세요. (3) 사비 알론소 관련 문장은 사실 확인이 안 되면 삭제하거나 '확인된 정보'만 쓰세요. 킥오프 시각도 한국 시간 기준으로 확인하세요. (4) '내기'는 도박으로 보이지 않게 '치킨 쏘기'로 순화하세요. (5) 장면 4와 5는 image_prompt를 다시 쓰세요. 장면 4는 구도를 단순하게, 장면 5는 '치킨 버킷'을 명시하고 TV 화면에 경기 장면이 보이게 하세요. 장면 2는 시계가 6:30을 가리키도록 하거나 시계 대신 큰 숫자 '18:30' 텍스트 오브젝트로 바꾸세요. (6) 전체를 30초 안으로 줄이고, 장면 6은 댓글 참여(에버턴 vs 첼시 투표)로 마무리하세요."
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 55,
+        "hook": 62,
+        "clarity": 68,
+        "visual": 62,
+        "subtitle": 72,
+        "safety": 85
+      },
+      "overall": 65,
+      "pass": false,
+      "issues": [
+        "훅이 '내기 제안' 한 줄이라 평범하다. 첫 3초에 궁금증이나 반전이 없고, 첫 프레임은 고양이가 치킨을 든 평범한 홍보 컷이다.",
+        "재미가 약하다. 반전인 '누가 이기든 결국 내가 계산'은 방향은 좋지만 한 번 말하고 끝난다. 5번 장면은 설명 위주이고 마지막 투표 유도는 흔한 CTA다. 드립이 한 번 더 터지는 구간이 없다.",
+        "확인 필요: '오늘 저녁 6시 반 킥오프'가 사실인지 확인이 안 된다. 프리미어리그 경기는 한국 시간으로 보통 저녁 8시 이후나 밤·새벽에 열린다. '검색량이 벌써 터졌습니다'도 근거가 없다. 둘 다 출처를 확인하거나 표현을 완화해야 한다.",
+        "장면 4에서 닭다리가 생선이나 새우 튀김처럼 보인다. 지갑 라벨의 글자도 'PI2L LOS'로 깨져 있다.",
+        "장면 5의 치킨 통에는 튀긴 치킨이 아니라 털 뽑힌 통닭이 다리를 뻗고 앉아 있어 기괴하다. 오른쪽 캐릭터는 화면 끝에서 잘렸다.",
+        "장면 3의 고양이는 회색에 22번 유니폼이고 장면 1은 주황색에 17번이라 캐릭터 일관성이 없다. 장면 3의 에버턴 팬 쪽 고양이는 표정도 어색하다.",
+        "이미지가 가로형이라 위아래에 흐릿한 블러 띠가 크게 남는다. 세로 쇼츠 화면 활용도가 낮고 화면이 비어 보인다.",
+        "영상 길이가 34.9초인데 description에는 '30초 프리뷰'라고 적혀 있다. 사소한 불일치다.",
+        "상단 on_screen_text(검은 박스)와 하단 나레이션 자막이 따로 놀아 시선이 분산된다. 장면 1의 하단 자막은 캐릭터 유니폼 위에 겹친다."
+      ],
+      "retry_target": "planner",
+      "feedback": "대본(훅·재미) 중심으로 재작업하세요. 1) 훅: 첫 문장에 반전이나 구체적 상황을 넣으세요. 예: '에버턴이 첼시 이기면 치킨 쏜다고 했는데… 친구가 먼저 계좌번호를 보냈다'. 2) 드립 추가: 친구가 받아치는 부분에서 한 번 더 비틀어야 합니다(예: 어느 팀이 이겨도 치킨값은 내 몫, 결국 치킨집만 승리). 마지막은 뻔한 투표 유도 대신 웃긴 한 줄로 마무리하세요. 3) 사실 확인: '오늘 6시 반 킥오프'와 '검색량 폭발'은 한국 시간 기준 일정과 출처를 확인하고, 불확실하면 '오늘 경기'처럼 일반화하세요. 4) description의 '30초'를 실제 길이에 맞추세요. 5) 제작 팁(재작업 시 참고): 이미지 프롬프트에 'vertical 9:16 full-bleed'를 넣어 블러 띠를 없애고, 캐릭터 설정(에버턴=파란 유니폼 주황 고양이)을 모든 장면에 고정하세요. 지갑 라벨 같은 글자는 'no text'로 막고, 장면 5는 'crispy fried chicken pieces in a bucket'으로 명확히 지시하세요."
+    },
+    {
+      "attempt": 3,
+      "scores": {
+        "fun": 62,
+        "hook": 72,
+        "clarity": 70,
+        "visual": 68,
+        "subtitle": 75,
+        "safety": 85
+      },
+      "overall": 70,
+      "pass": true,
+      "issues": [
+        "계산: 가중 평균 = fun 62×0.3 + hook 72×0.2 + (clarity 70 + visual 68 + subtitle 75 + safety 85)×0.125 = 18.6 + 14.4 + 37.25 ≈ 70. 합격선에 거의 붙은 점수라 여유가 없음.",
+        "프레임 4장 모두 이미지가 화면 가운데 정사각형·가로형 띠로만 나오고, 위아래는 흐린 배경으로 채워져 있음. 프롬프트가 요청한 9:16 full-bleed가 아니어서 화면 활용도와 몰입감이 떨어짐.",
+        "첫 프레임(0.6초)에서 폰을 든 쪽은 개인데 프롬프트에는 고양이가 폰을 보고 충격받는 장면으로 되어 있음. 계좌번호를 보냈다는 상황이 한눈에 읽히지 않고, 폰 화면도 빈 흰색이라 '계좌번호' 단서가 없음.",
+        "캐릭터 일관성이 약함. 고양이 유니폼 디자인과 개 유니폼 번호가 장면마다 다름(31, 10, 2). 개가 빨간 유니폼이라 첼시(파란색 유니폼) 이미지와 안 맞음. 팬이 보면 어색할 수 있어 확인 필요.",
+        "2번 장면은 '오늘 빅매치, 중계 링크 찾는 사람들로 난리'라는 정보성 설명이라 개그 리듬이 끊김. 5번 장면의 '링크 찾다가'도 불법 스트리밍 링크를 연상시킬 수 있어 약한 저작권·정책 우려가 있음.",
+        "펀치라인이 '이겨도 지고도 내가 산다'와 '승자는 치킨집'으로 예측 가능한 편이고 반전이 약함. 38.9초에 장면 6개라 장면당 호흡이 길어 중반에 처질 수 있음.",
+        "상단 on_screen_text는 검은 박스에 흰 글씨라 읽기는 쉽지만 이미지와 별개로 떠 보임. 하단 자막은 이미지 위에 겹쳐 있는데 가독성은 괜찮고 강조색(노랑)도 적절함."
+      ],
+      "retry_target": null,
+      "feedback": "합격이지만 마진이 얇아서 다음과 같이 개선하면 좋습니다. (1) 이미지를 진짜 9:16 full-bleed로 생성하거나 위아래 빈 영역을 채워 주세요. (2) 1번 장면 폰 화면에 '계좌번호 123-456' 같은 단서를 넣고, 폰을 보고 충격받는 쪽을 고양이로 통일하세요. (3) 2번 장면의 정보성 멘트를 줄이고 '이기면 쏜다고 한 건 나인데'처럼 내기 상황의 개그로 바꾸세요. 중계 링크 언급도 빼는 편이 안전합니다. (4) 캐릭터 유니폼 색과 번호를 고정하세요(에버턴 파랑, 첼시는 파랑 계열이라 구분 장치가 필요함). (5) 결말에 한 번 더 반전을 주세요(예: 비긴 경우 '무승부 기념 치킨' 등). (6) 전체 길이를 30초 안팎으로 줄여 속도감을 높이세요."
+    }
+  ],
+  "marketer": {
+    "summary": "오늘은 프리미어리그 에버턴-첼시전, 준PO 2차전(KIA-LG)과 LPGA 최혜진의 첫 우승 도전, 놀면뭐하니 서울가요제, 11년 만에 돌아온 캪틴큐 등 스포츠·예능·소비 이슈와 전세 퇴거 분쟁, 2027년 연휴 달력 같은 생활 이슈가 함께 뜬 날",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "에버턴 대 첼시",
+        "traffic": "5000+",
+        "traffic_num": 5000,
+        "news": [
+          "프리미어 리그 에버튼 대 첼시 생중계 링크",
+          "에버튼 vs 첼시 경기 예측, 10월 17일 오후 6시 30분: 현상 분석",
+          "에버튼 vs 첼시 예측: 사비 알론소의 팀에게 도전이 될 것이다"
+        ],
+        "topic": "에버턴 vs 첼시, 오늘 오후 6시 30분 킥오프 전 30초 관전 포인트",
+        "why_now": "'에버튼 vs 첼시 경기 예측, 10월 17일 오후 6시 30분', '사비 알론소의 팀에게 도전이 될 것이다' 등 경기 당일 예측·생중계 기사가 쏟아짐",
+        "angle": "경기 직전 '이거 보고 들어가세요' 30초 프리뷰. 예측 기사 제목을 모아 치킨 내기 걸기 상황극 형식으로 진행",
+        "target": "20~40대 남성 축구팬, 새벽·저녁 EPL 시청층",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": "경기 결과를 지어내지 말고 예측·프리뷰 기사 범위에서만 다룰 것"
+      },
+      {
+        "rank": 2,
+        "keyword": "퇴거",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "“만기에 나간다더니”…세입자 말 믿고 집 샀다가 ‘날벼락’ [집과법]",
+          "[판결] “직접 산다더니 세 놓은 집주인, 배상해야”",
+          "임대차보증금 반환하지 않은 임대인, 임차인이 지출한 계약금까지 배상해야 한다"
+        ],
+        "topic": "'만기에 나간다더니'… 세입자 말 믿고 집 샀다가 날벼락, 판결은 어땠나",
+        "why_now": "'세입자 말 믿고 집 샀다가 날벼락', '직접 산다더니 세 놓은 집주인, 배상해야' 등 임대차 분쟁 기사와 판결이 연달아 나옴",
+        "angle": "'내 집인데 못 들어간다?' 상황극으로 시작해 판결 요지를 30초로 정리. 집 사기 전 확인할 것 체크리스트로 마무리",
+        "target": "20~40대 자취생·세입자·내 집 마련 준비층",
+        "fun_score": 7,
+        "risk": "medium",
+        "risk_note": "법률 판단이 단정적으로 보이지 않게 '개별 사안마다 다름' 안내 필요, 특정 당사자 특정 금지"
+      },
+      {
+        "rank": 3,
+        "keyword": "빙모상",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "'LG에 강했던' KIA 올러 \"중심 타선 상대 피해 최소화 집중\"",
+          "'달아난다 vs 뒤집는다' KIA 올러-LG 임찬규, 2차전 선발 격돌[준PO]",
+          "LG 임찬규 장모상… 비보 속 18일 준PO 2차전 선발 마운드 오른다"
+        ],
+        "topic": "장모상 속에서도 마운드에 오르는 LG 임찬규, 준PO 2차전 KIA 올러와 선발 맞대결",
+        "why_now": "'LG 임찬규 장모상… 비보 속 18일 준PO 2차전 선발 마운드 오른다', 'KIA 올러-LG 임찬규 2차전 선발 격돌' 기사",
+        "angle": "2차전 선발 매치업 정리(올러는 LG에 강했다는 기사 근거) 중심의 프리뷰. 상중 소식은 조용히 한 줄만 언급하고 응원 톤 유지",
+        "target": "야구팬, KIA·LG 팬",
+        "fun_score": 5,
+        "risk": "high",
+        "risk_note": "실존 인물의 가족 상(喪)이라 드립·조롱 금지. 사생활 소재로 소비하지 말고 경기 프리뷰와 응원 중심으로"
+      },
+      {
+        "rank": 4,
+        "keyword": "everton vs chelsea",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "Everton vs. Chelsea, Premier League: Confirmed lineups; how to watch",
+          "Licensable picture: UK: Premier League: Everton v Chelsea",
+          "Follow the weekend action across Europe's top leagues"
+        ],
+        "topic": "에버턴 vs 첼시 선발 라인업 공개, 한국에서 어떻게 보나",
+        "why_now": "'Confirmed lineups; how to watch' 등 라인업·시청 방법 영문 기사 급증",
+        "angle": "'오늘 EPL 이거 보면 됩니다' 라인업·시청 방법 30초 요약. 한글 키워드와 묶어 같은 경기 시청 가이드로 제작",
+        "target": "해외축구 팬, 영문 검색 사용층",
+        "fun_score": 5,
+        "risk": "low",
+        "risk_note": "'에버턴 대 첼시'와 같은 경기라 영상 중복 주의, 하나로 통합 제작 권장"
+      },
+      {
+        "rank": 5,
+        "keyword": "황 유민",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "최혜진·양희영, LPGA 상하이 대회 3R서 나란히 1·2위(종합)",
+          "최혜진, 뷰익 LPGA 상하이 사흘 연속 1위…데뷔 첫 우승 ‘와이어 투 와이어’로",
+          "최혜진, LPGA 생애 첫승 ‘성큼’…뷰익 상하이 LPGA 이틀 연속 선두"
+        ],
+        "topic": "LPGA 상하이 3라운드, 최혜진 와이어 투 와이어 선두… 생애 첫 우승 눈앞",
+        "why_now": "'최혜진, 뷰익 LPGA 상하이 사흘 연속 1위', '최혜진·양희영 나란히 1·2위' 기사. 황유민도 같은 대회 관련 검색으로 보임",
+        "angle": "'한국 선수끼리 1,2위' 숫자로 보는 3라운드 정리와 최종 라운드 관전 포인트. 황유민 성적은 뉴스 제목에 없으므로 언급하지 않음",
+        "target": "골프팬, 여자골프 응원층",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": "황유민의 이번 대회 성적은 뉴스에 근거가 없어 단정 금지. 우승 확정처럼 표현하지 말 것"
+      },
+      {
+        "rank": 6,
+        "keyword": "놀면뭐하니 서울가요제",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "벌써 유재석에 충성 맹세..가요제 참가자 \"바짝 엎드리겠다\"(놀뭐) - 조선비즈",
+          "'티파니♥' 변요한 정체 들통?..결혼하더니 '놀뭐' 첫 출연하나",
+          "'놀뭐', 동작그만=허경환?...유재석, \"하체 너무 짧다\" - 머니투데이"
+        ],
+        "topic": "놀뭐 서울가요제 참가자 '유재석에 충성 맹세', 벌써 난리 난 이유",
+        "why_now": "'가요제 참가자 \"바짝 엎드리겠다\"', '변요한 첫 출연 가능성', '동작그만=허경환? 유재석 \"하체 너무 짧다\"' 등 예능 기사",
+        "angle": "'이 가요제 벌써 재밌는 포인트 3가지' 하이라이트 + 드립 자막. 변요한 출연설은 추측임을 표시",
+        "target": "예능 시청층 20~50대",
+        "fun_score": 8,
+        "risk": "medium",
+        "risk_note": "출연설은 기사 제목상 추측 단계이므로 확정처럼 말 금지, 외모·신체 농담은 출연자 조롱이 되지 않게 주의"
+      },
+      {
+        "rank": 7,
+        "keyword": "삼성중공업",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "삼성중공업은 왜 경쟁사 엔진을 살까",
+          "한화엔진, 삼성重서 1322억 수주…연간 실적 개선기대 By EBN",
+          "한화엔진, 삼성重에 1322억 선박엔진 공급계약"
+        ],
+        "topic": "삼성중공업은 왜 경쟁사 한화엔진 엔진을 살까, 1322억 계약 속사정",
+        "why_now": "'삼성중공업은 왜 경쟁사 엔진을 살까', '한화엔진, 삼성重에 1322억 선박엔진 공급계약' 기사",
+        "angle": "'라이벌 회사 물건을 1322억 어치 샀다?' 반전형 설명. 배와 엔진 관계를 쉬운 비유로 30초 정리",
+        "target": "직장인·주식 투자 관심층",
+        "fun_score": 5,
+        "risk": "medium",
+        "risk_note": "투자 권유로 보이지 않게 주가 전망 언급 금지, 계약 사실만 다룰 것"
+      },
+      {
+        "rank": 8,
+        "keyword": "연휴",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "[캘린더 이슈] 2027년 휴일 119일…사흘 이상 연휴만 10번 찾아온다",
+          "하노이시는 2027년 음력 설날 및 국경일 연휴 일정을 발표했습니다.",
+          "2027년 휴무, 뗏(음력 설) 7일·국경일 4일 연휴 확정 발표"
+        ],
+        "topic": "2027년 휴일 119일, 사흘 이상 연휴 10번… 벌써 달력 체크",
+        "why_now": "'2027년 휴일 119일…사흘 이상 연휴만 10번 찾아온다' 캘린더 기사",
+        "angle": "'내년 연차 이렇게 쓰면 대박' 숫자로 보는 2027 달력. 연휴 10번 리스트와 연차 꿀팁 제시. 베트남 뗏 연휴 소식은 곁가지로만 활용",
+        "target": "직장인·학생 전 연령층",
+        "fun_score": 9,
+        "risk": "low",
+        "risk_note": "구체적 연휴 날짜는 기사 확인 후 정확히 표기할 것"
+      },
+      {
+        "rank": 9,
+        "keyword": "이선민",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "11년 만에 돌아온 캪틴큐…1300세트 예약 완판·편의점 발주도 마감",
+          "롯데칠성, ‘캪틴큐’ 광고 모델로 코미디언 이선민 발탁 - 조선비즈",
+          "[먹어보니]이틀 뒤 깬다는 전설의 양주…다시 돌아온 '캪틴큐'"
+        ],
+        "topic": "11년 만에 돌아온 캪틴큐, 코미디언 이선민이 광고 모델… 1300세트 예약 완판",
+        "why_now": "'롯데칠성, 캪틴큐 광고 모델로 코미디언 이선민 발탁', '1300세트 예약 완판·편의점 발주도 마감' 기사",
+        "angle": "'이틀 뒤 깬다는 전설의 양주가 돌아왔다' 레트로 감성 + 완판 숫자 비교. 광고 모델 발탁 반전 포인트 소개",
+        "target": "20~40대 술자리 관심층, 레트로 감성층",
+        "fun_score": 7,
+        "risk": "medium",
+        "risk_note": "주류 콘텐츠라 미성년자 노출·과음 조장 표현 주의, 광고성으로 보이지 않게 톤 조절"
+      },
+      {
+        "rank": 10,
+        "keyword": "최예나",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [],
+        "topic": "최예나 검색량 급상승, 이유 확인 필요",
+        "why_now": "연관 뉴스 제목이 없어 급상승 이유를 확인할 수 없음",
+        "angle": "근거 없이 제작하지 말고 이유 확인 후 재검토. 확인 시 '그래서 왜 검색했냐면' 형식으로 활용",
+        "target": "가수 팬층",
+        "fun_score": 3,
+        "risk": "medium",
+        "risk_note": "뉴스 근거가 없어 사실 지어낼 위험 있음, 실존 인물 사생활 이슈일 가능성도 있어 확인 전 제작 보류"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": []
+  },
+  "selected_attempt": 3,
+  "plan": {
+    "chosen_rank": 1,
+    "reason": "검색량 5000+로 가장 높고 경기 당일 이슈라 타이밍이 좋음. 계산은 없음. QA 반영: 훅을 '친구가 먼저 계좌번호를 보냈다'는 구체적 반전으로 교체했고, 친구가 받아치는 장면에 '이기면 축하 치킨, 지면 위로 치킨'이라는 한 번 더 비튼 드립을 넣어 결국 치킨집만 승리하는 결말로 마무리함. 킥오프 시각은 제목 표기(오후 6시 30분)가 한국 시간인지 확정되지 않아 '오늘 경기'로 일반화했고, '검색량 폭발' 같은 표현도 빼고 생중계 링크를 찾는 사람이 많다는 제목 내용만 사용함. 경기 결과·순위·전적은 쓰지 않음. 마지막은 투표 유도 대신 웃긴 한 줄로 끝냄. 이미지는 vertical 9:16 full-bleed, 에버턴은 파란 유니폼 주황 고양이로 전 장면 고정, 글자가 생길 만한 소품은 피하고 장면 5는 치킨 버킷을 명확히 지시함. 내레이션은 약 200자로 25~40초 범위임.",
+    "title": "에버턴 이기면 쐈는데 친구가 계좌번호부터",
+    "hook": "에버턴이 첼시 이기면 치킨 쏜다고 했는데, 친구가 먼저 계좌번호를 보냈다.",
+    "bgm_mood": "funny",
+    "style": "vertical 9:16 full-bleed, vibrant 3D cartoon, soft lighting, high detail, bright colors, playful mood",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "에버턴이 첼시 이기면 치킨 쏜다고 했는데, 친구가 먼저 계좌번호를 보냈다.",
+        "on_screen_text": "계좌번호 도착",
+        "image_prompt": "vertical 9:16 full-bleed, an orange cat in a blue football jersey staring in shock at a glowing smartphone held in its paws, a smug dog in a red jersey grinning in the background, stadium lights at dusk, vibrant 3D cartoon, soft lighting, high detail, bright colors, playful mood"
+      },
+      {
+        "id": 2,
+        "narration": "오늘 에버턴 대 첼시 경기 얘기예요. 생중계 링크 찾는 사람들로 벌써 난리입니다.",
+        "on_screen_text": "오늘 빅매치",
+        "image_prompt": "vertical 9:16 full-bleed, an orange cat in a blue football jersey frantically tapping a laptop on a sofa, a soccer ball and a glowing green pitch visible on the laptop screen, cozy living room, vibrant 3D cartoon, soft lighting, high detail, bright colors, playful mood"
+      },
+      {
+        "id": 3,
+        "narration": "내가 그랬죠. 아직 시작도 안 했다고. 친구가 그러더라고요. 이기면 축하 치킨, 지면 위로 치킨이래요.",
+        "on_screen_text": "이겨도 쏴",
+        "image_prompt": "vertical 9:16 full-bleed, a smug dog in a red jersey pointing at an orange cat in a blue football jersey, the cat looking stunned with wide eyes and sweat drops, simple colorful pastel background, vibrant 3D cartoon, soft lighting, high detail, bright colors, playful mood"
+      },
+      {
+        "id": 4,
+        "narration": "정리하면 이겨도 내가 내고, 져도 내가 냅니다. 제 지갑이 지금 울고 있어요.",
+        "on_screen_text": "결국 내 지갑",
+        "image_prompt": "vertical 9:16 full-bleed, a plain brown leather wallet with big teary cartoon eyes and a sad face, tears streaming down, a single golden fried chicken drumstick floating above it, soft pastel background, vibrant 3D cartoon, soft lighting, high detail, bright colors, playful mood"
+      },
+      {
+        "id": 5,
+        "narration": "결국 치킨 시켜놓고 TV 앞에 앉았어요. 링크 찾다가 치킨이 식는 줄도 모르고요.",
+        "on_screen_text": "치킨 식는다",
+        "image_prompt": "vertical 9:16 full-bleed, an orange cat in a blue football jersey and a dog in a red jersey sitting side by side on a sofa, a bucket of crispy fried chicken pieces on the table between them, both staring at a TV showing a green football pitch, vibrant 3D cartoon, soft lighting, high detail, bright colors, playful mood"
+      },
+      {
+        "id": 6,
+        "narration": "이 경기 진짜 승자는 에버턴도 첼시도 아니고 치킨집 사장님입니다.",
+        "on_screen_text": "승자는 치킨집",
+        "image_prompt": "vertical 9:16 full-bleed, a happy cartoon chicken wearing a golden champion medal and holding a trophy, standing on a podium made of chicken buckets, confetti falling, a soccer ball at its feet, vibrant 3D cartoon, soft lighting, high detail, bright colors, playful mood"
+      }
+    ],
+    "description": "에버턴 대 첼시 오늘 경기 전에 보는 치킨 내기 상황극. 이겨도 내가 쏘고 져도 내가 쏘는 이야기, 결국 승자는 치킨집?\n#에버턴 #첼시 #프리미어리그",
+    "tags": [
+      "에버턴",
+      "첼시",
+      "에버턴 대 첼시",
+      "프리미어리그",
+      "EPL",
+      "축구",
+      "치킨",
+      "내기",
+      "쇼츠"
+    ],
+    "comment_question": "친구랑 치킨 내기했는데 이겨도 져도 내가 내야 한다면, 그 친구 손절 vs 그냥 쏜다?"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 6
+    }
+  },
+  "effects": {
+    "duration": 41.77,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Monkeys Spinning Monkeys",
+    "bgm_mood": "funny",
+    "bgm_credit": "Music: \"Monkeys Spinning Monkeys\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "에버턴이 첼시 이기면 치킨 쏜다고 했는데, 친구가 먼저 계좌번호를 보냈다.",
+      "on_screen_text": "계좌번호 도착",
+      "image": "runs/2026-10-17/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "오늘 에버턴 대 첼시 경기 얘기예요. 생중계 링크 찾는 사람들로 벌써 난리입니다.",
+      "on_screen_text": "오늘 빅매치",
+      "image": "runs/2026-10-17/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "내가 그랬죠. 아직 시작도 안 했다고. 친구가 그러더라고요. 이기면 축하 치킨, 지면 위로 치킨이래요.",
+      "on_screen_text": "이겨도 쏴",
+      "image": "runs/2026-10-17/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "정리하면 이겨도 내가 내고, 져도 내가 냅니다. 제 지갑이 지금 울고 있어요.",
+      "on_screen_text": "결국 내 지갑",
+      "image": "runs/2026-10-17/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "결국 치킨 시켜놓고 TV 앞에 앉았어요. 링크 찾다가 치킨이 식는 줄도 모르고요.",
+      "on_screen_text": "치킨 식는다",
+      "image": "runs/2026-10-17/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "이 경기 진짜 승자는 에버턴도 첼시도 아니고 치킨집 사장님입니다.",
+      "on_screen_text": "승자는 치킨집",
+      "image": "runs/2026-10-17/scene_06.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-10-17/thumbnail.jpg",
+  "video_file": "videos/2026-10-17.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "YT_* 시크릿 없음"
+  },
+  "finished_at": "2026-10-17T20:56:23+09:00"
+}
