@@ -1,0 +1,484 @@
+{
+  "date": "2026-10-18",
+  "status": "qa_failed",
+  "started_at": "2026-10-18T21:13:17+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-10-18T21:13:17+09:00",
+      "note": "",
+      "seconds": 27.3
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-18T21:13:44+09:00",
+      "note": "",
+      "seconds": 19.6
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-18T21:14:04+09:00",
+      "note": "",
+      "seconds": 23.0
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-18T21:14:27+09:00",
+      "note": "",
+      "seconds": 30.5
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-18T21:14:57+09:00",
+      "note": "1차",
+      "seconds": 16.6
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-18T21:15:14+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 20.6
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-18T21:15:35+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 36.3
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-18T21:16:11+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 31.0
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-18T21:16:42+09:00",
+      "note": "2차",
+      "seconds": 18.8
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-18T21:17:01+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 34.6
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-18T21:17:35+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 29.9
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-18T21:18:05+09:00",
+      "note": "3차",
+      "seconds": 19.1
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 58,
+        "hook": 62,
+        "clarity": 76,
+        "visual": 66,
+        "subtitle": 78,
+        "safety": 85
+      },
+      "overall": 68,
+      "pass": false,
+      "issues": [
+        "장면 4 이미지(55% 프레임)의 동전에 비트코인 'B' 로고가 찍혀 있음. 주제는 금인데 암호화폐가 연상되어 장면과 맞지 않고 혼동을 줌.",
+        "장면 1의 하단 자막 '금 사라는 거야'가 금괴 위에 겹침. 상단 on_screen_text와 하단 자막이 따로 놀아서 화면이 조금 복잡함.",
+        "훅은 '전문가들이 싸운다'는 궁금증은 주지만 구체적인 숫자나 충격 포인트가 없고, 상단 문구 '금 어쩌라고'도 약함.",
+        "재미 면에서 '제가 어떻게 알아요' 결말은 가벼운 드립이지만 반전이나 리듬이 부족함. 전체적으로 '의견이 갈린다'는 정리 톤에 가까움.",
+        "'국제 금값 주간 0.7% 하락', '연말 미국 금리 인상 우려', '2년 내 신고가·2027년 전고점 돌파 어려움' 전망은 출처가 없어서 확인 필요. 틀렸다고 단정할 근거는 없음.",
+        "프레임 상하단에 블러 처리된 빈 영역이 크고, 이미지가 화면 중앙에 작게 들어가 있음. 쇼츠 화면을 덜 채움."
+      ],
+      "retry_target": null,
+      "feedback": "합격입니다. 업로드 전 또는 다음 작업에서 개선할 점은 다음과 같습니다. (1) 장면 4 이미지 프롬프트에 'plain gold coin, no symbols, no letters, no logos'를 넣어 비트코인 로고를 막으세요. 가능하면 이 장면만 재생성하세요. (2) 훅을 구체적으로 바꾸세요. 예: '전문가 둘이 금 전망으로 정반대 얘기를 합니다'처럼 대립을 숫자나 대사로 보여주면 좋습니다. (3) 마지막 장면에 반전 드립을 하나 넣으세요. 예: 고양이가 '전 그냥 적금 듭니다'라고 하는 식입니다. (4) 수치와 전망은 설명란에 출처(기관명, 날짜)를 적거나 '~라는 전망이 나왔다'로 표현해 안전도를 높이세요. (5) 하단 자막이 인물이나 금괴 같은 핵심 오브젝트를 덜 가리도록 위치를 조금 낮추고, 이미지를 세로 화면에 꽉 차게 키우세요."
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 55,
+        "hook": 60,
+        "clarity": 75,
+        "visual": 55,
+        "subtitle": 70,
+        "safety": 70
+      },
+      "overall": 62,
+      "pass": false,
+      "issues": [
+        "장면 4 프레임(55%)에 비트코인 'B' 로고가 찍힌 코인이 나옴. 프롬프트는 무늬 없는 금화였고, 금값 이야기에 암호화폐 로고가 들어가 시청자가 혼동할 수 있음.",
+        "장면 5 프레임(85%) 우하단에 '©USCA'로 읽히는 워터마크성 글자가 보임. 저작권·상표 위험이 있고 이미지 품질도 떨어짐.",
+        "장면 1 프레임(0.6초)의 올빼미 두 마리가 '등을 맞대고 반대 방향을 가리키는' 구도가 아님. 둘 다 엄지를 들고 나란히 서 있어 '정반대'가 시각적으로 전달되지 않고, 금괴 위치도 어색함. 첫 3초 훅이 약함.",
+        "훅 문장이 '전문가 둘이 정반대로 말합니다'라는 뉴스 요약 톤이라 궁금증이나 반전이 약함. 누가 말했는지(전문가·증권가)가 구체적이지 않아 신뢰도도 낮음.",
+        "재미 요소가 마지막의 '전 적금 듭니다' 한 번뿐이고, 중간(장면 2~4)은 전망과 수치를 나열하는 정보 전달 톤임.",
+        "수치 검산: 주간 하락률 0.7%는 기획서 출처 표기와 일치함. 계산 오류는 없음. '미국 연말 금리 인상 우려'와 '2027년 전고점 돌파 어려움' 전망의 구체적 출처는 확인 필요.",
+        "자막: 상단 검정 박스 제목과 중앙 하단 말자막이 이중으로 떠 있음. 장면 5에서는 말자막이 고양이 몸통 위를 가림. 심각한 수준은 아님."
+      ],
+      "retry_target": "producer",
+      "feedback": "1) 장면 4 이미지를 다시 생성하세요. 프롬프트에 'no symbols, no letters, no logo, no bitcoin, plain smooth gold coin'을 명시하고, 생성 후 코인 표면에 글자나 로고가 없는지 확인하세요. 2) 장면 5 이미지는 워터마크 글자('©USCA')가 없는 컷으로 재생성하고, negative prompt에 'watermark, text, signature, copyright'를 추가하세요. 3) 장면 1은 'two owls standing back to back, left owl pointing left, right owl pointing right, arms stretched in opposite directions'처럼 포즈를 구체적으로 지정해 다시 뽑으세요. 4) 말자막이 인물 얼굴이나 몸통을 가리지 않도록 위치를 조금 낮추세요. 5) 플래너에게 전달할 팁: 훅은 '금 전문가 둘이 싸우는 중, 한 명은 신고가 / 한 명은 폭락'처럼 대립을 더 세게 쓰고, 중간에 드립을 한두 개 더 넣으면 재미 점수가 오릅니다."
+    },
+    {
+      "attempt": 3,
+      "scores": {
+        "fun": 58,
+        "hook": 62,
+        "clarity": 78,
+        "visual": 80,
+        "subtitle": 68,
+        "safety": 85
+      },
+      "overall": 69,
+      "pass": false,
+      "issues": [
+        "훅: '전문가 둘이 정반대로 말합니다'는 설명형 문장이라 첫 3초에 스크롤을 멈출 만큼 강하지 않음. 올빼미 두 마리가 등을 돌린 장면도 정적임.",
+        "재미: 반전이나 드립이 약함. '둘 다 자신만만해서 저는 더 모르겠어요'로 끝나 결론이 없고 강의형 정리에 가까움. 마지막의 '적금 듭니다'가 유일한 펀치라인인데 힘이 약함.",
+        "자막: 하단 자막이 화면 중앙~하단 인물 위에 놓임. f3에서는 고양이 배를 가리고, f0에서는 올빼미 발 쪽을 가림. 장면 이미지가 정사각형에 가까워 위아래에 흐린 확장 배경이 붙어 있고, 상단 검은 박스 자막도 이미지 경계에 걸쳐 있음.",
+        "비주얼: 장면 4 이미지는 동전이 미끄럼틀을 타고 내려가는 모습이 아니라 받침대에 기대어 서 있는 모습이라 '하락' 연출이 약함. 장면 2의 황소는 동전 위에 올라 있는데 동전에 '$' 무늬가 보임(프롬프트의 plain 지시와 불일치). 올빼미의 날개 방향도 프롬프트와 조금 다름. 심각한 깨짐은 없음.",
+        "확인 필요: '2년 안에 사상 최고치', '2027년에도 전고점 넘기 어렵다', '미국 연말 금리 인상 우려'는 기사 제목 기반으로 보임. 누가 한 전망인지 출처가 영상에 없음. 설명란에는 출처와 면책 문구가 있어 안전 측면은 양호함.",
+        "수치 검산: '주간 0.7% 하락'은 나레이션, 자막, 설명란이 서로 일치함. 계산 오류는 없음."
+      ],
+      "retry_target": null,
+      "feedback": "업로드 가능하지만 개선 여지가 큼. 1) 훅을 질문이나 대립 구도로 바꿀 것. 예: '금 전문가 둘이 싸우는 중. 한 명은 신고가, 한 명은 못 넘는다는데?' 또는 '금 사도 돼요? 전문가 A: 네 / 전문가 B: 아니요'. 2) 중간에 한 번 더 웃음 포인트(두 전문가의 자신만만한 대사 패러디 등)를 넣고, 결말은 '그래서 저는 적금'에 반전 한 줄을 더해 펀치라인을 강하게 할 것. 3) 자막 위치를 화면 하단 1/4 안쪽으로 내려 캐릭터 얼굴과 몸을 가리지 않게 하고, 상단 박스 자막은 이미지 영역과 겹치지 않게 조정할 것. 4) 장면 4는 동전이 실제 미끄럼틀을 내려가는 이미지나 아래 화살표를 쓰면 '하락'이 더 명확해짐. 5) 출처가 불분명한 전망에는 '~라는 전망이 있다'처럼 인용 표현을 유지할 것."
+    }
+  ],
+  "marketer": {
+    "summary": "오늘은 우크라이나·북한 미사일 같은 국제·안보 이슈와, 금값·잠재성장률·솔리다임 상장 등 돈 이야기가 검색 상위를 채웠고, 야구 암표·최혜진 준우승·렉서스 신형 ES 같은 가벼운 소재가 사이에 끼었습니다.",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "우크라이나",
+        "traffic": "2000+",
+        "traffic_num": 2000,
+        "news": [
+          "소환된 주우크라 대사 국정감사 불참…차석이 대리출석",
+          "\"젤렌스키가 화 불러…한국 전략 망쳤다\" 미국서 쏟아진 비판",
+          "미 전문가 “우크라, 북한 포로송환 공개해 이재명 정부 대북·대러 접근법 훼손”"
+        ],
+        "topic": "주우크라 대사 국정감사 불참, 차석이 대신 출석한 사연 30초 정리",
+        "why_now": "'소환된 주우크라 대사 국정감사 불참…차석이 대리출석' 기사가 나오면서 국감 불참 논란이 관심을 끌고 있음",
+        "angle": "\"이게 왜 난리냐면\" 형식으로 국감 소환 → 대사 불참 → 차석 대리출석 흐름을 타임라인으로 정리하고, 학교 출석 대리 체크에 빗댄 가벼운 상황극을 덧붙임",
+        "target": "20~40대 뉴스 소비층, 시사 관심층",
+        "fun_score": 5,
+        "risk": "high",
+        "risk_note": "정치·외교 이슈이고 전쟁과 연관된 주제입니다. 특정 정당이나 인물을 편드는 표현은 피하고 기사 제목에 나온 사실만 전달해야 합니다. 미국 전문가 비판 기사는 의견이므로 '~라는 주장'으로 표기하세요."
+      },
+      {
+        "rank": 2,
+        "keyword": "인천광역시",
+        "traffic": "2000+",
+        "traffic_num": 2000,
+        "news": [],
+        "topic": "인천이 검색어 상위에 오른 이유 확인 전까지 보류 (뉴스 제목 없음)",
+        "why_now": "제공된 뉴스 제목이 없어 급상승 이유를 알 수 없음",
+        "angle": "근거 없이 지어내지 않고, 이슈가 확인되면 '지금 인천 난리 난 이유' 형식으로 제작. 확인 전에는 인천 지역 밈 정도만 가볍게 활용 가능",
+        "target": "수도권·인천 거주자",
+        "fun_score": 3,
+        "risk": "medium",
+        "risk_note": "이유를 모르는 상태에서 만들면 사실 왜곡 위험이 있어 제작을 권하지 않습니다. 이슈 확인 후 재평가하세요."
+      },
+      {
+        "rank": 3,
+        "keyword": "경제성장",
+        "traffic": "2000+",
+        "traffic_num": 2000,
+        "news": [
+          "[연합뉴스 이 시각 헤드라인] - 10:30",
+          "韓잠재성장률, 40년 만에 2년 연속 상승 전망… ‘물가 상승’ 우려도",
+          "AI로 경제 커져도 세수는 줄어든다?…IMF가 던진 '과세 딜레마' - 머니투데이"
+        ],
+        "topic": "한국 잠재성장률 40년 만에 2년 연속 상승 전망, 근데 물가 걱정은?",
+        "why_now": "'韓잠재성장률, 40년 만에 2년 연속 상승 전망… 물가 상승 우려도', 'AI로 경제 커져도 세수는 줄어든다? IMF 과세 딜레마' 기사",
+        "angle": "\"경제는 큰다는데 내 월급은?\" 공감 드립 + 숫자로 보는 '40년 만에' 포인트 + AI가 돈은 벌어도 세금은 줄 수 있다는 반전 한 컷",
+        "target": "직장인, 20~30대 재테크 관심층",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": "전망치 기사이므로 '전망'임을 분명히 밝히고 확정 사실처럼 말하지 마세요."
+      },
+      {
+        "rank": 4,
+        "keyword": "금",
+        "traffic": "2000+",
+        "traffic_num": 2000,
+        "news": [
+          "지금이라도 금 사둘까?…\"2년 내 사상 최고치\" 전망 나왔다",
+          "국제 금값 주간 0.7% 하락…美 연말 금리 인상 우려 지속",
+          "‘금’ 투자 어쩌나… 증권가 “2027년 전고점 돌파 어려워”"
+        ],
+        "topic": "금 지금 사도 될까? 전망이 엇갈리는 금값 3줄 요약",
+        "why_now": "'2년 내 사상 최고치 전망'과 '2027년 전고점 돌파 어려워' 기사가 동시에 나오고, 국제 금값은 주간 0.7% 하락, 美 연말 금리 인상 우려도 이어짐",
+        "angle": "\"전문가 A vs 전문가 B\" 대결 구도로 상반된 전망을 비교하고, 결론은 '아무도 모른다' 반전으로 마무리하는 밈 형식",
+        "target": "재테크 입문자, 투자 관심층",
+        "fun_score": 7,
+        "risk": "medium",
+        "risk_note": "투자 권유로 오해받을 수 있습니다. 매수·매도 추천은 하지 말고 '전망이 엇갈린다'는 정보 전달에 집중하며 투자 책임 고지를 넣으세요."
+      },
+      {
+        "rank": 5,
+        "keyword": "사형",
+        "traffic": "2000+",
+        "traffic_num": 2000,
+        "news": [
+          "이슬람 성지서 ‘부적절한 행위’…사우디, 외국인 남녀 2명 사형 집행",
+          "메카 모스크에서 음행한 남녀…사우디 전격 처형에 외교 분쟁 조짐",
+          "\"부도덕 행위\" 외국인 남녀 사형시킨 사우디...\"사전통보 없었다\" 발칵 - 머니투데이"
+        ],
+        "topic": "메카 모스크 '부적절한 행위' 외국인 남녀 사우디 사형 집행, 외교 분쟁 조짐",
+        "why_now": "'사우디, 외국인 남녀 2명 사형 집행', '사전통보 없었다' 발칵 등 기사로 외교 분쟁 가능성이 제기됨",
+        "angle": "사건 자체를 자극적으로 묘사하지 않고 '왜 외교 문제로 번졌나'(사전 통보 없음)를 짚는 30초 뉴스 정리",
+        "target": "국제뉴스 관심층",
+        "fun_score": 3,
+        "risk": "high",
+        "risk_note": "사형 집행이라는 실제 사망 사건이며 종교·문화 갈등과 얽혀 있습니다. 드립이나 조롱은 부적절하고, 혐오 표현으로 번지지 않게 중립적 사실 전달만 해야 합니다. 제작 자체를 재고하는 것이 안전합니다."
+      },
+      {
+        "rank": 6,
+        "keyword": "무기",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "한국에 “창피하다 할 정도의 억지”라는 북한···“극초음속 비행 그을음 어떤 기술로도 못 막아” 재반박",
+          "북한 “그을음 없어 가짜”, 한국 “그게 기술”…‘공수’ 바뀐 극초음속미사일 논쟁",
+          "북한이 우리 무기 분석?...이례적인 공개 평가의 속내 [Y녹취록]"
+        ],
+        "topic": "북한 vs 한국 '극초음속 미사일 그을음' 논쟁, 공수가 바뀐 이유",
+        "why_now": "'북한 \"그을음 없어 가짜\", 한국 \"그게 기술\"…공수 바뀐 극초음속미사일 논쟁', 북한의 '창피하다 할 정도의 억지' 재반박 기사",
+        "angle": "\"그을음이 없으면 가짜? 있으면 진짜?\" 양측 주장을 만화식으로 비교하고, 북한이 우리 무기를 분석해 공개 평가한 이례적 상황을 짚는 '이게 왜 난리냐면' 형식",
+        "target": "밀리터리·안보 관심 남성층, 20~40대",
+        "fun_score": 6,
+        "risk": "high",
+        "risk_note": "남북 안보·군사 이슈입니다. 기사에 없는 기술 설명이나 성능 평가는 지어내지 말고, 양측 주장을 '주장'으로 구분해 전달하세요."
+      },
+      {
+        "rank": 7,
+        "keyword": "렉서스",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "[타보고서] 전기차 지각생에서 모범생으로...렉서스 '올 뉴 ES350e'",
+          "[시승기] 정숙성 더한 명품 HEV ES 350h… 완성도 높은 첫 전기세단 500e",
+          "덩치 키운 렉서스 신형 ES…조용한 주행에 연비도 개선"
+        ],
+        "topic": "렉서스 신형 ES, 전기차 지각생에서 모범생으로? 시승기 한눈에 비교",
+        "why_now": "올 뉴 ES 350e·350h·500e 시승기가 연이어 나옴 (덩치 커지고 정숙성·연비 개선)",
+        "angle": "\"지각생이 모범생 됐다\" 컨셉으로 시승기 공통 평가(정숙성, 연비, 첫 전기 세단)를 퀴즈형으로 요약",
+        "target": "자동차 관심층, 30~50대 구매 고려자",
+        "fun_score": 5,
+        "risk": "low",
+        "risk_note": "시승기에 없는 가격·성능 수치는 넣지 마세요. 광고처럼 보이지 않게 주의하세요."
+      },
+      {
+        "rank": 8,
+        "keyword": "암표",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "광주경찰 ‘암표 거래’ 단속…위법 적발은 없어",
+          "[전남광주소식]광주경찰, 프로야구 암표 근절 캠페인 등",
+          "[2026국감] 치킨 10만원에 야구표는 '덤'…암표방지법 비웃는 꼼수 거래"
+        ],
+        "topic": "치킨 10만원 사면 야구표가 덤? 암표방지법 피하는 꼼수 거래",
+        "why_now": "'[2026국감] 치킨 10만원에 야구표는 덤…암표방지법 비웃는 꼼수 거래' 및 광주경찰 암표 단속·캠페인 기사",
+        "angle": "\"치킨이 아니라 티켓을 사는 거였다\" 반전 포인트와 '세상에서 가장 비싼 치킨' 드립, 단속에서 위법 적발이 없었다는 아이러니 정리",
+        "target": "야구팬, 20~40대 직관러",
+        "fun_score": 8,
+        "risk": "low",
+        "risk_note": "특정 판매자나 구매자를 지목하지 말고 거래 수법과 제도 허점 중심으로 다루세요."
+      },
+      {
+        "rank": 9,
+        "keyword": "최혜진",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "첫 LPGA 우승 기대했는데…최혜진, 이번에도 ‘2인자’",
+          "124번째 도전도 빗나갔다… 최혜진 ‘뷰익 상하이’ 인뤄닝에 역전패",
+          "LPGA 최혜진, 아쉬운 준우승…KLPGA 마서영 생애 첫 승"
+        ],
+        "topic": "LPGA 뷰익 상하이 준우승, 124번째 도전도 첫 우승 불발",
+        "why_now": "'124번째 도전도 빗나갔다… 최혜진 뷰익 상하이 인뤄닝에 역전패', '이번에도 2인자' 기사",
+        "angle": "\"124번째 도전\" 숫자와 역전 과정을 중심으로 한 응원형 하이라이트 + 댓글 응원 유도. 같은 대회에서 KLPGA 마서영이 생애 첫 승을 거둔 대비 포인트도 가능(단, 기사 제목 기준 확인 필요)",
+        "target": "골프 팬, 응원하는 20~50대",
+        "fun_score": 6,
+        "risk": "medium",
+        "risk_note": "'2인자' 등 표현이 선수를 깎아내리는 인상을 줄 수 있어 응원 톤을 유지해야 합니다. '124번째'가 어떤 기록의 횟수인지 기사 본문으로 확인 후 사용하세요."
+      },
+      {
+        "rank": 10,
+        "keyword": "상장",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "[해외 자회사 IPO①] 솔리다임 美 상장…SK하이닉스 이사회 책임은",
+          "\"반도체는 워싱턴서 결정\"…직접 美 달려간 최태원의 승부수 [강경주의 테크X]",
+          "솔리다임 미국 상장 준비 속도…주관사 선정 이어 대관 강화"
+        ],
+        "topic": "SK하이닉스 자회사 솔리다임 美 상장 추진, 최태원 회장이 직접 미국 간 이유",
+        "why_now": "'솔리다임 美 상장…SK하이닉스 이사회 책임은', '최태원의 승부수', 주관사 선정·대관 강화 기사",
+        "angle": "\"반도체는 워싱턴에서 결정된다\"는 발언을 훅으로 삼아, 자회사 상장이 모회사 주주에게 왜 중요한지 3단계로 정리",
+        "target": "주식 투자자, 직장인 20~40대",
+        "fun_score": 5,
+        "risk": "medium",
+        "risk_note": "기업·주가 관련이라 투자 권유로 보이지 않게 해야 하고, 이사회 책임 논란은 기사 제목에 나온 범위 이상으로 단정하지 마세요."
+      }
+    ],
+    "trend_count": 10,
+    "excluded": []
+  },
+  "selected_attempt": 3,
+  "plan": {
+    "chosen_rank": 4,
+    "reason": "후보 셋의 검색량은 모두 2000+로 같다. 인천은 뉴스 제목이 없어 사실을 쓸 수 없으니 제외했다. 경제성장과 금 중에서는 '2년 내 사상 최고치'와 '2027년 전고점 돌파 어려워'가 정면으로 부딪혀 댓글 편 가르기가 잘 붙는 금을 골랐다(fun_score 7 대 6). QA 피드백을 반영해 훅에 두 전망의 대립을 바로 넣었고, 마지막에 '전 그냥 적금 듭니다' 반전 드립을 추가했다. 전망은 모두 '~라는 전망이 나왔다' 식으로 썼고 매수·매도 추천은 없다. 4번 장면은 금화 표면을 매끈한 민무늬로 묘사해 로고가 들어가지 않게 했고, 이미지는 세로 화면을 꽉 채우되 피사체를 위쪽에 배치해 하단 자막이 가리지 않게 했다. 계산은 없고 0.7퍼센트는 제목 숫자를 그대로 썼다.",
+    "title": "금 전문가 둘이 정반대로 말하는 중 누가 맞음",
+    "hook": "전문가 둘이 금 전망으로 정반대 얘기를 합니다.",
+    "bgm_mood": "funny",
+    "style": "vibrant 3D cartoon, soft lighting, bright colors, high detail, cute character, full-bleed vertical 9:16 composition, main subject placed in the upper two thirds of the frame with empty space at the bottom",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "전문가 둘이 금 전망으로 정반대 얘기를 합니다. 한쪽은 신고가, 한쪽은 글쎄요.",
+        "on_screen_text": "정반대 전망",
+        "image_prompt": "two cute cartoon owls in tiny dark suits standing back to back in the center, the left owl facing left with its left wing stretched out pointing left, the right owl facing right with its right wing stretched out pointing right, wings extended in opposite directions, a small shiny gold bar floating between their heads, confused dramatic mood, flat colorful vector style, soft blue background, subjects placed in the upper two thirds of the frame with open space below"
+      },
+      {
+        "id": 2,
+        "narration": "지금이라도 금 사둘까 싶은 분들, 2년 안에 사상 최고치가 나올 수 있다는 전망이 나왔어요.",
+        "on_screen_text": "2년 내 신고가?",
+        "image_prompt": "a happy cartoon bull wearing sunglasses standing on top of a tall pile of smooth plain gold coins, sparkles and a rising arrow of golden light behind it, bright warm background, flat colorful vector style, subjects in the upper two thirds of the frame with open space below"
+      },
+      {
+        "id": 3,
+        "narration": "근데 증권가에서는 2027년에도 전고점을 넘기 어렵다고 봅니다.",
+        "on_screen_text": "근데 반대?",
+        "image_prompt": "a grumpy cartoon bear with crossed arms standing next to a small stack of smooth plain gold coins that sits below a high glowing horizontal line, gloomy gray cloud overhead, flat colorful vector style, subjects in the upper two thirds of the frame with open space below"
+      },
+      {
+        "id": 4,
+        "narration": "그 와중에 국제 금값은 이번 주 0.7퍼센트 내렸고, 미국 연말 금리 인상 걱정도 계속이에요.",
+        "on_screen_text": "주간 0.7% 하락",
+        "image_prompt": "a single round gold coin with a perfectly smooth, blank, mirror-polished surface sliding down a tiny playground slide, a small worried cartoon globe character with big eyes watching beside it, flat colorful vector icon style, clean pastel background, subjects in the upper two thirds of the frame with open space below"
+      },
+      {
+        "id": 5,
+        "narration": "그래서 누구 말이 맞냐고요? 둘 다 자신만만해서 저는 더 모르겠어요.",
+        "on_screen_text": "아무도 몰라",
+        "image_prompt": "a cute cartoon cat sitting with both paws raised in a shrug, a big golden question mark floating above its head, a few smooth plain gold coins scattered on the floor around it, clean plain pastel background, flat colorful vector icon style, subjects in the upper two thirds of the frame with open space below"
+      },
+      {
+        "id": 6,
+        "narration": "저요? 전 그냥 적금 듭니다. 여러분은 금, 사요 말아요?",
+        "on_screen_text": "전 적금 듭니다",
+        "image_prompt": "a smug cartoon cat in a tiny hat proudly hugging a big pink piggy bank, a single smooth plain gold coin lying on the ground beside it, warm cozy pastel background, flat colorful vector style, subjects in the upper two thirds of the frame with open space below"
+      }
+    ],
+    "description": "금 전망이 둘로 갈렸다. 2년 내 사상 최고치라는 전망이 나온 반면, 증권가에선 2027년 전고점 돌파가 어렵다는 전망도 나왔다.\n출처: 2026-10-18 검색 기준 보도된 기사 제목(국제 금값 주간 0.7% 하락, 美 연말 금리 인상 우려 포함). 전망은 확정 사실이 아니며 투자 권유가 아닙니다. 투자 판단과 책임은 본인에게 있습니다.\n#금값 #금투자 #쇼츠",
+    "tags": [
+      "금",
+      "금값",
+      "금값전망",
+      "금투자",
+      "사상최고치",
+      "전고점",
+      "금리인상",
+      "적금",
+      "재테크",
+      "쇼츠"
+    ],
+    "comment_question": "전문가들도 갈린 금, 사상 최고치파 vs 전고점 못 넘는다파 vs 그냥 적금파, 어느 편이세요?"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 6
+    }
+  },
+  "effects": {
+    "duration": 39.95,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Sneaky Snitch",
+    "bgm_mood": "funny",
+    "bgm_credit": "Music: \"Sneaky Snitch\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "전문가 둘이 금 전망으로 정반대 얘기를 합니다. 한쪽은 신고가, 한쪽은 글쎄요.",
+      "on_screen_text": "정반대 전망",
+      "image": "runs/2026-10-18/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "지금이라도 금 사둘까 싶은 분들, 2년 안에 사상 최고치가 나올 수 있다는 전망이 나왔어요.",
+      "on_screen_text": "2년 내 신고가?",
+      "image": "runs/2026-10-18/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "근데 증권가에서는 2027년에도 전고점을 넘기 어렵다고 봅니다.",
+      "on_screen_text": "근데 반대?",
+      "image": "runs/2026-10-18/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "그 와중에 국제 금값은 이번 주 0.7퍼센트 내렸고, 미국 연말 금리 인상 걱정도 계속이에요.",
+      "on_screen_text": "주간 0.7% 하락",
+      "image": "runs/2026-10-18/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "그래서 누구 말이 맞냐고요? 둘 다 자신만만해서 저는 더 모르겠어요.",
+      "on_screen_text": "아무도 몰라",
+      "image": "runs/2026-10-18/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "저요? 전 그냥 적금 듭니다. 여러분은 금, 사요 말아요?",
+      "on_screen_text": "전 적금 듭니다",
+      "image": "runs/2026-10-18/scene_06.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-10-18/thumbnail.jpg",
+  "video_file": "videos/2026-10-18.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "QA 불합격"
+  },
+  "finished_at": "2026-10-18T21:18:24+09:00"
+}

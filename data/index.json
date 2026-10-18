@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-10-18",
+    "status": "qa_failed",
+    "title": "금 전문가 둘이 정반대로 말하는 중 누가 맞음",
+    "overall": 69,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-10-18/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 39.95
+  },
+  {
     "date": "2026-10-17",
     "status": "success",
     "title": "에버턴 이기면 쐈는데 친구가 계좌번호부터",
