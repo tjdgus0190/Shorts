@@ -1,0 +1,392 @@
+{
+  "date": "2026-10-20",
+  "status": "success",
+  "started_at": "2026-10-20T00:03:00+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-10-20T00:03:00+09:00",
+      "note": "",
+      "seconds": 19.6
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-20T00:03:20+09:00",
+      "note": "",
+      "seconds": 21.3
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-20T00:03:41+09:00",
+      "note": "",
+      "seconds": 74.8
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-20T00:04:56+09:00",
+      "note": "",
+      "seconds": 31.1
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-20T00:05:27+09:00",
+      "note": "1차",
+      "seconds": 21.1
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-20T00:05:48+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 22.7
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-20T00:06:11+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 63.2
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-20T00:07:14+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 32.3
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-20T00:07:46+09:00",
+      "note": "2차",
+      "seconds": 17.8
+    },
+    {
+      "name": "uploader",
+      "label": "업로드",
+      "status": "done",
+      "started_at": "2026-10-20T00:08:04+09:00",
+      "note": "",
+      "seconds": 0.0
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 45,
+        "hook": 62,
+        "clarity": 58,
+        "visual": 80,
+        "subtitle": 75,
+        "safety": 85
+      },
+      "overall": 63,
+      "pass": false,
+      "issues": [
+        "fun: 크리켓 순위 규정을 설명하는 상식 정리 톤이다. 웃음 포인트나 드립이 약하고, 반전이라고 한 장면 4는 '오만이 나미비아에게 문을 열어줬다'는 비유뿐이라 실제 반전이 없다.",
+        "hook: '6등 안에 못 들면 지위가 날아간다고?'는 궁금증은 주지만 한국 시청자에게 크리켓과 네팔은 낯설다. 무엇이 걸렸는지(ODI 지위가 무엇인지)를 3초 안에 알 수 없다.",
+        "clarity: '오만이 나미비아한테 기회의 문을 열어놨다'가 무슨 뜻인지 모호하다. 오만이 졌다는 건지 이겼다는 건지 알 수 없어서 장면 4~5의 맥락이 끊긴다.",
+        "clarity: 마지막이 '들어갈까 못 들어갈까?'로 끝나 결말이 없다. 시청자가 얻는 것이 없다.",
+        "사실 확인 필요: 리그 2에서 6위 안에 들어야 ODI 지위를 유지한다는 규정, 그리고 오만과 나미비아 경기 결과가 기획서의 설명과 맞는지 확인이 필요하다. 오류라고 단정하지는 않는다.",
+        "visual: 장면 2의 레드판다 저지에 아디다스 로고가 보인다. 상표 노출이라 경미한 저작권 리스크가 있다.",
+        "visual: 장면 5의 모니터 숫자판과 계산기가 어색하다. 장면 1의 염소는 크리켓과 관련이 없어서 주제와 어긋난다.",
+        "subtitle: 하단 자막이 인물과 소품(계산기 등) 위에 겹친다. 상단 검은 박스 텍스트와 하단 자막이 같이 나와 화면이 복잡하다."
+      ],
+      "retry_target": "planner",
+      "feedback": "기획 단계에서 다시 작업해 주세요. 1) 소재를 한국 시청자가 바로 이해할 수 있는 상황으로 바꾸거나, 첫 문장에서 '크리켓 못 몰라도 OK, 7등부터 강등'처럼 걸린 것을 한 줄로 설명하세요. 2) 반전을 구체적으로 쓰세요. 예: '네팔이 이겨도 오만이 나미비아를 이겨야 산다'처럼 남의 경기 결과에 운명이 걸린 구조를 명확한 한 문장으로 만드세요. 3) '오만이 문을 열어줬다'는 비유 대신 실제 경기 결과를 쓰고, 사실 확인이 안 되면 단정하지 마세요. 4) 마지막은 질문으로만 끝내지 말고 펀치라인이나 결과로 마무리하세요. 5) 이미지 프롬프트에서 브랜드 로고(저지 등)를 빼고, 염소처럼 주제와 무관한 캐릭터는 크리켓 소재로 바꾸세요. 6) 장면별 자막은 상단 텍스트와 중복되지 않게 정리하고, 하단 자막이 인물이나 소품을 덜 가리게 하세요."
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 62,
+        "hook": 60,
+        "clarity": 78,
+        "visual": 78,
+        "subtitle": 78,
+        "safety": 88
+      },
+      "overall": 71,
+      "pass": true,
+      "issues": [
+        "설명란에는 '30초로 정리'라고 적혀 있지만 실제 길이는 46.7초입니다. 설명란을 고치거나 대본을 줄이세요.",
+        "훅('크리켓 몰라도 돼')은 안내문에 가까워서 스크롤을 멈출 만한 장면이나 반전이 약합니다. 'ㅇㅇ만 알면 끝이야' 구조는 무난한 수준입니다.",
+        "전체적으로 규칙 설명이 중심이라 재미가 약합니다. '시험 끝나고 옆 사람 점수부터 계산한다'는 비유만 살아 있고, 나머지는 상식 정리 톤입니다.",
+        "장면 4에서 '내 경기'와 '네팔'의 화자가 섞여 있습니다. 시점이 흔들려서 이야기 흐름이 약간 헷갈립니다.",
+        "장면 3의 이미지(쥐·강아지 등 잡다한 동물)는 장면 1·2·5·6의 레드판다 마스코트와 일관성이 떨어집니다. 장면 4도 여우/캥거루 비슷한 캐릭터라 마스코트가 바뀝니다.",
+        "장면 3 이미지에서 빨간 선 위쪽(생존 쪽)에 동물들이 서 있고 불안한 표정은 아래쪽이어야 하는데, 프레임상 표정 차이가 거의 안 보여서 대본의 '선 아래가 탈락' 연출이 약합니다.",
+        "하단 자막이 캐릭터의 몸통과 공 위에 겹칩니다(프레임 3의 공, 프레임 1의 계단). 가독성은 괜찮지만 위치를 조금 조정하면 좋습니다.",
+        "리그 2의 순위 기준(6위까지 ODI 지위 유지, 7위부터 박탈)이 사실과 맞는지는 확인 필요합니다. 오만·나미비아와 순위가 얽혀 있다는 내용도 확인 필요합니다. 제 쪽에서 오류로 단정하지는 않습니다."
+      ],
+      "retry_target": null,
+      "feedback": "업로드 가능합니다. 개선 팁: (1) 훅 첫 줄을 '네팔이 7등이 되면 ODI 자격을 잃어요'처럼 위기감이 큰 한 문장으로 바꾸거나, 첫 화면에 순위표가 무너지는 연출을 더하세요. (2) 설명란의 '30초'를 실제 길이에 맞게 고치세요. (3) 장면 3·4에서도 레드판다 마스코트를 쓰면 캐릭터 일관성이 좋아집니다. (4) 마지막 질문 앞에 짧은 반전 드립이나 웃음 포인트를 하나 넣으면 댓글 유도에 더 효과적입니다. (5) 리그 2의 순위 규칙은 업로드 전에 공식 자료로 한 번 더 확인하세요."
+    }
+  ],
+  "marketer": {
+    "summary": "전국체전 수영 황선우 금빛 질주와 수능 D-며칠 '스마트안경 금지' 이슈, 로이킴·이종혁 아들 이준수의 예능 출연 소식이 오늘 검색을 이끈 날",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "icc cwc league 2",
+        "traffic": "2000+",
+        "traffic_num": 2000,
+        "news": [
+          "Nepal Targets Top Six Finish to Retain ODI Status",
+          "Oman leave door open for Namibia in Cricket World Cup League 2",
+          "AIMA MEDIA"
+        ],
+        "topic": "네팔 ODI 지위 유지 걸린 크리켓 월드컵 리그2, 한국인이 30초 만에 이해하는 '이게 왜 중요하냐면'",
+        "why_now": "뉴스 제목: 'Nepal Targets Top Six Finish to Retain ODI Status', 'Oman leave door open for Namibia in Cricket World Cup League 2'",
+        "angle": "네팔은 6위 안에 들어야 ODI 지위를 유지하고, 오만은 나미비아에게 문이 열려 있다는 순위 싸움을 '생존 서바이벌' 형식으로 30초 정리. 낯선 종목을 쉽게 풀어주는 설명형 + 가벼운 드립",
+        "target": "스포츠 팬, 해외 스포츠 순위 경쟁에 관심 있는 20~40대",
+        "fun_score": 4,
+        "risk": "low",
+        "risk_note": "국내 관심도가 낮아 조회수 한계 있음. 뉴스 제목 외 경기 결과나 순위 수치를 지어내지 않도록 주의"
+      },
+      {
+        "rank": 2,
+        "keyword": "시험",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "전남광주 8개 수능 시험지구 체제 유지…'스마트안경' 금지",
+          "윤건영 충북교육감, 빈틈없는 수능시험 준비 당부",
+          "'숨 막히는 열기'"
+        ],
+        "topic": "수능 앞두고 '스마트안경 금지'? 시험지구 체제 유지 소식 정리",
+        "why_now": "뉴스 제목: '전남광주 8개 수능 시험지구 체제 유지…스마트안경 금지', '윤건영 충북교육감, 빈틈없는 수능시험 준비 당부'",
+        "angle": "'수능장에 스마트안경 들고 가면 안 되는 이유' 30초 정리 + 수험생 공감 상황극(시험 직전 체크리스트 밈). 응원 메시지로 마무리해 공유 유도",
+        "target": "수험생, 학부모, 10~20대 및 수능 경험 세대",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": "시험 규정은 뉴스 제목에 나온 범위(스마트안경 금지)만 다루고 세부 규정은 단정하지 않기"
+      },
+      {
+        "rank": 3,
+        "keyword": "수영",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "황선우, 연이틀 금빛 물살…절친 김우민도 응원 더했다!",
+          "[전국체전] 200ｍ 개인 최고기록으로 2관왕…나마디 조엘진 \"한국신 목표\"",
+          "[전국체전] 김영범, 수영 첫날 2관왕‥남자 50m·계영 800m 금메달"
+        ],
+        "topic": "황선우 전국체전 연이틀 금메달, 절친 김우민의 응원까지 — 전국체전 수영 첫날 기록 정리",
+        "why_now": "뉴스 제목: '황선우, 연이틀 금빛 물살…절친 김우민도 응원 더했다!', '김영범, 수영 첫날 2관왕', '나마디 조엘진 200m 개인 최고기록으로 2관왕, 한국신 목표'",
+        "angle": "'금메달 소식 3줄 요약' + 절친 응원 장면 중심의 훈훈 포인트. 2관왕 신예들(김영범, 나마디 조엘진)을 함께 묶어 '이번 전국체전 수영 주목할 이름 3명' 형식으로 구성",
+        "target": "스포츠 팬, 수영 팬, 20~40대 전반",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": "구체적 기록 수치는 뉴스 제목에 없는 내용을 지어내지 말 것"
+      },
+      {
+        "rank": 4,
+        "keyword": "바바라 팔빈",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [],
+        "topic": "바바라 팔빈 검색 급상승 — 이유 확인 후 제작 여부 판단",
+        "why_now": "제공된 뉴스 제목이 없어 검색 이유를 알 수 없음",
+        "angle": "근거 뉴스가 없으므로 지금은 각도 제안 보류. 배경 확인 후 이슈 중심으로 제작하는 것을 권장",
+        "target": "불명",
+        "fun_score": 2,
+        "risk": "medium",
+        "risk_note": "뉴스 근거가 없어 사실을 지어낼 위험이 큼. 실존 인물일 수 있어 확인 전 제작 비권장"
+      },
+      {
+        "rank": 5,
+        "keyword": "로이킴",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "'슈스케 우승' 로이킴 없을 뻔.. \"父 반대..이승철 선배는 노래 못한다고\" ('짠한형') - 조선비즈",
+          "'짠한형' 로이킴 \"원래 꿈은 코미디언…개그 키즈 활동\"",
+          "로이킴 \"어릴 때 꿈은 코미디언…故김형곤 선생님과 연기\""
+        ],
+        "topic": "'슈스케 우승' 로이킴, 원래 꿈은 코미디언이었다? 짠한형에서 밝힌 반전 과거",
+        "why_now": "뉴스 제목: '로이킴 없을 뻔.. 父 반대..이승철 선배는 노래 못한다고(짠한형)', '원래 꿈은 코미디언…개그 키즈 활동', '故김형곤 선생님과 연기'",
+        "angle": "'우승자가 원래 개그맨 지망생' 반전 포인트를 앞세운 30초 정리. '가수가 안 될 뻔한 3가지 순간' 형식(아버지 반대, 코미디언 꿈, 개그 키즈 활동)",
+        "target": "음악·예능 팬, 20~40대, 슈스케 세대",
+        "fun_score": 8,
+        "risk": "low",
+        "risk_note": "고인이 언급된 부분은 존중하는 톤 유지. 이승철 관련 발언은 본인 발언 인용 범위를 벗어나 해석하지 말 것"
+      },
+      {
+        "rank": 6,
+        "keyword": "이종혁",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "'내 새끼의 연애' 시즌3…이종혁 아들 이준수 출연",
+          "'이종혁 아들' 이준수, 키 190cm 남자됐다 \"쌍방 연애하고파\" ('내 새끼의 연애') - 조선비즈",
+          "‘10준수’ 이준수, 형 이탁수에 이어 ‘내 새끼의 연애’ 새 시즌 합류"
+        ],
+        "topic": "이종혁 아들 이준수, 형 이탁수에 이어 '내 새끼의 연애' 시즌3 합류 — 190cm '10준수'의 연애 선언",
+        "why_now": "뉴스 제목: '내 새끼의 연애 시즌3…이종혁 아들 이준수 출연', '키 190cm 남자됐다 \"쌍방 연애하고파\"', '형 이탁수에 이어 새 시즌 합류'",
+        "angle": "'형제 연속 출연' + '10준수가 190cm가 됐다'는 성장 비교 포인트. '쌍방 연애하고파' 발언을 중심으로 한 가벼운 예능 정리, 댓글로 '어릴 때 모습 기억나?' 참여 유도",
+        "target": "예능 시청자, 20~40대, 육아 예능을 기억하는 세대",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": "출연자 외모·연애사를 조롱하지 않고 본인 발언 위주로. 상대 출연자 정보는 제목에 없으므로 언급 금지"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": [
+      {
+        "keyword": "문재인",
+        "blocked_by": "대통령"
+      },
+      {
+        "keyword": "나의 유죄인간",
+        "blocked_by": "살인"
+      },
+      {
+        "keyword": "박평순",
+        "blocked_by": "살해"
+      },
+      {
+        "keyword": "중",
+        "blocked_by": "사고"
+      }
+    ]
+  },
+  "selected_attempt": 2,
+  "plan": {
+    "chosen_rank": 1,
+    "reason": "재미 포인트가 압도적으로 큰 후보가 없어서 지침대로 검색량이 가장 높은 rank 1(2000+)을 골랐다. QA 피드백을 반영해 첫 문장에서 '크리켓 몰라도 OK, 7등부터 강등'으로 걸린 것을 한 줄로 설명했다. 사실은 뉴스 제목에 나온 두 가지로만 제한했다. 하나는 네팔이 ODI 지위를 유지하려면 6위 안에 들어야 한다는 것이고, 다른 하나는 오만과 나미비아도 같은 크리켓 월드컵 리그 2에서 순위 싸움을 하고 있다는 것이다. 실제 경기 결과와 순위, 점수는 제목에 없어서 쓰지 않았고, '오만이 문을 열어줬다'는 비유도 뺐다. 반전은 순위표의 구조로 썼다. 내 경기만 이겨서 끝나는 게 아니라 다른 팀들의 결과까지 얽혀 있다는 점이다. 특정 경기 결과는 단정하지 않았다. 계산이 들어가는 내용이 없어 단위 검산은 필요 없다. 마무리는 펀치라인 뒤에 질문을 붙였다. 이미지는 로고 없는 무지 유니폼, 크리켓 배트·공·스텀프 소재로 통일하고, 피사체를 화면 위쪽에 두어 하단 자막이 가리지 않게 했다.",
+    "title": "크리켓 몰라도 OK, 7등부터 강등되는 서바이벌",
+    "hook": "크리켓 몰라도 돼. 7등부터 강등이라는 것만 알면 끝이야.",
+    "bgm_mood": "suspense",
+    "style": "vibrant 3D cartoon, soft lighting, bright colors, high detail, vertical composition, main subject in the upper two thirds of the frame, empty space at the bottom",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "크리켓 몰라도 돼. 7등부터 강등이라는 것만 알면 끝이야.",
+        "on_screen_text": "7등부터 강등",
+        "image_prompt": "A cute cartoon red panda in a plain jersey holding a cricket bat, standing on the seventh step of a glowing staircase that is cracking and starting to fall, shocked wide-eyed expression, dramatic sky"
+      },
+      {
+        "id": 2,
+        "narration": "네팔이 지금 이 서바이벌에 걸려 있어. 크리켓 월드컵 리그 투에서 여섯 번째 안에 들어야 오디아이 지위를 지킬 수 있거든.",
+        "on_screen_text": "네팔 생존 도전",
+        "image_prompt": "A determined cartoon red panda in a plain jersey holding a cricket bat high, climbing a staircase of six glowing steps toward a shining golden cricket trophy"
+      },
+      {
+        "id": 3,
+        "narration": "여섯 번째까지는 생존, 일곱 번째부터는 지위 박탈. 선이 딱 그어져 있는 거지.",
+        "on_screen_text": "선 넘으면 끝",
+        "image_prompt": "A row of small cartoon animals standing on stairs with cricket balls at their feet, a glowing red line across the sixth step, the animals below the line looking worried"
+      },
+      {
+        "id": 4,
+        "narration": "여기서 반전. 순위표는 내 경기만 이겨서 끝나는 게 아니야. 오만이랑 나미비아 같은 팀들 결과까지 같이 얽혀 있어.",
+        "on_screen_text": "판이 꼬였다",
+        "image_prompt": "Three cartoon animals in plain jerseys connected by tangled colorful ropes around a cricket ball and wooden stumps, confused faces, mysterious golden light"
+      },
+      {
+        "id": 5,
+        "narration": "내 운명이 남의 경기 결과에 걸린 거야. 시험 끝나고 옆 사람 점수부터 계산하는 그 심정이지.",
+        "on_screen_text": "남 점수 계산중",
+        "image_prompt": "A sweating cartoon red panda holding a tiny calculator and peeking at a big scoreboard with blank glowing panels, question mark bubbles floating around, cricket ball beside it"
+      },
+      {
+        "id": 6,
+        "narration": "크리켓은 몰라도 이 쫄림은 다 알잖아. 네팔은 오늘도 남의 경기 보면서 계산기 두드리는 중이야. 너라면 6등 안에 든다, 못 든다?",
+        "on_screen_text": "6등 안에 든다?",
+        "image_prompt": "A cartoon red panda at a crossroads holding a cricket bat, one glowing path leading to a golden trophy and the other to a storm cloud, dramatic split lighting"
+      }
+    ],
+    "description": "크리켓 몰라도 OK! 6등 안에 들어야 ODI 지위를 지키는 네팔의 크리켓 월드컵 리그 2 서바이벌, 7등부터는 강등이에요. 남의 경기 결과까지 계산해야 하는 쫄리는 순위 싸움을 30초로 정리했어요.\n#크리켓 #네팔 #쇼츠",
+    "tags": [
+      "크리켓",
+      "네팔",
+      "ICC",
+      "크리켓월드컵리그2",
+      "오만",
+      "나미비아",
+      "ODI",
+      "쇼츠",
+      "스포츠이슈"
+    ],
+    "comment_question": "네팔, 6등 안에 들어서 ODI 지위 지킨다 vs 못 지킨다? 너의 예측은?"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 6
+    }
+  },
+  "effects": {
+    "duration": 49.57,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Investigations",
+    "bgm_mood": "suspense",
+    "bgm_credit": "Music: \"Investigations\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "크리켓 몰라도 돼. 7등부터 강등이라는 것만 알면 끝이야.",
+      "on_screen_text": "7등부터 강등",
+      "image": "runs/2026-10-20/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "네팔이 지금 이 서바이벌에 걸려 있어. 크리켓 월드컵 리그 투에서 여섯 번째 안에 들어야 오디아이 지위를 지킬 수 있거든.",
+      "on_screen_text": "네팔 생존 도전",
+      "image": "runs/2026-10-20/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "여섯 번째까지는 생존, 일곱 번째부터는 지위 박탈. 선이 딱 그어져 있는 거지.",
+      "on_screen_text": "선 넘으면 끝",
+      "image": "runs/2026-10-20/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "여기서 반전. 순위표는 내 경기만 이겨서 끝나는 게 아니야. 오만이랑 나미비아 같은 팀들 결과까지 같이 얽혀 있어.",
+      "on_screen_text": "판이 꼬였다",
+      "image": "runs/2026-10-20/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "내 운명이 남의 경기 결과에 걸린 거야. 시험 끝나고 옆 사람 점수부터 계산하는 그 심정이지.",
+      "on_screen_text": "남 점수 계산중",
+      "image": "runs/2026-10-20/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "크리켓은 몰라도 이 쫄림은 다 알잖아. 네팔은 오늘도 남의 경기 보면서 계산기 두드리는 중이야. 너라면 6등 안에 든다, 못 든다?",
+      "on_screen_text": "6등 안에 든다?",
+      "image": "runs/2026-10-20/scene_06.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-10-20/thumbnail.jpg",
+  "video_file": "videos/2026-10-20.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "YT_* 시크릿 없음"
+  },
+  "finished_at": "2026-10-20T00:08:04+09:00"
+}

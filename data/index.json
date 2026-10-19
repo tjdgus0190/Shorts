@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-10-20",
+    "status": "success",
+    "title": "크리켓 몰라도 OK, 7등부터 강등되는 서바이벌",
+    "overall": 71,
+    "qa_attempts": 2,
+    "thumbnail": "runs/2026-10-20/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 49.57
+  },
+  {
     "date": "2026-10-18",
     "status": "qa_failed",
     "title": "금 전문가 둘이 정반대로 말하는 중 누가 맞음",
