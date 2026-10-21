@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-10-21",
+    "status": "failed",
+    "title": null,
+    "overall": null,
+    "qa_attempts": 0,
+    "thumbnail": null,
+    "youtube_url": null,
+    "upload_status": null,
+    "duration": null
+  },
+  {
     "date": "2026-10-20",
     "status": "success",
     "title": "슈퍼컴퓨터가 양자컴퓨터 코스프레로 신기록 먹음",
