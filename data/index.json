@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-10-23",
+    "status": "qa_failed",
+    "title": "붕어빵 사장님이 방송 출연을 거절한 이유",
+    "overall": 62,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-10-23/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 49.0
+  },
+  {
     "date": "2026-10-22",
     "status": "failed",
     "title": null,

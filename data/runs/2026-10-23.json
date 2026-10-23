@@ -1,0 +1,495 @@
+{
+  "date": "2026-10-23",
+  "status": "qa_failed",
+  "started_at": "2026-10-23T21:53:55+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-10-23T21:53:55+09:00",
+      "note": "",
+      "seconds": 29.7
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-23T21:54:24+09:00",
+      "note": "",
+      "seconds": 21.8
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-23T21:54:46+09:00",
+      "note": "",
+      "seconds": 29.7
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-23T21:55:16+09:00",
+      "note": "",
+      "seconds": 43.9
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-23T21:56:00+09:00",
+      "note": "1차",
+      "seconds": 24.0
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-23T21:56:24+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 23.3
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-23T21:56:47+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 21.9
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-23T21:57:09+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 33.9
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-23T21:57:43+09:00",
+      "note": "2차",
+      "seconds": 23.8
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-23T21:58:07+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 63.5
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-23T21:59:10+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 25.6
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-23T21:59:36+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 40.2
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-23T22:00:16+09:00",
+      "note": "3차",
+      "seconds": 23.4
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 55,
+        "hook": 65,
+        "clarity": 75,
+        "visual": 55,
+        "subtitle": 70,
+        "safety": 80
+      },
+      "overall": 64,
+      "pass": false,
+      "issues": [
+        "fun: 뉴스 요약을 그대로 읽는 톤이다. '여기서 반전'이라고 말로 알려 주는데 실제 반전 연출이나 드립이 없다. 마지막 질문('방송 vs 붕어빵')도 평범해서 댓글을 부르는 힘이 약하다.",
+        "hook: 첫 문장 '손님이 너무 몰려서 문을 닫았대요'는 궁금증을 주지만, 바로 이어서 같은 말을 반복한다('붕어빵 가게가요'). 처음 3초에 새 정보나 웃음이 없다.",
+        "visual(f0): 간판 글자가 깨졌다('EXTIED', 알 수 없는 한자풍 글씨). 가게는 CLOSED인데 점원 동물들이 영업 중인 모습이고, 붕어빵이 장면에서 눈에 띄지 않는다.",
+        "visual(f2): 줄 서 있는 손님이 줄무늬 뱀 같은 괴상한 몸통으로 그려졌다. 소품 글자('sid', 'PAK', 'AIK')도 깨졌다. 장면 4의 '긴 줄' 연출과 맞지 않는다.",
+        "visual(f3): 오른쪽 붕어빵 가게가 푸른 물고기 기계처럼 보여서 붕어빵 노점으로 읽히지 않는다. 왼쪽 간판의 'ton'도 의미 없는 글자다.",
+        "subtitle: 나레이션 자막이 화면 중앙~하단에 떠서 곰의 손과 폰, 가게 주요 소품을 가린다(f1, f3). 상단 on_screen_text 박스는 검은 배경이라 보이기는 하지만 AI 이미지 위 크롭 경계와 겹쳐 어수선하다.",
+        "safety: 실존 인물 '차은우'를 제목·설명·해시태그에 쓰고, 광명 붕어빵 사장님의 실제 사연을 다룬다. 폐업·출연 거절 등 사실관계는 확인 필요. 명예훼손 소지는 낮지만 해시태그로 연예인 이름을 끌어오는 것은 주의해야 한다.",
+        "길이: 49초 분량에 비해 정보량이 적어 중간 이탈 가능성이 있다. 장면 2~4는 한 흐름으로 묶어 압축할 수 있다. 숫자 '하루 만에 좋아요 1만 개'는 대본·자막이 일치해 계산 오류는 없다."
+      ],
+      "retry_target": "planner",
+      "feedback": "대본을 다시 써 주세요. (1) 훅: 첫 문장에서 '붕어빵 가게가 손님이 너무 많아서 문을 닫았다'는 아이러니를 한 번만 말하고, '붕어빵 가게가요' 같은 반복은 빼세요. 두 번째 문장에 새 정보나 웃음 포인트를 넣으세요. (2) 반전: '여기서 반전'이라고 말하지 말고, 방송 출연 제안이 온 순간에 사장님이 '붕어빵 타요'처럼 짧은 한마디로 거절하는 장면을 구성하세요. 앞에서 기대를 쌓았다가 뒤집는 구조로 재미를 만드세요. (3) 압축: 장면 2~4를 줄여 전체를 30~35초로 맞추세요. (4) 엔딩: '방송 vs 붕어빵' 대신 댓글을 부르는 질문이나 드립으로 마무리하세요. (5) 안전: 차은우는 '닮았다는 소문' 정도로만 언급하고, 사실 여부는 확인 필요하니 단정 표현을 피하세요. 해시태그의 실명 사용도 재검토하세요. (6) 이미지 프롬프트(producer 전달용): 간판·소품에 글자를 넣지 말고('no text, no signage letters'), 줄 선 손님은 '평범한 동물들이 한 줄로 서 있는 모습'으로 명시하세요. 붕어빵 노점은 붕어 모양 틀과 붕어빵 더미가 분명히 보이게 하세요. 자막은 화면 하단 1/4 안쪽에 두어 주요 피사체를 가리지 않게 하세요."
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 55,
+        "hook": 60,
+        "clarity": 58,
+        "visual": 62,
+        "subtitle": 72,
+        "safety": 70
+      },
+      "overall": 61,
+      "pass": false,
+      "issues": [
+        "훅이 약함: '손님이 너무 많아서 문을 닫았다'는 문장은 궁금증을 만들지만, 첫 프레임에는 동물들이 카메라를 보고 서 있을 뿐이다. 줄 선 모습, 닫힌 가게, 사장님 얼굴처럼 이유를 암시하는 장면이 없다. 간판은 비어 있고, 닫혔다는 표시는 아주 작은 팻말뿐이다.",
+        "논리가 매끄럽지 않음: 3번 장면 '결국 문 닫았다가 영업을 재개했어요'는 1번 장면과 중복되고 시간 순서도 뒤섞인다. 1번에서 이미 '문을 닫았다'고 했으므로 3번의 '문 닫았다가'는 새 정보 없이 서사만 헷갈리게 한다.",
+        "2번 장면 수치 연결이 약함: 좋아요 1만 개는 가게 문을 닫을 만큼 큰 사건으로 보기 어렵다. 계산 오류는 아니지만 인과가 약하다. 장면 3의 '이렇게 큰일입니다'도 근거가 부족하다.",
+        "재미 부족: 반전은 마지막 '붕어빵 구워야죠' 하나뿐이다. 중간(2~3번 장면)은 설명 위주라 밋밋하고, 마지막 질문은 댓글 유도용 상투적 마무리다. 이 대사가 반전으로 쓰이려면 앞에서 '방송 나가면 대박'이라는 기대를 더 키워야 한다.",
+        "실존 연예인(차은우)을 닮았다는 소문과 '광명 붕어빵 가게'라는 실제 지역 언급이 설명란에 함께 들어갔다. 실존 가게를 특정하는 것으로 읽힐 수 있어 사실 여부는 확인 필요. 허위라면 실제 인물·가게 관련 위험이 있으니, 가상 가게로 처리하거나 '광명'과 연예인 실명은 빼는 것이 안전하다.",
+        "이미지 품질: 3번 장면(f2) 간판 글자가 깨져 알아볼 수 없고(의미 없는 한자풍 글자), 칠판과 가격표 글씨도 깨져 있다. 간판 위에 작은 검은 얼굴 아이콘이 이상하게 박혀 있다. 1번 장면은 동물들이 줄이 아니라 가게 앞에 늘어서 있고 '문 닫음' 표시도 불분명하다.",
+        "자막: 하단 내레이션 자막이 3번째 이후 프레임에서 캐릭터 몸통과 시계를 가린다(f3). 상단 on_screen_text 박스는 읽기 좋지만 검은 박스가 다소 투박하다. 자막 위치는 하단 쪽으로 약간 더 내리는 것이 좋다."
+      ],
+      "retry_target": "planner",
+      "feedback": "대본 중심으로 재작업해 주세요. (1) 훅: 첫 문장에서 구체적 모순을 던지세요. 예: '붕어빵 사장님이 가게 문을 닫았습니다. 장사가 안돼서가 아니라 너무 잘돼서요'처럼 첫 3초에 이유를 궁금하게 만들고, 그 장면에 닫힌 가게와 긴 줄이 한눈에 보이게 기획하세요. (2) 3번 장면의 '문 닫았다가 영업 재개'는 1번과 중복이니 빼고, '문 닫은 날 손님들이 문 앞에서 기다림' 같은 새 사건이나 드립으로 바꿔 흐름을 정리하세요. (3) 중간 장면에 웃음 포인트를 하나 이상 넣으세요. 예: 손님들이 붕어빵이 아니라 사장님 사진만 찍고 가는 장면, 방송 출연 제안에 대한 기대감을 쌓아 마지막 '붕어빵 구워야죠'를 반전으로 만들기. (4) 차은우 실명과 '광명' 지역명은 확인되지 않은 정보라면 삭제하고, 가상의 가게로 처리하세요. 닮은 연예인 언급이 꼭 필요하면 '배우 닮은꼴' 정도로만 쓰세요. (5) image_prompt에서 간판에 글자를 넣지 말고 'no text on signs'를 명시하세요(3번 장면 글자 깨짐 방지). 1번 장면은 '닫힌 셔터/CLOSED 팻말 아이콘'과 줄 선 군중을 크게 그리게 하세요. 자막은 하단 위치를 더 낮춰 캐릭터를 가리지 않게 조정하세요."
+    },
+    {
+      "attempt": 3,
+      "scores": {
+        "fun": 55,
+        "hook": 70,
+        "clarity": 52,
+        "visual": 62,
+        "subtitle": 60,
+        "safety": 78
+      },
+      "overall": 62,
+      "pass": false,
+      "issues": [
+        "대본 흐름이 약함: 훅은 '너무 잘돼서 닫았다'인데, 본문에서 왜 문을 닫아야 했는지(손님 폭주, 재고 소진 등)가 설명되지 않고 '좋아요 1만'으로 바로 넘어간다. 훅의 약속을 회수하지 못한다.",
+        "3번 장면 '문 닫은 가게 앞에도 줄이 서 있을 기세예요'는 추측형 문장이라 애매하고, 4번의 '그래도 영업은 다시 시작했어요'와 이어지는 인과가 약하다.",
+        "반전이 '붕어빵 구워야죠' 한마디뿐이고 드립이나 리듬이 부족하다. 뉴스 요약 톤에 가까워 웃음 포인트가 약하다.",
+        "자막 오류(2번 장면 프레임): 화면에 '개를 넘었대요' 위에 '만에 좋아요가 1만'이 놓여, 원문 '좋아요가 1만 개를 넘었대요'와 순서가 어긋난다. 자막 분할과 싱크 확인이 필요하다.",
+        "이미지 글자 깨짐: 1번 장면 간판 'PISTTUR', 3번 장면 간판의 의미 없는 글자와 한자 비슷한 문자, 2번 장면 'LAUE'. 프롬프트로 간판 글자를 피하려 했지만 생성 결과에 남았다.",
+        "1번 장면이 프롬프트와 다르다. 길게 굽이치는 줄 대신 동물들이 일렬로 서 있고, X 표시가 3곳에 중복된다. 셔터 앞 동물들이 자막과 겹쳐 시선이 분산된다.",
+        "캐릭터 일관성: 사장 곰의 디자인이 장면마다 다르다(2번 주황 곰, 3번 요리사 모자 곰, 5번 갈색 곰, 앞머리 있음). 같은 인물이라는 인식이 약하다.",
+        "안전성 확인 필요: '배우 닮은꼴 별명 붕은우'는 실존 인물을 연상시키는 패러디일 수 있다. 사실 여부와 초상·명예 문제는 확인 필요. 해당 실화 뉴스의 출처도 확인 필요.",
+        "상단 검은 박스 자막(on_screen_text)과 하단 내레이션 자막이 동시에 떠서 화면이 다소 복잡하다. 하단 자막이 캐릭터 몸통과 소품을 가린다.",
+        "수치 검산: '하루 만에 1만'은 좋아요 10,000개로 단위 오류는 없다."
+      ],
+      "retry_target": "planner",
+      "feedback": "대본을 다시 구성해 주세요. (1) 훅의 '너무 잘돼서 닫았다'를 구체적으로 풀어주세요. 예: 줄이 너무 길어 반죽이 동났다, 사장님이 SNS를 열어보다 놀랐다 등 한 문장으로 이유를 확실히 밝힙니다. (2) 3번 장면의 추측형 문장을 제거하고, '붕어빵 사러 왔는지 사장님 보러 왔는지 모른다' 같은 웃음 포인트를 한 번 더 살려 리듬을 만드세요. (3) 마지막 반전 '붕어빵 구워야죠'를 더 크게 띄우도록 직전 장면에서 기대를 높이세요. (4) '붕은우' 별명은 실존 배우를 연상시키므로 사실 확인을 하거나 중립적 표현으로 바꾸세요. (5) 이미지 프롬프트에 'no text, no letters, blank sign'을 명시하고 사장 곰의 외형(같은 모자·앞치마·털색)을 모든 장면 프롬프트에 고정해 일관성을 확보하세요. (6) 후속으로 effector는 2번 장면 자막의 분할 순서('1만 개를 넘었대요')를 바로잡아 주세요."
+    }
+  ],
+  "marketer": {
+    "summary": "오늘은 차은우 닮은꼴 '붕은우' 붕어빵 사장 열풍, 이세돌의 '백수' 예능 도전, 배종옥 딸 결혼 소식, 준PO MVP 카라스코의 9K 피칭이 국내 화제의 중심이고, 베트남·러시아어권 날씨와 복권 검색은 해외 유입 키워드입니다.",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "thời tiết ngày mai",
+        "traffic": "2000+",
+        "traffic_num": 2000,
+        "news": [
+          "Dự báo thời tiết ngày mai 24.10: Mưa dông tiếp tục xuất hiện tại nhiều nơi",
+          "Dự báo thời tiết đêm 23/10, ngày 24/10/2026",
+          "Thời tiết đêm 22 ngày 23-10: Bắc Bộ sáng sớm có sương mù; Trung Bộ và Nam Bộ mưa rào đến mưa to"
+        ],
+        "topic": "베트남어 '내일 날씨' 검색 급증: 10/24 비 소식(뇌우) 30초 요약",
+        "why_now": "'Dự báo thời tiết ngày mai 24.10: Mưa dông tiếp tục xuất hiện tại nhiều nơi' 등 내일 비 예보 기사가 나옴",
+        "angle": "한국 거주 베트남 출신 시청자를 위한 '내일 우산 챙겨야 해요' 이중언어 30초 날씨 브리핑. 지역별 비 예보를 이모지로 간단히 정리",
+        "target": "한국 거주 베트남어권 시청자, 베트남 여행 계획자",
+        "fun_score": 3,
+        "risk": "low",
+        "risk_note": "한국 이슈가 아니라 채널 타깃과 맞지 않을 수 있음. 베트남어 자막 제작 필요"
+      },
+      {
+        "rank": 2,
+        "keyword": "차은우",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "\"붕어빵 구워야죠\"...광명 붕은우, 방송 출연 쿨하게 거절 - 머니투데이",
+          "\"차은우 닮은 붕어빵 사장\"…손님 폭주에 문 닫았다 영업 재개",
+          "\"광명 붕어빵 청년입니다\"…'붕은우' SNS 개설 하루 만에 '좋아요' 1만개 넘어서"
+        ],
+        "topic": "차은우 닮은 광명 붕어빵 사장 '붕은우', SNS 개설 하루 만에 좋아요 1만 돌파",
+        "why_now": "'차은우 닮은 붕어빵 사장…손님 폭주에 문 닫았다 영업 재개', '붕은우 방송 출연 쿨하게 거절' 기사들이 연달아 나옴",
+        "angle": "'이게 왜 난리냐면' 형식. 손님 폭주 → 문 닫음 → 재개 → 방송 출연 거절까지 타임라인으로 정리하고, '붕어빵 한 마리에 얼굴값 포함?' 같은 가벼운 드립. 방송 거절 반전 포인트 강조",
+        "target": "10~30대, 길거리 음식·밈 소비층",
+        "fun_score": 9,
+        "risk": "medium",
+        "risk_note": "일반인의 외모를 다루므로 외모 평가나 조롱은 피하고, 인기 현상과 '붕은우'라는 별명 중심으로 다룰 것. 실존 인물(차은우 본인)과 엮을 때 비교 수위 주의"
+      },
+      {
+        "rank": 3,
+        "keyword": "погода завтра",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "Прогноз погоды на ближайшие два дня: в регионах пройдут дожди, в горах выпадет град",
+          "Эколог разъяснил причину тёплой погоды в Азербайджане в октябре",
+          "Завтра в Баку и районах пойдет дождь - ПРОГНОЗ"
+        ],
+        "topic": "러시아어권 '내일 날씨' 검색: 아제르바이잔 10월 이상 고온과 비·우박 예보",
+        "why_now": "'Эколог разъяснил причину тёплой погоды в Азербайджане в октябре', 'Завтра в Баку и районах пойдет дождь' 기사 등",
+        "angle": "'10월인데 왜 이렇게 따뜻해?' 전문가 설명을 30초로 요약하는 날씨 이슈 브리핑. 비와 우박 예보를 대비시키는 반전 구성",
+        "target": "러시아어권 시청자, 날씨 관심층",
+        "fun_score": 2,
+        "risk": "low",
+        "risk_note": "한국 이슈가 아니라 타깃 적합도가 낮음. 기사 제목에 있는 내용만 사용할 것"
+      },
+      {
+        "rank": 4,
+        "keyword": "xsmb",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "Phân tích thống kê XSMB Thứ 7 Ngày 24/10/2026 - Chốt Số Vàng May Mắn",
+          "Kết quả xổ số miền Bắc hôm nay ngày 23/10/2026: XSMB thứ Sáu hàng tuần.",
+          "Xổ số trực tiếp miền Bắc và miền Trung hôm nay"
+        ],
+        "topic": "베트남 북부 복권(XSMB) 검색 급증 이유 30초 정리",
+        "why_now": "'Kết quả xổ số miền Bắc hôm nay ngày 23/10/2026', 'Phân tích thống kê XSMB Thứ 7 Ngày 24/10/2026' 등 매일 결과·예측 기사가 나옴",
+        "angle": "복권 결과나 번호 예측을 다루기보다 '매일 수백만 명이 베트남 복권 결과를 검색하는 이유' 같은 문화 현상 설명 정도가 한계",
+        "target": "베트남 문화 관심층",
+        "fun_score": 1,
+        "risk": "high",
+        "risk_note": "복권·도박 관련 콘텐츠이며 번호 예측은 사행성 조장 소지가 있음. 채널 성격과도 맞지 않아 제작 비권장"
+      },
+      {
+        "rank": 5,
+        "keyword": "데일리nk",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "北, 지뢰 폭발 사건 명분으로 소년근위대 훈련·사상교육 강화",
+          "아들 입대 막으려 학교까지 찾아간 홀어머니…도대체 무슨 사연?"
+        ],
+        "topic": "북한, 지뢰 폭발 사건을 명분으로 소년근위대 훈련·사상교육 강화",
+        "why_now": "'北, 지뢰 폭발 사건 명분으로 소년근위대 훈련·사상교육 강화', '아들 입대 막으려 학교까지 찾아간 홀어머니…도대체 무슨 사연?' 기사",
+        "angle": "쇼츠로 다루려면 '입대 앞둔 아들 막으려 학교까지 찾아간 어머니 사연' 같은 휴먼스토리 한 꼭지만 짧게 정리. 드립은 배제하고 차분한 내레이션 위주",
+        "target": "시사·북한 관심층 30~50대",
+        "fun_score": 3,
+        "risk": "high",
+        "risk_note": "북한·안보·정치 이슈이며 미성년자와 사망·사고 소재가 포함됨. 웃음 포인트를 넣기 어렵고 기사에 없는 내용은 추측 금지"
+      },
+      {
+        "rank": 6,
+        "keyword": "이세돌",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "‘알파고 10주년’ 사회초년생 된 이세돌…“인간의 따뜻함 전하길”",
+          "'알파고와 대국' 이세돌, AI로 대체 힘든 직업 찾았다",
+          "이세돌, 맥주 판매·요구르트 배달 도전…‘백수 이세돌’ 오늘 첫방"
+        ],
+        "topic": "알파고 10주년, 이세돌이 '백수 이세돌'로 맥주 판매·요구르트 배달 도전",
+        "why_now": "'알파고 10주년 사회초년생 된 이세돌', '백수 이세돌 오늘 첫방' 기사",
+        "angle": "'알파고를 이긴 유일한 인간, 이제 요구르트 배달?' 반전 포인트로 시작해 'AI로 대체 힘든 직업 찾았다'는 아이러니를 드립으로 풀기. 바둑 용어를 생활 상황에 빗댄 상황극 가능",
+        "target": "20~40대, AI·예능 관심층",
+        "fun_score": 8,
+        "risk": "low",
+        "risk_note": "본인 도전을 응원하는 톤을 유지하고 비하성 표현은 피할 것"
+      },
+      {
+        "rank": 7,
+        "keyword": "배종옥",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "’30년차' 싱글맘 배종옥, 딸 결혼 뒤늦게 알려졌다",
+          "'이혼' 배종옥, 30여년 홀로 키운 딸 시집 보냈다 - 머니투데이",
+          "배종옥, 장모 됐다…30여년 홀로 키운 딸 시집 보내"
+        ],
+        "topic": "30여 년 홀로 딸을 키운 배종옥, 딸 결혼 소식에 '장모' 됐다",
+        "why_now": "'배종옥, 장모 됐다…30여년 홀로 키운 딸 시집 보내', '딸 결혼 뒤늦게 알려졌다' 기사",
+        "angle": "축하 분위기의 '30초 소식 정리' 형식. 싱글맘으로 키운 세월과 장모가 된 소식을 따뜻하게 전달. 댓글 축하 인사 유도",
+        "target": "30~60대, 연예 소식 소비층",
+        "fun_score": 4,
+        "risk": "high",
+        "risk_note": "실존 인물의 이혼·가족사 등 사생활이라 드립이나 추측 금지. 기사에 있는 사실과 축하 톤만 사용"
+      },
+      {
+        "rank": 8,
+        "keyword": "ateez drip",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "Song Review: ATEEZ – Drip",
+          "ATEEZ turn up the confidence on swagger-filled ‘Drip’ music video — watch",
+          "ATEEZ Unveils 'Drip' MV Ahead of Mini Album 15"
+        ],
+        "topic": "ATEEZ 신곡 'Drip' MV 공개, 미니앨범 15 앞두고 자신감 넘치는 컨셉",
+        "why_now": "'ATEEZ Unveils Drip MV Ahead of Mini Album 15', 'ATEEZ turn up the confidence on swagger-filled Drip music video' 기사",
+        "angle": "'Drip'이라는 단어 뜻과 MV 속 스웨그 포인트를 밈처럼 정리. 팬들이 공유하고 싶은 '이 장면 미쳤다' 하이라이트 형식",
+        "target": "10~20대, K팝 팬(글로벌 포함)",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": "MV 영상·음원 직접 사용은 저작권 문제가 있으므로 사용하지 말고, 기사에 없는 안무·가사 내용은 추측하지 말 것"
+      },
+      {
+        "rank": 9,
+        "keyword": "카를로스 카라스코",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "KIA는 김도영 잃고 8등했다 → 만신창이 LG의 4등은 기적 아닌가. 디펜딩챔피언의 착시현상",
+          "[엠빅뉴스] 9K쇼! 펼친 케이쇼! 준PO3 MVP의 미친 피칭",
+          "어쩌면 ‘키맨’일지 모를 이름···이의리의 ‘달빛 소나타’ 첫 악장은 슬라이더?"
+        ],
+        "topic": "준PO3 MVP 카라스코의 9K 피칭, 만신창이 LG의 4등은 기적?",
+        "why_now": "'[엠빅뉴스] 9K쇼! 펼친 케이쇼! 준PO3 MVP의 미친 피칭' 및 LG 관련 칼럼 기사",
+        "angle": "'삼진 9개를 숫자로 보면' 충격 비교와 '이 투수가 없었다면?' 상황극. 야구 팬이 공유하기 좋은 하이라이트 + 한 줄 드립",
+        "target": "20~40대 야구팬",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": "뉴스 제목에 있는 기록(9K, MVP)만 사용하고 소속팀·세부 성적은 추측하지 말 것. 영상 중계 화면 사용 금지"
+      },
+      {
+        "rank": 10,
+        "keyword": "청년문화예술패스",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [],
+        "topic": "청년문화예술패스, 지금 왜 검색이 늘었나",
+        "why_now": "관련 뉴스 제목이 제공되지 않아 근거 부족. 신청·지급 관련 이슈로 추정되나 확인 불가",
+        "angle": "뉴스로 이유를 확인한 뒤에만 제작 가능. 확인되면 '19~20세 문화 혜택, 이렇게 쓰면 이득' 같은 실속 정보형 쇼츠",
+        "target": "19~20세 청년, 문화생활 관심층",
+        "fun_score": 4,
+        "risk": "medium",
+        "risk_note": "뉴스 근거가 없어 제도 내용(금액·대상·기간)을 지어낼 위험이 있음. 공식 공지 확인 후 제작"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": []
+  },
+  "selected_attempt": 1,
+  "plan": {
+    "chosen_rank": 2,
+    "reason": "1위 키워드는 베트남어 날씨 검색이라 한국 채널 타깃과 맞지 않고 재미 포인트도 약하다(fun_score 3). 2위 붕은우는 손님 폭주, 문 닫음, 영업 재개, 방송 출연 거절로 이어지는 타임라인과 반전이 뚜렷하고 fun_score가 9로 압도적이라 선택했다. 숫자는 기사 제목의 좋아요 1만 개와 하루 만이라는 표현만 사용했고 계산은 없다. 외모 평가는 빼고 인기 현상과 사장님의 쿨한 반응 중심으로 구성했다.",
+    "title": "붕어빵 사장님이 방송 출연을 거절한 이유",
+    "hook": "손님이 너무 몰려서 붕어빵 가게가 문을 닫았대요.",
+    "bgm_mood": "funny",
+    "style": "vibrant 3D cartoon, soft warm lighting, bright colors, high detail, vertical composition",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "손님이 너무 몰려서 붕어빵 가게가 문을 닫았대요. 붕어빵 가게가요.",
+        "on_screen_text": "실화냐",
+        "image_prompt": "A cute cartoon street food stall with a huge crowd of tiny animals queueing endlessly, a small closed sign hanging on the stall, steaming golden fish-shaped pastries on the counter"
+      },
+      {
+        "id": 2,
+        "narration": "광명에 있는 붕어빵 사장님 이야기인데요. 차은우 닮았다는 소문이 퍼지면서 별명이 붕은우가 됐어요.",
+        "on_screen_text": "붕은우 등장",
+        "image_prompt": "A cute cartoon bear wearing a chef apron and headband holding a golden fish-shaped pastry, sparkles and a glowing spotlight around it, winter street background"
+      },
+      {
+        "id": 3,
+        "narration": "SNS 계정을 열었더니 하루 만에 좋아요가 1만 개를 넘었어요. 붕어빵 굽다가 갑자기 인플루언서.",
+        "on_screen_text": "하루 만에 1만",
+        "image_prompt": "A surprised cartoon bear holding a glowing smartphone, floating hearts and thumbs-up icons bursting out of the screen, shocked wide eyes"
+      },
+      {
+        "id": 4,
+        "narration": "손님이 폭주하니까 결국 문을 닫았다가, 다시 영업을 재개했습니다. 붕어빵 구하기가 이렇게 어렵습니다.",
+        "on_screen_text": "문 닫았다 다시 열음",
+        "image_prompt": "A cartoon food stall with a long snaking queue of excited small animals holding paper bags, the stall owner bear waving from behind the counter, evening lights"
+      },
+      {
+        "id": 5,
+        "narration": "근데 여기서 반전. 방송 출연 제안이 왔는데 쿨하게 거절했어요. 붕어빵 구워야죠, 하면서요.",
+        "on_screen_text": "여기서 반전",
+        "image_prompt": "A cool cartoon bear in a chef apron turning away from a big TV camera with a calm smile, holding a tray of golden fish-shaped pastries, dramatic spotlight"
+      },
+      {
+        "id": 6,
+        "narration": "방송 나올 기회보다 붕어빵이 먼저라니, 이게 진짜 장인 정신 아닌가요? 여러분이라면 방송 나간다, 붕어빵 굽는다?",
+        "on_screen_text": "너라면 어쩔래",
+        "image_prompt": "A cartoon split scene: on the left a shiny TV studio with a microphone, on the right a cozy fish-shaped pastry stall, a thoughtful cute bear in the middle looking at both"
+      }
+    ],
+    "description": "손님 폭주로 문까지 닫았다는 광명 붕어빵 사장님, 방송 출연은 쿨하게 거절했습니다. 방송이냐 붕어빵이냐, 여러분의 선택은?\n#붕은우 #붕어빵 #차은우",
+    "tags": [
+      "붕은우",
+      "차은우",
+      "붕어빵",
+      "광명 붕어빵",
+      "붕어빵 사장",
+      "실검",
+      "오늘 이슈",
+      "쇼츠"
+    ],
+    "comment_question": "여러분이 붕은우라면 방송 출연한다 vs 붕어빵 굽는다, 어느 쪽?"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 6
+    }
+  },
+  "effects": {
+    "duration": 49.0,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Sneaky Snitch",
+    "bgm_mood": "funny",
+    "bgm_credit": "Music: \"Sneaky Snitch\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "손님이 너무 몰려서 붕어빵 가게가 문을 닫았대요. 붕어빵 가게가요.",
+      "on_screen_text": "실화냐",
+      "image": "runs/2026-10-23/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "광명에 있는 붕어빵 사장님 이야기인데요. 차은우 닮았다는 소문이 퍼지면서 별명이 붕은우가 됐어요.",
+      "on_screen_text": "붕은우 등장",
+      "image": "runs/2026-10-23/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "SNS 계정을 열었더니 하루 만에 좋아요가 1만 개를 넘었어요. 붕어빵 굽다가 갑자기 인플루언서.",
+      "on_screen_text": "하루 만에 1만",
+      "image": "runs/2026-10-23/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "손님이 폭주하니까 결국 문을 닫았다가, 다시 영업을 재개했습니다. 붕어빵 구하기가 이렇게 어렵습니다.",
+      "on_screen_text": "문 닫았다 다시 열음",
+      "image": "runs/2026-10-23/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "근데 여기서 반전. 방송 출연 제안이 왔는데 쿨하게 거절했어요. 붕어빵 구워야죠, 하면서요.",
+      "on_screen_text": "여기서 반전",
+      "image": "runs/2026-10-23/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "방송 나올 기회보다 붕어빵이 먼저라니, 이게 진짜 장인 정신 아닌가요? 여러분이라면 방송 나간다, 붕어빵 굽는다?",
+      "on_screen_text": "너라면 어쩔래",
+      "image": "runs/2026-10-23/scene_06.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-10-23/thumbnail.jpg",
+  "video_file": "videos/2026-10-23.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "QA 불합격"
+  },
+  "finished_at": "2026-10-23T22:00:39+09:00"
+}
