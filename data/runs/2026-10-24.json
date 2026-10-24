@@ -1,0 +1,462 @@
+{
+  "date": "2026-10-24",
+  "status": "qa_failed",
+  "started_at": "2026-10-24T21:16:57+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-10-24T21:16:57+09:00",
+      "note": "",
+      "seconds": 27.0
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-24T21:17:24+09:00",
+      "note": "",
+      "seconds": 21.5
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-24T21:17:46+09:00",
+      "note": "",
+      "seconds": 28.7
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-24T21:18:14+09:00",
+      "note": "",
+      "seconds": 34.3
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-24T21:18:49+09:00",
+      "note": "1차",
+      "seconds": 23.2
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-24T21:19:12+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 23.4
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-24T21:19:35+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 25.4
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-24T21:20:01+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 34.8
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-24T21:20:35+09:00",
+      "note": "2차",
+      "seconds": 20.0
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-24T21:20:55+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 39.3
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-24T21:21:35+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 30.5
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-24T21:22:05+09:00",
+      "note": "3차",
+      "seconds": 24.4
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 48,
+        "hook": 60,
+        "clarity": 75,
+        "visual": 65,
+        "subtitle": 80,
+        "safety": 80
+      },
+      "overall": 64,
+      "pass": false,
+      "issues": [
+        "훅이 약함: 첫 장면 멘트는 '계속 졌대'라는 전언 형태라 궁금증이 약하고 구체성(몇 시즌, 몇 패)이 없다. 0.6초 프레임에서 사자는 엄지척하며 웃고 있어 '충격으로 멈칫'이라는 프롬프트와 어긋난다.",
+        "재미 부족: 검색량 → 완벽한 출발 → 징크스 → 부상 여부 → 투표 질문 순서의 정보 나열형이다. 반전이나 드립이 없고 뉴스 요약 톤이다.",
+        "길이 불일치: 실제 영상은 약 44.4초인데 description에는 '30초로 정리'라고 적혀 있다. 숏츠로는 다소 길고 중반(씬 2~4)이 늘어진다.",
+        "확인 필요: '최근 3시즌 빌라 원정 계속 패배'라는 수치는 근거나 출처가 없어 사실 확인이 필요하다. 구체적인 전적(예: N경기 N패)을 확인하거나, 확인되지 않으면 표현을 완화해야 한다.",
+        "확인 필요: '마레스카 감독'이 맨시티 감독이라는 설정이 현재 사실과 맞는지 확인이 필요하다. 틀리면 허위 정보가 된다. '홀란 100% 출전' 발언의 출처도 확인이 필요하다.",
+        "확인 필요: 씬 2의 '한국·태국·베트남 동시 검색'은 트렌드 데이터에 근거한 내용으로 보이지만, 시청자 입장에서는 경기 내용과 무관한 군더더기다.",
+        "비주얼: 마지막 장면의 두 사자가 색만 조금 다르고 거의 똑같이 생겼다. 맨시티(하늘색)와 빌라(클라렛)의 대결 구도가 안 읽히고, 공은 분홍색이라 어색하다.",
+        "비주얼: 씬 3 트로피에 뜬금없는 숫자 '5'가 있다. 씬 5 배경 타워에는 'E2', '21' 같은 깨진 글자가 보인다. 씬 1 유니폼의 '9'와 로고도 실제 구단 유니폼이 아닌 임의 디자인이라 맥락이 어긋난다.",
+        "비주얼: 씬마다 사자 캐릭터의 디자인(갈기 색, 얼굴, 코 색)이 일관되지 않아 같은 캐릭터로 보이지 않는다.",
+        "자막: 하단 자막이 캐릭터 몸통과 일부 겹치지만 가독성은 양호하다. 상단 제목 박스는 깔끔하다."
+      ],
+      "retry_target": "planner",
+      "feedback": "대본을 뉴스 요약형에서 이야기형으로 다시 써 주세요. (1) 훅: '맨시티가 이 팀 원정만 가면 N시즌째 못 이겼다'처럼 확인된 숫자를 넣어 첫 문장에서 궁금증을 만드세요. 이미지 프롬프트도 놀람이나 당황 표정으로 맞추세요. (2) 씬 2의 3개국 검색 장면은 빼거나 한 줄로 줄이고, 전체를 30초 안팎(5~6씬)으로 압축하세요. (3) 반전이나 드립을 하나 이상 넣으세요. 예를 들면 '연승 기계도 빌라 앞에선 와이파이 끊긴 로봇' 같은 비유입니다. 마지막 투표 질문은 지금보다 더 구체적으로 만드세요. (4) 사실 확인: 감독 이름(마레스카가 맨시티 감독인지), 홀란 출전 발언의 출처, 최근 3시즌 빌라 원정 전적을 검증하세요. 검증이 안 되면 단정하지 말고 '~라는 분석', '~로 알려졌다'로 완화하세요. (5) 다음 단계의 producer에게 전달할 사항: 맨시티는 하늘색 사자, 빌라는 클라렛과 하늘색이 섞인 다른 동물이나 다른 실루엣으로 확실히 구분하세요. 이미지에 글자와 숫자가 나오지 않도록 'no text, no numbers' 지시를 넣으세요."
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 55,
+        "hook": 65,
+        "clarity": 68,
+        "visual": 55,
+        "subtitle": 70,
+        "safety": 80
+      },
+      "overall": 64,
+      "pass": false,
+      "issues": [
+        "6번 장면(85% 프레임)에서 팀 색이 뒤바뀜: 맨시티 사자가 자주색(빌라 색)이고 매가 하늘색 유니폼을 입음. 시청자가 투표 CTA(1=맨시티, 2=빌라)를 할 때 누가 누구인지 헷갈림.",
+        "캐릭터 일관성 깨짐: 사자의 갈기가 1번 장면에서는 회색, 4번 장면에서는 갈색임. 3번 장면에서는 사자가 로봇 강아지처럼 보임. 매는 닭이나 수탉처럼 생겼고 빌라 상징인 사자와도 다름.",
+        "1번 장면은 빌라 구장 터널이어야 하는데 자주색과 하늘색 구분이 불분명하고 일반적인 이미지에 가까움. 화면 상하단에 블러 처리된 빈 띠가 크게 남아 있어 완성도가 떨어짐.",
+        "자막이 캐릭터 다리나 책상 위에 얹힘(2번 프레임의 '근데 상대가 애스턴', 3번 프레임의 책상). 가독성은 괜찮지만 화면 중앙의 피사체를 일부 가림.",
+        "'최근 3시즌 연속 원정 패배', '홀란 100퍼센트 출전 가능', '연승 기계(이번 시즌 완벽한 출발)'는 모두 확인 필요. 근거가 없으면 단정 표현을 완화해야 함.",
+        "4번 장면의 '한국 태국 베트남에서도 검색이 터졌어'는 경기 내용과 무관한 군더더기라 흐름을 끊음. 44초 길이에 비해 정보와 반전이 얇음.",
+        "'와이파이 끊긴 로봇' 드립은 괜찮지만 이후 장면은 설명이 이어지기만 해 웃음 포인트가 하나뿐임. 5번 장면의 '반전'도 약함."
+      ],
+      "retry_target": "producer",
+      "feedback": "1) 6번 장면 이미지를 다시 생성하세요. 맨시티=하늘색 사자, 빌라=자주색+하늘색 매로 고정하고, 프롬프트에 색상을 명시한 뒤 '사자는 하늘색 유니폼, 매는 자주색 유니폼'을 반복해 적으세요. 2) 전 장면에서 사자 갈기 색(예: 흰색/회색 하나로 통일)과 체형을 같은 프롬프트 접두어로 고정하세요. 로봇 장면도 사자임을 알 수 있게 갈기를 유지하세요. 3) 빌라 쪽 캐릭터를 수탉처럼 보이지 않는 사자 또는 매로 통일하세요. 4) 생성 이미지 상하단의 블러 여백을 줄이고 9:16 꽉 찬 구도로 만드세요. 5) 피사체를 화면 상단 60% 안에 두어 하단 자막과 겹치지 않게 하세요. 기획 쪽에는 '3시즌 연속 패배'와 '홀란 출전 가능' 사실 확인과 4번 장면 군더더기 삭제도 함께 전달하세요."
+    },
+    {
+      "attempt": 3,
+      "scores": {
+        "fun": 58,
+        "hook": 62,
+        "clarity": 78,
+        "visual": 72,
+        "subtitle": 75,
+        "safety": 80
+      },
+      "overall": 68,
+      "pass": false,
+      "issues": [
+        "훅이 약함: 첫 문장이 '이 팀'으로 상대를 숨기고 '~거야, 실화냐?' 식의 흔한 질문형이다. 0.6초 프레임에는 놀란 사자와 '3시즌째 졌다고?'뿐이라 어느 팀인지, 왜 놀라야 하는지가 안 보인다.",
+        "재미 부족: 웃음 포인트가 '와이파이 끊긴 로봇' 하나뿐이다. 나머지는 '완벽한 출발 → 시험대 → 홀란 복귀' 식의 뉴스 요약 톤이다. 반전이라 한 홀란 출전 소식도 약하고 리듬 변화가 없다.",
+        "사실 확인 필요: '최근 3시즌 연속 빌라 원정 패배'의 시즌별 결과를 확인해야 한다. '이번 시즌 연승 출발'과 '홀란 100% 출전'도 확인이 필요하다. '한국·태국·베트남 검색 급증'은 출처가 없어 확인이 필요하다.",
+        "정보량이 적은데 44초로 길다. 스코어나 날짜 같은 구체적 근거 없이 '~라는 분석이야', '~라고 알려졌어' 같은 전언 표현만 반복한다.",
+        "캐릭터 일관성 부족: 사자 갈기가 흰색, 갈색, 크림색으로 바뀐다. 장면 3의 유니폼은 상대 팀 색인 클라레와 하늘색 소매여야 하는데 반바지가 파랑이다. 사자와 매는 유니폼 색이 비슷해 구분이 약하다.",
+        "장면 5 프롬프트에 홀란이 북극곰으로 나온다. 장면 1~4의 사자와 연결이 어색하다.",
+        "이미지가 전체 화면을 채우지 않는다. 위아래에 블러 띠가 있고 장면 3은 흰 배경이 그대로 보인다. 중앙 자막이 책상이나 공 같은 피사체 위에 겹친다.",
+        "장면 6의 댓글 유도 '1/2'는 '빌라 승이나 무승부'를 2번으로 묶어서 선택지가 불균형하다."
+      ],
+      "retry_target": "planner",
+      "feedback": "(1) 훅은 첫 1~2초에 '맨시티 vs 빌라'와 충격 포인트를 바로 보여주세요. 예: '맨시티, 빌라 원정만 가면 3년 연속 울었다'. 끝에 '실화냐?'를 붙이지 말고 구체적인 숫자나 상황으로 시작하세요. (2) 재미를 늘리세요. 와이파이 로봇 같은 비유 드립을 2~3개 더 넣고, 장면마다 상황극이나 대사 형식을 쓰세요. 마지막 반전은 홀란 소식 한 줄보다 강한 것으로 바꾸세요. (3) 사실 확인이 필요한 항목은 대본에서 빼거나 확정된 표현으로 바꾸세요. 대상은 3시즌 연속 패배, 이번 시즌 연승, 홀란 100% 출전, 3개국 검색 급증입니다. (4) 길이는 30초 안팎으로 줄이세요. (5) 댓글 유도는 '맨시티 승 / 빌라 승 / 무승부' 3지선다나 'A vs B'로 균형 있게 바꾸세요. (6) 이미지 프롬프트에는 캐릭터 고정 묘사를 넣으세요. 예: 하늘색 갈기, 같은 유니폼 색. 홀란은 북극곰 대신 기존 사자 캐릭터와 이어지게 하세요. 이 항목은 이번 재작업에서 producer가 함께 고치면 좋습니다."
+    }
+  ],
+  "marketer": {
+    "summary": "오늘 트렌드는 프리미어리그 빅매치(빌라 vs 맨시티) 글로벌 열기, 포스코·HD현대중 등 노동계 파업 이슈, 김연아♥고우림 결혼 4주년 근황, 32년 만에 재가동된 상동광산 텅스텐 출하까지 스포츠·산업·연예가 섞인 하루",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "애스턴 빌라 대 맨 시티",
+        "traffic": "10000+",
+        "traffic_num": 10000,
+        "news": [
+          "Aston Villa vs Manchester City: Premier League preview, team news, stats & head-to-head",
+          "Maresca says Haaland is 100% available for Villa trip",
+          "City’s Perfect Start Faces First Real Test as Premier League Returns"
+        ],
+        "topic": "맨시티 시즌 초반 무패 행진, 빌라 원정이 첫 시험대? 홀란 100% 출전 가능 소식 30초 정리",
+        "why_now": "'City's Perfect Start Faces First Real Test', 'Maresca says Haaland is 100% available for Villa trip' 등 프리뷰 기사가 쏟아짐. 태국 기사에서는 맨시티가 최근 3시즌 빌라 원정에서 계속 졌다는 통계도 언급됨",
+        "angle": "'완벽했던 시즌 초반, 왜 하필 빌라 원정이 관문이라는 걸까?' 형식의 30초 프리뷰. 최근 3시즌 원정 패배 기록과 홀란 출전 소식을 숫자 자막으로 대비시키고, 베트남·태국에서도 동시 검색 중이라는 글로벌 관심을 드립 포인트로 활용",
+        "target": "프리미어리그 팬, 20~40대 축구 시청자",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": ""
+      },
+      {
+        "rank": 2,
+        "keyword": "hd현대중공업",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "HD현대중 노사, 올해 임단협 2차 잠정 합의…기본급 12만원 인상",
+          "한화오션 하청노조, 한 달 넘는 생산시설 점거…“산재·교섭 오해, 대화 필요”",
+          "'단속 농성' 위원장 건강 악화, 지부장은 크레인 '고공 농성'"
+        ],
+        "topic": "HD현대중 노사 올해 임단협 2차 잠정합의, 기본급 12만원 인상 — 이게 무슨 의미?",
+        "why_now": "'HD현대중 노사, 올해 임단협 2차 잠정 합의…기본급 12만원 인상' 보도. 같은 시기 한화오션 하청노조 점거 농성 등 조선업 노사 이슈도 함께 보도됨",
+        "angle": "'2차 만에 합의, 핵심만 30초 정리' 형식. 기본급 12만원 인상이라는 숫자를 중심으로 직장인이 궁금해할 포인트를 짚는 이슈 요약. 특정 집단을 비난하지 않고 팩트 위주로 구성",
+        "target": "직장인, 제조·조선업 종사자, 경제 뉴스 관심층",
+        "fun_score": 4,
+        "risk": "high",
+        "risk_note": "노사 갈등·농성 등 정치·사회적으로 민감한 사안. 한화오션 점거·건강 악화 소식과 섞이지 않게 합의 사실 위주로, 어느 편도 들지 않는 중립 톤 유지 필요"
+      },
+      {
+        "rank": 3,
+        "keyword": "서식스 공작 해리",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [],
+        "topic": "서식스 공작 해리가 왜 갑자기 검색 상위에? (확인된 뉴스 없음)",
+        "why_now": "제공된 뉴스 제목이 없어 검색 급증 이유를 확인할 수 없음",
+        "angle": "근거 뉴스가 없으므로 제작 보류 권장. 이유 확인 후 이슈 중심으로 재검토. 확인 없이 만들면 사실 왜곡 위험이 있음",
+        "target": "해외 왕실·셀럽 뉴스 관심층",
+        "fun_score": 2,
+        "risk": "high",
+        "risk_note": "실존 인물 사생활·왕실 관련 이슈 가능성이 있고 근거 기사가 없음. 추측으로 제작 시 허위정보·비방 위험"
+      },
+      {
+        "rank": 4,
+        "keyword": "แอสตันวิลลา พบ แมนซิตี",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "การทำนายผลการแข่งขันระหว่างแอสตันวิลล่ากับแมนเชสเตอร์ซิตี้: การปะทะกันระหว่างสองทีมที่อยู่ในฟอร์มที่ดี",
+          "++[ＬＩＶＥＳｔｒｅａｍ]NOW!!] แอสตันวิลลา vs แมนซิตี LIVE Updates",
+          "สถิติชนะรวดจะสะดุดมั้ย!! แมนซิตี้แพ้ตลอดเมื่อต้องมาเยือนวิลล่าใน3ฤดูกาลล่าสุด | Soccersuck"
+        ],
+        "topic": "태국에서도 난리! 빌라 vs 맨시티, 태국 팬들이 주목한 '원정 3시즌 연속 패배' 통계",
+        "why_now": "태국 매체가 'แมนซิตี้แพ้ตลอดเมื่อต้องมาเยือนวิลล่าใน3ฤดูกาลล่าสุด'(맨시티가 최근 3시즌 빌라 원정에서 계속 패배)라며 연승이 끊길지 주목하는 기사를 냄",
+        "angle": "'한국·태국·베트남이 동시에 검색한 경기' 콘셉트로 해외 팬 관심 포인트를 소개. 같은 경기를 다루는 첫 번째 키워드와 중복되므로 하나의 쇼츠로 통합 제작 권장",
+        "target": "프리미어리그 팬, 해외 축구 관심층",
+        "fun_score": 5,
+        "risk": "low",
+        "risk_note": "동일 경기 중복 키워드이므로 별도 영상보다는 통합 제작이 효율적"
+      },
+      {
+        "rank": 5,
+        "keyword": "aston villa đấu với man city",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "Trực tiếp bóng đá Aston Villa - Man City: \"Man xanh\" dốc toàn lực tấn công (Ngoại hạng Anh)",
+          "Kết quả bóng đá Ngoại hạng Anh 2026/27 - Vòng 8 mới nhất",
+          "Unai Emery - 'Tiến sĩ tử thần' của Ngoại hạng Anh"
+        ],
+        "topic": "베트남 팬들이 주목한 '에메리, 프리미어리그의 저승사자' — 빌라 감독 에메리의 빅클럽 상대 기록",
+        "why_now": "베트남 매체가 'Unai Emery - Tiến sĩ tử thần của Ngoại hạng Anh'(우나이 에메리, 프리미어리그의 '죽음의 박사')라는 기사와 경기 실시간 중계를 내보냄",
+        "angle": "'베트남에서는 에메리를 이렇게 부른다' 별명 소개 + 경기 관전 포인트 형식. 별명 자체가 공유 포인트가 되며, 기사에 있는 내용만 사용하고 세부 기록은 지어내지 않음",
+        "target": "프리미어리그 팬, 감독·전술에 관심 있는 축구 팬",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": "기사 내용 외의 전적·수치를 임의로 추가하지 않도록 주의. 첫 번째 키워드와 통합 제작 가능"
+      },
+      {
+        "rank": 6,
+        "keyword": "파업",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "포스코노사 임금 교섭 결렬…노조, 다음달 2일 무기한 파업 예고",
+          "이희근 포스코 사장 나섰지만…노조, 11월2일부터 무기한 파업",
+          "포스코 노사, 임금 협상 합의점 도출 실패…23일 교섭 재개"
+        ],
+        "topic": "포스코 노조 11월 2일부터 무기한 파업 예고 — 지금까지 상황 30초 정리",
+        "why_now": "'포스코노사 임금 교섭 결렬…노조, 다음달 2일 무기한 파업 예고', '이희근 포스코 사장 나섰지만…노조, 11월2일부터 무기한 파업', '23일 교섭 재개' 보도",
+        "angle": "'파업 D-9, 지금 어디까지 왔나' 타임라인형 요약. 교섭 결렬 → 사장 직접 등장 → 23일 교섭 재개 → 11월 2일 파업 예고 흐름을 한눈에 정리. 감정적 표현 없이 팩트 중심",
+        "target": "직장인, 경제·시사 관심층",
+        "fun_score": 4,
+        "risk": "high",
+        "risk_note": "노사 갈등·사회 이슈로 정치적 해석 여지가 큼. 어느 한쪽 편들기나 조롱 금지, 보도된 사실만 전달"
+      },
+      {
+        "rank": 7,
+        "keyword": "고우림",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "고우림♥김연아 결혼 4주년…日 여행 사진 공개",
+          "고우림♥김연아, 결혼 4주년 삿포로 떠났다..야경 속 달달한 근황",
+          "김연아♥고우림, 3주년 ‘까죽커플’→4주년 밤 10시 22분 아내 뒤태"
+        ],
+        "topic": "김연아♥고우림 결혼 4주년, 삿포로 야경 속 달달한 근황",
+        "why_now": "'고우림♥김연아 결혼 4주년…日 여행 사진 공개', '결혼 4주년 삿포로 떠났다', '3주년 까죽커플→4주년 밤 10시 22분 아내 뒤태' 등 기사가 연이어 나옴",
+        "angle": "'4주년을 이렇게 보낸다고?' 형식의 훈훈한 근황 정리. 3주년 '까죽커플'에서 4주년 삿포로 여행으로 이어진 흐름과 공개된 사진 분위기 위주로 소개하고, 팬 반응 중심의 가벼운 톤 유지",
+        "target": "20~40대 여성, 연예·셀럽 근황 관심층",
+        "fun_score": 7,
+        "risk": "medium",
+        "risk_note": "실존 인물의 사생활 소재. 본인들이 공개한 사진과 기사 내용 범위 안에서만 다루고 외모 품평·추측성 멘트는 피할 것"
+      },
+      {
+        "rank": 8,
+        "keyword": "상동광산",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "[르포] 화약 냄새에 푸른 광맥 '반짝'…32년 만에 깬 영월 상동광산",
+          "33년 만에 부활한 '영월 상동광산'··· 24일 텅스텐 첫 상업 출하",
+          "영월 상동광산 32년 만에 재가동 채굴 돌입 : 경제"
+        ],
+        "topic": "32년 만에 깨어난 영월 상동광산, 오늘 텅스텐 첫 상업 출하",
+        "why_now": "'33년 만에 부활한 영월 상동광산, 24일 텅스텐 첫 상업 출하', '32년 만에 깬 영월 상동광산' 르포 보도",
+        "angle": "'30년 넘게 잠들어 있던 광산이 다시 열렸다' 스토리형 쇼츠. 화약 냄새, 푸른 광맥 같은 르포 묘사를 활용한 시각적 연출과 '그 텅스텐이 왜 중요한가'를 기사 범위 안에서 간단히 설명하는 반전 포인트. 32년/33년 표기가 기사마다 달라 자막에서는 '30여 년 만에'로 처리",
+        "target": "경제·산업 관심층, 20~50대 남성, 호기심 콘텐츠 시청자",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": "기사별 햇수 표기가 달라 정확한 숫자 사용 시 주의. 텅스텐의 용도·매장량 등은 기사에 없는 내용을 지어내지 않도록 확인 후 사용"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": [
+      {
+        "keyword": "교통 사고",
+        "blocked_by": "사망"
+      },
+      {
+        "keyword": "닷컴 버블",
+        "blocked_by": "추락"
+      }
+    ]
+  },
+  "selected_attempt": 3,
+  "plan": {
+    "chosen_rank": 1,
+    "reason": "검색량 10000+로 가장 높고, 완벽한 시즌 출발과 빌라 원정 징크스라는 대비가 한 경기에 같이 있어 이야기형으로 풀기 좋음. 태국 키워드(rank 4)의 '최근 3시즌 빌라 원정 계속 패배' 내용은 훅에 쓰되 태국 매체발 분석이라 '~라는 분석'으로 완화함. 마레스카가 맨시티 감독인지는 보고서의 제목만으로 검증이 안 되어 감독 이름은 대본에서 뺐고, 홀란 100퍼센트 출전 가능은 '알려졌어'로 완화함. 3개국 검색은 4번 장면에 한 줄로만 넣음. 사용한 숫자는 제목에 나온 3시즌과 100퍼센트뿐이며 계산은 없음. 이미지는 FLUX가 부정 표현을 그려버리므로 'no text, no numbers' 대신 무늬 없는 유니폼, 깨끗한 배경 같은 긍정형으로 글자와 숫자를 피하게 함. 맨시티는 하늘색 사자, 빌라는 클라렛과 하늘색이 섞인 매로 실루엣부터 다르게 구분함.",
+    "title": "맨시티가 이 팀 원정만 가면 3시즌째 졌다고?",
+    "hook": "맨시티가 이 팀 원정만 가면 최근 3시즌째 계속 졌다는 거야. 실화냐?",
+    "bgm_mood": "funny",
+    "style": "vibrant 3D cartoon, soft lighting, bright colors, high detail, football theme, clean background with plain solid-color jerseys and blank surfaces",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "맨시티가 이 팀 원정만 가면 최근 3시즌째 계속 졌다는 거야. 실화냐?",
+        "on_screen_text": "3시즌째 졌다고?",
+        "image_prompt": "Vertical 9:16 full-bleed cartoon illustration filling the entire frame edge to edge, main subject placed in the upper 60% of the frame. A shocked stocky chubby sky blue cartoon lion with a fluffy white mane, wearing a sky blue football jersey, huge wide eyes and open mouth, standing at the entrance of a claret and sky blue stadium tunnel, dramatic spotlight from above. The lower 40% of the frame is a simple empty tunnel floor."
+      },
+      {
+        "id": 2,
+        "narration": "이번 시즌 맨시티 출발은 완벽했거든. 연승 기계 그 자체였어.",
+        "on_screen_text": "완벽한 출발",
+        "image_prompt": "Vertical 9:16 full-bleed cartoon illustration filling the entire frame edge to edge, main subject placed in the upper 60% of the frame. A proud stocky chubby sky blue cartoon lion with a fluffy white mane, wearing a sky blue football jersey, striking a victory pose on a green football pitch, golden confetti falling, a shiny golden trophy floating above its head. The lower 40% of the frame is plain green pitch grass."
+      },
+      {
+        "id": 3,
+        "narration": "근데 상대가 애스턴 빌라래. 연승 기계도 빌라 앞에선 와이파이 끊긴 로봇이 된다는 분석이야.",
+        "on_screen_text": "와이파이 끊김",
+        "image_prompt": "Vertical 9:16 full-bleed cartoon illustration filling the entire frame edge to edge, main subjects placed in the upper 60% of the frame. A stocky chubby sky blue cartoon robot lion with a fluffy white mane, wearing a sky blue football jersey, frozen with a confused face and a small spinning loading circle above its head, sparks flying. Facing it, a confident cartoon hawk with spread wings wearing a claret football jersey with sky blue sleeves. The lion wears the sky blue uniform, the hawk wears the claret uniform. The lower 40% of the frame is plain green pitch grass."
+      },
+      {
+        "id": 4,
+        "narration": "그래서 이 경기가 첫 진짜 시험대라고 난리야. 한국 태국 베트남에서도 검색이 터졌어.",
+        "on_screen_text": "첫 진짜 시험대",
+        "image_prompt": "Vertical 9:16 full-bleed cartoon illustration filling the entire frame edge to edge, main subjects placed in the upper 60% of the frame. A nervous stocky chubby sky blue cartoon lion with a fluffy white mane, wearing a sky blue football jersey, sitting at a small school desk with a sweat drop on its forehead, a strict cartoon owl teacher standing beside it holding a blank exam paper, bright stadium lights in the background. The lower 40% of the frame is plain green pitch grass."
+      },
+      {
+        "id": 5,
+        "narration": "근데 반전. 홀란은 100퍼센트 출전 가능이라고 알려졌어. 징크스 부수러 온 거지.",
+        "on_screen_text": "홀란 풀충전",
+        "image_prompt": "Vertical 9:16 full-bleed cartoon illustration filling the entire frame edge to edge, main subject placed in the upper 60% of the frame. A strong cartoon polar bear wearing a sky blue football jersey, flexing its muscles, with a glowing fully charged green battery icon above it, cracks spreading across a giant ice block behind it, a cheering crowd far in the background. The lower 40% of the frame is plain icy pitch ground."
+      },
+      {
+        "id": 6,
+        "narration": "연승 기계의 완벽 시즌이냐, 빌라 징크스 계속이냐. 맨시티 승이면 1, 빌라 승이나 무승부면 2 댓글 달아!",
+        "on_screen_text": "너의 선택은?",
+        "image_prompt": "Vertical 9:16 full-bleed cartoon illustration filling the entire frame edge to edge, main subjects placed in the upper 60% of the frame. On the left, a stocky chubby sky blue cartoon lion with a fluffy white mane wearing a sky blue football jersey; on the right, a cartoon hawk with brown feathers wearing a claret football jersey with sky blue sleeves. The lion wears the sky blue uniform, the hawk wears the claret uniform. They face each other with determined expressions, a glowing lightning bolt between them, a football in the center. The lower 40% of the frame is plain green pitch grass."
+      }
+    ],
+    "description": "완벽하게 시작한 맨시티가 하필 빌라 원정에서 첫 시험대에 올랐다! 최근 3시즌 원정 징크스라는 분석 vs 홀란 100퍼센트 출전 가능 소식, 너의 선택은?\n연승 기계도 빌라 앞에선 와이파이 끊긴 로봇이 될까?\n#맨시티 #애스턴빌라 #프리미어리그",
+    "tags": [
+      "맨시티",
+      "애스턴빌라",
+      "빌라 맨시티",
+      "프리미어리그",
+      "홀란",
+      "EPL",
+      "축구쇼츠",
+      "해외축구",
+      "원정 징크스"
+    ],
+    "comment_question": "맨시티가 빌라 징크스를 깰까, 빌라가 또 막을까? 맨시티 승이면 1, 빌라 승이나 무승부면 2, 스코어까지 맞혀봐!"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 6
+    }
+  },
+  "effects": {
+    "duration": 44.36,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Fluffing a Duck",
+    "bgm_mood": "funny",
+    "bgm_credit": "Music: \"Fluffing a Duck\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "맨시티가 이 팀 원정만 가면 최근 3시즌째 계속 졌다는 거야. 실화냐?",
+      "on_screen_text": "3시즌째 졌다고?",
+      "image": "runs/2026-10-24/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "이번 시즌 맨시티 출발은 완벽했거든. 연승 기계 그 자체였어.",
+      "on_screen_text": "완벽한 출발",
+      "image": "runs/2026-10-24/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "근데 상대가 애스턴 빌라래. 연승 기계도 빌라 앞에선 와이파이 끊긴 로봇이 된다는 분석이야.",
+      "on_screen_text": "와이파이 끊김",
+      "image": "runs/2026-10-24/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "그래서 이 경기가 첫 진짜 시험대라고 난리야. 한국 태국 베트남에서도 검색이 터졌어.",
+      "on_screen_text": "첫 진짜 시험대",
+      "image": "runs/2026-10-24/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "근데 반전. 홀란은 100퍼센트 출전 가능이라고 알려졌어. 징크스 부수러 온 거지.",
+      "on_screen_text": "홀란 풀충전",
+      "image": "runs/2026-10-24/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "연승 기계의 완벽 시즌이냐, 빌라 징크스 계속이냐. 맨시티 승이면 1, 빌라 승이나 무승부면 2 댓글 달아!",
+      "on_screen_text": "너의 선택은?",
+      "image": "runs/2026-10-24/scene_06.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-10-24/thumbnail.jpg",
+  "video_file": "videos/2026-10-24.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "QA 불합격"
+  },
+  "finished_at": "2026-10-24T21:22:30+09:00"
+}

@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-10-24",
+    "status": "qa_failed",
+    "title": "맨시티가 이 팀 원정만 가면 3시즌째 졌다고?",
+    "overall": 68,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-10-24/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 44.36
+  },
+  {
     "date": "2026-10-23",
     "status": "qa_failed",
     "title": "붕어빵 사장님이 방송 출연을 거절한 이유",
