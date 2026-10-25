@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-10-25",
+    "status": "qa_failed",
+    "title": "전업주부 엄마, 연금 문이 열린대요?",
+    "overall": 65,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-10-25/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 54.3
+  },
+  {
     "date": "2026-10-24",
     "status": "qa_failed",
     "title": "맨시티가 이 팀 원정만 가면 3시즌째 졌다고?",

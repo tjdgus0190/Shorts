@@ -1,0 +1,482 @@
+{
+  "date": "2026-10-25",
+  "status": "qa_failed",
+  "started_at": "2026-10-25T21:48:31+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-10-25T21:48:31+09:00",
+      "note": "",
+      "seconds": 26.0
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-25T21:48:57+09:00",
+      "note": "",
+      "seconds": 22.1
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-25T21:49:19+09:00",
+      "note": "",
+      "seconds": 35.1
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-25T21:49:54+09:00",
+      "note": "",
+      "seconds": 35.0
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-25T21:50:29+09:00",
+      "note": "1차",
+      "seconds": 20.4
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-25T21:50:50+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 24.5
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-25T21:51:14+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 38.6
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-25T21:51:53+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 38.5
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-25T21:52:32+09:00",
+      "note": "2차",
+      "seconds": 23.4
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-25T21:52:55+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 24.9
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-25T21:53:20+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 32.6
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-25T21:53:52+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 45.1
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-25T21:54:38+09:00",
+      "note": "3차",
+      "seconds": 23.7
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 40,
+        "hook": 62,
+        "clarity": 72,
+        "visual": 72,
+        "subtitle": 75,
+        "safety": 85
+      },
+      "overall": 62,
+      "pass": false,
+      "issues": [
+        "훅이 '여고 동창 썰'로 시작하지만 실제 내용은 전업주부·무소득 청년의 국민연금 편입 뉴스입니다. 동창 이야기는 이후 전개되지 않아 낚시처럼 느껴지고, 토끼 장면도 이야기와 이어지지 않습니다.",
+        "전체 톤이 '추진한대요 → 차별 없앤대요 → 찬반은?'으로 이어지는 뉴스 요약이라 교과서 톤에 가깝습니다. 반전, 드립, 리듬이 없어 fun이 50점 이하입니다.",
+        "씬 6 프레임(f3)의 펭귄 두 마리가 든 깃발이 둘 다 엄지 up(👍)입니다. 기획서의 '엄지 up vs 엄지 down' 찬반 대비가 표현되지 않았습니다.",
+        "씬 1 프레임(f0)에서 '갈라지는 길(한쪽은 맑고 한쪽은 흐림)' 구도가 약합니다. 길은 갈라지지 않았고 토끼 둘은 거의 같은 모습입니다. '갈렸다'는 메시지가 시각적으로 전달되지 않습니다.",
+        "중앙 자막이 캐릭터 몸통 위에 겹칩니다(f0 토끼 다리, f1 돼지저금통 아래 캐릭터, f3 저금통 위). 가독성은 괜찮지만 화면을 일부 가립니다.",
+        "씬 2의 '667만 명 편입'은 기획서 안에서 일관되고, 숫자 계산이 필요한 부분은 없습니다. 다만 '13년 만에 문이 다시 열린다'와 '국민연금공단 검색량 급증'은 출처가 없어 확인 필요입니다.",
+        "화풍이 씬마다 다릅니다(3D 토끼, 3D 금돼지, 2D 카툰 곰, 3D 펭귄). 채널 통일감이 떨어집니다.",
+        "씬 5의 '아직 추진 단계'를 고지한 점은 안전 측면에서 좋습니다. 허위·명예훼손 위험은 낮습니다."
+      ],
+      "retry_target": "planner",
+      "feedback": "1) 훅을 실제 내용과 맞추세요. 예: '결혼했다는 이유로 연금이 0원이던 사람들, 667만 명이 갑자기 연금 대상이 됩니다'처럼 구체적 손해·이득과 충격 숫자를 첫 문장에 넣으세요. 동창 썰을 쓰려면 '결혼한 친구 vs 직장 다닌 친구'의 노후 비교를 대본 전체의 뼈대로 삼으세요. 2) 뉴스 나열을 피하고 두 친구의 대화, 비교(연금 있는 친구/없는 친구), 반전 한 방(예: 소득이 없다는 이유로 가입도 못 했는데 이제 문이 열린다), 리듬감 있는 드립을 넣으세요. 3) 마지막 씬은 찬반 질문을 유지하되, image_prompt에 '왼쪽 펭귄은 엄지 up 깃발, 오른쪽 펭귄은 엄지 down 깃발'처럼 서로 다르게 구체적으로 지정하세요. 4) 씬 1의 '길이 둘로 갈라지고 한쪽은 맑고 한쪽은 흐린' 구도를 더 분명하게 지정하고, 두 캐릭터의 표정과 옷차림에도 차이를 주세요. 5) 화풍을 통일하는 문구(예: 'consistent 3D pastel cartoon style')를 모든 image_prompt에 추가하세요. 6) '13년 만에', '검색량 급증' 같은 표현은 출처가 확실한 것만 쓰고, 불확실하면 '~라고 알려졌어요'처럼 완화하세요. 7) 자막은 하단 중앙에 겹치지 않도록 위치를 약간 조정하면 좋습니다."
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 52,
+        "hook": 62,
+        "clarity": 72,
+        "visual": 66,
+        "subtitle": 62,
+        "safety": 80
+      },
+      "overall": 63,
+      "pass": false,
+      "issues": [
+        "fun: 대본이 '정책 소개 → 아직 추진 중 → 찬반 질문' 순서의 뉴스 요약 톤입니다. 웃음 포인트나 드립이 없고, 반전이라고 한 4번 장면도 '정책이 추진된다'는 정보 전달에 그칩니다. 44.8초 동안 긴장과 해소의 리듬이 약합니다.",
+        "hook: 첫 문장이 '667만 명한테 연금 문이 열린대요'라는 사실 전달입니다. 누구 이야기인지, 나와 무슨 상관인지가 3초 안에 와닿지 않습니다. 0.6초 프레임에는 자막이 문장 중간('결혼했다는 이유로 노후가')에서 끊겨 있습니다.",
+        "visual: 캐릭터가 장면마다 달라집니다. 고양이 털색이 주황(1번), 흰색(2번), 갈색(3번)으로 바뀝니다. 2번 장면에서는 토끼가 프롬프트에 없던 노란 앞치마를 입고 있어 직장인과 주부의 대비가 사라졌습니다. 1번 장면은 길이 두 갈래로 갈라지지 않은 한 줄 도로이고, 비구름도 작아서 '갈림길' 연출이 약합니다.",
+        "subtitle: 하단 자막이 캐릭터의 몸통과 발, 3번 프레임의 저금통 위에 겹칩니다. 화면 상단의 장면 제목 박스와 하단 내레이션 자막이 함께 떠서 정보가 중복되고 산만합니다.",
+        "확인 필요: '667만 명'이라는 수치와 구성(전업주부+무소득 청년)이 사실인지 확인이 필요합니다. 출처는 기획서에 없습니다.",
+        "확인 필요: '13년 만에 다시 열린다'는 표현의 근거가 확인되지 않습니다. 기존 임의가입 제도와 어떻게 다른지도 확인이 필요합니다.",
+        "clarity: 5번 장면에서 '차별 해소'와 '13년 만에 재개방'이 한 문장에 겹쳐 있어 정책 내용이 흐릿합니다. 청년이 왜 같이 나오는지 설명도 없습니다."
+      ],
+      "retry_target": "planner",
+      "feedback": "1) 훅을 시청자 본인 이야기로 바꾸세요. 예: '전업주부 엄마, 국민연금 0원인 거 알아요?'처럼 구체적인 상황이나 질문으로 시작하고, 667만이라는 숫자는 뒤로 돌려도 됩니다. 2) 두 동창 콩트에 대사와 드립을 넣어 웃음 포인트를 만드세요. 예: 직장 친구 '나 연금 나와~', 주부 친구 '나는 집에서 25년 일했는데 연금은 0원?'. 4번 반전은 정보 전달이 아니라 감정이 뒤집히는 대사로 쓰세요. 3) 정책 설명은 '대상, 현재 상태(추진 중), 내게 미치는 영향' 세 가지로 한 장면에 정리하세요. 4) 667만 명, 13년 만에, 청년 포함 여부는 출처(기관·보도일)를 확인하고, 확인되지 않으면 표현을 완화하거나 빼세요. 5) 전체를 35초 안팎으로 줄이세요. 6) image_prompt에는 캐릭터 고정 설정을 넣으세요(예: 토끼=회색 털+파란 블레이저, 앞치마 금지 / 고양이=주황 털+노란 앞치마). 1번 장면은 'Y자로 갈라지는 길'을 명시하세요. 7) 자막은 화면 하단 20% 영역으로 내려 캐릭터를 가리지 않게 하고, 상단 제목 박스는 첫 장면에만 쓰세요(이 두 가지는 effector에게도 전달)."
+    },
+    {
+      "attempt": 3,
+      "scores": {
+        "fun": 55,
+        "hook": 62,
+        "clarity": 75,
+        "visual": 65,
+        "subtitle": 72,
+        "safety": 80
+      },
+      "overall": 65,
+      "pass": false,
+      "issues": [
+        "fun: 토끼와 고양이의 대비 설정은 좋지만 드립이나 반전이 없다. 장면 4는 정책 뉴스 설명이고, 장면 5의 '같이 늙자'는 감동 쪽으로 흘러서 웃음 포인트가 약하다. 전체적으로 뉴스 요약에 우화를 입힌 느낌이다.",
+        "hook: '말 줄이지 않았어요?'는 공감은 되지만 자극이 약하다. 첫 프레임은 Y자 갈림길이 제대로 그려지지 않았고, 인물이 양쪽에 서 있는 정적인 구도라 스크롤을 멈출 만한 요소가 없다.",
+        "hook/subtitle: 첫 화면에 상단 고정 문구 '엄마 연금 얘기'와 하단 자막 '전업주부 엄마 연금'이 동시에 나온다. 같은 내용이 중복되고 문구도 서로 달라 어수선하다.",
+        "visual: 장면 2의 프레임(30%)에서 토끼 뒤에 정체불명의 붉은 구체가 있고, 토끼 손에는 서류가방 대신 막대 같은 물체가 들려 있다. 프롬프트의 카페 배경도 단색 회색 배경으로 나왔다.",
+        "visual: 장면 6의 펭귄은 프롬프트에 없는 모자를 쓰고 있고 배경이 흰색이라 다른 장면과 화풍이 달라 보인다. 고양이 디자인도 장면 1과 장면 3에서 서로 다르게 나왔다(캐릭터 일관성 부족).",
+        "visual/subtitle: 상하단의 블러 여백이 크고, 자막이 캐릭터 발치와 군중 위에 겹친다. 읽는 데는 문제없지만 장면 4에서는 군중 캐릭터를 일부 가린다.",
+        "clarity: 장면 4에 정보가 몰려 있다(667만 명, 편입 방안, 미확정, 차별 해소). 한 호흡에 소화하기에는 길다.",
+        "수치 확인 필요: '667만 명'과 '전업주부·무소득 청년 등 편입 추진'은 출처를 확인해야 한다. 기획서에 '확정 아님'이라고 명시해 두어 안전성 위험은 낮다. 오류라고 단정하지는 않는다.",
+        "재생시간 54.3초에 비해 시각 변화가 적다. 장면당 정지 이미지 1장이라 후반부에 지루해질 수 있다."
+      ],
+      "retry_target": "planner",
+      "feedback": "대본을 뉴스 요약에서 코미디 쪽으로 바꿔 주세요. (1) 훅은 첫 문장에 갈등이나 반전을 넣으세요. 예: '연금 나오는 친구 앞에서 나만 조용했던 적 있죠?'처럼 구체적인 상황을 던지는 방식입니다. (2) 장면 3~5에 웃음 포인트를 하나 이상 넣으세요. 예: 토끼가 저금통을 자랑하고, 고양이가 '나는 20년간 월급 없는 CEO였는데'라고 받아치는 식입니다. 감동 엔딩은 짧게 줄이세요. (3) 장면 4의 정보는 '667만 명 편입 추진 중, 아직 미확정' 한 줄로 줄이고 나머지는 쪼개서 두 장면으로 나누세요. 667만 명 수치는 출처를 확인하세요. (4) on_screen_text는 장면 1에만 있으니, 하단 자막과 겹치지 않는 핵심 키워드로 각 장면에 넣으세요. (5) 프롬프트에는 캐릭터 외형(고양이 털 색·앞치마)을 고정하고, 배경을 구체적으로 지정하세요. 모자나 이상한 소품이 생기지 않도록 'no hats, no extra objects'를 추가하세요. 합격 가능성을 높이려면 장면 수를 8~10개로 늘려 화면 전환을 자주 주세요."
+    }
+  ],
+  "marketer": {
+    "summary": "오늘은 5·18 소재 드라마 '닥터X' 논란과 시청률, 국민연금 주부·청년 편입 추진, 축구 대표팀 내분과 모레노 감독, 올림픽 챔피언 도핑 적발, UFC 333 볼카노프스키 신기록이 검색 상위를 차지했다.",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "닥터x: 하얀 마피아의 시대",
+        "traffic": "10000+",
+        "traffic_num": 10000,
+        "news": [
+          "5·18 다룬 ‘닥터X’에 방영 중단 청원… 제작 CP는 “두려움 없다”",
+          "‘닥터X’ 6회만 19.5% 돌파…SBS 역대 금토극 공동 5위",
+          "[스경X이슈] ‘암살자(들)’ 이어 또?…‘닥터X’ 5·18 소재 극화 ‘앗 뜨거워라!’"
+        ],
+        "topic": "시청률 19.5% 돌파한 '닥터X', 5·18 소재 극화 논란과 방영 중단 청원까지 30초 정리",
+        "why_now": "'5·18 다룬 닥터X에 방영 중단 청원…제작 CP는 두려움 없다', '6회만 19.5% 돌파…SBS 역대 금토극 공동 5위' 기사가 동시에 나왔기 때문",
+        "angle": "\"이 드라마가 왜 난리냐면\" 형식. 시청률 숫자(6회 만에 19.5%, SBS 금토극 역대 공동 5위)와 청원·제작진 입장을 나란히 비교하는 이슈 정리. 찬반을 단정하지 않고 논점만 짚기",
+        "target": "20~40대 드라마 시청자, 화제작 챙겨보는 층",
+        "fun_score": 8,
+        "risk": "high",
+        "risk_note": "5·18 역사 소재와 정치적 논쟁이 얽혀 있음. 특정 입장 편들기·조롱 금지, 기사에 나온 사실만 중립적으로 전달할 것"
+      },
+      {
+        "rank": 2,
+        "keyword": "건강",
+        "traffic": "5000+",
+        "traffic_num": 5000,
+        "news": [
+          "부천시‘다시 함께 더 큰’민생행보 100일",
+          "‘소문난 건강 도시’…은평구, 대한민국 건강도시상 ‘대상’",
+          "부천시, 대한민국건강도시협의회 제11대 의장도시 선정…2027년 전국 총회 유치"
+        ],
+        "topic": "'소문난 건강 도시' 은평구, 대한민국 건강도시상 대상 받은 이유",
+        "why_now": "'은평구, 대한민국 건강도시상 대상', '부천시, 대한민국건강도시협의회 제11대 의장도시 선정' 등 지자체 건강도시 소식이 이어짐",
+        "angle": "\"우리 동네가 건강도시 1등?\" 지역 자랑 챌린지 형식. 건강도시상 대상과 의장도시 선정을 가볍게 소개하고 댓글로 우리 동네 자랑 유도",
+        "target": "서울·경기 거주자, 지역 소식에 관심 있는 30~50대",
+        "fun_score": 3,
+        "risk": "low",
+        "risk_note": "'건강'이 범용 키워드라 검색 의도가 불분명함. 기사에 없는 수상 내용이나 수치는 만들지 않을 것"
+      },
+      {
+        "rank": 3,
+        "keyword": "국민연금공단",
+        "traffic": "2000+",
+        "traffic_num": 2000,
+        "news": [
+          "전업주부·무소득 청년 등 667만 명, 국민연금 편입 추진",
+          "\"결혼이 가른 여고 동창의 엇갈린 노후\"...전업주부 연금의 문, 13년 만에 다시 열린다",
+          "'무소득자 차별' 폐지…국민연금, 주부·청년 667만명 편입"
+        ],
+        "topic": "전업주부·무소득 청년 667만 명 국민연금 편입 추진, 나는 해당될까?",
+        "why_now": "'전업주부·무소득 청년 등 667만 명, 국민연금 편입 추진', '무소득자 차별 폐지', '전업주부 연금의 문, 13년 만에 다시 열린다' 보도",
+        "angle": "\"결혼이 가른 여고 동창의 엇갈린 노후\" 상황극으로 시작해 이번 개편 핵심을 30초에 정리. 공유 욕구가 큰 '엄마한테 보내기' 소재",
+        "target": "전업주부, 사회초년생·무소득 청년, 부모 노후가 걱정되는 30~40대",
+        "fun_score": 8,
+        "risk": "medium",
+        "risk_note": "추진 단계의 정책이라 확정처럼 말하면 오해 소지. 세부 조건은 기사 내용 범위에서만 전달하고 '추진 중'임을 명확히 표기"
+      },
+      {
+        "rank": 4,
+        "keyword": "축구 감독",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "어수선한 대표팀…모레노 감독이 일주일 먼저 명단 발표하는 이유는",
+          "최악의 내분·부상…아시안컵 여정까지 가시밭길",
+          "[SPO 현장] '국대 불화 논란'에도 팬서비스는 활짝...머리 아플 모레노 감독, K리그 직접 찾아 관찰 → 팬들 요청도 흔쾌히 응했다"
+        ],
+        "topic": "모레노 감독은 왜 명단을 일주일 먼저 발표할까? 내분·부상에 K리그 직관까지",
+        "why_now": "'어수선한 대표팀…모레노 감독이 일주일 먼저 명단 발표하는 이유는', '최악의 내분·부상…아시안컵 여정까지 가시밭길', 'K리그 직접 찾아 관찰' 보도",
+        "angle": "\"감독 입장 상황극\" 형식. 내분 논란 속에서도 K리그를 찾아 팬 요청에 응한 장면을 정리하고, 명단 조기 발표 이유를 궁금증 훅으로 사용",
+        "target": "축구 팬, 대표팀 이슈를 챙기는 20~40대 남성",
+        "fun_score": 7,
+        "risk": "medium",
+        "risk_note": "'불화 논란'은 확인되지 않은 내용이 섞일 수 있음. 특정 선수 비난 금지, 기사 제목에 나온 사실 위주로만 다룰 것"
+      },
+      {
+        "rank": 5,
+        "keyword": "inter vs fiorentina",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "Inter Milan vs Fiorentina: Lineups, Prediction, Odds & Bet Builder Tip",
+          "Oulai unfit, Vanoli turns to Brescianini: Dodo surprise in defence",
+          "Italy Serie A Soccer"
+        ],
+        "topic": "인터 vs 피오렌티나 경기 전 체크: 울라이 결장, 도도 수비 투입 깜짝 변수",
+        "why_now": "'Oulai unfit, Vanoli turns to Brescianini: Dodo surprise in defence' 등 라인업·프리뷰 기사가 나옴",
+        "angle": "\"킥오프 전 1분 프리뷰\" 형식. 결장자와 예상 변화만 짚는 라인업 요약 + 한 줄 예측 투표 유도",
+        "target": "세리에A 팬, 해외축구 시청자",
+        "fun_score": 4,
+        "risk": "low",
+        "risk_note": "기사 제목 외 구체적 전술·결과를 지어내지 말 것. 승부 예측은 베팅 권유로 보이지 않게 주의"
+      },
+      {
+        "rank": 6,
+        "keyword": "도핑",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "도쿄올림픽 여자 마라톤 우승자, 도핑 적발…잠정 자격 정지",
+          "도쿄올림픽 女마라톤 금메달리스, 도핑 적발로 잠정 자격정지",
+          "올림픽 챔피언 제프치르치르, 경기 외 검사서 EPO 검출돼 잠정 출전 정지"
+        ],
+        "topic": "도쿄올림픽 여자 마라톤 금메달리스트 제프치르치르, 경기 외 검사서 EPO 검출",
+        "why_now": "'도쿄올림픽 여자 마라톤 우승자, 도핑 적발…잠정 자격 정지', '경기 외 검사서 EPO 검출돼 잠정 출전 정지' 보도",
+        "angle": "\"금메달리스트에게 무슨 일이?\" 반전형 뉴스 정리. 경기 외 검사, EPO 검출, 잠정 출전 정지 순서로 풀고 '잠정' 조치임을 강조",
+        "target": "스포츠 팬, 올림픽 이슈에 관심 있는 전 연령",
+        "fun_score": 6,
+        "risk": "high",
+        "risk_note": "실존 인물의 약물 의혹. 잠정 정지 단계이므로 확정된 유죄처럼 단정하거나 조롱하지 말고 '검출·잠정 정지'로만 표현"
+      },
+      {
+        "rank": 7,
+        "keyword": "한국여자프로골프협회",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "임오경 의원 \"KLPGA·KLPGT 임원 겸직, 이해 상충 우려\"",
+          "임오경 의원 \"KLPGA 이사회 17명 중 16명 자회사 겸직…견제·감독 구조 개선해야\"",
+          "[2026 국감] KLPGA 임원 17명 중 16명 자회사 겸직…'이해충돌' 우려 제기"
+        ],
+        "topic": "KLPGA 이사 17명 중 16명이 자회사 겸직? 국감에서 나온 지적",
+        "why_now": "'임오경 의원 \"KLPGA 이사회 17명 중 16명 자회사 겸직\"', '[2026 국감] 이해충돌 우려 제기' 보도",
+        "angle": "\"17명 중 16명\" 숫자 충격 비교로 훅을 만들고, 이해충돌 우려가 왜 문제로 지적됐는지 30초로 쉽게 설명",
+        "target": "골프 팬, 시사·스포츠 행정에 관심 있는 30~50대",
+        "fun_score": 5,
+        "risk": "high",
+        "risk_note": "국감 지적 사안으로 정치적 요소가 있음. 의원의 '우려 제기'임을 분명히 하고 위법·비리로 단정하지 말 것"
+      },
+      {
+        "rank": 8,
+        "keyword": "충주시",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [],
+        "topic": "충주시가 왜 검색어에? (관련 뉴스 없음, 제작 보류 권장)",
+        "why_now": "제공된 뉴스 제목이 없어 급상승 이유를 확인할 수 없음",
+        "angle": "사유 확인 전에는 제작 보류. 확인되면 그 이슈 중심으로 재기획. 근거 없이 충주시 관련 일반 소개 영상으로 대체하지 않음",
+        "target": "미정",
+        "fun_score": 1,
+        "risk": "medium",
+        "risk_note": "이슈 근거가 없어 사실 오류 위험이 큼. 별도로 뉴스 검색 후 판단 필요"
+      },
+      {
+        "rank": 9,
+        "keyword": "mma",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "UFC 333: Alexander Volkanovski stops Movsar Evloev for record with ninth featherweight title win",
+          "[SPORT TV™]! UFC 333 MMA Fighting 𝐋𝐈𝐕𝐄 Ｓｔｒｅａｍｓ Ｆｒｅｅ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 24 October 2026",
+          "UFC 333 bonuses: Petr Yan, Merab Dvalishvili earn $100,000 for 'FOTN'"
+        ],
+        "topic": "UFC 333, 볼카노프스키가 에블로예프를 꺾고 페더급 타이틀 9승 신기록",
+        "why_now": "'Volkanovski stops Evloev for record with ninth featherweight title win', 'Petr Yan, Merab Dvalishvili FOTN 보너스 $100,000' 보도",
+        "angle": "\"어제 UFC에서 벌어진 일\" 하이라이트형 요약. 페더급 타이틀 9승 기록과 보너스 10만 달러를 숫자로 보여주고 명승부 리액션 유도",
+        "target": "격투기 팬, 20~30대 남성",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": "경기 영상은 저작권 이슈가 있으므로 자체 그래픽·자막 중심으로 제작. 기사에 없는 경기 내용은 추가하지 않을 것"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": [
+      {
+        "keyword": "브라질 대선",
+        "blocked_by": "대통령"
+      }
+    ]
+  },
+  "selected_attempt": 3,
+  "plan": {
+    "chosen_rank": 3,
+    "reason": "1위 '건강'은 범용 키워드라 검색 의도가 불분명하고 재미 점수도 3점이다. 4위 축구 감독은 불화 논란이 섞여 있어 위험하다. 국민연금공단은 재미 점수 8점이고 '엄마한테 보내기' 공유 욕구가 커서 유지했다. QA 피드백 반영: 훅은 '전업주부 엄마'를 직접 부르는 시청자 본인 이야기로 바꾸고 667만 숫자는 4번 장면으로 돌렸다. 동창 콩트에 대사를 넣었고, 5번 장면은 정보가 아니라 감정이 뒤집히는 대사로 썼다. 정책 설명은 4번 한 장면에 대상, 현재 상태(추진 중), 내게 미치는 영향 순으로 묶었다. 사실은 보도 제목에 있는 내용만 썼다: 전업주부·무소득 청년 등 667만 명 편입 추진, 무소득자 차별 폐지, 결혼이 갈랐다는 동창의 노후. 제목 밖에서 출처(기관, 보도일)를 확인할 수단이 없어서 '13년 만에'는 뺐고, 667만 명은 '등'을 붙여 완화했다. 이전 안에 없던 '0원', '25년' 같은 수치는 근거가 없어 쓰지 않았다. 분량은 6장면, 약 35초로 줄였다. 계산은 없다. 자막은 화면 하단 20%에 두고 상단 제목 박스는 1번 장면에만 쓴다(effector 전달 사항). 그래서 2~6번의 on_screen_text는 비웠다.",
+    "title": "전업주부 엄마, 연금 문이 열린대요?",
+    "hook": "전업주부 엄마, 연금 얘기 나오면 괜히 말 줄이지 않았어요?",
+    "bgm_mood": "funny",
+    "style": "consistent 3D pastel cartoon style, soft lighting, vibrant colors, high detail, cute character design, empty space along the bottom of the frame",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "전업주부 엄마, 연금 얘기 나오면 괜히 말 줄이지 않았어요?",
+        "on_screen_text": "엄마 연금 얘기",
+        "image_prompt": "a cartoon dirt road forking into a clear Y shape, the left branch under sunny blue sky with flowers, the right branch under gray rainy clouds, a gray-furred rabbit in a blue blazer standing at the left branch and an orange-furred cat in a yellow apron standing at the right branch, consistent 3D pastel cartoon style, soft lighting, vibrant colors, high detail, cute character design, empty space along the bottom of the frame"
+      },
+      {
+        "id": 2,
+        "narration": "여고 동창 둘이 있어요. 토끼는 직장을 쭉 다녔고, 고양이는 결혼해서 집에서 쭉 일했죠.",
+        "on_screen_text": "",
+        "image_prompt": "two cute cartoon friends in a cozy pastel cafe, a gray-furred rabbit in a blue blazer holding a small briefcase and an orange-furred cat in a yellow apron holding a wooden spoon, consistent 3D pastel cartoon style, soft lighting, vibrant colors, high detail, cute character design, empty space along the bottom of the frame"
+      },
+      {
+        "id": 3,
+        "narration": "토끼가 어깨를 으쓱해요. 나 연금 나와. 고양이가 눈을 흘기죠. 나는 집에서 쭉 일했는데 연금은 왜 없어?",
+        "on_screen_text": "",
+        "image_prompt": "a gray-furred rabbit in a blue blazer proudly holding a glowing golden piggy bank with a smug grin, facing an orange-furred cat in a yellow apron with puffed cheeks and a sulky squint, cozy cafe table between them, consistent 3D pastel cartoon style, soft lighting, vibrant colors, high detail, cute character design, empty space along the bottom of the frame"
+      },
+      {
+        "id": 4,
+        "narration": "근데 전업주부랑 무소득 청년 등 667만 명을 국민연금에 편입하는 방안이 추진 중이래요. 아직 확정은 아니지만, 무소득자 차별을 없애는 방향이라 내 노후 문이 열릴 수 있어요.",
+        "on_screen_text": "",
+        "image_prompt": "a giant wooden gate slowly opening with warm golden light spilling out, a small crowd of cute cartoon animals looking up at it with wide eyes, a small yellow hourglass hanging beside the gate, consistent 3D pastel cartoon style, soft lighting, vibrant colors, high detail, cute character design, empty space along the bottom of the frame"
+      },
+      {
+        "id": 5,
+        "narration": "고양이가 울먹여요. 그럼 나도 연금 얘기에 끼어도 돼? 토끼가 웃죠. 당연하지, 이제 같이 늙자.",
+        "on_screen_text": "",
+        "image_prompt": "an orange-furred cat in a yellow apron with teary sparkling eyes and a trembling smile, hugged by a gray-furred rabbit in a blue blazer, warm sunset glow in the cafe, consistent 3D pastel cartoon style, soft lighting, vibrant colors, high detail, cute character design, empty space along the bottom of the frame"
+      },
+      {
+        "id": 6,
+        "narration": "결혼했다고 노후가 갈리던 시대, 이제 끝나야 할까요? 전업주부도 연금 편입, 찬성이에요 반대예요?",
+        "on_screen_text": "",
+        "image_prompt": "two cute cartoon penguins facing each other with a golden piggy bank between them, the left penguin waving a green flag with a big smile, the right penguin waving a red flag with a frown, playful debate scene, consistent 3D pastel cartoon style, soft lighting, vibrant colors, high detail, cute character design, empty space along the bottom of the frame"
+      }
+    ],
+    "description": "전업주부와 무소득 청년 등 667만 명을 국민연금에 편입하는 방안이 추진 중이라는 보도가 나왔어요. 아직 확정이 아닌 추진 단계입니다. 엄마한테 꼭 보내주세요!\n#국민연금 #전업주부 #쇼츠",
+    "tags": [
+      "국민연금",
+      "국민연금공단",
+      "전업주부",
+      "무소득 청년",
+      "연금 개편",
+      "노후 준비",
+      "쇼츠",
+      "오늘의 이슈"
+    ],
+    "comment_question": "전업주부도 국민연금 편입, 찬성이에요 반대예요? 이유도 알려주세요!"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 6
+    }
+  },
+  "effects": {
+    "duration": 54.3,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Fluffing a Duck",
+    "bgm_mood": "funny",
+    "bgm_credit": "Music: \"Fluffing a Duck\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "전업주부 엄마, 연금 얘기 나오면 괜히 말 줄이지 않았어요?",
+      "on_screen_text": "엄마 연금 얘기",
+      "image": "runs/2026-10-25/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "여고 동창 둘이 있어요. 토끼는 직장을 쭉 다녔고, 고양이는 결혼해서 집에서 쭉 일했죠.",
+      "on_screen_text": "",
+      "image": "runs/2026-10-25/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "토끼가 어깨를 으쓱해요. 나 연금 나와. 고양이가 눈을 흘기죠. 나는 집에서 쭉 일했는데 연금은 왜 없어?",
+      "on_screen_text": "",
+      "image": "runs/2026-10-25/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "근데 전업주부랑 무소득 청년 등 667만 명을 국민연금에 편입하는 방안이 추진 중이래요. 아직 확정은 아니지만, 무소득자 차별을 없애는 방향이라 내 노후 문이 열릴 수 있어요.",
+      "on_screen_text": "",
+      "image": "runs/2026-10-25/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "고양이가 울먹여요. 그럼 나도 연금 얘기에 끼어도 돼? 토끼가 웃죠. 당연하지, 이제 같이 늙자.",
+      "on_screen_text": "",
+      "image": "runs/2026-10-25/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "결혼했다고 노후가 갈리던 시대, 이제 끝나야 할까요? 전업주부도 연금 편입, 찬성이에요 반대예요?",
+      "on_screen_text": "",
+      "image": "runs/2026-10-25/scene_06.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-10-25/thumbnail.jpg",
+  "video_file": "videos/2026-10-25.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "QA 불합격"
+  },
+  "finished_at": "2026-10-25T21:55:01+09:00"
+}
