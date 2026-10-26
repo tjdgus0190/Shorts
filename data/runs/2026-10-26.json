@@ -1,0 +1,378 @@
+{
+  "date": "2026-10-26",
+  "status": "success",
+  "started_at": "2026-10-26T23:37:06+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-10-26T23:37:06+09:00",
+      "note": "",
+      "seconds": 25.7
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-26T23:37:31+09:00",
+      "note": "",
+      "seconds": 25.4
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-26T23:37:57+09:00",
+      "note": "",
+      "seconds": 31.1
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-26T23:38:28+09:00",
+      "note": "",
+      "seconds": 40.1
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-26T23:39:08+09:00",
+      "note": "1차",
+      "seconds": 16.9
+    },
+    {
+      "name": "uploader",
+      "label": "업로드",
+      "status": "done",
+      "started_at": "2026-10-26T23:39:25+09:00",
+      "note": "",
+      "seconds": 0.0
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 66,
+        "hook": 72,
+        "clarity": 86,
+        "visual": 80,
+        "subtitle": 80,
+        "safety": 80
+      },
+      "overall": 75,
+      "pass": true,
+      "issues": [
+        "첫 장면 훅은 '주가 상승 vs 회사 부인'의 대비로 궁금증은 주지만, 어떤 회사 얘기인지 첫 3초에 나오지 않습니다. 화면에는 정장 입은 고양이와 차트만 있고 JYP라는 단서가 없어 스크롤을 멈추게 하는 힘이 약합니다.",
+        "'고백했다는 사람은 있는데 받은 사람이 없다'는 비유는 괜찮지만 웃음 포인트가 이것 하나뿐입니다. 나머지는 사건을 차분히 정리하는 뉴스 요약 톤이라 fun이 중간 수준입니다.",
+        "길이가 약 48초인데 담긴 정보는 '인수설 → 주가 상승 → 회사 부인'뿐이라 후반부(장면 5~6)가 늘어지는 느낌입니다.",
+        "마지막 프레임(f3)에서 왼쪽 아래 고양이가 지붕 모서리에 걸려 작게 잘려 있고 자막과도 겹칩니다. 댓글로 편을 가르자는 구도가 한눈에 읽히지 않습니다.",
+        "자막이 화면 하단 이미지 위에 놓여 있어 인물의 발이나 하단 요소와 살짝 겹칩니다. 다만 외곽선과 강조색 덕분에 읽기는 무난합니다.",
+        "실존 기업의 미확인 인수설을 다루는 주제입니다. 설명란과 6번 장면에서 '설일 뿐', '투자 권유 아님'을 밝혀 위험은 낮추었지만, 주가 언급이 있어 계속 주의가 필요합니다.",
+        "숫자 검산: '이십오에서 오십 퍼센트'는 25~50%이고 단위가 맞습니다. 계산 오류는 없습니다. 인수설의 구체적 출처와 사실관계는 확인 필요입니다."
+      ],
+      "retry_target": null,
+      "feedback": "업로드 가능합니다. 개선 팁: (1) 첫 문장에 'JYP'를 직접 넣어 시작하세요. 예: 'JYP 인수설에 주가는 치솟았는데, 회사는 그런 적 없대요.' 1번 장면 on_screen_text에도 'JYP'를 넣으면 좋습니다. (2) 장면 5~6을 하나로 합쳐 길이를 35~40초로 줄이면 리듬이 좋아집니다. (3) 7번 장면은 고양이와 개를 화면 양쪽에 크게 배치하고 자막과 겹치지 않게 프롬프트를 수정하세요. (4) 드립을 한두 군데 더 넣어 뉴스 요약 톤에서 벗어나 보세요."
+    }
+  ],
+  "marketer": {
+    "summary": "오늘 트렌드는 '돈과 윤리의 줄다리기' — AI 버블 공포와 JYP 인수설, 스팟 로봇 ICE 논란에 지뢰 부상 군인 보상 이슈까지, 그 와중에 '백수 이세돌'이 맥주통 메고 훈훈함을 담당한 하루",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "군인",
+        "traffic": "2000+",
+        "traffic_num": 2000,
+        "news": [
+          "단독 국방부, '지뢰부상' 전상 입증 책임 덜어준다...법안 마련 착수",
+          "[국감] 질의에 답하는 이주은 퍼플하트 사무국장",
+          "이언주 의원, 지뢰피해 군인 보상 강화 3법 발의"
+        ],
+        "topic": "지뢰 부상 군인, 입증 책임을 국가가 덜어준다? 법안 3가지 30초 정리",
+        "why_now": "'국방부, 지뢰부상 전상 입증 책임 덜어준다...법안 마련 착수', '이언주 의원, 지뢰피해 군인 보상 강화 3법 발의' 기사가 연이어 나옴",
+        "angle": "\"이게 왜 이제야?\" 형식의 30초 이슈 정리. 기존엔 부상자가 직접 전상을 입증해야 했다는 점과 이번 법안이 바꾸려는 포인트를 쉬운 말로 풀이. 드립보다 공감과 공유 유도 중심",
+        "target": "20~40대 남성, 군필자 및 가족, 시사 관심층",
+        "fun_score": 4,
+        "risk": "high",
+        "risk_note": "국감·법안 등 정치 이슈이며 부상 당사자가 있는 주제. 조롱성 드립 금지, 정당 편향 표현 피하고 기사에 나온 사실만 다룰 것"
+      },
+      {
+        "rank": 2,
+        "keyword": "jyp 엔터테인먼트",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "주가 치솟자 \"지분 인수 제안받은 적 없어\" JYP 선 그었다...무슨 일? - 머니투데이",
+          "일본계 투자사 \"JYP 지분 25∼50% 인수추진\"…JYP \"제안 無\"",
+          "[공식] JYP엔터테인먼트, 日지분 인수설에 “제안 받은 바 없다” - 조선비즈"
+        ],
+        "topic": "일본계 투자사 'JYP 지분 25~50% 인수 추진' vs JYP '제안 받은 적 없다' — 주가는 이미 출렁",
+        "why_now": "'주가 치솟자 \"지분 인수 제안받은 적 없어\" JYP 선 그었다', '[공식] 日지분 인수설에 \"제안 받은 바 없다\"' 보도",
+        "angle": "\"주가는 오르고, 회사는 '그런 적 없는데요?'\" 상황극. 한쪽은 추진한다, 한쪽은 없다고 하는 엇갈린 입장을 대화체로 재현하고 '이게 왜 난리냐면' 형식으로 정리",
+        "target": "주식 투자하는 20~30대, K팝 팬",
+        "fun_score": 6,
+        "risk": "medium",
+        "risk_note": "인수설은 미확인 정보이며 회사가 공식 부인함. 투자 권유로 보이지 않게 하고 '설'임을 명확히 표기"
+      },
+      {
+        "rank": 3,
+        "keyword": "ai 버블",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "[단독] \"AI 꺾이면 반도체 수출 1천억弗 타격\"",
+          "\"AI 붐 붕괴 시 증시 20조달러·채권 2천억달러 손실\"",
+          "\"AI 거품·고금리 여파…11월 이후 신용 리스크 본격화 우려\""
+        ],
+        "topic": "\"AI 꺾이면 반도체 수출 1천억 달러 타격\" 숫자로 보는 AI 버블 공포",
+        "why_now": "'[단독] AI 꺾이면 반도체 수출 1천억弗 타격', 'AI 붐 붕괴 시 증시 20조달러·채권 2천억달러 손실' 기사",
+        "angle": "숫자로 보는 충격 비교. 1천억 달러, 20조 달러 같은 큰 숫자를 체감 단위로 환산하는 형식. '전망·경고'라는 점을 분명히 하며 \"AI한테 AI 버블 물어봤더니\" 같은 반전 드립 추가",
+        "target": "직장인, 투자 관심층, IT 종사자",
+        "fun_score": 7,
+        "risk": "medium",
+        "risk_note": "경고성 전망 기사이며 확정된 사실이 아님. 공포 조장이나 투자 조언처럼 보이지 않도록 주의"
+      },
+      {
+        "rank": 4,
+        "keyword": "보스턴 다이내믹스",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "보스턴다이내믹스 내부도 ’반발’, 美 ICE 스팟 공급 두고 로봇 윤리 논란 확산 By The Guru",
+          "현대차 로봇개 ‘스팟’의 딜레마⋯ 미 이민단속국 판매 강행에 보스턴다이내믹스 ‘술렁’",
+          "로봇 윤리 뒤흔든 ICE 계약, 보스턴다이내믹스 직원들 집단 반발"
+        ],
+        "topic": "현대차 로봇개 '스팟', 美 이민단속국(ICE)에 공급 논란 — 보스턴다이내믹스 직원들도 술렁",
+        "why_now": "'현대차 로봇개 스팟의 딜레마⋯ 미 이민단속국 판매 강행에 보스턴다이내믹스 술렁', '로봇 윤리 뒤흔든 ICE 계약, 직원들 집단 반발'",
+        "angle": "\"춤추던 그 로봇개가 왜 논란이냐면\" 반전 구성. 댄스 영상으로 유명한 스팟이 윤리 논란 중심에 선 상황을 대비시켜 설명하고, 시청자에게 \"로봇은 어디까지 써도 될까?\" 질문 던지기",
+        "target": "IT·로봇 관심층, 20~30대, 자동차 팬",
+        "fun_score": 6,
+        "risk": "high",
+        "risk_note": "미국 이민 단속이라는 정치적으로 민감한 사안. 특정 입장을 단정하지 말고 기사에 나온 논란과 직원 반발 사실만 중립적으로 전달"
+      },
+      {
+        "rank": 5,
+        "keyword": "이세돌",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "이세돌, 20kg 맥주통 메고 야구장 누벼",
+          "[리뷰M] '백수 이세돌', 바둑돌 대신 맥주컵으로 놓은 신의 한 수★★★☆",
+          "[백수 이세돌] 출입문 비밀번호 잊은 선배 당황 순간에 이세돌 따뜻한 격려 “인간적인 모습 좋았다”"
+        ],
+        "topic": "'백수 이세돌', 20kg 맥주통 메고 야구장 누비다 — 바둑돌 대신 맥주컵",
+        "why_now": "'이세돌, 20kg 맥주통 메고 야구장 누벼', '[리뷰M] 백수 이세돌, 바둑돌 대신 맥주컵으로 놓은 신의 한 수'",
+        "angle": "\"알파고를 이긴 남자의 새 직업\" 반전 드립. 20kg 맥주통이라는 숫자와 비밀번호 잊은 선배를 따뜻하게 격려한 에피소드로 훈훈함 포인트 구성",
+        "target": "전 연령, 예능 시청층, 바둑·알파고 기억 세대",
+        "fun_score": 8,
+        "risk": "low",
+        "risk_note": "예능 프로그램 내용이므로 위험은 낮으나 출연자를 희화화하지 말고 응원하는 톤 유지"
+      },
+      {
+        "rank": 6,
+        "keyword": "ballon d'or",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "Ballon d'Or predictions: Will Lamine Yamal, Harry Kane, Kylian Mbappe or Lionel Messi win?",
+          "Where to watch the 2026 Ballon d'Or ceremony: TV broadcast partners, live streams | Ballon d’Or",
+          "Football: Who will win the 2026 Ballon d'Or?"
+        ],
+        "topic": "발롱도르 수상자 예측: 야말·케인·음바페·메시 중 누가 받을까",
+        "why_now": "'Ballon d'Or predictions: Will Lamine Yamal, Harry Kane, Kylian Mbappe or Lionel Messi win?', 시상식 중계 안내 기사",
+        "angle": "\"내가 뽑는 발롱도르\" 투표 유도형 쇼츠. 후보 4명을 한 줄 프로필로 비교하고 댓글로 픽을 받는 참여형 구성. 결과 발표 직후 후속 쇼츠 연계",
+        "target": "축구 팬, 10~30대 남성",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": "뉴스 제목에 없는 구체적 기록이나 수치는 인용하지 말고 후보 이름과 예측 구도 중심으로 구성"
+      },
+      {
+        "rank": 7,
+        "keyword": "persija jakarta vs persik",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "Persija vs Persik Kediri Final Score 3-1: Rizky Ridho Leads Macan Kemayoran Comeback",
+          "Live Streaming Link for Persija Jakarta vs Persik Kediri Tonight, October 26, 2026: Indosiar and Vidio Broadcast Schedule",
+          "Persija Jakarta vs Persik Kediri Live Score Today, October 26, 2026: Latest Score, Lineups, and Match Updates"
+        ],
+        "topic": "페르시자 자카르타 3-1 역전승, 리즈키 리도가 이끈 '마칸 케마요란' 경기 요약",
+        "why_now": "'Persija vs Persik Kediri Final Score 3-1: Rizky Ridho Leads Macan Kemayoran Comeback' 등 경기 결과·중계 기사",
+        "angle": "인도네시아 리그 역전승 30초 하이라이트 정리. 한국에서는 낯선 리그를 \"모르는 사이에 난리 난 경기\"로 소개하고 인도네시아 팬 반응 포인트 강조",
+        "target": "인도네시아 리그 팬, 동남아 축구 관심층, 해외 축구 시청자",
+        "fun_score": 3,
+        "risk": "low",
+        "risk_note": "한국 내 관심도가 낮고 뉴스 제목 외 득점 상황 등을 지어낼 수 없어 소재가 제한적. 확인된 스코어와 역전승 사실만 사용"
+      },
+      {
+        "rank": 8,
+        "keyword": "대한전선",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "김대헌 의장·송종민 대표 '투트랙'...호반건설, 정비사업서 반등 해법 찾는다",
+          "대한전선, 해외 계약 확대 속 설비 투자 부담도 증가",
+          "대한전선 인수한 호반, 2세 김대헌 전면에…확장보다 ‘수주 성과’가 먼저"
+        ],
+        "topic": "대한전선을 인수한 호반, 2세 김대헌 전면에 — '확장보다 수주 성과가 먼저'",
+        "why_now": "'대한전선 인수한 호반, 2세 김대헌 전면에…확장보다 수주 성과가 먼저', '대한전선, 해외 계약 확대 속 설비 투자 부담도 증가'",
+        "angle": "\"전선 회사 주인이 바뀌었더니\" 형식의 30초 기업 이슈 정리. 해외 계약 확대와 설비 투자 부담이라는 기회와 부담을 대비시켜 설명",
+        "target": "주식·산업 관심층, 직장인, 건설·전력 업계 종사자",
+        "fun_score": 3,
+        "risk": "medium",
+        "risk_note": "실존 기업 및 경영진 관련 내용. 경영 평가나 투자 권유로 보이지 않게 하고 기사에 나온 사실만 인용"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": [
+      {
+        "keyword": "여행경보",
+        "blocked_by": "사고"
+      },
+      {
+        "keyword": "기소",
+        "blocked_by": "탄핵"
+      }
+    ]
+  },
+  "selected_attempt": 1,
+  "plan": {
+    "chosen_rank": 2,
+    "reason": "검색량이 1000+로 후보 중 가장 높고, 재미 점수 차이(JYP 6 vs 이세돌 8)가 검색량 우위를 뒤집을 만큼 압도적이지는 않아서 JYP를 골랐다. 인수설은 미확인 정보라 '설'과 회사의 공식 부인을 분명히 밝히고, 투자 권유로 보이지 않게 상황극과 질문으로 마무리한다. 숫자는 제목에 나온 25~50%만 쓰고 계산은 없다.",
+    "title": "JYP 인수설에 주가 들썩, 회사는 그런 적 없대요",
+    "hook": "주가는 치솟았는데, 정작 회사는 그런 적 없대요.",
+    "bgm_mood": "suspense",
+    "style": "vibrant 3D cartoon, soft lighting, high detail, bright pastel colors, vertical composition",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "주가는 치솟았는데, 정작 회사는 그런 적 없대요.",
+        "on_screen_text": "그런 적 없대",
+        "image_prompt": "A shocked cartoon cat in a tiny suit standing next to a glowing green stock chart arrow shooting upward, wide eyes, open mouth, bright studio background"
+      },
+      {
+        "id": 2,
+        "narration": "이번 주 터진 얘기가 이거예요. 일본계 투자사가 JYP 지분을 이십오에서 오십 퍼센트까지 인수 추진한다는 설이 나왔어요.",
+        "on_screen_text": "지분 인수설",
+        "image_prompt": "A cartoon fox in a business suit holding a giant slice of pie toward a glowing music-themed building, whispering mysteriously, city night background"
+      },
+      {
+        "id": 3,
+        "narration": "그러자 주가가 확 올랐죠. 다들 이게 뭔 일이냐며 난리가 났어요.",
+        "on_screen_text": "다들 난리",
+        "image_prompt": "A crowd of excited cartoon rabbits looking at a big floating screen with a rising arrow, jumping and cheering, confetti in the air"
+      },
+      {
+        "id": 4,
+        "narration": "근데 JYP가 바로 공식 입장을 냈어요. 제안 받은 바 없다고요.",
+        "on_screen_text": "받은 적 없음",
+        "image_prompt": "A calm cartoon penguin at a podium shaking its head with a flipper raised in a stop gesture, soft spotlight, press room background"
+      },
+      {
+        "id": 5,
+        "narration": "한쪽은 추진한다, 한쪽은 받은 적 없다. 고백했다는 사람은 있는데 받은 사람이 없는 상황이에요.",
+        "on_screen_text": "고백은 누가?",
+        "image_prompt": "A cartoon bear holding a heart-shaped envelope on one side and a confused cartoon deer looking away on the other side, empty space between them, pastel background"
+      },
+      {
+        "id": 6,
+        "narration": "물론 어디까지나 설이에요. 지금 확실한 건 회사가 부인했다는 것뿐이고요.",
+        "on_screen_text": "어디까지나 설",
+        "image_prompt": "A cartoon owl detective with a magnifying glass inspecting a mysterious sealed envelope with a question mark floating above, foggy blue background"
+      },
+      {
+        "id": 7,
+        "narration": "주가는 이미 출렁였는데, 연기 난 굴뚝일까요, 그냥 헛소문일까요? 댓글로 편 갈라봅시다.",
+        "on_screen_text": "굴뚝? 헛소문?",
+        "image_prompt": "A cartoon chimney puffing a question-mark-shaped cloud of smoke on a rooftop, a small cat on one side and a small dog on the other side looking up and arguing, sunset sky"
+      }
+    ],
+    "description": "일본계 투자사의 JYP 지분 인수 추진설에 주가가 들썩였지만 JYP는 제안 받은 바 없다고 밝혔어요. 확인되지 않은 설이니 참고만 하세요. 투자 권유가 아닙니다.\n#JYP #JYP엔터테인먼트 #인수설",
+    "tags": [
+      "JYP",
+      "JYP엔터테인먼트",
+      "JYP 인수설",
+      "JYP 주가",
+      "지분 인수",
+      "엔터주",
+      "쇼츠",
+      "오늘의 이슈"
+    ],
+    "comment_question": "JYP 인수설, 연기 난 굴뚝이다 vs 그냥 헛소문이다. 여러분은 어느 쪽인가요?"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 7
+    }
+  },
+  "effects": {
+    "duration": 47.95,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Ghost Story",
+    "bgm_mood": "suspense",
+    "bgm_credit": "Music: \"Ghost Story\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "주가는 치솟았는데, 정작 회사는 그런 적 없대요.",
+      "on_screen_text": "그런 적 없대",
+      "image": "runs/2026-10-26/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "이번 주 터진 얘기가 이거예요. 일본계 투자사가 JYP 지분을 이십오에서 오십 퍼센트까지 인수 추진한다는 설이 나왔어요.",
+      "on_screen_text": "지분 인수설",
+      "image": "runs/2026-10-26/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "그러자 주가가 확 올랐죠. 다들 이게 뭔 일이냐며 난리가 났어요.",
+      "on_screen_text": "다들 난리",
+      "image": "runs/2026-10-26/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "근데 JYP가 바로 공식 입장을 냈어요. 제안 받은 바 없다고요.",
+      "on_screen_text": "받은 적 없음",
+      "image": "runs/2026-10-26/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "한쪽은 추진한다, 한쪽은 받은 적 없다. 고백했다는 사람은 있는데 받은 사람이 없는 상황이에요.",
+      "on_screen_text": "고백은 누가?",
+      "image": "runs/2026-10-26/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "물론 어디까지나 설이에요. 지금 확실한 건 회사가 부인했다는 것뿐이고요.",
+      "on_screen_text": "어디까지나 설",
+      "image": "runs/2026-10-26/scene_06.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 7,
+      "narration": "주가는 이미 출렁였는데, 연기 난 굴뚝일까요, 그냥 헛소문일까요? 댓글로 편 갈라봅시다.",
+      "on_screen_text": "굴뚝? 헛소문?",
+      "image": "runs/2026-10-26/scene_07.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-10-26/thumbnail.jpg",
+  "video_file": "videos/2026-10-26.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "YT_* 시크릿 없음"
+  },
+  "finished_at": "2026-10-26T23:39:25+09:00"
+}

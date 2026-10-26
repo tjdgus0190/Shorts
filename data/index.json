@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-10-26",
+    "status": "success",
+    "title": "JYP 인수설에 주가 들썩, 회사는 그런 적 없대요",
+    "overall": 75,
+    "qa_attempts": 1,
+    "thumbnail": "runs/2026-10-26/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 47.95
+  },
+  {
     "date": "2026-10-25",
     "status": "qa_failed",
     "title": "전업주부 엄마, 연금 문이 열린대요?",
