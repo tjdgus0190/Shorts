@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-10-27",
+    "status": "qa_failed",
+    "title": "송가인이 취객에게 던진 사투리 한마디",
+    "overall": 65,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-10-27/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 40.98
+  },
+  {
     "date": "2026-10-26",
     "status": "success",
     "title": "JYP 인수설에 주가 들썩, 회사는 그런 적 없대요",

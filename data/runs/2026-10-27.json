@@ -1,0 +1,448 @@
+{
+  "date": "2026-10-27",
+  "status": "qa_failed",
+  "started_at": "2026-10-27T22:40:53+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-10-27T22:40:53+09:00",
+      "note": "",
+      "seconds": 21.3
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-27T22:41:15+09:00",
+      "note": "",
+      "seconds": 19.1
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-27T22:41:34+09:00",
+      "note": "",
+      "seconds": 28.9
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-27T22:42:03+09:00",
+      "note": "",
+      "seconds": 38.0
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-27T22:42:41+09:00",
+      "note": "1차",
+      "seconds": 22.9
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-27T22:43:04+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 24.9
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-27T22:43:29+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 25.6
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-27T22:43:54+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 35.3
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-27T22:44:30+09:00",
+      "note": "2차",
+      "seconds": 19.6
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-27T22:44:49+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 47.1
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-27T22:45:36+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 27.8
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-27T22:46:04+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 33.9
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-27T22:46:38+09:00",
+      "note": "3차",
+      "seconds": 21.5
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 45,
+        "hook": 55,
+        "clarity": 70,
+        "visual": 68,
+        "subtitle": 78,
+        "safety": 65
+      },
+      "overall": 60,
+      "pass": false,
+      "issues": [
+        "훅이 약함: 첫 문장이 맥락 없는 인용(공연 중에 갑자기 아버님…)으로 시작하고, 누가 한 말인지 첫 3초에 드러나지 않음. 이어지는 '검색량을 터뜨렸습니다'도 근거 없는 과장 문구임. 화면은 귀여운 고양이가 마이크를 든 정적인 장면이라 스크롤을 멈출 요소가 부족함.",
+        "재미 부족: 장면 2~5가 '난동이 있었다, 일침을 놨다, 사투리라 정겹다'를 설명하는 데 그침. 반전·드립 없이 뉴스 요약 톤임. 씬 5의 '여기서 반전'도 실제 반전 없이 '구수해서 반박이 안 돼요' 정도라 약속한 반전이 나오지 않음.",
+        "실존 인물 관련 사실 확인 필요: 송가인 공연 중 취객 난동과 발언이 실제인지 출처가 없음. 씬 4의 '철창에 묶어버리기 전에'는 인용 대사('묶어불기 전에')를 부풀린 것으로 보이고 협박 뉘앙스가 더해졌음. 실존 인물에게 협박 발언을 덧씌우는 것이므로 명예훼손 소지 확인 필요.",
+        "길이 불일치: 실제 영상은 약 47초인데 description에는 '30초 만에 풀어드립니다'라고 적혀 있음.",
+        "시각: 씬 4(사투리 위력) 프레임에서 말풍선이 비어 있고 프롬프트의 철창도 보이지 않아 장면과 내용이 어긋남. 고양이 가수 디자인이 씬마다 달라(회색 줄무늬, 흰색 고양이, 오렌지 얼룩) 캐릭터 일관성이 없음. 마지막 프레임의 고양이는 눈이 어색하게 흰자로 그려져 있음.",
+        "자막: 가독성은 좋지만 하단 자막이 캐릭터 발·몸통과 겹침. 상단 on_screen_text 박스와 하단 자막이 따로 놀아 다소 산만함."
+      ],
+      "retry_target": "planner",
+      "feedback": "1) 훅을 다시 쓰세요. 첫 문장에 '송가인'과 갈등을 바로 넣고, 사투리 대사를 펀치라인처럼 먼저 던지세요. 예: '송가인이 취객에게 \"아버님, 묶어불기 전에 가만히 계세요\"라고 했습니다.' '검색량을 터뜨렸다' 같은 근거 없는 말은 빼세요. 2) 설명 위주 구성을 버리고 웃음 포인트를 만드세요. 사투리 대사와 정반대로 얌전해지는 객석 반응처럼 대비·반전을 넣고, 씬 5의 '여기서 반전'은 실제 반전이 있을 때만 쓰세요. 3) 사실 관계는 확인된 내용만 쓰세요. 공연 중 발언이 실제 보도된 것인지 확인하고, 확인되지 않은 '철창' 표현은 삭제하거나 '확인 필요'로 처리하세요. 실존 인물을 협박하는 사람처럼 그리지 말고 재치 있게 상황을 정리한 말로 표현하세요. 4) description의 '30초'를 실제 길이에 맞게 고치거나, 대본을 줄여 35초 안팎으로 맞추세요. 5) 제작 쪽에는 고양이 가수의 외형을 하나로 고정하고, 말풍선에는 글자를 넣거나 빼서 빈 말풍선이 남지 않게 하라고 전달하세요."
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 62,
+        "hook": 65,
+        "clarity": 75,
+        "visual": 78,
+        "subtitle": 72,
+        "safety": 70
+      },
+      "overall": 68,
+      "pass": false,
+      "issues": [
+        "안전: 송가인이 실제 공연에서 취객에게 '묶어불기 전에 가만히'라고 했다는 일화는 출처가 없어 사실인지 확인 필요. 실존 인물 발언을 단정하는 형태라 출처 확인이나 표현 완화가 필요함.",
+        "훅: 첫 프레임은 고양이 가수 한 장면에 '묶어불기 전에'만 떠 있어 사투리 문장의 웃음 포인트가 첫 3초에 바로 전달되지 않음. 상황 설명(송가인이 공연 중…)이 먼저 나오고 펀치라인이 뒤로 밀림.",
+        "재미: 반전이나 드립이 '사투리는 반칙', '이모 모드' 정도에 그침. 마지막 질문(가수 vs 스태프)은 앞 내용과 결이 달라 맥이 빠짐.",
+        "시각: 2번 장면의 곰이 '난동'이라기보다 손을 흔드는 모습이라 내용과 약간 어긋남. 6번 장면 강아지 헬멧·배지에 깨진 글자(USTT 등)가 있음. 4번 장면 고양이는 앞 장면과 얼굴 비율이 달라 캐릭터 일관성이 약함.",
+        "자막: 하단 자막이 인물의 몸통과 소품 위에 겹침. 6번 장면 '가는 곳이죠 이럴'은 문장 중간에서 끊겨 읽기 어색함. 상단 검은 박스 제목과 하단 자막이 동시에 떠서 화면이 다소 복잡함."
+      ],
+      "retry_target": null,
+      "feedback": "합격이지만 개선 여지가 있음. (1) 첫 문장을 '묶어불기 전에 가만히'라는 대사 자체로 시작해 펀치라인을 먼저 던지고, 상황 설명은 그 뒤에 붙일 것. (2) 실제 발언이라면 출처를 확인하거나 '~했다고 알려졌다'로 표현을 완화할 것. (3) 결말은 선택 질문 대신 '사투리 한마디에 객석이 정리됐다'는 식의 반전 드립으로 마무리하면 재미가 오를 것. (4) 자막은 의미 단위로 끊고 하단 위치를 약간 아래로 내려 캐릭터를 덜 가리게 할 것. (5) 로고·글자가 들어가는 소품은 프롬프트에서 'no text, no logo'를 지정해 깨진 글자를 막을 것."
+    },
+    {
+      "attempt": 3,
+      "scores": {
+        "fun": 55,
+        "hook": 62,
+        "clarity": 76,
+        "visual": 72,
+        "subtitle": 72,
+        "safety": 68
+      },
+      "overall": 65,
+      "pass": false,
+      "issues": [
+        "fun: 사건을 전하는 데서 끝나고 반전이 없습니다. 3~5번 장면은 '구수하다', '이모 같다', '객석이 정리됐다'가 같은 말의 반복입니다. 마지막 '사투리는 반칙'도 펀치라인으로는 약합니다.",
+        "hook: 인용문 '묶어불기 전에 가만히 있어'는 쓸 만합니다. 하지만 바로 뒤에 '~라고 알려졌습니다'가 붙어 긴장이 풀립니다. 사투리가 낯선 시청자는 뜻을 몰라 궁금해하기 전에 이탈할 수 있습니다.",
+        "safety: 실존 인물(송가인)의 공연 중 발언을 '알려졌습니다'로만 전하고 출처가 없습니다. 사건 자체는 확인 필요입니다. 취객이 '아버님'이라는 점도 근거가 없고, 객석 난동을 곰으로 표현한 것은 조롱으로 읽힐 소지가 있습니다.",
+        "visual(f0): 흰 고양이 뒤로 팔처럼 보이는 꼬리가 올라와 있어 팔이 3개인 것처럼 보입니다. 마이크를 쥔 손도 다소 어색합니다.",
+        "visual(f1~f3): 장면 간 캐릭터 디자인이 일관되지 않습니다. 가수 고양이의 눈 색, 드레스, 얼굴형이 장면마다 다르고, 이모 장면(f2)은 다른 고양이처럼 보입니다. 클로즈업이 필요한 장면 외에는 위아래 블러 여백이 큽니다.",
+        "subtitle: 상단 검은 박스(on_screen_text)와 하단 노란색 강조 자막이 동시에 나와 정보가 중복되고 화면이 산만합니다. 하단 자막이 인물 하체와 소품 위에 걸칩니다. 쇼츠 UI 하단 영역과 겹칠 위험도 있습니다.",
+        "visual(f3): 마이크 경호원 캐릭터는 의도대로 나왔지만, 대본의 '마이크는 하나였는데'와 연결이 약합니다. 노란 조끼의 눈사람 같은 캐릭터가 마이크로 읽히지 않습니다."
+      ],
+      "retry_target": "planner",
+      "feedback": "대본을 재작업해 주세요. 1) 훅: '묶어불기 전에'가 무슨 뜻인지 첫 문장에서 바로 알 수 있게 하세요. 예: '전라도 사투리로 \"묶어불기 전에\"는 \"묶어버리기 전에\"라는 뜻인데, 이 말을 공연장에서 들으면?' 2) 재미: 말투와 내용이 어긋나는 한 가지를 중심으로 짜고, 3~5번 장면의 반복을 줄이세요. 마지막에는 반전이나 반복 드립 같은 펀치라인을 하나 넣으세요. 3) 안전: 사건은 '~라고 알려졌습니다' 같은 전언 표현을 유지하고 출처와 날짜를 확인하세요. 확인되지 않은 세부(아버님 호칭, 취객 묘사)는 빼거나 약화하세요. 취객은 특정인을 연상시키지 않게 중립적으로 표현하세요. 4) 연출 참고: 가수 고양이의 외형 묘사(드레스 색, 눈 색)를 모든 프롬프트에 똑같이 넣고, 'extra arms' 같은 해부 오류는 negative로 막으세요. on_screen_text와 하단 자막이 겹치지 않게 역할을 나누세요."
+    }
+  ],
+  "marketer": {
+    "summary": "대전이 홈에서 고베에 0-1로 졌고, 송가인은 공연 중 객석 난동에 직접 일침을 놨다. 7호선 포천 연장 운영 논란도 함께 올라왔다.",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "대전 하나 시티즌 대 비셀 고베 순위",
+        "traffic": "5000+",
+        "traffic_num": 5000,
+        "news": [
+          "[AFC축구 전적] 고베 1-0 대전",
+          "[ACLE] '결정력 부족' 대전, 홈에서 고베에 0-1 패배",
+          "'일본 킬러' 황선홍 감독, 'K리그 킬러' 고베까지 잡을 수 있을까"
+        ],
+        "topic": "홈에서 고베에 0-1, 결정력 부족으로 무너진 대전 ACLE 30초 정리",
+        "why_now": "'[AFC축구 전적] 고베 1-0 대전', '[ACLE] 결정력 부족 대전, 홈에서 고베에 0-1 패배' 기사가 나왔고, 황선홍 감독이 일본 킬러라는 수식어로 주목받음",
+        "angle": "'일본 킬러 vs K리그 킬러' 대결 구도로 경기를 요약하고, 슈팅은 많았는데 골은 0개였다는 아쉬움을 상황극 드립으로 푸는 30초 정리. 순위표 변화는 확인된 수치만 자막으로 넣는다.",
+        "target": "K리그·ACL 팬, 20~40대 축구 팬",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": "특정 선수 비난은 피하고 경기 결과와 흐름 중심으로 다룬다. 슈팅 수 같은 구체 수치는 기사 확인 후 사용."
+      },
+      {
+        "rank": 2,
+        "keyword": "송가인",
+        "traffic": "5000+",
+        "traffic_num": 5000,
+        "news": [
+          "“묶어불기 전에 가만히 있어”…송가인, 공연 방해 관객에 호통",
+          "송가인, 공연 중 취객 난동에 \"아버님, 묶어불기 전에 가만히\"",
+          "송가인 \"철창에 묶어버리기 전에\" 관객에 일침, 무슨 일? - 머니투데이"
+        ],
+        "topic": "송가인 공연 중 \"묶어불기 전에 가만히 있어\" 일침, 그 현장 상황",
+        "why_now": "'송가인, 공연 방해 관객에 호통', '아버님, 묶어불기 전에 가만히' 등 기사가 연이어 나옴",
+        "angle": "사투리 한 마디가 왜 화제인지 '이게 왜 난리냐면' 형식으로 정리하고, 공연장 매너 이슈로 확장한다. 자막 드립은 관객 상황 위주로 하고 송가인의 대처는 사이다 포인트로 소개한다.",
+        "target": "트로트 팬, 부모 세대와 자녀 세대, 밈·화제성 소비층",
+        "fun_score": 8,
+        "risk": "medium",
+        "risk_note": "난동 관객은 실존 인물이므로 조롱하지 않는다. 기사에 없는 상황은 지어내지 않는다."
+      },
+      {
+        "rank": 3,
+        "keyword": "파주시",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "구례군, 2년 연속 대한민국 SNS대상 최우수상",
+          "충북도의회, SNS 대상서 비영리 부문 최우수상 수상",
+          "[패트롤]경상북도개발공사-남부지방산림청"
+        ],
+        "topic": "지자체 SNS 대상 수상 소식으로 보는 공공기관 SNS 전성시대",
+        "why_now": "구례군, 충북도의회가 SNS 대상 최우수상을 받았다는 기사가 나왔으나 파주시와의 직접 연관은 제공된 제목만으로는 확인되지 않음",
+        "angle": "파주시 이슈는 제목에서 확인되지 않아 단정하지 않는다. '지자체 SNS가 왜 이렇게 웃기냐'를 주제로 수상 사례를 소개하는 가벼운 형식이 가능하나 이슈 연결이 약하다.",
+        "target": "지역 주민, 공공 홍보 관심층",
+        "fun_score": 3,
+        "risk": "low",
+        "risk_note": "검색 이유가 불명확하므로 추가 확인 전 제작을 권하지 않는다."
+      },
+      {
+        "rank": 4,
+        "keyword": "afc 챔스",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [],
+        "topic": "AFC 챔피언스리그 엘리트 K리그 팀 결과 한눈에 보기",
+        "why_now": "뉴스 제목은 없지만 같은 날 대전이 ACLE에서 고베에 0-1로 졌다는 기사가 있어 관련 검색으로 추정됨",
+        "angle": "대전 경기를 중심으로 'AFC 챔스 오늘 결과 30초 요약' 형식으로 만들고, 다른 팀 결과는 확인 후 추가한다.",
+        "target": "아시아 축구 팬",
+        "fun_score": 4,
+        "risk": "low",
+        "risk_note": "뉴스 근거가 없어 대전 경기 외 내용은 사실 확인 필요."
+      },
+      {
+        "rank": 5,
+        "keyword": "파워리프팅",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "63-year-old Sask. powerlifter achieves world championship gold in Poland",
+          "Cormier takes international gold in World Powerlifting and Bench Press Championships",
+          "Beyond the viral 140kg lift, Keyaa Banerji has bigger goals in powerlifting"
+        ],
+        "topic": "63세 파워리프터의 세계선수권 금메달과 140kg 영상이 화제가 된 Keyaa Banerji",
+        "why_now": "'63-year-old Sask. powerlifter achieves world championship gold in Poland', 'Beyond the viral 140kg lift, Keyaa Banerji...' 등 해외 기사가 나옴",
+        "angle": "'63세에 세계 1등' 반전과 '140kg 바이럴 영상'을 숫자로 보는 충격 비교 형식으로 구성한다. 한국 시청자가 자기 나이와 비교하게 하는 자막을 넣는다.",
+        "target": "헬스·운동 입문자, 30~50대, 자기계발 관심층",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": "해외 기사 제목만 근거이므로 체급·기록 등 세부 수치는 원문 확인 후 사용."
+      },
+      {
+        "rank": 6,
+        "keyword": "서울 지하철 7호선",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "지하철 7호선, 의정부·양주를 지나 포천까지! 도봉산-옥정 연장선",
+          "서울교통공사 거부에…7호선 연장 '도봉산옥정선' 민간 위탁 운영 가닥",
+          "[서울시 팩트브리핑] 대폐차 대상 전동차 8대의 임대차 가능 여부 등 구체적인 내용은 실무협의 중으로 결정된 바 없습니다"
+        ],
+        "topic": "7호선이 포천까지? 도봉산옥정선 연장과 민간 위탁 운영 논란",
+        "why_now": "'도봉산-옥정 연장선', '서울교통공사 거부에 민간 위탁 운영 가닥', '서울시 팩트브리핑' 기사가 나옴",
+        "angle": "'7호선이 서울을 벗어나 포천까지 간다면' 노선 상상 + '왜 서울교통공사가 거부했나'를 3줄로 정리한다. 지도 애니메이션과 출퇴근 드립을 활용하며, 서울시가 결정된 바 없다고 밝힌 부분은 명확히 표기한다.",
+        "target": "경기 북부 통근자, 수도권 대중교통 이용자",
+        "fun_score": 6,
+        "risk": "medium",
+        "risk_note": "정책 갈등 이슈이므로 한쪽 편을 들지 말고, 확정되지 않은 내용은 확정처럼 말하지 않는다."
+      },
+      {
+        "rank": 7,
+        "keyword": "강지영",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "강지영, 파격 등 노출에 볼륨감까지…팬심 설레게 하는 섹시 미모",
+          "강지영, 일본 휘어잡은 비주얼",
+          "강지영, 가슴·등 라인 드러낸 블랙 홀터넥…도쿄국제영화제 레드카펫 압도한 드레스 자태"
+        ],
+        "topic": "강지영 도쿄국제영화제 레드카펫 드레스 화제",
+        "why_now": "'도쿄국제영화제 레드카펫 압도한 드레스 자태', '일본 휘어잡은 비주얼' 기사가 나옴",
+        "angle": "레드카펫 패션 하이라이트와 일본 반응을 중심으로 한 짧은 화보형 요약이다. 신체 노출 묘사 대신 드레스 스타일, 행사 소식, 활동 근황으로 접근한다.",
+        "target": "연예·패션 관심층, 카라 팬",
+        "fun_score": 5,
+        "risk": "high",
+        "risk_note": "기사 제목이 신체 노출 중심 표현이라 선정적으로 흐르기 쉽다. 외모 평가나 성적 대상화는 피하고, 행사·패션 중심으로만 다룬다."
+      }
+    ],
+    "trend_count": 10,
+    "excluded": [
+      {
+        "keyword": "이재명",
+        "blocked_by": "대통령"
+      },
+      {
+        "keyword": "잇섭",
+        "blocked_by": "재판"
+      },
+      {
+        "keyword": "플레이오프",
+        "blocked_by": "전쟁"
+      }
+    ]
+  },
+  "selected_attempt": 2,
+  "plan": {
+    "chosen_rank": 2,
+    "reason": "1위 대전 경기와 2위 송가인은 검색량이 5000+로 동률이고, 재미 점수는 송가인 8, 대전 6이라 송가인을 골랐다. QA 피드백을 반영해 다음과 같이 고쳤다. 훅 첫 문장에 송가인과 사투리 대사를 바로 넣었다. 근거 없는 검색량 언급은 뺐다. 보도 제목으로 확인되지 않은 철창 표현은 삭제했고, 대사는 제목에 나온 '아버님, 묶어불기 전에 가만히'까지만 썼다. 객석이 얌전해졌다는 내용은 보도로 확인되지 않아 사실로 단정하지 않고, 구수한 억양과 호통의 대비를 드립으로 처리했다. 실제 반전이 없으므로 '여기서 반전' 자막은 쓰지 않았다. 내레이션은 약 230자로 35초 안팎이고 계산은 없다. 제작 전달사항: 고양이 가수는 모든 장면에서 흰 고양이, 분홍 반짝이 드레스, 빨간 마이크로 외형을 고정하고, 말풍선은 쓰지 말고 빈 말풍선이 남지 않게 한다. 난동 관객은 곰 캐릭터로 표현하되 조롱하지 않는다.",
+    "title": "송가인이 취객에게 던진 사투리 한마디",
+    "hook": "송가인이 공연 중 취객에게 이렇게 말했습니다. 아버님, 묶어불기 전에 가만히.",
+    "bgm_mood": "funny",
+    "style": "vibrant 3D cartoon, soft stage lighting, cute characters, high detail, bright colors",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "송가인이 공연 중 취객에게 이렇게 말했습니다. 아버님, 묶어불기 전에 가만히.",
+        "on_screen_text": "묶어불기 전에",
+        "image_prompt": "a white cartoon cat singer in a pink sparkly dress holding a red microphone, pointing one paw toward the audience with a stern but cute expression, glowing stage spotlight, vibrant 3D cartoon, soft stage lighting, cute characters, high detail, bright colors"
+      },
+      {
+        "id": 2,
+        "narration": "무대에서 노래하는데 객석에서 난동이 벌어진 거예요. 공연을 방해한 관객에게 호통이 나왔습니다.",
+        "on_screen_text": "공연 방해 등장",
+        "image_prompt": "a cartoon brown bear in a theater seat waving its arms around while other cartoon animals in the audience look shocked, a white cat singer in a pink sparkly dress on the stage in the background, vibrant 3D cartoon, soft stage lighting, cute characters, high detail, bright colors"
+      },
+      {
+        "id": 3,
+        "narration": "근데 이 호통이 좀 이상해요. 화는 났는데 억양이 너무 구수합니다.",
+        "on_screen_text": "화났는데 구수함",
+        "image_prompt": "a white cartoon cat singer in a pink sparkly dress holding a red microphone, angry eyebrows but a warm smile, steam puffing from its ears, vibrant 3D cartoon, soft stage lighting, cute characters, high detail, bright colors"
+      },
+      {
+        "id": 4,
+        "narration": "묶어불기 전에. 무섭다기보다 이모가 밥상 앞에서 하는 말 같지 않나요?",
+        "on_screen_text": "이모 모드 ON",
+        "image_prompt": "a white cartoon cat in a pink apron holding a wooden ladle at a cozy dinner table with steaming bowls of rice, warm kitchen lighting, vibrant 3D cartoon, soft stage lighting, cute characters, high detail, bright colors"
+      },
+      {
+        "id": 5,
+        "narration": "아버님도 이 한마디면 일단 앉으셔야죠. 사투리는 반칙입니다.",
+        "on_screen_text": "사투리는 반칙",
+        "image_prompt": "a cartoon brown bear sitting up straight in a theater seat with hands on its knees, wide eyes and a sweat drop, a white cat singer in a pink sparkly dress smiling on the stage behind, vibrant 3D cartoon, soft stage lighting, cute characters, high detail, bright colors"
+      },
+      {
+        "id": 6,
+        "narration": "공연은 노래 들으러 가는 곳이죠. 이럴 때 가수가 직접 말하는 게 맞을까요, 스태프가 정리하는 게 맞을까요?",
+        "on_screen_text": "당신의 선택은?",
+        "image_prompt": "a split scene, on the left a white cartoon cat singer in a pink sparkly dress holding a red microphone, on the right a cute cartoon security guard dog in a yellow vest, both looking at the viewer, vibrant 3D cartoon, soft stage lighting, cute characters, high detail, bright colors"
+      }
+    ],
+    "description": "송가인이 공연 중 취객 난동에 아버님, 묶어불기 전에 가만히 라고 한 현장 이야기. 화는 났는데 억양은 구수한 이 한마디, 여러분은 어떻게 보세요? #송가인 #공연매너 #쇼츠",
+    "tags": [
+      "송가인",
+      "송가인 공연",
+      "묶어불기 전에",
+      "공연 매너",
+      "트로트",
+      "사투리",
+      "사이다",
+      "쇼츠"
+    ],
+    "comment_question": "공연 중 난동 관객, 가수가 직접 한마디 하는 게 맞다 vs 스태프가 조용히 정리하는 게 맞다. 여러분은 어느 쪽인가요?"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 6
+    }
+  },
+  "effects": {
+    "duration": 40.98,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Hep Cats",
+    "bgm_mood": "funny",
+    "bgm_credit": "Music: \"Hep Cats\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "송가인이 공연 중 취객에게 이렇게 말했습니다. 아버님, 묶어불기 전에 가만히.",
+      "on_screen_text": "묶어불기 전에",
+      "image": "runs/2026-10-27/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "무대에서 노래하는데 객석에서 난동이 벌어진 거예요. 공연을 방해한 관객에게 호통이 나왔습니다.",
+      "on_screen_text": "공연 방해 등장",
+      "image": "runs/2026-10-27/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "근데 이 호통이 좀 이상해요. 화는 났는데 억양이 너무 구수합니다.",
+      "on_screen_text": "화났는데 구수함",
+      "image": "runs/2026-10-27/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "묶어불기 전에. 무섭다기보다 이모가 밥상 앞에서 하는 말 같지 않나요?",
+      "on_screen_text": "이모 모드 ON",
+      "image": "runs/2026-10-27/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "아버님도 이 한마디면 일단 앉으셔야죠. 사투리는 반칙입니다.",
+      "on_screen_text": "사투리는 반칙",
+      "image": "runs/2026-10-27/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "공연은 노래 들으러 가는 곳이죠. 이럴 때 가수가 직접 말하는 게 맞을까요, 스태프가 정리하는 게 맞을까요?",
+      "on_screen_text": "당신의 선택은?",
+      "image": "runs/2026-10-27/scene_06.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-10-27/thumbnail.jpg",
+  "video_file": "videos/2026-10-27.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "QA 불합격"
+  },
+  "finished_at": "2026-10-27T22:47:00+09:00"
+}
