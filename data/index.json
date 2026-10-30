@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-10-30",
+    "status": "qa_failed",
+    "title": "9언더 실화? 제주에서 순위표가 난리 난 이유",
+    "overall": 62,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-10-30/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 48.96
+  },
+  {
     "date": "2026-10-29",
     "status": "failed",
     "title": null,

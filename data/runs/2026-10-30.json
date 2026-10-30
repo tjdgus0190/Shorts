@@ -1,0 +1,508 @@
+{
+  "date": "2026-10-30",
+  "status": "qa_failed",
+  "started_at": "2026-10-30T23:40:01+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-10-30T23:40:01+09:00",
+      "note": "",
+      "seconds": 49.8
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-30T23:40:50+09:00",
+      "note": "",
+      "seconds": 24.7
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-30T23:41:15+09:00",
+      "note": "",
+      "seconds": 33.2
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-30T23:41:48+09:00",
+      "note": "",
+      "seconds": 45.5
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-30T23:42:34+09:00",
+      "note": "1차",
+      "seconds": 20.5
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-30T23:42:54+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 22.1
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-30T23:43:17+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 37.8
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-30T23:43:54+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 44.2
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-30T23:44:39+09:00",
+      "note": "2차",
+      "seconds": 23.0
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-10-30T23:45:02+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 29.7
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-10-30T23:45:31+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 32.3
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-10-30T23:46:04+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 41.8
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-10-30T23:46:45+09:00",
+      "note": "3차",
+      "seconds": 22.7
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 55,
+        "hook": 62,
+        "clarity": 78,
+        "visual": 78,
+        "subtitle": 72,
+        "safety": 85
+      },
+      "overall": 68,
+      "pass": false,
+      "issues": [
+        "훅이 '골프 안 치는 사람은 몰라요'라는 설명형이다. 9언더가 왜 대단한지 첫 3초 안에 숫자나 비유로 보여주지 않아 스크롤을 멈추게 하는 힘이 약하다.",
+        "대본이 전체적으로 경기 결과를 나열하는 뉴스 요약 톤이다. 반전과 드립이 거의 없고, 장면 5의 '롤러코스터'가 유일한 비유다. 49초 분량에 비해 정보량이 적다.",
+        "9언더가 왜 대단한지 끝까지 설명하지 않는다. 훅에서 던진 약속을 회수하지 못해 시청자가 얻는 것이 없다.",
+        "이예원 선수 9언더 단독 선두, 문정민 선수 6언더 5위, 제주 KLPGA 에쓰오일 대회 2라운드라는 내용은 영상 안에서 검증할 수 없다. 확인 필요. 실명 선수의 기록이므로 업로드 전에 공식 리더보드와 대조할 것.",
+        "프레임 4(85% 지점)의 자막 '날 드라마 각이죠'는 앞부분 '마지막'이 잘려 보인다. 자막 분할이나 줄바꿈이 어색한 것으로 보이며 확인 필요.",
+        "프레임 1, 4에서 중앙 자막이 캐릭터 몸통과 소품(공, 트로피) 위에 겹친다. 상단 검은 박스의 on_screen_text와 하단 자막이 따로 있어 화면이 다소 복잡하다.",
+        "장면 2~3의 토끼와 장면 4의 캥거루가 선수를 상징하지만 이름과 연결되는 장치가 없다. 장면 1의 고양이까지 합쳐 캐릭터가 3종이라 누가 누구인지 헷갈릴 수 있다.",
+        "장면 3의 토끼는 골프 장비 없이 달리기만 해서 골프 대회라는 맥락이 약하다. 프레임 3의 캥거루는 사다리 위를 뛰는 그림이라 '순위 상승'은 전달되지만 골프 요소가 부족하다. 이미지 깨짐이나 글자 깨짐은 없다."
+      ],
+      "retry_target": null,
+      "feedback": "합격이다. 개선 팁은 다음과 같다. (1) 훅을 숫자 비유로 바꾼다. 예: '한 라운드에 버디를 9개 넘게 잡았다는 뜻이에요' 또는 '골프에서 이 점수는 만점에 가까워요'. (2) 장면 4~5에 반전 드립을 하나 넣는다. 예: '어제 14위였던 사람이 오늘 5위'처럼 구체적 순위 변동을 보여준다. 순위는 확인 후 사용한다. (3) 선수 이름을 캐릭터 옆 라벨로 붙여 누가 누구인지 분명히 한다. (4) 중앙 자막 위치를 아래로 내리거나 한 줄 글자 수를 줄여 잘림과 캐릭터 가림을 막는다. (5) 업로드 전에 선수 이름과 스코어를 공식 기록과 대조한다."
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 42,
+        "hook": 50,
+        "clarity": 80,
+        "visual": 62,
+        "subtitle": 75,
+        "safety": 85
+      },
+      "overall": 60,
+      "pass": false,
+      "issues": [
+        "훅이 교과서 톤입니다. '골프에서 9언더는 ~라는 뜻이에요'라는 용어 설명으로 시작하고, 3초 안에 스크롤을 멈출 궁금증이나 반전이 없습니다.",
+        "전체 구성이 '선두 → 5위 → 3타 차 → 누가 이길까' 순서의 경기 결과 요약뿐입니다. 드립이나 반전, 리듬이 없어 50초를 끝까지 볼 이유가 약합니다.",
+        "숫자 검산: 9언더와 6언더의 차이는 9-6=3타이므로 '딱 3타 차'는 맞습니다. 단위 오류도 없습니다.",
+        "2라운드 단독 선두 이예원, 5위 문정민, 대회명 '에쓰오일'과 제주 개최 여부는 실제 경기 기록과 대조가 필요합니다. 확인 필요.",
+        "씬 4의 이미지(f2)에는 골프장이 없습니다. 흰 배경에 사다리와 캥거루만 있어 '5위로 껑충'이라는 내용이 전달되지 않습니다. 골프채가 허공에 떠 있는 어색한 모습도 있습니다.",
+        "씬 3의 토끼 이미지(f1)는 골프 요소가 없어 달리기 경주처럼 보입니다. 발이 판자처럼 어색하게 그려졌고, 뒤쪽 동물 무리는 형태가 뭉개졌습니다.",
+        "이미지가 중앙 띠에 레터박스로 들어가고 위아래는 흐린 배경으로 채워져 있어 화면이 비어 보입니다. 상단 검은 박스 자막은 투박합니다.",
+        "하단 자막이 인물과 트로피를 일부 가립니다(f3). 자막은 읽기에 무리가 없습니다.",
+        "동물 캐릭터와 실존 선수 이름이 연결되는 부분이 없어 시청자가 누가 누구인지 헷갈릴 수 있습니다."
+      ],
+      "retry_target": "planner",
+      "feedback": "첫 문장을 용어 설명에서 결과나 질문으로 바꾸세요. 예: '골프에서 9타를 덜 쳤다는데, 이게 단독 선두인데도 끝난 게 아니래요' 처럼 반전이 먼저 나오게 합니다. 3타 차 역전 가능성을 중심에 두고 '1등이 쫓기는 이유' 같은 긴장 구도를 만드세요. 씬마다 짧은 드립이나 비유를 하나씩 넣으세요(예: 토끼와 거북이 구도). 설명 문장은 줄이고 50초를 35~40초로 압축하세요. 대회명·선수 기록·순위는 출처 기준으로 다시 확인하세요. image_prompt에는 골프장, 골프채, 홀 같은 골프 요소를 명시하고 배경이 흰색으로 비지 않게 쓰세요. 하단 자막은 인물을 가리지 않도록 이미지 구도를 위쪽에 두고, 상단 라벨은 박스 없이 외곽선 글자로 바꾸는 것도 고려하세요."
+    },
+    {
+      "attempt": 3,
+      "scores": {
+        "fun": 45,
+        "hook": 55,
+        "clarity": 75,
+        "visual": 65,
+        "subtitle": 78,
+        "safety": 85
+      },
+      "overall": 62,
+      "pass": false,
+      "issues": [
+        "훅이 약함: '9타를 덜 쳤는데'라는 풀어쓴 표현이 어색하고, 2라운드 선두가 아직 안 끝난 건 당연한 얘기라 궁금증이 생기지 않음. 제목의 '안 끝났다는 이유'도 답이 뻔함.",
+        "재미 부족: 반전이나 드립이 거의 없음. 3타 차라서 뒤집힐 수 있다는 설명과 토끼·캥거루 비유가 전부라 상식 정리 톤에 가까움. 마지막 '누구한테 걸래요?'만 참여 유도 역할을 함.",
+        "비유 불일치: 5번 장면에서 '토끼와 거북이'를 말하는데 화면에는 거북이 대신 캥거루가 나옴. 대본에서 문정민 선수를 캥거루로 설정한 것과 비유가 맞지 않음.",
+        "이미지 품질: 약 85% 프레임(5번 장면)의 토끼는 눈이 하얗게 비어 있고, 엉덩이 쪽에 골프공이 달린 것처럼 보임. 캥거루 해부학도 어색함. 약 30% 프레임(2번 장면)은 토끼가 '이예원'이고 시상대에 서 있어서 맞지만, 1번 장면 토끼와 디자인이 달라 캐릭터 일관성이 떨어짐.",
+        "계산 검산: 9언더와 6언더의 차이는 9-6=3타이고 '3타 차'와 일치함. 숫자 오류는 없음.",
+        "사실 확인 필요: 제주 에쓰오일 대회 2라운드, 이예원 9언더 단독 선두, 문정민 6언더 5위는 실제 순위와 대조해 확인해야 함. 이 검수에서는 검증하지 못함.",
+        "자막: 상단 검은 박스 문구와 하단 내레이션 자막은 가독성이 괜찮음. 다만 상단 문구가 매번 정적이라 단조로움."
+      ],
+      "retry_target": "planner",
+      "feedback": "훅과 구조를 다시 짜세요. (1) 훅: '9언더 단독 선두인데 왜 불안할까?'처럼 숫자를 짧게 쓰고, 첫 문장에서 궁금증이나 반전을 만드세요. 이를테면 '혼자 9언더로 앞서 있는데 우승은 아직 아니다'로 시작하세요. (2) 재미: 설명을 줄이고 드립이나 반전을 1~2개 넣으세요. 예를 들면 '3타 차는 캥거루 점프 한 번 거리' 같은 식입니다. (3) 비유: 토끼와 거북이를 말하려면 거북이 캐릭터를 쓰거나, 비유를 캥거루가 쫓아오는 설정에 맞게 바꾸세요. (4) 사실: 대회명, 라운드, 순위는 출처로 재확인하세요. (5) 이미지는 시선 쪽 눈 깨짐과 엉덩이의 공 같은 이상한 요소가 없게 재생성해야 하고, 토끼 디자인을 장면마다 같게 유지하세요. 이 부분은 producer 작업이지만 대본 수정 후 같이 확인하세요."
+    }
+  ],
+  "marketer": {
+    "summary": "오늘은 KLPGA·바둑 등 스포츠 이슈, 프로야구 감독·포수 육성 소식, 기아 어닝 쇼크 주가 급락, 에버랜드 아기 판다 슈바오 첫 공개까지 다양하게 뜬 하루",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "박현경",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "이예원, KLPGA 에쓰오일 대회 2라운드서 단독 선두(종합)",
+          "[핌in제주] 이예원 9언더파 S-오일 2R 단독 선두, 문정민 6언더 5위로 껑충",
+          "아이언샷 치는 김민솔"
+        ],
+        "topic": "KLPGA 에쓰오일 챔피언십 2라운드, 이예원 9언더 단독 선두 — 우승 경쟁 30초 정리",
+        "why_now": "뉴스: 이예원, KLPGA 에쓰오일 대회 2라운드서 단독 선두, 문정민 6언더 5위로 껑충",
+        "angle": "제주 대회 2라운드 순위 변동을 '순위표 롤러코스터' 형식으로 30초 요약 + 3라운드 관전 포인트 드립",
+        "target": "골프·KLPGA 팬, 20~40대 스포츠 시청자",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": "뉴스 제목에 없는 박현경 선수의 성적·상황은 단정하지 말고 확인된 순위 정보만 다룰 것"
+      },
+      {
+        "rank": 2,
+        "keyword": "혈당",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "러닝에도 MBTI가 있다?…HLB라이프케어, 러닝 유형별 운동법 제안",
+          "웅진식품 이온더핏, 서울 도심 마라톤서 수분 보충 음료 맡아",
+          "HLB라이프케어, 코리아 러닝 엑스포서 '혈당 관리 체험 프로그램' 운영"
+        ],
+        "topic": "러닝 유형별 MBTI와 혈당 관리 체험 — 코리아 러닝 엑스포에서 벌어진 일",
+        "why_now": "뉴스: HLB라이프케어, 러닝 유형별 운동법 제안 및 코리아 러닝 엑스포서 '혈당 관리 체험 프로그램' 운영",
+        "angle": "'러닝 MBTI 유형별 나는 어떤 러너?' 상황극 + 혈당 관리 체험 부스 현장 소개",
+        "target": "러닝 입문자, 건강·다이어트 관심 2030",
+        "fun_score": 6,
+        "risk": "medium",
+        "risk_note": "의학적 효능을 단정하거나 치료 효과처럼 표현하면 안 됨. 기업 홍보성 내용으로 보이지 않게 주의"
+      },
+      {
+        "rank": 3,
+        "keyword": "김태형",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "포수 출신 감독 ‘0명’시대…류지현-이동욱 선임으로 ‘내야수 감독 전성시대’ 활짝",
+          "[영상] 롯데, 이렇게까지 바뀐다고? 내년 시즌은 다를까?",
+          "NC 첫 해 FA 선물은 양의지였는데…지갑 닫았던 롯데, 이동욱호 첫 해 FA 선물 준비할까"
+        ],
+        "topic": "포수 출신 감독 '0명' 시대, 내야수 감독 전성시대 — 그리고 롯데는 이렇게까지 바뀐다?",
+        "why_now": "뉴스: 포수 출신 감독 0명 시대, 류지현-이동욱 선임으로 내야수 감독 전성시대 / 롯데 내년 시즌 변화와 FA 선물 관심",
+        "angle": "'10개 구단 감독 출신 포지션 숫자로 보기' + 롯데 팬 'FA 선물 기대 vs 현실' 밈 상황극",
+        "target": "KBO 팬, 롯데 팬",
+        "fun_score": 7,
+        "risk": "medium",
+        "risk_note": "감독 거취·선임 관련 사실은 뉴스 제목 범위 내에서만 언급하고 특정 인물 비난 금지"
+      },
+      {
+        "rank": 4,
+        "keyword": "kbo 리그",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "제2의 강민호 양의지 키운다! KBO 중3 대상 포수 캠프 개최…이만수 이성우 강성우 차일목 초호화 지도자 총출동",
+          "'헐크' 이만수·강성우·차일목·이성우 총출동! 미래 안방마님 40명 키운다... KBO 포수 특화 캠프 개최 - 머니투데이",
+          "[프로야구] KBO, 차기 국가대표 포수 키우기 위한 캠프 개최"
+        ],
+        "topic": "이만수·강성우·차일목·이성우 총출동! 중3 포수 40명 뽑는 KBO 포수 특화 캠프",
+        "why_now": "뉴스: KBO 중3 대상 포수 캠프 개최, 제2의 강민호·양의지 육성, 이만수 등 초호화 지도자 총출동",
+        "angle": "'포수 감독 0명 시대에 포수를 키운다' 연결 + '이 캠프 강사진 라인업이 왜 초호화냐면' 정리",
+        "target": "야구팬, 학부모, 유소년 야구 관계자",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": ""
+      },
+      {
+        "rank": 5,
+        "keyword": "전상현",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "역투 조상우",
+          "역투 펼치는 전상현",
+          "[사진]병살에 아쉬운 김영웅 - 머니투데이"
+        ],
+        "topic": "역투하는 전상현·조상우, 불펜 투수들의 승부처 장면",
+        "why_now": "뉴스: '역투 펼치는 전상현', '역투 조상우', '병살에 아쉬운 김영웅' 등 포스트시즌 관련 사진 기사",
+        "angle": "사진 속 표정 모음을 '투수의 한 구, 타자의 한숨' 컨셉으로 자막 드립 처리",
+        "target": "KBO·KIA·삼성 팬",
+        "fun_score": 5,
+        "risk": "medium",
+        "risk_note": "뉴스 제목이 사진 캡션 위주라 경기 상황·결과를 추측해 서술하지 말 것. 선수 비하성 드립 금지"
+      },
+      {
+        "rank": 6,
+        "keyword": "gs25",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [],
+        "topic": "GS25 급상승 — 이유 확인 필요, 편의점 신상 체크 쇼츠 후보",
+        "why_now": "관련 뉴스 제목이 제공되지 않아 정확한 이유 불명",
+        "angle": "이슈가 확인되면 '요즘 GS25에서 뭐가 난리' 형식으로 제작. 확인 전에는 보류 권장",
+        "target": "편의점 신상 관심 10~30대",
+        "fun_score": 3,
+        "risk": "medium",
+        "risk_note": "근거 뉴스가 없어 사실 확인 없이 제작하면 오정보 위험. 이슈 확인 후 진행"
+      },
+      {
+        "rank": 7,
+        "keyword": "현대",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "[컨콜] 현대제철 “美서 H형강 가격 주 단위로 매주 인상 중” By 투데이코리아",
+          "자동차강판이 밀고 AI·반도체 강재가 끈다⋯ 현대제철, 3분기 영업익 51% ‘껑충’",
+          "현대제철, 주주환원 발표 연기…자회사 美 공장 설립은 '무근'(종합)"
+        ],
+        "topic": "현대제철 3분기 영업익 51% 껑충 — 美서 H형강 가격이 '매주' 오르는 중",
+        "why_now": "뉴스: 현대제철 3분기 영업익 51% 상승, 컨콜에서 美 H형강 가격 주 단위 인상 언급, 주주환원 발표 연기",
+        "angle": "'철강이 이렇게 비싸졌다고?' 숫자로 보는 실적 30초 정리 + 자동차강판·AI·반도체 강재 키워드 쉽게 풀기",
+        "target": "주식·경제 관심 2040",
+        "fun_score": 5,
+        "risk": "medium",
+        "risk_note": "투자 권유로 보이지 않게 주의. 美 공장 설립은 '무근'이라는 보도 내용을 정확히 반영"
+      },
+      {
+        "rank": 8,
+        "keyword": "기아",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "\"역대 최대 실적인데, 왜?\"...현대차그룹 주가 '주르륵'",
+          "기아, 3분기 최대 매출에도 ‘어닝 쇼크’…주가 11% 급락",
+          "기아, 3분기 매출 역대 최대에도 영업익 기대 이하…주가 11%대 급락"
+        ],
+        "topic": "역대 최대 매출인데 왜 주가는 11% 급락? 기아 어닝 쇼크의 반전",
+        "why_now": "뉴스: 기아 3분기 최대 매출에도 영업익 기대 이하, 주가 11%대 급락, 현대차그룹 주가 하락",
+        "angle": "'매출 최고인데 주가 폭락' 반전 구조로 '이게 왜 난리냐면' 30초 설명 + 시험 성적 비유 드립",
+        "target": "주식 입문자, 직장인 2040",
+        "fun_score": 7,
+        "risk": "medium",
+        "risk_note": "투자 조언 금지, 원인 추측은 뉴스 제목에 나온 '영업익 기대 이하' 범위 내에서만"
+      },
+      {
+        "rank": 9,
+        "keyword": "에버랜드 판다월드",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "머뭇머뭇 나오더니 ‘발라당’…막내 판다 ‘슈바오’의 바깥 구경 [현장영상]",
+          "\"너무 작아서 신기해\"…아기 판다 슈바오 '아장아장' 첫 등장",
+          "[포토타임] ‘저 보러 오세요’...에버랜드 아기 판다 ‘슈바오’ 첫 공개"
+        ],
+        "topic": "머뭇머뭇 나오더니 발라당! 아기 판다 슈바오 첫 바깥 구경",
+        "why_now": "뉴스: 막내 판다 슈바오 바깥 첫 공개, 아장아장 등장 영상과 사진 다수",
+        "angle": "'머뭇→아장→발라당' 3단계 행동을 자막 드립으로 구성한 힐링 영상 + 사람 첫 출근 비유",
+        "target": "전 연령 힐링·동물 영상 시청자, 가족 단위",
+        "fun_score": 9,
+        "risk": "low",
+        "risk_note": ""
+      },
+      {
+        "rank": 10,
+        "keyword": "김은지",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "김은지, 스미레 꺾고 수협은행배 여자바둑 초대 우승",
+          "바둑 김은지, 스미레 3-0 완파…수협은행배 초대 챔피언 등극",
+          "김은지, 스미레 꺾고 수협은행배 여자바둑 최강전 초대 챔피언 등극"
+        ],
+        "topic": "김은지, 스미레 3-0 완파하고 수협은행배 여자바둑 초대 챔피언 등극",
+        "why_now": "뉴스: 김은지, 스미레 꺾고 수협은행배 여자바둑 초대 우승",
+        "angle": "'3-0 완파' 결과를 중심으로 한일 대결 구도와 초대 챔피언 타이틀을 30초로 정리 + 바둑 모르는 사람도 보는 승부 포인트",
+        "target": "바둑 팬, 스포츠 뉴스 관심층",
+        "fun_score": 5,
+        "risk": "low",
+        "risk_note": "스미레 선수 비하 없이 경기 결과 위주로 다룰 것"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": []
+  },
+  "selected_attempt": 1,
+  "plan": {
+    "chosen_rank": 1,
+    "reason": "특별히 재미 포인트가 압도적인 후보가 없어 검색량이 가장 높은 1위(1000+)를 선택했다. 뉴스 제목에 박현경 선수 관련 내용은 없으므로 박현경 선수의 성적은 언급하지 않고, 제목에 있는 이예원 9언더 단독 선두, 문정민 6언더 5위로 껑충, 제주 KLPGA 에쓰오일 대회 2라운드만 사용했다. 계산은 없고 9언더와 6언더 숫자는 제목 그대로 썼다.",
+    "title": "9언더 실화? 제주에서 순위표가 난리 난 이유",
+    "hook": "9언더가 나왔어요, 골프 안 치는 사람은 이게 얼마나 미친 건지 몰라요.",
+    "bgm_mood": "hype",
+    "style": "vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "9언더가 나왔어요. 골프 안 치는 사람은 이게 얼마나 미친 건지 몰라요.",
+        "on_screen_text": "9언더 실화",
+        "image_prompt": "a shocked cartoon cat golfer with huge round eyes and open mouth holding a golf club on a bright green course, dramatic burst of light behind, vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters"
+      },
+      {
+        "id": 2,
+        "narration": "제주에서 열린 KLPGA 에쓰오일 대회 둘째 날, 이예원 선수가 9언더로 단독 선두에 올랐어요.",
+        "on_screen_text": "제주 2라운드",
+        "image_prompt": "a cute cartoon rabbit golfer standing on top of a tall podium on a sunny island golf course with palm trees and a distant volcano mountain, vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters"
+      },
+      {
+        "id": 3,
+        "narration": "공동도 아니에요. 단독이에요. 맨 앞에 혼자 서 있어요.",
+        "on_screen_text": "혼자 1등",
+        "image_prompt": "a single cartoon rabbit sprinting far ahead of a small group of tiny animals on a green fairway, golden trophy glowing in the distance, vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters"
+      },
+      {
+        "id": 4,
+        "narration": "근데 진짜 난리는 뒤쪽이에요. 문정민 선수가 6언더로 5위까지 껑충 뛰어올랐거든요.",
+        "on_screen_text": "5위로 껑충",
+        "image_prompt": "a cartoon kangaroo golfer leaping high into the air over a row of stepping stones shaped like a ladder, surprised animal spectators cheering below, vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters"
+      },
+      {
+        "id": 5,
+        "narration": "순위표가 완전 롤러코스터예요. 하루 만에 자리가 이렇게 바뀌어요.",
+        "on_screen_text": "순위표 롤코",
+        "image_prompt": "a colorful roller coaster track shaped like a leaderboard with tiny cartoon golf balls riding in carts, screaming happy faces, golf course background, vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters"
+      },
+      {
+        "id": 6,
+        "narration": "아직 한 라운드 더 남았어요. 선두가 도망갈지, 뒤에서 확 따라잡을지 아무도 몰라요.",
+        "on_screen_text": "아직 안 끝남",
+        "image_prompt": "a cartoon rabbit running ahead while a determined cartoon kangaroo chases right behind on a golf fairway, dust clouds and speed lines, sunset sky, vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters"
+      },
+      {
+        "id": 7,
+        "narration": "이 정도면 마지막 날 드라마 각이죠. 선두 굳히기냐, 역전 우승이냐. 여러분은 어디에 걸래요?",
+        "on_screen_text": "당신의 선택",
+        "image_prompt": "two cartoon animals, a rabbit and a kangaroo, standing back to back each holding a golden trophy under a spotlight, a crowd of cute animal fans split into two cheering sides, vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters"
+      }
+    ],
+    "description": "제주 KLPGA 에쓰오일 대회 2라운드, 이예원 9언더 단독 선두에 문정민 6언더 5위 껑충! 마지막 날 역전 가능할까?\n선두 굳히기 vs 역전 우승, 댓글로 예측해 주세요.\n#KLPGA #골프 #쇼츠",
+    "tags": [
+      "KLPGA",
+      "에쓰오일 챔피언십",
+      "이예원",
+      "문정민",
+      "골프",
+      "여자골프",
+      "제주",
+      "쇼츠"
+    ],
+    "comment_question": "마지막 라운드, 이예원 선두 굳히기 vs 뒤에서 역전 우승, 당신의 선택은?"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 7
+    }
+  },
+  "effects": {
+    "duration": 48.96,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Hyperfun",
+    "bgm_mood": "hype",
+    "bgm_credit": "Music: \"Hyperfun\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "9언더가 나왔어요. 골프 안 치는 사람은 이게 얼마나 미친 건지 몰라요.",
+      "on_screen_text": "9언더 실화",
+      "image": "runs/2026-10-30/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "제주에서 열린 KLPGA 에쓰오일 대회 둘째 날, 이예원 선수가 9언더로 단독 선두에 올랐어요.",
+      "on_screen_text": "제주 2라운드",
+      "image": "runs/2026-10-30/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "공동도 아니에요. 단독이에요. 맨 앞에 혼자 서 있어요.",
+      "on_screen_text": "혼자 1등",
+      "image": "runs/2026-10-30/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "근데 진짜 난리는 뒤쪽이에요. 문정민 선수가 6언더로 5위까지 껑충 뛰어올랐거든요.",
+      "on_screen_text": "5위로 껑충",
+      "image": "runs/2026-10-30/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "순위표가 완전 롤러코스터예요. 하루 만에 자리가 이렇게 바뀌어요.",
+      "on_screen_text": "순위표 롤코",
+      "image": "runs/2026-10-30/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "아직 한 라운드 더 남았어요. 선두가 도망갈지, 뒤에서 확 따라잡을지 아무도 몰라요.",
+      "on_screen_text": "아직 안 끝남",
+      "image": "runs/2026-10-30/scene_06.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 7,
+      "narration": "이 정도면 마지막 날 드라마 각이죠. 선두 굳히기냐, 역전 우승이냐. 여러분은 어디에 걸래요?",
+      "on_screen_text": "당신의 선택",
+      "image": "runs/2026-10-30/scene_07.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-10-30/thumbnail.jpg",
+  "video_file": "videos/2026-10-30.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "QA 불합격"
+  },
+  "finished_at": "2026-10-30T23:47:08+09:00"
+}
