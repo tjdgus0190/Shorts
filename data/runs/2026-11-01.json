@@ -1,0 +1,501 @@
+{
+  "date": "2026-11-01",
+  "status": "success",
+  "started_at": "2026-11-01T23:34:10+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-11-01T23:34:10+09:00",
+      "note": "",
+      "seconds": 25.6
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-01T23:34:35+09:00",
+      "note": "",
+      "seconds": 22.0
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-01T23:34:57+09:00",
+      "note": "",
+      "seconds": 21.6
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-01T23:35:19+09:00",
+      "note": "",
+      "seconds": 22.6
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-01T23:35:41+09:00",
+      "note": "1차",
+      "seconds": 20.3
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-01T23:36:02+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 17.0
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-01T23:36:19+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 23.5
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-01T23:36:42+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 21.8
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-01T23:37:04+09:00",
+      "note": "2차",
+      "seconds": 17.6
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-01T23:37:22+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 16.7
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-01T23:37:39+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 48.6
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-01T23:38:27+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 24.1
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-01T23:38:51+09:00",
+      "note": "3차",
+      "seconds": 20.8
+    },
+    {
+      "name": "uploader",
+      "label": "업로드",
+      "status": "done",
+      "started_at": "2026-11-01T23:39:12+09:00",
+      "note": "",
+      "seconds": 0.0
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 52,
+        "hook": 58,
+        "clarity": 70,
+        "visual": 62,
+        "subtitle": 66,
+        "safety": 70
+      },
+      "overall": 61,
+      "pass": false,
+      "issues": [
+        "fun: 구성이 '통계 나열 → 공감 질문'이라 반전이나 드립이 약하고 뉴스 요약 톤에 가깝다. 후반부에 웃음 포인트가 없다.",
+        "hook: 첫 문장이 흔한 '나만 제자리?' 공감형이다. 첫 3초에 구체적인 숫자나 충격 요소가 없어 스크롤을 멈추게 하기 어렵다.",
+        "확인 필요: '중산층 검색량 1위', '중간 소득층 10명 중 4명 소득 감소', '8명 중 1명 소득 반토막'은 출처와 기준(기간, 대상, 소득 정의)이 없다. 계산 검산: 8명 중 1명은 12.5%이고 10명 중 4명은 40%이므로, 반토막 집단이 감소 집단의 부분집합이라면 수치상 모순은 없다. 다만 출처 표기나 '조사에 따르면' 같은 단서가 필요하다.",
+        "visual(장면 4): '반으로 쪼개진 금화'를 요청했지만 실제로는 비트코인 로고가 있는 온전한 코인이 곰의 입을 가린다. 대본의 '반토막'이 시각적으로 전달되지 않고, 암호화폐 로고가 주제와 무관한 혼란을 준다.",
+        "visual(장면 1): 대본은 '텅 빈 납작한 지갑'인데 이미지는 바구니 같은 그릇이다. 행복한 동물들도 '멀리 배경'이 아니라 바로 뒤에 있어 대비가 약하다.",
+        "visual(장면 2): 올빼미가 든 스마트폰 화면이 비어 있어 '검색량'이 전달되지 않는다.",
+        "visual(장면 6): 너구리와 저금통의 형태가 겹쳐 어색하다. 저금통 다리와 너구리 다리가 뒤엉켜 보인다.",
+        "subtitle: 하단 자막이 화면 중앙부에 놓여 캐릭터 얼굴과 입(곰)을 가린다. 상단 on_screen_text 박스와 중복되어 화면이 번잡하다.",
+        "시청 길이 34.5초로 설명문의 '30초 정리'와 약간 어긋난다. 사소한 문제다."
+      ],
+      "retry_target": "planner",
+      "feedback": "1) 훅을 바꾸세요. 첫 문장에 구체적 숫자나 반전을 바로 넣으세요. 예: '중산층 10명 중 4명, 월급이 줄었습니다. 그런데 주변엔 다 부자?' 2) 장면 5~6에 웃음 포인트를 추가하세요. 예: '통계 밖에 사는 사람들' 같은 자조 드립이나, 마지막에 가벼운 반전과 한 줄 펀치라인. 3) 수치 출처를 설명이나 대본에 한 줄 넣으세요(예: '○○ 조사 기준'). 출처가 불확실하면 '~라는 조사가 있어요'로 단정을 완화하세요. 4) 장면 4 image_prompt는 '반으로 쪼개진 금화, 로고·글자 없음'으로 명확히 하세요. 장면 1은 '납작한 빈 지갑(wallet)'을 지정하고, 장면 2는 폰 화면에 상승 그래프를 넣도록 수정하세요. 5) 자막 위치는 이미지 하단 쪽으로 내리고, 상단 텍스트와 중복되지 않게 조정하면 좋습니다(effector 참고)."
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 60,
+        "hook": 68,
+        "clarity": 72,
+        "visual": 68,
+        "subtitle": 75,
+        "safety": 78
+      },
+      "overall": 68,
+      "pass": false,
+      "issues": [
+        "장면 4 이미지: 곰 얼굴 한가운데(코~입)에 금이 간 것처럼 보이는 AI 깨짐이 있습니다. 프롬프트의 '반으로 갈라진 동전'이 곰 얼굴로 번졌고, 손에는 동전 대신 금괴 같은 물체를 들고 있어 장면과 맞지 않습니다.",
+        "숫자 검산: '열 명 중 네 명' = 4/10 = 40%로 '중간소득층 40퍼센트'와 일치합니다. '여덟 명 중 한 명' = 1/8 = 12.5%이고 출처 수치는 확인 필요합니다. 영상에는 출처나 기준 연도 표기가 없습니다.",
+        "장면 2의 '검색량 1위로 터졌다'는 근거가 없고 확인 필요합니다. 설명란의 '보도 기준'도 어떤 보도인지 구체적이지 않습니다.",
+        "장면 1 하단 자막이 지갑을 일부 가립니다. 장면 2 자막은 부엉이의 폰과 발 위에 겹칩니다. 읽는 데는 문제가 없지만 핵심 소품과 겹칩니다.",
+        "장면 3 이후는 통계를 나열하는 흐름이 강합니다. 마지막 '친구의 친구의 사촌' 드립 외에는 반전이 약해 재미가 평범합니다.",
+        "장면 1 훅은 '월급이 줄었다 vs 주변은 다 부자'로 공감은 되지만 첫 3초 안에 강한 호기심이나 충격 요소는 부족합니다."
+      ],
+      "retry_target": null,
+      "feedback": "합격입니다. 업로드 전에 다음을 개선하면 좋습니다. (1) 장면 4 이미지를 다시 생성하세요. 프롬프트에서 'coin split in half'를 빼고 '곰이 반으로 얇아진 월급봉투를 들고 놀란 표정, 얼굴은 깨끗하게'처럼 소품과 얼굴을 분리해 쓰세요. (2) '여덟 명 중 한 명 반토막'과 '검색량 1위'는 출처(기관, 시기)를 확인하세요. 확인되지 않으면 문구를 완화하거나 설명란에 출처를 넣으세요. (3) 훅은 '월급은 줄었는데 내 주변만 다 부자인 이유'처럼 질문과 반전을 첫 문장에 넣으면 이탈이 줄어듭니다. (4) 자막 위치를 조금 낮추거나 줄여서 지갑과 폰 같은 핵심 소품이 가려지지 않게 하세요."
+    },
+    {
+      "attempt": 3,
+      "scores": {
+        "fun": 65,
+        "hook": 70,
+        "clarity": 70,
+        "visual": 82,
+        "subtitle": 72,
+        "safety": 85
+      },
+      "overall": 72,
+      "pass": true,
+      "issues": [
+        "숫자 검산: '10명 중 4명'은 40%이고, '8명 중 1명'은 1/8=12.5%입니다. 두 수치는 서로 모순되지 않고 단위 오류도 없습니다. 다만 출처, 기관, 시기를 알 수 없어 확인 필요입니다. 설명란에 보도 표현 그대로라고 밝혀 둔 점은 적절합니다.",
+        "자막이 화면 중앙 하단에 놓여 소품을 가립니다. 2번 장면은 올빼미의 태블릿 그래프, 4번은 곰의 봉투, 6번은 돼지저금통이 가려집니다. 이 소품들이 핵심 시각 정보인데 보이지 않습니다.",
+        "첫 3초 훅이 '월급은 줄었는데 왜…'라는 일반적인 질문형입니다. 구체적인 숫자나 반전이 없어 스크롤을 멈출 힘이 약합니다. 숫자 훅인 '중산층 10명 중 4명 소득 감소'를 앞에 두면 더 강합니다.",
+        "2번 장면 '중산층 검색어 폭발'과 5~6번 장면 '부자 어디?'의 연결이 약합니다. 통계는 소득 감소 이야기이고 뒷부분은 주변 부자 드립이라 흐름이 조금 튑니다.",
+        "재미 요소가 마지막 '친구의 친구의 사촌' 한 줄에 몰려 있고 중간은 뉴스 전달 톤입니다. 반전과 리듬이 부족합니다.",
+        "2번 장면의 올빼미 이미지는 '검색어 그래프'라는 프롬프트 의도가 흐릿합니다. 화면 속 그래프가 태블릿에 작게 보이고 손가락 표현도 다소 어색합니다.",
+        "에셋은 실제 Cloudflare 이미지 6장과 edge TTS를 썼고 placeholder나 mock은 없습니다. 해상도 1080x1920, 길이 34.1초, 음량 -15dB로 모두 정상입니다."
+      ],
+      "retry_target": null,
+      "feedback": "합격입니다. 개선 팁: (1) 훅을 '중산층 열 명 중 네 명, 소득이 줄었습니다'처럼 구체적인 숫자로 시작하세요. (2) 중간 3~4번 장면에 짧은 드립이나 반전을 하나 넣어 뉴스 전달 톤을 줄이세요. (3) 자막 위치를 화면 하단 쪽으로 내리거나 크기를 줄여서 소품이 가려지지 않게 하세요. (4) 5번 장면과 통계를 이어 주는 연결 문장을 한 줄 추가하세요."
+    }
+  ],
+  "marketer": {
+    "summary": "소득 감소 충격의 '중산층' 이슈와 김건모·이봉주·허미미 등 훈훈한 복귀·근황 소식, 전국노래자랑·롯데 매각 등 화제가 고루 뜬 하루",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "중산층",
+        "traffic": "2000+",
+        "traffic_num": 2000,
+        "news": [
+          "[그래픽] 소득분위별 근로·사업소득 감소 비율",
+          "“주변에 큰돈 벌었단 얘기 들리는데”…중산층 10명 중 4명 되레 소득 줄어",
+          "중간소득층 40% 벌이 줄었다…8명 중 1명은 소득 '반토막'"
+        ],
+        "topic": "중산층 10명 중 4명 소득 감소, 8명 중 1명은 '반토막' — 숫자로 보는 내 월급의 현주소",
+        "why_now": "'중산층 10명 중 4명 되레 소득 줄어', '중간소득층 40% 벌이 줄었다…8명 중 1명은 소득 반토막' 보도",
+        "angle": "'주변엔 다 큰돈 번 것 같은데 나만 왜?' 공감 드립 + 10명 중 4명, 8명 중 1명을 이모지/그래픽으로 시각화한 30초 숫자 정리",
+        "target": "20~40대 직장인, 자영업자",
+        "fun_score": 7,
+        "risk": "medium",
+        "risk_note": "경제·정책 이슈라 정치적 해석이나 특정 집단 비난으로 흐르지 않게 통계 사실 위주로 전달"
+      },
+      {
+        "rank": 2,
+        "keyword": "김건모",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "'새출발' 김건모, 회춘 비주얼로 전한 근황",
+          "58세 김건모, 누명 벗으니 얼굴까지 달라졌어..깜짝 놀랄 동안 비주얼[핫피플]",
+          "\"지옥의 3년 버티더니 싹 바뀌었다\"… 누명 벗은 김건모, 확 젊어진 충격 근황"
+        ],
+        "topic": "누명 벗은 김건모, 58세 '회춘 비주얼' 근황 — 이게 지옥의 3년 뒤 얼굴?",
+        "why_now": "'새출발 김건모, 회춘 비주얼로 전한 근황', '누명 벗으니 얼굴까지 달라졌어' 기사 다수",
+        "angle": "과거 vs 현재 비교 컷 + '이 얼굴 실화냐' 댓글 반응 모음, 새출발 응원 톤의 30초 근황 정리",
+        "target": "30~50대, 김건모 노래 세대",
+        "fun_score": 6,
+        "risk": "high",
+        "risk_note": "과거 사건 연루 실존 인물 사생활 이슈. 외모 평가·사건 재론 없이 보도된 근황 위주로, 조롱 금지"
+      },
+      {
+        "rank": 3,
+        "keyword": "허미미",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "오상욱, '그랜드슬램 목표' 허미미에 멘탈 비법 전수",
+          "‘냉장고를 부탁해’ 비웨사 다니엘·허미미 출연… 아시안게임 뒷이야기 공개",
+          "日 국적 포기 귀화 허미미, 먹고 충격받은 한식은? “일본엔 ‘이것’ 없어”(냉부)"
+        ],
+        "topic": "일본엔 없는 한식? 허미미가 먹고 충격받은 음식 + 오상욱의 멘탈 비법",
+        "why_now": "'냉장고를 부탁해' 출연해 한식 충격 발언, '오상욱, 그랜드슬램 목표 허미미에 멘탈 비법 전수' 보도",
+        "angle": "'일본엔 이게 없다고?' 퀴즈형 훅으로 시작해 냉부 뒷이야기와 그랜드슬램 도전을 묶은 훈훈 정리",
+        "target": "스포츠 팬, 예능 시청자 10~30대",
+        "fun_score": 8,
+        "risk": "low",
+        "risk_note": ""
+      },
+      {
+        "rank": 4,
+        "keyword": "전국노래자랑",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "‘전국노래자랑’ 동작구 박서진 편",
+          "\"박서진부터 진성까지\"… '전국노래자랑' 화려한 초대가수 라인업",
+          "'전국노래자랑' 박서진·진성·박혜신·유민·미스김 초대가수 완성"
+        ],
+        "topic": "동작구 편 전국노래자랑, 박서진·진성·미스김까지 초대가수 라인업이 미쳤다",
+        "why_now": "'전국노래자랑 동작구 박서진 편', '박서진부터 진성까지 화려한 초대가수 라인업' 보도",
+        "angle": "'일요일 낮 국민 예능에 이 라인업?' 초대가수 5인 소개를 트로트 오디션 심사 컨셉으로 빠르게 정리",
+        "target": "트로트 팬, 40~60대 및 가족 시청층",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": ""
+      },
+      {
+        "rank": 5,
+        "keyword": "배용준",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "[포토] 배용준, 사랑하는 부모님과 함께",
+          "배용준, KPGA 렉서스 마스터즈서 2차 연장 끝 정상…통산 3승 달성",
+          "배용준, 2차 연장 우승…스트로크 플레이 대회 첫 정상"
+        ],
+        "topic": "KPGA 렉서스 마스터즈 2차 연장 끝 우승, 통산 3승 — 연장전이 이렇게 짜릿했다",
+        "why_now": "'배용준, 2차 연장 끝 정상…통산 3승', '스트로크 플레이 대회 첫 정상' 보도",
+        "angle": "2차 연장 승부를 '마지막 홀 긴장감' 중심 30초 하이라이트 스토리로, 부모님과 함께한 우승 순간 포함",
+        "target": "골프 팬, 20~50대 남성",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": "배우 배용준과 혼동되지 않게 골프 선수임을 제목에 명확히 표기"
+      },
+      {
+        "rank": 6,
+        "keyword": "롯데그룹",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "[힘내라K산업]④롯데타워 담보 잡혔던 롯데그룹, 2년 만에 '위기설' 지웠다",
+          "[힘내라 K산업]② 2년간 2조원 넘게 팔았다…롯데, 비핵심 정리 ‘최대 거래’는 롯데렌탈",
+          "롯데 \"롯데렌탈 매각 거래 종결…매각대금 1조3천억원 확보\""
+        ],
+        "topic": "롯데타워 담보 잡혔던 롯데, 2년 만에 '위기설' 지웠다 — 2년간 2조 원 넘게 판 이야기",
+        "why_now": "'롯데타워 담보 잡혔던 롯데그룹, 2년 만에 위기설 지웠다', '롯데렌탈 매각 거래 종결…1조3천억 확보' 보도",
+        "angle": "'위기설 → 2조 매각 → 위기설 종료' 3단 반전 구조의 숫자 중심 30초 정리",
+        "target": "경제 관심층, 직장인 20~40대",
+        "fun_score": 5,
+        "risk": "medium",
+        "risk_note": "기업 재무 이슈라 보도 수치만 사용하고 향후 전망·투자 권유성 표현 배제"
+      },
+      {
+        "rank": 7,
+        "keyword": "como vs venezia",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "Venezia se concentra para salir del último lugar ante Como 1907",
+          "'Repóker' del Como sin pasearse en góndola",
+          "Dónde ver el Como-Venezia: streaming, canales de televisión, fecha, hora y alineaciones"
+        ],
+        "topic": "꼴찌 베네치아 vs 코모, 코모가 5골 '리포커' 폭격 — 곤돌라 못 타고 끝난 경기",
+        "why_now": "'Repóker del Como sin pasearse en góndola', '베네치아 최하위 탈출 노려' 현지 보도",
+        "angle": "'곤돌라 타러 갔다가 5골 맞고 돌아온 팀' 드립으로 경기 결과를 30초 요약하는 해외축구 밈 형식",
+        "target": "해외축구 팬 10~30대",
+        "fun_score": 5,
+        "risk": "low",
+        "risk_note": "뉴스 제목에 득점자 등 세부 정보가 없으므로 확인된 결과(5골, 베네치아 최하위) 외 내용은 지어내지 말 것"
+      },
+      {
+        "rank": 8,
+        "keyword": "살림하는 남자들",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [],
+        "topic": "'살림하는 남자들' 지금 왜 검색? — 뉴스 제목 확인 불가, 보류 권장",
+        "why_now": "관련 뉴스 제목이 없어 급상승 이유를 확인할 수 없음",
+        "angle": "출연진·에피소드 확인 후 '이번 주 레전드 장면' 형식 검토. 근거 확보 전엔 제작 보류",
+        "target": "가족 예능 시청층 30~50대",
+        "fun_score": 3,
+        "risk": "medium",
+        "risk_note": "근거 뉴스가 없어 사실 오류 위험. 확인 전 내용 추측 금지"
+      },
+      {
+        "rank": 9,
+        "keyword": "이봉주",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "이봉주, 근육 뒤틀리는 희귀병 투병→다시 달리며 희망 전해 (시대목격)",
+          "'근육 긴장 이상증' 이봉주 \"숨어 있었으면, 회복 못했을 것\"",
+          "이봉주, 근육 긴장 이상증 투병..\"숨어 있었으면 회복 못 했을 것\"('시대목격')"
+        ],
+        "topic": "근육이 뒤틀리는 희귀병, 그래도 다시 달린 이봉주 — '숨어 있었으면 회복 못했을 것'",
+        "why_now": "'시대목격' 출연, '근육 긴장 이상증 투병…숨어 있었으면 회복 못했을 것' 보도",
+        "angle": "마라톤 영웅의 투병과 재도전을 담담한 내레이션 + 본인 명언 자막으로 구성한 응원형 영상",
+        "target": "전 연령, 응원·감동 콘텐츠 선호층",
+        "fun_score": 7,
+        "risk": "high",
+        "risk_note": "실존 인물의 건강·질병 이슈. 희화화나 병증 과장 없이 본인 발언 중심으로 존중하는 톤 유지"
+      },
+      {
+        "rank": 10,
+        "keyword": "다니엘",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "“다시 일어서기 위해” 뉴진스 4인·다니엘, 팬클럽 기념일에 각자 근황",
+          "복귀 선언 1년, 뉴진스의 시계는 왜 '민지' 앞에서 멈췄나? [IZE 진단] - 머니투데이",
+          "\"예전과 같을 순 없겠죠\"…뉴진스 팬덤 생일에 자작곡"
+        ],
+        "topic": "뉴진스 팬클럽 기념일, 4인과 다니엘이 각자 전한 근황 — '예전과 같을 순 없겠죠'",
+        "why_now": "'뉴진스 4인·다니엘, 팬클럽 기념일에 각자 근황', '뉴진스 팬덤 생일에 자작곡' 보도",
+        "angle": "팬클럽 기념일에 멤버들이 각자 올린 메시지를 비교 정리하고 팬 반응을 소개하는 30초 요약",
+        "target": "뉴진스 팬, K팝 팬 10~20대",
+        "fun_score": 6,
+        "risk": "high",
+        "risk_note": "소속사 분쟁 관련 민감 이슈. 특정 측 편들기나 멤버 비방 없이 공개된 근황만 전달"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": []
+  },
+  "selected_attempt": 3,
+  "plan": {
+    "chosen_rank": 1,
+    "reason": "검색량이 가장 높은 키워드(2000+)라 규칙대로 선택. QA 반영: 훅을 '월급은 줄었는데 왜 주변엔 다 부자일까' 질문과 반전 형태로 바꿨고, 장면 4 이미지는 동전 대신 얇아진 월급봉투를 든 곰으로 소품과 얼굴을 분리해 정리. 검색량 1위 표현은 '검색어에 떴다'로 완화하고, 반토막 수치는 보도 제목 그대로 쓰되 조사 기관과 시기는 확인되지 않아 설명란에 명시. 자막은 짧게 줄이고 핵심 소품이 화면 중앙 아래쪽에 오도록 프롬프트를 조정. 검산: 열 명 중 네 명은 40퍼센트로 중간소득층 40퍼센트와 일치, 여덟 명 중 한 명은 12.5퍼센트. 제목에 있는 숫자만 사용했고 정치적 해석은 뺌.",
+    "title": "월급은 줄었는데 내 주변만 다 부자인 이유",
+    "hook": "월급은 줄었는데 왜 주변엔 다 부자뿐일까요?",
+    "bgm_mood": "funny",
+    "style": "vibrant 3D cartoon, soft lighting, pastel colors, cute character design, high detail, vertical composition, main subject centered in the middle of the frame with open space at the top",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "월급은 줄었는데 왜 주변엔 다 부자뿐일까요? 오늘 이 얘기가 난리예요.",
+        "on_screen_text": "나만 왜?",
+        "image_prompt": "a cute hamster staring in disbelief at a flat empty wallet lying on a table, a few happy animals in the blurry background"
+      },
+      {
+        "id": 2,
+        "narration": "지금 중산층이 검색어에 확 떴어요. 이유가 좀 씁쓸합니다.",
+        "on_screen_text": "검색어 폭발",
+        "image_prompt": "a surprised cartoon owl holding a glowing smartphone whose screen shows a steep rising line graph, dark blue night background"
+      },
+      {
+        "id": 3,
+        "narration": "중산층 열 명 중 네 명이 오히려 소득이 줄었대요.",
+        "on_screen_text": "10명 중 4명",
+        "image_prompt": "a row of ten tiny hamsters standing in line, four of them with drooping ears and sad faces, the other six smiling, bright clean background"
+      },
+      {
+        "id": 4,
+        "narration": "심지어 여덟 명 중 한 명은 소득이 반토막이라고 해요.",
+        "on_screen_text": "반토막 실화?",
+        "image_prompt": "a shocked cartoon bear holding a thin half-sized paycheck envelope in both paws, clean smooth bear face with wide surprised eyes and open mouth, plain pastel background"
+      },
+      {
+        "id": 5,
+        "narration": "근데 큰돈 벌었다는 사람들은 다 어디 있죠? 얘기만 들리고 얼굴은 못 봤어요.",
+        "on_screen_text": "그 부자 어디?",
+        "image_prompt": "a confused cartoon cat looking through a magnifying glass at an empty street, a single question mark floating above its head"
+      },
+      {
+        "id": 6,
+        "narration": "부자는 늘 친구의 친구의 사촌이에요. 여러분 소득은 늘었나요, 줄었나요?",
+        "on_screen_text": "부자는 남의 일",
+        "image_prompt": "a cute raccoon sitting on a sofa hugging a piggy bank with a half smile and a tiny tear, warm cozy room"
+      }
+    ],
+    "description": "중산층 10명 중 4명이 오히려 소득이 줄었다는 보도가 나와서 검색어에 떴어요. 주변엔 다 큰돈 번 것 같은데 나만 제자리인 줄 알았던 분들 모이세요. 수치는 중간소득층 소득 변화 관련 언론 보도 제목 기준이며, 조사 기관과 시기는 확인되지 않아 보도 표현 그대로 옮겼어요.\n여러분 소득은 늘었나요, 줄었나요?\n#중산층 #소득감소 #쇼츠",
+    "tags": [
+      "중산층",
+      "소득감소",
+      "중간소득층",
+      "월급",
+      "경제이슈",
+      "오늘의이슈",
+      "실시간검색",
+      "쇼츠"
+    ],
+    "comment_question": "솔직히 올해 내 소득, 늘었어요 줄었어요? 주변에 큰돈 번 사람 실제로 본 적 있으면 손!"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 6
+    }
+  },
+  "effects": {
+    "duration": 34.12,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Monkeys Spinning Monkeys",
+    "bgm_mood": "funny",
+    "bgm_credit": "Music: \"Monkeys Spinning Monkeys\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "월급은 줄었는데 왜 주변엔 다 부자뿐일까요? 오늘 이 얘기가 난리예요.",
+      "on_screen_text": "나만 왜?",
+      "image": "runs/2026-11-01/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "지금 중산층이 검색어에 확 떴어요. 이유가 좀 씁쓸합니다.",
+      "on_screen_text": "검색어 폭발",
+      "image": "runs/2026-11-01/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "중산층 열 명 중 네 명이 오히려 소득이 줄었대요.",
+      "on_screen_text": "10명 중 4명",
+      "image": "runs/2026-11-01/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "심지어 여덟 명 중 한 명은 소득이 반토막이라고 해요.",
+      "on_screen_text": "반토막 실화?",
+      "image": "runs/2026-11-01/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "근데 큰돈 벌었다는 사람들은 다 어디 있죠? 얘기만 들리고 얼굴은 못 봤어요.",
+      "on_screen_text": "그 부자 어디?",
+      "image": "runs/2026-11-01/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "부자는 늘 친구의 친구의 사촌이에요. 여러분 소득은 늘었나요, 줄었나요?",
+      "on_screen_text": "부자는 남의 일",
+      "image": "runs/2026-11-01/scene_06.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-11-01/thumbnail.jpg",
+  "video_file": "videos/2026-11-01.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "YT_* 시크릿 없음"
+  },
+  "finished_at": "2026-11-01T23:39:12+09:00"
+}

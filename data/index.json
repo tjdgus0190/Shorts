@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-01",
+    "status": "success",
+    "title": "월급은 줄었는데 내 주변만 다 부자인 이유",
+    "overall": 72,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-11-01/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 34.12
+  },
+  {
     "date": "2026-10-31",
     "status": "qa_failed",
     "title": "이강인 부상 털고 또 선발? 감독이 바라는 딱 하나",
