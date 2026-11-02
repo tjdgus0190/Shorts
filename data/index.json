@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-03",
+    "status": "qa_failed",
+    "title": "침낭 들고 줄 선 용산, 그 뒤 대반전",
+    "overall": 64,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-11-03/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 39.78
+  },
+  {
     "date": "2026-11-01",
     "status": "success",
     "title": "월급은 줄었는데 내 주변만 다 부자인 이유",
