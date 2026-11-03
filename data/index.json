@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-04",
+    "status": "qa_failed",
+    "title": "이 경기 보다가 심장약 찾았다 (삼성 7 KT 8)",
+    "overall": 67,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-11-04/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 45.72
+  },
+  {
     "date": "2026-11-03",
     "status": "qa_failed",
     "title": "침낭 들고 줄 선 용산, 그 뒤 대반전",
