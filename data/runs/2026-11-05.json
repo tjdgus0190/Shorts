@@ -1,0 +1,476 @@
+{
+  "date": "2026-11-05",
+  "status": "success",
+  "started_at": "2026-11-05T00:54:56+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-11-05T00:54:56+09:00",
+      "note": "",
+      "seconds": 29.6
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-05T00:55:26+09:00",
+      "note": "",
+      "seconds": 18.1
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-05T00:55:44+09:00",
+      "note": "",
+      "seconds": 28.8
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-05T00:56:12+09:00",
+      "note": "",
+      "seconds": 45.7
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-05T00:56:58+09:00",
+      "note": "1차",
+      "seconds": 24.3
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-05T00:57:22+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 48.4
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-05T00:58:11+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 41.5
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-05T00:58:52+09:00",
+      "note": "2차",
+      "seconds": 22.6
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-05T00:59:15+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 29.8
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-05T00:59:45+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 26.5
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-05T01:00:11+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 45.1
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-05T01:00:56+09:00",
+      "note": "3차",
+      "seconds": 19.5
+    },
+    {
+      "name": "uploader",
+      "label": "업로드",
+      "status": "done",
+      "started_at": "2026-11-05T01:01:16+09:00",
+      "note": "",
+      "seconds": 0.0
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 60,
+        "hook": 62,
+        "clarity": 68,
+        "visual": 58,
+        "subtitle": 75,
+        "safety": 85
+      },
+      "overall": 66,
+      "pass": false,
+      "issues": [
+        "첫 프레임(f0)이 훅과 맞지 않음: 대본은 '90도로 인사'인데 사자는 얼굴을 감싼 채 서 있고 곰 감독과 나란히 서 있을 뿐 허리를 숙이지 않음. 첫 3초의 시각적 임팩트가 약함.",
+        "마스코트 일관성 부족: 사자의 갈기 색, 모자 유무, 유니폼 색과 무늬가 장면마다 다름(f0 주황 갈기에 흰 유니폼, f1 줄무늬 유니폼, f2 갈색 갈기에 회색 유니폼과 모자, f3 유니폼 없음). 같은 선수로 보이지 않아 이야기 흐름이 끊김.",
+        "이미지 속 글자 깨짐: f1 유니폼의 'Nedtars', f3 하단 광고판의 'ENTLAN' 등 의미 없는 글자가 보임.",
+        "f3의 레드카드는 축구 소품이라 야구 이야기와 맞지 않음. 유니폼도 입지 않아 장면 불일치. 장면 7의 '욕 vs 박수' 의도는 이해되지만 소품 선택이 어색함.",
+        "f1의 사이클 아이콘이 거의 보이지 않아 '사이클링 히트' 연출이 전달되지 않음. 장면 4의 실책 장면은 프레임으로 확인하지 못함.",
+        "길이 불일치: 영상은 49.2초인데 description은 '30초로 정리'라고 적혀 있음. 숏츠로는 길고 설명문이 사실과 다름.",
+        "선수 이름이 없고 '그 선수', '이 선수'로만 나옴. 스포츠 팬이 궁금해할 구체성(누구, 어떤 실책)이 없어 재미와 공감이 약함. 감독에게 90도로 인사한 '이유'도 제목과 달리 설명되지 않아 제목 약속을 지키지 못함.",
+        "논리 모순 소지: '안타를 쳐도 쳐도 끝이 없다'와 '사이클링 히트에 홈런만 빠짐'이 서로 맞지 않음. 사이클링 히트는 단·2·3루타와 홈런을 모두 치는 기록이라 '급'이라는 비유가 이해하기 어렵고, 해당 경기 기록도 확인 필요.",
+        "사실 확인 필요: 한국시리즈 2차전 삼성 연장 12회, 1승 1패, 결승 득점, 실책 내용과 90도 인사 여부. 이번 검수에서는 단정할 수 없음. 실제 선수와 경기를 다루므로 실책 선수를 조롱하는 뉘앙스가 되지 않게 표현 주의 필요.",
+        "자막: 하단 자막은 가독성이 좋고 키워드 강조도 있음. 다만 화면 중앙의 캐릭터 몸통과 겹치고(f0, f2), 상단 on_screen_text와 하단 자막이 동시에 떠서 시선이 분산됨."
+      ],
+      "retry_target": "producer",
+      "feedback": "producer: 1) 모든 장면에서 같은 마스코트로 보이도록 고정하세요. 예: 주황 갈기, 흰색 줄무늬 삼성풍 유니폼, 파란 모자를 프롬프트마다 똑같이 쓰세요. 2) 장면 1은 사자가 곰 감독 앞에서 허리를 90도로 숙인 옆모습으로 다시 만드세요. 첫 프레임에서 인사 장면이 바로 보여야 합니다. 3) 프롬프트에 'no text, no letters, no logo, blank jersey'를 넣어 'Nedtars'나 'ENTLAN' 같은 깨진 글자를 없애세요. 4) 장면 7의 레드카드(축구)는 빼고 야구 소품으로 바꾸세요. 예: 한쪽 손에는 야유를 뜻하는 빈 야구공 그림, 다른 손에는 박수 이모지나 트로피를 들고 야구 유니폼을 입은 모습. 5) 장면 3은 사이클 아이콘을 키워 '사이클링 히트급'이 보이게 하세요. 6) 자막은 캐릭터 얼굴과 몸통을 가리지 않도록 하단으로 더 내리세요. 기획 측에는 별도 개선 요청이 필요합니다. 선수 이름이나 구체적 실책 내용을 넣고, 90도 인사의 '이유'를 마지막에 확인할 수 있게 하세요. description의 '30초'는 실제 길이에 맞추거나 대본을 줄이세요. 경기 사실관계(2차전, 연장 12회, 1승 1패, 결승 득점)는 확인이 필요합니다."
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 58,
+        "hook": 62,
+        "clarity": 62,
+        "visual": 62,
+        "subtitle": 75,
+        "safety": 78
+      },
+      "overall": 64,
+      "pass": false,
+      "issues": [
+        "제목은 '90도 인사한 이유'를 약속하지만 대본은 이유를 설명하지 않는다. 마지막에 '90도 인사까지 했다'고 말할 뿐이라 첫 3초 훅의 궁금증이 해소되지 않는다.",
+        "훅 문장이 '날아다니던 선수가 감독님께 90도로 인사했다'는 상황 나열이다. 반전이나 궁금증을 만드는 장치가 약하다. 장면 5의 반전도 '실책 후 만회'라는 흔한 전개다.",
+        "대본은 사실 나열 위주라 드립과 리듬이 약하다. 장면 3의 '안타를 쳐도 쳐도 끝이 없어요'는 사이클링 히트급이라는 설명과 이어지지만, 웃음 포인트가 되지는 못한다.",
+        "'한국시리즈 2차전 삼성 연장 12회, 1승 1패 원점, 결승 득점, 치명적 실책' 같은 경기 사실은 영상만으로 검증할 수 없다. 업로드 전에 확인이 필요하다.",
+        "설명란은 '30초로 정리'라고 쓰여 있지만 실제 길이는 49.2초다. 숏폼 기준으로는 다소 길다.",
+        "f0(0.6초)에는 기획서의 갈색 곰 감독이 보이지 않는다. 사자 마스코트가 혼자 허리를 숙이고 있어 '감독님께 인사'라는 핵심 맥락이 시각적으로 전달되지 않는다.",
+        "캐릭터가 장면마다 일관되지 않는다. f0은 사실적인 탈 인형 질감에 얼굴이 길고, f1~f3은 귀여운 3D 카툰이다. 모자 로고도 'LA', 별, 'CA'로 제각각이고 유니폼 디자인도 달라진다.",
+        "f0의 배경 광고판에 'Hostcom' 같은 깨진 글자가 있고, f3 광고판에도 'CINE' 같은 의미 없는 글자가 보인다. 모자의 'LA' 로고는 실제 구단(다저스)과 혼동될 수 있어 상표 위험이 약간 있다.",
+        "f2는 슬라이딩 장면인데 홈플레이트가 갈색 모래 덩어리처럼 보이고, 공이 몸 아래에 있어 상황이 어색하다. f3은 박수 아이콘이 장갑처럼 보인다.",
+        "자막은 읽기 쉽지만 상단 검은 박스와 하단 자막이 동시에 나온다. f2의 '여기서 반전 그'처럼 문장이 어색한 곳에서 끊기고, 상단 문구와 하단 자막이 중복된다. f0에서는 하단 자막이 글러브를 일부 가린다."
+      ],
+      "retry_target": "planner",
+      "feedback": "기획 단계에서 다음을 고쳐 주세요. (1) 제목과 훅이 약속한 '90도 인사한 이유'를 대본 안에서 실제로 밝히세요. 예를 들어 '감독님이 실책 직후 한마디 해줬다'처럼 구체적인 반전 대사를 넣으면 됩니다. 훅은 '왜 이 선수가 감독님께 90도로 인사했을까?'처럼 질문형으로 바꾸세요. (2) 정보 나열 대신 드립과 리듬을 넣으세요. 장면 3~5의 '실책 → 만회' 흐름에 웃음 포인트를 하나 이상 넣고, 마지막 질문은 댓글을 유도하는 한 줄로 줄이세요. (3) 길이를 30초 안팎으로 줄이세요. 장면 수를 5~6개로 줄이거나 문장을 짧게 하세요. (4) 경기 결과와 기록 사실(2차전, 연장 12회, 1승 1패, 결승 득점 주체)은 출처를 확인하세요. 확인이 안 되면 단정 표현을 피하세요. 설명란의 '30초'도 실제 길이에 맞추세요. (5) 이미지 프롬프트는 장면 1에서 곰 감독이 반드시 보이도록 하고, 모든 장면에서 사자 마스코트의 디자인(카툰 3D, 같은 모자 로고)을 동일하게 고정하세요. 모자와 광고판에는 글자·로고가 없도록 지시하세요(예: 'blank cap, no text, no logos'). 이 부분은 이후 producer 단계에서도 확인해야 합니다."
+    },
+    {
+      "attempt": 3,
+      "scores": {
+        "fun": 68,
+        "hook": 72,
+        "clarity": 75,
+        "visual": 72,
+        "subtitle": 62,
+        "safety": 78
+      },
+      "overall": 71,
+      "pass": true,
+      "issues": [
+        "자막 위치: 하단 자막이 캐릭터 몸통·발 위에 겹친다. f0에서는 선수 다리와 감독 사이를 가리고, f2에서는 홈플레이트와 소방차를 가리고, f3에서는 유니폼 상체를 가린다. 화면 하단 1/3의 빈 잔디 영역을 쓰지 못하고 있다.",
+        "러닝타임과 설명문 불일치: 실제 길이는 49.5초인데 description에는 '30초 안팎'이라고 적혀 있다. 설명문을 고치거나 대본을 줄여야 한다.",
+        "f3 이미지가 프롬프트와 다르다. 왼손에 공 하나만 들어야 하는데 공이 2개 보인다. 박수 아이콘은 손 모양이 어색해서 뭔지 알아보기 어렵다.",
+        "f2는 헤드퍼스트 슬라이딩이 아니라 엎드려 기어가는 자세로 보인다. 장면 의도(득점 슬라이딩)가 약하게 전달된다.",
+        "사실 관계 확인 필요: 한국시리즈 2차전 연장 12회, 사이클링 히트에서 홈런만 빠졌다는 기록, 실책 직후 결승 득점, 박진만 감독 발언은 모두 실제 기록과 대조해야 한다. 틀렸다고 단정할 근거는 없다.",
+        "실존 선수와 감독을 마스코트로 대체해 선수 이름이 한 번도 나오지 않는다. 사실을 아는 시청자에게는 누구 얘기인지 불분명하다.",
+        "재미 요소는 '불 지른 사람이 소방차까지 몰고 왔다'는 비유 하나뿐이다. 나머지는 상황 설명 위주다. 마지막 '욕 vs 박수' 질문은 댓글 유도로는 무난하지만 반전이 약하다."
+      ],
+      "retry_target": null,
+      "feedback": "합격이지만 개선 여지가 있다. (1) 자막을 화면 하단 1/3의 빈 잔디 영역으로 내리거나 위치를 고정해 캐릭터를 가리지 않게 한다. (2) 대본을 35~40초 안팎으로 줄이거나 description의 '30초'를 실제 길이에 맞게 고친다. (3) 선수 이름이나 등번호 등 식별 단서를 한 번 넣고, 기록과 발언은 기사로 재확인한다. (4) 소방차 드립 같은 반전·비유를 한 번 더 넣는다. 예를 들어 사이클링 히트 장면에 '홈런만 안 먹은 뷔페' 같은 한 줄을 넣는다. (5) 장면 6의 공은 1개로 줄이고, 장면 4는 슬라이딩 자세를 분명하게 다시 생성한다."
+    }
+  ],
+  "marketer": {
+    "summary": "한국시리즈 2차전 삼성의 연장 혈투 승부 원점이 검색을 휩쓸고, 노시환 MLB 포스팅·태영호 장남 사기 선고·이요원/이유리/송해나 예능 근황이 뒤를 이은 날",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "우규민",
+        "traffic": "5000+",
+        "traffic_num": 5000,
+        "news": [
+          "연장 12회 끝낸 건 실책... 삼성, 승부 원점으로 돌렸다",
+          "사이클링 히트에 홈런 빠진 활약에도 고개 숙인 디아즈, 치명적 실책 후 결승 득점…박진만 “경기 끝나고 90도 인사하더라” [KS2] - 머니투데이",
+          "프로야구 삼성, 연장 혈투 끝에 KS 2차전 승리‥'1승 1패' 균형"
+        ],
+        "topic": "KS 2차전 연장 12회, 삼성이 승부 원점으로 돌린 30초 요약",
+        "why_now": "'연장 12회 끝낸 건 실책... 삼성, 승부 원점으로 돌렸다', '프로야구 삼성, 연장 혈투 끝에 KS 2차전 승리 1승 1패' 기사로 검색 급증",
+        "angle": "'이 경기가 왜 난리냐면' 형식. 디아즈가 사이클링 히트급 활약에도 치명적 실책 후 결승 득점, 경기 후 박진만 감독에게 90도 인사했다는 반전 포인트를 타임라인으로 정리하고 드립 얹기",
+        "target": "야구 팬, 삼성 팬, 20~40대 남성",
+        "fun_score": 8,
+        "risk": "low",
+        "risk_note": "실책 선수를 조롱하지 않고 반전 드라마 중심으로 다룰 것"
+      },
+      {
+        "rank": 2,
+        "keyword": "kbo",
+        "traffic": "2000+",
+        "traffic_num": 2000,
+        "news": [
+          "Si Hwan Roh leads next crop of MLB-bound KBO stars",
+          "Si-Hwan Roh Posted for MLB Teams, Top Landing Spots for Korean Star in Free Agency",
+          "Blue Jays free agent target: Si-Hwan Roh"
+        ],
+        "topic": "노시환 MLB 포스팅, 해외 매체가 꼽은 행선지 후보 정리",
+        "why_now": "'Si Hwan Roh leads next crop of MLB-bound KBO stars', 'Blue Jays free agent target: Si-Hwan Roh' 등 해외 기사 다수",
+        "angle": "'해외 매체가 말하는 노시환' 숫자·후보 구단 비교 형식. 블루제이스 등 거론된 구단을 퀴즈처럼 소개하고 댓글로 예상 행선지 투표 유도",
+        "target": "야구 팬, MLB 관심층",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": "뉴스에 없는 계약 규모나 성적 수치는 지어내지 말 것"
+      },
+      {
+        "rank": 3,
+        "keyword": "박계범",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "이재현 '한점 더 달아나자'",
+          "[포토] 김성윤 '끝까지 가보자' - 머니투데이",
+          "[사진]실점 위기 탈출 김정운"
+        ],
+        "topic": "KS 2차전 사진으로 보는 삼성 선수들의 '끝까지 가보자' 표정 모음",
+        "why_now": "이재현 '한점 더 달아나자', 김성윤 '끝까지 가보자', 김정운 실점 위기 탈출 등 KS 포토 기사에 이름이 함께 노출",
+        "angle": "경기 사진 속 선수 표정에 자막 드립을 붙이는 '포토 상황극'. 기사 사진 캡션을 대사처럼 활용",
+        "target": "삼성 팬, 야구 팬",
+        "fun_score": 5,
+        "risk": "medium",
+        "risk_note": "박계범 개인 이슈의 구체적 내용이 제목에 없어 사실 단정 금지. 사진 저작권 확인 필요"
+      },
+      {
+        "rank": 4,
+        "keyword": "사기",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "부친 ‘태영호’ 이름 내세워 18억 사기…장남 1심 징역 3년 6개월",
+          "태영호 전 의원 장남 ‘18억 가상자산 사기’ 1심서 징역 3년6개월형",
+          "父 이름 내세워 ‘투자 사기’ 태영호 장남...1심 징역 3년 6개월"
+        ],
+        "topic": "아버지 이름 내세워 18억 투자 사기, 태영호 전 의원 장남 1심 징역 3년 6개월",
+        "why_now": "'부친 태영호 이름 내세워 18억 사기…장남 1심 징역 3년 6개월' 기사 다수",
+        "angle": "'이름값 팔다 징역 3년 6개월' 사건 개요를 숫자(18억, 3년 6개월) 중심으로 담백하게 정리하고, 투자 사기 예방 체크리스트로 연결",
+        "target": "재테크 관심층, 20~50대",
+        "fun_score": 4,
+        "risk": "high",
+        "risk_note": "형사 사건·정치인 가족 관련. 1심 판결이므로 확정 표현 피하고 조롱 없이 사실 위주로"
+      },
+      {
+        "rank": 5,
+        "keyword": "이요원",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "‘23세에 첫 출산’ 이요원, 미모 쏙 빼닮은 장녀 공개…美 명문대 졸업",
+          "이요원 美 명문대 졸업 큰딸 공개…173㎝ 엄마보다 큰 키 깜짝 - 머니투데이",
+          "김영란, '23세 결혼' 이요원에 \"너무 일찍 시집 가…신인 때 눈에 딱 들어왔다\""
+        ],
+        "topic": "23세에 첫 출산한 이요원, 미국 명문대 졸업한 173cm 큰딸 공개",
+        "why_now": "'미모 쏙 빼닮은 장녀 공개…美 명문대 졸업', '173㎝ 엄마보다 큰 키' 기사",
+        "angle": "'엄마보다 큰 딸' 숫자 비교 중심 연예 이슈 30초 정리. 김영란의 '신인 때 눈에 딱 들어왔다' 발언을 곁들여 일화 소개",
+        "target": "30~50대 여성, 연예 뉴스 소비층",
+        "fun_score": 6,
+        "risk": "medium",
+        "risk_note": "일반인인 자녀의 사생활. 얼굴·신상 노출 최소화하고 기사 내용 범위 내에서만 다룰 것"
+      },
+      {
+        "rank": 6,
+        "keyword": "이유리",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "이유리, 이사한 새집 최초 공개…“전문가 18명이 짐 정리, 15시간 걸렸다”",
+          "이유리, 띠동갑 ♥목사와 결혼하더니..17년만 새 집 공개 \"전문가 18인 도움\"(편스토랑)",
+          "\"드레스룸도 대용량 여신\" 이유리, 연민정룩→'1279만뷰' 원피스 다 있다 '감탄'('편스토랑')"
+        ],
+        "topic": "이유리 17년 만의 새집 공개, 전문가 18명이 15시간 정리",
+        "why_now": "'편스토랑'에서 새집 최초 공개, '전문가 18명이 짐 정리, 15시간 걸렸다' 기사",
+        "angle": "'18명×15시간' 숫자로 보는 이삿짐 스케일 + 드레스룸, 1279만뷰 연민정룩 원피스 언급하는 랜선 집들이 형식",
+        "target": "20~40대 여성, 인테리어/정리 관심층",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": "결혼·배우자 관련 언급은 최소화"
+      },
+      {
+        "rank": 7,
+        "keyword": "로보락",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "로보락, 로봇청소기 구독 서비스 출시",
+          "TCL, G마켓 빅스마일데이 참여…주요 가전 최대 26% 할인 By EBN",
+          "로보락, S10 MaxV Ultra 구독 서비스로 제품 관리 방식 다변화"
+        ],
+        "topic": "로봇청소기도 이제 구독 시대, 로보락 S10 MaxV Ultra 구독 서비스",
+        "why_now": "'로보락, 로봇청소기 구독 서비스 출시' 기사",
+        "angle": "'사는 것 vs 구독하는 것' 비교 상황극. 구독의 장단점을 가볍게 짚고 '다음엔 뭘 구독하게 될까' 드립",
+        "target": "가전 관심층, 1인 가구, 30~40대",
+        "fun_score": 5,
+        "risk": "low",
+        "risk_note": "요금·조건 등 제목에 없는 수치는 언급하지 말 것. 광고성 오해 주의"
+      },
+      {
+        "rank": 8,
+        "keyword": "송해나",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "송해나, 이승철 주선 소개팅 나간다…184㎝·축구마니아 스펙에 입꼬리 상승",
+          "송해나, '깜짝 소개팅' 나섰다…\"키 184cm·축구 마니아\"(신랑수업2)",
+          "송해나, 이승철 주선으로 소개팅 \"184cm에 사윗감 직업 1위, 축구 마니아\"('신랑수업')"
+        ],
+        "topic": "이승철 주선 깜짝 소개팅, 상대 스펙은 184cm에 축구 마니아",
+        "why_now": "'신랑수업2' 소개팅 예고 기사, '184cm·축구 마니아 스펙에 입꼬리 상승'",
+        "angle": "'스펙 듣고 입꼬리 올라간 송해나' 예고편 기반 상황극. 시청자 댓글로 결과 예측 유도",
+        "target": "20~40대 여성, 예능 시청층",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": "상대방 신상 추측 금지, 방송 내용 범위 내에서만 다룰 것"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": [
+      {
+        "keyword": "수사",
+        "blocked_by": "대통령"
+      },
+      {
+        "keyword": "사랑제일교회",
+        "blocked_by": "대통령"
+      }
+    ]
+  },
+  "selected_attempt": 3,
+  "plan": {
+    "chosen_rank": 1,
+    "reason": "검색량 1위(5000+)이고 재미 포인트도 큼. 사이클링 히트에 홈런만 빠진 활약, 치명적 실책, 결승 득점, 박진만 감독의 '90도 인사하더라'는 말까지 반전 구조가 완성됨. QA 반영: 훅을 질문형으로 바꾸고 '왜 90도 인사?'의 답을 대본 안에서 밝힘. 단, 뉴스 제목에 감독이 실책 직후 한 말은 없으므로 지어내지 않고, 실책 후 만회했지만 미안해서 숙였을 것이라는 추측으로 처리하고 단정하지 않음. 박진만 감독의 '90도 인사하더라'는 제목 인용 그대로 사용함. 길이는 6장면, 약 30초로 줄이고 실책 후 만회 구간에 드립을 넣음. 계산이 필요한 숫자는 없음. 선수를 조롱하지 않고 반전 드라마 중심으로 다룸.",
+    "title": "실책하고도 감독님께 90도 인사한 이유",
+    "hook": "왜 이 선수는 경기 끝나고 감독님한테 90도로 인사했을까요?",
+    "bgm_mood": "funny",
+    "style": "vibrant 3D cartoon, soft lighting, high detail, warm stadium colors, the lion mascot always has a fluffy orange mane and a plain smooth blank blue cap and a white pinstripe uniform with a smooth plain chest",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "왜 이 선수는 경기 끝나고 감독님한테 90도로 인사했을까요?",
+        "on_screen_text": "90도 인사 왜?",
+        "image_prompt": "side view of a cute cartoon lion mascot with a fluffy orange mane, a plain smooth blank blue baseball cap, and a white baseball uniform with thin blue pinstripes and a smooth plain chest, bending forward at a ninety degree angle in a deep bow, facing a calm standing brown bear coach in a dark gray jacket and a plain smooth gray cap, both fully visible head to toe, baseball stadium with green grass and plain blank colorful signboards in the background, vibrant 3D cartoon, soft lighting, high detail, warm stadium colors, characters in the upper two-thirds of the frame, empty grass in the bottom third"
+      },
+      {
+        "id": 2,
+        "narration": "한국시리즈 2차전, 삼성은 연장 12회까지 갔어요. 이 선수는 사이클링 히트에 홈런만 빠진 미친 활약을 했고요.",
+        "on_screen_text": "홈런만 빠짐",
+        "image_prompt": "a cheerful cute cartoon lion mascot with a fluffy orange mane, a plain smooth blank blue baseball cap, and a white baseball uniform with thin blue pinstripes and a smooth plain chest, swinging a bat and hitting a ball with golden sparkles, night stadium lights and plain blank signboards in the background, vibrant 3D cartoon, soft lighting, high detail, warm stadium colors, characters in the upper two-thirds of the frame, empty grass in the bottom third"
+      },
+      {
+        "id": 3,
+        "narration": "근데 연장에서 치명적인 실책이 나옵니다. 공이 글러브 옆으로 쏙. 구장이 순간 조용해졌죠.",
+        "on_screen_text": "어... 어?",
+        "image_prompt": "a shocked cute cartoon lion mascot with a fluffy orange mane, a plain smooth blank blue baseball cap, and a white baseball uniform with thin blue pinstripes and a smooth plain chest, wide eyes and open mouth, a white baseball rolling away on the grass beside its brown glove, night stadium with plain blank signboards, vibrant 3D cartoon, soft lighting, high detail, warm stadium colors, characters in the upper two-thirds of the frame, empty grass in the bottom third"
+      },
+      {
+        "id": 4,
+        "narration": "그런데 이 선수, 곧바로 결승 득점을 해버립니다. 불 지른 사람이 소방차까지 몰고 온 느낌이죠.",
+        "on_screen_text": "셀프 소방수",
+        "image_prompt": "a cute cartoon lion mascot with a fluffy orange mane, a plain smooth blank blue baseball cap, and a white baseball uniform with thin blue pinstripes and a smooth plain chest, sliding headfirst into a flat white home plate with dust clouds and a proud grin, a tiny red toy fire truck parked on the grass nearby, vibrant 3D cartoon, soft lighting, high detail, warm stadium colors, characters in the upper two-thirds of the frame, empty grass in the bottom third"
+      },
+      {
+        "id": 5,
+        "narration": "삼성은 1승 1패 원점. 박진만 감독이 그러더라고요. 경기 끝나고 90도로 인사하더라. 아마 미안함 반, 고마움 반 아니었을까요.",
+        "on_screen_text": "미안함 반 고마움 반",
+        "image_prompt": "a cute cartoon lion mascot with a fluffy orange mane, a plain smooth blank blue baseball cap, and a white baseball uniform with thin blue pinstripes and a smooth plain chest, bowing deeply with a sheepish smile, in front of a smiling brown bear coach in a dark gray jacket and a plain smooth gray cap who pats its shoulder, colorful confetti falling over the baseball field, vibrant 3D cartoon, soft lighting, high detail, warm stadium colors, characters in the upper two-thirds of the frame, empty grass in the bottom third"
+      },
+      {
+        "id": 6,
+        "narration": "실책 하나에 영웅까지 한 방에 찍은 하루. 이 선수, 욕 먹어야 할까요 박수 받아야 할까요?",
+        "on_screen_text": "욕 vs 박수",
+        "image_prompt": "a cute cartoon lion mascot with a fluffy orange mane, a plain smooth blank blue baseball cap, and a white baseball uniform with thin blue pinstripes and a smooth plain chest, standing in the center with a puzzled face, holding a plain white baseball in the left paw and a shiny golden trophy in the right paw, a floating yellow clapping hands icon above the trophy, baseball stadium background with plain blank signboards, vibrant 3D cartoon, soft lighting, high detail, warm stadium colors, characters in the upper two-thirds of the frame, empty grass in the bottom third"
+      }
+    ],
+    "description": "사이클링 히트에 홈런만 빠진 활약, 치명적 실책, 그리고 결승 득점까지. 한국시리즈 2차전 삼성의 연장 혈투와 90도 인사 이야기를 30초 안팎으로 풀었습니다. #한국시리즈 #삼성라이온즈 #프로야구",
+    "tags": [
+      "한국시리즈",
+      "KS2차전",
+      "삼성라이온즈",
+      "디아즈",
+      "박진만",
+      "프로야구",
+      "연장혈투",
+      "90도인사",
+      "쇼츠"
+    ],
+    "comment_question": "실책하고 결승 득점까지 한 디아즈, 욕 vs 박수 어느 쪽?"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 6
+    }
+  },
+  "effects": {
+    "duration": 49.48,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Sneaky Snitch",
+    "bgm_mood": "funny",
+    "bgm_credit": "Music: \"Sneaky Snitch\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "왜 이 선수는 경기 끝나고 감독님한테 90도로 인사했을까요?",
+      "on_screen_text": "90도 인사 왜?",
+      "image": "runs/2026-11-05/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "한국시리즈 2차전, 삼성은 연장 12회까지 갔어요. 이 선수는 사이클링 히트에 홈런만 빠진 미친 활약을 했고요.",
+      "on_screen_text": "홈런만 빠짐",
+      "image": "runs/2026-11-05/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "근데 연장에서 치명적인 실책이 나옵니다. 공이 글러브 옆으로 쏙. 구장이 순간 조용해졌죠.",
+      "on_screen_text": "어... 어?",
+      "image": "runs/2026-11-05/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "그런데 이 선수, 곧바로 결승 득점을 해버립니다. 불 지른 사람이 소방차까지 몰고 온 느낌이죠.",
+      "on_screen_text": "셀프 소방수",
+      "image": "runs/2026-11-05/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "삼성은 1승 1패 원점. 박진만 감독이 그러더라고요. 경기 끝나고 90도로 인사하더라. 아마 미안함 반, 고마움 반 아니었을까요.",
+      "on_screen_text": "미안함 반 고마움 반",
+      "image": "runs/2026-11-05/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "실책 하나에 영웅까지 한 방에 찍은 하루. 이 선수, 욕 먹어야 할까요 박수 받아야 할까요?",
+      "on_screen_text": "욕 vs 박수",
+      "image": "runs/2026-11-05/scene_06.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-11-05/thumbnail.jpg",
+  "video_file": "videos/2026-11-05.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "YT_* 시크릿 없음"
+  },
+  "finished_at": "2026-11-05T01:01:16+09:00"
+}
