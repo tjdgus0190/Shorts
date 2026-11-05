@@ -1,0 +1,493 @@
+{
+  "date": "2026-11-06",
+  "status": "qa_failed",
+  "started_at": "2026-11-06T00:51:42+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-11-06T00:51:42+09:00",
+      "note": "",
+      "seconds": 25.3
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-06T00:52:07+09:00",
+      "note": "",
+      "seconds": 19.2
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-06T00:52:26+09:00",
+      "note": "",
+      "seconds": 38.7
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-06T00:53:05+09:00",
+      "note": "",
+      "seconds": 45.4
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-06T00:53:50+09:00",
+      "note": "1차",
+      "seconds": 18.2
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-06T00:54:08+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 20.8
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-06T00:54:29+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 39.4
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-06T00:55:09+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 55.0
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-06T00:56:04+09:00",
+      "note": "2차",
+      "seconds": 22.9
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-06T00:56:27+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 52.5
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-06T00:57:19+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 48.1
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-06T00:58:07+09:00",
+      "note": "3차",
+      "seconds": 29.2
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 62,
+        "hook": 68,
+        "clarity": 72,
+        "visual": 72,
+        "subtitle": 72,
+        "safety": 82
+      },
+      "overall": 69,
+      "pass": false,
+      "issues": [
+        "첫 문장이 '1등은 따로 있는데'라는 추상적인 말로 시작해 호기심 유발이 약합니다. 구체적인 숫자나 대비가 없습니다.",
+        "내용이 ETF 순위 사실을 풀어 설명하는 뉴스 요약 톤이라 반전이나 드립이 적고, 마지막 '선거 아닙니까' 한 줄만 재미 요소입니다. 그만큼 fun 점수가 낮습니다.",
+        "영상 길이는 41.7초인데 description에는 '30초로 정리'라고 적혀 있어 서로 맞지 않습니다.",
+        "씬 1 이미지가 기획 프롬프트(사자 혼자, 개미들이 한 방향으로 달려감)와 다릅니다. 실제 프레임은 사실적인 개미 떼가 사자를 둘러싼 모습이라 '개미가 다른 곳으로 이동'이라는 메시지가 전달되지 않습니다. 개미 질감도 3D 카툰 톤에서 벗어나 징그럽습니다.",
+        "씬 7 프레임에서 호랑이가 든 깃발이 스위스 국기와 비슷한 흰 십자 모양입니다. 의도와 무관한 상징이라 교체가 필요합니다.",
+        "씬 5 프레임에서는 자막이 사자 얼굴과 왕좌 하단을 일부 가립니다.",
+        "이미지가 화면 중앙에 레터박스처럼 들어가고 위아래는 블러 배경입니다. 위쪽 타이틀 박스와 아래쪽 자막 위치가 떨어져 있어 시선이 분산됩니다.",
+        "'삼성 독주에 균열', 'TIGER 미국S&P500으로 개미 대이동'은 근거를 영상에서 제시하지 않습니다. 순매수 수치나 출처가 없어 확인 필요합니다.",
+        "투자 권유가 아니라는 고지는 씬 7과 description에 있어 안전 측면은 양호합니다."
+      ],
+      "retry_target": null,
+      "feedback": "합격입니다. 개선 팁은 다섯 가지입니다. (1) 훅에 '순매수 N억' 같은 구체적 수치나 '1등 ETF를 두고 개미가 외면' 같은 대립을 넣으세요. 수치는 출처와 단위를 확인한 뒤 쓰세요. (2) 씬 1은 개미들이 사자를 등지고 호랑이 쪽으로 달려가는 구도로 다시 생성하고, 개미는 카툰 스타일로 단순화하세요. (3) 씬 7의 십자 모양 깃발은 단색 깃발로 바꾸세요. (4) description의 '30초'는 실제 길이에 맞춰 고치거나 영상을 30초 안팎으로 줄이세요. (5) 자막은 얼굴과 핵심 소품을 가리지 않는 위치로 조정하고, 대본에 반전이나 드립을 한두 군데 더 넣으세요."
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 55,
+        "hook": 55,
+        "clarity": 70,
+        "visual": 52,
+        "subtitle": 65,
+        "safety": 80
+      },
+      "overall": 61,
+      "pass": false,
+      "issues": [
+        "장면 1 (0.6초 프레임): 훅 장면에서 왕관이 사자가 아닌 곰 같은 뒷모습 캐릭터에 씌워져 있고, 호랑이가 작은 왕관을 쓰고 있습니다. 기획의 '왕관=사자(KODEX), 민심=호랑이(TIGER)' 구도가 뒤집혀 스크롤을 멈추게 할 힘도 약합니다.",
+        "장면 1: 개미가 사자에게서 등 돌려 도망가는 모습이 아니라 두 마리가 가운데 모여 있는 모습이라 '외면' 연출이 안 됩니다. 사자도 놀란 표정이 아닙니다.",
+        "장면 5 (55% 프레임): 사자가 두 마리로 보이고 오른쪽에 형체가 불분명한 사자 같은 생물이 있습니다. 발이 회색 원처럼 뭉개졌고 우하단에 'Audio…' 같은 워터마크성 글자가 보입니다. 이미지 생성 오류입니다.",
+        "장면 7 (85% 프레임): 호랑이가 개미 더듬이가 달린 혼종 캐릭터로 나왔고, 깃발이 공중에 떠 있는 듯 어색합니다. 개미 캐릭터도 어둡고 험악해 귀엽지 않습니다.",
+        "자막이 화면 중앙 하단에서 캐릭터와 개미를 가립니다. 장면 1에서는 핵심인 개미 위에 자막이 겹칩니다.",
+        "화면 상단 제목 박스와 하단의 블러 영역이 크고, 실제 이미지는 중간 띠에만 있어 이미지가 작게 보입니다.",
+        "러닝타임이 51.8초로, 정보량에 비해 7장면이 늘어집니다. 같은 구도(사자/호랑이 대치)가 반복되고 반전이나 드립이 부족해 교과서식 이슈 정리에 가깝습니다.",
+        "사실 확인 필요: 'KODEX200이 1등 ETF', '삼성 독주에 균열', '개미들이 TIGER 미국S&P500으로 이동'은 근거나 수치가 없어 단정적으로 들립니다. 출처나 기준(순자산, 거래대금 등)을 밝혀야 합니다. 면책 문구는 있어 안전성 감점은 크지 않습니다."
+      ],
+      "retry_target": "producer",
+      "feedback": "다음 순서로 재작업하세요. (1) 장면 1을 다시 생성합니다. 왕관 쓴 사자는 왼쪽에서 눈이 커진 채 놀란 표정으로 두고, 개미 3~5마리는 사자에게 등을 보인 채 오른쪽의 왕관 없는 아기 호랑이 쪽으로 달리게 하세요. 호랑이에게는 왕관을 씌우지 않습니다. (2) 장면 5는 사자가 한 마리만 나오게 하고 금 간 왕좌를 또렷하게 그리세요. 'no watermark, no text, single lion only'를 프롬프트에 명시하고, 발과 손은 단순하게 그리세요. (3) 장면 7은 호랑이가 개미 더듬이 없는 순수 호랑이로 나오게 하고, 개미는 밝고 귀여운 톤으로 통일하세요. 깃발은 호랑이 손에 확실히 쥐여 주세요. (4) 이미지 속 캐릭터 얼굴과 개미를 가리지 않도록 자막 위치를 아래로 내리도록 effector에 전달하세요. 나머지 장면(3, 4)은 품질이 좋으니 유지해도 됩니다. 기획 쪽 팁: 51초는 길어서 장면 2와 6을 합치거나 줄여 35~40초로 만들면 완주율이 오릅니다. 'KODEX200이 1등'이라는 말에는 기준(순자산 등)을 붙이세요."
+    },
+    {
+      "attempt": 3,
+      "scores": {
+        "fun": 62,
+        "hook": 70,
+        "clarity": 72,
+        "visual": 55,
+        "subtitle": 70,
+        "safety": 85
+      },
+      "overall": 68,
+      "pass": false,
+      "issues": [
+        "scene 5 (f2): 프롬프트에 'exactly one lion'이라고 했는데 기둥 위에 사자 한 마리와 고양이 같은 캐릭터가 더 있습니다. 호랑이가 아니라 고양이처럼 보여서 TIGER 서사와 맞지 않습니다.",
+        "scene 7 (f3): 깃발을 든 쪽이 호랑이가 아니라 사자입니다. 호랑이는 쥐나 곰처럼 보이는 직립 캐릭터입니다. '민심은 TIGER'라는 대사와 그림이 어긋납니다.",
+        "scene 7 (f3): 개미가 파스텔 색 둥근 개미가 아니라 주황색 개미 모양으로 흐릿하게 나왔고, 배경 군중도 뭉개졌습니다. '왕관파 vs 민심파' 대비 구도가 약합니다.",
+        "scene 1 (f0): 사자가 몸 없이 얼굴만 떠 있고 왼쪽 가장자리가 잘렸습니다. 호랑이는 뒷모습뿐이라 '호랑이한테 달려간다'는 장면이 한눈에 읽히지 않습니다. 개미는 검은색 실사풍이라 다른 장면의 귀여운 3D 톤과 어긋납니다.",
+        "장면마다 그림 톤과 캐릭터 디자인이 다릅니다. 사자는 장면마다 다른 모습이고, 배경은 회색, 크림, 베이지로 바뀌어 일관성이 떨어집니다.",
+        "자막이 화면 중앙 하단의 캐릭터와 개미 위에 겹칩니다(f0, f1, f2). 상단 on_screen_text는 검은 박스라 답답하고 이미지 위아래의 블러 여백이 큽니다.",
+        "'KODEX200이 1등', '개미들이 TIGER 미국S&P500으로 몰림', '검색량 급증'은 확인 필요입니다. 기획서에 근거나 날짜가 없습니다. 투자 권유가 아니라는 고지는 있어 안전성은 무난합니다.",
+        "재미 면에서 사자와 호랑이, 왕관과 민심의 은유는 괜찮습니다. 하지만 반전이나 드립이 부족하고 설명조 나열에 가깝습니다. 51.8초는 쇼츠로는 길어서 중반에 이탈할 수 있습니다.",
+        "hook이 'ETF 1등을 두고 개미들이 등을 돌렸습니다'로 정보형 문장입니다. 첫 프레임 이미지가 약해서 스크롤을 멈추게 할 힘이 보통입니다."
+      ],
+      "retry_target": "producer",
+      "feedback": "이미지 재생성을 요청합니다. (1) scene 5는 사자 한 마리와 금 간 왕좌만 그리고, 기둥 위 동물은 negative prompt로 막으세요. 고양이처럼 나오지 않게 'no other animals, no cat'을 명시하세요. (2) scene 7은 깃발을 든 쪽을 호랑이로 고정하세요. 호랑이는 줄무늬와 둥근 귀가 분명한 아기 호랑이로 하고, 사자는 왕관만 쓴 채 한쪽에서 아쉬운 표정을 짓게 하세요. 개미는 밝은 파스텔 색으로 호랑이 쪽에 모이게 하세요. (3) scene 1은 사자 전신을 프레임 안에 넣고 개미는 다른 장면과 같은 귀여운 3D 스타일로 통일하세요. 호랑이 새끼가 정면이나 옆모습으로 보이게 하세요. (4) 전 장면에서 사자와 호랑이의 디자인과 배경 색을 통일하세요. (5) 캐릭터는 상단과 중앙에 두고 하단 약 35%는 비워서 자막이 얼굴을 가리지 않게 하세요. 개선 팁: 후반 대본에 반전 드립을 한 줄 넣고, 전체를 40초 안팎으로 줄이면 완주율이 오릅니다."
+    }
+  ],
+  "marketer": {
+    "summary": "오늘 트렌드는 'ETF 왕좌 싸움(KODEX vs TIGER)'과 '제니 할로윈 룩 오마주 논란', 'G2 롤드컵 탈락 후 감독 결별'까지, 돈·셀럽·e스포츠 이슈가 골고루 터진 날.",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "상장지수펀드",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "ETF 왕좌 지킨 KODEX200…개미는 TIGER 미국S&P500에 ‘우르르’",
+          "균열 난 삼성 독주…KODEX·TIGER '1등 자존심' 싸움 재점화",
+          "[뉴스후] KODEX200의 왕좌와 개미들의 'TIGER 미국S&P500' 대이동"
+        ],
+        "topic": "ETF 왕좌는 KODEX200인데 개미들은 TIGER 미국S&P500으로 우르르, 삼성 vs 미래에셋 '1등 자존심' 싸움 30초 정리",
+        "why_now": "'ETF 왕좌 지킨 KODEX200…개미는 TIGER 미국S&P500에 우르르', 'KODEX·TIGER 1등 자존심 싸움 재점화' 보도",
+        "angle": "KODEX200(왕좌) vs TIGER 미국S&P500(개미 선택)을 격투 게임 대진표처럼 꾸민 '이게 왜 난리냐면' 30초 요약 + 드립. 투자 권유가 아닌 이슈 정리 톤 유지",
+        "target": "20~40대 직장인, 재테크 입문자, 개미 투자자",
+        "fun_score": 6,
+        "risk": "medium",
+        "risk_note": "투자 권유로 오해될 수 있으니 특정 상품 추천 표현을 피하고 '이슈 정리'임을 명확히 할 것"
+      },
+      {
+        "rank": 2,
+        "keyword": "제니",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "‘분노의 질주’ 속 수키로 변신한 제니, 붉은색 차량 앞 파격적인 레트로 룩",
+          "제니, 할로윈 신부 드레스로 퇴폐미 완성...파격 스타일에 '시선 집중'",
+          "Y2K 아이콘 데본 아오키, 완벽하게 오마주한 제니"
+        ],
+        "topic": "제니의 '분노의 질주' 수키로 변신 + 할로윈 신부 드레스, 그리고 데본 아오키 오마주 화제",
+        "why_now": "'분노의 질주 속 수키로 변신한 제니', '할로윈 신부 드레스로 퇴폐미 완성', 'Y2K 아이콘 데본 아오키 완벽 오마주' 기사",
+        "angle": "할로윈 룩 비포/애프터 비교 + 원조(데본 아오키) 오마주 포인트 짚기 '이 룩이 왜 화제냐면' 형식. 패션 중심으로 칭찬 톤",
+        "target": "10~30대 K팝·패션 팬",
+        "fun_score": 8,
+        "risk": "low",
+        "risk_note": ""
+      },
+      {
+        "rank": 3,
+        "keyword": "퍽즈",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "'롤드컵 탈락' G2, 정글러 '스큐몬드' 결별하나",
+          "월즈 조기 탈락→SNS 논란 ‘2연타’…G2, ‘퍽즈’ 감독과 결별",
+          "[소식통] 린서스, 2027 LEC 시즌 앞두고 G2 e스포츠 합류 예정"
+        ],
+        "topic": "롤드컵 조기 탈락한 G2, SNS 논란 '2연타' 끝에 퍽즈 감독과 결별… 린서스 합류설까지",
+        "why_now": "'월즈 조기 탈락→SNS 논란 2연타…G2, 퍽즈 감독과 결별', '린서스 2027 LEC 시즌 앞두고 G2 합류 예정' 소식",
+        "angle": "G2의 롤드컵 탈락→논란→결별→새 얼굴 소문까지 시간순 '시즌 드라마' 요약. 롤 팬 대상 로스터 이동 정리 + 드립",
+        "target": "롤(LoL) 팬, e스포츠 시청자 10~30대",
+        "fun_score": 6,
+        "risk": "medium",
+        "risk_note": "SNS 논란의 구체 내용은 뉴스 제목에 없으므로 추측 금지. 린서스 합류는 '소식통' 기반 미확정 정보로 표기"
+      },
+      {
+        "rank": 4,
+        "keyword": "soxx",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "AMD rides AI chip boom, projects 80%+ revenue surge next year",
+          "AMD Posts Record Q3 Revenue, Shares Soar After Hours",
+          "AMD Data Center Share Hits 64% vs Intel's 44% as Pivot Pays Off"
+        ],
+        "topic": "AMD 3분기 사상 최대 매출·내년 매출 80% 이상 성장 전망, 데이터센터 점유율 64% vs 인텔 44% 비교",
+        "why_now": "'AMD Posts Record Q3 Revenue, Shares Soar After Hours', 'AMD rides AI chip boom, projects 80%+ revenue surge', '데이터센터 점유율 64% vs Intel 44%' 보도",
+        "angle": "'AMD가 시간외에서 날아간 이유' 숫자로 보는 충격 비교(64% vs 44%) 30초 정리. 반도체 ETF(SOXX) 검색 맥락과 연결하되 투자 권유는 배제",
+        "target": "미국 반도체·AI 관심 투자자 20~40대",
+        "fun_score": 5,
+        "risk": "medium",
+        "risk_note": "투자 조언으로 비칠 수 있음. 점유율 수치는 기사 제목 기준이며 지표 정의가 불명확하니 출처 표기 필요"
+      },
+      {
+        "rank": 5,
+        "keyword": "서정진",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "서정진 셀트리온 회장, 인공장기 전망 물었더니 “전공 바꿔라”",
+          "서정진 \"AI 도입 후 신입 채용 줄였다\"···셀트리온, R&D 방식도 변화",
+          "바이오 CDMO 3대장 '합종연횡'…글로벌 경쟁력 강화 \"속도\" - 머니투데이"
+        ],
+        "topic": "인공장기 전망 물었더니 '전공 바꿔라'? 서정진 셀트리온 회장의 AI 시대 직설 발언",
+        "why_now": "'인공장기 전망 물었더니 전공 바꿔라', 'AI 도입 후 신입 채용 줄였다…R&D 방식도 변화' 기사",
+        "angle": "'회장님이 학생에게 던진 한마디' 상황극형 + AI 때문에 신입 채용이 줄었다는 발언을 취준생 관점에서 풀어내는 이슈 정리",
+        "target": "취준생·대학생, 직장인, 바이오·AI 관심층",
+        "fun_score": 6,
+        "risk": "medium",
+        "risk_note": "발언 맥락을 제목만으로 단정하지 말고 인물 조롱 없이 발언 이슈로만 다룰 것"
+      },
+      {
+        "rank": 6,
+        "keyword": "인천 유나이티드 fc",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "‘3년 만의 ACL 도전’ 이겨도 웃지 못하는 인천유나이티드…대표 리스크에 흔들리는 2027 시즌",
+          "이청용 품으며 뚝심의 리더십…인천 윤정환 매직, 승격시즌 역대 9번째 파이널A행 반전",
+          "아마추어 지도자 23년의 내공, 행정가로 펼친다…인천 정재권 테크니컬 디렉터가 그리는 청사진"
+        ],
+        "topic": "승격 시즌에 파이널A 진출한 인천, 윤정환 매직과 이청용 영입… 그런데 '대표 리스크'는?",
+        "why_now": "'윤정환 매직, 승격시즌 역대 9번째 파이널A행 반전', '이청용 품으며 뚝심의 리더십', '3년 만의 ACL 도전…대표 리스크에 흔들리는 2027 시즌' 기사",
+        "angle": "'승격팀의 반전 스토리' 하이라이트 + 'ACL 도전인데 웃지 못하는 이유' 반전 포인트 구성. 축구 팬 공감형",
+        "target": "K리그 팬, 인천 연고 팬, 축구 팬 20~40대",
+        "fun_score": 6,
+        "risk": "medium",
+        "risk_note": "'대표 리스크'의 구체 내용은 제목에 없으므로 추측 금지"
+      },
+      {
+        "rank": 7,
+        "keyword": "유현주",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "미녀 골퍼 유현주, 강호동 전현무와 한식구 되나 [공식입장]",
+          "[단독] \\'골프 여신\\' 유현주, SM C&C 전속계약…스포테이너 활동 본격화",
+          "[공식]SM C&C \"유현주 전속계약 논의중\" 스포테이너 본격 진출하나"
+        ],
+        "topic": "'골프 여신' 유현주, SM C&C 전속계약 논의 중… 스포테이너 본격 진출?",
+        "why_now": "'SM C&C 유현주 전속계약 논의중 스포테이너 본격 진출하나', '강호동·전현무와 한식구 되나' 기사",
+        "angle": "'골프 선수에서 예능 라인업까지' 소속사 라인업 상상 드립 + 스포테이너 진출 사례 정리. 활동 응원 톤",
+        "target": "골프 팬, 예능 시청자 20~40대",
+        "fun_score": 6,
+        "risk": "medium",
+        "risk_note": "'전속계약 논의 중' 단계로 확정 아님을 명시. 외모 평가 중심 표현은 피할 것"
+      },
+      {
+        "rank": 8,
+        "keyword": "허태정",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "대전 시내버스, 공사에 밀리고 대책 없고…허태정표 교통행정 '갈팡질팡'",
+          "대전참여연대 “트램 급전방식 확정 전 교량 공사, 문제”",
+          "대전시의회, 대덕대교 교통대책·어르신 버스비 한도 등 시정 현안 집중 점검"
+        ],
+        "topic": "대전 시내버스·트램·대덕대교 공사, 교통행정 '갈팡질팡' 논란 정리",
+        "why_now": "'대전 시내버스, 공사에 밀리고 대책 없고…허태정표 교통행정 갈팡질팡', '트램 급전방식 확정 전 교량 공사 문제' 기사",
+        "angle": "대전 시민이 겪는 교통 불편을 쟁점별(버스·트램·대덕대교·어르신 버스비)로 정리하는 중립 이슈 요약",
+        "target": "대전 시민, 지역 이슈 관심층",
+        "fun_score": 3,
+        "risk": "high",
+        "risk_note": "정치인·지방행정 비판 이슈로 정치적 편향 우려. 드립·조롱 지양하고 보도 사실만 중립 전달, 쇼츠 소재로는 비추천"
+      },
+      {
+        "rank": 9,
+        "keyword": "교차로",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "\"누구 인생 망치려고\"…교차로서 아찔한 무단횡단 '분노'(영상)",
+          "\"누구 인생 망치려고\" 대구 교차로서 위험천만 무단횡단[영상] - 머니투데이",
+          "과천시, 횡단보도 기다림 줄이는 '반복 보행신호' 11월 11일부터 시범 운영"
+        ],
+        "topic": "대구 교차로 아찔한 무단횡단 영상 '누구 인생 망치려고' 분노, 과천은 '반복 보행신호' 11월 11일 시범 운영",
+        "why_now": "'누구 인생 망치려고…교차로서 아찔한 무단횡단 분노(영상)', '과천시 횡단보도 기다림 줄이는 반복 보행신호 11월 11일부터 시범 운영' 기사",
+        "angle": "'무단횡단 하는 이유 vs 기다림 줄이는 신호 실험' 대비 구성. 신호 기다림 공감 + 새 제도 소개 30초 정리",
+        "target": "운전자·보행자 전 연령, 안전·생활정보 관심층",
+        "fun_score": 5,
+        "risk": "medium",
+        "risk_note": "사고 위험 영상 소재로 무단횡단 당사자 조롱·신상 노출 금지, 안전 메시지 중심으로 구성"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": [
+      {
+        "keyword": "쿠칭시티",
+        "blocked_by": "추락"
+      }
+    ]
+  },
+  "selected_attempt": 1,
+  "plan": {
+    "chosen_rank": 1,
+    "reason": "검색량이 1000+로 가장 높고, 제니(재미 점수 8)와 비교해도 재미 차이가 압도적이지는 않아서 검색량 1위를 골랐습니다. 왕관은 KODEX200이 쥐고 있는데 개미는 TIGER 미국S&P500으로 몰렸다는 엇갈림을 선거 비유로 풀면 편 가르기 댓글이 붙기 좋습니다. 사실은 뉴스 제목에 있는 내용만 썼고 숫자 계산은 없습니다. 투자 권유로 읽히지 않게 마지막에 이슈 정리라고 밝혔고 특정 상품 추천 표현은 뺐습니다.",
+    "title": "ETF 1등은 따로 있는데 개미는 딴 데로 갔다?",
+    "hook": "ETF 1등은 따로 있는데, 개미들은 다른 곳으로 우르르 몰려갔습니다.",
+    "bgm_mood": "funny",
+    "style": "vibrant 3D cartoon, soft lighting, bright colors, high detail, cute characters, clean background",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "ETF 1등은 따로 있는데, 개미들은 다른 곳으로 우르르 몰려갔습니다.",
+        "on_screen_text": "1등 따로 민심 따로",
+        "image_prompt": "a golden crowned lion sitting alone on a throne while a huge crowd of tiny ants runs away in the same direction, surprised expression, vibrant 3D cartoon, soft lighting, bright colors, high detail, cute characters, clean background"
+      },
+      {
+        "id": 2,
+        "narration": "지금 상장지수펀드 검색량 터진 이유, 격투 게임 대진표로 보여드릴게요.",
+        "on_screen_text": "이게 왜 난리냐면",
+        "image_prompt": "a retro arcade fighting game versus screen with a lion silhouette on the left and a tiger silhouette on the right, sparks in the middle, vibrant 3D cartoon, soft lighting, bright colors, high detail, cute characters, clean background"
+      },
+      {
+        "id": 3,
+        "narration": "왕좌는 여전히 KODEX200이 지켰습니다.",
+        "on_screen_text": "왕좌는 내 거야",
+        "image_prompt": "a confident lion wearing a shiny golden crown sitting on a grand throne with arms crossed, vibrant 3D cartoon, soft lighting, bright colors, high detail, cute characters, clean background"
+      },
+      {
+        "id": 4,
+        "narration": "근데 개미들은 TIGER 미국S&P500으로 우르르 갔어요.",
+        "on_screen_text": "개미 대이동",
+        "image_prompt": "a long line of tiny cartoon ants marching happily toward a friendly orange tiger cub standing under a big flag, vibrant 3D cartoon, soft lighting, bright colors, high detail, cute characters, clean background"
+      },
+      {
+        "id": 5,
+        "narration": "그러자 삼성 독주에 균열이 났다는 말까지 나옵니다.",
+        "on_screen_text": "독주에 금이?",
+        "image_prompt": "a golden throne with a big crack running through it and a shocked lion looking down at it, small dust clouds, vibrant 3D cartoon, soft lighting, bright colors, high detail, cute characters, clean background"
+      },
+      {
+        "id": 6,
+        "narration": "그래서 KODEX랑 TIGER, 1등 자존심 싸움이 다시 붙었습니다.",
+        "on_screen_text": "자존심 대결 재점화",
+        "image_prompt": "a lion and a tiger cub facing each other nose to nose with determined eyes and lightning bolts between them, vibrant 3D cartoon, soft lighting, bright colors, high detail, cute characters, clean background"
+      },
+      {
+        "id": 7,
+        "narration": "왕관은 KODEX, 민심은 TIGER. 이거 완전 선거 아닙니까. 투자 추천 아니고 이슈 정리예요. 여러분은 왕관파, 민심파?",
+        "on_screen_text": "왕관파 vs 민심파",
+        "image_prompt": "a lion wearing a crown on the left and a tiger cub holding a tiny flag on the right, a crowd of cheering ants split between them, festive confetti, vibrant 3D cartoon, soft lighting, bright colors, high detail, cute characters, clean background"
+      }
+    ],
+    "description": "ETF 왕좌는 KODEX200인데 개미들은 TIGER 미국S&P500으로 우르르? 오늘 검색량 터진 이유를 30초로 정리했어요. 투자 권유가 아닌 이슈 정리입니다.\n#ETF #KODEX #TIGER",
+    "tags": [
+      "ETF",
+      "상장지수펀드",
+      "KODEX200",
+      "TIGER미국S&P500",
+      "개미",
+      "재테크이슈",
+      "쇼츠",
+      "오늘의이슈"
+    ],
+    "comment_question": "왕관은 KODEX200, 민심은 TIGER 미국S&P500. 여러분은 왕관파? 민심파?"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 7
+    }
+  },
+  "effects": {
+    "duration": 41.66,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Fluffing a Duck",
+    "bgm_mood": "funny",
+    "bgm_credit": "Music: \"Fluffing a Duck\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "ETF 1등은 따로 있는데, 개미들은 다른 곳으로 우르르 몰려갔습니다.",
+      "on_screen_text": "1등 따로 민심 따로",
+      "image": "runs/2026-11-06/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "지금 상장지수펀드 검색량 터진 이유, 격투 게임 대진표로 보여드릴게요.",
+      "on_screen_text": "이게 왜 난리냐면",
+      "image": "runs/2026-11-06/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "왕좌는 여전히 KODEX200이 지켰습니다.",
+      "on_screen_text": "왕좌는 내 거야",
+      "image": "runs/2026-11-06/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "근데 개미들은 TIGER 미국S&P500으로 우르르 갔어요.",
+      "on_screen_text": "개미 대이동",
+      "image": "runs/2026-11-06/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "그러자 삼성 독주에 균열이 났다는 말까지 나옵니다.",
+      "on_screen_text": "독주에 금이?",
+      "image": "runs/2026-11-06/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "그래서 KODEX랑 TIGER, 1등 자존심 싸움이 다시 붙었습니다.",
+      "on_screen_text": "자존심 대결 재점화",
+      "image": "runs/2026-11-06/scene_06.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 7,
+      "narration": "왕관은 KODEX, 민심은 TIGER. 이거 완전 선거 아닙니까. 투자 추천 아니고 이슈 정리예요. 여러분은 왕관파, 민심파?",
+      "on_screen_text": "왕관파 vs 민심파",
+      "image": "runs/2026-11-06/scene_07.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-11-06/thumbnail.jpg",
+  "video_file": "videos/2026-11-06.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "QA 불합격"
+  },
+  "finished_at": "2026-11-06T00:58:36+09:00"
+}
