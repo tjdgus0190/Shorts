@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-07",
+    "status": "qa_failed",
+    "title": "장유빈 2관왕 직전 실격, 이유가 종이 한 장",
+    "overall": 67,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-11-07/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 36.23
+  },
+  {
     "date": "2026-11-06",
     "status": "qa_failed",
     "title": "ETF 1등은 따로 있는데 개미는 딴 데로 갔다?",
