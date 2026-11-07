@@ -1,14 +1,14 @@
 [
   {
     "date": "2026-11-07",
-    "status": "qa_failed",
-    "title": "장유빈 2관왕 직전 실격, 이유가 종이 한 장",
-    "overall": 67,
-    "qa_attempts": 3,
+    "status": "success",
+    "title": "서울은 얼음, 설악산은 영하 9도 실화냐",
+    "overall": 73,
+    "qa_attempts": 2,
     "thumbnail": "runs/2026-11-07/thumbnail.jpg",
     "youtube_url": null,
     "upload_status": "skipped",
-    "duration": 36.23
+    "duration": 44.71
   },
   {
     "date": "2026-11-06",
