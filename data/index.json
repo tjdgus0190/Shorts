@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-08",
+    "status": "qa_failed",
+    "title": "90%는 윙어라던 감독, 결국 최전방에 세웠다",
+    "overall": 61,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-11-08/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 40.55
+  },
+  {
     "date": "2026-11-07",
     "status": "success",
     "title": "서울은 얼음, 설악산은 영하 9도 실화냐",
