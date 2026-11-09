@@ -1,0 +1,477 @@
+{
+  "date": "2026-11-10",
+  "status": "qa_failed",
+  "started_at": "2026-11-10T02:52:06+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-11-10T02:52:06+09:00",
+      "note": "",
+      "seconds": 25.2
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-10T02:52:32+09:00",
+      "note": "",
+      "seconds": 20.3
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-10T02:52:52+09:00",
+      "note": "",
+      "seconds": 31.8
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-10T02:53:24+09:00",
+      "note": "",
+      "seconds": 49.2
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-10T02:54:13+09:00",
+      "note": "1차",
+      "seconds": 23.2
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-10T02:54:36+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 22.2
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-10T02:54:58+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 30.9
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-10T02:55:29+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 49.2
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-10T02:56:18+09:00",
+      "note": "2차",
+      "seconds": 19.6
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-10T02:56:38+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 24.7
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-10T02:57:03+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 25.8
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-10T02:57:29+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 40.3
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-10T02:58:09+09:00",
+      "note": "3차",
+      "seconds": 19.6
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 55,
+        "hook": 62,
+        "clarity": 60,
+        "visual": 68,
+        "subtitle": 78,
+        "safety": 72
+      },
+      "overall": 64,
+      "pass": false,
+      "issues": [
+        "훅과 제목이 낚시성임: 치킨집 튀김기 이야기로 시작하지만 2번 장면에서 '치킨집 얘기 아니고요'라고 뒤집는다. 이후 치킨 비유는 다시 나오지 않아 반전이 아니라 낚시로 느껴진다. 훅 문장도 '튀김기를 하나 더 붙이면 세계 최저가'라는 논리가 성립하지 않아 이해가 안 된다.",
+        "설명란은 '치킨집 비유로 30초 정리'라고 쓰여 있다. 실제 영상은 52.8초이고 치킨 비유도 없어서 설명과 내용이 맞지 않는다.",
+        "내용이 뉴스 요약에 가깝다. 3번의 '전학생/반장' 비유와 7번의 댓글 유도만 재미 요소이고, 4~6번은 정보 나열이라 후반 이탈 위험이 크다. 52초는 쇼츠로 길다.",
+        "4번 장면에서 특정 실명(SKT 정석근 님)과 발언('세계에서 가장 싸게 토큰 생산')을 인용했다. 이 인용과 직함은 출처 확인이 필요하다. 또 '국산 AI반도체가 엔비디아 생태계에 편입'이라는 표현이 과장인지도 확인이 필요하다. 반도체 제품명이나 회사명이 없어 모호하다.",
+        "5번 장면 프레임(약 55% 지점)에서 로봇 입 안에 'LAN TV'라는 깨진 글자 또는 로고가 생성됐다. 대본과 무관하고 타 채널 워터마크나 상표로 오인될 수 있어 품질과 저작권 면에서 감점이다. 이 장면은 흰 배경이라 다른 장면과 톤도 다르다.",
+        "이미지 프롬프트가 내용과 약하게 연결된다. 햄스터, 고양이, 시바견 등 동물 캐릭터가 AI 반도체나 요금 주제와 거의 상관없다. 3번 장면 이미지에서는 자막이 캐릭터 몸통을 가린다.",
+        "제목·설명의 '세계 최저가'는 SKT의 포부 발언을 사실처럼 읽히게 한다. '~하겠다는 목표' 같은 표현으로 바꿔야 한다."
+      ],
+      "retry_target": "planner",
+      "feedback": "1) 훅을 다시 써라. 치킨집 튀김기 비유를 끝까지 끌고 갈 게 아니면 버려라. 예: '토큰 값이 내려가면 내 챗GPT 요금도 내려갈까?'처럼 시청자 이익에서 바로 시작하라. 비유를 쓴다면 '튀김기 한 대 더 = GPU+NPU 결합, 기름값(토큰) 절감'처럼 끝까지 일관되게 쓰고, '치킨 아님 주의' 같은 뒤집기 장면은 삭제하라. 2) 대본을 35초 안팎, 5~6장면으로 줄이고 6번(엔비디아 에이전트) 같은 정보 나열 장면은 빼거나 합쳐라. 3~4개 지점에 짧은 드립이나 반전을 넣어 리듬을 만들어라. 3) 인물 실명과 발언, '엔비디아 생태계 편입', '세계 최저가'는 기사 원문으로 확인하고, 확인되지 않으면 '~하겠다는 목표'나 '~라고 알려졌다'로 낮춰 써라. 4) 설명란의 '30초 정리'와 '치킨집 비유' 문구를 실제 내용과 맞춰라. 5) 이미지 프롬프트에는 'no text, no logo, no watermark'를 추가하라. 특히 5번 장면은 'LAN TV' 같은 글자가 생성되지 않게 하고, 모든 장면에서 주제(칩·AI·요금)와 맞는 소품을 쓰고 배경 톤을 통일하라. 개선 팁: 7번의 '내려간다 파/어림없다 파' 댓글 유도는 좋으니 유지하고, 마지막 컷에 요금 인하 여부를 묻는 짧은 자막 문구를 크게 넣어라."
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 62,
+        "hook": 68,
+        "clarity": 78,
+        "visual": 68,
+        "subtitle": 68,
+        "safety": 75
+      },
+      "overall": 68,
+      "pass": false,
+      "issues": [
+        "fun: 전학생과 튀김기 비유는 귀엽지만, 3~4번 장면이 정보 설명에 치우쳐 있다. 반전은 5번 장면의 '요금 얘기는 없음' 하나뿐이고 드립이 약하다.",
+        "hook: '토큰 값이 내려가면 챗GPT 요금도 내려갈까요?'는 궁금증은 만들지만, 일반 시청자에게 '토큰'이 낯선 말이다. 첫 화면에 충격이나 의외성이 없다.",
+        "visual: 4번 장면 프롬프트는 '튀김기'인데 프레임에는 물이 끓는 냄비가 나온다. 비유와 화면이 맞지 않는다. 0.6초 프레임의 칩에는 'LON LUN VILAGA' 같은 깨진 글자가 있다.",
+        "subtitle: 자막이 화면 중앙 하단에 놓여 캐릭터의 지갑과 몸통을 가린다(f3). 한 번에 보이는 글자가 3~4단어뿐이라 호흡이 끊긴다. 상단 검은 박스 문구와 하단 자막이 동시에 떠서 화면이 복잡하다.",
+        "safety: 'SKT 정석근 님'의 발언과 목표는 실명 인용이라 출처 확인 필요. '빅테크 검색량이 터졌어요'도 근거 확인 필요. '국산 AI반도체가 엔비디아 생태계에 들어갔다'도 구체적 사실 확인 필요. 'GPU+NPU로 튀김기 한 대 더 붙인다'는 단순화가 기술적으로 정확한지도 확인 필요.",
+        "길이 52.6초로 쇼츠치고 긴 편이다. 정보량 대비 리듬이 늘어진다."
+      ],
+      "retry_target": "planner",
+      "feedback": "1) 훅을 '챗GPT 요금 언제 내려가?'처럼 시청자 본인 이야기로 바꾸고, 첫 문장에서 '토큰'이라는 말을 빼거나 바로 풀어서 설명하세요. 2) 3~4번 장면은 '튀김기 한 대 더 붙이면 기름값이 준다'는 비유 하나만 남기고, 인명과 직책 설명은 줄이거나 출처를 명시하세요. '정석근 님' 발언은 기사 원문을 확인한 뒤 인용하고, '검색량이 터졌어요'는 근거가 없으면 삭제하세요. 3) 5번 장면의 반전 ('원가는 내려도 내 요금은 그대로') 앞에 한 박자 쉬어 가는 드립을 넣어 웃음 포인트를 키우세요. 예: 치킨집 사장님이 기름값이 내려도 치킨값은 안 내리는 상황. 4) 대본을 40초 안팎으로 줄이세요. 5) 4번 장면의 image_prompt는 'deep fryer with basket'을 명시하고 냄비가 나오지 않게 하세요. 칩에 글자가 생기지 않도록 'no text, no letters on chip'을 추가하세요. 6) 자막은 화면 하단 20% 구간으로 내려 캐릭터를 가리지 않게 하세요."
+    },
+    {
+      "attempt": 3,
+      "scores": {
+        "fun": 66,
+        "hook": 60,
+        "clarity": 74,
+        "visual": 66,
+        "subtitle": 48,
+        "safety": 80
+      },
+      "overall": 65,
+      "pass": false,
+      "issues": [
+        "f2(55% 지점) 자막이 '생각해보세요 기름값 / 근데 치킨집 사장님'으로 위아래 줄 순서가 뒤섞여 있음. 실제 나레이션은 '근데 치킨집 사장님 생각해보세요. 기름값 내려도…'라서 읽는 순서와 맞지 않고, 하이라이트 단어 처리 때문에 순서가 깨진 것으로 보임.",
+        "f3(85% 지점) 자막이 '그래서 묻습니다 내'에서 끊겨 어색함. 청크 분할이 문장 단위가 아니라 말이 중간에 잘림.",
+        "자막이 화면 중앙~하단 캐릭터 몸통과 지갑·소품을 가림(f0, f2, f3). 이미지 위쪽에 이미 on_screen_text 박스가 있어 자막과 화면 텍스트가 이중으로 들어가 산만함.",
+        "이미지가 9:16 전체를 채우지 못하고 위아래에 흐릿한 블러 띠가 크게 남음(특히 하단). 쇼츠 화면 활용도가 떨어짐.",
+        "장면별 화풍이 불일치함. 시바견은 플랫 일러스트, 로봇과 곰은 3D 렌더 스타일이라 채널 통일감이 약함.",
+        "첫 3초 훅이 '요금 언제 내려갈까요?'라는 일반 질문이라 스크롤을 멈출 만한 강한 반전이나 숫자가 없음.",
+        "'SKT가 AI 비용을 세계 최저로 만들겠다'와 '국산 AI반도체가 엔비디아 생태계에 진입'은 사실 여부를 확인할 수 없음. 확인 필요.",
+        "나레이션이 '챗GPT 요금'과 '국산 칩·SKT 원가'를 직접 연결하는데, 이 둘이 별개 사업자라는 설명이 없음. 약간 비약이 있지만 마지막 질문형 마무리로 어느 정도 완화됨."
+      ],
+      "retry_target": "effector",
+      "feedback": "1) 자막 청크 순서 버그를 먼저 고치세요. 나레이션 어순대로 한 줄씩 나오게 하고, 하이라이트 단어가 줄 위치를 바꾸지 않게 하세요. 2) 자막은 문장 또는 의미 단위로 끊어 '그래서 묻습니다 내'처럼 문장이 중간에 잘리지 않게 하세요. 3) 자막 위치를 캐릭터 얼굴과 소품을 가리지 않는 하단 안전영역(화면 하단 약 15~20%)으로 내리세요. 이미지를 9:16 꽉 채우도록 확대하거나 크롭하면 흐릿한 하단 띠도 함께 줄어듭니다. 4) 상단 on_screen_text와 하단 자막이 겹쳐 보이므로 크기와 위치에 위계를 두세요. 5) 참고로 기획 쪽에서는 첫 문장에 구체적인 반전이나 숫자를 넣고, 'SKT 세계 최저' 같은 주장은 출처를 확인하거나 '~하겠다고 밝혔어요'로 톤을 낮추면 좋습니다."
+    }
+  ],
+  "marketer": {
+    "summary": "AI 반도체·GTA6 결근 대란·모두의카드 편의점 출시까지, 오늘은 '일상에 훅 들어온 신상 이슈'가 검색을 이끈 날",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "빅테크",
+        "traffic": "5000+",
+        "traffic_num": 5000,
+        "news": [
+          "한국 AI 생태계의 에이전틱 AI 고도화하고 보안 강화하는 NVIDIA - NVIDIA Blog Korea",
+          "정석근 SKT \"GPU·NPU 결합해 세계서 가장 싸게 토큰 생산\"",
+          "국산 AI반도체, 엔비디아 생태계 편입"
+        ],
+        "topic": "엔비디아 생태계에 국산 AI반도체가 편입됐다는데, SKT는 '세계에서 가장 싸게 토큰 생산'한다고? 30초 정리",
+        "why_now": "'국산 AI반도체, 엔비디아 생태계 편입', '정석근 SKT \"GPU·NPU 결합해 세계서 가장 싸게 토큰 생산\"', 'NVIDIA 한국 AI 생태계 에이전틱 AI 고도화' 기사가 연달아 나옴",
+        "angle": "'이게 왜 난리냐면' 형식. 토큰, GPU, NPU를 치킨집 비유(튀김기 vs 보조 튀김기)로 풀어 30초에 정리하고, 마지막에 '그래서 내 챗GPT 요금은 내려가나?'라는 반전 질문으로 마무리",
+        "target": "20~40대 직장인, IT·AI 관심층",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": ""
+      },
+      {
+        "rank": 2,
+        "keyword": "kf-21 보라매",
+        "traffic": "2000+",
+        "traffic_num": 2000,
+        "news": [],
+        "topic": "KF-21 보라매가 갑자기 검색 상위에 오른 이유 정리",
+        "why_now": "제공된 뉴스 제목이 없어 구체적 이슈를 확인할 수 없음",
+        "angle": "이슈 확인 후 제작 권장. 확인 전에는 사실을 단정하지 않고 'KF-21 지금 어디까지 왔나' 식의 30초 현황 정리 + 댓글 유도형 퀴즈 정도만 대안으로 고려",
+        "target": "밀리터리·항공 팬, 20~50대 남성",
+        "fun_score": 4,
+        "risk": "medium",
+        "risk_note": "뉴스 근거가 없어 이슈 내용 불명. 사고·외교·방산 비리 관련일 가능성이 있어 확인 전 제작 비추천"
+      },
+      {
+        "rank": 3,
+        "keyword": "아시아나항공",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "아시아나항공 주가 170원 하락 후 장마감",
+          "[장중수급포착] 아시아나항공, 기관 6일 연속 순매수행진... 주가 +4.13%",
+          "아시아나항공 주가 하락중"
+        ],
+        "topic": "아시아나항공 주가 하락과 기관 6일 연속 순매수, 개미는 어디로?",
+        "why_now": "'기관 6일 연속 순매수행진... 주가 +4.13%', '주가 170원 하락 후 장마감' 등 주가 관련 기사가 이어짐",
+        "angle": "'기관은 6일째 사는데 주가는 왜 오르락내리락?'을 숫자로 보여주는 30초 차트 정리. 투자 권유가 아닌 현상 설명 위주",
+        "target": "주식 입문자, 20~40대 개인투자자",
+        "fun_score": 4,
+        "risk": "medium",
+        "risk_note": "주가 관련 콘텐츠로 투자 권유로 오해될 수 있음. 매수·매도 판단 표현 금지, 면책 문구 필요"
+      },
+      {
+        "rank": 4,
+        "keyword": "신애",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "'17년째 활동 중단' 신애, 깜짝 근황…여전한 미모 - 머니투데이",
+          "'17년째 활동 중단' 신애, 오랜만에 근황 포착…'이규한♥' 솔비 만났네",
+          "‘활동중단’ 신애, 비주얼은 17년 전 그대로..‘4월 결혼’ 솔비 만났다 [핫피플]"
+        ],
+        "topic": "17년째 활동 중단했는데 비주얼은 그대로? 신애 깜짝 근황",
+        "why_now": "'17년째 활동 중단' 신애가 '4월 결혼' 앞둔 솔비를 만난 근황이 여러 매체에 보도됨",
+        "angle": "'그 시절 스타 지금 어디서 뭐해?' 근황 카드형 쇼츠. 보도된 내용(만남, 근황 사진) 위주로 짧게 정리하고 '17년 전 vs 지금' 비교 질문으로 댓글 유도",
+        "target": "30~50대, 2000년대 향수층",
+        "fun_score": 5,
+        "risk": "medium",
+        "risk_note": "실존 인물 근황이므로 외모 평가나 사생활 추측은 피하고 보도된 사실만 다룰 것"
+      },
+      {
+        "rank": 5,
+        "keyword": "gta6",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "GTA6 Release Triggers 1.5M U.S. Absences",
+          "GTA VI launch set to cost bosses £12m as workers book 83,000 days off to play long-awaited game",
+          "Australia Reminds GTA 6 Players Their Boss Can Ask for Sick Leave Evidence"
+        ],
+        "topic": "GTA6 출시일에 미국에서 결근 150만 건? 사장님들 1,200만 파운드 손해",
+        "why_now": "'GTA6 Release Triggers 1.5M U.S. Absences', '83,000 days off로 영국 기업 £12m 손실 전망', '호주, 병가 증빙 요구 가능 공지' 기사가 나옴",
+        "angle": "숫자로 보는 충격 비교 + 상황극. 사장님에게 '제가 배탈이 나서요' 하는 직원 vs 이미 아는 사장님 콩트로 시작하고, 호주 정부의 '병가 증빙 요구 가능' 공지로 반전. 마지막에 '한국이라면?' 댓글 유도",
+        "target": "게이머, 직장인 전반 (10~40대)",
+        "fun_score": 9,
+        "risk": "low",
+        "risk_note": "꾀병 결근을 부추기는 것으로 보이지 않도록 '이런 뉴스가 났다' 톤 유지. 수치는 기사 제목 기준으로만 인용"
+      },
+      {
+        "rank": 6,
+        "keyword": "버거킹",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "\"소방관 응원해요\"…유통가, 소방의 날 맞이 캠페인",
+          "료혼, 소방의 날 맞아 소방공무원 대상 ‘1+1’ 사은 행사 개최",
+          "버거킹, 소방관·가족 초청해 감사 행사…와퍼 콤보 1190개 전달"
+        ],
+        "topic": "버거킹이 소방관과 가족을 초청해 와퍼 콤보 1,190개 전달한 소방의 날 훈훈한 이야기",
+        "why_now": "소방의 날을 맞아 '버거킹, 소방관·가족 초청해 감사 행사… 와퍼 콤보 1190개 전달' 등 유통가 응원 캠페인 기사가 나옴",
+        "angle": "'소방의 날 유통가가 소방관에게 한 일' 30초 훈훈 모음. 1,190개라는 숫자에 집중하고 '1190 = 119 + 0'처럼 숫자 의미 퀴즈로 시작해 공유 유도",
+        "target": "전 연령, 훈훈한 콘텐츠 선호층",
+        "fun_score": 5,
+        "risk": "low",
+        "risk_note": "기업 홍보로 비칠 수 있으니 특정 브랜드 광고 느낌은 줄이고 소방관 응원 메시지 중심으로"
+      },
+      {
+        "rank": 7,
+        "keyword": "안랩",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [],
+        "topic": "안랩이 갑자기 검색 상위에 오른 이유 정리",
+        "why_now": "제공된 뉴스 제목이 없어 구체적 이슈를 확인할 수 없음",
+        "angle": "이슈 확인 후 제작 권장. 확인 전에는 소재를 정하지 않음",
+        "target": "IT·보안 관심층, 주식 투자자",
+        "fun_score": 3,
+        "risk": "medium",
+        "risk_note": "뉴스 근거가 없어 보안 사고, 주가 급등락 등 이슈 성격을 알 수 없음. 확인 전 제작 비추천"
+      },
+      {
+        "rank": 8,
+        "keyword": "티머니",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "티머니, '모두의카드' 편의점 판매 시작",
+          "모두의카드, CU·GS25 등 편의점서 판매…전국 환급혜택 제공",
+          "티머니, ‘모두의카드’ 편의점 판매 시작… 4000원에 구매"
+        ],
+        "topic": "4000원짜리 '모두의카드' 편의점에서 판다! 사면 뭐가 좋은지 30초 정리",
+        "why_now": "'티머니, 모두의카드 편의점 판매 시작', 'CU·GS25 등 편의점서 판매, 전국 환급혜택', '4000원에 구매' 기사가 나옴",
+        "angle": "'편의점 가서 4000원만 내면 교통비가 돌아온다고?' 형식의 실용 정보 쇼츠. 구매처, 가격, 환급 혜택을 3단계로 정리하고 '출퇴근 한 달이면 얼마?'는 기사 근거 범위 내에서만 안내",
+        "target": "대중교통 이용하는 학생·직장인 (10~40대)",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": "환급 조건과 금액은 기사에 없는 내용을 지어내지 말고 공식 안내 확인 후 작성"
+      },
+      {
+        "rank": 9,
+        "keyword": "캐시워크 정답",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "국민건강보험 건강보험료 캐시워크 돈 버는 퀴즈, 정답은?",
+          "[단독] 캐시워크 돈버는퀴즈 정답 11월 9일",
+          "소휘 노슈가위크…캐시워크 돈버는퀴즈 정답 공개"
+        ],
+        "topic": "캐시워크 돈버는퀴즈 11월 9일 정답 공개 (건강보험료 문제)",
+        "why_now": "'국민건강보험 건강보험료 캐시워크 돈 버는 퀴즈, 정답은?', '캐시워크 돈버는퀴즈 정답 11월 9일' 등 정답 공유 기사가 나옴",
+        "angle": "'정답 먼저 알려주고 퀴즈 뒷이야기' 형식의 초단기 정보 쇼츠. 매일 올리는 시리즈물로 만들어 구독을 유도하되, 날짜가 지나면 가치가 떨어지므로 당일 업로드 필수",
+        "target": "캐시워크 사용자, 짠테크족, 주부·학생",
+        "fun_score": 3,
+        "risk": "low",
+        "risk_note": "정답은 기사 제목에 없으므로 반드시 앱에서 확인 후 작성. 오답 안내 시 신뢰도 하락"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": [
+      {
+        "keyword": "안드레이 알롭스키",
+        "blocked_by": "사망"
+      }
+    ]
+  },
+  "selected_attempt": 2,
+  "plan": {
+    "chosen_rank": 1,
+    "reason": "검색량 5000+로 가장 높고 뉴스 근거가 3건이며 리스크가 낮아 선택했다. QA 피드백에 따라 훅을 시청자 이익(내 챗GPT 요금)으로 바꿨고, 비유는 튀김기 한 대 더 = GPU+NPU 결합, 기름값 = 토큰으로 끝까지 일관되게 썼다. 뒤집기 장면과 엔비디아 에이전트 정보 장면은 삭제해 6장면으로 줄였다. 제목에 있는 내용 중 엔비디아 생태계 편입과 SKT의 토큰 발언은 원문을 직접 확인할 수 없어 '들어갔다는 소식', '~하겠다는 목표'로 낮췄고, 요금 인하 여부는 제목에 근거가 없으므로 단정하지 않고 질문으로만 썼다. 수치 계산은 없어 검산할 항목이 없다. 이미지 프롬프트는 FLUX가 부정 표현을 오히려 그리기 때문에 'no text' 대신 '글자 없는 깨끗한 면, 민트 배경' 같은 긍정형 문구로 같은 의도를 반영했다.",
+    "title": "토큰 싸지면 내 챗GPT 요금도 내려갈까?",
+    "hook": "토큰 값이 내려가면 내 챗GPT 요금도 내려갈까요?",
+    "bgm_mood": "funny",
+    "style": "vibrant 3D cartoon, soft lighting, pastel mint background, clean plain surfaces, pure illustration, high detail, vertical composition",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "토큰 값이 내려가면 내 챗GPT 요금도 내려갈까요? 오늘 이 얘기 때문에 빅테크 검색량이 터졌어요.",
+        "on_screen_text": "내 요금 내려감?",
+        "image_prompt": "a cute shiba inu holding a tiny wallet, looking hopeful at a glowing computer chip floating in front of it, big sparkling eyes"
+      },
+      {
+        "id": 2,
+        "narration": "국산 AI반도체가 엔비디아 생태계에 들어갔다는 소식이 나왔거든요. 전학 가자마자 반장 옆자리 배정받은 느낌이죠.",
+        "on_screen_text": "전학생 대박",
+        "image_prompt": "a small cheerful robot with a backpack sitting at a classroom desk next to a big green confident robot, a glowing chip on the desk, warm lighting"
+      },
+      {
+        "id": 3,
+        "narration": "여기에 SKT 정석근 님이 GPU랑 NPU를 결합해서 세계에서 가장 싸게 토큰을 만들겠다는 목표를 밝혔어요.",
+        "on_screen_text": "세계 최저가?",
+        "image_prompt": "a proud cute hamster chef standing between two shiny fryers, each fryer topped with a small glowing computer chip, confident pose"
+      },
+      {
+        "id": 4,
+        "narration": "쉽게 말해 튀김기를 한 대 더 붙여서 기름값을 줄이겠다는 거예요. 여기서 기름이 토큰, AI가 글자 하나 뱉을 때 쓰는 연료고요.",
+        "on_screen_text": "기름값이 토큰",
+        "image_prompt": "a shiny fryer with glowing blue oil bubbling inside, a small cute chip character floating above it, a golden coin dropping down playfully"
+      },
+      {
+        "id": 5,
+        "narration": "근데 반전이 있어요. 원가가 내려간다는 얘기는 있는데, 내 요금이 내려간다는 얘기는 아직 안 보여요.",
+        "on_screen_text": "요금 얘기는 없음",
+        "image_prompt": "a cute shiba inu shrugging with empty paws, a blank floating price tag beside it, confused funny expression, clean plain background"
+      },
+      {
+        "id": 6,
+        "narration": "그래서 묻습니다. 내 요금도 내려갈까요? 내려간다 파, 어림없다 파, 댓글로 붙어봅시다.",
+        "on_screen_text": "요금 내려갈까?",
+        "image_prompt": "a cute shiba inu holding a tiny wallet in both paws, pleading puppy eyes, a glowing chip floating overhead, soft pastel mint background"
+      }
+    ],
+    "description": "국산 AI반도체가 엔비디아 생태계에 들어갔다는 소식에, SKT는 GPU와 NPU를 결합해 가장 싸게 토큰을 만들겠다는 목표를 밝혔어요. 튀김기 한 대 더 붙이는 비유로 쉽게 풀어봤어요. 내 챗GPT 요금은 내려갈까요?\n#빅테크 #AI반도체 #엔비디아",
+    "tags": [
+      "빅테크",
+      "AI반도체",
+      "엔비디아",
+      "SKT",
+      "GPU",
+      "NPU",
+      "토큰",
+      "국산반도체",
+      "챗GPT",
+      "쇼츠"
+    ],
+    "comment_question": "토큰 원가가 내려가면 내 챗GPT 요금도 내려간다 vs 어림없다, 어느 쪽?"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 6
+    }
+  },
+  "effects": {
+    "duration": 52.69,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Fluffing a Duck",
+    "bgm_mood": "funny",
+    "bgm_credit": "Music: \"Fluffing a Duck\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "토큰 값이 내려가면 내 챗GPT 요금도 내려갈까요? 오늘 이 얘기 때문에 빅테크 검색량이 터졌어요.",
+      "on_screen_text": "내 요금 내려감?",
+      "image": "runs/2026-11-10/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "국산 AI반도체가 엔비디아 생태계에 들어갔다는 소식이 나왔거든요. 전학 가자마자 반장 옆자리 배정받은 느낌이죠.",
+      "on_screen_text": "전학생 대박",
+      "image": "runs/2026-11-10/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "여기에 SKT 정석근 님이 GPU랑 NPU를 결합해서 세계에서 가장 싸게 토큰을 만들겠다는 목표를 밝혔어요.",
+      "on_screen_text": "세계 최저가?",
+      "image": "runs/2026-11-10/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "쉽게 말해 튀김기를 한 대 더 붙여서 기름값을 줄이겠다는 거예요. 여기서 기름이 토큰, AI가 글자 하나 뱉을 때 쓰는 연료고요.",
+      "on_screen_text": "기름값이 토큰",
+      "image": "runs/2026-11-10/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "근데 반전이 있어요. 원가가 내려간다는 얘기는 있는데, 내 요금이 내려간다는 얘기는 아직 안 보여요.",
+      "on_screen_text": "요금 얘기는 없음",
+      "image": "runs/2026-11-10/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "그래서 묻습니다. 내 요금도 내려갈까요? 내려간다 파, 어림없다 파, 댓글로 붙어봅시다.",
+      "on_screen_text": "요금 내려갈까?",
+      "image": "runs/2026-11-10/scene_06.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-11-10/thumbnail.jpg",
+  "video_file": "videos/2026-11-10.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "QA 불합격"
+  },
+  "finished_at": "2026-11-10T02:58:29+09:00"
+}

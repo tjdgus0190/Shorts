@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-10",
+    "status": "qa_failed",
+    "title": "토큰 싸지면 내 챗GPT 요금도 내려갈까?",
+    "overall": 65,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-11-10/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 52.69
+  },
+  {
     "date": "2026-11-08",
     "status": "qa_failed",
     "title": "90%는 윙어라던 감독, 결국 최전방에 세웠다",
