@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-11",
+    "status": "qa_failed",
+    "title": "5000억이면 방송국 하나 삽니다, 지금 매물 나옴",
+    "overall": 66,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-11-11/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 44.33
+  },
+  {
     "date": "2026-11-10",
     "status": "qa_failed",
     "title": "토큰 싸지면 내 챗GPT 요금도 내려갈까?",
