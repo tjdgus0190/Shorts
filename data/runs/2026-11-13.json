@@ -1,0 +1,467 @@
+{
+  "date": "2026-11-13",
+  "status": "qa_failed",
+  "started_at": "2026-11-13T01:23:50+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-11-13T01:23:50+09:00",
+      "note": "",
+      "seconds": 19.7
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-13T01:24:10+09:00",
+      "note": "",
+      "seconds": 20.3
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-13T01:24:30+09:00",
+      "note": "",
+      "seconds": 29.4
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-13T01:24:59+09:00",
+      "note": "",
+      "seconds": 55.4
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-13T01:25:55+09:00",
+      "note": "1차",
+      "seconds": 19.8
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-13T01:26:15+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 24.9
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-13T01:26:40+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 36.5
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-13T01:27:16+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 34.6
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-13T01:27:51+09:00",
+      "note": "2차",
+      "seconds": 23.7
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-13T01:28:14+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 41.4
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-13T01:28:56+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 32.1
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-13T01:29:28+09:00",
+      "note": "3차",
+      "seconds": 20.0
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 55,
+        "hook": 68,
+        "clarity": 78,
+        "visual": 72,
+        "subtitle": 70,
+        "safety": 72
+      },
+      "overall": 67,
+      "pass": false,
+      "issues": [
+        "fun: 대본이 '실적 → 스트레이키즈 → 주가 상승' 순으로 정보를 나열하는 뉴스 요약 톤이다. 반전이나 드립이 약하고 마지막 투표 질문 외에는 웃음 포인트가 없다. 장면 3의 '범인 등장'이 유일한 연출 포인트다.",
+        "hook: '17퍼센트 뛰었는데 범인이 한 팀'은 궁금증을 만들지만, 어느 종목인지와 무슨 일인지는 밝히지 않는다. 시작 장면은 놀란 고양이와 상승 화살표라서 흔한 주식 쇼츠처럼 보인다.",
+        "safety: 실존 기업(JYP)과 그룹(스트레이키즈)을 다룬다. '17% 폭등', '역대급 실적', '서구권에서 터졌다'는 수치와 사실 모두 확인 필요하다. 오늘 날짜 기준의 출처나 기준일이 영상에 없다. 또한 이 영상은 주가 원인을 한 팀으로 단정하고 있다.",
+        "safety: 주가 급등을 다루는 콘텐츠인데 투자 권유가 아니라는 고지가 없다.",
+        "scene 3 불일치: 기획서는 스트레이키즈 8명을 의미하는 '강아지 8마리'로 표현했다. 프레임 f1에서는 강아지가 8마리로 정확히 보이지 않고 겹쳐 있으며 개수 확인이 어렵다. 반면 장면 3의 여우 탐정은 괜찮다.",
+        "scene 5 불일치: 기획서는 곰 사장이 바닥에 엎드려 큰절하는 장면이다. 프레임 f2의 곰은 선글라스를 쓰고 웃으며 앉아 있고 큰절이나 로켓이 보이지 않아 '큰절 각'과 맞지 않는다.",
+        "scene 7 불일치: 기획서는 저울에 '팀' 대 '작은 건물'을 올려 균형을 맞추는 장면이다. 프레임 f3에서는 부엉이가 건물과 함께 저울 위에 앉아 있고 강아지는 2마리뿐이다. 저울이 어느 쪽으로도 기울지 않아 '공이 누구 몫인가'라는 메시지가 약하다.",
+        "subtitle: 하단 자막이 인물의 얼굴과 몸 위에 걸린다. f1에서는 '벌어왔냐고'가 강아지와 여우 위를 덮는다. 상단 검은 박스의 on_screen_text와 하단 자막이 동시에 나와 화면이 복잡하다.",
+        "subtitle: 하단 자막이 한 번에 몇 단어씩만 나오는 방식이라 f2의 '장 시작하자마자 주가가'처럼 문장이 중간에 끊겨 보인다. 읽는 흐름이 끊기는지 확인 필요하다.",
+        "visual: 강아지와 곰의 3D 카툰 스타일이 대체로 깔끔하고 깨짐이 적다. 다만 f2와 f3의 이미지 스타일이 f0·f1과 달라 장면마다 캐릭터와 화풍이 일관되지 않는다. 상하단의 블러 배경이 크게 남는다.",
+        "duration: 41초로 쇼츠로는 무난하지만 장면 4~6의 내용이 비슷해서 중반에 늘어진다."
+      ],
+      "retry_target": "planner",
+      "feedback": "1) 사실 확인: 17% 상승과 역대급 실적이 맞는지 기준일과 출처를 확인한 뒤, 정확한 수치와 기간(예: 장중 최고치인지 종가인지)을 대본에 반영하세요. 확인이 안 되면 '급등'처럼 표현을 낮추고, 마지막에 '투자 권유 아님' 한 줄을 넣으세요. 2) 훅: '17퍼센트'를 그대로 쓰되, 첫 문장에서 '누가 이걸 해냈는지 맞혀봐' 같은 질문이나 반전 구조로 바꾸세요. 종목 이름(JYP)을 3초 안에 보여주면 검색 유입에 유리합니다. 3) 재미: 장면 4~6이 '서구권 인기 → 주가 상승 → 팬 반응'으로 같은 말을 반복합니다. 이를 하나로 줄이고, 드립이나 반전(예: 회사가 큰절하는 장면에 구체적 농담, 또는 '그런데 사실은…' 식의 전환)을 최소 2개 넣으세요. 교과서식 정보 나열을 피하세요. 4) 장면 설계: 마지막 투표 질문은 좋으니 유지하되, 장면 7 이미지 프롬프트를 '한쪽으로 확실히 기울어진 저울'처럼 단순하게 바꿔 메시지가 보이게 하세요. 장면 5는 '큰절'이 실제로 보이도록 프롬프트를 구체적으로 쓰세요. (producer에게는 이후 캐릭터 일관성과 개수 지정을 요청하세요.)"
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 60,
+        "hook": 68,
+        "clarity": 70,
+        "visual": 58,
+        "subtitle": 62,
+        "safety": 80
+      },
+      "overall": 65,
+      "pass": false,
+      "issues": [
+        "장면 4(f2) 이미지가 기획과 다름: '이마를 바닥에 대고 큰절하는 곰'이 아니라, 앉은 곰의 무릎 사이에 작은 곰 머리가 달린 것처럼 보이는 해부학 오류가 있음. 큰절 개그가 전달되지 않고 보기에 기괴함",
+        "장면 6(f3) 건물 간판이 'PIPY'로 깨진 글자로 나옴. 글자 깨짐이고 실제 회사명(JYP)과 비슷해 보여 혼동 우려도 있음",
+        "스트레이키즈 캐릭터 일관성이 없음: 장면 4에서는 주황색 강아지에 은색 재킷이고, 장면 6에서는 흑백 강아지에 은색 로봇 같은 몸이라 같은 팀으로 안 보임",
+        "장면 6(f3) 자막 줄 순서가 뒤섞임: 화면에는 '공은 누구 거야 / 아니야 그래서 이'로 나오지만 대사는 '투자 권유는 아니야. 그래서 이 공은 누구 거야'임. 청크 분할이나 싱크 점검 필요",
+        "자막이 화면 중앙~하단 인물 몸통 위에 걸림(f2 곰 몸통, f3 저울 받침). 캐릭터 연출을 일부 가림",
+        "숫자 검산: 17퍼센트는 기획서 안에서 제목, 훅, 장면 1, 설명란이 모두 17%로 일치함. 계산 오류는 없음",
+        "확인 필요: 'JYP 주가 17% 급등', '역대급 실적', '스트레이키즈가 서구권에서 터졌다'는 주가 상승 원인의 사실 여부를 기획서만으로는 검증할 수 없음. 출처 확인 필요",
+        "재미 약함: '범인 맞혀봐'로 시작하지만 정답이 장면 3에서 바로 나오고, 이후에는 같은 말을 반복하는 드립(큰절 각, 다 했네)이라 반전이 부족함. 마지막 질문형 CTA는 괜찮음"
+      ],
+      "retry_target": "producer",
+      "feedback": "producer 담당: (1) 장면 4는 '정장 입은 곰이 이마를 바닥에 대고 엎드려 큰절하는 옆모습'이 분명히 나오도록 프롬프트를 단순하게 다시 쓰세요. 예: 'side view, one bear in suit, forehead on floor, hands flat on floor in front, no extra heads'. 앉은 자세와 겹치는 표현은 빼세요. (2) 장면 6 건물에는 글자를 넣지 말고 'no text, no signage, no letters'를 추가하세요. (3) 장면 3, 4, 6의 스트레이키즈 강아지는 '같은 털색(주황색 강아지)과 같은 은색 재킷'으로 통일하세요. (4) 장면 4와 6은 인물이 화면 중앙에 오지 않도록 위쪽에 배치해 자막이 몸통을 덜 가리게 하세요. effector 참고: 장면 6 자막 청크 순서('아니야 그래서 이 / 공은 누구 거야')가 대사와 어긋나는지 함께 확인하세요. planner 개선 팁: 정답 공개 뒤에 한 번 더 비틀기(예: 정답은 해외 팬이 아니라 숙소 방향으로 절하는 회사)를 넣으면 재미 점수가 올라갑니다. 주가 17%와 실적 수치는 출처 확인 후 쓰세요."
+    },
+    {
+      "attempt": 3,
+      "scores": {
+        "fun": 62,
+        "hook": 70,
+        "clarity": 70,
+        "visual": 65,
+        "subtitle": 45,
+        "safety": 80
+      },
+      "overall": 65,
+      "pass": false,
+      "issues": [
+        "자막 어순이 뒤바뀜: 씬2 프레임에 '있었어 / 아니라 바다 건너에'로 나옴. 대본은 '사무실 안이 아니라 바다 건너에 있었어'라서 '있었어'가 앞줄로 올라와 있음.",
+        "자막 어순이 뒤바뀜: 씬6 프레임에 '공은 누구 거야 / 아니야 그래서 이'로 나옴. 대본은 '투자 권유는 아니야. 그래서 이 공은 누구 거야'. 청크 분할이나 줄 배치 순서 버그로 보임. 하이라이트 단어('이')도 엉뚱한 위치에 찍힘.",
+        "씬4 이미지가 프롬프트와 다름. 옆모습의 큰절이 아니라 위에서 내려다본 곰 뒷모습이라 '큰절'이 바로 읽히지 않음. 강아지도 은색 재킷이 안 보임. 곰이 정장을 입었는지도 분간하기 어려움.",
+        "씬6 이미지가 프롬프트와 다름. 저울이 기울지 않고 수평이며 강아지도 한 마리뿐임. '팀 vs 회사' 비교 구도가 약함. 건물이 팬 안에 놓이지 않고 팬 위에 서 있음.",
+        "씬6 자막이 저울과 강아지, 건물 위를 가림.",
+        "씬1 자막이 고양이 몸통을 일부 가림. 상단 on_screen_text 박스는 검은 사각형이라 다소 투박함.",
+        "씬1~2 이미지에 상단·하단 블러 여백이 큼. 콘텐츠 영역이 중앙 약 55%로 좁음.",
+        "'역대급 실적', 'JYP 17% 급등', '스트레이키즈 서구권 흥행'은 확인 필요. 단정적 표현이라 사실과 다르면 허위 정보 위험이 있음.",
+        "재미 요소가 약함. 큰절 드립과 주식 앱 드립은 괜찮지만 전체 흐름은 이슈 요약에 가까움. 40초 길이에 비해 반전이 적고 마지막 질문형 CTA도 평이함."
+      ],
+      "retry_target": "effector",
+      "feedback": "자막 문제부터 수정하세요. 1) 씬2, 씬6에서 자막 청크의 줄 순서와 어순이 대본과 일치하도록 하세요. 어절 타임스탬프를 시간순으로 정렬하고, 한 청크 안에서 줄 순서가 뒤집히지 않게 하세요. 2) 하이라이트 단어가 실제 발화 시점과 맞는지 확인하세요. 3) 자막 위치를 화면 하단 1/4 부근으로 내려 인물과 소품을 덜 가리게 하세요. 4) 가능하면 상단 검은 박스 텍스트를 둥근 반투명 스타일로 다듬으세요. 이미지 재작업이 필요하다면 별도로 요청: 씬4는 프롬프트대로 옆모습 큰절 구도로, 씬6은 저울이 왼쪽으로 기울고 강아지 두 마리가 보이도록 다시 생성하세요. 대본 면에서는 '역대급 실적'과 '17%' 수치의 출처를 확인하세요. 마지막 CTA에 반전 한 줄을 넣으면 재미가 올라갑니다."
+    }
+  ],
+  "marketer": {
+    "summary": "엔비디아 CEO 교체 논란과 AI 반도체 훈풍(AMD·토스증권 리포트), JYP 실적 급등, 13일의 금요일 종말론 밈, 100일의 거짓말 드라마 열풍까지 투자와 콘텐츠 이슈가 뜨거운 날",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "colette kress",
+        "traffic": "5000+",
+        "traffic_num": 5000,
+        "news": [
+          "NVIDIA Announces CEO Transition",
+          "Jensen Huang Said to Have Had Relationship With Nvidia Executive Who Reports to Him",
+          "Alice Huang, Alleged Chinese Spy at Center of Nvidia Firestorm, Is in Beijing"
+        ],
+        "topic": "엔비디아 CEO 교체 발표 + 임원 관계 보도, 왜 지금 난리인지 30초 정리",
+        "why_now": "뉴스 제목: 'NVIDIA Announces CEO Transition', 'Jensen Huang Said to Have Had Relationship With Nvidia Executive Who Reports to Him', 'Alice Huang, Alleged Chinese Spy... Is in Beijing'",
+        "angle": "'이게 왜 난리냐면' 형식. 보도된 세 가지 헤드라인을 순서대로 짚고, 엔비디아 주주들의 반응 포인트를 정리. 확인된 사실과 '보도에 따르면'인 내용을 분명히 구분해서 전달",
+        "target": "미국 주식 투자자, 테크 뉴스 관심층 20~40대",
+        "fun_score": 7,
+        "risk": "high",
+        "risk_note": "실존 인물의 사생활·간첩 의혹 관련 보도라 미확인 내용 단정 금지. 'said to', 'alleged' 수준의 표현 유지하고 조롱·추측 금지. CEO 교체 공식 발표 중심으로 다루는 것이 안전"
+      },
+      {
+        "rank": 2,
+        "keyword": "토스증권",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "“AI 돈맥 어디로 흐르나”…5개국 발로 뛴 토스증권, 투자 지도 그렸다",
+          "칩·패키지에 미세 ‘물길’… AI 반도체 발열 잡는다",
+          "토스증권 리서치센터, 글로벌 AI 산업 분석 리포트 발간"
+        ],
+        "topic": "토스증권이 5개국 발로 뛰어 그린 'AI 돈맥 지도', 3줄 요약",
+        "why_now": "뉴스 제목: '“AI 돈맥 어디로 흐르나”…5개국 발로 뛴 토스증권, 투자 지도 그렸다', '토스증권 리서치센터, 글로벌 AI 산업 분석 리포트 발간'",
+        "angle": "'증권사가 5개국을 직접 다녀왔다'는 스토리를 훅으로, AI 반도체 발열을 잡는 미세 물길 냉각 기술 같은 흥미로운 포인트를 퀴즈 형식으로 풀기",
+        "target": "주식 입문자, 2030 투자자",
+        "fun_score": 5,
+        "risk": "medium",
+        "risk_note": "투자 권유로 오해될 수 있으니 리포트 발간 소식 전달에 한정하고 종목 추천 표현 지양"
+      },
+      {
+        "rank": 3,
+        "keyword": "amd 주가",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "AMD, AI 데이터센터 투자 기대에 강세… 서버용 CPU 수요까지 주목",
+          "얼라인테크놀로지 주가가 급등한 이유는?",
+          "AMD, 3Q 데이터센터 매출 인텔 추월…\"내년 매출 80% 이상 성장\""
+        ],
+        "topic": "AMD 데이터센터 매출이 인텔을 추월했다, 내년 80% 성장 전망",
+        "why_now": "뉴스 제목: 'AMD, 3Q 데이터센터 매출 인텔 추월…\"내년 매출 80% 이상 성장\"', 'AI 데이터센터 투자 기대에 강세'",
+        "angle": "숫자로 보는 역전극. 오래 이어진 라이벌 구도에서 순위가 뒤바뀐 순간을 '역전 드라마' 컨셉의 상황극으로 연출",
+        "target": "미국 주식 투자자, PC·반도체 덕후",
+        "fun_score": 6,
+        "risk": "medium",
+        "risk_note": "주가 전망·투자 판단 유도로 읽히지 않게 '전망치는 회사 측 발언'임을 명시"
+      },
+      {
+        "rank": 4,
+        "keyword": "jyp 엔터테인먼트",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "역대급 실적 낸 JYP, 주가 17% 급등한 이유는?",
+          "스트레이키즈가 다했네, JYP",
+          "JYP Ent., 스트레이키즈 서구권 흥행에 실적 호조…장초반 급등 - 머니투데이"
+        ],
+        "topic": "역대급 실적에 주가 17% 급등, '스트레이키즈가 다했네' JYP",
+        "why_now": "뉴스 제목: '역대급 실적 낸 JYP, 주가 17% 급등한 이유는?', '스트레이키즈가 다했네, JYP', '스트레이키즈 서구권 흥행에 실적 호조'",
+        "angle": "'주가 17% 급등의 주인공은 누구?' 퀴즈형 전개로 시작해 스트레이키즈 서구권 흥행을 반전 포인트로 공개. 팬 반응 밈과 엮어서 구성",
+        "target": "K-POP 팬, 엔터주 관심 투자자",
+        "fun_score": 8,
+        "risk": "low",
+        "risk_note": ""
+      },
+      {
+        "rank": 5,
+        "keyword": "13일의 금요일",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "빗나간 66년 전 ‘인구종말론’…AI 종말론은 다를까?",
+          "세계가 11월 13일에 종말을 맞이할 것이라는 소문이 사실인가요?",
+          "이번주 ‘13일의 금요일’에 인류 종말? [달콤한 사이언스]"
+        ],
+        "topic": "11월 13일 금요일에 인류 종말설? 66년 전 '인구종말론'은 왜 빗나갔나",
+        "why_now": "뉴스 제목: '이번주 ‘13일의 금요일’에 인류 종말?', '세계가 11월 13일에 종말을 맞이할 것이라는 소문이 사실인가요?', '빗나간 66년 전 ‘인구종말론’…AI 종말론은 다를까?'",
+        "angle": "'오늘 종말이라는데 숏츠 올려도 되나요?' 식의 과장된 상황극으로 시작해, 66년 전 예측이 빗나간 반전으로 마무리. 종말 D-day 인증 밈 형식",
+        "target": "전 연령대, 밈·미스터리 관심층",
+        "fun_score": 9,
+        "risk": "low",
+        "risk_note": ""
+      },
+      {
+        "rank": 6,
+        "keyword": "100 일 의 거짓말",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "‘100일의 거짓말’, 시청률 10% 넘더니 일 냈다…드라마 브랜드 평판 1위",
+          "[티빙 TOP5] 3주 연속 종합·드라마 1위! 예능 정상· TOP5 수성",
+          "'100일의 거짓말' vs '재혼황후'..2위는 이 드라마였다"
+        ],
+        "topic": "시청률 10% 넘은 '100일의 거짓말', 티빙 3주 연속 1위 이유",
+        "why_now": "뉴스 제목: '‘100일의 거짓말’, 시청률 10% 넘더니 일 냈다…드라마 브랜드 평판 1위', '[티빙 TOP5] 3주 연속 종합·드라마 1위!', ''100일의 거짓말' vs '재혼황후''",
+        "angle": "'이 드라마가 왜 난리냐면' 형식으로 기록 정리. 재혼황후와의 순위 경쟁 구도를 숫자 비교로 보여주고 시청자 반응 밈으로 마무리",
+        "target": "드라마 시청층, 2040 여성, OTT 이용자",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": "스포일러 주의. 줄거리 결말 언급 없이 화제성 중심으로 구성"
+      },
+      {
+        "rank": 7,
+        "keyword": "msci",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "Strategy, the World’s Biggest Corporate Bitcoin Holder, to Be Dropped From MSCI Indexes",
+          "Index Provider MSCI Removes Strategy From Equity Benchmark",
+          "MSCI to drop Strategy from global indexes, putting billions in fund inflows at risk"
+        ],
+        "topic": "세계 최대 기업 비트코인 보유사 Strategy, MSCI 지수에서 퇴출",
+        "why_now": "뉴스 제목: 'MSCI to drop Strategy from global indexes, putting billions in fund inflows at risk', 'Index Provider MSCI Removes Strategy From Equity Benchmark'",
+        "angle": "'지수에서 쫓겨났다, 수십억 달러 자금 유입이 흔들린다' 구도로 30초 정리. 지수 편입·제외가 왜 돈 흐름에 영향을 주는지 이슈 중심으로 간단히 설명",
+        "target": "코인·미국 주식 투자자 2030",
+        "fun_score": 6,
+        "risk": "medium",
+        "risk_note": "투자·코인 관련 내용이라 가격 전망이나 매매 유도 표현 금지. 보도된 사실만 전달"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": [
+      {
+        "keyword": "해변",
+        "blocked_by": "실종"
+      },
+      {
+        "keyword": "김태규",
+        "blocked_by": "대통령"
+      },
+      {
+        "keyword": "학대",
+        "blocked_by": "학대"
+      }
+    ]
+  },
+  "selected_attempt": 1,
+  "plan": {
+    "chosen_rank": 4,
+    "reason": "검색량만 보면 토스증권(1000+)이 가장 높지만, 리포트 발간 소식이라 썰로 풀 재미가 약하고(fun_score 5) 투자 권유로 읽힐 위험도 있음. JYP는 검색량 200+로 상위권이고, '주가 17% 급등의 범인은 스트레이키즈'라는 반전이 분명해 훅과 펀치라인이 확실하며(fun_score 8) 위험도도 낮아 이쪽을 선택함.",
+    "title": "하루 만에 17% 폭등, 범인은 이 팀이었다",
+    "hook": "주가가 하루에 17퍼센트 뛰었는데, 범인이 딱 한 팀이래.",
+    "bgm_mood": "funny",
+    "style": "vibrant 3D cartoon, soft lighting, bright pastel colors, high detail, vertical composition",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "주가가 하루에 17퍼센트 뛰었는데, 범인이 딱 한 팀이래.",
+        "on_screen_text": "하루에 17%?",
+        "image_prompt": "A shocked cartoon cat in a suit staring at a giant green arrow chart shooting up through the roof of an office, confetti flying, wide eyes"
+      },
+      {
+        "id": 2,
+        "narration": "JYP 얘기야. 역대급 실적을 찍었다고 지금 난리가 났거든.",
+        "on_screen_text": "역대급 실적",
+        "image_prompt": "A cartoon office building with a golden trophy on the roof, little animal employees cheering and throwing papers in the air, sparkling golden light"
+      },
+      {
+        "id": 3,
+        "narration": "그래서 누가 이렇게 벌어왔냐고? 스트레이키즈야.",
+        "on_screen_text": "범인 등장",
+        "image_prompt": "A dramatic detective cartoon fox pointing at eight small cute puppies in matching outfits standing on a stage under a spotlight, suspenseful reveal"
+      },
+      {
+        "id": 4,
+        "narration": "서구권에서 제대로 터졌대. 바다 건너에서 인기가 폭발한 거지.",
+        "on_screen_text": "서구권 폭발",
+        "image_prompt": "Cute cartoon puppies performing on a huge stage, a crowd of excited cartoon animals across the ocean waving glowing light sticks, a globe in the background"
+      },
+      {
+        "id": 5,
+        "narration": "장 시작하자마자 주가가 확 뛰었대. 회사 입장에선 큰절 올려야 하는 상황이지.",
+        "on_screen_text": "큰절 각",
+        "image_prompt": "A cartoon bear boss in a suit bowing deeply on the floor in front of small cute puppy idols, a rocket launching behind them, comedic scene"
+      },
+      {
+        "id": 6,
+        "narration": "한마디로 스트레이키즈가 다했네. 팬들 표정은 안 봐도 뻔하지.",
+        "on_screen_text": "다 했네",
+        "image_prompt": "A smug cartoon rabbit fan with a glowing light stick and a proud grin, hearts and sparkles floating around, flexing pose"
+      },
+      {
+        "id": 7,
+        "narration": "근데 이 공은 누구 몫일까. 팀이 다 했다 vs 회사가 키웠다, 너는 어느 쪽이야.",
+        "on_screen_text": "너의 선택은",
+        "image_prompt": "A cartoon scale balancing a small group of puppy idols on one side and a tiny office building on the other, a curious owl pointing at it, playful split scene"
+      }
+    ],
+    "description": "역대급 실적에 주가 17% 급등, 그 중심에 스트레이키즈가 있었다는데? 오늘 검색량 터진 JYP 이슈를 썰로 풀어봤어요. #JYP #스트레이키즈 #쇼츠",
+    "tags": [
+      "JYP",
+      "JYP엔터테인먼트",
+      "스트레이키즈",
+      "JYP 주가",
+      "역대급 실적",
+      "스트레이키즈 서구권",
+      "오늘 이슈",
+      "쇼츠"
+    ],
+    "comment_question": "이번 역대급 실적, 스트레이키즈가 다 한 거다 vs 회사가 잘 키운 거다, 어느 쪽이야?"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 7
+    }
+  },
+  "effects": {
+    "duration": 41.16,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Monkeys Spinning Monkeys",
+    "bgm_mood": "funny",
+    "bgm_credit": "Music: \"Monkeys Spinning Monkeys\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "주가가 하루에 17퍼센트 뛰었는데, 범인이 딱 한 팀이래.",
+      "on_screen_text": "하루에 17%?",
+      "image": "runs/2026-11-13/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "JYP 얘기야. 역대급 실적을 찍었다고 지금 난리가 났거든.",
+      "on_screen_text": "역대급 실적",
+      "image": "runs/2026-11-13/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "그래서 누가 이렇게 벌어왔냐고? 스트레이키즈야.",
+      "on_screen_text": "범인 등장",
+      "image": "runs/2026-11-13/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "서구권에서 제대로 터졌대. 바다 건너에서 인기가 폭발한 거지.",
+      "on_screen_text": "서구권 폭발",
+      "image": "runs/2026-11-13/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "장 시작하자마자 주가가 확 뛰었대. 회사 입장에선 큰절 올려야 하는 상황이지.",
+      "on_screen_text": "큰절 각",
+      "image": "runs/2026-11-13/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "한마디로 스트레이키즈가 다했네. 팬들 표정은 안 봐도 뻔하지.",
+      "on_screen_text": "다 했네",
+      "image": "runs/2026-11-13/scene_06.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 7,
+      "narration": "근데 이 공은 누구 몫일까. 팀이 다 했다 vs 회사가 키웠다, 너는 어느 쪽이야.",
+      "on_screen_text": "너의 선택은",
+      "image": "runs/2026-11-13/scene_07.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-11-13/thumbnail.jpg",
+  "video_file": "videos/2026-11-13.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "QA 불합격"
+  },
+  "finished_at": "2026-11-13T01:29:48+09:00"
+}

@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-13",
+    "status": "qa_failed",
+    "title": "하루 만에 17% 폭등, 범인은 이 팀이었다",
+    "overall": 65,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-11-13/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 41.16
+  },
+  {
     "date": "2026-11-11",
     "status": "qa_failed",
     "title": "5000억이면 방송국 하나 삽니다, 지금 매물 나옴",
