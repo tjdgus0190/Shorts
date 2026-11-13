@@ -1,0 +1,475 @@
+{
+  "date": "2026-11-14",
+  "status": "qa_failed",
+  "started_at": "2026-11-14T00:44:22+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-11-14T00:44:22+09:00",
+      "note": "",
+      "seconds": 22.9
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-14T00:44:45+09:00",
+      "note": "",
+      "seconds": 18.1
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-14T00:45:03+09:00",
+      "note": "",
+      "seconds": 30.3
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-14T00:45:33+09:00",
+      "note": "",
+      "seconds": 32.0
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-14T00:46:05+09:00",
+      "note": "1차",
+      "seconds": 19.5
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-14T00:46:24+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 22.2
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-14T00:46:47+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 128.6
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-14T00:48:55+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 37.3
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-14T00:49:33+09:00",
+      "note": "2차",
+      "seconds": 15.7
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-14T00:49:48+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 176.7
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-14T00:52:45+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 29.1
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-14T00:53:14+09:00",
+      "note": "3차",
+      "seconds": 16.5
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 50,
+        "hook": 62,
+        "clarity": 70,
+        "visual": 62,
+        "subtitle": 75,
+        "safety": 78
+      },
+      "overall": 63,
+      "pass": false,
+      "issues": [
+        "fun: 전체가 뉴스 요약 톤입니다. 반전은 '김주원이 잘했다' 하나뿐이고 드립이 없습니다. 마지막 질문도 흔한 댓글 유도형입니다.",
+        "hook: 첫 문장 '이게 실화냐'는 일반적이고, 무슨 경기인지 첫 3초에 알 수 없습니다. 제목의 '왜 한 명은 웃냐'만큼 궁금증을 만드는 장치가 영상 첫머리에 없습니다.",
+        "visual: 장면 5 프레임에는 곰 캐릭터가 나옵니다. 주인공인 김주원과 이어지지 않고, 호랑이 캐릭터가 갑자기 곰으로 바뀌어 보입니다.",
+        "visual: 장면 3은 플랫 벡터풍이고 장면 1과 7은 3D풍이라 화풍이 섞여 있습니다.",
+        "visual: 장면 7은 프롬프트(트로피 모양 물음표와 우는 휴지)와 달리 물음표 두 개를 든 어색한 이미지입니다. 표정도 반쯤 웃고 반쯤 우는 느낌이 약합니다.",
+        "visual: 1080x1920 화면에 이미지가 정사각형에 가깝게 들어가 위아래가 흐린 블러 띠입니다. 화면 활용도가 낮아 보입니다.",
+        "subtitle: 하단 자막이 캐릭터의 발과 몸 위에 겹칩니다(장면 5는 곰 몸통). 상단 on_screen_text와 하단 자막이 동시에 떠서 화면이 다소 복잡합니다.",
+        "clarity: '세미 프로'가 무엇을 뜻하는지 설명이 없습니다. 장면 2의 한 문장이 길고 정보가 많습니다(검색량, 대회명, 패배).",
+        "길이: 영상은 36.6초인데 description에는 '30초 요약'이라고 적혀 있습니다. 불일치입니다.",
+        "safety: 실존 선수 김주원의 성적(홈런, 2루타)과 '포스팅하면 많은 팀이 원할 것'이라는 발언의 출처가 영상에 없습니다. 호주전 패배와 상대가 세미프로라는 점도 포함해 사실 확인이 필요합니다. 명예훼손 소지는 낮습니다.",
+        "TTS는 edge 기본 음성이라 감정 표현이 밋밋할 가능성이 있습니다(확인 필요)."
+      ],
+      "retry_target": null,
+      "feedback": "합격선이지만 fun이 약합니다. (1) 첫 문장을 '세미프로한테 졌는데 한 명만 웃고 있다'처럼 궁금증을 만드는 문장으로 바꾸세요. 호주전 패배라는 맥락도 첫 3초 안에 넣으세요. (2) 대본에 반전 드립을 1~2개 추가하세요. 예: '팀은 졌는데 김주원 혼자 이력서 쓴 날'. (3) 장면 4~6에서 같은 주인공 캐릭터(예: 호랑이 유니폼 선수)를 유지하고 곰 같은 다른 캐릭터는 피하세요. 화풍도 3D 카툰 하나로 통일하세요. (4) 이미지를 9:16 전체로 채우고 하단 자막이 캐릭터 얼굴과 몸을 덜 가리도록 위치를 조정하세요. (5) '세미 프로'를 한 줄로 설명하고, 선수 성적과 포스팅 발언은 출처를 확인한 뒤 '~라고 알려졌다' 식으로 표현하세요. (6) description의 '30초'는 실제 길이에 맞게 고치거나 대본을 줄이세요."
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 48,
+        "hook": 62,
+        "clarity": 62,
+        "visual": 28,
+        "subtitle": 55,
+        "safety": 68
+      },
+      "overall": 53,
+      "pass": false,
+      "issues": [
+        "2개 장면(4번 '여기서 반전', 6번 '다들 군침')이 이미지 없이 보라·빨강 그라데이션 placeholder로 나갔다. 영상의 핵심 반전 장면과 마무리 장면이 비어 있어 완성도가 크게 떨어진다.",
+        "장면 3(f1)은 호랑이 캐릭터 대신 실사풍의 어두운 사람 이미지다. 기획한 귀여운 호랑이 만화 스타일과 달라서 캐릭터 일관성이 깨진다. 얼굴과 손이 일그러져 있고 줄무늬 유니폼이 뭉개져 보인다.",
+        "장면 1(f0)의 호랑이 유니폼 가슴에는 뉴욕 양키스 NY 로고가 있다. 저작권·상표 위험이 있고, 기획한 팀 상황과도 맞지 않는다. 뒤의 팀원은 슬픈 만화 캐릭터가 아니라 일반 아이들이고, 표정도 크게 슬퍼 보이지 않는다.",
+        "자막이 이중으로 나온다. 상단에는 검은 박스 on_screen_text, 하단에는 나레이션 자막이 있다. 장면 3(f1)에서는 상단 박스가 모자·얼굴을 가린다. 장면 4(f2)에서는 on_screen_text '여기서 반전'이 중앙 큰 글씨와 상단 박스에 중복으로 떠서 지저분하다. 장면 6(f3)도 '다들 군침'이 상단과 중앙에 중복된다.",
+        "대본 문제: 김주원의 홈런·2루타, '포스팅하면 많은 팀이 원할 거라는 말'은 '알려졌어'로 출처 없이 전달된다. 실존 선수의 해외 진출 가능성을 다루므로 사실 확인이 필요하다. 호주 대표팀을 '세미 프로'라고 부르는 것과 대회 정보도 확인 필요.",
+        "씁쓸하다는 반응과 '세미 프로가 뭐냐면' 설명이 교과서식 설명 톤이어서 재미가 떨어진다. 반전 이후 전개도 '혼자 이력서', '몸값 올린 셈' 정도의 약한 드립에 그친다. 43.7초는 내용에 비해 약간 길다.",
+        "이미지 생성 결과가 pollinations 3장, cloudflare 2장, placeholder 2장으로 섞여 있다. 화풍이 제각각이라 영상 전체가 통일되지 않는다. 오디오는 정상(-14.5dB)이고 TTS는 edge이다."
+      ],
+      "retry_target": "producer",
+      "feedback": "1) placeholder로 처리된 장면 4·6(그리고 확인되지 않은 장면 5·7)의 이미지를 다시 생성하세요. 생성에 실패하면 재시도하거나 다른 생성기로 대체해 그라데이션 배경이 나가지 않게 하세요. 2) 장면 3처럼 실사풍으로 나온 이미지는 'cute cartoon tiger mascot, 3D animation style'을 프롬프트 앞에 고정해 다시 생성하고, 모든 장면의 화풍과 캐릭터를 통일하세요. 3) 유니폼에 실제 팀 로고(NY 등)가 들어가지 않도록 'plain jersey, no logos, no text'를 프롬프트에 넣으세요. 4) 장면 1은 팀원들이 슬프게 처져 있는 모습이 드러나게 하세요. 5) 이후 기획 단계에서는 김주원 기록과 포스팅 관련 언급의 출처를 확인하고, '세미 프로' 설명 구간을 짧고 드립 위주로 바꿔 재미를 올리세요. 6) 이후 자막 단계(effector)에서는 상단 박스와 중앙·하단 자막이 중복되지 않게 하나만 남기고, 얼굴을 가리지 않도록 위치를 조정하세요."
+    },
+    {
+      "attempt": 3,
+      "scores": {
+        "fun": 50,
+        "hook": 55,
+        "clarity": 60,
+        "visual": 22,
+        "subtitle": 55,
+        "safety": 68
+      },
+      "overall": 52,
+      "pass": false,
+      "issues": [
+        "7개 장면 중 4개가 placeholder 이미지입니다. 확인한 프레임 3장(30%, 55%, 85%)은 장면과 무관한 보라색/빨간색/초록색 그라데이션이고, 호랑이나 야구와 관련된 내용이 없습니다. 영상 절반 이상이 빈 배경입니다.",
+        "첫 장면(pollinations)은 프롬프트와 다릅니다. 프롬프트는 '무지 흰 유니폼, 곰 동료 2마리가 풀 죽은 모습'인데, 실제 결과는 호랑이 2마리가 둘 다 웃고 있고 유니폼에 로고와 글자가 있습니다. '한 명만 웃는다'는 훅의 전제가 깨집니다. 모자와 유니폼의 글자도 뭉개져 있습니다. 실제 구단 마스코트나 로고와 닮았다면 저작권 위험이 있어 확인 필요입니다.",
+        "pollinations.ai 워터마크가 프레임 우하단에 보입니다.",
+        "자막이 중복됩니다. 상단 on_screen_text 박스('씁쓸 그 자체')와 중앙 큰 글씨('씁쓸 그 자체')가 같은 문구를 두 번 보여줍니다. 첫 프레임에서는 상단 박스가 호랑이 모자와 이마를 가립니다. 하단 자막은 '호주한테 졌는데 한'처럼 중간에 끊겨 읽기 어렵습니다.",
+        "대본이 교과서 톤입니다. '세미 프로가 뭐냐면, 프로랑 아마추어 사이…'는 용어 설명이라 리듬이 늘어집니다. 훅 문장과 1번 장면 내레이션이 똑같아서 반복됩니다. 드립은 '이력서 쓴 날'과 마지막 질문 정도입니다.",
+        "실명 선수(김주원)의 기량을 '알려졌어', '나온다고 알려졌어'로 전하는데 출처가 없습니다. '아시아 프로야구 챔피언십(APBC)', '세미 프로 호주', 김주원의 홈런·2루타, 포스팅 관련 발언은 모두 사실 확인 필요입니다. 포스팅 발언은 추측성이므로 단정하지 마세요.",
+        "6번 장면에서 독수리(파랑)와 곰(빨강)을 특정 구단 암시로 쓰고 있어 오해를 부를 수 있습니다. 확인 필요입니다.",
+        "길이 43.7초에 오디오는 정상이지만, TTS는 edge로 일반적인 수준입니다. 자동 측정상 해상도 문제는 없습니다."
+      ],
+      "retry_target": "producer",
+      "feedback": "1) placeholder 4장을 모두 실제 생성 이미지로 교체하세요. pollinations 실패 시 재시도하거나 대체 생성기를 쓰고, 그래도 안 되면 최소한 호랑이 마스코트 정적 컷을 재사용하세요. 그라데이션 배경만 나가면 안 됩니다. 2) 1번 장면은 다시 생성하세요. 웃는 호랑이 1마리와 풀 죽은 곰 2마리로 대비를 분명히 하고, 유니폼은 로고와 글자가 없는 무지로 만드세요(프롬프트의 'plain solid, blank chest'가 무시됐으니 negative 표현을 강화하세요: no text, no logo). 3) pollinations 워터마크는 크롭하거나 하단 여백으로 가리세요. 4) 후속으로 effector는 상단 on_screen_text와 중앙 큰 자막의 중복을 없애고, 상단 박스를 얼굴을 가리지 않는 위치로 옮기세요. 또 planner는 3번 장면의 용어 설명을 한 줄 드립으로 줄이고, 1번 장면 내레이션이 훅과 똑같지 않게 바꾸세요. 김주원 관련 수치와 발언은 출처를 확인하세요."
+    }
+  ],
+  "marketer": {
+    "summary": "김수현 모델료 11억 반환 판결, 민희진 vs 빌리프랩 '아일릿 표절' 소송 패소, APBC 호주전 패배와 FA 시장 개장까지 법원 판결과 야구 이슈가 검색창을 점령한 하루",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "김수현",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "“이미지 실추로 손해, 모델료 반환해야”···법원, 배우 김수현 측 11억여원 반환 판결",
+          "법원, 김수현 측에 '광고 중단' 모델료 11억여원 반환 판결",
+          "[단독]법원 \"김수현 등, 프롬바이오에 11억6000만원 배상\" - 머니투데이"
+        ],
+        "topic": "법원이 김수현 측에 광고 모델료 11억 6천만원 반환 판결, 이 숫자가 대체 어느 정도인지 30초 정리",
+        "why_now": "'법원, 김수현 측에 광고 중단 모델료 11억여원 반환 판결', '이미지 실추로 손해' 기사가 연달아 나옴",
+        "angle": "판결 내용을 30초로 요약하고 11억 6천만원을 생활 물가(치킨, 월급, 아파트 등)로 환산해 보는 숫자 비교형 쇼츠. 판결 사실만 다루고 인물 평가는 배제",
+        "target": "20~40대 연예 이슈 관심층, 뉴스 요약 선호층",
+        "fun_score": 6,
+        "risk": "high",
+        "risk_note": "실존 인물 관련 법적 분쟁이자 사생활 논란과 얽힌 사안. 기사에 나온 판결 사실만 인용하고 추측이나 조롱은 금지. 1심 판결 여부 등 확인되지 않은 내용은 단정하지 말 것"
+      },
+      {
+        "rank": 2,
+        "keyword": "민희진",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "“아일릿이 뉴진스 카피” 민희진에 20억 손배소송한 빌리프랩 패소",
+          "민희진에 패소한 하이브 레이블들, 즉각 항소…\"판결 납득 못해\" - 머니투데이",
+          "빌리프랩, '아일릿 표절' 주장 민희진 상대 손해배상 소송 패소"
+        ],
+        "topic": "하이브 레이블 빌리프랩이 민희진에게 20억 손배소를 걸었다가 패소, 하이브 측은 즉각 항소",
+        "why_now": "'아일릿이 뉴진스 카피 주장 민희진에 20억 손배소송한 빌리프랩 패소', '즉각 항소, 판결 납득 못해' 기사",
+        "angle": "'이게 왜 난리냐면' 형식으로 소송 발단(표절 주장) → 20억 소송 → 패소 → 항소까지 타임라인을 30초에 정리하고 팬덤·네티즌 반응 포인트를 짚는 형식",
+        "target": "K팝 팬, 엔터 업계 이슈 관심층 10~30대",
+        "fun_score": 8,
+        "risk": "high",
+        "risk_note": "K팝 팬덤 간 갈등이 큰 주제. 어느 한쪽 편들기나 아티스트 비하 없이 판결 보도 내용과 항소 사실만 중립적으로 전달. 항소심이 진행 중이라 결론 단정 금지"
+      },
+      {
+        "rank": 3,
+        "keyword": "쿠플",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [],
+        "topic": "쿠팡플레이(쿠플) 검색 급상승, 이유 확인 전 후보 주제",
+        "why_now": "제공된 뉴스 제목이 없어 급상승 이유를 확인할 수 없음. 쿠팡플레이 관련 새 소식이 있을 수 있으나 근거 없음",
+        "angle": "근거 기사 확인 후 제작 권장. 확인 전에는 '쿠플 요즘 뭐 볼까' 식의 일반 콘텐츠 추천 정도만 가능하며 이슈성은 낮음",
+        "target": "OTT 이용자 20~40대",
+        "fun_score": 3,
+        "risk": "medium",
+        "risk_note": "뉴스 근거가 없어 사실 확인이 불가. 이슈를 추측해 지어내면 허위 정보 위험. 원인 파악 후 제작할 것"
+      },
+      {
+        "rank": 4,
+        "keyword": "대한민국 기후에너지환경부",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "“기후행동 실천하면 포인트·금리우대”…민관 금융협력 체계 구축",
+          "은행 앱으로 '기후시민' 등록하면 은행 포인트도 준다… 기후부, KB·IBK와 협약",
+          "온라인 기후행동 공간 '굳티튜드 숲' 열렸다…대변인실이 AI로 개발"
+        ],
+        "topic": "은행 앱에서 '기후시민' 등록하면 포인트·금리우대, 기후부가 KB·IBK와 협약",
+        "why_now": "'은행 앱으로 기후시민 등록하면 은행 포인트도 준다… 기후부, KB·IBK와 협약', '기후행동 실천하면 포인트·금리우대' 기사",
+        "angle": "'환경 지키면 돈 준다고?' 형식으로 혜택 구조를 30초 정리하고 대변인실이 AI로 만든 '굳티튜드 숲'까지 소개하는 정보+호기심형 쇼츠",
+        "target": "재테크·앱테크 관심층 20~40대",
+        "fun_score": 5,
+        "risk": "low",
+        "risk_note": "구체적인 포인트 액수나 금리 우대 폭은 기사 제목에 없으므로 언급하지 말 것"
+      },
+      {
+        "rank": 5,
+        "keyword": "대한민국 야구",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "[영상] ‘세미 프로’ 호주에 진 한국 야구의 씁쓸한 현실",
+          "'와' 이러니 MLB가 주목하지... '홈런+2루타 장타폭발' 김주원, \"포스팅시 많은 팀이 원할 것\" 이유 증명 [APBC] - 머니투데이",
+          "2026 아시아 프로야구 챔피언십 : 한국 야구의 미래, APBC 우승 도전하는 대한민국 [대한민국 vs 호주]"
+        ],
+        "topic": "APBC에서 '세미 프로' 호주에 진 한국 야구, 그래도 장타 폭발한 김주원",
+        "why_now": "'세미 프로 호주에 진 한국 야구의 씁쓸한 현실', '홈런+2루타 김주원, 포스팅시 많은 팀이 원할 것' 기사",
+        "angle": "'호주전 패배 vs 김주원 장타쇼' 반전 구성. 아쉬운 결과 속에서도 빛난 선수를 부각하고 팬 반응 드립을 곁들이는 상황극형 쇼츠",
+        "target": "야구 팬 20~50대, 국가대표 경기 시청층",
+        "fun_score": 7,
+        "risk": "medium",
+        "risk_note": "선수 개인 비난이나 패배 책임 몰기 주의. 기사에 없는 경기 점수나 세부 내용은 지어내지 말 것"
+      },
+      {
+        "rank": 6,
+        "keyword": "포수",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "KBO FA 시장 개장! 원태인·구자욱·양의지 등 28명 자격 공시",
+          "와~60위 됐으면 어쩔뻔, 연봉 61위 C등급 깜짝 호재...하늘이 돕는 FA 김호령, 실수령 1억5천 고우석이 왜 도우미로 거론되나",
+          "kt 위즈, 외야수 김민혁·배정대 FA 시장 나온다"
+        ],
+        "topic": "KBO FA 시장 개장, 양의지 포함 28명 자격 공시, 포수 FA는 누가 움직일까",
+        "why_now": "'KBO FA 시장 개장! 원태인·구자욱·양의지 등 28명 자격 공시' 기사. 포수 키워드는 FA 명단과 연결되어 검색된 것으로 보임",
+        "angle": "'FA 28명 명단 30초 정리' 형식으로 원태인·구자욱·양의지 등 주요 이름을 짚고 '내 팀 누가 나가나' 댓글 참여를 유도하는 형식",
+        "target": "KBO 팬 20~50대",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": "포수 FA의 구체적 계약 전망이나 금액은 기사 근거가 없으므로 추측 금지. 명단 외 선수 이적설 단정 금지"
+      },
+      {
+        "rank": 7,
+        "keyword": "광천동주택재개발",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "광천동 재개발 철거 착수…교통망 확충은 ‘난항’",
+          "광주 최대 규모 ‘광천동 재개발 사업’ 철거 본격화",
+          "광주 최대 재개발지 광천동, 철거 공사 착수"
+        ],
+        "topic": "광주 최대 규모 광천동 재개발 철거 착수, 교통망 확충은 난항",
+        "why_now": "'광주 최대 규모 광천동 재개발 사업 철거 본격화', '교통망 확충은 난항' 기사",
+        "angle": "'광주 최대 재개발, 철거 시작했는데 길은?' 식으로 철거 착수와 교통 과제를 대비시키는 지역 이슈 요약형",
+        "target": "광주 지역 거주자, 부동산 관심층 30~50대",
+        "fun_score": 3,
+        "risk": "medium",
+        "risk_note": "부동산 가격 전망이나 투자 권유로 읽히지 않게 주의. 세대수·일정 등 기사에 없는 수치는 인용 금지. 철거 주민 이슈는 민감할 수 있음"
+      },
+      {
+        "rank": 8,
+        "keyword": "明天的天氣",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "氣溫漸升東偶雨週六短波槽掠過",
+          "要變天了！週六「華南雲雨區」東移　全台降雨機率高",
+          "好天氣掰了！華南雲雨帶逼近　「這地區」慎防較大雨勢"
+        ],
+        "topic": "대만발 '내일 날씨' 검색, 주말 화남 구름대 접근으로 전국 비 확률 상승",
+        "why_now": "'週六華南雲雨區東移 全台降雨機率高' 등 대만 기상 기사. 한국 이슈가 아니라 대만 날씨 검색으로 보임",
+        "angle": "한국 채널 타깃과 맞지 않아 제작 비추천. 굳이 한다면 '한국 사람은 왜 중국어 날씨를 검색했나' 같은 트렌드 해프닝으로만 가볍게 활용 가능",
+        "target": "해당 없음(대만 거주 중국어권 사용자 검색)",
+        "fun_score": 1,
+        "risk": "low",
+        "risk_note": "한국 시청자와 무관한 지역 날씨 정보. 한국 날씨로 오해하게 만들면 안 됨"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": [
+      {
+        "keyword": "축구 중계",
+        "blocked_by": "추락"
+      },
+      {
+        "keyword": "대한민국",
+        "blocked_by": "대통령"
+      }
+    ]
+  },
+  "selected_attempt": 1,
+  "plan": {
+    "chosen_rank": 5,
+    "reason": "세 후보 모두 검색량이 200+로 같아서 재미 포인트가 가장 큰 쪽을 골랐다. 대한민국 야구는 fun_score 7로 가장 높고, 호주전 패배와 김주원 장타쇼라는 반전 구조가 분명하다. rank 3 쿠플은 뉴스 근거가 없어 제외했고, rank 4는 혜택 정보 위주라 썰 풀기 어렵다. 계산이 들어가는 숫자는 쓰지 않았고, 경기 점수와 세부 내용은 기사 제목에 없어 뺐다.",
+    "title": "세미 프로 호주한테 졌는데 왜 한 명은 웃냐",
+    "hook": "세미 프로한테 졌다는데, 이게 실화냐.",
+    "bgm_mood": "funny",
+    "style": "vibrant 3D cartoon, soft lighting, high detail, bright colors, stadium background, cute characters, vertical composition",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "세미 프로한테 졌다는데, 이게 실화냐.",
+        "on_screen_text": "이게 실화냐",
+        "image_prompt": "A shocked cartoon tiger in a baseball uniform with wide eyes and open mouth, standing in a baseball stadium, dramatic lighting"
+      },
+      {
+        "id": 2,
+        "narration": "지금 대한민국 야구 검색량 터진 이유, 아시아 프로야구 챔피언십에서 호주한테 졌거든.",
+        "on_screen_text": "검색량 폭발",
+        "image_prompt": "A cute cartoon kangaroo in a baseball uniform proudly holding a bat and a baseball, with a sad cartoon tiger in the background, baseball field"
+      },
+      {
+        "id": 3,
+        "narration": "근데 상대가 세미 프로라서 팬들 마음이 더 씁쓸해졌어.",
+        "on_screen_text": "씁쓸 그 자체",
+        "image_prompt": "A cartoon tiger sitting alone on a stadium bench with a small rain cloud above its head, drooping ears, gloomy blue tones"
+      },
+      {
+        "id": 4,
+        "narration": "그런데 이 난리통에 혼자 빛난 사람이 있었으니, 김주원.",
+        "on_screen_text": "여기서 반전",
+        "image_prompt": "A single golden spotlight shining on a cute cartoon baseball player silhouette character at home plate, dark stadium around, sparkles"
+      },
+      {
+        "id": 5,
+        "narration": "홈런에 2루타까지, 장타를 펑펑 터뜨렸대.",
+        "on_screen_text": "장타 폭발",
+        "image_prompt": "A cartoon baseball flying high over a stadium fence with fireworks and sparkles, a cute bear character swinging a bat in the foreground"
+      },
+      {
+        "id": 6,
+        "narration": "포스팅하면 많은 팀이 원할 거라는 말이 나올 만하지.",
+        "on_screen_text": "다들 군침",
+        "image_prompt": "Several cute cartoon animals in different baseball uniforms looking at a shining golden baseball with heart-shaped eyes, bright cheerful background"
+      },
+      {
+        "id": 7,
+        "narration": "팀은 졌는데 한 명은 몸값을 올렸네. 이거 위로가 돼, 안 돼? 너라면 어느 쪽이 더 크게 보여?",
+        "on_screen_text": "위로 됨? 안 됨?",
+        "image_prompt": "A cartoon tiger holding a trophy-shaped question mark in one paw and a tiny crying tissue in the other, half-smiling half-crying expression, stadium background"
+      }
+    ],
+    "description": "호주전 패배로 난리 난 대한민국 야구, 그런데 김주원은 홈런에 2루타까지 터뜨렸다? 오늘 검색량 터진 이유 30초 요약! #대한민국야구 #APBC #김주원",
+    "tags": [
+      "대한민국야구",
+      "APBC",
+      "아시아프로야구챔피언십",
+      "호주전",
+      "김주원",
+      "야구",
+      "쇼츠",
+      "야구이슈"
+    ],
+    "comment_question": "호주전 패배 vs 김주원 장타쇼, 오늘의 주인공은 어느 쪽? 패배 쪽이면 1, 김주원 쪽이면 2!"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 7
+    }
+  },
+  "effects": {
+    "duration": 36.62,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Thatched Villagers",
+    "bgm_mood": "funny",
+    "bgm_credit": "Music: \"Thatched Villagers\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "세미 프로한테 졌다는데, 이게 실화냐.",
+      "on_screen_text": "이게 실화냐",
+      "image": "runs/2026-11-14/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "지금 대한민국 야구 검색량 터진 이유, 아시아 프로야구 챔피언십에서 호주한테 졌거든.",
+      "on_screen_text": "검색량 폭발",
+      "image": "runs/2026-11-14/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "근데 상대가 세미 프로라서 팬들 마음이 더 씁쓸해졌어.",
+      "on_screen_text": "씁쓸 그 자체",
+      "image": "runs/2026-11-14/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "그런데 이 난리통에 혼자 빛난 사람이 있었으니, 김주원.",
+      "on_screen_text": "여기서 반전",
+      "image": "runs/2026-11-14/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "홈런에 2루타까지, 장타를 펑펑 터뜨렸대.",
+      "on_screen_text": "장타 폭발",
+      "image": "runs/2026-11-14/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "포스팅하면 많은 팀이 원할 거라는 말이 나올 만하지.",
+      "on_screen_text": "다들 군침",
+      "image": "runs/2026-11-14/scene_06.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 7,
+      "narration": "팀은 졌는데 한 명은 몸값을 올렸네. 이거 위로가 돼, 안 돼? 너라면 어느 쪽이 더 크게 보여?",
+      "on_screen_text": "위로 됨? 안 됨?",
+      "image": "runs/2026-11-14/scene_07.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-11-14/thumbnail.jpg",
+  "video_file": "videos/2026-11-14.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "QA 불합격"
+  },
+  "finished_at": "2026-11-14T00:53:30+09:00"
+}

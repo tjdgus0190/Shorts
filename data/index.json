@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-14",
+    "status": "qa_failed",
+    "title": "세미 프로 호주한테 졌는데 왜 한 명은 웃냐",
+    "overall": 52,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-11-14/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 36.62
+  },
+  {
     "date": "2026-11-13",
     "status": "qa_failed",
     "title": "하루 만에 17% 폭등, 범인은 이 팀이었다",
