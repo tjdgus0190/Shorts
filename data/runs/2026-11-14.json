@@ -1,405 +1,427 @@
 {
   "date": "2026-11-14",
   "status": "qa_failed",
-  "started_at": "2026-11-14T00:44:22+09:00",
+  "started_at": "2026-11-14T23:35:26+09:00",
   "llm_provider": "claude_cli",
   "stages": [
     {
       "name": "marketer",
       "label": "마케터",
       "status": "done",
-      "started_at": "2026-11-14T00:44:22+09:00",
+      "started_at": "2026-11-14T23:35:26+09:00",
       "note": "",
-      "seconds": 22.9
+      "seconds": 20.8
     },
     {
       "name": "planner",
       "label": "기획자",
       "status": "done",
-      "started_at": "2026-11-14T00:44:45+09:00",
+      "started_at": "2026-11-14T23:35:47+09:00",
       "note": "",
-      "seconds": 18.1
+      "seconds": 20.8
     },
     {
       "name": "producer",
       "label": "제작자",
       "status": "done",
-      "started_at": "2026-11-14T00:45:03+09:00",
+      "started_at": "2026-11-14T23:36:08+09:00",
       "note": "",
-      "seconds": 30.3
+      "seconds": 25.7
     },
     {
       "name": "effector",
       "label": "이펙터",
       "status": "done",
-      "started_at": "2026-11-14T00:45:33+09:00",
+      "started_at": "2026-11-14T23:36:34+09:00",
       "note": "",
-      "seconds": 32.0
+      "seconds": 32.8
     },
     {
       "name": "qa",
       "label": "QA",
       "status": "done",
-      "started_at": "2026-11-14T00:46:05+09:00",
+      "started_at": "2026-11-14T23:37:07+09:00",
       "note": "1차",
-      "seconds": 19.5
-    },
-    {
-      "name": "planner",
-      "label": "기획자",
-      "status": "done",
-      "started_at": "2026-11-14T00:46:24+09:00",
-      "note": "QA 1차 피드백 반영",
-      "seconds": 22.2
+      "seconds": 25.9
     },
     {
       "name": "producer",
       "label": "제작자",
       "status": "done",
-      "started_at": "2026-11-14T00:46:47+09:00",
+      "started_at": "2026-11-14T23:37:32+09:00",
       "note": "QA 1차 피드백 반영",
-      "seconds": 128.6
+      "seconds": 38.2
     },
     {
       "name": "effector",
       "label": "이펙터",
       "status": "done",
-      "started_at": "2026-11-14T00:48:55+09:00",
+      "started_at": "2026-11-14T23:38:11+09:00",
       "note": "QA 1차 피드백 반영",
-      "seconds": 37.3
+      "seconds": 29.4
     },
     {
       "name": "qa",
       "label": "QA",
       "status": "done",
-      "started_at": "2026-11-14T00:49:33+09:00",
+      "started_at": "2026-11-14T23:38:40+09:00",
       "note": "2차",
-      "seconds": 15.7
+      "seconds": 20.0
     },
     {
       "name": "producer",
       "label": "제작자",
       "status": "done",
-      "started_at": "2026-11-14T00:49:48+09:00",
+      "started_at": "2026-11-14T23:39:00+09:00",
       "note": "QA 2차 피드백 반영",
-      "seconds": 176.7
+      "seconds": 39.3
     },
     {
       "name": "effector",
       "label": "이펙터",
       "status": "done",
-      "started_at": "2026-11-14T00:52:45+09:00",
+      "started_at": "2026-11-14T23:39:40+09:00",
       "note": "QA 2차 피드백 반영",
-      "seconds": 29.1
+      "seconds": 30.0
     },
     {
       "name": "qa",
       "label": "QA",
       "status": "done",
-      "started_at": "2026-11-14T00:53:14+09:00",
+      "started_at": "2026-11-14T23:40:09+09:00",
       "note": "3차",
-      "seconds": 16.5
+      "seconds": 24.1
     }
   ],
   "qa": [
     {
       "attempt": 1,
       "scores": {
-        "fun": 50,
-        "hook": 62,
-        "clarity": 70,
-        "visual": 62,
-        "subtitle": 75,
-        "safety": 78
+        "fun": 52,
+        "hook": 60,
+        "clarity": 75,
+        "visual": 55,
+        "subtitle": 72,
+        "safety": 75
       },
-      "overall": 63,
+      "overall": 62,
       "pass": false,
       "issues": [
-        "fun: 전체가 뉴스 요약 톤입니다. 반전은 '김주원이 잘했다' 하나뿐이고 드립이 없습니다. 마지막 질문도 흔한 댓글 유도형입니다.",
-        "hook: 첫 문장 '이게 실화냐'는 일반적이고, 무슨 경기인지 첫 3초에 알 수 없습니다. 제목의 '왜 한 명은 웃냐'만큼 궁금증을 만드는 장치가 영상 첫머리에 없습니다.",
-        "visual: 장면 5 프레임에는 곰 캐릭터가 나옵니다. 주인공인 김주원과 이어지지 않고, 호랑이 캐릭터가 갑자기 곰으로 바뀌어 보입니다.",
-        "visual: 장면 3은 플랫 벡터풍이고 장면 1과 7은 3D풍이라 화풍이 섞여 있습니다.",
-        "visual: 장면 7은 프롬프트(트로피 모양 물음표와 우는 휴지)와 달리 물음표 두 개를 든 어색한 이미지입니다. 표정도 반쯤 웃고 반쯤 우는 느낌이 약합니다.",
-        "visual: 1080x1920 화면에 이미지가 정사각형에 가깝게 들어가 위아래가 흐린 블러 띠입니다. 화면 활용도가 낮아 보입니다.",
-        "subtitle: 하단 자막이 캐릭터의 발과 몸 위에 겹칩니다(장면 5는 곰 몸통). 상단 on_screen_text와 하단 자막이 동시에 떠서 화면이 다소 복잡합니다.",
-        "clarity: '세미 프로'가 무엇을 뜻하는지 설명이 없습니다. 장면 2의 한 문장이 길고 정보가 많습니다(검색량, 대회명, 패배).",
-        "길이: 영상은 36.6초인데 description에는 '30초 요약'이라고 적혀 있습니다. 불일치입니다.",
-        "safety: 실존 선수 김주원의 성적(홈런, 2루타)과 '포스팅하면 많은 팀이 원할 것'이라는 발언의 출처가 영상에 없습니다. 호주전 패배와 상대가 세미프로라는 점도 포함해 사실 확인이 필요합니다. 명예훼손 소지는 낮습니다.",
-        "TTS는 edge 기본 음성이라 감정 표현이 밋밋할 가능성이 있습니다(확인 필요)."
+        "첫 프레임 간판이 'FASTFPO'로 깨져 있고, 대본은 '맥도날드'라고 하는데 화면은 가상의 패스트푸드점이라 어긋남. 프레임 1 기준 시청자가 가장 먼저 보는 장면이라 타격이 큼.",
+        "프레임 2의 간판 '木砳重夂 RESTAURANT'과 프레임 3의 'CALES', 'Rolice Plastier Jame'은 이미지 생성 모델이 만든 깨진 글자임. 신뢰도를 떨어뜨리고 저품질 AI 영상처럼 보이게 함.",
+        "장면 1의 곰은 프롬프트상 '줄 맨 앞'이어야 하는데 혼자 서 있고 줄은 뒤쪽 배경에 작게만 보임. 장면 3·4의 '긴 줄'과 '우르르 몰려옴' 묘사도 약함. 프레임 3은 줄이 아니라 귀여운 동물 모임처럼 보임.",
+        "프레임 4의 판다가 햄버거를 두 개 들고 있음. 프롬프트는 한 손에 햄버거, 한 손에 베개였고 대본은 '햄버거 하나'라서 불일치.",
+        "이미지가 화면 중앙에만 들어가고 위아래는 흐린 배경으로 채워짐. 프레임 3은 상단 흐림이 특히 두드러져 완성도가 낮아 보임.",
+        "상단 on_screen_text와 중앙 나레이션 자막이 동시에 표시됨. 프레임 1과 4에서는 중앙 자막이 캐릭터의 몸통과 햄버거를 가림. 정보가 중복되고 화면이 산만함.",
+        "내용이 '줄 섰다 → 경찰 출동 → 원정 → 처음 본다'로 이어지는 뉴스 나열형이라 반전이나 결정적 펀치라인이 없음. 마지막 질문도 흔한 댓글 유도 수준임. 재미가 중간 이하.",
+        "훅이 '~했다고?' 형태의 질문이라 무난하지만 강하지는 않음. 첫 화면의 곰은 눈을 감고 서 있어 정적이고, 새벽 2시 줄이라는 긴박감이 약함.",
+        "사실 확인 필요: '세종시 첫 맥도날드 개점', '인구 40만'(약 39만 안팎 수치로 보이나 확인 필요), '새벽 2시부터 줄', '경찰 출동', '원정 방문'. 출처 없이 단정적으로 서술돼 있고, 특히 경찰 출동은 과장이나 허위 위험이 있어 확인 필요.",
+        "맥도날드 실명을 제목, 대본, 해시태그에 사용함. 상표 노출 자체는 문제가 없지만, 화면에는 가상의 가게가 나와 실제 브랜드와 연결이 안 됨.",
+        "길이 39.4초로 쇼츠치고 다소 긴 편임. 내용이 얇아서 후반부 이탈 위험이 있음."
       ],
-      "retry_target": null,
-      "feedback": "합격선이지만 fun이 약합니다. (1) 첫 문장을 '세미프로한테 졌는데 한 명만 웃고 있다'처럼 궁금증을 만드는 문장으로 바꾸세요. 호주전 패배라는 맥락도 첫 3초 안에 넣으세요. (2) 대본에 반전 드립을 1~2개 추가하세요. 예: '팀은 졌는데 김주원 혼자 이력서 쓴 날'. (3) 장면 4~6에서 같은 주인공 캐릭터(예: 호랑이 유니폼 선수)를 유지하고 곰 같은 다른 캐릭터는 피하세요. 화풍도 3D 카툰 하나로 통일하세요. (4) 이미지를 9:16 전체로 채우고 하단 자막이 캐릭터 얼굴과 몸을 덜 가리도록 위치를 조정하세요. (5) '세미 프로'를 한 줄로 설명하고, 선수 성적과 포스팅 발언은 출처를 확인한 뒤 '~라고 알려졌다' 식으로 표현하세요. (6) description의 '30초'는 실제 길이에 맞게 고치거나 대본을 줄이세요."
+      "retry_target": "producer",
+      "feedback": "producer 지시: (1) 모든 image_prompt 끝에 'no text, no letters, no signs with writing, no logo, blank storefront sign'을 넣고 negative prompt에도 text, letters, watermark, logo, gibberish를 추가해 간판 글자 깨짐을 막으세요. 프레임 1~3에서 확인된 문제입니다. 가게 간판은 글자 없는 노란 아치 심볼이나 단색 간판으로 대체하세요. (2) 장면 1은 곰이 줄 맨 앞에서 졸린 눈으로 하품하고, 뒤로 끝없이 이어지는 긴 줄이 보이게 구도를 다시 잡으세요. 장면 3·4도 긴 줄과 인파가 한눈에 보이게 와이드 샷으로 생성하세요. (3) 장면 7은 'exactly one hamburger'를 명시해 햄버거 한 개만 나오게 하세요. (4) 이미지를 9:16 전체 화면에 꽉 차게 생성하거나 업스케일해서 상하 흐림 여백을 줄이세요. (5) 재작업이 끝나면 effector에게 자막 중복(상단 문구와 중앙 자막)을 정리하고 중앙 자막을 하단 안전영역으로 내리도록 전달하세요. 참고로 planner에게도 전달할 내용입니다. 세종 맥도날드 관련 수치와 '경찰 출동' 사실을 확인하고, 확인되지 않으면 표현을 완화하세요. 중반에 반전이나 드립을 하나 넣고, 마무리 질문은 더 도발적으로 바꾸세요."
     },
     {
       "attempt": 2,
       "scores": {
-        "fun": 48,
+        "fun": 55,
         "hook": 62,
-        "clarity": 62,
-        "visual": 28,
-        "subtitle": 55,
-        "safety": 68
+        "clarity": 75,
+        "visual": 55,
+        "subtitle": 78,
+        "safety": 65
       },
-      "overall": 53,
+      "overall": 63,
       "pass": false,
       "issues": [
-        "2개 장면(4번 '여기서 반전', 6번 '다들 군침')이 이미지 없이 보라·빨강 그라데이션 placeholder로 나갔다. 영상의 핵심 반전 장면과 마무리 장면이 비어 있어 완성도가 크게 떨어진다.",
-        "장면 3(f1)은 호랑이 캐릭터 대신 실사풍의 어두운 사람 이미지다. 기획한 귀여운 호랑이 만화 스타일과 달라서 캐릭터 일관성이 깨진다. 얼굴과 손이 일그러져 있고 줄무늬 유니폼이 뭉개져 보인다.",
-        "장면 1(f0)의 호랑이 유니폼 가슴에는 뉴욕 양키스 NY 로고가 있다. 저작권·상표 위험이 있고, 기획한 팀 상황과도 맞지 않는다. 뒤의 팀원은 슬픈 만화 캐릭터가 아니라 일반 아이들이고, 표정도 크게 슬퍼 보이지 않는다.",
-        "자막이 이중으로 나온다. 상단에는 검은 박스 on_screen_text, 하단에는 나레이션 자막이 있다. 장면 3(f1)에서는 상단 박스가 모자·얼굴을 가린다. 장면 4(f2)에서는 on_screen_text '여기서 반전'이 중앙 큰 글씨와 상단 박스에 중복으로 떠서 지저분하다. 장면 6(f3)도 '다들 군침'이 상단과 중앙에 중복된다.",
-        "대본 문제: 김주원의 홈런·2루타, '포스팅하면 많은 팀이 원할 거라는 말'은 '알려졌어'로 출처 없이 전달된다. 실존 선수의 해외 진출 가능성을 다루므로 사실 확인이 필요하다. 호주 대표팀을 '세미 프로'라고 부르는 것과 대회 정보도 확인 필요.",
-        "씁쓸하다는 반응과 '세미 프로가 뭐냐면' 설명이 교과서식 설명 톤이어서 재미가 떨어진다. 반전 이후 전개도 '혼자 이력서', '몸값 올린 셈' 정도의 약한 드립에 그친다. 43.7초는 내용에 비해 약간 길다.",
-        "이미지 생성 결과가 pollinations 3장, cloudflare 2장, placeholder 2장으로 섞여 있다. 화풍이 제각각이라 영상 전체가 통일되지 않는다. 오디오는 정상(-14.5dB)이고 TTS는 edge이다."
+        "55% 프레임: 간판에 맥도날드 'M' 골든아치 로고가 그대로 나옴. 프롬프트로 로고를 피하라고 했지만 지켜지지 않아 상표 위험이 있음.",
+        "55% 프레임: 'KATT'S', 'frogh', 'SATE FINE' 같은 깨진 글자가 간판에 보임. 시각 품질이 떨어지고 저품질 AI 영상처럼 보임.",
+        "프레임 0.6초, 30%, 85%: 이미지가 9:16 전체를 채우지 못함. 위아래에 흐린 블러 띠가 생기고 그림은 가운데 일부에만 나옴. 프롬프트의 full-bleed 지시가 반영되지 않음.",
+        "장면 4(경찰 출동) 이미지가 밝은 낮 배경에 빈 광고판이 있고, 긴 줄이나 새벽 분위기가 없음. 나레이션의 '새벽 2시부터 줄이 길어서 경찰 출동' 흐름과 맞지 않아 장면 3과 이어지지 않음.",
+        "장면 7(85% 프레임) 이미지는 햄버거와 베개를 든 판다 하나뿐이라 '도시가 뒤집혔다'는 대사와 거리가 있음. 달과 해 분할 구도도 약하게 전달됨.",
+        "상단 제목 자막과 하단 나레이션 자막이 동시에 떠서 화면이 복잡함. 상단 자막은 검은 박스 때문에 답답해 보임.",
+        "확인 필요: 세종시 첫 맥도날드 개점, 새벽 2시 줄서기, 경찰 출동, 원정 방문 같은 사실 주장은 출처가 기획서에 없음. 인구 40만은 대략 맞는 수치로 보임(확인 필요). 특정 지역과 브랜드를 다루므로 근거 확보가 필요함.",
+        "대본이 사건을 순서대로 나열하는 데 그침. 반전이나 강한 드립이 없고, '해도 뜨기 전에 출근' 정도가 유일한 웃음 포인트임. 훅은 질문형이지만 평이함."
       ],
       "retry_target": "producer",
-      "feedback": "1) placeholder로 처리된 장면 4·6(그리고 확인되지 않은 장면 5·7)의 이미지를 다시 생성하세요. 생성에 실패하면 재시도하거나 다른 생성기로 대체해 그라데이션 배경이 나가지 않게 하세요. 2) 장면 3처럼 실사풍으로 나온 이미지는 'cute cartoon tiger mascot, 3D animation style'을 프롬프트 앞에 고정해 다시 생성하고, 모든 장면의 화풍과 캐릭터를 통일하세요. 3) 유니폼에 실제 팀 로고(NY 등)가 들어가지 않도록 'plain jersey, no logos, no text'를 프롬프트에 넣으세요. 4) 장면 1은 팀원들이 슬프게 처져 있는 모습이 드러나게 하세요. 5) 이후 기획 단계에서는 김주원 기록과 포스팅 관련 언급의 출처를 확인하고, '세미 프로' 설명 구간을 짧고 드립 위주로 바꿔 재미를 올리세요. 6) 이후 자막 단계(effector)에서는 상단 박스와 중앙·하단 자막이 중복되지 않게 하나만 남기고, 얼굴을 가리지 않도록 위치를 조정하세요."
+      "feedback": "이미지를 다시 생성해 주세요. (1) 간판과 건물에 로고, 'M' 아치, 글자가 나오지 않게 하세요. 프롬프트에 'no text, no letters, no logo, no signage text'를 넣고 negative prompt도 강화하세요. 55% 프레임의 맥도날드 'M' 로고와 깨진 글자 'KATT'S', 'frogh'는 반드시 제거해야 합니다. (2) 9:16 비율로 직접 생성하거나 업스케일 후 중앙 크롭해서 위아래 블러 띠를 없애세요. (3) 장면 4는 밤 배경을 유지하고 긴 줄과 경찰차를 넣어 장면 3과 이어지게 하세요. 빈 광고판과 낮 하늘은 쓰지 마세요. (4) 장면 7은 도시가 뒤집힌 느낌이 나도록 뒤쪽에 혼란스러운 군중이나 도시 배경을 추가하세요. 이후 planner는 사실 근거(개점일, 경찰 출동 보도 출처)를 확인하고, 마지막 대사에 반전이나 드립을 하나 더 넣으면 fun 점수를 올릴 수 있습니다."
     },
     {
       "attempt": 3,
       "scores": {
-        "fun": 50,
-        "hook": 55,
-        "clarity": 60,
-        "visual": 22,
-        "subtitle": 55,
-        "safety": 68
+        "fun": 55,
+        "hook": 60,
+        "clarity": 75,
+        "visual": 62,
+        "subtitle": 62,
+        "safety": 72
       },
-      "overall": 52,
+      "overall": 62,
       "pass": false,
       "issues": [
-        "7개 장면 중 4개가 placeholder 이미지입니다. 확인한 프레임 3장(30%, 55%, 85%)은 장면과 무관한 보라색/빨간색/초록색 그라데이션이고, 호랑이나 야구와 관련된 내용이 없습니다. 영상 절반 이상이 빈 배경입니다.",
-        "첫 장면(pollinations)은 프롬프트와 다릅니다. 프롬프트는 '무지 흰 유니폼, 곰 동료 2마리가 풀 죽은 모습'인데, 실제 결과는 호랑이 2마리가 둘 다 웃고 있고 유니폼에 로고와 글자가 있습니다. '한 명만 웃는다'는 훅의 전제가 깨집니다. 모자와 유니폼의 글자도 뭉개져 있습니다. 실제 구단 마스코트나 로고와 닮았다면 저작권 위험이 있어 확인 필요입니다.",
-        "pollinations.ai 워터마크가 프레임 우하단에 보입니다.",
-        "자막이 중복됩니다. 상단 on_screen_text 박스('씁쓸 그 자체')와 중앙 큰 글씨('씁쓸 그 자체')가 같은 문구를 두 번 보여줍니다. 첫 프레임에서는 상단 박스가 호랑이 모자와 이마를 가립니다. 하단 자막은 '호주한테 졌는데 한'처럼 중간에 끊겨 읽기 어렵습니다.",
-        "대본이 교과서 톤입니다. '세미 프로가 뭐냐면, 프로랑 아마추어 사이…'는 용어 설명이라 리듬이 늘어집니다. 훅 문장과 1번 장면 내레이션이 똑같아서 반복됩니다. 드립은 '이력서 쓴 날'과 마지막 질문 정도입니다.",
-        "실명 선수(김주원)의 기량을 '알려졌어', '나온다고 알려졌어'로 전하는데 출처가 없습니다. '아시아 프로야구 챔피언십(APBC)', '세미 프로 호주', 김주원의 홈런·2루타, 포스팅 관련 발언은 모두 사실 확인 필요입니다. 포스팅 발언은 추측성이므로 단정하지 마세요.",
-        "6번 장면에서 독수리(파랑)와 곰(빨강)을 특정 구단 암시로 쓰고 있어 오해를 부를 수 있습니다. 확인 필요입니다.",
-        "길이 43.7초에 오디오는 정상이지만, TTS는 edge로 일반적인 수준입니다. 자동 측정상 해상도 문제는 없습니다."
+        "fun: 대본이 '뉴스 요약 + 설명' 톤입니다. 장면 4의 '햄버거 사러 갔는데 경찰이 오는 상황'과 장면 3의 '해도 뜨기 전에 출근' 정도만 가벼운 드립이고, 반전이나 웃음 포인트가 없어 리듬이 평평합니다. 장면 5~6은 '원정까지 온 사람도 있대', '처음 본다는 말이 나올 정도야'처럼 근거 없는 말을 반복해서 늘어집니다.",
+        "hook: 첫 문장 '새벽 2시에 맥도날드 앞에 줄이 늘어섰다고?'는 궁금증은 만들지만 충격이나 반전이 약합니다. 오프닝 프레임도 하품하는 곰이라 사건의 긴박감이 전달되지 않습니다.",
+        "사실 확인 필요: '인구 40만 세종시 첫 맥도날드', '새벽 2시부터 줄', '경찰 출동', '원정 온 사람'이 실제 보도로 확인되는지 알 수 없습니다. 출처 없이 실제 지역과 브랜드를 단정하면 허위 정보 위험이 있습니다. 인구 40만은 대략 맞는 수치로 보입니다(확인 필요).",
+        "visual: 프레임 f0에서 간판 글자가 'BURGET BUIPEY'로, f1에서 'BEINTGRY PARI'로 깨져 있습니다. 글자 깨짐 때문에 품질 감점입니다.",
+        "visual: 이미지가 화면 중앙 띠에만 들어가고 위아래는 블러 레터박스입니다. 프롬프트의 'full-frame' 지시가 반영되지 않았고 9:16 화면 활용도가 낮습니다.",
+        "visual: f3(장면 7)에서 판다가 햄버거를 양손에 들고 있어 프롬프트의 '한 손에 햄버거, 한 손에 베개'와 다릅니다. 베개가 없고, 달과 해가 동시에 떠 있어 어색합니다. 도시가 '뒤집힌' 느낌도 약합니다.",
+        "visual: 장면 간 캐릭터 스타일이 일관되지 않습니다. f0, f3은 입체 3D이고 f2는 플랫한 2D 느낌입니다.",
+        "subtitle: 화면 상단의 on_screen_text 박스와 중앙 하단의 내레이션 자막이 이중으로 나옵니다. 하단 자막이 f0, f3에서 캐릭터 몸통을 가리고, 상단 박스는 내용이 중복되어 산만합니다.",
+        "safety: 실제 기업 'McDonald's' 브랜드명과 특정 도시(세종시)를 근거 없이 사건과 엮고 있어 허위 사실과 상표 위험이 약간 있습니다. 이미지에는 실제 로고가 쓰이지 않았습니다."
       ],
-      "retry_target": "producer",
-      "feedback": "1) placeholder 4장을 모두 실제 생성 이미지로 교체하세요. pollinations 실패 시 재시도하거나 대체 생성기를 쓰고, 그래도 안 되면 최소한 호랑이 마스코트 정적 컷을 재사용하세요. 그라데이션 배경만 나가면 안 됩니다. 2) 1번 장면은 다시 생성하세요. 웃는 호랑이 1마리와 풀 죽은 곰 2마리로 대비를 분명히 하고, 유니폼은 로고와 글자가 없는 무지로 만드세요(프롬프트의 'plain solid, blank chest'가 무시됐으니 negative 표현을 강화하세요: no text, no logo). 3) pollinations 워터마크는 크롭하거나 하단 여백으로 가리세요. 4) 후속으로 effector는 상단 on_screen_text와 중앙 큰 자막의 중복을 없애고, 상단 박스를 얼굴을 가리지 않는 위치로 옮기세요. 또 planner는 3번 장면의 용어 설명을 한 줄 드립으로 줄이고, 1번 장면 내레이션이 훅과 똑같지 않게 바꾸세요. 김주원 관련 수치와 발언은 출처를 확인하세요."
+      "retry_target": "planner",
+      "feedback": "1) 훅을 더 강하게 바꾸세요. 예: '햄버거 하나 때문에 경찰이 출동했다', 또는 숫자·반전을 앞세운 문장. 첫 3초 안에 충돌이나 의외성이 보여야 합니다. 2) 설명조 문장을 줄이고 웃음 포인트를 2~3개 넣으세요. 예: 기대와 반대로 뒤집기, 과장 비유, 마지막 한 줄 펀치라인. 장면 5~6은 합치거나 구체적인 에피소드로 바꾸세요. 3) 세종시 첫 맥도날드, 새벽 2시 줄, 경찰 출동이 실제 보도로 확인되는지 검증하세요. 확인이 안 되면 지역과 브랜드명을 빼고 '어느 도시'처럼 일반화하거나, 확인된 사실만 쓰세요. 4) 가게 간판에 글자가 나오지 않도록 image_prompt에 'no text, no letters on signs'를 넣고, 장면 7은 '햄버거 한 개, 베개 한 개'를 명확히 쓰세요. 달과 해가 함께 나오는 구도는 피하세요. 5) 이후 producer와 effector에게 전달할 사항: 이미지를 9:16 전체로 채우고 레터박스를 없애세요. 상단 박스 자막과 하단 내레이션 자막 중 하나만 남기고, 캐릭터 얼굴과 몸을 가리지 않는 위치로 옮기세요."
     }
   ],
   "marketer": {
-    "summary": "김수현 모델료 11억 반환 판결, 민희진 vs 빌리프랩 '아일릿 표절' 소송 패소, APBC 호주전 패배와 FA 시장 개장까지 법원 판결과 야구 이슈가 검색창을 점령한 하루",
+    "summary": "오늘은 드라마 '문무' 첫 방송 D-DAY, 송혜교 '핑계고' 출연, 세종시 첫 맥도날드 오픈런 난리, 일본이 브라질을 꺾은 축구 이변까지 이슈 많은 하루",
     "topics": [
       {
         "rank": 1,
-        "keyword": "김수현",
-        "traffic": "1000+",
-        "traffic_num": 1000,
+        "keyword": "문무",
+        "traffic": "2000+",
+        "traffic_num": 2000,
         "news": [
-          "“이미지 실추로 손해, 모델료 반환해야”···법원, 배우 김수현 측 11억여원 반환 판결",
-          "법원, 김수현 측에 '광고 중단' 모델료 11억여원 반환 판결",
-          "[단독]법원 \"김수현 등, 프롬바이오에 11억6000만원 배상\" - 머니투데이"
+          "[2화 예고] 너도 이제 나라를 위해 칼을 들어야 한다 [문무] | KBS 방송",
+          "'문무' D-DAY, 전란에 휘말린 삼국...폭풍전야 긴장감 - 머니투데이",
+          "인사말하는 최예빈"
         ],
-        "topic": "법원이 김수현 측에 광고 모델료 11억 6천만원 반환 판결, 이 숫자가 대체 어느 정도인지 30초 정리",
-        "why_now": "'법원, 김수현 측에 광고 중단 모델료 11억여원 반환 판결', '이미지 실추로 손해' 기사가 연달아 나옴",
-        "angle": "판결 내용을 30초로 요약하고 11억 6천만원을 생활 물가(치킨, 월급, 아파트 등)로 환산해 보는 숫자 비교형 쇼츠. 판결 사실만 다루고 인물 평가는 배제",
-        "target": "20~40대 연예 이슈 관심층, 뉴스 요약 선호층",
+        "topic": "KBS 새 사극 '문무' 2화 예고, 전란에 휘말린 삼국 폭풍전야 30초 정리",
+        "why_now": "'[2화 예고] 너도 이제 나라를 위해 칼을 들어야 한다 [문무]', \"'문무' D-DAY, 전란에 휘말린 삼국...폭풍전야 긴장감\" 등 방영 관련 기사가 뜸",
+        "angle": "예고편 속 명대사('너도 이제 나라를 위해 칼을 들어야 한다')를 현대 직장 상황극으로 패러디 + '이 드라마 지금 보면 되는 이유' 30초 요약",
+        "target": "사극·드라마 팬, 20~40대 시청자",
         "fun_score": 6,
-        "risk": "high",
-        "risk_note": "실존 인물 관련 법적 분쟁이자 사생활 논란과 얽힌 사안. 기사에 나온 판결 사실만 인용하고 추측이나 조롱은 금지. 1심 판결 여부 등 확인되지 않은 내용은 단정하지 말 것"
+        "risk": "low",
+        "risk_note": ""
       },
       {
         "rank": 2,
-        "keyword": "민희진",
+        "keyword": "천천히 강렬하게",
         "traffic": "1000+",
         "traffic_num": 1000,
         "news": [
-          "“아일릿이 뉴진스 카피” 민희진에 20억 손배소송한 빌리프랩 패소",
-          "민희진에 패소한 하이브 레이블들, 즉각 항소…\"판결 납득 못해\" - 머니투데이",
-          "빌리프랩, '아일릿 표절' 주장 민희진 상대 손해배상 소송 패소"
+          "송혜교, 20대 시절 후회하는 이유..\"노는 것 좋아했다\" ('핑계고')",
+          "‘천천히 강렬하게’ 송혜교 “‘더 글로리’ 이후 유럽 입국심사관 사진 촬영 제안도 받아” (핑계고)",
+          "송혜교 실제 성격, 남모를 속앓이...\"술 마시고 솔직해졌다가 이불킥\""
         ],
-        "topic": "하이브 레이블 빌리프랩이 민희진에게 20억 손배소를 걸었다가 패소, 하이브 측은 즉각 항소",
-        "why_now": "'아일릿이 뉴진스 카피 주장 민희진에 20억 손배소송한 빌리프랩 패소', '즉각 항소, 판결 납득 못해' 기사",
-        "angle": "'이게 왜 난리냐면' 형식으로 소송 발단(표절 주장) → 20억 소송 → 패소 → 항소까지 타임라인을 30초에 정리하고 팬덤·네티즌 반응 포인트를 짚는 형식",
-        "target": "K팝 팬, 엔터 업계 이슈 관심층 10~30대",
+        "topic": "송혜교가 '핑계고'에서 털어놓은 20대 후회와 '더 글로리' 이후 유럽 입국심사 에피소드",
+        "why_now": "'송혜교, 20대 시절 후회하는 이유..\"노는 것 좋아했다\"', '더 글로리 이후 유럽 입국심사관 사진 촬영 제안' 등 핑계고 출연 발언이 화제",
+        "angle": "'핑계고 송혜교 발언 TOP3' 정리 + '술 마시고 솔직해졌다가 이불킥' 공감 포인트를 상황극으로 재현",
+        "target": "20~30대 예능·연예 팬, 여성층",
         "fun_score": 8,
-        "risk": "high",
-        "risk_note": "K팝 팬덤 간 갈등이 큰 주제. 어느 한쪽 편들기나 아티스트 비하 없이 판결 보도 내용과 항소 사실만 중립적으로 전달. 항소심이 진행 중이라 결론 단정 금지"
+        "risk": "low",
+        "risk_note": "발언 기반으로만 다루고 사생활 추측은 피할 것"
       },
       {
         "rank": 3,
-        "keyword": "쿠플",
-        "traffic": "200+",
-        "traffic_num": 200,
-        "news": [],
-        "topic": "쿠팡플레이(쿠플) 검색 급상승, 이유 확인 전 후보 주제",
-        "why_now": "제공된 뉴스 제목이 없어 급상승 이유를 확인할 수 없음. 쿠팡플레이 관련 새 소식이 있을 수 있으나 근거 없음",
-        "angle": "근거 기사 확인 후 제작 권장. 확인 전에는 '쿠플 요즘 뭐 볼까' 식의 일반 콘텐츠 추천 정도만 가능하며 이슈성은 낮음",
-        "target": "OTT 이용자 20~40대",
-        "fun_score": 3,
-        "risk": "medium",
-        "risk_note": "뉴스 근거가 없어 사실 확인이 불가. 이슈를 추측해 지어내면 허위 정보 위험. 원인 파악 후 제작할 것"
+        "keyword": "갈비뼈",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "멀쩡한 갈비뼈 6개 부러뜨린 30대 여성...이유는?",
+          "호리병 몸매가 뭐라고…멀쩡한 갈비뼈 6개 부러뜨린 30대女",
+          "\"모래시계 몸매 원해\"…갈비뼈 6개 부러뜨린 30대 여성"
+        ],
+        "topic": "'모래시계 몸매' 위해 멀쩡한 갈비뼈 6개를 부러뜨린 30대 여성 사건",
+        "why_now": "'멀쩡한 갈비뼈 6개 부러뜨린 30대 여성...이유는?', '모래시계 몸매 원해' 등 보도 다수",
+        "angle": "'외모 집착이 어디까지 가나' 경각심 중심 30초 정리, 조롱 없이 위험성과 외모 기준 이슈를 짚는 형식",
+        "target": "20~40대, 건강·뷰티 관심층",
+        "fun_score": 5,
+        "risk": "high",
+        "risk_note": "실제 개인의 신체 훼손 사건이며 조롱 소지가 있음. 당사자 비하 금지, 위험성 중심으로 다룰 것"
       },
       {
         "rank": 4,
-        "keyword": "대한민국 기후에너지환경부",
-        "traffic": "200+",
-        "traffic_num": 200,
+        "keyword": "맥도날드 세종dt점",
+        "traffic": "500+",
+        "traffic_num": 500,
         "news": [
-          "“기후행동 실천하면 포인트·금리우대”…민관 금융협력 체계 구축",
-          "은행 앱으로 '기후시민' 등록하면 은행 포인트도 준다… 기후부, KB·IBK와 협약",
-          "온라인 기후행동 공간 '굳티튜드 숲' 열렸다…대변인실이 AI로 개발"
+          "새벽 2시부터 줄 섰다…‘인구 40만’ 세종시 첫 맥도날드, 오픈런에 경찰까지 출동",
+          "\"맥도날드 먹으러 원정까지\"…인구 40만 도시에 무슨 일이",
+          "\"살다 살다 이런 오픈런 처음 본다\"…새벽 2시부터 '우르르' 맥날 개점에 난리난 도시"
         ],
-        "topic": "은행 앱에서 '기후시민' 등록하면 포인트·금리우대, 기후부가 KB·IBK와 협약",
-        "why_now": "'은행 앱으로 기후시민 등록하면 은행 포인트도 준다… 기후부, KB·IBK와 협약', '기후행동 실천하면 포인트·금리우대' 기사",
-        "angle": "'환경 지키면 돈 준다고?' 형식으로 혜택 구조를 30초 정리하고 대변인실이 AI로 만든 '굳티튜드 숲'까지 소개하는 정보+호기심형 쇼츠",
-        "target": "재테크·앱테크 관심층 20~40대",
-        "fun_score": 5,
+        "topic": "새벽 2시부터 줄 선 세종시 첫 맥도날드 오픈런, 경찰까지 출동",
+        "why_now": "'인구 40만 세종시 첫 맥도날드, 오픈런에 경찰까지 출동', '살다 살다 이런 오픈런 처음 본다' 보도",
+        "angle": "'맥도날드 하나에 도시가 뒤집힌 이유' 숫자 중심 정리(인구 40만, 새벽 2시, 경찰 출동) + 줄 선 사람 시점 상황극",
+        "target": "전 연령, 지역 이슈·먹거리 관심층",
+        "fun_score": 9,
         "risk": "low",
-        "risk_note": "구체적인 포인트 액수나 금리 우대 폭은 기사 제목에 없으므로 언급하지 말 것"
+        "risk_note": ""
       },
       {
         "rank": 5,
-        "keyword": "대한민국 야구",
-        "traffic": "200+",
-        "traffic_num": 200,
+        "keyword": "버거킹",
+        "traffic": "500+",
+        "traffic_num": 500,
         "news": [
-          "[영상] ‘세미 프로’ 호주에 진 한국 야구의 씁쓸한 현실",
-          "'와' 이러니 MLB가 주목하지... '홈런+2루타 장타폭발' 김주원, \"포스팅시 많은 팀이 원할 것\" 이유 증명 [APBC] - 머니투데이",
-          "2026 아시아 프로야구 챔피언십 : 한국 야구의 미래, APBC 우승 도전하는 대한민국 [대한민국 vs 호주]"
+          "욕심껏 ‘꽉꽉’ 채운 내 버거가 신메뉴로?…버거킹 플레임 랩 가보니 [현장]",
+          "“두툼한 패티 2장에 치즈 3장, 나만의 버거”…버거킹 연구소에선 다 된다 [르포]",
+          "[현장] \"와퍼에 새우패티 넣어볼까?\"…버거킹 연구원이 된 하루"
         ],
-        "topic": "APBC에서 '세미 프로' 호주에 진 한국 야구, 그래도 장타 폭발한 김주원",
-        "why_now": "'세미 프로 호주에 진 한국 야구의 씁쓸한 현실', '홈런+2루타 김주원, 포스팅시 많은 팀이 원할 것' 기사",
-        "angle": "'호주전 패배 vs 김주원 장타쇼' 반전 구성. 아쉬운 결과 속에서도 빛난 선수를 부각하고 팬 반응 드립을 곁들이는 상황극형 쇼츠",
-        "target": "야구 팬 20~50대, 국가대표 경기 시청층",
-        "fun_score": 7,
-        "risk": "medium",
-        "risk_note": "선수 개인 비난이나 패배 책임 몰기 주의. 기사에 없는 경기 점수나 세부 내용은 지어내지 말 것"
+        "topic": "버거킹 플레임 랩에서 내 마음대로 만든 버거가 신메뉴가 된다?",
+        "why_now": "'욕심껏 꽉꽉 채운 내 버거가 신메뉴로?', '두툼한 패티 2장에 치즈 3장, 나만의 버거' 등 현장 르포 기사",
+        "angle": "'와퍼에 새우패티 넣으면?' 나만의 버거 조합 상상 + 맥도날드 오픈런과 엮은 '버거 전쟁' 드립",
+        "target": "10~30대 패스트푸드 팬",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": ""
       },
       {
         "rank": 6,
-        "keyword": "포수",
-        "traffic": "100+",
-        "traffic_num": 100,
+        "keyword": "로또1250",
+        "traffic": "500+",
+        "traffic_num": 500,
         "news": [
-          "KBO FA 시장 개장! 원태인·구자욱·양의지 등 28명 자격 공시",
-          "와~60위 됐으면 어쩔뻔, 연봉 61위 C등급 깜짝 호재...하늘이 돕는 FA 김호령, 실수령 1억5천 고우석이 왜 도우미로 거론되나",
-          "kt 위즈, 외야수 김민혁·배정대 FA 시장 나온다"
+          "제1250회 로또 1등 9명···당첨금 31억원",
+          "[속보]로또 1250회 당첨번호 '1·5·18·23·27·28'…보너스 '8'",
+          "1250회 로또판매·추첨시간, 1249회 1등당첨지역 공개"
         ],
-        "topic": "KBO FA 시장 개장, 양의지 포함 28명 자격 공시, 포수 FA는 누가 움직일까",
-        "why_now": "'KBO FA 시장 개장! 원태인·구자욱·양의지 등 28명 자격 공시' 기사. 포수 키워드는 FA 명단과 연결되어 검색된 것으로 보임",
-        "angle": "'FA 28명 명단 30초 정리' 형식으로 원태인·구자욱·양의지 등 주요 이름을 짚고 '내 팀 누가 나가나' 댓글 참여를 유도하는 형식",
-        "target": "KBO 팬 20~50대",
-        "fun_score": 7,
+        "topic": "로또 1250회 1등 9명, 당첨금 31억… 번호 1·5·18·23·27·28 보너스 8",
+        "why_now": "'제1250회 로또 1등 9명 당첨금 31억원', '[속보]로또 1250회 당첨번호' 보도",
+        "angle": "'1등이 9명이나 나온 회차' 숫자 비교(당첨금 31억을 어디에 쓸까 상황극) + 번호 패턴 드립",
+        "target": "전 연령, 로또 구매층",
+        "fun_score": 5,
         "risk": "low",
-        "risk_note": "포수 FA의 구체적 계약 전망이나 금액은 기사 근거가 없으므로 추측 금지. 명단 외 선수 이적설 단정 금지"
+        "risk_note": "당첨 예측·구매 조장 표현은 피할 것"
       },
       {
         "rank": 7,
-        "keyword": "광천동주택재개발",
-        "traffic": "100+",
-        "traffic_num": 100,
-        "news": [
-          "광천동 재개발 철거 착수…교통망 확충은 ‘난항’",
-          "광주 최대 규모 ‘광천동 재개발 사업’ 철거 본격화",
-          "광주 최대 재개발지 광천동, 철거 공사 착수"
-        ],
-        "topic": "광주 최대 규모 광천동 재개발 철거 착수, 교통망 확충은 난항",
-        "why_now": "'광주 최대 규모 광천동 재개발 사업 철거 본격화', '교통망 확충은 난항' 기사",
-        "angle": "'광주 최대 재개발, 철거 시작했는데 길은?' 식으로 철거 착수와 교통 과제를 대비시키는 지역 이슈 요약형",
-        "target": "광주 지역 거주자, 부동산 관심층 30~50대",
-        "fun_score": 3,
+        "keyword": "데블스 플랜",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [],
+        "topic": "'데블스 플랜' 관련 검색 급증, 뉴스 제목 근거 부족",
+        "why_now": "제공된 뉴스 제목이 없어 정확한 이유 확인 불가(시리즈/출연자 관련 소식으로 추정되나 단정 불가)",
+        "angle": "확인된 사실만으로 '데블스 플랜 지금 왜 검색됐나' 짧은 체크 형식. 근거 확보 전에는 제작 보류 권장",
+        "target": "서바이벌 예능 팬",
+        "fun_score": 4,
         "risk": "medium",
-        "risk_note": "부동산 가격 전망이나 투자 권유로 읽히지 않게 주의. 세대수·일정 등 기사에 없는 수치는 인용 금지. 철거 주민 이슈는 민감할 수 있음"
+        "risk_note": "뉴스 근거가 없어 사실 오류 위험. 제작 전 이슈 확인 필수"
       },
       {
         "rank": 8,
-        "keyword": "明天的天氣",
+        "keyword": "딜라이브",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "LG헬로 시청자 투니버스 못 보게 된다?… 시청자는 무슨 죄",
+          "합의제 기구 방미통위, 합의만 기다릴 것인가 [강소현의 방송통신문]",
+          "CJ ENM, 딜라이브에 “송출 중단 수용 어려워”…협의는 계속"
+        ],
+        "topic": "CJ ENM vs 딜라이브 송출 중단 갈등, 투니버스를 못 보게 될 수 있다?",
+        "why_now": "'CJ ENM, 딜라이브에 송출 중단 수용 어려워…협의는 계속', 'LG헬로 시청자 투니버스 못 보게 된다?' 보도",
+        "angle": "'내 채널이 사라질 수 있는 이유' 30초 정리 + 어린 시절 투니버스 추억 공감 드립",
+        "target": "케이블 시청자, 30~40대 추억층",
+        "fun_score": 5,
+        "risk": "medium",
+        "risk_note": "기업 간 협상 이슈이므로 한쪽 편들기 없이 중립적으로 다룰 것"
+      },
+      {
+        "rank": 9,
+        "keyword": "아이오아이",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "[ET포토] 라이즈, '여심 헌터들'",
+          "[사진]리센느 원이-미나미 '시상식도 접수'",
+          "라이즈 원빈, 그윽한 눈빛"
+        ],
+        "topic": "라이즈·리센느 시상식 포토 화제 속 '아이오아이' 검색 급증",
+        "why_now": "뉴스 제목은 '라이즈, 여심 헌터들', '리센느 원이-미나미 시상식도 접수' 등 시상식 포토 중심이며 아이오아이 직접 언급은 없음",
+        "angle": "시상식 포토 속 인상적인 순간 모음 + 아이돌 비주얼 반응 정리. 아이오아이 연관성은 확인 후 언급",
+        "target": "10~20대 아이돌 팬",
+        "fun_score": 5,
+        "risk": "medium",
+        "risk_note": "뉴스 제목과 키워드 연관이 불분명해 추측 금지. 외모 평가성 코멘트 지양"
+      },
+      {
+        "rank": 10,
+        "keyword": "nhật bản đấu với brasil",
         "traffic": "100+",
         "traffic_num": 100,
         "news": [
-          "氣溫漸升東偶雨週六短波槽掠過",
-          "要變天了！週六「華南雲雨區」東移　全台降雨機率高",
-          "好天氣掰了！華南雲雨帶逼近　「這地區」慎防較大雨勢"
+          "Stars set Singapore alight as Japan exact revenge on Brazil with dramatic late win",
+          "Raphinha sees red as Brazil stunned by Japan while Argentina’s post-Messi era starts with defeat",
+          "Ancelotti and Raphinha sent off as Japan beat Brazil"
         ],
-        "topic": "대만발 '내일 날씨' 검색, 주말 화남 구름대 접근으로 전국 비 확률 상승",
-        "why_now": "'週六華南雲雨區東移 全台降雨機率高' 등 대만 기상 기사. 한국 이슈가 아니라 대만 날씨 검색으로 보임",
-        "angle": "한국 채널 타깃과 맞지 않아 제작 비추천. 굳이 한다면 '한국 사람은 왜 중국어 날씨를 검색했나' 같은 트렌드 해프닝으로만 가볍게 활용 가능",
-        "target": "해당 없음(대만 거주 중국어권 사용자 검색)",
-        "fun_score": 1,
+        "topic": "일본이 브라질에 극적 후반 역전승, 라피냐·안첼로티 퇴장 난리",
+        "why_now": "'Raphinha sees red as Brazil stunned by Japan', 'Ancelotti and Raphinha sent off as Japan beat Brazil' 등 해외 보도",
+        "angle": "'브라질이 일본에 졌다' 30초 정리 + 감독·선수 동반 퇴장 반전 포인트와 현지 반응 모음, 같은 날 아르헨티나 패배 소식 엮기",
+        "target": "축구 팬, 20~40대 남성",
+        "fun_score": 8,
         "risk": "low",
-        "risk_note": "한국 시청자와 무관한 지역 날씨 정보. 한국 날씨로 오해하게 만들면 안 됨"
+        "risk_note": "퇴장 선수·감독 조롱 대신 경기 상황 중심으로 다룰 것"
       }
     ],
     "trend_count": 10,
-    "excluded": [
-      {
-        "keyword": "축구 중계",
-        "blocked_by": "추락"
-      },
-      {
-        "keyword": "대한민국",
-        "blocked_by": "대통령"
-      }
-    ]
+    "excluded": []
   },
-  "selected_attempt": 1,
+  "selected_attempt": 2,
   "plan": {
-    "chosen_rank": 5,
-    "reason": "세 후보 모두 검색량이 200+로 같아서 재미 포인트가 가장 큰 쪽을 골랐다. 대한민국 야구는 fun_score 7로 가장 높고, 호주전 패배와 김주원 장타쇼라는 반전 구조가 분명하다. rank 3 쿠플은 뉴스 근거가 없어 제외했고, rank 4는 혜택 정보 위주라 썰 풀기 어렵다. 계산이 들어가는 숫자는 쓰지 않았고, 경기 점수와 세부 내용은 기사 제목에 없어 뺐다.",
-    "title": "세미 프로 호주한테 졌는데 왜 한 명은 웃냐",
-    "hook": "세미 프로한테 졌다는데, 이게 실화냐.",
+    "chosen_rank": 4,
+    "reason": "검색량 1위는 '문무'(2000+)지만 재미 점수가 6점이라 밋밋함. 세종시 맥도날드 오픈런은 재미 점수 9점에, 새벽 2시 줄서기와 경찰 출동이라는 반전 포인트가 압도적이라 이쪽을 선택. 계산이 필요한 숫자는 없고 인구 40만, 새벽 2시, 경찰 출동은 모두 제목 내용 그대로 사용.",
+    "title": "새벽 2시에 햄버거 줄 서다 경찰까지 출동한 도시",
+    "hook": "새벽 2시에 맥도날드 앞에 줄이 늘어섰다고?",
     "bgm_mood": "funny",
-    "style": "vibrant 3D cartoon, soft lighting, high detail, bright colors, stadium background, cute characters, vertical composition",
+    "style": "vibrant 3D cartoon, soft lighting, bright pastel colors, high detail, vertical composition",
     "scenes": [
       {
         "id": 1,
-        "narration": "세미 프로한테 졌다는데, 이게 실화냐.",
-        "on_screen_text": "이게 실화냐",
-        "image_prompt": "A shocked cartoon tiger in a baseball uniform with wide eyes and open mouth, standing in a baseball stadium, dramatic lighting"
+        "narration": "새벽 2시에 맥도날드 앞에 줄이 늘어섰다고?",
+        "on_screen_text": "새벽 2시 실화?",
+        "image_prompt": "a sleepy cute bear in striped pajamas standing at the very front of a line, mid-yawn with heavy drooping eyelids and a wide open mouth, behind it an endless long queue of small animals stretching far into the distance along the street, a glowing restaurant with a smooth plain yellow arch symbol sign and a solid color blank storefront, dark starry night sky, vibrant 3D cartoon, soft lighting, bright pastel colors, high detail, full-bleed vertical 9:16 composition filling the entire frame edge to edge"
       },
       {
         "id": 2,
-        "narration": "지금 대한민국 야구 검색량 터진 이유, 아시아 프로야구 챔피언십에서 호주한테 졌거든.",
-        "on_screen_text": "검색량 폭발",
-        "image_prompt": "A cute cartoon kangaroo in a baseball uniform proudly holding a bat and a baseball, with a sad cartoon tiger in the background, baseball field"
+        "narration": "인구 40만 세종시에 맥도날드가 처음 생겼거든.",
+        "on_screen_text": "첫 맥도날드",
+        "image_prompt": "a tiny cute city with a big shiny golden arch shaped restaurant in the middle, the storefront sign is a plain solid yellow arch symbol on a smooth blank wall, cheering small animals around it, colorful confetti in the air, vibrant 3D cartoon, soft lighting, bright pastel colors, high detail, full-bleed vertical 9:16 composition filling the entire frame edge to edge"
       },
       {
         "id": 3,
-        "narration": "근데 상대가 세미 프로라서 팬들 마음이 더 씁쓸해졌어.",
-        "on_screen_text": "씁쓸 그 자체",
-        "image_prompt": "A cartoon tiger sitting alone on a stadium bench with a small rain cloud above its head, drooping ears, gloomy blue tones"
+        "narration": "그랬더니 새벽 2시부터 사람들이 우르르 몰려왔어. 해도 뜨기 전에 출근한 거야.",
+        "on_screen_text": "해도 안 떴는데",
+        "image_prompt": "wide shot of a huge crowd of cute rabbits and bears wrapped in sleeping bags and blankets rushing along a street toward a restaurant, a long line and dense crowd visible at a glance, the restaurant has a smooth solid color sign with a plain yellow arch symbol, dark sky with a big moon, energetic motion, vibrant 3D cartoon, soft lighting, bright pastel colors, high detail, full-bleed vertical 9:16 composition filling the entire frame edge to edge"
       },
       {
         "id": 4,
-        "narration": "그런데 이 난리통에 혼자 빛난 사람이 있었으니, 김주원.",
-        "on_screen_text": "여기서 반전",
-        "image_prompt": "A single golden spotlight shining on a cute cartoon baseball player silhouette character at home plate, dark stadium around, sparkles"
+        "narration": "줄이 얼마나 길었으면 경찰까지 출동했어. 햄버거 사러 갔는데 경찰이 오는 상황.",
+        "on_screen_text": "경찰 출동",
+        "image_prompt": "wide shot of a surprised cute cat police officer holding a whistle, directing a very long line and big crowd of small animals curving down the street in front of a restaurant with a plain yellow arch symbol on a solid color blank sign, a cute police car with flashing lights in the background, vibrant 3D cartoon, soft lighting, bright pastel colors, high detail, full-bleed vertical 9:16 composition filling the entire frame edge to edge"
       },
       {
         "id": 5,
-        "narration": "홈런에 2루타까지, 장타를 펑펑 터뜨렸대.",
-        "on_screen_text": "장타 폭발",
-        "image_prompt": "A cartoon baseball flying high over a stadium fence with fireworks and sparkles, a cute bear character swinging a bat in the foreground"
+        "narration": "심지어 맥도날드 먹으러 원정까지 온 사람도 있대. 이건 거의 여행이지.",
+        "on_screen_text": "원정 왔다",
+        "image_prompt": "a cute fox with a big backpack and a travel suitcase hugging a simple cute hamburger icon and smiling proudly, a winding road and a small colorful train behind it, vibrant 3D cartoon, soft lighting, bright pastel colors, high detail, full-bleed vertical 9:16 composition filling the entire frame edge to edge"
       },
       {
         "id": 6,
-        "narration": "포스팅하면 많은 팀이 원할 거라는 말이 나올 만하지.",
-        "on_screen_text": "다들 군침",
-        "image_prompt": "Several cute cartoon animals in different baseball uniforms looking at a shining golden baseball with heart-shaped eyes, bright cheerful background"
+        "narration": "살다 살다 이런 오픈런 처음 본다는 말이 나올 정도야.",
+        "on_screen_text": "처음 본다",
+        "image_prompt": "an old cute turtle with round glasses staring in shock at a huge crowd of small animals in the distance, jaw dropped, eyes wide, exaggerated expression, a plain yellow arch symbol sign glowing on a restaurant far behind, vibrant 3D cartoon, soft lighting, bright pastel colors, high detail, full-bleed vertical 9:16 composition filling the entire frame edge to edge"
       },
       {
         "id": 7,
-        "narration": "팀은 졌는데 한 명은 몸값을 올렸네. 이거 위로가 돼, 안 돼? 너라면 어느 쪽이 더 크게 보여?",
-        "on_screen_text": "위로 됨? 안 됨?",
-        "image_prompt": "A cartoon tiger holding a trophy-shaped question mark in one paw and a tiny crying tissue in the other, half-smiling half-crying expression, stadium background"
+        "narration": "햄버거 하나에 도시가 뒤집혔다. 너라면 새벽 2시에 줄 선다 안 선다?",
+        "on_screen_text": "너라면?",
+        "image_prompt": "a cute panda holding exactly one big juicy hamburger in one paw and a fluffy sleepy pillow in the other, a single hamburger only, background split in two halves with a crescent moon on the left side and a bright sun on the right side, vibrant 3D cartoon, soft lighting, bright pastel colors, high detail, full-bleed vertical 9:16 composition filling the entire frame edge to edge"
       }
     ],
-    "description": "호주전 패배로 난리 난 대한민국 야구, 그런데 김주원은 홈런에 2루타까지 터뜨렸다? 오늘 검색량 터진 이유 30초 요약! #대한민국야구 #APBC #김주원",
+    "description": "인구 40만 세종시 첫 맥도날드가 열리자 새벽 2시부터 줄이 늘어서고 경찰까지 출동했다. 너라면 새벽 2시에 줄 선다 vs 안 선다?\n#세종맥도날드 #오픈런 #쇼츠",
     "tags": [
-      "대한민국야구",
-      "APBC",
-      "아시아프로야구챔피언십",
-      "호주전",
-      "김주원",
-      "야구",
-      "쇼츠",
-      "야구이슈"
+      "세종시",
+      "맥도날드",
+      "맥도날드 세종",
+      "오픈런",
+      "세종시 맥도날드",
+      "새벽 오픈런",
+      "경찰 출동",
+      "이슈",
+      "쇼츠"
     ],
-    "comment_question": "호주전 패배 vs 김주원 장타쇼, 오늘의 주인공은 어느 쪽? 패배 쪽이면 1, 김주원 쪽이면 2!"
+    "comment_question": "너라면 새벽 2시에 맥도날드 줄 선다 vs 절대 안 선다? 이유와 함께 편 갈라보자!"
   },
   "production": {
     "image_providers": {
@@ -407,60 +429,60 @@
     }
   },
   "effects": {
-    "duration": 36.62,
+    "duration": 39.33,
     "tts_provider": "edge",
     "voice": "ko-KR-SunHiNeural",
-    "bgm": "Thatched Villagers",
+    "bgm": "Fluffing a Duck",
     "bgm_mood": "funny",
-    "bgm_credit": "Music: \"Thatched Villagers\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+    "bgm_credit": "Music: \"Fluffing a Duck\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
   },
   "storyboard": [
     {
       "id": 1,
-      "narration": "세미 프로한테 졌다는데, 이게 실화냐.",
-      "on_screen_text": "이게 실화냐",
+      "narration": "새벽 2시에 맥도날드 앞에 줄이 늘어섰다고?",
+      "on_screen_text": "새벽 2시 실화?",
       "image": "runs/2026-11-14/scene_01.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 2,
-      "narration": "지금 대한민국 야구 검색량 터진 이유, 아시아 프로야구 챔피언십에서 호주한테 졌거든.",
-      "on_screen_text": "검색량 폭발",
+      "narration": "인구 40만 세종시에 맥도날드가 처음 생겼거든.",
+      "on_screen_text": "첫 맥도날드",
       "image": "runs/2026-11-14/scene_02.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 3,
-      "narration": "근데 상대가 세미 프로라서 팬들 마음이 더 씁쓸해졌어.",
-      "on_screen_text": "씁쓸 그 자체",
+      "narration": "그랬더니 새벽 2시부터 사람들이 우르르 몰려왔어. 해도 뜨기 전에 출근한 거야.",
+      "on_screen_text": "해도 안 떴는데",
       "image": "runs/2026-11-14/scene_03.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 4,
-      "narration": "그런데 이 난리통에 혼자 빛난 사람이 있었으니, 김주원.",
-      "on_screen_text": "여기서 반전",
+      "narration": "줄이 얼마나 길었으면 경찰까지 출동했어. 햄버거 사러 갔는데 경찰이 오는 상황.",
+      "on_screen_text": "경찰 출동",
       "image": "runs/2026-11-14/scene_04.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 5,
-      "narration": "홈런에 2루타까지, 장타를 펑펑 터뜨렸대.",
-      "on_screen_text": "장타 폭발",
+      "narration": "심지어 맥도날드 먹으러 원정까지 온 사람도 있대. 이건 거의 여행이지.",
+      "on_screen_text": "원정 왔다",
       "image": "runs/2026-11-14/scene_05.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 6,
-      "narration": "포스팅하면 많은 팀이 원할 거라는 말이 나올 만하지.",
-      "on_screen_text": "다들 군침",
+      "narration": "살다 살다 이런 오픈런 처음 본다는 말이 나올 정도야.",
+      "on_screen_text": "처음 본다",
       "image": "runs/2026-11-14/scene_06.jpg",
       "provider": "cloudflare"
     },
     {
       "id": 7,
-      "narration": "팀은 졌는데 한 명은 몸값을 올렸네. 이거 위로가 돼, 안 돼? 너라면 어느 쪽이 더 크게 보여?",
-      "on_screen_text": "위로 됨? 안 됨?",
+      "narration": "햄버거 하나에 도시가 뒤집혔다. 너라면 새벽 2시에 줄 선다 안 선다?",
+      "on_screen_text": "너라면?",
       "image": "runs/2026-11-14/scene_07.jpg",
       "provider": "cloudflare"
     }
@@ -471,5 +493,5 @@
     "status": "skipped",
     "reason": "QA 불합격"
   },
-  "finished_at": "2026-11-14T00:53:30+09:00"
+  "finished_at": "2026-11-14T23:40:34+09:00"
 }
