@@ -1,0 +1,439 @@
+{
+  "date": "2026-11-16",
+  "status": "success",
+  "started_at": "2026-11-16T00:02:27+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-11-16T00:02:27+09:00",
+      "note": "",
+      "seconds": 24.3
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-16T00:02:51+09:00",
+      "note": "",
+      "seconds": 21.6
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-16T00:03:12+09:00",
+      "note": "",
+      "seconds": 27.4
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-16T00:03:40+09:00",
+      "note": "",
+      "seconds": 34.5
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-16T00:04:14+09:00",
+      "note": "1차",
+      "seconds": 24.0
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-16T00:04:39+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 20.8
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-16T00:04:59+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 34.7
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-16T00:05:34+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 34.5
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-16T00:06:08+09:00",
+      "note": "2차",
+      "seconds": 19.2
+    },
+    {
+      "name": "uploader",
+      "label": "업로드",
+      "status": "done",
+      "started_at": "2026-11-16T00:06:28+09:00",
+      "note": "",
+      "seconds": 0.0
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 58,
+        "hook": 72,
+        "clarity": 74,
+        "visual": 68,
+        "subtitle": 70,
+        "safety": 68
+      },
+      "overall": 67,
+      "pass": false,
+      "issues": [
+        "사실 확인 필요: '한일전 12연패'가 어떤 기준(성인 대표팀 전체인지, APBC나 특정 대회 한정인지)인지 기획서에 근거가 없다. 연패 수와 기간을 확인해야 한다. 수치가 틀리면 제목, 훅, 설명란이 모두 틀리게 된다.",
+        "사실 확인 필요: 'APBC 결승 상대가 일본', '김도영이 대만전에서 첫 홈런', '그 홈런 덕에 결승 직행'. 오늘 날짜(2026-11-15)와 APBC 개최 시점이 맞는지, 결승 진출 경위와 '오늘' 경기가 맞는지 확인이 필요하다. 업로드 시점에 경기가 이미 끝났다면 '오늘 붙습니다'는 허위가 된다.",
+        "재미 부족: 전체가 프리뷰 해설 톤이다. 반전과 드립이 치킨 한 줄뿐이다. 장면 2의 '이게 왜 난리냐면요'가 궁금증만 만들고 제대로 풀리지 않는다. 장면 3~4는 '대만전 홈런 → 결승 직행'을 설명만 한다. 마지막 댓글 유도 외에 웃음 포인트나 오프닝에서 던진 질문에 대한 반전이 없다.",
+        "훅은 숫자로 시선을 끌지만 '12연패'가 왜 놀라운지 맥락이 없어, 야구를 모르는 시청자에게는 임팩트가 약하다.",
+        "시각 문제: 3번째 프레임(장면 4)의 호랑이는 얼굴이 흰 털 사자처럼 보이고, 장면 1, 3의 호랑이와 캐릭터가 달라 일관성이 깨진다. 배경 배너의 '2017', '2015' 숫자는 맥락 없는 AI 생성 글자이다.",
+        "시각 문제: 마지막 프레임(장면 6)에서 야구공 대신 소프트볼처럼 보이는 노란 공이 나온다. 장면 3의 공도 크기가 비정상적으로 커서 방망이 끝에 붙은 것처럼 보인다.",
+        "자막: 중앙 하단 나레이션 자막이 캐릭터의 몸통 위에 겹친다. 위쪽 검은 박스의 on_screen_text는 정보가 중복되고, 이미지 위아래의 흐린 여백이 넓어 화면 활용이 아쉽다. 읽기에는 지장이 없다.",
+        "안전: 실존 선수 이름을 사용하고 '침묵', '잠자던 타자' 같은 표현이 부정적으로 읽힐 수 있다. 실명 언급은 허용 범위이지만, 사실 검증 전에는 위험이 남는다."
+      ],
+      "retry_target": "planner",
+      "feedback": "1) 연패 수치, 연패의 기준, 결승 진출 경위, 경기 날짜(오늘 경기가 맞는지)를 근거와 함께 다시 확인하세요. 확인되지 않으면 단정하지 말고 표현을 바꾸세요. 2) 훅 직후 '왜 난리인지'를 한 문장으로 바로 풀어 주세요. 예: 12번 연속으로 진 상대라는 점을 시청자가 체감하게 하세요. 3) 교과서식 경과 설명(대만전 홈런 → 결승 직행)을 줄이고, 반전 한두 개와 짧은 드립을 넣어 리듬을 만드세요. 예: 치킨을 시켜놓고 시작도 전에 심장이 먼저 지는 식의 과장 개그나 기대와 반대되는 전개를 쓰세요. 4) 마지막 질문은 댓글을 부를 수 있게 구체적으로 바꾸세요(예: '스코어 맞히면 치킨'). 5) 다음 단계에서는 호랑이 마스코트의 외형을 프롬프트에 고정하고('orange tiger, black stripes, no white mane'), 'baseball, not softball', 'no text or numbers on banners'를 명시하세요."
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 70,
+        "hook": 68,
+        "clarity": 72,
+        "visual": 66,
+        "subtitle": 74,
+        "safety": 80
+      },
+      "overall": 71,
+      "pass": true,
+      "issues": [
+        "scene 3 프레임(f1)의 관중석 배너에 'Tatell'이라는 깨진 글자가 보입니다. 프롬프트에 plain blank banners를 지정했는데 반영되지 않았습니다.",
+        "scene 1 프레임(f0)은 호랑이가 방망이를 쥐고 서 있을 뿐이라 긴장감이 약합니다. 첫 3초 훅은 '12연패'라는 문구에 거의 전적으로 의존합니다.",
+        "scene 6 프레임(f3)의 통은 치킨 버킷이 아니라 흰 양동이처럼 보입니다. '치킨 한 마리' 대사와 그림이 어긋나고, 여우가 일본을 뜻한다는 점도 직관적이지 않습니다.",
+        "scene 4의 방망이 캐릭터(f2)는 소시지나 막대 과자처럼 보이고 방망이 느낌이 약합니다. 같은 방망이를 한 손에 들고 있어서 장면이 어색합니다.",
+        "자막이 화면 중앙에서 캐릭터의 몸통과 얼굴 아래쪽을 가립니다. 특히 f2와 f3이 그렇습니다. 상단 문구 박스와 하단 자막이 따로 놀아 정보가 중복됩니다.",
+        "scene 3과 scene 5에서 '대만전'이 반복되어 흐름이 늘어집니다. 37초 길이에 비해 정보량이 적고, 결승 상대가 일본이라는 점이 나레이션에 명시되지 않습니다.",
+        "사실 확인 필요: '한일전 12연패'의 실제 기록과 범위(대회·연령대 기준), 김도영의 '대회 내내 조용하다 대만전 첫 홈런'이라는 서술, 해당 대회가 APBC 결승이라는 점. 이 항목들은 단정하지 않으며 업로드 전 기록 확인이 필요합니다.",
+        "숫자 계산 오류는 없습니다. 12연패 표기는 기획서 안에서 일관됩니다."
+      ],
+      "retry_target": null,
+      "feedback": "합격입니다. 개선 팁: (1) 업로드 전에 12연패와 김도영 홈런 기록을 공식 기록으로 확인하고, 틀리면 표현을 '12연패 얘기가 나오는'처럼 완화하세요. (2) 첫 1초에 '12연패' 큰 자막과 효과음 또는 충격 연출을 넣어 훅을 키우세요. 첫 장면은 사슬에 묶인 호랑이처럼 감정이 드러나는 구도가 좋습니다. (3) 이미지 생성 시 배너·간판 글자 깨짐을 막으려면 'no text, no letters, no signage'를 추가하고, scene 6의 통은 'bucket of fried chicken'을 명확히 쓰세요. (4) 자막은 화면 하단 1/4 아래로 내려 캐릭터 얼굴을 가리지 않게 하세요. (5) scene 5의 대만전 반복을 줄이고 '결승 상대는 일본'을 명시하면 흐름이 더 매끄럽습니다."
+    }
+  ],
+  "marketer": {
+    "summary": "재건축 부담금 폭탄과 APBC 한일전 결승, 이란의 미군 기지 공습까지 — 돈·야구·국제 긴장 이슈가 한꺼번에 뜬 날",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "재건축",
+        "traffic": "5000+",
+        "traffic_num": 5000,
+        "news": [
+          "강남 집값 내리는데 경기 규제지역은 상승…연말 토허제 ‘딜레마’",
+          "\"집 팔고 나가라는 거냐\"…은마 '4.6억 청구서'에 부글부글 [이슬기의 새집다오]",
+          "재초환 '날벼락'에...재건축 조합장들 한 곳에"
+        ],
+        "topic": "은마 아파트 '4.6억 청구서'에 조합원들이 부글부글, 재건축 부담금이 대체 뭐길래",
+        "why_now": "\"집 팔고 나가라는 거냐\"…은마 '4.6억 청구서'에 부글부글, 재초환 '날벼락'에 재건축 조합장들 한 곳에 모였다는 기사",
+        "angle": "'새 집 받으려다 청구서 먼저 받은 사람들' 상황극 + 숫자로 보는 충격 비교(4.6억이면 무엇을 살 수 있나) 30초 정리",
+        "target": "20~40대 내집마련 관심층, 부동산 관심 직장인",
+        "fun_score": 6,
+        "risk": "medium",
+        "risk_note": "부동산 정책·정치 이슈로 번질 수 있음. 특정 정당이나 정책 찬반을 몰아가지 말고 사실 위주로 다룰 것"
+      },
+      {
+        "rank": 2,
+        "keyword": "미미미누",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "힐링 아일릿",
+          "[사진]미미미누, 2026 멜론뮤직어워드 사회 맡았어요",
+          "아일릿 윤아, 안대도 패션으로 승화"
+        ],
+        "topic": "미미미누가 2026 멜론뮤직어워드 사회를 맡았다는 소식, 아일릿과 같이 언급되는 이유",
+        "why_now": "[사진]미미미누, 2026 멜론뮤직어워드 사회 맡았어요 / 힐링 아일릿 관련 기사 동반 노출",
+        "angle": "'MC 미미미누 첫 시상식 도전' 기대 포인트 정리 + 팬 반응 밈 스타일 짧은 리액션 컷",
+        "target": "10~20대 K-POP 팬, 아일릿 팬",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": "뉴스 제목에 없는 사생활이나 관계 추측은 피할 것"
+      },
+      {
+        "rank": 3,
+        "keyword": "일본 한국 야구",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "침묵하던 김도영이 ‘쾅’... 대만 꺾고 日과 우승 다툰다",
+          "깨어난 김도영‥'한일전 12연패, 오늘 끊어낼까'",
+          "김도영, APBC 첫 홈런 ‘쾅’…한국, 대만 꺾고 오늘 일본과 결승"
+        ],
+        "topic": "APBC 결승 한일전, 침묵하던 김도영이 대만전에서 '쾅' 터뜨린 홈런과 한일전 12연패 끊기 도전",
+        "why_now": "김도영, APBC 첫 홈런 '쾅'…한국, 대만 꺾고 오늘 일본과 결승 / 한일전 12연패, 오늘 끊어낼까",
+        "angle": "'12연패 사슬 끊으러 간다' 30초 프리뷰 + 김도영 부활 서사 + 팬 응원 드립",
+        "target": "야구팬, 10~40대 남성, 한일전 관심층",
+        "fun_score": 9,
+        "risk": "low",
+        "risk_note": "결과가 나온 뒤에는 시점이 어긋나므로 경기 전/후 버전을 나눠 준비. 일본 선수·팬 비하 표현 주의"
+      },
+      {
+        "rank": 4,
+        "keyword": "입양",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "\"다시는 안 키운다\" 입양 거절했는데... 예상 못한 일이 벌어졌다",
+          "서울청년 70% \"남녀 모두 차별겪어\"…\"결혼싫다\" 여성은 남성 두 배",
+          "서울 여성 청년 25% \"결혼 안 해\"…출산·입양도 남성보다 부정적"
+        ],
+        "topic": "\"다시는 안 키운다\" 입양을 거절했는데 예상 못한 일이 벌어졌다는 이야기",
+        "why_now": "\"다시는 안 키운다\" 입양 거절했는데... 예상 못한 일이 벌어졌다 기사 (반려동물 입양 맥락으로 보이나 제목만으로는 불명확)",
+        "angle": "'거절했는데 결국…' 반전 포인트 중심 스토리텔링 숏폼. 기사 본문 확인 후 사실 범위 내에서만 구성",
+        "target": "반려동물 키우는 20~40대, 감성 콘텐츠 선호층",
+        "fun_score": 5,
+        "risk": "medium",
+        "risk_note": "제목만으로 반려동물인지 아동 입양인지 불분명. 같은 키워드의 청년 결혼·출산 기사는 젠더 갈등으로 번질 수 있어 피할 것"
+      },
+      {
+        "rank": 5,
+        "keyword": "퇴직금",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "퇴직연금 대수술, 뭐가 달라질까?",
+          "NH농협금융, 기금형 퇴직연금 대비 그룹 TF 가동",
+          "박예희 노무사의 즐거운 인사노무"
+        ],
+        "topic": "퇴직연금 대수술, 기금형 도입으로 내 퇴직금은 뭐가 달라지나",
+        "why_now": "퇴직연금 대수술, 뭐가 달라질까? / NH농협금융, 기금형 퇴직연금 대비 그룹 TF 가동",
+        "angle": "'회사원이면 알아야 할 3가지 변화' 30초 정리 + '내 노후 자금 어디로 가나' 상황극",
+        "target": "20~50대 직장인",
+        "fun_score": 5,
+        "risk": "low",
+        "risk_note": "제도 세부 내용은 기사 확인 후 사용하고 투자 권유로 보이지 않게 할 것"
+      },
+      {
+        "rank": 6,
+        "keyword": "박현주",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "\"겸손은 연기, 반대하면 폭언\"… 젠슨 황 전기 작가의 폭로",
+          "복귀 청원 14만 넘겨 vs \"겸손은 연기, 폭언 일삼아\"",
+          "박현주 미래에셋 회장도 젠슨황 복귀 청원 동참…\"AI 생태계·투자자 우선\""
+        ],
+        "topic": "박현주 미래에셋 회장도 동참한 '젠슨 황 복귀 청원' 14만 돌파, 그런데 전기 작가는 폭로를 했다",
+        "why_now": "복귀 청원 14만 넘겨 vs \"겸손은 연기, 폭언 일삼아\" / 박현주 미래에셋 회장도 젠슨황 복귀 청원 동참",
+        "angle": "'청원 14만 vs 전기 작가 폭로' 양쪽 입장 비교 30초 정리. 어느 쪽도 단정하지 않고 이슈 구도만 보여줌",
+        "target": "투자·IT 관심층, 20~40대 직장인",
+        "fun_score": 7,
+        "risk": "high",
+        "risk_note": "실존 인물에 대한 폭로성 주장이 포함됨. 주장은 반드시 '전기 작가의 주장'으로 표기하고 단정·조롱은 금지. 복귀 청원의 구체적 배경은 제목만으로 불명확하므로 확인 필요"
+      },
+      {
+        "rank": 7,
+        "keyword": "수상함",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "HD현대, 美 안두릴과 600t급 무인 군함 건조… 내년 美 해군 수주 도전",
+          "HD현대, 미 무인함정 시장 공략 발판",
+          "적과 아군 사이 승조원 없는 함정…\"미래 해상전 게임체인저\""
+        ],
+        "topic": "승조원 없는 600t급 무인 군함, HD현대와 美 안두릴이 만든다",
+        "why_now": "HD현대, 美 안두릴과 600t급 무인 군함 건조… 내년 美 해군 수주 도전",
+        "angle": "'사람 없이 바다를 지키는 배' 30초 설명 + 'K-조선이 이번엔 군함 무인화'라는 자부심 포인트",
+        "target": "밀리터리·조선·주식 관심층 20~40대 남성",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": "수주는 '도전' 단계이므로 확정된 것처럼 표현하지 말 것"
+      },
+      {
+        "rank": 8,
+        "keyword": "공습",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "이란, 두달 만에 미군 기지 공습…미국 ‘봉쇄 강화’ 기조에 강경 대응",
+          "이란 혁명수비대, 바레인 미군 레이더 기지 공격",
+          "이란, 두 달여 만에 중동 미군 기지 타격 이어가"
+        ],
+        "topic": "이란, 두 달 만에 바레인 미군 레이더 기지 공격 — 지금 중동에서 무슨 일이",
+        "why_now": "이란 혁명수비대, 바레인 미군 레이더 기지 공격 / 미국 '봉쇄 강화' 기조에 강경 대응",
+        "angle": "자극적 연출 없이 '오늘 뉴스 30초 정리' 타임라인 형식(두 달 전 → 봉쇄 강화 → 이번 공격)",
+        "target": "시사·국제정세 관심층",
+        "fun_score": 3,
+        "risk": "high",
+        "risk_note": "군사 충돌·인명 관련 사안. 밈이나 드립 소재로 삼지 말고 사실 전달 위주로, 확인되지 않은 피해 규모나 전망은 쓰지 말 것. 수익화·광고 제한 가능성"
+      },
+      {
+        "rank": 9,
+        "keyword": "안재석",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "[사진]도루 성공하는 쇼지",
+          "[사진]와타라이 도루를 여유입게 잡는 김휘집 - 머니투데이",
+          "[사진]홈에서 아웃되는 김주원"
+        ],
+        "topic": "APBC 한일전 현장 사진 속 도루, 홈 아웃 장면들 — 안재석은 어디에 있었나",
+        "why_now": "[사진]도루 성공하는 쇼지 / 와타라이 도루를 여유있게 잡는 김휘집 / 홈에서 아웃되는 김주원 (APBC 경기 사진 기사 동반 노출)",
+        "angle": "'한일전 명장면·아쉬운 장면 사진으로 보기' 컷 모음 + 짧은 자막 드립. 안재석이 이 경기에서 한 역할은 제목만으로 확인 불가하므로 확인 후 구성",
+        "target": "야구팬, 한일전 시청자",
+        "fun_score": 5,
+        "risk": "medium",
+        "risk_note": "뉴스 제목에 안재석 관련 내용이 직접 없음. 사진 저작권(언론사 사진) 사용 주의, 선수 실수 장면 조롱 금지"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": [
+      {
+        "keyword": "부고",
+        "blocked_by": "부고"
+      }
+    ]
+  },
+  "selected_attempt": 2,
+  "plan": {
+    "chosen_rank": 3,
+    "reason": "검색량 1위는 재건축(5000+)이지만 부동산 정책·정치 논쟁으로 번질 위험이 medium이고 재미 점수도 6입니다. 한일전 결승은 재미 9에 위험 low라서 재미 포인트가 더 압도적이라고 판단했습니다. QA 피드백을 반영해 연패 수치는 뉴스 제목의 '한일전 12연패' 표현만 쓰고, 연패의 기준과 집계 범위는 확인되지 않아 단정하지 않았습니다. 결승 진출 경위도 제목에 있는 '대만을 꺾고 일본과 결승', '김도영 APBC 첫 홈런'까지만 썼습니다. 제목에 '오늘'이라고 되어 있지만 실제 경기일은 확인되지 않아 내레이션에서는 '오늘'을 빼고 '결승'으로 표현했습니다. 경기 결과는 지어내지 않았고 경기 전 버전입니다. 계산은 없습니다.",
+    "title": "한일전 12연패 얘기 나오는 상대랑 결승입니다",
+    "hook": "한일전 12연패 얘기가 붙은 상대랑, 결승에서 만났습니다.",
+    "bgm_mood": "hype",
+    "style": "vibrant 3D cartoon, soft stadium lighting, bold colors, cute characters, high detail, vertical composition",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "한일전 12연패 얘기가 붙은 상대랑, 결승에서 만났습니다.",
+        "on_screen_text": "12연패 실화냐",
+        "image_prompt": "A tiny nervous cartoon orange tiger mascot with black stripes and an orange mane gripping a baseball bat at a huge glowing stadium, twelve broken chains scattered around its feet, dramatic spotlight, plain blank banners in the stands"
+      },
+      {
+        "id": 2,
+        "narration": "12연패면요, 치킨 시켜놓고 시작도 전에 심장이 먼저 지는 수준입니다.",
+        "on_screen_text": "심장이 먼저 짐",
+        "image_prompt": "A cute cartoon bear on a sofa holding a bucket of fried chicken, a cartoon heart character with a white flag slumping on the floor beside it, TV glowing with a baseball game, comedic mood"
+      },
+      {
+        "id": 3,
+        "narration": "근데 반전. 대회 내내 조용하던 김도영이 대만전에서 첫 홈런을 쾅.",
+        "on_screen_text": "여기서 반전",
+        "image_prompt": "A sleepy cartoon orange tiger cub with black stripes in a baseball uniform suddenly waking up and swinging a bat, a glowing hard baseball with red stitches flying high into the night sky, motion lines"
+      },
+      {
+        "id": 4,
+        "narration": "방망이가 잠깐 휴가 갔다가, 결승 앞두고 출근한 겁니다.",
+        "on_screen_text": "방망이 출근",
+        "image_prompt": "A cartoon baseball bat wearing a tiny necktie and carrying a briefcase, walking into a bright stadium gate at sunrise, cheerful mood"
+      },
+      {
+        "id": 5,
+        "narration": "게다가 대만까지 꺾고 올라왔어요. 기세는 충전 완료, 팬 심장은 배터리 1퍼센트.",
+        "on_screen_text": "심장 배터리 방전",
+        "image_prompt": "A cartoon orange tiger mascot with black stripes raising a baseball bat in triumph on a baseball field, confetti falling, a tiny cartoon heart character with an almost empty battery beside it looking exhausted"
+      },
+      {
+        "id": 6,
+        "narration": "12연패 사슬 끊는 날이 될까요? 스코어 맞히면 치킨 한 마리 인정. 몇 대 몇 같아?",
+        "on_screen_text": "스코어 맞혀봐",
+        "image_prompt": "A cartoon orange tiger mascot with black stripes and a cartoon fox mascot facing each other over a giant fried chicken bucket on a baseball field, a hard baseball with red stitches floating between them, plain blank banners, playful tense mood"
+      }
+    ],
+    "description": "한일전 12연패 얘기가 붙은 일본과 APBC 결승에서 만났습니다. 대만전에서 첫 홈런을 터뜨린 김도영이 사슬을 끊어줄까요?\n경기 전 프리뷰, 여러분의 스코어 예상을 댓글로 남겨주세요.\n#APBC #한일전 #김도영",
+    "tags": [
+      "APBC",
+      "한일전",
+      "김도영",
+      "야구",
+      "한국야구",
+      "일본야구",
+      "결승",
+      "12연패",
+      "쇼츠",
+      "야구쇼츠"
+    ],
+    "comment_question": "스코어 맞히면 치킨 한 마리 인정! 한일전 결승, 몇 대 몇으로 이길 것 같아요?"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 6
+    }
+  },
+  "effects": {
+    "duration": 37.6,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Volatile Reaction",
+    "bgm_mood": "hype",
+    "bgm_credit": "Music: \"Volatile Reaction\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "한일전 12연패 얘기가 붙은 상대랑, 결승에서 만났습니다.",
+      "on_screen_text": "12연패 실화냐",
+      "image": "runs/2026-11-16/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "12연패면요, 치킨 시켜놓고 시작도 전에 심장이 먼저 지는 수준입니다.",
+      "on_screen_text": "심장이 먼저 짐",
+      "image": "runs/2026-11-16/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "근데 반전. 대회 내내 조용하던 김도영이 대만전에서 첫 홈런을 쾅.",
+      "on_screen_text": "여기서 반전",
+      "image": "runs/2026-11-16/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "방망이가 잠깐 휴가 갔다가, 결승 앞두고 출근한 겁니다.",
+      "on_screen_text": "방망이 출근",
+      "image": "runs/2026-11-16/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "게다가 대만까지 꺾고 올라왔어요. 기세는 충전 완료, 팬 심장은 배터리 1퍼센트.",
+      "on_screen_text": "심장 배터리 방전",
+      "image": "runs/2026-11-16/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "12연패 사슬 끊는 날이 될까요? 스코어 맞히면 치킨 한 마리 인정. 몇 대 몇 같아?",
+      "on_screen_text": "스코어 맞혀봐",
+      "image": "runs/2026-11-16/scene_06.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-11-16/thumbnail.jpg",
+  "video_file": "videos/2026-11-16.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "YT_* 시크릿 없음"
+  },
+  "finished_at": "2026-11-16T00:06:28+09:00"
+}

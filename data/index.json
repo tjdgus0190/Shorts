@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-16",
+    "status": "success",
+    "title": "한일전 12연패 얘기 나오는 상대랑 결승입니다",
+    "overall": 71,
+    "qa_attempts": 2,
+    "thumbnail": "runs/2026-11-16/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 37.6
+  },
+  {
     "date": "2026-11-14",
     "status": "qa_failed",
     "title": "새벽 2시에 햄버거 줄 서다 경찰까지 출동한 도시",
