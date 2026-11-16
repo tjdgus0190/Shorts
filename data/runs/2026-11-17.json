@@ -1,0 +1,451 @@
+{
+  "date": "2026-11-17",
+  "status": "success",
+  "started_at": "2026-11-17T02:32:02+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-11-17T02:32:02+09:00",
+      "note": "",
+      "seconds": 23.9
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-17T02:32:26+09:00",
+      "note": "",
+      "seconds": 15.9
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-17T02:32:42+09:00",
+      "note": "",
+      "seconds": 27.6
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-17T02:33:10+09:00",
+      "note": "",
+      "seconds": 38.5
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-17T02:33:48+09:00",
+      "note": "1차",
+      "seconds": 24.2
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-17T02:34:13+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 23.8
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-17T02:34:36+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 28.3
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-17T02:35:05+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 38.0
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-17T02:35:43+09:00",
+      "note": "2차",
+      "seconds": 19.5
+    },
+    {
+      "name": "uploader",
+      "label": "업로드",
+      "status": "done",
+      "started_at": "2026-11-17T02:36:02+09:00",
+      "note": "",
+      "seconds": 0.0
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 62,
+        "hook": 66,
+        "clarity": 74,
+        "visual": 72,
+        "subtitle": 78,
+        "safety": 68
+      },
+      "overall": 68,
+      "pass": false,
+      "issues": [
+        "사실 오류 가능성 높음: scene 3의 '처음엔 뱀파이어였거든요'는 맞지 않는 것으로 보입니다. 패틴슨은 해리 포터와 불의 잔(2005)의 세드릭 디고리로 먼저 알려졌고, 뱀파이어 역(트와일라잇)은 2008년입니다. 그래서 '처음엔'이라는 표현은 부정확합니다(확인 필요).",
+        "확인 필요: scene 2의 '로버트 패틴슨 차기 제임스 본드 공식 확정'은 제가 근거를 검증하지 못했습니다. 루머나 오보였다면 허위 정보와 명예훼손 위험이 있습니다. 출처 없이 '공식 확정'으로 단정하면 safety 감점 요인입니다.",
+        "scene 4의 '배트맨'은 영화 속 역할인데, 이미지는 '박쥐 옷을 벗는 박쥐 캐릭터'라서 배트맨 연결이 약합니다. 장면 의도가 직관적으로 전달되지 않습니다.",
+        "scene 7 이미지(f3)는 프롬프트의 '찬성 vs 반대 두 팀 대치'와 다릅니다. 두 다람쥐가 모두 엄지척에 웃고 있고, X 표지는 십자(+)처럼 보입니다. '편 가르기' 장면이 전달되지 않습니다.",
+        "scene 6, 7 이미지 모두 동물 캐릭터라서 본드·패틴슨 소재와 시각적 연결이 약하고, 일관된 주인공 캐릭터가 없습니다. 씬마다 박쥐, 펭귄, 올빼미, 고양이, 다람쥐로 바뀝니다.",
+        "재미 면에서 '밤에만 일하는 직업군' 드립은 괜찮지만 반전이 약합니다. 중반에는 정보 나열 톤이 있고, 50초는 쇼츠로 다소 깁니다. 후반 CTA도 흔한 '댓글로 편 갈라 봅시다' 형태입니다.",
+        "훅 '뱀파이어가 이제 총 들고 나옵니다'는 궁금증을 주지만 주어(패틴슨, 007)가 없어 의미가 모호합니다. 첫 프레임 총 든 박쥐 이미지는 눈길을 끕니다.",
+        "자막은 하단 중앙 노란 강조 자막과 상단 검정 박스 문구로 가독성이 좋고, 주요 인물을 가리지 않습니다. 다만 상하단 블러 배경 때문에 이미지 영역이 작고, 중앙 자막이 캐릭터 발 근처를 일부 겹칩니다."
+      ],
+      "retry_target": "planner",
+      "feedback": "1) '처음엔 뱀파이어'를 사실에 맞게 고치세요. 예: '해리 포터 조연으로 떴다가 뱀파이어로 대박 → 배트맨 → 본드'처럼 필모 순서를 정확히 쓰고, 연도와 역할을 검증하세요. 2) '공식 확정' 보도의 출처(제작사 발표 등)를 확인하세요. 확인이 안 되면 '캐스팅 소식/보도' 등 단정하지 않는 표현으로 바꾸세요. 3) 훅에 주어를 넣어 정보 격차를 만드세요. 예: '007이 뱀파이어라고? 이번엔 진짜 총 듭니다' 같은 형태입니다. 4) 길이를 35~40초로 줄이고, 중반 정보 나열 대신 반전 드립을 1~2개 더 넣으세요. 5) 7번 씬 이미지는 왼쪽 '👍 찬성팀'과 오른쪽 '❌ 반대팀'이 확실히 대비되도록 프롬프트를 수정하세요(표정도 한쪽은 화난 얼굴로). 4번 씬은 배트맨 상징(박쥐 마크 망토)이 보이게 하고, 가능하면 주인공 캐릭터를 하나로 통일하세요."
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 70,
+        "hook": 72,
+        "clarity": 78,
+        "visual": 62,
+        "subtitle": 72,
+        "safety": 68
+      },
+      "overall": 70,
+      "pass": true,
+      "issues": [
+        "사실 확인 필요: '로버트 패틴슨이 차기 제임스 본드로 낙점됐다는 보도가 쏟아졌다'는 내용은 제가 확인하지 못했습니다. 루머 단계인데 확정처럼 들릴 수 있습니다. '낙점설', '루머' 같은 표현으로 바꾸는 편이 안전합니다.",
+        "장면 3(30% 프레임)에서 마법사 모자 박쥐는 상의를 벗은 아기처럼 보이고, 뱀파이어 박쥐와 서로 다른 캐릭터로 그려졌습니다. 기획서의 'same character' 연속성이 지켜지지 않았습니다.",
+        "장면 5(55% 프레임)는 하품하며 시계를 보는 장면이어야 하는데, 실제로는 눈을 감고 웃으며 시계를 쥔 모습입니다. '야간근무' 개그와 표정이 맞지 않습니다. 옷도 검은 턱시도가 아니라 회색 정장입니다.",
+        "장면 7(85% 프레임)에서 빨간 X 패들이 'V'자처럼 보여 반대 의미가 흐려집니다. 오른쪽 박쥐들은 화난 표정보다 음흉하게 웃는 표정에 가깝습니다.",
+        "내레이션 자막이 화면 중앙 하단에서 캐릭터 몸통을 가립니다(시계, 손, 몸 위). 상단 on_screen_text와 하단 자막이 동시에 나와 화면이 다소 복잡합니다.",
+        "장면 1은 장난감 권총 설정인데 실제 권총처럼 그려졌습니다. 캐릭터가 귀여워서 큰 문제는 아니지만 일관성은 떨어집니다.",
+        "상하단에 블러 레터박스가 크게 남아 있어 이미지 영역이 작아 보입니다."
+      ],
+      "retry_target": null,
+      "feedback": "합격입니다. 개선 팁: (1) 훅 뒤 '오늘 검색창 터진 이유'는 정보 전달이 느리니, 첫 3초에 '패틴슨 007?' 같은 구체적 반전 한 줄을 넣으면 좋습니다. (2) 차기 본드 소식은 '보도'가 아니라 '설/루머'로 톤을 낮추고 출처가 확인되면 명시하세요. (3) 장면 3, 5, 7의 이미지 프롬프트를 보강하세요. 같은 캐릭터 고정(옷 포함), 'yawning with mouth wide open', 'big red X mark'를 명시하면 됩니다. (4) 자막 위치를 화면 하단 쪽으로 내리거나 외곽선을 더 두껍게 해서 캐릭터 얼굴과 손동작을 가리지 않게 하세요. (5) '낮에 일하는 역할이 하나도 없다'와 '마티니 시키는 겁니다'는 좋은 펀치라인입니다. 끝 장면의 댓글 유도도 좋으니 그대로 유지하세요."
+    }
+  ],
+  "marketer": {
+    "summary": "차기 007 로버트 패틴슨 확정 소식이 검색을 휩쓸고, 퇴역 KTX의 화물열차 변신·롤 스토브리그 제우스 복귀설·수능 3일 전 'AI 커닝' 이슈까지 이슈가 다양하게 터진 하루",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "드라마",
+        "traffic": "10000+",
+        "traffic_num": 10000,
+        "news": [
+          "고수, '나인투식스'로 15년 만의 로맨스 복귀…\"이번 작품서 내 비주얼 살짝 아쉬워\"",
+          "[드라마 속 음악②] \"마지막 장면이 가장 중요\"…OST 제작의 숨은 공식",
+          "‘북부대공’ 최산, 박민영·육성재 큐피드 된다"
+        ],
+        "topic": "고수 '나인투식스'로 15년 만의 로맨스 복귀, \"내 비주얼 살짝 아쉬워\" 발언 정리",
+        "why_now": "뉴스 제목에 '고수, 15년 만의 로맨스 복귀…이번 작품서 내 비주얼 살짝 아쉬워'가 올라옴",
+        "angle": "'본인이 아쉽다는데 시청자 반응은?' 30초 정리 + 15년 만의 로맨스 복귀 포인트를 드립으로 묶는 이슈 요약형. 마지막에 '다음 주 볼 드라마 3편' 투표 유도",
+        "target": "20~40대 드라마 시청자, 배우 팬층",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": ""
+      },
+      {
+        "rank": 2,
+        "keyword": "로버트 패틴슨",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "로버트 패틴슨, 차기 제임스 본드 공식 확정",
+          "로버트 패틴슨, 다니엘 크레이그 이어 차기 제임스 본드로 선정",
+          "\"뱀파이어에서 제임스 본드까지…\" 차기 007 유력한 로버트 패틴슨, 이유는?"
+        ],
+        "topic": "뱀파이어에서 배트맨, 이제 제임스 본드까지: 로버트 패틴슨 차기 007 확정",
+        "why_now": "'로버트 패틴슨, 차기 제임스 본드 공식 확정', '다니엘 크레이그 이어 차기 007로 선정' 보도",
+        "angle": "'이게 왜 난리냐면' 형식. 뱀파이어→배트맨→007로 이어지는 필모 변천을 30초에 훑고, 인터넷 반응과 '역대 본드 계보' 숫자 비교로 마무리. 상황극으로 '본드 오디션 현장' 패러디 가능",
+        "target": "영화 팬, 10~40대 전 연령",
+        "fun_score": 9,
+        "risk": "low",
+        "risk_note": "배우 외모·연기 평가는 비하 없이 반응 소개 위주로"
+      },
+      {
+        "rank": 3,
+        "keyword": "robert pattinson",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "Robert Pattinson Named as the Next James Bond",
+          "Robert Pattison Has a History of Bond-Worthy Suits",
+          "Robert Pattinson Is Officially James Bond: Meet the New 007 Actor"
+        ],
+        "topic": "해외 반응으로 보는 'Robert Pattinson is officially James Bond' 소식",
+        "why_now": "'Robert Pattinson Named as the Next James Bond', 'Meet the New 007 Actor' 등 해외 매체 보도 쏟아짐",
+        "angle": "해외 매체 제목과 '본드 정장 계보' 기사를 활용한 '외신이 이렇게 보도했다' 번역·드립형. 한국 키워드와 합쳐 한 편으로 묶는 것을 권장(중복 방지)",
+        "target": "영화 팬, 해외 이슈 관심층",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": "'로버트 패틴슨' 주제와 중복되므로 별도 제작보다 통합 권장"
+      },
+      {
+        "rank": 4,
+        "keyword": "김주혁",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "“오빠 생각이 나서” 문근영, 故 김주혁과의 추억이 담긴 노래에 뭉클한 마음",
+          "우리들의 발라드 2 : 임바다×허채민, 짙은 호소력으로 탑백귀에게 감동 선사한 무대",
+          "변우석, ‘절친’ 주우재 밀어내려 했나 “탑백귀 자리에 앉고 싶다고”(우발라2)"
+        ],
+        "topic": "문근영이 故 김주혁과의 추억이 담긴 노래에 뭉클했던 순간",
+        "why_now": "'오빠 생각이 나서 문근영, 故 김주혁과의 추억이 담긴 노래에 뭉클' 보도(우리들의 발라드 2 방송 관련)",
+        "angle": "방송 속 따뜻한 추모 장면을 중심으로 한 잔잔한 감성 클립 정리. 고인 사생활이나 사고 언급 없이 '노래가 이어준 추억' 한 가지에 집중",
+        "target": "30~50대 감성 시청자, 예능·음악 프로그램 팬",
+        "fun_score": 4,
+        "risk": "high",
+        "risk_note": "고인과 관련된 주제라 조롱·가십 금지, 사고·사생활 언급 피하고 추모 톤 유지 필요"
+      },
+      {
+        "rank": 5,
+        "keyword": "한국고속철도",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "퇴역 앞둔 KTX, 고속 화물열차로 변신하나…코레일 사업화 검토",
+          "퇴역 앞둔 KTX, 고속 화물열차 변신 검토",
+          "수명 다한 KTX, 화물열차로 재탄생하나 ... 고부가가치 특수 컨테이너 도입도 검토"
+        ],
+        "topic": "퇴역 앞둔 KTX, 화물열차로 변신? 코레일 사업화 검토",
+        "why_now": "'퇴역 앞둔 KTX, 고속 화물열차로 변신하나…코레일 사업화 검토' 및 특수 컨테이너 도입 검토 보도",
+        "angle": "'사람 태우던 KTX가 택배 기사 됐다' 의인화 상황극. 퇴역→재취업 서사로 드립 + '전국 당일 배송 가능해질까' 궁금증 포인트",
+        "target": "20~40대, 철도·물류·택배 이용자",
+        "fun_score": 8,
+        "risk": "low",
+        "risk_note": "검토 단계 보도이므로 확정된 것처럼 단정하지 말 것"
+      },
+      {
+        "rank": 6,
+        "keyword": "코리아 패싱",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "[이하경 칼럼] 한·미 동맹은 저주가 아니다",
+          "트럼프의 '코리아 패싱', 또 드리워지는 '불길한 그림자'",
+          "[朝鮮칼럼] 북·중·러 위협 속 한미동맹의 새로운 전략"
+        ],
+        "topic": "트럼프의 '코리아 패싱' 우려, 칼럼들이 말하는 한미동맹 이슈",
+        "why_now": "'트럼프의 코리아 패싱, 또 드리워지는 불길한 그림자', '한·미 동맹은 저주가 아니다' 등 칼럼 다수",
+        "angle": "'코리아 패싱이 뭔데?' 30초 요약. 칼럼 제목에 나온 논점만 중립적으로 소개하고 특정 진영 편들기 없이 마무리",
+        "target": "시사 관심층 30~50대",
+        "fun_score": 3,
+        "risk": "high",
+        "risk_note": "정치·외교 이슈로 진영 논란 소지 큼, 칼럼은 의견임을 명시하고 제작 우선순위 낮게 권장"
+      },
+      {
+        "rank": 7,
+        "keyword": "다시보기",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "[다시보기] 11월 16일 (월) 오후 사이언스 투데이",
+          "[이시각헤드라인] 11월 16일 뉴스현장",
+          "[여담야담] 초유의 'AI 커닝' 시인…사흘 남은 수능 어쩌나?"
+        ],
+        "topic": "수능 사흘 앞두고 터진 'AI 커닝' 시인 이슈",
+        "why_now": "'[여담야담] 초유의 AI 커닝 시인…사흘 남은 수능 어쩌나?' 보도",
+        "angle": "'수능 3일 전인데 AI 커닝이 왜 화제냐면' 형식의 이슈 정리 + 수험생 응원 메시지. 구체 내용은 제목 이상 지어내지 말고 '시험과 AI' 공감 포인트 중심",
+        "target": "수험생·학부모, 대학생",
+        "fun_score": 5,
+        "risk": "medium",
+        "risk_note": "'다시보기'는 일반 키워드라 뉴스 제목 근거가 약하고, 사건 세부 내용이 불명확해 단정 금지"
+      },
+      {
+        "rank": 8,
+        "keyword": "최우제",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "[뉴스워커_스포츠] 롤 인벤·롤갤 뒤집은 제우스 복귀설... 정작 티원은 침묵 중",
+          "LCK 스토브리그 일정은?⋯코치 영입 15일ㆍ선수 FA 17일",
+          "'BLG 우승' 롤드컵 막 내렸다… 폭풍전야 LCK 스토브리그, 탑과 정글로 쏠리는 눈"
+        ],
+        "topic": "롤 커뮤니티 뒤집은 제우스 복귀설, 정작 T1은 침묵",
+        "why_now": "'롤 인벤·롤갤 뒤집은 제우스 복귀설... 정작 티원은 침묵 중', LCK 스토브리그(코치 15일·선수 FA 17일) 시작",
+        "angle": "'제우스 복귀설 왜 난리냐면' 30초 정리 + 스토브리그 일정 타임라인. 팬들의 추측 반응을 밈 형식으로 소개하고 '확정 아님' 자막 명시",
+        "target": "10~30대 LoL·LCK 팬",
+        "fun_score": 8,
+        "risk": "medium",
+        "risk_note": "이적설은 미확정이므로 단정 금지, 선수·구단 비방 없이 팬 반응 위주"
+      },
+      {
+        "rank": 9,
+        "keyword": "toki",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "İnegöl'de TOKİ Heyecanı: 123 Konutun Kurası Yarın Çekiliyor",
+          "Isparta TOKİ kura çekimi ne zaman? Aksu ve Keçiborlu TOKİ kura tarihleri açıklandı",
+          "Ev Hayali Kuran Sakaryalılar müjde! TOKİ tarih verdi: 221 konut için kuralar ne zaman çekiliyor?"
+        ],
+        "topic": "터키 TOKİ 주택 추첨 소식(한국 이슈와 무관한 해외 키워드)",
+        "why_now": "뉴스 제목이 모두 튀르키예 주택청약 추첨 관련(이네괼·으스파르타·사카리아)",
+        "angle": "한국 채널과의 연관성이 낮아 제작 비추천. 굳이 만든다면 '튀르키예 공공주택은 추첨으로 당첨' 정도의 해외 토픽 비교형만 가능하나 뉴스 제목 이상의 정보가 없음",
+        "target": "해외 부동산·튀르키예 관심층(소수)",
+        "fun_score": 2,
+        "risk": "medium",
+        "risk_note": "한국 시청자 관심 적고, 제목 외 정보가 없어 사실 확인 어려움. 'toki'가 다른 의미(예: 이름·브랜드)일 가능성도 있음"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": [
+      {
+        "keyword": "추미애",
+        "blocked_by": "국회"
+      }
+    ]
+  },
+  "selected_attempt": 2,
+  "plan": {
+    "chosen_rank": 2,
+    "reason": "검색량 1위는 '드라마'(10000+)지만 키워드가 포괄적이고 재미 포인트가 약함(fun_score 6). 로버트 패틴슨 차기 007 소식은 fun_score 9이고 뱀파이어, 배트맨, 제임스 본드로 이어지는 필모 변천이 드립 소재라 선택. QA 반영: ①필모 순서를 '해리 포터 조연 → 뱀파이어 → 배트맨 → 본드'로 고침. 해리 포터 조연 출연은 널리 알려진 필모이며 뉴스 제목에는 없으므로 연도와 구체적 배역명은 쓰지 않음. ②'공식 확정'의 출처(제작사 발표 등)는 제목만으로 확인되지 않아 '낙점됐다는 보도가 쏟아졌다'로 완화. ③훅에 주어 '007'을 넣어 정보 격차 형성. ④분량을 약 200자(35~40초)로 맞추고 반전 드립 2개(낮에 일하는 역할이 없다, 마티니 대사)를 추가. ⑤주인공을 귀여운 박쥐 캐릭터 하나로 통일하고, 4번 씬은 박쥐 마크 망토, 7번 씬은 찬성팀(왼쪽, 웃음)과 반대팀(오른쪽, 화난 얼굴)의 대비를 분명히 함. 계산이 필요한 수치는 사용하지 않음.",
+    "title": "007이 뱀파이어라고? 이번엔 진짜 총 듭니다",
+    "hook": "007이 뱀파이어라고? 이번엔 진짜 총 듭니다.",
+    "bgm_mood": "funny",
+    "style": "vibrant 3D cartoon, soft cinematic lighting, high detail, bold colors, vertical composition",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "007이 뱀파이어라고? 이번엔 진짜 총 듭니다. 오늘 검색창 터진 이유가 바로 이거예요.",
+        "on_screen_text": "007이 뱀파이어?!",
+        "image_prompt": "A cute small cartoon bat character with tiny fangs wearing a black tuxedo and holding a toy pistol, wide surprised eyes, dramatic spotlight, dark blue background, vibrant 3D cartoon, soft cinematic lighting, high detail, bold colors, vertical composition"
+      },
+      {
+        "id": 2,
+        "narration": "로버트 패틴슨이 다니엘 크레이그 다음 차기 제임스 본드로 낙점됐다는 보도가 쏟아졌어요.",
+        "on_screen_text": "차기 본드 소식",
+        "image_prompt": "The same cute small cartoon bat character in a tuxedo catching a golden baton passed from a tall tuxedo-wearing penguin on a red carpet, golden confetti falling, vibrant 3D cartoon, soft cinematic lighting, high detail, bold colors, vertical composition"
+      },
+      {
+        "id": 3,
+        "narration": "이 배우 필모가 좀 웃겨요. 해리 포터에서 조연으로 나오더니, 뱀파이어로 대박이 났거든요.",
+        "on_screen_text": "필모가 이상함",
+        "image_prompt": "The same cute small cartoon bat character wearing a tiny wizard hat on the left and sparkly vampire fangs with a dark cape on the right, split scene with gothic castle and full moon behind, playful expression, vibrant 3D cartoon, soft cinematic lighting, high detail, bold colors, vertical composition"
+      },
+      {
+        "id": 4,
+        "narration": "그다음엔 배트맨. 박쥐 망토 입고 밤마다 출근했죠.",
+        "on_screen_text": "박쥐 출근",
+        "image_prompt": "The same cute small cartoon bat character wearing a black cape and cowl with a big bat emblem on the chest, standing on a rooftop at night in front of a glowing full moon, heroic pose, vibrant 3D cartoon, soft cinematic lighting, high detail, bold colors, vertical composition"
+      },
+      {
+        "id": 5,
+        "narration": "이번엔 턱시도입니다. 뱀파이어, 배트맨, 007. 낮에 일하는 역할이 하나도 없어요.",
+        "on_screen_text": "전부 야간근무",
+        "image_prompt": "The same cute small cartoon bat character in a tuxedo yawning and checking a wristwatch under a starry night sky with a crescent moon, sleepy but cool expression, vibrant 3D cartoon, soft cinematic lighting, high detail, bold colors, vertical composition"
+      },
+      {
+        "id": 6,
+        "narration": "흔들지 말고 저어서 주세요. 뱀파이어 출신이 이 대사 치면 피 대신 마티니 시키는 겁니다.",
+        "on_screen_text": "마티니 주세요",
+        "image_prompt": "The same cute small cartoon bat character in a tuxedo holding a martini glass with an olive and smirking confidently in a fancy casino lounge, vibrant 3D cartoon, soft cinematic lighting, high detail, bold colors, vertical composition"
+      },
+      {
+        "id": 7,
+        "narration": "자, 여러분은 어때요? 신의 한 수다, 아니다 이건 좀 아니다. 댓글로 편 갈라 봅시다.",
+        "on_screen_text": "너라면 찬성?",
+        "image_prompt": "A split scene: on the left side a group of cheerful cartoon bats with big smiles raising thumbs up with bright warm light, on the right side a group of angry cartoon bats with furrowed brows and crossed arms holding large red X shaped paddles with dark red light, strong contrast between the two sides, vibrant 3D cartoon, soft cinematic lighting, high detail, bold colors, vertical composition"
+      }
+    ],
+    "description": "해리 포터 조연에서 뱀파이어, 배트맨, 이제 제임스 본드까지! 로버트 패틴슨이 차기 007로 낙점됐다는 소식을 썰 풀듯 정리했어요. 여러분은 찬성? 반대? #로버트패틴슨 #007 #제임스본드",
+    "tags": [
+      "로버트패틴슨",
+      "차기007",
+      "제임스본드",
+      "007",
+      "다니엘크레이그",
+      "배트맨",
+      "뱀파이어",
+      "영화뉴스",
+      "쇼츠",
+      "이슈"
+    ],
+    "comment_question": "로버트 패틴슨 차기 007, 찬성 vs 반대? 한 글자로 투표해 주세요 (찬 / 반)"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 7
+    }
+  },
+  "effects": {
+    "duration": 51.12,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Daily Beetle",
+    "bgm_mood": "funny",
+    "bgm_credit": "Music: \"Daily Beetle\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "007이 뱀파이어라고? 이번엔 진짜 총 듭니다. 오늘 검색창 터진 이유가 바로 이거예요.",
+      "on_screen_text": "007이 뱀파이어?!",
+      "image": "runs/2026-11-17/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "로버트 패틴슨이 다니엘 크레이그 다음 차기 제임스 본드로 낙점됐다는 보도가 쏟아졌어요.",
+      "on_screen_text": "차기 본드 소식",
+      "image": "runs/2026-11-17/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "이 배우 필모가 좀 웃겨요. 해리 포터에서 조연으로 나오더니, 뱀파이어로 대박이 났거든요.",
+      "on_screen_text": "필모가 이상함",
+      "image": "runs/2026-11-17/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "그다음엔 배트맨. 박쥐 망토 입고 밤마다 출근했죠.",
+      "on_screen_text": "박쥐 출근",
+      "image": "runs/2026-11-17/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "이번엔 턱시도입니다. 뱀파이어, 배트맨, 007. 낮에 일하는 역할이 하나도 없어요.",
+      "on_screen_text": "전부 야간근무",
+      "image": "runs/2026-11-17/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "흔들지 말고 저어서 주세요. 뱀파이어 출신이 이 대사 치면 피 대신 마티니 시키는 겁니다.",
+      "on_screen_text": "마티니 주세요",
+      "image": "runs/2026-11-17/scene_06.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 7,
+      "narration": "자, 여러분은 어때요? 신의 한 수다, 아니다 이건 좀 아니다. 댓글로 편 갈라 봅시다.",
+      "on_screen_text": "너라면 찬성?",
+      "image": "runs/2026-11-17/scene_07.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-11-17/thumbnail.jpg",
+  "video_file": "videos/2026-11-17.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "YT_* 시크릿 없음"
+  },
+  "finished_at": "2026-11-17T02:36:02+09:00"
+}

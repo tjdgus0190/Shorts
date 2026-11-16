@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-17",
+    "status": "success",
+    "title": "007이 뱀파이어라고? 이번엔 진짜 총 듭니다",
+    "overall": 70,
+    "qa_attempts": 2,
+    "thumbnail": "runs/2026-11-17/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 51.12
+  },
+  {
     "date": "2026-11-16",
     "status": "success",
     "title": "한일전 12연패 얘기 나오는 상대랑 결승입니다",
