@@ -1,0 +1,393 @@
+{
+  "date": "2026-11-18",
+  "status": "success",
+  "started_at": "2026-11-18T02:08:20+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-11-18T02:08:20+09:00",
+      "note": "",
+      "seconds": 22.2
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-18T02:08:42+09:00",
+      "note": "",
+      "seconds": 13.6
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-18T02:08:56+09:00",
+      "note": "",
+      "seconds": 29.9
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-18T02:09:26+09:00",
+      "note": "",
+      "seconds": 43.2
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-18T02:10:09+09:00",
+      "note": "1차",
+      "seconds": 19.3
+    },
+    {
+      "name": "uploader",
+      "label": "업로드",
+      "status": "done",
+      "started_at": "2026-11-18T02:10:28+09:00",
+      "note": "",
+      "seconds": 0.0
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 55,
+        "hook": 65,
+        "clarity": 85,
+        "visual": 78,
+        "subtitle": 80,
+        "safety": 85
+      },
+      "overall": 70,
+      "pass": true,
+      "issues": [
+        "fun: 전체가 '결과 전달 → 마무리 교훈' 구조라 뉴스 요약 톤에 가깝다. 반전이나 드립이 약하고, '롤러코스터', '방심하면 끝' 같은 표현도 흔하다.",
+        "hook: 첫 문장은 대비 구조라 나쁘지 않지만 '무슨 일'이라는 궁금증만 던지고 구체적인 충격 포인트(스코어, 충격 요소)가 없다. 0.6초 프레임은 트로피를 든 웃는 판다라 긴장감이 약하다.",
+        "visual: 1번 장면 판다 유니폼에 아디다스 로고가 보여 상표 노출 위험이 있다. 5번 장면은 기획서에 있는 '끊어진 연승 사슬'이 보이지 않고 정체불명의 갈색 물체가 있어 장면 불일치다. 7번 장면은 판다와 라마가 든 팻말이 3개 이상으로 어수선하고 손 표현이 어색하다.",
+        "visual: 올빼미(감독), 판다(일본), 라마(파라과이) 같은 캐릭터 설정은 일관적이다. 다만 3번 장면은 배경이 관중석뿐이라 축구 맥락이 약하다.",
+        "subtitle: 하단 자막이 캐릭터의 다리와 몸통 위에 걸린다(3번 올빼미 몸통, 7번 팻말). 가독성은 좋지만 화면을 일부 가린다. 상단 검은 박스 텍스트와 하단 자막이 중복되는 구간이 있다.",
+        "safety: '피파랭킹 33위', '5경기 연속 무패', '모리야스 감독 고별전', '1대2 패배' 같은 사실은 확인 필요하다. 이미지 프레임과 자동 측정치만으로는 검증할 수 없다. 특정 국가를 동물로 의인화한 표현은 비하 소지가 크지 않다.",
+        "길이 47초는 쇼츠로는 다소 길다. 정보량에 비해 7장면 구성이 늘어진다."
+      ],
+      "retry_target": null,
+      "feedback": "합격이지만 개선 여지가 있다. (1) 훅을 '브라질 이긴 일본, 파라과이에 1대2 충격패' 같이 결과를 먼저 던지고, 첫 장면은 판다가 우는 표정이나 놀란 표정으로 바꿔 대비를 극대화한다. (2) 중반에 드립이나 반전을 하나 넣는다(예: 고별전 선물이 '패배'였다는 식의 자조). (3) 대본 속 순위, 연속 무패 기록, 고별전 정보는 업로드 전에 공식 기록으로 재확인한다. (4) 유니폼의 아디다스 로고가 나오지 않도록 프롬프트에 'no logos, no text on clothing'을 추가한다. (5) 5번 장면은 끊어진 사슬이 제대로 나오도록 프롬프트를 단순화하고, 7번 장면은 팻말을 한 캐릭터당 하나로 제한한다. (6) 자막 위치를 화면 하단 20% 안쪽으로 내려 캐릭터가 가려지지 않게 한다."
+    }
+  ],
+  "marketer": {
+    "summary": "브라질 잡고 파라과이에 무너진 일본 축구, 스마트안경 시험 부정행위 논란, LG그룹 임원인사 시작, 북한 탄도미사일 러시아 공급 등 스포츠·사회·경제 이슈가 고루 뜬 하루",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "일본 파라과이",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "브라질도 꺾은 일본, '모리야스 고별전'서 파라과이에 1-2 패배",
+          "'브라질 잡았다고 신났는데 파라과이에 무너졌다' 일본, FIFA 33위 상대 전반에만 2실점...올해 마지막 경기 1-2 패배 - 머니투데이",
+          "'모리야스 고별전' 일본, 파라과이에 1-2 패배...5경기 연속 무패 마침표"
+        ],
+        "topic": "브라질 잡고 신났던 일본, 모리야스 고별전에서 FIFA 33위 파라과이에 1-2 역전도 아닌 '전반 2실점' 패배",
+        "why_now": "'브라질도 꺾은 일본, 모리야스 고별전서 파라과이에 1-2 패배', '5경기 연속 무패 마침표' 보도",
+        "angle": "'브라질 이겼다고 방심하면 생기는 일' 30초 정리 + 롤러코스터 같은 일본 대표팀 최근 성적 비교 드립, 한국 팬 반응/댓글 밈 모음",
+        "target": "축구 팬 10~40대, 한일전 관심층",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": ""
+      },
+      {
+        "rank": 2,
+        "keyword": "권고",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "[단독] 전수 검사도 통과한 스마트 안경‥적발되자 일반 안경으로 바꿔치기",
+          "안경테서 불빛이 ‘번쩍’···LEET 시험장서 스마트안경 착용한 20대 입건",
+          "\"AI+초소형 카메라 부정시험은 시작일뿐\"…목욕탕·탈의실은"
+        ],
+        "topic": "전수 검사도 통과한 스마트 안경, 적발되자 일반 안경으로 바꿔치기한 LEET 시험장 부정행위 사건",
+        "why_now": "'전수 검사도 통과한 스마트 안경', 'LEET 시험장서 스마트안경 착용한 20대 입건' 보도",
+        "angle": "'이게 왜 난리냐면' 형식으로 스마트 안경이 시험장에서 어떻게 적발됐는지 30초 정리, 안경테 불빛 반전 포인트 강조, 'AI 시대 시험 감독 어떻게 달라져야 하나' 질문형 마무리",
+        "target": "수험생·취준생, 20~30대, IT 관심층",
+        "fun_score": 7,
+        "risk": "high",
+        "risk_note": "형사 입건된 실제 사건이라 피의자 조롱·신상 추측 금지, 수법 상세 묘사는 모방 우려로 최소화"
+      },
+      {
+        "rank": 3,
+        "keyword": "lg그룹",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "[단독] 이상엽 LGU+ CTO 물러난다…LG그룹 임원인사 통보 시작",
+          "[단독] LGU+, 기술 조직 ‘고강도 쇄신’…AI·데이터 임원 교체",
+          "[리포트 브리핑]LG에너지솔루션, '실적 추이 및 전망' 목표가 460,000원 - 삼성증권"
+        ],
+        "topic": "LG그룹 임원인사 통보 시작, LGU+ CTO 퇴진과 AI·데이터 임원 교체",
+        "why_now": "'[단독] 이상엽 LGU+ CTO 물러난다…LG그룹 임원인사 통보 시작', 'LGU+ 기술 조직 고강도 쇄신' 보도",
+        "angle": "'연말 인사철 직장인 공감' 상황극 + 임원인사 시즌이 왜 매년 화제인지 30초 정리, 직장인 밈 활용",
+        "target": "직장인 25~45세, 주식·경제 관심층",
+        "fun_score": 5,
+        "risk": "medium",
+        "risk_note": "단독 보도 기반이라 확정 사실처럼 단정하지 말고 개인 평가·비하 금지"
+      },
+      {
+        "rank": 4,
+        "keyword": "김다현",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "'가요무대' 김다현·빈예서 듀엣부터 배아현·신유·신승태까지 총출동",
+          "‘가요무대’ 미스김 ‘황홀무대’",
+          "‘가요무대’ 가수 김범룡·신승태·신유 등 “이름 모를 소녀” 가을에 떠난 사람"
+        ],
+        "topic": "'가요무대'에서 김다현·빈예서 듀엣부터 트로트 가수 총출동한 가을 특집 무대",
+        "why_now": "'가요무대 김다현·빈예서 듀엣부터 배아현·신유·신승태까지 총출동' 보도",
+        "angle": "어린 트로트 가수 듀엣 하이라이트 + '할머니·할아버지가 TV 앞에서 흐뭇해지는 순간' 가족 공유형 콘텐츠",
+        "target": "부모·조부모 세대, 트로트 팬, 가족 시청층",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": "미성년 출연자이므로 사생활·외모 평가성 코멘트 지양"
+      },
+      {
+        "rank": 5,
+        "keyword": "포스코홀딩스",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "포스코인터내셔널, 거대 분지에서 끌어올린 '천연가스 잭팟'…파이프라인서 2000억 쏟아졌다",
+          "장인화 “기술력이 성과 원동력”…‘트리플코어’ 역량 강화 주문",
+          "[현장] 폐배터리에서 리튬·니켈 뽑아 양극재까지, '16년 담금질' 포스코그룹의 2차전지 소재 사업 본격 도약 채비"
+        ],
+        "topic": "포스코인터내셔널 천연가스 '잭팟', 파이프라인서 2000억 쏟아졌다",
+        "why_now": "'포스코인터내셔널, 거대 분지에서 끌어올린 천연가스 잭팟…2000억' 보도",
+        "angle": "'철강회사가 가스로 2000억?' 반전 포인트 + 숫자로 보는 포스코그룹 사업 확장(2차전지 소재, 폐배터리 리튬·니켈 재활용 16년 담금질) 30초 정리",
+        "target": "주식·재테크 관심층 25~50세, 취준생",
+        "fun_score": 5,
+        "risk": "low",
+        "risk_note": "투자 권유로 보이지 않게 단순 사실 전달에 한정"
+      },
+      {
+        "rank": 6,
+        "keyword": "mbc",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "بدء عرض الموسم الجديد من توب شيف مطلع ديسمبر المقبل باشتراك نجوم الوطن العربي",
+          "بمشاركة نجوم الوطن العربي.. MBC تعلن موعد عرض الموسم الجديد من «توب شيف»",
+          "MBC تكشف موعد عرض «توب شيف VIP» بمشاركة نجوم الفن العربي"
+        ],
+        "topic": "MBC, 아랍 스타 참여 '톱 셰프' 신규 시즌 12월 초 방영 발표",
+        "why_now": "'MBC, 톱 셰프 새 시즌 12월 초 방영' 아랍어 보도 다수(중동 MBC 그룹 관련 기사)",
+        "angle": "한국 MBC가 아닌 중동 방송사 MBC 이야기라는 '검색 반전'을 활용한 '이 MBC는 우리가 아는 MBC가 아니다' 30초 설명 + 요리 경연 예능 관전 포인트",
+        "target": "예능·요리 프로그램 팬, 해외 콘텐츠 관심층",
+        "fun_score": 4,
+        "risk": "low",
+        "risk_note": "뉴스 제목이 아랍어라 세부 출연진·내용은 확인되지 않음, 제목에 없는 정보 추가 금지"
+      },
+      {
+        "rank": 7,
+        "keyword": "탄도 미사일",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "젤렌스키 \"더 많은 北미사일 러에 공급‥韓주변에 도전 과제\"",
+          "“매달 수십 발씩 러시아에 공급”…우크라전 겪으며 진화하는 北 미사일의 공포 [밀리터리노트]",
+          "\"북한, 한 달 수십 발씩 러시아에 탄도미사일 제공…미사일 성능 갈고 닦아\""
+        ],
+        "topic": "젤렌스키 \"더 많은 北미사일 러에 공급, 韓 주변에 도전 과제\" 발언 파장",
+        "why_now": "'젤렌스키 \"더 많은 北미사일 러에 공급‥韓주변에 도전 과제\"', '매달 수십 발씩 러시아에 공급' 보도",
+        "angle": "'우크라 전장에서 북한 미사일이 달라졌다는데' 이슈 30초 정리, 매달 수십 발이라는 숫자 중심의 차분한 해설 형식(드립 최소화)",
+        "target": "시사·안보 관심층 20~50대",
+        "fun_score": 3,
+        "risk": "high",
+        "risk_note": "안보·국제정치·전쟁 이슈로 희화화 금지, 보도 인용 범위 내에서 사실 위주로 전달"
+      },
+      {
+        "rank": 8,
+        "keyword": "정우영",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "이강인은 오른쪽 고정 전망… 카타르전 왼쪽은 ‘돌아온 돌격대장’ 정우영이 기회 얻을까?",
+          "‘엄지성 천금 결승골’...일본 꺾고 AG 축구 4연패",
+          "모레노 감독이 원하는 높은 '에너지 레벨'에 딱! 분데스서도 '최상위급 고강도' 정우영, 측면 경쟁에 '새바람'"
+        ],
+        "topic": "이강인은 오른쪽 고정? 카타르전 왼쪽 윙 자리, '돌아온 돌격대장' 정우영에게 기회 올까",
+        "why_now": "'이강인은 오른쪽 고정 전망… 카타르전 왼쪽은 돌아온 돌격대장 정우영이 기회 얻을까?', 분데스 고강도 평가 보도",
+        "angle": "'카타르전 선발 라인업 예측' 형식으로 측면 경쟁 구도 정리 + 팬 투표/댓글 유도형 쇼츠",
+        "target": "축구 팬 10~40대, 국가대표 관심층",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": "뉴스 제목 속 전망은 예상일 뿐 확정 아님을 명시, 동명이인 혼동 주의"
+      },
+      {
+        "rank": 9,
+        "keyword": "mbk파트너스",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "회수부터 투자까지…MBK SS, 신규 펀드레이징 배경은",
+          "MBK파트너스, 2026 연차총회 개최…내년 해외투자 적극 확대",
+          "한국 노인 2050년 39.7%...MBK \"고령화사회 필요섹터에 투자하겠다\""
+        ],
+        "topic": "MBK파트너스 연차총회, 내년 해외투자 확대와 '고령화 사회 필요섹터' 투자 선언",
+        "why_now": "'MBK파트너스, 2026 연차총회 개최…내년 해외투자 적극 확대', '한국 노인 2050년 39.7%...MBK 고령화사회 투자' 보도",
+        "angle": "'2050년 한국 노인 39.7%' 숫자 충격 포인트로 시작해 사모펀드가 고령화를 어떻게 보는지 30초 정리",
+        "target": "경제·재테크 관심층 30~50대",
+        "fun_score": 4,
+        "risk": "medium",
+        "risk_note": "MBK는 사회적 논란이 있었던 기업이라 비판·옹호 어느 쪽으로도 기울지 않고 보도된 발표 내용만 전달"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": [
+      {
+        "keyword": "상주 지진",
+        "blocked_by": "지진"
+      }
+    ]
+  },
+  "selected_attempt": 1,
+  "plan": {
+    "chosen_rank": 1,
+    "reason": "검색량이 1000+로 가장 높고, 브라질을 잡고 나서 FIFA 33위 파라과이에 전반 2실점으로 무너진 낙차가 재미 포인트로 충분함. 위험도도 낮음. 계산이 필요한 숫자는 없고 스코어 1-2, 5경기 연속 무패 마침표만 제목 내용 그대로 사용.",
+    "title": "브라질 잡고 신났던 일본, 파라과이에 무슨 일이?",
+    "hook": "브라질을 이겼다고 신났던 일본이 방금 파라과이한테 맞았습니다.",
+    "bgm_mood": "funny",
+    "style": "vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters, vertical composition",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "브라질을 이겼다고 신났던 일본이 방금 파라과이한테 제대로 맞았습니다.",
+        "on_screen_text": "일본 무슨 일",
+        "image_prompt": "A cute cartoon panda in a blue soccer jersey holding a giant trophy and grinning proudly on a soccer field, confetti falling, vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters, vertical composition"
+      },
+      {
+        "id": 2,
+        "narration": "상대는 피파랭킹 33위 파라과이. 브라질 잡은 팀이 설마 했는데 말이죠.",
+        "on_screen_text": "33위한테?",
+        "image_prompt": "A small confident cartoon llama in a red and white striped soccer jersey standing in front of a goal with arms crossed, vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters, vertical composition"
+      },
+      {
+        "id": 3,
+        "narration": "이날은 모리야스 감독의 고별전이었어요. 마지막 경기니까 멋지게 끝내야죠.",
+        "on_screen_text": "고별전인데",
+        "image_prompt": "A cartoon owl wearing a coach's whistle and a blue track jacket waving goodbye emotionally on the sidelines with a tiny bouquet of flowers, vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters, vertical composition"
+      },
+      {
+        "id": 4,
+        "narration": "근데 전반에만 두 골을 먹었습니다. 시작하자마자 분위기가 싸해졌죠.",
+        "on_screen_text": "전반 2실점",
+        "image_prompt": "A shocked cartoon panda goalkeeper in blue with wide eyes and open mouth while two soccer balls sit inside the net behind, vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters, vertical composition"
+      },
+      {
+        "id": 5,
+        "narration": "결과는 1대2 패배. 5경기 연속 무패도 여기서 끝났습니다.",
+        "on_screen_text": "1대2 패배",
+        "image_prompt": "A deflated cartoon panda in a blue jersey sitting on the grass with a sad cloud raining over its head, a broken winning streak chain lying beside it, vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters, vertical composition"
+      },
+      {
+        "id": 6,
+        "narration": "브라질 이기고 파라과이한테 지는 이 롤러코스터. 축구는 진짜 방심하면 끝입니다.",
+        "on_screen_text": "방심 금지",
+        "image_prompt": "A cartoon panda riding a roller coaster that goes up high then dives down steeply, arms raised and screaming, soccer balls flying around, vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters, vertical composition"
+      },
+      {
+        "id": 7,
+        "narration": "여러분은 어떻게 보세요? 브라질 잡은 게 대단한 거다, 아니면 이날 패배가 진짜 실력이다. 댓글로 편 갈라봅시다.",
+        "on_screen_text": "너의 선택은?",
+        "image_prompt": "Two cartoon animals, a panda and a llama, standing back to back with a split background of blue and red, each holding a question mark sign, vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters, vertical composition"
+      }
+    ],
+    "description": "브라질을 잡고 신났던 일본이 모리야스 고별전에서 파라과이에 1-2로 졌습니다. 5경기 연속 무패도 마침표! 여러분의 생각은?\n#일본축구 #파라과이 #축구이슈",
+    "tags": [
+      "일본",
+      "파라과이",
+      "일본축구",
+      "모리야스",
+      "브라질",
+      "축구",
+      "쇼츠",
+      "축구이슈",
+      "A매치"
+    ],
+    "comment_question": "브라질 잡은 게 진짜 실력일까, 파라과이전 패배가 진짜 실력일까? 여러분의 선택은?"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 7
+    }
+  },
+  "effects": {
+    "duration": 47.45,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Scheming Weasel faster",
+    "bgm_mood": "funny",
+    "bgm_credit": "Music: \"Scheming Weasel faster\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "브라질을 이겼다고 신났던 일본이 방금 파라과이한테 제대로 맞았습니다.",
+      "on_screen_text": "일본 무슨 일",
+      "image": "runs/2026-11-18/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "상대는 피파랭킹 33위 파라과이. 브라질 잡은 팀이 설마 했는데 말이죠.",
+      "on_screen_text": "33위한테?",
+      "image": "runs/2026-11-18/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "이날은 모리야스 감독의 고별전이었어요. 마지막 경기니까 멋지게 끝내야죠.",
+      "on_screen_text": "고별전인데",
+      "image": "runs/2026-11-18/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "근데 전반에만 두 골을 먹었습니다. 시작하자마자 분위기가 싸해졌죠.",
+      "on_screen_text": "전반 2실점",
+      "image": "runs/2026-11-18/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "결과는 1대2 패배. 5경기 연속 무패도 여기서 끝났습니다.",
+      "on_screen_text": "1대2 패배",
+      "image": "runs/2026-11-18/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "브라질 이기고 파라과이한테 지는 이 롤러코스터. 축구는 진짜 방심하면 끝입니다.",
+      "on_screen_text": "방심 금지",
+      "image": "runs/2026-11-18/scene_06.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 7,
+      "narration": "여러분은 어떻게 보세요? 브라질 잡은 게 대단한 거다, 아니면 이날 패배가 진짜 실력이다. 댓글로 편 갈라봅시다.",
+      "on_screen_text": "너의 선택은?",
+      "image": "runs/2026-11-18/scene_07.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-11-18/thumbnail.jpg",
+  "video_file": "videos/2026-11-18.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "YT_* 시크릿 없음"
+  },
+  "finished_at": "2026-11-18T02:10:28+09:00"
+}
