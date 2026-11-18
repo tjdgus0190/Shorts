@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-19",
+    "status": "qa_failed",
+    "title": "극우도 극좌도 '정년 60세'? 프랑스 난리 난 이유",
+    "overall": 64,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-11-19/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 51.62
+  },
+  {
     "date": "2026-11-18",
     "status": "success",
     "title": "브라질 잡고 신났던 일본, 파라과이에 무슨 일이?",
