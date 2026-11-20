@@ -1,0 +1,402 @@
+{
+  "date": "2026-11-21",
+  "status": "success",
+  "started_at": "2026-11-21T01:28:51+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-11-21T01:28:51+09:00",
+      "note": "",
+      "seconds": 24.0
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-21T01:29:15+09:00",
+      "note": "",
+      "seconds": 21.5
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-21T01:29:36+09:00",
+      "note": "",
+      "seconds": 34.6
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-21T01:30:11+09:00",
+      "note": "",
+      "seconds": 45.8
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-21T01:30:57+09:00",
+      "note": "1차",
+      "seconds": 20.9
+    },
+    {
+      "name": "uploader",
+      "label": "업로드",
+      "status": "done",
+      "started_at": "2026-11-21T01:31:18+09:00",
+      "note": "",
+      "seconds": 0.0
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 62,
+        "hook": 70,
+        "clarity": 74,
+        "visual": 68,
+        "subtitle": 72,
+        "safety": 82
+      },
+      "overall": 70,
+      "pass": true,
+      "issues": [
+        "확인 필요: '5년째 동결'이라는 표현. 현실화율 69%가 처음 적용된 시점부터 세면 햇수가 다를 수 있어서, 공식 발표 기준으로 몇 년째인지 확인이 필요합니다.",
+        "확인 필요: '오늘 부동산 검색량이 터졌다'는 근거가 없습니다. 출처가 없으면 업로드 시점에 맞지 않는 말이 될 수 있습니다.",
+        "장면 3(30% 프레임) 달력의 글자가 깨져 있습니다('Healonor', 'Hakloner' 등). 생성 이미지 특유의 글자 깨짐입니다.",
+        "장면 6(85% 프레임) 자막 '거지'가 지갑 캐릭터의 입과 얼굴 중앙을 가려서 슬픈 표정이 잘 안 보입니다. 자막 위치가 이미지 중앙 하단에 있어서 캐릭터 얼굴과 겹칩니다.",
+        "장면 4(55% 프레임) 여우 뒤의 집이 작고 멀어서 '집값이 오른다'는 연출이 약합니다. 프롬프트의 '집이 점점 커진다'는 느낌이 거의 안 보입니다.",
+        "내용이 '동결인데 집값 오르면 보유세도 오를 것 같다'는 설명 위주라 교과서 톤에 가깝습니다. 반전과 드립이 '브레이크 밟았는데 오르막' 비유 하나뿐입니다.",
+        "'~할 것 같대', '~일 수도 있다'처럼 추측으로 끝나는 문장이 많아 정보의 확실성이 약합니다. 보유세는 공정시장가액비율과 세율에도 영향을 받는데 그 설명이 없어서 단정하기 어렵습니다. 다만 허위라고 볼 정도는 아닙니다.",
+        "자동 측정은 문제없음(48.8초, 1080x1920, 오디오 있음). 이미지는 Cloudflare로 생성했고 TTS는 edge라 mock이나 placeholder는 아닙니다."
+      ],
+      "retry_target": null,
+      "feedback": "합격입니다. 개선 팁: 1) '5년째'와 '검색량 터졌다'는 출처를 확인하거나 '올해도 동결' 같은 안전한 표현으로 바꾸세요. 2) 장면 3의 이미지는 달력 글자가 깨지지 않도록 프롬프트에 'no text, blank calendar'를 넣으세요. 3) 자막은 캐릭터 얼굴을 가리지 않게 하단으로 더 내리거나 이미지 위치를 조정하세요. 4) 재미를 높이려면 '내 월급은 동결 안 됨'처럼 구체적인 숫자나 상황 드립을 한두 개 넣으세요. 예를 들어 '공시가는 얼려놨는데 집값은 불닭볶음면급으로 매움' 같은 식입니다. 5) 마지막 질문형 CTA는 좋으니, 댓글 투표처럼 선택지를 더 도발적으로 만들어도 좋습니다."
+    }
+  ],
+  "marketer": {
+    "summary": "공시가 동결 소식과 엔비디아 시총 급락 등 돈 되는 이슈가 검색 상위를 차지했고, 연예·예능(신랑수업2, 데블스 플랜3, 나혼산)과 PUBG 불매 논란이 뒤를 이은 하루",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "부동산",
+        "traffic": "5000+",
+        "traffic_num": 5000,
+        "news": [
+          "내년 아파트 공시가격 현실화율 69%로 5년째 동결…보유세 영향은?",
+          "겹겹이 쌓인 보유세 인상 압박에… 공시가 현실화율 동결",
+          "국토부, 주택공시가 현실화율 ‘동결’…묶여도 집값 오른 곳 보유세는 오를 듯"
+        ],
+        "topic": "공시가 현실화율 69% 5년째 동결, 그래서 내 보유세는 오르나 안 오르나",
+        "why_now": "'내년 아파트 공시가격 현실화율 69%로 5년째 동결…보유세 영향은?', '묶여도 집값 오른 곳 보유세는 오를 듯' 보도",
+        "angle": "'동결인데 왜 내 세금은 오르지?' 30초 정리. 현실화율은 그대로여도 집값이 오르면 세금이 오르는 구조를 '고정 환율인데 물가만 오른 상황' 같은 비유와 드립으로 풀이",
+        "target": "20~40대 유주택자·내집마련 준비층",
+        "fun_score": 6,
+        "risk": "medium",
+        "risk_note": "정책·정치 성향 논쟁으로 번질 수 있어 특정 정당 평가는 배제하고 사실 위주로 구성"
+      },
+      {
+        "rank": 2,
+        "keyword": "엔비디아",
+        "traffic": "5000+",
+        "traffic_num": 5000,
+        "news": [
+          "젠슨 황 딸 폭언까지 터졌다…\"직원에 '금붕어' 호칭\" 논란",
+          "젠슨 황 몰락의 진짜 이유...루비오와 매파의 '제거 작전'",
+          "엔비디아, 6거래일새 시총 893조원 증발…\"하락 안끝났다\""
+        ],
+        "topic": "6거래일 만에 시총 893조 원 증발, 숫자로 보는 충격",
+        "why_now": "'엔비디아, 6거래일새 시총 893조원 증발…\"하락 안끝났다\"' 보도",
+        "angle": "893조 원을 우리가 아는 것들과 비교(예: 한국 대기업 시총, 국가 예산 등)하는 숫자 충격 쇼츠. 비교 수치는 반드시 확인된 값만 사용. '개미들의 하루' 상황극 드립 추가",
+        "target": "주식 투자자, 미국주식 서학개미",
+        "fun_score": 7,
+        "risk": "medium",
+        "risk_note": "투자 권유로 오해되지 않게 하고, 젠슨 황 가족 관련 폭언 논란 등 확인되지 않은 사생활 이슈는 다루지 않음"
+      },
+      {
+        "rank": 3,
+        "keyword": "미국 반도체 수출 통제로 인한 삼성전자와 tsmc의 중국 출하 중단 뉴스 알려줘",
+        "traffic": "5000+",
+        "traffic_num": 5000,
+        "news": [],
+        "topic": "삼성전자·TSMC 중국 출하 중단 이슈, 검색 문장 그대로 궁금해하는 사람들",
+        "why_now": "뉴스 제목이 제공되지 않아 구체적 근거 없음. 검색어 자체가 뉴스를 묻는 질문 형태",
+        "angle": "'AI한테까지 물어보는 반도체 뉴스' 식의 검색 현상 자체를 다루되, 사실관계는 확인된 보도가 있을 때만 정리하는 팩트체크형 쇼츠",
+        "target": "반도체·경제 이슈 관심층",
+        "fun_score": 4,
+        "risk": "medium",
+        "risk_note": "근거 뉴스가 없어 사실 여부 불명확. 출하 중단을 단정하면 허위정보 위험이 있어 확인 전 제작 보류 권장"
+      },
+      {
+        "rank": 4,
+        "keyword": "두산",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "두산에너빌리티 해상풍력터빈, 글로벌 보험 문턱 넘었다",
+          "두산에너빌리티 \"야월해상풍력발전단지, 글로벌 수준 보험 가입\"",
+          "두산에너빌리티 8MW 해상풍력터빈, 글로벌 보험 기준 적용…해외 시장 진출 기반 강화"
+        ],
+        "topic": "두산에너빌리티 해상풍력터빈, 글로벌 보험 문턱을 넘다",
+        "why_now": "'두산에너빌리티 8MW 해상풍력터빈, 글로벌 보험 기준 적용…해외 시장 진출 기반 강화' 보도",
+        "angle": "'보험이 뭐길래 뉴스가 되나' 설명형. 바다 위 거대 터빈이 보험 심사를 통과해야 하는 이유를 '신입 면접 합격' 상황극으로 재미있게 표현",
+        "target": "경제·산업 관심층, 두산 주주",
+        "fun_score": 4,
+        "risk": "low",
+        "risk_note": ""
+      },
+      {
+        "rank": 5,
+        "keyword": "펍지",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "PUBG x IVE 콜라보레이션 아이템 모델링 개선 안내 - 뉴스 - PUBG: 배틀그라운드",
+          "PUBG, 베트남 선수 불매운동 여파로 스팀 매출 순위 12계단 급락",
+          "히마스-탄부 사건 이후 타격을 입은 PUBG가 한국 최고의 인기 K팝 그룹에 '도움'을 요청했다."
+        ],
+        "topic": "PUBG 베트남 불매운동 후폭풍, IVE 콜라보로 구원 요청?",
+        "why_now": "'PUBG, 베트남 선수 불매운동 여파로 스팀 매출 순위 12계단 급락', 'PUBG x IVE 콜라보레이션 아이템 모델링 개선 안내' 보도",
+        "angle": "'스팀 순위 12계단 급락 + 아이돌 콜라보 투입' 흐름을 30초 이슈 정리와 게이머 반응 중심으로 구성. 논란 당사자 비난 없이 상황만 정리",
+        "target": "배그 유저, 10~30대 게이머",
+        "fun_score": 6,
+        "risk": "high",
+        "risk_note": "국가 간 갈등·불매·사건 이슈와 연결되어 혐오 표현으로 번질 위험. 헤드라인에 언급된 사건 상세는 확인된 사실만 사용"
+      },
+      {
+        "rank": 6,
+        "keyword": "연준",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "'나혼산' TXT 연준, 절친 서범준과 '소분메이트'...반반 공동 구매 - 머니투데이",
+          "TXT 연준, 자취 10년 차 절친 서범준과 '소분메이트' 결성",
+          "TXT 연준, 절친의 조카 위해 유아차 선물 “아기 너무 좋아해” (나혼산)"
+        ],
+        "topic": "TXT 연준과 절친 서범준의 '소분메이트' 반반 공동구매",
+        "why_now": "'나혼산' TXT 연준, 절친 서범준과 '소분메이트'...반반 공동 구매 보도",
+        "angle": "자취 10년 차 절친과 물건을 반반 나눠 사는 모습을 '소분 라이프' 꿀팁과 훈훈한 케미 중심으로 정리. 미국 연준(금리) 검색 혼동 드립도 가능",
+        "target": "TXT 팬(MOA), 자취생, 나혼산 시청자",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": ""
+      },
+      {
+        "rank": 7,
+        "keyword": "오현민",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "'데블스 플랜3' 오현민, 장동민 옆 눈물.. 탈락 심경 \"많이 부족했다\" [전문]",
+          "'데블스플랜3' 탈락 오현민 \"누구 하나 못된 사람 없어…비난 말아달라\"",
+          "‘데블스 플랜3’ 오현민 “출연진 비난하지 말아달라”"
+        ],
+        "topic": "데블스 플랜3 탈락 후 오현민이 남긴 말 '비난하지 말아달라'",
+        "why_now": "'데블스플랜3 탈락 오현민 \"누구 하나 못된 사람 없어…비난 말아달라\"' 보도",
+        "angle": "탈락 순간의 심경과 출연진 보호 메시지를 중심으로 한 훈훈한 정리. 게임 서바이벌의 반전 포인트와 시청자 반응 요약",
+        "target": "데블스 플랜 시청자, 예능 팬",
+        "fun_score": 5,
+        "risk": "medium",
+        "risk_note": "출연진 간 갈등·악플 논란과 연결될 수 있어 특정 출연자 비판 배제"
+      },
+      {
+        "rank": 8,
+        "keyword": "india a cricket team vs nepal national cricket team match scorecard",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "Live Cricket Score, Schedule, Latest News, Stats & Videos",
+          "Live Cricket Score, Schedule, Latest News, Stats & Videos",
+          "Live Cricket Score, Schedule, Latest News, Stats & Videos"
+        ],
+        "topic": "인도 A vs 네팔 크리켓 경기, 한국에서 갑자기 검색되는 이유",
+        "why_now": "뉴스 제목이 모두 라이브 스코어 사이트 안내 문구라 구체적 경기 내용 근거 없음",
+        "angle": "한국인에게 낯선 크리켓 룰 대신 '왜 이게 한국 검색어 상위에?' 호기심 포인트로 접근. 경기 결과는 확인된 정보 없이 언급하지 않음",
+        "target": "스포츠 호기심층, 해외 스포츠 팬",
+        "fun_score": 3,
+        "risk": "low",
+        "risk_note": "결과 정보 부족으로 구체 내용 제작 어려움. 우선순위 낮음"
+      },
+      {
+        "rank": 9,
+        "keyword": "류효영",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "“오빠한테 관심 있어” 고백한 류효영, 이태성과 첫 키스 장소 방문 (신랑수업2)",
+          "“오빠 이제 집에 못 간다니까?” 태성을 납치한 용감한 그녀 효영?!",
+          "'류화영 쌍둥이' 류효영, 돌싱+싱글대디 ♥이태성에 직진 \"나 아껴?\"('신랑수업2')"
+        ],
+        "topic": "신랑수업2 류효영, 이태성에게 '오빠한테 관심 있어' 직진 고백",
+        "why_now": "'“오빠한테 관심 있어” 고백한 류효영, 이태성과 첫 키스 장소 방문 (신랑수업2)' 보도",
+        "angle": "'오빠 이제 집에 못 간다니까?' 납치 장면 등 직진 로맨스를 연애 예능 하이라이트 + 댓글 반응 드립으로 편집",
+        "target": "신랑수업 시청자, 20~40대 여성",
+        "fun_score": 7,
+        "risk": "medium",
+        "risk_note": "실존 인물의 연애·가족사(돌싱, 싱글대디) 언급 시 사생활 존중 필요. 방송에 나온 내용만 사용"
+      },
+      {
+        "rank": 10,
+        "keyword": "u17 việt nam",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "Lịch thi đấu U.17 Việt Nam mới nhất: Đấu U.17 New Zealand, cơ hội thắng là đây",
+          "U17 Việt Nam và 90 phút đáng khen trước 'gã khổng lồ' U17 Bỉ",
+          "Bảng xếp hạng U.17 World Cup mới nhất: 2 siêu phẩm giúp Việt Nam thoát đáy, Mali tốp 1 nhờ thắng New Zealand"
+        ],
+        "topic": "U17 월드컵 베트남, 벨기에전 90분 선전과 뉴질랜드전 전망",
+        "why_now": "'U17 Việt Nam và 90 phút đáng khen trước gã khổng lồ U17 Bỉ', 'U.17 Việt Nam: Đấu U.17 New Zealand' 보도",
+        "angle": "약체의 선전 서사로 '거인 벨기에를 상대로 버틴 베트남' 하이라이트 정리. 한국 내 베트남 팬과 동남아 축구 관심층 겨냥",
+        "target": "축구 팬, 박항서 이후 베트남 축구 관심층",
+        "fun_score": 5,
+        "risk": "low",
+        "risk_note": "기사가 베트남어라 점수·세부 내용은 확인 후 사용. 국가 비하 표현 주의"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": []
+  },
+  "selected_attempt": 1,
+  "plan": {
+    "chosen_rank": 1,
+    "reason": "세 후보 모두 검색량이 5000+로 같아 보고서 순위가 가장 높은 1위를 골랐다. 엔비디아(fun_score 7)가 조금 더 재미있지만 압도적이라고 보기는 어렵다. 부동산은 '동결인데 왜 세금은 오르나'라는 반전이 있고 누구에게나 해당되는 얘기라 공유와 댓글 반응을 기대할 수 있다. 사실은 뉴스 제목에 있는 내용만 썼다: 현실화율 69퍼센트, 5년째 동결, 집값이 오른 곳은 보유세가 오를 듯. 계산이 없어 단위 검산은 필요 없다. 정당 평가와 정책 옳고 그름은 뺐다.",
+    "title": "공시가 동결인데 내 세금은 오른다고?",
+    "hook": "동결이라며? 근데 왜 내 보유세는 오른다는 거야?",
+    "bgm_mood": "suspense",
+    "style": "vibrant 3D cartoon, soft lighting, high detail, bright pastel colors, cute character design",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "동결이라며? 근데 왜 내 보유세는 오른다는 거야?",
+        "on_screen_text": "동결인데 왜?",
+        "image_prompt": "a shocked cute cartoon cat holding a small frozen ice block in one paw and looking at a tiny house with a big question mark floating above its head, wide eyes, dramatic expression, simple pastel background"
+      },
+      {
+        "id": 2,
+        "narration": "오늘 부동산 검색량이 터진 이유가 이거야. 아파트 공시가격 현실화율이 69퍼센트로 동결됐대.",
+        "on_screen_text": "검색량 터진 이유",
+        "image_prompt": "a cute cartoon apartment building with a big magnifying glass in front of it, small curious animal characters crowding around to look, bright sky background"
+      },
+      {
+        "id": 3,
+        "narration": "이게 무려 5년째야. 올해도 안 올렸다는 거지. 보유세 걱정하던 사람들은 일단 한숨 돌리는 분위기.",
+        "on_screen_text": "5년째 동결",
+        "image_prompt": "a relieved cute cartoon hamster wiping its forehead with a tiny towel and sitting on a sofa in a cozy living room, five small calendar pages stacked beside it, warm lighting"
+      },
+      {
+        "id": 4,
+        "narration": "근데 여기서 반전. 현실화율이 묶여도 집값이 오른 동네는 보유세가 오를 것 같대.",
+        "on_screen_text": "여기서 반전",
+        "image_prompt": "a cute cartoon fox doing a dramatic double take, mouth wide open, a small house on a hill growing taller behind it, suspenseful dark purple and blue lighting"
+      },
+      {
+        "id": 5,
+        "narration": "비율은 가만히 있는데 집값이 알아서 달려가는 거야. 브레이크는 밟았는데 오르막길을 올라가는 느낌이랄까.",
+        "on_screen_text": "브레이크 밟았는데",
+        "image_prompt": "a tiny cartoon car with a panicked bear driver on a steep uphill road, the road climbing toward a row of tall cute houses, motion lines, bright daylight"
+      },
+      {
+        "id": 6,
+        "narration": "결국 동결이라는 말이 내 지갑한테는 안 통할 수도 있다는 거지.",
+        "on_screen_text": "지갑은 모른다",
+        "image_prompt": "a sad cartoon wallet character with big teary eyes and a small cartoon house sitting on top of it, soft sparkles falling, pastel background"
+      },
+      {
+        "id": 7,
+        "narration": "동결이면 일단 안심이다 파, 집값 오르면 소용없다 파. 너는 어느 쪽이야?",
+        "on_screen_text": "너는 어느 쪽?",
+        "image_prompt": "two cute cartoon animals facing each other, a smiling rabbit on the left holding a green flag and a worried raccoon on the right holding a red flag, a small house between them, playful split background"
+      }
+    ],
+    "description": "공시가 현실화율 69퍼센트 5년째 동결, 그런데 집값이 오른 곳은 보유세가 오를 듯하다는 소식. 동결인데 왜 내 세금은 오를까? #부동산 #공시가격 #보유세",
+    "tags": [
+      "부동산",
+      "공시가격",
+      "현실화율",
+      "보유세",
+      "공시가 동결",
+      "아파트",
+      "쇼츠",
+      "오늘의 이슈"
+    ],
+    "comment_question": "공시가 동결이면 일단 안심이다 vs 집값 오르면 소용없다, 너는 어느 쪽?"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 7
+    }
+  },
+  "effects": {
+    "duration": 48.77,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Ghost Story",
+    "bgm_mood": "suspense",
+    "bgm_credit": "Music: \"Ghost Story\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "동결이라며? 근데 왜 내 보유세는 오른다는 거야?",
+      "on_screen_text": "동결인데 왜?",
+      "image": "runs/2026-11-21/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "오늘 부동산 검색량이 터진 이유가 이거야. 아파트 공시가격 현실화율이 69퍼센트로 동결됐대.",
+      "on_screen_text": "검색량 터진 이유",
+      "image": "runs/2026-11-21/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "이게 무려 5년째야. 올해도 안 올렸다는 거지. 보유세 걱정하던 사람들은 일단 한숨 돌리는 분위기.",
+      "on_screen_text": "5년째 동결",
+      "image": "runs/2026-11-21/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "근데 여기서 반전. 현실화율이 묶여도 집값이 오른 동네는 보유세가 오를 것 같대.",
+      "on_screen_text": "여기서 반전",
+      "image": "runs/2026-11-21/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "비율은 가만히 있는데 집값이 알아서 달려가는 거야. 브레이크는 밟았는데 오르막길을 올라가는 느낌이랄까.",
+      "on_screen_text": "브레이크 밟았는데",
+      "image": "runs/2026-11-21/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "결국 동결이라는 말이 내 지갑한테는 안 통할 수도 있다는 거지.",
+      "on_screen_text": "지갑은 모른다",
+      "image": "runs/2026-11-21/scene_06.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 7,
+      "narration": "동결이면 일단 안심이다 파, 집값 오르면 소용없다 파. 너는 어느 쪽이야?",
+      "on_screen_text": "너는 어느 쪽?",
+      "image": "runs/2026-11-21/scene_07.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-11-21/thumbnail.jpg",
+  "video_file": "videos/2026-11-21.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "YT_* 시크릿 없음"
+  },
+  "finished_at": "2026-11-21T01:31:18+09:00"
+}
