@@ -1,0 +1,485 @@
+{
+  "date": "2026-11-22",
+  "status": "qa_failed",
+  "started_at": "2026-11-22T00:42:18+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-11-22T00:42:18+09:00",
+      "note": "",
+      "seconds": 23.8
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-22T00:42:42+09:00",
+      "note": "",
+      "seconds": 19.3
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-22T00:43:01+09:00",
+      "note": "",
+      "seconds": 26.9
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-22T00:43:28+09:00",
+      "note": "",
+      "seconds": 39.4
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-22T00:44:07+09:00",
+      "note": "1차",
+      "seconds": 23.4
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-22T00:44:31+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 19.4
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-22T00:44:50+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 23.6
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-22T00:45:14+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 34.6
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-22T00:45:48+09:00",
+      "note": "2차",
+      "seconds": 20.5
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-22T00:46:09+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 34.9
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-22T00:46:44+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 33.9
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-22T00:47:18+09:00",
+      "note": "3차",
+      "seconds": 24.4
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 52,
+        "hook": 68,
+        "clarity": 62,
+        "visual": 60,
+        "subtitle": 78,
+        "safety": 70
+      },
+      "overall": 63,
+      "pass": false,
+      "issues": [
+        "첫 장면 이미지가 '급락'과 반대입니다. 프레임 f0에서 빨간 화살표가 오른쪽 위를 향합니다. 프롬프트는 plunging down인데 상승 차트처럼 보여서 첫 3초 훅이 약해지고 시청자가 헷갈립니다.",
+        "씬5 롤러코스터 곰이 웃는 얼굴이고 트랙도 위로 뻗어 있습니다. 급락과 공포 분위기가 전달되지 않습니다.",
+        "씬3 폭탄 이미지가 이상합니다. 폭탄 두 개가 겹쳐 있고 대포 같은 구조물이 붙어 있습니다. 개미는 폭탄을 떨어지는 물체가 아니라 만지는 물체로 보여줍니다. 별 무늬도 의미 없이 들어갔습니다.",
+        "씬7 토끼가 웃으며 코인을 던지는 모습이라 '불안해서 던지는' 감정과 맞지 않습니다.",
+        "논리 확인 필요: 하루 5.3% 하락으로 '올해 오른 걸 전부 토해냈다', '1년 치 수익이 하루 만에 증발'이라고 했습니다. 올해 상승률이 5% 안팎이 아니면 성립하기 어렵습니다. 사실 여부와 수치 출처 확인이 필요합니다.",
+        "확인 필요: '170조 폭탄'이 무엇을 뜻하는지 대본에 근거와 설명이 없습니다. 원화 기준 한국 투자자 손실 추정치로 보이는데 출처가 없고 '~까지 나와요'로 얼버무렸습니다. 단위(조)와 산출 근거를 확인해야 합니다.",
+        "씬4 '숨은 리스크'가 무엇인지 끝까지 밝히지 않습니다. 궁금증만 만들고 해소하지 않아 클리어니티와 재미가 떨어집니다. 씬5도 '돌파구가 안 보인다'로 막연하게 끝납니다.",
+        "설명란은 '30초로 정리'라고 쓰지만 실제 길이는 41.97초입니다. 해시태그 #AI버블은 본문에 나오지 않습니다.",
+        "뉴스 요약 나열 구조라 반전이나 드립이 약합니다. 씬6의 공감 포인트와 씬7의 투표 유도 마무리 외에는 교과서 톤에 가깝습니다.",
+        "자막은 읽기 쉽지만 하단 자막이 캐릭터와 코인 위에 겹칩니다. 큰 문제는 아닙니다."
+      ],
+      "retry_target": "planner",
+      "feedback": "1) 사실관계를 먼저 확정하세요. 나스닥 5.3% 하락이 실제로 올해 상승분 전부를 지웠는지, 170조 원이 무엇의 추정치인지(출처, 기준일, 단위)를 확인합니다. 확인이 안 되면 '올해 상승분을 대부분 반납'처럼 약하게 쓰거나 해당 문장을 빼세요. 2) 훅을 구체적인 수치와 감정으로 바꾸세요. 예: '금요일 밤 내 계좌가 -5.3%였다'처럼 시청자 본인의 이야기로 시작합니다. 3) '숨은 리스크'는 반드시 한 문장으로 정체를 밝히거나, 밝힐 수 없으면 그 씬을 삭제하세요. 4) 중간에 반전이나 드립을 1~2개 넣어 뉴스 나열 구조를 벗어나세요. 5) 길이를 30초 안팎으로 줄이거나 설명란의 '30초' 문구를 수정하고, 본문에 없는 #AI버블 해시태그를 정리하세요. 6) image_prompt는 상승 화살표 오해를 막도록 'arrow pointing DOWNWARD, red candle chart falling from top-left to bottom-right', '곰은 겁먹은 표정', '토끼는 불안한 표정'처럼 방향과 감정을 명시하세요. 폭탄은 'one single bomb falling from the sky'로 지정하세요."
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 58,
+        "hook": 70,
+        "clarity": 70,
+        "visual": 48,
+        "subtitle": 72,
+        "safety": 75
+      },
+      "overall": 65,
+      "pass": false,
+      "issues": [
+        "씬1(0.6초 프레임): 프롬프트는 하락 화살표만 지정했는데 위로 향한 큰 주황 화살표가 같이 나옴. 폭락 내용과 반대라 오해를 부르고, 훅 장면이라 더 치명적임.",
+        "씬2(30% 프레임): 빨간 화살표가 우상향임. '검은 금요일 / 토해냈다'와 정반대 메시지임. 프롬프트의 'DOWNWARD'가 무시됨.",
+        "씬5(85% 프레임): 달력 글씨가 깨져 'JAILY'로 보이고 숫자도 엉망임. 개미 몸통은 어색하게 뭉개져 있음.",
+        "씬4(55% 프레임): 주인공이 개미라기보다 초록 오리나 도마뱀처럼 보임. 씬5의 개미와 캐릭터가 일관되지 않음.",
+        "모든 프레임이 정사각형에 가까운 이미지를 1080x1920 세로 화면에 얹고 위아래를 흐린 배경으로 채웠음. 화면 활용도가 낮고 쇼츠다운 몰입감이 떨어짐.",
+        "씬2 달력에 영어 'Friday'가 들어가 한국어 영상과 이질적임.",
+        "85% 프레임에는 하단 내레이션 자막이 보이지 않음. 자막 공백이나 싱크 확인 필요.",
+        "길이가 41.4초인데 description에는 '30초 안팎'이라고 적혀 있음. 불일치함.",
+        "'나스닥 -5.3%', '올해 오른 걸 대부분 토해냈다', '검은 금요일'이라는 명칭은 사실 확인 필요함. 출처가 기획서에 없음.",
+        "재미 요소가 약함. 상황 설명과 공감 위주이고 뚜렷한 반전이나 펀치라인이 없음. 마지막 '버티기 vs 던지기' 질문만 있고 드립은 '투자 방탈출' 한 번뿐임."
+      ],
+      "retry_target": "producer",
+      "feedback": "[producer 재작업] 1) 씬1과 씬2에서 상승 화살표가 나오지 않게 다시 생성하세요. 프롬프트에 'ONLY ONE arrow, pointing down. No upward arrow, no green' 같은 부정 조건을 넣고, 화살표가 필요 없으면 빼는 쪽이 안전합니다. 2) 달력과 숫자 같은 글자 요소는 이미지에 넣지 마세요. 'no text, no numbers, no letters'를 명시하고 글자는 자막으로만 처리합니다. 3) 개미 캐릭터를 씬4와 씬5에서 일관되게 하세요. 'a cute red-brown ant with two antennae, six legs, round head'처럼 외형을 고정하고, 오리나 도마뱀처럼 보이지 않게 합니다. 4) 9:16 세로 구도로 생성하거나 상하 여백을 최소화하세요. 5) 85% 구간의 하단 내레이션 자막이 누락됐는지 effector와 함께 확인하세요. 6) (planner 참고) 수치와 '검은 금요일' 명칭은 출처를 확인하세요. 후반에 반전 드립을 한 줄 넣으면 재미 점수가 오릅니다. 예: '앱 지우면 주가가 오르는 줄 알았죠?'. 길이는 30초대로 줄이거나 description을 실제 길이에 맞추세요."
+    },
+    {
+      "attempt": 3,
+      "scores": {
+        "fun": 50,
+        "hook": 55,
+        "clarity": 70,
+        "visual": 55,
+        "subtitle": 72,
+        "safety": 68
+      },
+      "overall": 59,
+      "pass": false,
+      "issues": [
+        "첫 프레임(0.6초): 대본은 '-5.3% 급락'인데 화면 차트는 오른쪽 위로 올라가는 상승 그래프입니다. image_prompt의 '왼쪽 위에서 오른쪽 아래로 내려가는 빨간 선'과도 반대입니다. 훅의 핵심 메시지와 화면이 충돌합니다.",
+        "햄스터의 표정은 놀란 상태지만, 상승 차트와 같이 보이면 '왜 놀랐는지' 전달이 안 됩니다. 시청자가 급락 상황을 한눈에 알 수 없습니다.",
+        "개미 캐릭터가 장면마다 다릅니다. 장면 4는 주황색 둥근 몸에 사람 같은 팔과 손, 장면 5는 사실적인 갈색 개미 형태입니다. 같은 주인공으로 보이지 않습니다.",
+        "장면 4 개미는 웃는 얼굴인데 프롬프트는 '걱정스러운 눈'입니다. 대사('열어도 마이너스')의 감정과 어긋납니다.",
+        "장면 2 프레임은 동전 더미와 연기만 있어 정적입니다. '토해냈다'는 표현에 비해 임팩트가 약하고, 아래쪽 블러 영역이 어색합니다.",
+        "이미지가 9:16 화면을 채우지 못하고 위아래에 블러 띠가 생깁니다. 장면 1과 5는 상하 여백이 눈에 띕니다.",
+        "재미 부족: 상황을 설명하고 공감을 묻는 구성이고 반전이 없습니다. '방탈출' 드립 하나가 전부이며, 마지막 '버티기 vs 던지기'는 질문만 던지고 끝납니다. 투자 상식 해설 톤에 가깝습니다.",
+        "길이 41.4초인데 description은 '30초 안팎'이라고 적혀 있어 서로 맞지 않습니다. 쇼츠로는 다소 깁니다.",
+        "'나스닥 -5.3%', '올해 오른 걸 대부분 토해냈다'는 수치와 사실은 확인 필요입니다. 오늘이 2026-11-21인데 해당 금요일 종가와 일치하는지, 출처가 있는지 검증해야 합니다.",
+        "'버티기냐 던지기냐'는 사실상 매매 판단을 묻는 질문이라, 투자 권유로 오해받지 않도록 면책 문구나 중립 표현이 있으면 좋습니다.",
+        "자막은 읽기 쉽습니다. 상단 박스와 하단 강조 자막 모두 가독성이 좋고 인물 얼굴을 가리지 않습니다. 다만 하단 자막이 화면 중앙에 가까워 인물 몸통을 일부 가립니다."
+      ],
+      "retry_target": "producer",
+      "feedback": "[producer] 1) 장면 1 차트를 확실한 하락 그래프로 다시 생성하세요. 왼쪽 위에서 오른쪽 아래로 급락하는 빨간 선, 아래 방향 화살표, 빨간 숫자 '-5.3%'가 보여야 합니다. 상승 곡선이 나오지 않도록 negative prompt에 'rising line, upward trend, green'을 넣으세요. 2) 개미 캐릭터를 하나로 고정하세요. 예: 'orange cartoon ant, big round head, two antennae, 4 limbs, same style'을 장면 4, 5, 6에 동일하게 쓰고, 가능하면 같은 seed나 레퍼런스를 사용하세요. 장면 4는 웃는 얼굴이 아니라 걱정하는 눈과 처진 눈썹으로 다시 뽑으세요. 3) 장면 2는 코인이 연기로 흩어지는 동적인 구도와 어두운 구름으로 다시 만들고, 이미지가 9:16 전체를 채우도록 하세요. 블러 여백이 보이지 않게 해야 합니다. 4) 하단 자막은 화면 아래쪽 약 75~80% 지점으로 내려 캐릭터를 가리지 않게 하세요. [planner 참고] 재작업 후에도 재미 점수가 낮다면 반전 드립을 추가하고, 길이를 30초 안팎으로 줄이세요. 예: '열어도 마이너스, 닫아도 마이너스'를 반복 리듬으로 쓰고 마지막에 반전 한 줄을 넣는 식입니다. 수치와 '올해 상승분 반납' 표현은 출처를 확인하고, 확인되지 않으면 삭제하거나 완화하세요."
+    }
+  ],
+  "marketer": {
+    "summary": "나스닥 5.3% 폭락 '검은 금요일'로 AI 버블 공포가 한국 개미까지 덮친 가운데, 카스트로프의 3개월 만의 선발 복귀와 LCK 스토브리그(도란·카나비 DK행, 쇼메이커 잔류), 유럽 축구 주말 경기가 함께 뜨는 하루",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "첼시 대 리즈 유나이티드",
+        "traffic": "2000+",
+        "traffic_num": 2000,
+        "news": [
+          "프리미어 리그 첼시 대 리즈 점수 예측",
+          "첼시와 알론소 감독이 직면한 어려운 딜레마.",
+          "11월 21일 22시, 프리미어 리그 11라운드 첼시 대 리즈 경기 생중계 링크입니다."
+        ],
+        "topic": "첼시 vs 리즈 프리미어리그 11라운드, 알론소 감독이 직면한 '어려운 딜레마' 30초 정리",
+        "why_now": "'첼시와 알론소 감독이 직면한 어려운 딜레마', '프리미어 리그 11라운드 첼시 대 리즈 경기' 등 경기 직전 기사가 몰림",
+        "angle": "경기 전 30초 프리뷰 + 감독의 딜레마를 '점심 메뉴 고르기 못 하는 상황극'처럼 과장한 드립. 점수 예측 댓글 참여 유도",
+        "target": "프리미어리그 팬, 20~40대 남성 축구 시청자",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": "뉴스 제목에 딜레마의 구체적 내용이 없으므로 선수 기용 등 세부 사실을 지어내지 말 것"
+      },
+      {
+        "rank": 2,
+        "keyword": "ai 버블",
+        "traffic": "2000+",
+        "traffic_num": 2000,
+        "news": [
+          "개미들 덮친 170조 폭탄…패닉셀 부른 '숨은 리스크' 있었다",
+          "나스닥 5.3% 폭락 '검은 금요일'‥올해 상승분 모두 반납",
+          "뉴욕증시 또 급락…“돌파구가 보이지 않아”"
+        ],
+        "topic": "나스닥 5.3% 폭락 '검은 금요일', 올해 상승분 전부 반납 - 이게 왜 난리냐면",
+        "why_now": "'나스닥 5.3% 폭락 검은 금요일‥올해 상승분 모두 반납', '개미들 덮친 170조 폭탄…패닉셀' 기사가 연일 나옴",
+        "angle": "'1년 치 수익이 하루 만에 증발' 숫자 비교 + 개미 투자자 상황극(주말 내내 계좌 안 여는 사람). 투자 조언 없이 이슈와 반응만 다룸",
+        "target": "주식·미국 증시 투자 중인 20~40대",
+        "fun_score": 7,
+        "risk": "medium",
+        "risk_note": "투자 손실 이슈라 피해자 조롱으로 비치면 안 됨. 종목 추천·전망 단정 금지, 뉴스 제목에 있는 숫자(5.3%, 170조)만 사용"
+      },
+      {
+        "rank": 3,
+        "keyword": "george munsey",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "George Munsey: NPL final ticket rush shows how much demand can stretch a 10,000-seat venue",
+          "Live Cricket Score, Schedule, Latest News, Stats & Videos",
+          "Lumbini lost wicket of Aasif"
+        ],
+        "topic": "조지 먼시, NPL 결승 티켓 대란 - 1만 석 경기장에 몰린 수요",
+        "why_now": "'George Munsey: NPL final ticket rush shows how much demand can stretch a 10,000-seat venue' 기사로 검색 급증",
+        "angle": "'크리켓을 모르는 사람도 이해되는 티켓 전쟁' 30초 정리. 1만 석에 사람이 몰리는 상황을 콘서트 피켓팅에 비유",
+        "target": "스포츠 이슈 관심층, 해외 스포츠 입문자",
+        "fun_score": 4,
+        "risk": "low",
+        "risk_note": "한국 내 인지도가 낮고 제목 정보가 한정적이라 구체적 수치·경기 내용을 추가로 지어내지 말 것"
+      },
+      {
+        "rank": 4,
+        "keyword": "코번트리 대 크리스털 팰리스",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "Man City 1-1 Fulham (Nov 21, 2026) Game Analysis",
+          "Nottm Forest vs. Chelsea (Nov 27, 2026) Odds and Spread",
+          "Man City vs. Fulham (Nov 21, 2026) Team Stats"
+        ],
+        "topic": "코번트리 vs 크리스털 팰리스 경기 전후 관심 폭발, 오늘 잉글랜드 축구 결과 한눈에",
+        "why_now": "해당 경기 직접 기사는 없고 같은 날 '맨시티 1-1 풀럼', '노팅엄 vs 첼시(11/27)' 등 잉글랜드 축구 기사가 함께 노출됨",
+        "angle": "'맨시티가 풀럼과 1-1' 같은 오늘 결과를 묶은 주말 잉글랜드 축구 30초 요약. 비긴 경기 위주로 드립",
+        "target": "잉글랜드 축구 팬",
+        "fun_score": 4,
+        "risk": "low",
+        "risk_note": "코번트리-팰리스 경기 자체의 스코어·내용은 제목에 없으므로 단정 금지. 확인된 맨시티 1-1 풀럼 결과 중심으로 구성"
+      },
+      {
+        "rank": 5,
+        "keyword": "묀헨글라트바흐 대 도르트문트",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "'독일 무대에서 사라졌던 태극전사, 마침내 돌아왔다' 옌스 카스트로프, 시즌 22분 출전 설움 딛고 BVB전 선발 - 머니투데이",
+          "‘韓축구 풀백의 희망’ 옌스, BVB전서 첫 선발 출격 전망...“빠르게 투입 가능”",
+          "'韓 국가대표' 카스트로프...마침내 100%로 돌아왔다! 어깨 수술→3개월 만에 선발 출격 임박 \"왼쪽 측면 배치될 것으로 보여\""
+        ],
+        "topic": "어깨 수술 3개월 만에 돌아온 카스트로프, 시즌 22분 출전 설움 딛고 BVB전 선발",
+        "why_now": "'시즌 22분 출전 설움 딛고 BVB전 선발', '어깨 수술→3개월 만에 100%로 복귀' 기사 다수",
+        "angle": "'22분 → 선발' 숫자 대비로 보는 복귀 서사. 태극전사 응원 톤의 '돌아온 옌스' 30초 스토리",
+        "target": "분데스리가·국가대표 축구 팬, 20~40대",
+        "fun_score": 8,
+        "risk": "low",
+        "risk_note": "선발 '임박/전망' 기사이므로 실제 출전·활약은 경기 결과 확인 후 반영할 것"
+      },
+      {
+        "rank": 6,
+        "keyword": "쇼메이커",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "[오피셜] T1 떠난 ‘도란’ 최현준, DK 유니폼 입는다… ‘카나비’와 함께 상체 구축",
+          "[단독] ‘카나비’ 서진혁, ‘씨맥’ 품으로 가나… DK행 유력, 최종 협상 진행 중",
+          "‘쇼메이커·스매쉬·씨맥’ 잔류…디플러스 기아, 핵심 전력 지켰다"
+        ],
+        "topic": "LCK 스토브리그 정리: 쇼메이커·스매쉬·씨맥 잔류, 도란·카나비는 DK행",
+        "why_now": "'쇼메이커·스매쉬·씨맥 잔류…디플러스 기아 핵심 전력 지켰다', '도란 DK 입단 오피셜', '카나비 DK행 유력' 기사",
+        "angle": "'이적 시장 한 장 정리' 라인업 비교 + 팬 반응 밈. '상체 구축'을 건설 현장 드립으로 비틈",
+        "target": "LoL·LCK 팬, 10~30대",
+        "fun_score": 8,
+        "risk": "low",
+        "risk_note": "카나비 DK행은 '유력/협상 중' 단계이므로 확정처럼 표현하지 말 것. 선수 개인 비방 금지"
+      },
+      {
+        "rank": 7,
+        "keyword": "우니온 베를린 대 라이프치히",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "Confirmed lineups: 1.FC Union Berlin vs. RB Leipzig",
+          "Union Berlin vs RB Leipzig: German Bundesliga stats & head-to-head",
+          "Licensable picture: Bundesliga - 1. FC Union Berlin v RB Leipzig"
+        ],
+        "topic": "우니온 베를린 vs 라이프치히 분데스리가 선발 라인업 공개",
+        "why_now": "'Confirmed lineups: 1.FC Union Berlin vs. RB Leipzig' 등 경기 직전·당일 기사",
+        "angle": "라인업 30초 프리뷰와 상대전적 포인트를 가볍게 정리하고 승부 예측 댓글 유도",
+        "target": "분데스리가 팬",
+        "fun_score": 4,
+        "risk": "low",
+        "risk_note": "제목에 선수 명단·전적 수치가 없어 구체 내용은 공식 확인 후 사용"
+      },
+      {
+        "rank": 8,
+        "keyword": "장동민",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "‘독박투어’ 김재원 “역사 잘 알면 사람이 삐딱해져”",
+          "인기 여행 예능프로그램, 김해 소개한다",
+          "‘독박투어’ 김준호, 2세 ‘두릅이’ 위해 역사 지식 대방출"
+        ],
+        "topic": "'독박투어' 김해 편 화제 - 김준호의 2세 '두릅이'를 위한 역사 지식 대방출",
+        "why_now": "'독박투어 김준호, 2세 두릅이 위해 역사 지식 대방출', '김재원 \"역사 잘 알면 사람이 삐딱해져\"' 기사",
+        "angle": "'역사 잘 알면 삐딱해진다' 발언과 역사 대방출 장면을 엮은 예능 하이라이트식 드립 요약",
+        "target": "예능·여행 프로그램 시청자, 30~50대",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": "장동민 직접 관련 기사는 없고 독박투어 출연진 기사 중심. 방송 원본 영상 사용 시 저작권 유의, 출연자 발언은 맥락 왜곡 없이 인용"
+      },
+      {
+        "rank": 9,
+        "keyword": "tvn",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "Podejście do fontanny di Trevi kosztuje turystów 2 euro. Turyści rzadziej wrzucają monety",
+          "Straty liczą w setkach tysięcy euro. Chodzi o słynną atrakcję turystyczną w Rzymie",
+          "Milionowe wpływy pod znakiem zapytania. Turyści w Rzymie zmieniają swoje zwyczaje"
+        ],
+        "topic": "로마 트레비 분수 2유로 입장료 시행 후 동전 던지는 관광객 감소",
+        "why_now": "폴란드 기사들: 트레비 분수 접근에 2유로 부과, 관광객이 동전을 덜 던져 수십만 유로 손실 우려",
+        "angle": "'소원 빌려다 입장료 내는 시대' 반전 포인트. 동전 수입이 줄어든 아이러니를 30초로 정리",
+        "target": "해외여행 관심층, 20~40대",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": "키워드 'tvn'과 뉴스 내용이 직접 연관되지 않아 검색 의도가 불분명함. 제목에 있는 2유로·수십만 유로 손실만 사용하고 tvn 연관 주장은 하지 말 것"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": [
+      {
+        "keyword": "그것이 알고싶다",
+        "blocked_by": "학대"
+      }
+    ]
+  },
+  "selected_attempt": 2,
+  "plan": {
+    "chosen_rank": 2,
+    "reason": "검색량은 rank 1과 같은 2000+이고 재미 점수는 rank 2가 7로 더 높아서 AI 버블 이슈를 골랐다. QA 피드백에 따라 확인이 안 되는 내용은 약하게 쓰거나 뺐다. 올해 상승분 반납은 '대부분 토해냈다는 말까지 나왔다'로 약화했다. 170조는 무엇의 추정치인지 출처, 기준일, 단위를 알 수 없어서 삭제했다. 숨은 리스크는 정체를 밝힐 수 없어서 해당 씬을 삭제했다. 훅은 나스닥 마이너스 5.3퍼센트와 '계좌 열어본 사람'이라는 시청자 본인 이야기로 바꿨다. 반전 드립으로 '열어도 마이너스, 닫아도 마이너스, 방탈출' 비유를 넣었다. 사용한 사실은 나스닥 5.3퍼센트 폭락, 검은 금요일, 올해 상승분 반납 언급, 뉴욕증시 또 급락, 돌파구가 안 보인다는 반응뿐이다. 계산은 없고 5.3은 제목 그대로 옮겼다. 투자 손실 이슈라 개미를 조롱하지 않고 공감하는 톤으로 쓰고, 종목 추천이나 전망 단정은 넣지 않았다.",
+    "title": "금요일 밤 나스닥 -5.3%, 계좌 열어본 사람?",
+    "hook": "금요일 밤 나스닥이 마이너스 5.3퍼센트를 찍었어요. 계좌 열어본 사람, 손?",
+    "bgm_mood": "funny",
+    "style": "vibrant 3D cartoon, soft lighting, high detail, cute characters, bold colors, vertical composition",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "금요일 밤 나스닥이 마이너스 5.3퍼센트를 찍었어요. 계좌 열어본 사람, 손?",
+        "on_screen_text": "계좌 열어본 사람?",
+        "image_prompt": "A shocked cartoon hamster in a tiny suit staring at a glowing screen showing a red candle chart falling from top-left to bottom-right, a big red arrow pointing DOWNWARD, dark blue night background, vibrant 3D cartoon, soft lighting, high detail, cute characters, bold colors, vertical composition"
+      },
+      {
+        "id": 2,
+        "narration": "이름부터 검은 금요일. 올해 오른 걸 대부분 토해냈다는 말까지 나왔어요.",
+        "on_screen_text": "검은 금요일",
+        "image_prompt": "A black calendar page for a Friday with a puff of smoke rising from a pile of golden coins fading into the air, a red arrow pointing DOWNWARD beside it, vibrant 3D cartoon, soft lighting, high detail, cute characters, bold colors, vertical composition"
+      },
+      {
+        "id": 3,
+        "narration": "뉴욕증시는 또 급락. 돌파구가 안 보인다는 말이 나올 정도예요.",
+        "on_screen_text": "또 급락",
+        "image_prompt": "A cartoon roller coaster track plunging steeply downward, a scared bear character with wide frightened eyes holding the safety bar, a red arrow pointing DOWNWARD, stormy sky, vibrant 3D cartoon, soft lighting, high detail, cute characters, bold colors, vertical composition"
+      },
+      {
+        "id": 4,
+        "narration": "그래서 개미들은 주말 내내 앱을 열었다 닫았다. 열어도 마이너스, 닫아도 마이너스. 이게 무슨 방탈출이에요.",
+        "on_screen_text": "투자 방탈출",
+        "image_prompt": "A cartoon ant lying on a sofa under a blanket peeking at a glowing smartphone with one eye while hugging a pillow, an anxious worried expression, cozy room at night, vibrant 3D cartoon, soft lighting, high detail, cute characters, bold colors, vertical composition"
+      },
+      {
+        "id": 5,
+        "narration": "월요일 장 열리기 전까지 마음이 편할 리가 없죠. 그래도 일단 주말엔 푹 쉬어요.",
+        "on_screen_text": "일단 푹 쉬자",
+        "image_prompt": "A cute cartoon ant sleeping on a fluffy cloud-shaped bed with a tiny sleeping mask, a small sun rising behind a calendar page, calm pastel background, vibrant 3D cartoon, soft lighting, high detail, cute characters, bold colors, vertical composition"
+      },
+      {
+        "id": 6,
+        "narration": "자, 월요일 장 열리면 어떻게 할래요? 버티기예요, 던지기예요?",
+        "on_screen_text": "버티기 vs 던지기",
+        "image_prompt": "Two cute cartoon characters facing each other, a stubborn bear with a frightened face hugging a gold coin tightly and an anxious rabbit with worried eyes holding a coin out to the side, split dramatic background, vibrant 3D cartoon, soft lighting, high detail, cute characters, bold colors, vertical composition"
+      }
+    ],
+    "description": "나스닥 마이너스 5.3퍼센트, 검은 금요일 이슈를 30초 안팎으로 풀어봤어요. 주말 내내 계좌 앱 열었다 닫은 분들, 공감하시죠? #나스닥 #검은금요일 #뉴욕증시",
+    "tags": [
+      "나스닥",
+      "나스닥폭락",
+      "검은금요일",
+      "뉴욕증시",
+      "개미",
+      "주식",
+      "쇼츠",
+      "이슈"
+    ],
+    "comment_question": "월요일 장 열리면 버티기 vs 던지기, 여러분은 어느 쪽이에요?"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 6
+    }
+  },
+  "effects": {
+    "duration": 41.41,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Monkeys Spinning Monkeys",
+    "bgm_mood": "funny",
+    "bgm_credit": "Music: \"Monkeys Spinning Monkeys\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "금요일 밤 나스닥이 마이너스 5.3퍼센트를 찍었어요. 계좌 열어본 사람, 손?",
+      "on_screen_text": "계좌 열어본 사람?",
+      "image": "runs/2026-11-22/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "이름부터 검은 금요일. 올해 오른 걸 대부분 토해냈다는 말까지 나왔어요.",
+      "on_screen_text": "검은 금요일",
+      "image": "runs/2026-11-22/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "뉴욕증시는 또 급락. 돌파구가 안 보인다는 말이 나올 정도예요.",
+      "on_screen_text": "또 급락",
+      "image": "runs/2026-11-22/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "그래서 개미들은 주말 내내 앱을 열었다 닫았다. 열어도 마이너스, 닫아도 마이너스. 이게 무슨 방탈출이에요.",
+      "on_screen_text": "투자 방탈출",
+      "image": "runs/2026-11-22/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "월요일 장 열리기 전까지 마음이 편할 리가 없죠. 그래도 일단 주말엔 푹 쉬어요.",
+      "on_screen_text": "일단 푹 쉬자",
+      "image": "runs/2026-11-22/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "자, 월요일 장 열리면 어떻게 할래요? 버티기예요, 던지기예요?",
+      "on_screen_text": "버티기 vs 던지기",
+      "image": "runs/2026-11-22/scene_06.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-11-22/thumbnail.jpg",
+  "video_file": "videos/2026-11-22.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "QA 불합격"
+  },
+  "finished_at": "2026-11-22T00:47:42+09:00"
+}

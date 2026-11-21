@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-22",
+    "status": "qa_failed",
+    "title": "금요일 밤 나스닥 -5.3%, 계좌 열어본 사람?",
+    "overall": 59,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-11-22/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 41.41
+  },
+  {
     "date": "2026-11-21",
     "status": "success",
     "title": "공시가 동결인데 내 세금은 오른다고?",
