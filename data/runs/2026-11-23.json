@@ -1,0 +1,448 @@
+{
+  "date": "2026-11-23",
+  "status": "success",
+  "started_at": "2026-11-23T00:44:14+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-11-23T00:44:14+09:00",
+      "note": "",
+      "seconds": 25.6
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-23T00:44:40+09:00",
+      "note": "",
+      "seconds": 13.5
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-23T00:44:53+09:00",
+      "note": "",
+      "seconds": 28.7
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-23T00:45:22+09:00",
+      "note": "",
+      "seconds": 42.7
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-23T00:46:05+09:00",
+      "note": "1차",
+      "seconds": 21.6
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-23T00:46:26+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 23.2
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-23T00:46:49+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 28.6
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-23T00:47:18+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 35.4
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-23T00:47:53+09:00",
+      "note": "2차",
+      "seconds": 21.4
+    },
+    {
+      "name": "uploader",
+      "label": "업로드",
+      "status": "done",
+      "started_at": "2026-11-23T00:48:15+09:00",
+      "note": "",
+      "seconds": 0.0
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 48,
+        "hook": 62,
+        "clarity": 70,
+        "visual": 62,
+        "subtitle": 75,
+        "safety": 72
+      },
+      "overall": 62,
+      "pass": false,
+      "issues": [
+        "fun: 구성이 '무슨 일이 있었다'를 나열하는 뉴스 요약 톤이다. 반전이나 드립이 약하다. 장면 6의 '주인공은 머리카락'이 유일한 펀치라인이고, 그마저 예측 가능하다.",
+        "hook: 첫 문장이 '머리만 길렀는데 ~했습니다'라는 평이한 서술형이다. 첫 프레임은 판다 캐릭터와 '머리 한 번에 난리' 문구뿐이라 궁금증을 끌 장치가 부족하다. 장면 1 끝의 '이게 왜 난리냐면요'도 흔한 패턴이다.",
+        "사실 확인 필요: '검색어 1위'(훅), '2026 MAMA 빅뱅 신곡 기립 최초 공개', '마왕 돌아왔나' 반응은 기획서만으로 검증되지 않는다. 실존 인물에 관한 내용이라 출처 확인 없이 단정하면 허위 정보 위험이 있다. 특히 '검색어 1위'는 근거가 없으면 빼거나 완화해야 한다.",
+        "길이 불일치: 실제 영상은 50.5초인데 description은 '30초로 정리했습니다'라고 적었다. 설명문이나 영상 길이 중 하나를 고쳐야 한다.",
+        "visual: 장면마다 화풍이 제각각이다. 장면 1은 3D풍 판다, 장면 4는 플랫 벡터 사자, 장면 7은 일본 애니메이션풍 소녀다. 채널 일관성이 떨어진다. 장면 7의 파란 머리 소녀는 '장발 캐릭터'라는 의도는 맞지만 지드래곤·빅뱅과 연결되지 않는다.",
+        "visual: 이미지가 4:3 비율로 보이고 위아래가 흐린 배경으로 채워져 있다. 9:16 화면 활용도가 낮고 하단 빈 공간이 크다.",
+        "visual: 장면 2의 곰 4마리, 장면 6의 트로피와 가발처럼 프롬프트 내용이 정말 구현됐는지는 제공된 프레임(장면 1, 3, 4, 7)만으로는 확인할 수 없다.",
+        "subtitle: 하단 자막이 캐릭터 몸통과 다리를 일부 가린다(장면 1 판다, 장면 4 사자). 상단 on_screen_text 검은 박스는 읽기 쉽지만 하단 자막과 겹쳐 정보가 중복된다.",
+        "내용상 지드래곤이 한 번도 등장하지 않고 동물 캐릭터로만 표현돼 '지드래곤 장발'이라는 제목과 시각적 연결이 약하다. 초상권 회피 목적이라면 이해되지만 몰입도는 떨어진다."
+      ],
+      "retry_target": "planner",
+      "feedback": "1) 훅을 질문이나 반전형으로 바꾸세요. 예: '신곡 발표 무대인데 검색어 1위는 노래가 아니었습니다' 처럼 결말을 살짝 암시하고 궁금증을 만드세요. 2) 나열식 구조를 버리고 '기대 → 엉뚱한 반전' 구조로 다시 쓰세요. 예: 신곡이 터질 줄 알았는데 머리카락에 다 뺏겼다는 식의 과장 드립을 3개 이상 넣고, 장면 6의 펀치라인을 더 세게 만드세요. 3) 검색어 1위, 기립 최초 공개, 마왕 반응은 출처로 확인되는 사실만 남기세요. 확인이 안 되면 '화제가 됐다' 같은 완화 표현으로 바꾸세요. 4) 총 길이를 30초 안팎으로 줄이거나 description의 '30초'를 실제 길이에 맞게 고치세요. 장면당 대사를 짧게 줄이는 편이 좋습니다. 5) 이미지 프롬프트에 'same 3D cartoon animal style, consistent character design, full vertical 9:16 composition'을 공통으로 넣어 화풍을 통일하도록 producer에게 전달하세요. 6) 하단 자막은 화면 하단 20% 영역으로 내려 캐릭터를 가리지 않게 하고, 상단 문구와 하단 대사가 같은 말을 반복하지 않게 하세요."
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 68,
+        "hook": 62,
+        "clarity": 76,
+        "visual": 68,
+        "subtitle": 78,
+        "safety": 80
+      },
+      "overall": 71,
+      "pass": true,
+      "issues": [
+        "훅(0~3초)에 '누구의' 신곡인지, 무엇이 화제였는지가 나오지 않는다. 화면도 물음표를 든 판다라서 스크롤을 멈추게 하는 힘이 약하다. 지드래곤·빅뱅 같은 이름이 첫 장면에 없다.",
+        "장면 1은 판다, 장면 2는 곰 네 마리, 장면 3은 토끼와 사자로, 캐릭터가 장면마다 바뀐다. 지드래곤을 가리키는 사자 캐릭터가 일관되지 않아 장발 개그가 덜 읽힌다.",
+        "장면 3 프레임(30%)은 사자가 아니라 사자 갈기를 단 토끼가 가운데 서 있고, 다른 토끼들이 그쪽을 쳐다보는 구도도 약하다. 프롬프트(토끼들이 사자를 향해 고개를 돌림)와 어긋난다.",
+        "장면 4 프레임(55%)의 사자는 '아주 긴 황금빛 갈기가 바람에 날림'과 '카메라가 갈기를 향함'이라는 프롬프트와 맞지 않는다. 갈기가 평범한 수준이고 카메라는 양옆 구석에 있다. 장발이라는 핵심 개그가 시각적으로 전달되지 않는다.",
+        "장면 7 프레임(85%)에서 음표 캐릭터가 왼쪽 화면 밖으로 잘렸고 몸통과 얼굴이 이상하게 섞였다. 오른쪽 캐릭터는 정체불명의 털뭉치 생물처럼 보여 대결 구도가 어색하다.",
+        "장면 2의 곰 네 마리는 빅뱅 멤버 수와 맞는지 확인 필요(만화적 표현이라 치명적이지는 않음).",
+        "'신곡 기립', '마왕 돌아왔나' 반응, 장발 화제 등 사실관계는 이 자료만으로 검증할 수 없어 확인 필요. 실존 인물 외모를 소재로 한 개그라서 비하처럼 보이지 않게 톤 관리가 필요하다.",
+        "일부 프레임(55%, 85%)에 하단 나레이션 자막이 보이지 않는다. 프레임을 뽑은 시점이 자막 사이 공백이었을 수도 있어 싱크 확인 필요. 상단 제목 박스는 가독성이 좋다.",
+        "이미지가 화면 중간 띠에만 들어가고 위아래는 흐린 배경이라 빈 공간이 크다. 자막이 이미지 하단 위에 겹친다."
+      ],
+      "retry_target": null,
+      "feedback": "합격이다. 업로드 전이나 다음 편에서 다음을 개선하면 좋다. (1) 훅 첫 문장에 '지드래곤'이나 '빅뱅'을 넣어 누구 이야기인지 바로 알려 주고, 첫 프레임 이미지도 장발 캐릭터로 시작한다. 예: '빅뱅 신곡 공개 무대, 근데 다들 지드래곤 머리만 봤다'. (2) 주인공(장발 사자)을 장면 1~7에 같은 외형으로 쓰고 프롬프트에 'long flowing golden hair down to the waist'처럼 길이를 구체적으로 적는다. 장면 7처럼 잘리거나 형태가 깨진 캐릭터는 재생성한다. (3) 장면 3은 'rabbits looking at lion'을 강조해 사자가 중앙에 오게 한다. (4) 사실 정보(곡명, 반응 인용)는 출처를 확인하고, 실존 인물을 놀리는 느낌이 나지 않게 한다. (5) 자막 싱크를 한 번 더 점검한다."
+    }
+  ],
+  "marketer": {
+    "summary": "오늘 검색 트렌드는 빅뱅 MAMA 신곡 무대와 지드래곤 장발 화제, 바르셀로나의 극적인 역전승과 맨유-리버풀 노스웨스트 더비 등 해외 축구 이슈가 중심이며, 식품 광고 규제 이슈도 함께 올라왔습니다.",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "아우크스부르크 대 마인츠 05",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "Best of ESPN New York (Clips) - NY GameDay Hour 1: Why isn't Cade Klubnik starting?",
+          "Picked! Darrell Sweeting hauls in the interception",
+          "Arizona 35-28 Kansas State (Nov 21, 2026) Game Recap"
+        ],
+        "topic": "분데스리가 아우크스부르크 vs 마인츠 경기 결과 30초 정리",
+        "why_now": "키워드 검색량이 1000+로 높지만, 함께 제공된 뉴스 제목은 미국 대학풋볼(ESPN, 캔자스주립대 경기 등) 내용뿐이라 경기 자체를 설명할 근거 뉴스가 없음",
+        "angle": "경기 결과·하이라이트 30초 요약 쇼츠. 단, 제공된 뉴스에 경기 내용이 없으므로 스코어·득점자 등 사실은 제작 전 반드시 별도 확인 필요",
+        "target": "분데스리가·해외축구 팬, 한국 선수 출전 여부를 궁금해하는 20~40대",
+        "fun_score": 4,
+        "risk": "low",
+        "risk_note": "뉴스 제목에 해당 경기 정보가 없어 사실 확인 없이 제작하면 오보 위험. 결과 확인 후 제작 권장"
+      },
+      {
+        "rank": 2,
+        "keyword": "지드래곤",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "\"첫사랑 결혼\" 태양, ♥민효린 子육아에 8년 활동중단..미안해서 오열 \"주책이다\" [Oh!쎈 이슈]",
+          "빅뱅, 신곡 ‘기립’ 최초 공개..‘2026 MAMA’ 빛낸 ‘레전드’의 위엄",
+          "\"마왕 돌아왔나\"…故 신해철 연상시킨 장발의 지드래곤 - 머니투데이"
+        ],
+        "topic": "'마왕 돌아왔나' 장발 지드래곤 + 빅뱅 신곡 '기립' 2026 MAMA 최초 공개 반응",
+        "why_now": "빅뱅이 '2026 MAMA'에서 신곡 '기립'을 최초 공개했고, 장발 모습의 지드래곤이 故 신해철을 연상시킨다는 기사가 나옴",
+        "angle": "'이게 왜 난리냐면' 형식. MAMA 무대 → 신곡 '기립' 공개 → 장발 비주얼 화제 순으로 30초 정리하고 팬 반응·밈 중심으로 구성. 고인 언급은 기사 표현 인용 수준으로만 하고 비교를 희화화하지 않기",
+        "target": "K팝 팬, 빅뱅·GD 세대 20~40대",
+        "fun_score": 9,
+        "risk": "medium",
+        "risk_note": "실존 인물 외모 평가와 고인 언급이 포함되므로 조롱·비교 과장 금지. 신곡 평가는 단정하지 말고 반응 위주로"
+      },
+      {
+        "rank": 3,
+        "keyword": "맨유 리버풀",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "“새 감독 선임한 맨유가 어떤 축구를 할지 모르겠다”… 노스웨스트 더비 앞두고 경계심 드러낸 리버풀 감독, “경기 초반이 중요”",
+          "리버풀은 안필드에서 맨체스터 유나이티드를 상대로 전력을 회복해야 합니다.",
+          "리버풀·맨유 맞대결…이삭 7골 vs 음뵈모 4골 : EPL"
+        ],
+        "topic": "새 감독 맨유 vs 리버풀 노스웨스트 더비, 이삭 7골 vs 음뵈모 4골 숫자 대결",
+        "why_now": "새 감독을 선임한 맨유를 앞두고 리버풀 감독이 경계심을 드러냈고, 안필드 맞대결에서 이삭 7골 vs 음뵈모 4골 비교가 나옴",
+        "angle": "'숫자로 보는 더비' 쇼츠. 이삭 7골 vs 음뵈모 4골 대결 구도와 '새 감독 맨유 뭘 할지 모르겠다'는 리버풀 감독 발언을 상황극 드립으로 연결",
+        "target": "EPL 팬, 해외축구 커뮤니티 이용자 20~40대",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": "경기 결과는 뉴스 제목에 없으므로 프리뷰 형태로만 작성하고 결과를 단정하지 않기"
+      },
+      {
+        "rank": 4,
+        "keyword": "laliga",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "Lamine Yamal misses penalty against Villarreal in the 23rd minute",
+          "Flick explains García and De Jong positions and justifies faith in Adeyemi",
+          "FC Barcelona News: 22 November 2026"
+        ],
+        "topic": "야말 23분 페널티 실축, 그래도 이긴 바르사 — 라리가 빌라레알전 화제 장면",
+        "why_now": "라민 야말이 비야레알전 23분에 페널티킥을 놓쳤고, 플릭 감독이 아데예미 기용 신뢰 등을 설명한 기사가 나옴",
+        "angle": "'이게 왜 화제냐면' 형식. 야말 PK 실축 장면을 짚고, 이어 바르사가 경기를 뒤집은 반전으로 연결해 30초 요약. 플릭 감독의 선수 기용 발언도 포인트로 활용",
+        "target": "라리가·바르사 팬, 야말 팬 10~30대",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": "선수 실수를 조롱하지 않고 경기 이슈 중심으로 다룰 것"
+      },
+      {
+        "rank": 5,
+        "keyword": "백종헌",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "검증 안 된 농산물 성분 광고 제동…과학적 근거 따진다",
+          "기능성 농산물 표시제 놓고 식약처·농식품부 충돌…법사위 제동",
+          "백종헌 의원, 식품표시광고법 개정안 대표발의"
+        ],
+        "topic": "'이 농산물 몸에 좋다' 광고, 앞으론 과학적 근거 필요? 기능성 농산물 표시제 논란",
+        "why_now": "백종헌 의원이 식품표시광고법 개정안을 대표발의했고, 기능성 농산물 표시제를 두고 식약처와 농식품부가 충돌해 법사위에서 제동이 걸렸다는 기사가 나옴",
+        "angle": "'마트에서 보던 그 문구, 근거 있었을까?' 식의 생활밀착형 설명 쇼츠. 정부 부처 간 충돌 구도를 쉽게 풀어 30초 정리. 의원 개인보다 제도 이슈에 집중",
+        "target": "장보기하는 주부·건강식품 관심층 30~60대",
+        "fun_score": 4,
+        "risk": "medium",
+        "risk_note": "정치·입법 이슈이므로 특정 정당·의원에 대한 평가 없이 사실 위주로 다루고, 기사에 없는 세부 내용은 추정하지 않기"
+      },
+      {
+        "rank": 6,
+        "keyword": "barcelona đấu với villarreal",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "Barcelona 3-2 Villarreal: 3 điểm nhọc nhằn của Yamal và đồng đội",
+          "סיכום משחק: ברצלונה נגד ויאריאל, 20:00, 22 בנובמבר: שמירה על מקומם בפסגה.",
+          "Barca thắng ngược sau khi bị dẫn 0-2 trong 7 phút đầu"
+        ],
+        "topic": "0-2로 밀리다 7분 만에 뒤집은 바르사, 빌라레알전 3-2 승리",
+        "why_now": "베트남어 기사 기준 바르셀로나가 빌라레알에 3-2로 힘겹게 이겼고, 초반 7분 안에 0-2로 뒤진 뒤 역전했다는 보도가 나옴",
+        "angle": "'7분 만에 0-2, 그런데 결국 3-2' 반전 스토리 30초 정리 + 해외 팬 반응 드립. 득점자·세부 장면은 확인 후 추가",
+        "target": "해외축구·바르사 팬 10~30대",
+        "fun_score": 8,
+        "risk": "low",
+        "risk_note": "뉴스 제목에 득점자 정보가 없으므로 확인되지 않은 세부 내용은 쓰지 않기. 같은 경기를 다룬 'laliga' 항목과 겹치므로 통합 제작도 고려"
+      },
+      {
+        "rank": 7,
+        "keyword": "브라이튼",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "헐 시티 vs 브라이튼 경기 프리뷰 및 예측: 브라이튼은 여전히 ​​높이 비상한다",
+          "헐 시티 vs 브라이튼 경기 예측: 홈팀이 승리 행진을 재개하려 할 것입니다.",
+          "경기 프리뷰: 헐 시티 vs 브라이튼, 11월 22일 오후 9시: \"브라이튼\"은 여전히 ​​승승장구하고 있습니다."
+        ],
+        "topic": "헐 시티 vs 브라이튼 — '여전히 높이 비상하는' 브라이튼 프리뷰",
+        "why_now": "11월 22일 헐 시티와 브라이튼 경기 프리뷰·예측 기사가 다수 나옴",
+        "angle": "경기 프리뷰 30초 정리. 브라이튼이 승승장구 중이라는 기사 문구를 활용해 '왜 브라이튼은 계속 잘 나가나' 궁금증을 유발",
+        "target": "EPL·잉글랜드 컵대회 관심 팬 20~40대",
+        "fun_score": 4,
+        "risk": "low",
+        "risk_note": "프리뷰 기사만 있어 경기 결과 정보 없음. 결과를 확인하기 전에는 승패를 단정하지 않기"
+      },
+      {
+        "rank": 8,
+        "keyword": "조정석",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [],
+        "topic": "배우 조정석 검색량 급등 이유 확인 필요",
+        "why_now": "제공된 뉴스 제목이 없어 급상승 이유를 파악할 수 없음",
+        "angle": "이슈가 확인되기 전에는 제작 보류 권장. 이유 확인 후 작품·근황 중심으로 제작 여부 결정",
+        "target": "드라마·영화 팬 20~40대",
+        "fun_score": 3,
+        "risk": "medium",
+        "risk_note": "근거 뉴스가 없어 사실을 지어낼 위험이 있음. 실존 인물 사생활 이슈일 가능성도 있으므로 확인 필수"
+      },
+      {
+        "rank": 9,
+        "keyword": "persib bandung vs bali united",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "Latest Super League Standings After Persib Beats Bali United: Maung Bandung Enters Top 4, Persija Threatened!",
+          "Predicted Lineups for Persib vs Bali United Tonight: Thom Haye and Marc Klok in the Spotlight, Who Starts at GBLA?",
+          "Full Time Persib vs Bali United 2-1: Dramatic Comeback for Maung Bandung, Menalo's Goal Rocks GBLA!"
+        ],
+        "topic": "인도네시아 슈퍼리그: 페르십 반둥, 발리 유나이티드에 2-1 극적 역전승",
+        "why_now": "페르십이 발리 유나이티드를 2-1로 이기며 순위 4위권에 진입했고, 메날로의 골이 GBLA를 뒤흔들었다는 기사가 나옴",
+        "angle": "'인도네시아 리그 역전극' 30초 요약. 톰 하예·마르크 클록 등 기사 속 선수 이름을 활용해 해외 리그 소식으로 소개",
+        "target": "동남아·인도네시아 축구 관심층, 신태용 감독 시절 이후 인니 축구 팬",
+        "fun_score": 4,
+        "risk": "low",
+        "risk_note": "한국 내 관심도가 낮은 키워드. 기사에 없는 선수·감독 관련 내용은 추가하지 않기"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": [
+      {
+        "keyword": "총파업",
+        "blocked_by": "사고"
+      }
+    ]
+  },
+  "selected_attempt": 2,
+  "plan": {
+    "chosen_rank": 2,
+    "reason": "rank 1은 뉴스 제목에 경기 내용이 없어 사실 관계를 쓸 수 없음. rank 2 지드래곤은 검색량이 1000+로 같고 재미 포인트가 가장 큼. QA 피드백에 따라 '검색어 1위'처럼 확인되지 않는 표현은 빼고, 뉴스 제목에 있는 사실(2026 MAMA 빅뱅 신곡 기립 최초 공개, 장발 지드래곤 화제, 마왕 돌아왔나라는 반응)만 사용함. 고인 언급과 외모 평가는 하지 않고 머리카락을 소재로 한 상황 드립으로만 웃음을 만듦. 구조는 나열식에서 '기대(신곡이 주인공일 줄 알았는데) → 반전(화제는 머리카락이 가져감)'으로 바꿈. 분량은 약 190자, 7장면, 장면당 한두 문장으로 줄여 30초 안팎.",
+    "title": "신곡 공개 무대인데 화제는 딴 데서 터졌다",
+    "hook": "신곡 공개 무대였는데요. 화제를 가져간 건 노래가 아니었습니다.",
+    "bgm_mood": "funny",
+    "style": "vibrant 3D cartoon, soft lighting, high detail, bold colors, playful mood, same 3D cartoon animal style, consistent character design, full vertical 9:16 composition, main subject centered in the upper 75% of the frame, bottom fifth of the frame is a calm plain soft gradient floor",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "신곡 공개 무대였는데요. 화제를 가져간 건 노래가 아니었습니다.",
+        "on_screen_text": "주인공이 바뀜",
+        "image_prompt": "a shocked cute cartoon panda holding a microphone on a glowing stage, a giant glowing question mark floating above its head, colorful spotlight beams"
+      },
+      {
+        "id": 2,
+        "narration": "2026 MAMA, 빅뱅이 신곡 기립을 최초로 공개했습니다.",
+        "on_screen_text": "신곡 등판",
+        "image_prompt": "four cute cartoon bears in stylish outfits striking a pose on a huge concert stage, golden confetti and bright spotlights"
+      },
+      {
+        "id": 3,
+        "narration": "다들 노래 얘기할 줄 알았죠? 근데 시선은 지드래곤 머리로 갔습니다.",
+        "on_screen_text": "노래 어디 감",
+        "image_prompt": "a crowd of cute cartoon rabbits holding tiny music notes, all of them turning their heads toward a lion on stage, surprised wide eyes"
+      },
+      {
+        "id": 4,
+        "narration": "장발이었거든요. 노래는 귀로 듣는데 머리카락은 눈에 꽂혔습니다.",
+        "on_screen_text": "머리가 센터",
+        "image_prompt": "a cartoon lion with an extra long silky golden mane flowing in the wind at the center of a stage, tiny cartoon cameras and spotlights all pointing at the mane"
+      },
+      {
+        "id": 5,
+        "narration": "마왕 돌아왔나, 이런 반응까지 나왔어요. 머리카락이 혼자 연차 없이 야근했습니다.",
+        "on_screen_text": "머리 야근중",
+        "image_prompt": "a floating cartoon phone with heart and fire bubbles bursting from the screen, a tiny cartoon lock of long hair wearing a work helmet and carrying a briefcase"
+      },
+      {
+        "id": 6,
+        "narration": "곡 제목은 기립인데, 박수는 머리카락이 다 받아갔습니다.",
+        "on_screen_text": "지분 도둑",
+        "image_prompt": "a golden trophy on a stage with a long silky wig draped over it, a cute cartoon music note character sitting sadly in the corner, comedic spotlight and falling confetti"
+      },
+      {
+        "id": 7,
+        "narration": "여러분은 어느 쪽이에요? 신곡이냐 장발이냐, 댓글로 싸워 봅시다.",
+        "on_screen_text": "신곡 vs 장발",
+        "image_prompt": "a cartoon versus scene, on the left a cute sparkling music note character, on the right a cute round character with very long hair, facing each other like fighting game rivals"
+      }
+    ],
+    "description": "빅뱅이 2026 MAMA에서 신곡 기립을 최초 공개했는데, 화제는 지드래곤 장발로도 번졌습니다. 신곡이 더 컸나요, 장발이 더 컸나요? #지드래곤 #빅뱅 #MAMA",
+    "tags": [
+      "지드래곤",
+      "빅뱅",
+      "기립",
+      "2026 MAMA",
+      "MAMA",
+      "장발",
+      "쇼츠",
+      "K팝"
+    ],
+    "comment_question": "오늘 MAMA의 주인공은 누구였나요? 신곡 기립이다 vs 지드래곤 장발이다, 댓글로 편 갈라 주세요!"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 7
+    }
+  },
+  "effects": {
+    "duration": 41.73,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Sneaky Snitch",
+    "bgm_mood": "funny",
+    "bgm_credit": "Music: \"Sneaky Snitch\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "신곡 공개 무대였는데요. 화제를 가져간 건 노래가 아니었습니다.",
+      "on_screen_text": "주인공이 바뀜",
+      "image": "runs/2026-11-23/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "2026 MAMA, 빅뱅이 신곡 기립을 최초로 공개했습니다.",
+      "on_screen_text": "신곡 등판",
+      "image": "runs/2026-11-23/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "다들 노래 얘기할 줄 알았죠? 근데 시선은 지드래곤 머리로 갔습니다.",
+      "on_screen_text": "노래 어디 감",
+      "image": "runs/2026-11-23/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "장발이었거든요. 노래는 귀로 듣는데 머리카락은 눈에 꽂혔습니다.",
+      "on_screen_text": "머리가 센터",
+      "image": "runs/2026-11-23/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "마왕 돌아왔나, 이런 반응까지 나왔어요. 머리카락이 혼자 연차 없이 야근했습니다.",
+      "on_screen_text": "머리 야근중",
+      "image": "runs/2026-11-23/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "곡 제목은 기립인데, 박수는 머리카락이 다 받아갔습니다.",
+      "on_screen_text": "지분 도둑",
+      "image": "runs/2026-11-23/scene_06.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 7,
+      "narration": "여러분은 어느 쪽이에요? 신곡이냐 장발이냐, 댓글로 싸워 봅시다.",
+      "on_screen_text": "신곡 vs 장발",
+      "image": "runs/2026-11-23/scene_07.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-11-23/thumbnail.jpg",
+  "video_file": "videos/2026-11-23.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "YT_* 시크릿 없음"
+  },
+  "finished_at": "2026-11-23T00:48:15+09:00"
+}

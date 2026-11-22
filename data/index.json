@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-23",
+    "status": "success",
+    "title": "신곡 공개 무대인데 화제는 딴 데서 터졌다",
+    "overall": 71,
+    "qa_attempts": 2,
+    "thumbnail": "runs/2026-11-23/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 41.73
+  },
+  {
     "date": "2026-11-22",
     "status": "qa_failed",
     "title": "금요일 밤 나스닥 -5.3%, 계좌 열어본 사람?",
