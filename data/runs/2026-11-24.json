@@ -1,0 +1,515 @@
+{
+  "date": "2026-11-24",
+  "status": "qa_failed",
+  "started_at": "2026-11-24T04:33:00+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-11-24T04:33:00+09:00",
+      "note": "",
+      "seconds": 22.8
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-24T04:33:23+09:00",
+      "note": "",
+      "seconds": 14.2
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-24T04:33:37+09:00",
+      "note": "",
+      "seconds": 30.3
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-24T04:34:07+09:00",
+      "note": "",
+      "seconds": 42.6
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-24T04:34:50+09:00",
+      "note": "1차",
+      "seconds": 24.3
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-24T04:35:14+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 19.5
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-24T04:35:34+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 47.0
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-24T04:36:21+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 39.1
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-24T04:37:00+09:00",
+      "note": "2차",
+      "seconds": 27.6
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-24T04:37:27+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 25.8
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-24T04:37:53+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 31.2
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-24T04:38:24+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 36.3
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-24T04:39:01+09:00",
+      "note": "3차",
+      "seconds": 20.7
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 55,
+        "hook": 62,
+        "clarity": 72,
+        "visual": 82,
+        "subtitle": 78,
+        "safety": 78
+      },
+      "overall": 68,
+      "pass": false,
+      "issues": [
+        "fun: 전체가 '예고편 떴다 → 팬들 난리' 뉴스 요약 톤입니다. 반전이나 드립은 6번 장면의 '출연료는 괜찮은 거죠?' 하나뿐이고, 나머지는 '난리났다', '소리를 질렀다' 같은 반응 전달입니다. 정작 보여줄 내용이 없습니다.",
+        "hook: '히어로를 전부 쑤셔 넣었다'는 구체성이 없는 과장입니다. 이 화면에는 가방에서 히어로 소품이 터져 나오는 고양이 일러스트만 있고, 예고편의 실제 장면이나 대사 같은 궁금증 요소가 없습니다. 제목의 '한 줄'이 무엇인지는 5번 장면(약 30초 지점)에서야 나옵니다.",
+        "clarity: 제목은 '투 미 마이 엑스맨'이 핵심이라고 하지만 대본은 그 대사가 왜 팬들을 열광시키는지 설명하지 않습니다. 이 대사를 모르는 시청자는 맥락을 알 수 없습니다. 마지막 질문인 '환영이냐 너무 많다냐'도 앞에서 쌓은 근거가 없어 약합니다.",
+        "길이 불일치: 설명란에는 '30초로 정리'라고 적혀 있지만 실제 영상은 47.8초입니다. 설명란과 영상이 맞지 않습니다.",
+        "사실 확인 필요: 헤일리 스테인펠드의 '첫 등장'은 확인이 필요합니다. 이 배우는 이미 <호크아이>(2021)에서 케이트 비숍을 연기했으므로, 어떤 의미의 '첫 등장'인지 불분명합니다.",
+        "사실 확인 필요: '역대 히어로를 다 모았다'는 표현과 '예고편 공개'·'검색어 난리' 같은 사실 주장은 근거가 없고 과장일 수 있습니다. 출처 확인이 필요합니다.",
+        "저작권·상표: 1번 장면 고양이의 가슴에 슈퍼맨(DC) 'S' 로고 형태가 보이고, 캡틴 아메리카 방패 비슷한 소품도 있습니다. 마블 영상에 DC 로고가 섞였고 상표 위험도 있으니 일반적인 히어로 심볼로 바꾸는 편이 안전합니다.",
+        "visual: 3번 장면의 이미지와 대본이 어긋납니다. '이 예고편은 그냥 히어로가 많은 정도가 아니다'를 말하는 장면인데 화면은 귀여운 동물 단체사진입니다. 또 4번 장면의 토끼가 헤일리 스테인펠드 이야기를 하는 부분에 나오는데, 토끼 캐릭터가 뚜렷한 워너브라더스 '벅스 버니'를 닮아 보입니다.",
+        "subtitle: 상단 검은 박스 키워드와 중앙의 노란 강조 자막이 동시에 떠서 시선이 분산됩니다. 4번 프레임에서는 자막이 토끼 몸통을 가립니다. 화면 위아래의 블러 영역이 커서 이미지가 작아 보입니다."
+      ],
+      "retry_target": "planner",
+      "feedback": "주제와 대본을 다시 잡아 주세요. 1) 첫 문장을 '투 미 마이 엑스맨' 대사 자체나 구체적인 궁금증으로 시작하세요. 예: '예고편 마지막 한 줄에 극장이 뒤집어졌습니다. 그 대사가 뭐였냐면…' 2) 이 대사가 왜 의미 있는지(엑스맨의 상징적 구호이고 MCU 합류를 의미한다는 점 등)를 한 장면 안에 쉽게 설명하세요. 3) 6번 장면의 출연료 드립처럼 웃음 포인트를 2~3개로 늘리고, 마지막은 반전이나 짧은 펀치라인으로 끝내세요. 4) '전부 모았다', '역대 히어로 총출동'처럼 근거 없는 과장은 확인된 정보로 바꾸거나 '~라는 반응'으로 완화하고, 헤일리 스테인펠드 '첫 등장'은 정확히 무엇이 처음인지 확인 후 수정하세요. 5) 대본을 25~30초 분량으로 줄이거나 설명란의 '30초' 표기를 실제 길이에 맞추세요. 6) image_prompt에서 슈퍼맨 S 로고와 방패 같은 특정 IP 상징을 빼고 일반적인 히어로 소품으로 바꾸세요. 한편 이미지 품질 자체는 좋고(손·글자 깨짐 없음) 자막도 가독성이 괜찮으니 연출 톤은 유지해도 됩니다."
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 52,
+        "hook": 58,
+        "clarity": 70,
+        "visual": 60,
+        "subtitle": 52,
+        "safety": 85
+      },
+      "overall": 61,
+      "pass": false,
+      "issues": [
+        "훅: 첫 문장이 '그 대사가 뭐였냐면'으로 뜸을 들이는 방식인데, 정작 첫 장면(독수리)은 대사와 아무 관련이 없고 궁금증을 키울 정보도 부족하다. 첫 3초에 스크롤을 멈출 반전이나 구체적 단서가 약하다.",
+        "재미: 전체가 '예고편 소식 요약 + 마지막 질문' 구조로 뉴스 전달 톤이다. 유일한 드립은 5번 장면(극장 알바생 망토, 마블 계산기 터짐)인데 '출연료 정산 → 계산기 터짐'이 억지스럽고 터지는 포인트가 약하다. 4번의 '헤일리 스테인펠드 모습도 공개'는 맥락 없이 끼어들어 흐름을 끊는다.",
+        "시각(0.6초 프레임): 독수리의 왼쪽 날개 끝이 사람 손처럼 5개 손가락으로 그려져 있다. 이미지 생성 오류로 보이고, 첫 프레임이라 눈에 잘 띈다.",
+        "시각(55% 프레임): 가방 속 캐릭터가 망토 쓴 히어로 동물이 아니라 팔다리가 달린 정체불명의 물체(숫자 2 공, 초록 얼굴 등)다. 프롬프트의 '망토와 가면이 터져 나오는 가방'과도 어긋나고, 중심 피사체인 고양이와 가방이 따로 노는 느낌이다.",
+        "시각(85% 프레임): 6번 프롬프트는 두 팀이 마주 선 장면인데 실제로는 거의 같은 얼굴의 동물 두 마리가 팝콘을 사이에 두고 있다. '환영 vs 과해' 대비가 약하고 두 마리 모두 같은 표정이라 대립 구도가 안 읽힌다.",
+        "자막: 화면 위쪽의 on_screen_text 박스와 중앙의 내레이션 자막이 동시에 떠서 텍스트가 이중으로 나온다. 중앙 자막이 군중, 가방, 팝콘 등 주요 피사체를 가린다.",
+        "자막: 85% 프레임의 자막이 '과하다냐 저는 일단 / 엑스맨 합류 환영이냐'로, 대본 순서('엑스맨 합류, 환영이냐 과하다냐. 저는 일단…')와 어긋나 있다. 단어 하이라이트 청크의 순서나 싱크 오류로 보인다. 55% 프레임의 '나옵니다 헤일리'도 해당 장면의 상단 텍스트 '쑤셔 넣었다'와 맥락이 이어지지 않는다.",
+        "사실 확인 필요: '투 미 마이 엑스맨'이 실제 예고편 마지막 대사인지, 헤일리 스테인펠드의 둠즈데이 출연·공개 여부는 이 자료만으로 확인할 수 없다. 확인 필요.",
+        "시각 일관성: 장면마다 캐릭터(독수리, 여우, 고양이, 너구리, 곰 비슷한 동물)와 화풍이 달라 통일감이 부족하다. 장면 5의 너구리는 확인한 프레임에 없어 평가하지 못했다."
+      ],
+      "retry_target": "planner",
+      "feedback": "주제는 화제성이 있고 안전성도 무난하지만, 지금은 소식을 요약해 전달하는 톤이라 재미와 훅이 약하다. 1) 훅: 첫 문장에서 구체적 장면이나 반전을 먼저 던지세요. 예: '예고편 마지막 4초, 극장에서 사람들이 일제히 소리 질렀습니다' 후 바로 대사를 공개. 첫 장면 이미지도 대사나 엑스맨과 연결되게 하세요. 2) 재미: 소식 전달 비중을 줄이고 드립을 2~3개로 늘리세요. 헤일리 스테인펠드 언급은 흐름을 끊으니 빼거나 드립에 녹이세요. 5번 장면의 '출연료 → 계산기 터짐'은 더 구체적인 비유로 바꿔 펀치라인을 분명히 하세요. 3) 사실성: 대사와 출연 정보는 출처로 확인되는 것만 쓰고, 불확실하면 '~라는 반응' 식으로 쓰세요. 4) 이미지 프롬프트: 같은 캐릭터를 반복해 쓰고, 6번은 '두 팀의 대립'이 보이도록 서로 다른 표정과 다른 무리로 구성하세요. 각 장면 프롬프트에 'natural anatomy, no human hands on animals'를 추가해 첫 프레임의 독수리 날개 손가락 문제를 막으세요. 재작업 때 effector에게 넘길 참고: 상단 텍스트와 중앙 자막의 중복 제거 또는 위치 분리, 자막이 피사체를 가리지 않게 하단으로 이동, 마지막 장면 자막 순서 싱크 점검."
+    },
+    {
+      "attempt": 3,
+      "scores": {
+        "fun": 60,
+        "hook": 62,
+        "clarity": 65,
+        "visual": 58,
+        "subtitle": 76,
+        "safety": 70
+      },
+      "overall": 64,
+      "pass": false,
+      "issues": [
+        "55% 프레임(장면 4): 너구리 등에 박쥐 날개가 달려 있습니다. 프롬프트의 'paws and wings only'가 오히려 날개를 생성하게 만든 것으로 보입니다. 해부학적으로 어색하고 장면 설명과도 맞지 않습니다.",
+        "55% 프레임: 가슴에 슈퍼맨 'S' 로고가 보입니다. 마블 소재 영상에 DC 상표가 들어가 저작권과 혼동 위험이 있습니다.",
+        "캐릭터 일관성 부족: 장면마다 너구리의 털색과 체형, 망토 모양이 달라지고, 장면 1은 회색 털에 어두운 톤인 반면 장면 6은 갈색 털에 밝은 톤입니다. 'the same raccoon' 지시가 지켜지지 않았습니다.",
+        "장면 6 프레임: 고양이와 부엉이는 보이지만 장면 6 프롬프트의 좌우 대립 구도(환영 vs 과해)가 약하고 뒤섞여 있습니다. 부엉이 일부는 화면 밖으로 잘렸습니다.",
+        "길이 불일치: 실제 영상은 44.7초인데 설명란에는 '30초로 썰 풀었어요'라고 적혀 있습니다. 쇼츠 치고는 늘어지고, 설명과 실제가 다릅니다.",
+        "사실 확인 필요: '어벤져스 둠즈데이 파이널 예고편에 나온 대사', '엑스맨 합류 신호', '역대 히어로를 전부 쑤셔 넣었다'는 내용은 근거나 출처 없이 '~라는 반응'으로만 서술되어 있습니다. 허위 정보가 될 수 있어 확인 필요입니다.",
+        "훅: 첫 3초가 맥락 없이 대사를 읊는 데 그칩니다. 첫 프레임의 영상 자막 '투 미 마이'만으로는 궁금증이 약합니다. 상단 '이 한 줄에 폭발' 박스도 평범합니다.",
+        "재미: 캐리어와 단톡방 비유는 무난하지만 반전이 없고 뉴스 요약 톤에 가깝습니다. 마지막 질문형 CTA 외에는 터지는 지점이 없습니다.",
+        "레이아웃: 이미지가 16:9에 가까운 가로 비율이라 세로 화면 위아래에 흐릿한 확대 배경이 남습니다. 자막이 이미지 하단(캐릭터와 소품 위)에 겹쳐서 장면 1에서는 동물 얼굴을 일부 가립니다."
+      ],
+      "retry_target": "producer",
+      "feedback": "이미지 재생성이 필요합니다. 1) 프롬프트에서 'paws and wings only'를 삭제하고 'no wings on the raccoon, no logos, no text, no letters, no emblems on the costume'을 명시하세요. 박쥐 날개와 슈퍼맨 S 로고를 제거하는 것이 최우선입니다. 2) 캐릭터를 하나로 고정하세요. 털색은 'gray-brown raccoon with black eye mask and ringed tail, red short cape'처럼 모든 장면에 같은 문장으로 반복하고 가능하면 seed도 고정하세요. 3) 장면 6은 구도를 단순화하세요. 'left: three cheering cats, right: three grumpy owls, raccoon centered with popcorn'처럼 좌우 구도를 분명히 하고 동물이 화면 밖으로 잘리지 않게 하세요. 4) 이미지를 9:16 세로 비율로 생성해 위아래 블러 여백을 없애고, 자막 위치는 하단 1/4로 옮겨 캐릭터 얼굴을 가리지 않게 하세요. 5) (planner 참고) 길이를 30초 안팎으로 줄이거나 설명란의 '30초' 문구를 고치고, '~라는 반응'의 출처를 확인하세요. 훅과 반전도 강화하는 편이 좋습니다. 예를 들어 첫 문장을 '마블이 엑스맨 대사 한 줄로 인터넷을 뒤집었습니다'처럼 바꾸는 방법이 있습니다."
+    }
+  ],
+  "marketer": {
+    "summary": "어벤져스: 둠즈데이 파이널 예고편에 엑스맨까지 총출동, 미 증시는 12월 금리 인상 우려에 기술주가 휘청, 최태원 '세기의 이혼' 9440억 전액 지급 선언, 삼성 사장단 인사까지 겹친 하루",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "to me my x men",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "Watch the Final ‘Avengers: Doomsday’ Trailer",
+          "Marvel crams every superhero ever into Avengers: Doomsday final trailer",
+          "'Avengers: Doomsday' final trailer gives first look at Hailee Steinfeld. Plus, 3 other things we spotted."
+        ],
+        "topic": "어벤져스: 둠즈데이 파이널 예고편, '투 미 마이 엑스맨' 한 줄에 팬들이 난리 난 이유 30초 정리",
+        "why_now": "'Avengers: Doomsday' 파이널 예고편이 공개됐고, 마블이 역대 히어로를 전부 몰아넣었다는 보도와 헤일리 스테인펠드 첫 등장 소식이 나옴",
+        "angle": "'이게 왜 난리냐면' 형식으로 예고편 속 놓치기 쉬운 장면 3가지를 짚고, 팬 반응을 드립으로 엮는 30초 정리",
+        "target": "10~30대 마블·영화 팬",
+        "fun_score": 9,
+        "risk": "low",
+        "risk_note": "예고편에 나온 내용만 다루고 확인되지 않은 스포일러 추측은 피할 것"
+      },
+      {
+        "rank": 2,
+        "keyword": "qqq",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "The Fed isn't riding to the rescue — Wall Street still sees a December rate hike after tech's worst week since 2020: Chart of the Day",
+          "Bond Market’s Go-To Trade for Fed Hikes Roiled by Stocks Retreat",
+          "Bitcoin (BTC) news: Traders ditch 50bps December Fed rate hike bets"
+        ],
+        "topic": "기술주 2020년 이후 최악의 한 주, QQQ 들고 있던 사람들의 주말 상황극",
+        "why_now": "'월가는 여전히 12월 금리 인상 전망, 기술주는 2020년 이후 최악의 한 주'라는 제목과 채권시장 동요 보도",
+        "angle": "숫자로 보는 충격 비교와 '금요일 계좌 열어본 개미' 과장 상황극을 섞은 형식",
+        "target": "20~40대 미국 주식 투자자",
+        "fun_score": 6,
+        "risk": "medium",
+        "risk_note": "투자 권유로 보이지 않게 하고 뉴스에 없는 수치는 쓰지 말 것"
+      },
+      {
+        "rank": 3,
+        "keyword": "탁구",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "강릉아레나서 제15회 GN 전국장애인 탁구대회 막 내려…전국 17개 시도 300여 명 참가",
+          "다음달 4일 아산시장배 전국장애인탁구대회",
+          "김포시, 제17회 장애인 생활체육대회 성황리 마무리 : 네이버 블로그"
+        ],
+        "topic": "강릉 아레나에서 열린 전국장애인탁구대회, 17개 시도 300여 명이 붙은 현장",
+        "why_now": "제15회 GN 전국장애인탁구대회 폐막, 다음달 4일 아산시장배 대회 예정 등 지역 대회 소식이 이어짐",
+        "angle": "'랠리가 끝나지 않는 탁구' 경기 하이라이트 느낌의 훈훈한 현장 스케치와 다음 대회 안내",
+        "target": "생활체육·스포츠 관심층, 30~60대",
+        "fun_score": 4,
+        "risk": "low",
+        "risk_note": "선수를 대상화하거나 동정적으로 소비하지 않도록 경기 중심으로 다룰 것"
+      },
+      {
+        "rank": 4,
+        "keyword": "노태문",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "삼성전자 사장단 인사 – 삼성전자 뉴스룸",
+          "삼성-SK 잇단 금요일 인사 뒤엔 ‘안정 속 쇄신’ [재계팀의 비즈워치]",
+          "MX 떠나는 노태문 “올해 부품값 급등에 어려움…도전 계속 지원”"
+        ],
+        "topic": "삼성전자 사장단 인사, MX를 떠나는 노태문이 남긴 말 '부품값 급등이 어려웠다'",
+        "why_now": "삼성전자 사장단 인사 발표와 함께 '올해 부품값 급등에 어려움…도전 계속 지원'이라는 노태문 발언이 보도됨",
+        "angle": "'삼성과 SK가 금요일마다 인사 내는 이유' 같은 직장인 공감 드립과 인사 이슈 30초 정리",
+        "target": "직장인, 재계·IT 관심층",
+        "fun_score": 5,
+        "risk": "medium",
+        "risk_note": "개인 평가나 인사 배경 추측은 하지 말고 보도된 발언과 인사 사실만 다룰 것"
+      },
+      {
+        "rank": 5,
+        "keyword": "sk그룹",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "최태원 “재산분할금 9440억원 다 내겠다”…대법원에 ‘화해권고’ 신청",
+          "최태원 \"9천440억 전액 지급\"‥'세기의 이혼' 마무리 요청",
+          "입장 바꾼 최태원 “노소영에 9440억 현금 지급”…화해권고 요청"
+        ],
+        "topic": "최태원 '9440억 전액 지급' 화해권고 신청, 세기의 이혼 소송 입장 바꾼 이유",
+        "why_now": "최태원 회장이 재산분할금 9440억 원을 현금으로 다 내겠다며 대법원에 화해권고를 신청했다는 보도",
+        "angle": "'9440억이 얼마냐면' 숫자 비교와 소송 흐름 30초 요약, 입장 번복 포인트 정리",
+        "target": "20~50대 일반 뉴스 소비층",
+        "fun_score": 6,
+        "risk": "high",
+        "risk_note": "실존 인물의 이혼 등 사생활 사안이므로 조롱이나 편들기 없이 보도된 사실만 다룰 것"
+      },
+      {
+        "rank": 6,
+        "keyword": "u17 việt nam",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "Báo New Zealand: 'Gặp Việt Nam là cơ hội tốt nhất để thắng ở U17 World Cup'",
+          "Siêu máy tính dự đoán tỷ số trận U17 Việt Nam gặp U17 New Zealand",
+          "Nguyễn Lực quá xuất sắc, U.17 Việt Nam giành điểm World Cup đầu tiên trong lịch sử"
+        ],
+        "topic": "U17 베트남, 월드컵 역사상 첫 승점 따낸 날 뉴질랜드 언론이 한 말",
+        "why_now": "'응우옌 륵 활약으로 U17 베트남이 월드컵 첫 승점 획득'과 뉴질랜드 매체의 '베트남전이 승리 최적 기회' 보도",
+        "angle": "상대 언론의 자신감이 반전으로 끝난 과정을 짚는 '반전 포인트' 형식",
+        "target": "축구 팬, 동남아 축구 관심층",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": "뉴스 제목 외 경기 내용은 지어내지 않도록 주의"
+      },
+      {
+        "rank": 7,
+        "keyword": "테슬라 주가",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "테슬라 주가, 오늘 급등한 이유는?",
+          "스페이스X(SPCX)·테슬라(TSLA) 7%대 하락…합병 승자는 머스크",
+          "Tesla Bulls Banking on SpaceX “Don’t Get the Dilution Math,” Says Gary Black. Tesla Trades at 3.4x SpaceX’s 2027 Multiple"
+        ],
+        "topic": "스페이스X·테슬라 동반 7%대 하락, '합병 승자는 머스크'라는 말의 의미",
+        "why_now": "'스페이스X·테슬라 7%대 하락…합병 승자는 머스크', 테슬라가 스페이스X 2027 멀티플 대비 3.4배라는 분석 보도",
+        "angle": "'테슬라 주주 입장에서 이게 무슨 소리냐' 쉬운 비유와 숫자 비교 정리",
+        "target": "20~40대 미국 주식 투자자",
+        "fun_score": 6,
+        "risk": "medium",
+        "risk_note": "합병 관련 내용은 보도된 범위만 다루고 투자 조언처럼 보이지 않게 할 것"
+      },
+      {
+        "rank": 8,
+        "keyword": "샌디스크 주가",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "샌디스크 주가, 오늘 왜 급등하나?",
+          "Sandisk Sinks 8%, Micron Down 6% as Memory Selloff Deepens Before Nvidia Earnings",
+          "샌디스크 분할 첫날 16% 털렸다…94달러가 79달러로"
+        ],
+        "topic": "분할 첫날 94달러가 79달러로, 샌디스크 16% 하락과 메모리 주식 동반 급락",
+        "why_now": "'샌디스크 분할 첫날 16% 털렸다…94달러가 79달러로', 엔비디아 실적 앞두고 마이크론 6% 하락 보도",
+        "angle": "'상장 첫날 계좌 상황극'과 엔비디아 실적 전 메모리주 분위기를 숫자로 보여주는 형식",
+        "target": "20~40대 미국 주식 투자자",
+        "fun_score": 6,
+        "risk": "medium",
+        "risk_note": "기사 간 등락 수치가 다르므로 출처 기준 날짜를 명확히 하고 투자 권유는 피할 것"
+      },
+      {
+        "rank": 9,
+        "keyword": "tradingview",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "WhiteBIT launches joint Black Friday promotion with TradingView for new users",
+          "Black Friday Sale Now Live!",
+          "Liquidation Levels indicator offers new TradingView integration, Joao Wedson states"
+        ],
+        "topic": "블랙프라이데이 트레이딩뷰 할인, 차트 덕후들이 들뜬 이유",
+        "why_now": "'Black Friday Sale Now Live!' 및 WhiteBIT과 트레이딩뷰 공동 프로모션 보도",
+        "angle": "'주식 앱 결제 버튼 앞에서 고민하는 개미' 공감 상황극과 할인 소식 정리",
+        "target": "트레이더, 코인·주식 투자자",
+        "fun_score": 4,
+        "risk": "medium",
+        "risk_note": "할인 조건은 뉴스에 없으면 단정하지 말고 광고성 오해와 거래소 홍보 느낌을 피할 것"
+      },
+      {
+        "rank": 10,
+        "keyword": "스페이스x 주가",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "제프리스도 추가 상승 전망…10%대 급등",
+          "스페이스X 주가, 급등한 이유는?",
+          "스페이스X가 AI 기술주 투자자에 '피난처' 부상, \"우주 기술 역량이 AI 사업 확장 뒷받침\""
+        ],
+        "topic": "AI 주식 흔들릴 때 스페이스X가 '피난처'로 뜬 이유, 10%대 급등",
+        "why_now": "'제프리스도 추가 상승 전망…10%대 급등', 'AI 기술주 투자자의 피난처로 부상' 보도",
+        "angle": "'다들 AI 걱정할 때 혼자 우주로 간 주가' 대비 구도의 30초 이슈 정리",
+        "target": "20~40대 미국 주식 투자자",
+        "fun_score": 7,
+        "risk": "medium",
+        "risk_note": "같은 날 하락 보도(테슬라 키워드)와 급등 보도가 섞여 있어 시점 확인이 필요하며, 투자 권유는 피할 것"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": []
+  },
+  "selected_attempt": 1,
+  "plan": {
+    "chosen_rank": 1,
+    "reason": "검색량이 가장 높고(500+) 재미 점수도 9로 가장 큼. 어벤져스: 둠즈데이 파이널 예고편은 마블이 역대 히어로를 전부 몰아넣었다는 점과 엑스맨 대사 한 줄로 팬들이 열광한 점이 드립으로 풀기 좋음. 사실은 news 제목에 있는 내용(파이널 예고편 공개, 히어로 총출동, 헤일리 스테인펠드 첫 등장)만 사용했고, 숫자나 스포일러 추측은 쓰지 않음. 계산은 없음.",
+    "title": "투 미 마이 엑스맨 한 줄에 마블 팬들 난리난 이유",
+    "hook": "마블이 진짜 히어로를 전부 한 영상에 쑤셔 넣었습니다.",
+    "bgm_mood": "hype",
+    "style": "vibrant 3D cartoon, soft cinematic lighting, bold colors, high detail, vertical composition",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "마블이 이번엔 진짜 작정했습니다. 히어로를 전부 한 영상에 쑤셔 넣었어요.",
+        "on_screen_text": "작정했다",
+        "image_prompt": "A tiny cartoon suitcase overstuffed with colorful superhero capes and masks bursting open, a shocked cartoon cat sitting on top trying to close it"
+      },
+      {
+        "id": 2,
+        "narration": "어벤져스 둠즈데이 파이널 예고편이 공개됐는데요. 지금 검색어가 난리가 났습니다.",
+        "on_screen_text": "검색어 폭발",
+        "image_prompt": "A giant glowing movie screen in a dark theater with a crowd of cartoon animals in the seats, all with wide amazed eyes and popcorn flying in the air"
+      },
+      {
+        "id": 3,
+        "narration": "이번 예고편은 그냥 히어로가 많은 정도가 아니에요. 역대 히어로를 다 모았다는 말이 나옵니다.",
+        "on_screen_text": "다 모였다",
+        "image_prompt": "A crowded group photo of cute cartoon animals wearing different colorful superhero costumes, squeezed together in one frame, a puppy in the center wearing a cape"
+      },
+      {
+        "id": 4,
+        "narration": "여기에 헤일리 스테인펠드까지 첫 등장했습니다. 팬들은 예고편을 돌려보느라 바쁩니다.",
+        "on_screen_text": "첫 등장",
+        "image_prompt": "A cartoon rabbit with a tiny bow and arrow stepping out of a glowing golden portal, a surprised crowd of small animals pointing at it"
+      },
+      {
+        "id": 5,
+        "narration": "그리고 터진 한마디, 투 미 마이 엑스맨. 이 대사 하나에 팬들이 소리를 질렀습니다.",
+        "on_screen_text": "투 미 마이",
+        "image_prompt": "A heroic cartoon eagle raising one wing high on a rooftop at sunset, a crowd of cheering cartoon animals below with their mouths wide open"
+      },
+      {
+        "id": 6,
+        "narration": "이러다 다음 예고편엔 영화관 직원까지 나오겠어요. 마블, 출연료는 괜찮은 거죠?",
+        "on_screen_text": "다음은 누구",
+        "image_prompt": "A cartoon raccoon in a movie theater staff uniform holding a popcorn bucket wearing a tiny superhero mask, looking surprised in a spotlight"
+      },
+      {
+        "id": 7,
+        "narration": "엑스맨 합류, 환영이냐 너무 많다냐. 여러분은 어느 편이세요?",
+        "on_screen_text": "환영 vs 과해",
+        "image_prompt": "Two cartoon teams of animals facing each other, one side cheering with raised paws and the other side shaking heads, a glowing divider line in the middle"
+      }
+    ],
+    "description": "어벤져스 둠즈데이 파이널 예고편에 히어로가 총출동했습니다. 투 미 마이 엑스맨 한 줄에 팬들이 난리 난 이유를 30초로 정리했어요.\n엑스맨 합류, 환영이냐 과하다냐 댓글로 싸워봅시다.\n#어벤져스둠즈데이 #마블 #엑스맨",
+    "tags": [
+      "어벤져스",
+      "어벤져스둠즈데이",
+      "마블",
+      "엑스맨",
+      "예고편",
+      "헤일리스테인펠드",
+      "쇼츠",
+      "영화이슈"
+    ],
+    "comment_question": "엑스맨까지 합류한 어벤져스 둠즈데이, 환영이다 vs 너무 많다 어느 편이세요?"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 7
+    }
+  },
+  "effects": {
+    "duration": 47.78,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Volatile Reaction",
+    "bgm_mood": "hype",
+    "bgm_credit": "Music: \"Volatile Reaction\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "마블이 이번엔 진짜 작정했습니다. 히어로를 전부 한 영상에 쑤셔 넣었어요.",
+      "on_screen_text": "작정했다",
+      "image": "runs/2026-11-24/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "어벤져스 둠즈데이 파이널 예고편이 공개됐는데요. 지금 검색어가 난리가 났습니다.",
+      "on_screen_text": "검색어 폭발",
+      "image": "runs/2026-11-24/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "이번 예고편은 그냥 히어로가 많은 정도가 아니에요. 역대 히어로를 다 모았다는 말이 나옵니다.",
+      "on_screen_text": "다 모였다",
+      "image": "runs/2026-11-24/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "여기에 헤일리 스테인펠드까지 첫 등장했습니다. 팬들은 예고편을 돌려보느라 바쁩니다.",
+      "on_screen_text": "첫 등장",
+      "image": "runs/2026-11-24/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "그리고 터진 한마디, 투 미 마이 엑스맨. 이 대사 하나에 팬들이 소리를 질렀습니다.",
+      "on_screen_text": "투 미 마이",
+      "image": "runs/2026-11-24/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "이러다 다음 예고편엔 영화관 직원까지 나오겠어요. 마블, 출연료는 괜찮은 거죠?",
+      "on_screen_text": "다음은 누구",
+      "image": "runs/2026-11-24/scene_06.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 7,
+      "narration": "엑스맨 합류, 환영이냐 너무 많다냐. 여러분은 어느 편이세요?",
+      "on_screen_text": "환영 vs 과해",
+      "image": "runs/2026-11-24/scene_07.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-11-24/thumbnail.jpg",
+  "video_file": "videos/2026-11-24.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "QA 불합격"
+  },
+  "finished_at": "2026-11-24T04:39:21+09:00"
+}

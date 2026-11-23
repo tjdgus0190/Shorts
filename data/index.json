@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-24",
+    "status": "qa_failed",
+    "title": "투 미 마이 엑스맨 한 줄에 마블 팬들 난리난 이유",
+    "overall": 64,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-11-24/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 47.78
+  },
+  {
     "date": "2026-11-23",
     "status": "success",
     "title": "신곡 공개 무대인데 화제는 딴 데서 터졌다",
