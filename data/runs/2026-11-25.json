@@ -1,0 +1,488 @@
+{
+  "date": "2026-11-25",
+  "status": "qa_failed",
+  "started_at": "2026-11-25T04:08:23+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-11-25T04:08:23+09:00",
+      "note": "",
+      "seconds": 25.6
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-25T04:08:49+09:00",
+      "note": "",
+      "seconds": 21.4
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-25T04:09:10+09:00",
+      "note": "",
+      "seconds": 30.0
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-25T04:09:40+09:00",
+      "note": "",
+      "seconds": 40.7
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-25T04:10:21+09:00",
+      "note": "1차",
+      "seconds": 20.3
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-25T04:10:41+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 21.6
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-25T04:11:02+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 32.3
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-25T04:11:35+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 43.5
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-25T04:12:18+09:00",
+      "note": "2차",
+      "seconds": 20.1
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-25T04:12:38+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 11.5
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-25T04:12:50+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 30.8
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-25T04:13:21+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 43.8
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-25T04:14:04+09:00",
+      "note": "3차",
+      "seconds": 20.6
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 60,
+        "hook": 62,
+        "clarity": 62,
+        "visual": 80,
+        "subtitle": 78,
+        "safety": 62
+      },
+      "overall": 66,
+      "pass": false,
+      "issues": [
+        "훅이 제우스 검색을 언급하지만 본문에 제우스 얘기가 전혀 없습니다. 제목과 설명에도 제우스가 들어가 있어서 낚시성으로 보일 수 있고, 시청자가 중간에 이탈할 가능성이 큽니다.",
+        "젠지가 시우·샤벨·클라우드를 영입했다는 내용, 한화생명에서 카나비가 떠나고 김건부가 들어왔다는 내용, '쇼메이커 허수의 낭만'이라는 표현은 사실 여부를 확인해야 합니다. 확인 필요. 실제 선수와 팀 이름을 단정해서 쓰므로 루머나 오보면 명예훼손·허위 정보 위험이 있습니다.",
+        "장면 4의 '쇼메이커 허수의 낭만이 스토브리그 판을 흔들었다'는 무슨 뜻인지 설명이 없습니다. 어떤 일이 있었는지 모르면 이해하기 어렵습니다.",
+        "개그가 '장바구니에 담았다', '이사 나가자마자 입주', '판이 뒤집혔다'처럼 비유 한두 개에 그치고 반전이 약합니다. 마지막은 '젠지 대 나머지 전부'로 댓글을 유도하는 평범한 마무리입니다.",
+        "장면 2 이미지(f1)의 장바구니 안 트로피가 두 개로 보이고 나머지는 가려져 있어서, '셋'이라는 대사와 맞지 않습니다. 호랑이가 젠지를 뜻한다는 연결도 약합니다.",
+        "마지막 장면(f3)의 오른쪽 동물은 염소나 영양처럼 생겼고 양옆에 작은 캐릭터가 잘려 있어서, '나머지 전부'라는 의도가 잘 전달되지 않습니다.",
+        "화면 위에 검은 박스 텍스트가 있고 아래에도 자막이 있어서 글자가 이중으로 놓입니다. 하단 자막이 문장 중간에서 끊기는 곳도 있습니다(예: '번에 담아버렸어요'). 다만 가독성은 좋고 화면을 크게 가리지는 않습니다.",
+        "영상 길이 42.9초에 장면 6개라 장면당 약 7초입니다. 비슷한 톤의 설명이 이어져서 리듬이 단조롭습니다."
+      ],
+      "retry_target": "planner",
+      "feedback": "1) 훅과 본문을 연결하세요. 제우스가 왜 화제인지 한 문장으로 짚거나, 제우스 얘기를 뺄 거면 제목·훅·설명에서 모두 지우세요. 제우스 관련 사실은 확인된 것만 쓰세요. 2) 선수 이적 내용은 공식 발표 기준으로 다시 확인하고, 확정이 아니면 '~라는 소문' 같은 표현으로 바꾸세요. 확인 필요. '쇼메이커 허수의 낭만'은 맥락 설명을 붙이거나 삭제하세요. 3) 비유를 이어 가는 구성으로 바꾸고(예: 이적시장 = 쇼핑몰) 끝에 반전을 하나 넣으세요. 마지막 장면은 평범한 질문이 아니라 웃음 포인트가 있는 마무리가 좋습니다. 4) image_prompt에서 개수와 구도를 분명히 지정하세요(예: 트로피 정확히 3개가 보이게). 마지막 장면은 호랑이와 다수 동물을 대비시키고, 인물이 화면에서 잘리지 않게 하세요."
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 63,
+        "hook": 66,
+        "clarity": 72,
+        "visual": 63,
+        "subtitle": 72,
+        "safety": 80
+      },
+      "overall": 68,
+      "pass": false,
+      "issues": [
+        "[확인 필요] 젠지의 시우·샤벨·클라우드 영입, 한화생명의 카나비 이탈과 캐니언(김건부) 영입은 제가 사실 여부를 확인하지 못했습니다. 업로드 전에 공식 발표와 대조하세요. 확정 전 루머라면 '~했다고 합니다'보다 약한 표현이 필요합니다.",
+        "'캐니언 김건부'는 같은 선수의 활동명과 본명을 나란히 쓴 표기입니다. 두 명으로 오해할 수 있어 '캐니언 선수' 또는 '김건부 선수'로 하나만 쓰는 게 좋습니다.",
+        "6번 장면 프레임(85%)에서 호랑이가 화면 왼쪽 밖으로 잘렸습니다. 오른쪽의 검은 새 비슷한 괴생명체는 형태가 이상합니다. 작은 동물도 6마리로 보기 어렵고, 프롬프트의 '전부 잘리지 않게'가 지켜지지 않았습니다. 1~4번 장면과 화풍도 달라 보입니다.",
+        "2번 장면의 트로피는 '정확히 3개'로 요청했지만 프레임에는 4개 이상으로 보입니다. 시우·샤벨·클라우드 세 명이라는 대사와 맞지 않습니다.",
+        "1번 장면의 쇼핑몰 화면에 깨진 영문 텍스트('Tet yue shorn...')가 있습니다. 작게 보이지만 글자 깨짐에 해당합니다.",
+        "하단 자막이 화면 중앙에 걸려 캐릭터와 오브젝트를 가립니다. 6번 장면에서는 작은 동물들 위에 자막이 겹쳤습니다. 자막이 한 번에 2~3단어씩만 나와 읽기 리듬이 끊깁니다.",
+        "영상 길이가 48초로 쇼츠치고 다소 깁니다. 뒷부분(4~5번 장면) 정보 밀도가 낮아 이탈 가능성이 있습니다.",
+        "재미 요소가 '쇼핑몰 비유'(오픈런, 장바구니, 품절·재입고, 택배 추적, 환불불가) 하나로 이어지는 데 그칩니다. 5번 장면의 '반전'은 약하고 실제 반전이라기보다 설명에 가깝습니다."
+      ],
+      "retry_target": null,
+      "feedback": "합격입니다. 개선 팁은 다섯 가지입니다. 1) 이적 소식은 업로드 전에 공식 발표와 대조하세요. 2) 6번 장면은 호랑이와 작은 동물들이 잘리지 않도록 가로 구도나 줌아웃으로 다시 생성하고, 이상한 형체의 캐릭터는 빼세요. 3) 2번 장면은 트로피를 정확히 3개로 맞추거나 대사를 '한가득'으로 바꾸세요. 4) 자막 위치를 화면 하단으로 내리고 문장 단위로 끊어 보여주면 캐릭터를 덜 가립니다. 5) 첫 3초 훅에 구체적인 숫자나 충격 포인트(예: '3명 한 번에')를 넣고, 5번 장면에 진짜 반전 드립을 넣으면 hook과 fun 점수가 오를 것입니다."
+    },
+    {
+      "attempt": 3,
+      "scores": {
+        "fun": 55,
+        "hook": 55,
+        "clarity": 70,
+        "visual": 60,
+        "subtitle": 60,
+        "safety": 70
+      },
+      "overall": 60,
+      "pass": false,
+      "issues": [
+        "훅 약함: 첫 문장이 '영입했답니다'라는 뉴스 전달 톤이고, 영상 길이는 50초입니다. 3초 안에 궁금증이나 반전이 없고 고양이가 환호하는 화면만 나옵니다.",
+        "재미 부족: 쇼핑몰, 택배, 환불로 이어지는 비유가 장면마다 같은 방식으로 반복됩니다. 장면 5에서 '진짜 반전'이라고 했지만 실제 반전은 없고 '배송은 내년'은 약한 말장난입니다. 전체적으로 뉴스 요약에 가깝습니다.",
+        "장면 6 프롬프트 불일치: 호랑이 1마리와 토끼 3마리, 트로피 1개를 요청했는데 트로피가 2개로 나왔습니다. 호랑이가 화면 왼쪽 끝에서 잘렸고 '모든 동물이 완전히 보이게'라는 지시도 지켜지지 않았습니다.",
+        "장면 1 이미지: 화면 속 글자가 깨져 있습니다(예: 'Suply stowe', 'Gaming stans'). 장면 2에서 요청한 호랑이와 트로피 컷은 샘플 프레임에 없어 확인하지 못했습니다.",
+        "장면 3 프롬프트 불일치: '빈 방'이라고 했는데 TV와 화분, 가구가 있는 방으로 나왔습니다. 카나비가 떠났다는 의미가 전달되지 않습니다.",
+        "자막 문제: 하단 자막이 캐릭터 몸통과 트로피 위를 직접 가립니다(장면 1의 고양이 다리, 장면 6의 토끼와 트로피). 한 줄이 중간에서 끊겨 '선수 세', '어제'처럼 의미 단위가 맞지 않습니다.",
+        "레이아웃: 가로형 이미지를 세로 화면 중앙에 넣고 위아래를 흐린 배경으로 채웠습니다. 화면을 충분히 쓰지 못하고, 상단 자막 박스도 이미지 위에 따로 떠 있어 어색합니다.",
+        "사실 확인 필요: 시우, 샤벨, 클라우드의 젠지 영입과 카나비 이적, 김건부의 한화생명 영입은 제가 검증하지 못했습니다. 공식 발표 전 루머라면 '답니다' 표현 외에 출처나 '확정 아님' 표기가 필요합니다.",
+        "내용 모순 가능성: 장면 1~3에서는 영입이 이미 끝난 것처럼 말하고 장면 5에서는 '배송은 내년'이라고 해서 영입 시점의 흐름이 헷갈립니다."
+      ],
+      "retry_target": "planner",
+      "feedback": "주제는 시의성이 있지만 대본이 뉴스 요약에 머물러 있습니다. 1) 훅: '젠지가 한 번에 3명 샀다'로 시작하지 말고, 결과나 반전을 먼저 던지세요(예: '젠지 장바구니에 담긴 게 선수 3명이라는 게 말이 됩니까?'). 2) 쇼핑 비유 하나를 끝까지 밀되 장면마다 새 드립이나 상황 변화를 넣어서 같은 말이 반복되지 않게 하세요. 3) 장면 5의 '진짜 반전'에는 실제로 의외의 한 줄을 넣고, 마지막에는 댓글을 유도하는 질문을 던지세요. 4) 영입 내용은 공식 발표인지 루머인지 구분해 '확정 아님' 문구를 넣고, 확인되지 않은 선수명이나 이적 사실은 빼거나 완화하세요. 5) 길이를 35~40초로 줄이세요. 6) 이미지 프롬프트는 'zoomed-out, centered, all animals fully inside frame'처럼 구도를 더 분명히 쓰고, 개수 지정(트로피 1개)을 다시 확인하세요. 화면 속 글자는 'no text on screens'로 막으세요. 자막은 하단 중앙의 가운데 구간을 피해서 배치하고, 의미 단위로 끊어 주세요."
+    }
+  ],
+  "marketer": {
+    "summary": "오늘은 LCK 스토브리그 대이동, 원태인 FA 영입전, 시그널2 티저 논란, 무시알라 건강 이슈까지 스포츠·e스포츠·드라마 화제가 검색량을 이끈 하루",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "pakistan a vs nepal national cricket team standings",
+        "traffic": "2000+",
+        "traffic_num": 2000,
+        "news": [
+          "Pakistan A defend 168 to survive Nepal scare",
+          "Rohail Nazir's unbeaten half-century guides Pakistan Shaheens to a 96-run win over Nepal",
+          "Nepal crash out of Asia Cup Rising Stars after 96-run defeat to Pakistan A"
+        ],
+        "topic": "168점 지키려다 간담 서늘했던 파키스탄 A, 결국 96점 차 승리로 네팔 탈락시킨 아시아컵 라이징 스타즈 경기",
+        "why_now": "'Pakistan A defend 168 to survive Nepal scare', 'Nepal crash out of Asia Cup Rising Stars after 96-run defeat to Pakistan A' 등 경기 결과와 네팔 탈락 소식",
+        "angle": "크리켓 입문자도 이해하는 30초 정리: '한때 아슬아슬했는데 결국 96점 차 대승?' 반전 포인트와 순위표 탈락 경우의 수를 숫자로 보여주기",
+        "target": "크리켓·남아시아 스포츠에 관심 있는 팬, 해외 스포츠 이슈 소비층",
+        "fun_score": 4,
+        "risk": "low",
+        "risk_note": ""
+      },
+      {
+        "rank": 2,
+        "keyword": "제우스",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "젠지, 시우·샤벨·클라우드 영입",
+          "'쇼메이커' 허수의 낭만, LCK 스토브리그 판을 흔들다 [이주현의 로그인 e스포츠]",
+          "한화생명, 카나비 떠난 자리에 ‘캐니언’ 김건부 영입"
+        ],
+        "topic": "LCK 스토브리그 대이동: 젠지의 시우·샤벨·클라우드 영입, 한화생명의 김건부 영입까지 '이적 시장 한 방 정리'",
+        "why_now": "'젠지, 시우·샤벨·클라우드 영입', '한화생명, 카나비 떠난 자리에 캐니언 김건부 영입', '쇼메이커 허수의 낭만, LCK 스토브리그 판을 흔들다' 기사",
+        "angle": "'지금 LCK 로스터 누가 어디 가?' 이적 현황을 팀별 카드 뉴스형 30초 요약 + 팬들이 '이 조합 실화냐' 하며 반응하는 상황극. 제우스 키워드는 뉴스 제목에 직접 언급이 없으므로 스토브리그 전체 맥락으로 다룸",
+        "target": "LoL·LCK 팬, 10~30대 e스포츠 시청층",
+        "fun_score": 8,
+        "risk": "low",
+        "risk_note": "제목에 제우스 언급이 없어 특정 선수 거취를 단정하지 말 것"
+      },
+      {
+        "rank": 3,
+        "keyword": "에릭 페디",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "\"죄송합니다. 미국에 남겠습니다\" 20승 투수 또 한국행 불발, 대체 왜 거절했나",
+          "‘FA 최대어’ 원태인 영입전, NC도 뛰어들었다",
+          "구자욱 '시끌', 원태인 '잠잠'...알고보면 물밑 계산은 더 치열"
+        ],
+        "topic": "20승 투수 페디, '죄송합니다 미국에 남겠습니다' 또 한국행 불발… 그 와중에 FA 원태인 영입전에 NC까지 참전",
+        "why_now": "'20승 투수 또 한국행 불발, 대체 왜 거절했나', '원태인 영입전, NC도 뛰어들었다' 기사",
+        "angle": "'KBO가 이렇게 짝사랑이다' 밈형 상황극: 한국행을 기다리는 구단 vs 거절 문자 + FA 원태인 영입전 구단별 눈치싸움 정리",
+        "target": "KBO 야구팬, 스토브리그 관심층",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": "거절 이유는 제목에 없으므로 추측하지 말고 '왜일까' 질문형으로 처리"
+      },
+      {
+        "rank": 4,
+        "keyword": "시그널2",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "김은희 작가의 '시그널2', 조진웅 복귀 무대 되나",
+          "[센터엔터] ’시그널2’ 첫 티저 공개…이제훈·김혜수 목소리만 外",
+          "“소년범이 TV에 나와도 되나요?”…‘시그널2’ 첫 티저에 싸늘한 반응"
+        ],
+        "topic": "'시그널2' 첫 티저 공개, 이제훈·김혜수 목소리에 기대 폭발… 그런데 '소년범이 TV에 나와도 되나요' 싸늘한 반응은 왜?",
+        "why_now": "'시그널2 첫 티저 공개…이제훈·김혜수 목소리만', '소년범이 TV에 나와도 되나요? 첫 티저에 싸늘한 반응', '조진웅 복귀 무대 되나' 기사",
+        "angle": "'시그널2가 난리인 이유' 기대감 vs 논란 두 갈래 30초 정리. 티저 포인트(목소리 출연) 중심으로 다루고 논란은 사실 위주로 짧게",
+        "target": "드라마 팬, 시그널 1 시청 경험이 있는 20~40대",
+        "fun_score": 7,
+        "risk": "high",
+        "risk_note": "실존 배우의 과거 이슈(소년범 논란)와 연관된 사안. 특정인 비난·옹호 없이 보도된 반응만 전달하고 티저·기대 포인트 위주로 구성 권장"
+      },
+      {
+        "rank": 5,
+        "keyword": "챔피언스리그",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "AFC 챔피언스 리그 3-1 비셀 고베 생중계 (후반전): 페레아 또 득점",
+          "응우옌 필립은 아시안컵에서 두 번째로 교체되었다.",
+          "폴킹 씨는 전 도르트문트 감독을 이겨서 기뻤다."
+        ],
+        "topic": "AFC 챔피언스리그 비셀 고베전 3-1, 페레아 또 득점… 후반전 생중계 분위기 정리",
+        "why_now": "'AFC 챔피언스 리그 3-1 비셀 고베 생중계 (후반전): 페레아 또 득점' 기사",
+        "angle": "'3-1로 끝난 그 경기' 득점 장면 흐름을 스코어 중심으로 요약하고 '또 득점'한 페레아 활약을 짚는 하이라이트형 쇼츠. 나머지 기사 제목은 관련성이 불분명해 사용하지 않음",
+        "target": "아시아 축구·ACL 팬",
+        "fun_score": 4,
+        "risk": "low",
+        "risk_note": "뉴스 제목이 번역체·불명확해 팀·대회 세부 정보를 단정하지 말 것"
+      },
+      {
+        "rank": 6,
+        "keyword": "galatasaray vs aston villa",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "Licensable picture: Galatasaray training session ahead of UEFA Champions League match against Aston Villa",
+          "Aston Villa defender Ian Maatsen warns Unai Emery's side to expect tough Champions League test against 'best team in Turkiye' Galatasaray",
+          "RAMS Park Pitch Problems Disrupt Aston Villa Preparations"
+        ],
+        "topic": "갈라타사라이 vs 아스톤 빌라, 챔스 경기 앞두고 '튀르키예 최고 팀' 경고와 RAMS 파크 잔디 논란",
+        "why_now": "'Maatsen warns Villa to expect tough test against best team in Turkiye', 'RAMS Park Pitch Problems Disrupt Aston Villa Preparations' 기사",
+        "angle": "'원정 가면 이런 일이 생긴다' 잔디 상태 + 마츤의 경고 발언을 엮은 경기 전 프리뷰. 원정 분위기를 드립으로 풀기",
+        "target": "유럽 챔피언스리그 시청층, 프리미어리그 팬",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": ""
+      },
+      {
+        "rank": 7,
+        "keyword": "경원선",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "[시론] 경인선 지하화는 인천 미래의 지하화다",
+          "조건부 반영까지 16년…최대호 시장 뚝심이 만든 '안양 경부선 지하화' - 머니투데이",
+          "군포시, 철도지하화 사업성 보완…2030년 추가계획 반영 목표"
+        ],
+        "topic": "경인선·경부선 지하화 논의 확산… 안양은 조건부 반영까지 16년, 군포도 2030년 추가계획 반영 목표",
+        "why_now": "'경인선 지하화는 인천 미래의 지하화다', '조건부 반영까지 16년…안양 경부선 지하화', '군포시, 철도지하화 사업성 보완' 기사. 경원선 자체는 제목에 직접 언급 없음",
+        "angle": "'16년 걸려서 겨우 조건부?' 숫자로 보는 철도 지하화 기다림 + 우리 동네 철도 땅 위가 사라지면 달라지는 점 상상 연출. 경원선 직접 이슈는 아니므로 지하화 흐름으로 다룸",
+        "target": "수도권 거주자, 부동산·교통 관심층",
+        "fun_score": 4,
+        "risk": "medium",
+        "risk_note": "지자체 정책·지역 정치 이슈 성격이 있어 특정 시장·지역 홍보나 편들기 없이 사실 위주로 구성"
+      },
+      {
+        "rank": 8,
+        "keyword": "무시알라",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "충격 '김민재 동료' 아침에 의식 잃고, 저녁에 레알전 뛰었다 \"발작 은폐 의혹\"... 뮌헨 고위층 '분노 폭발' - 머니투데이",
+          "1850억 공중분해 위기! 재계약 후 60경기 결장+발작 증세, 독일 최고 유망주 어쩌나…뮌헨 고민 깊다 \"이전 수준까지 올라오기 어려워\"",
+          "무시알라가 은퇴한다는 소식은 사실이 아닙니다."
+        ],
+        "topic": "무시알라, 아침에 의식 잃고 저녁에 레알전 출전했다는 보도… '발작 은폐 의혹'에 뮌헨 고위층 분노",
+        "why_now": "'아침에 의식 잃고 저녁에 레알전 뛰었다 발작 은폐 의혹', '재계약 후 60경기 결장+발작 증세', '은퇴한다는 소식은 사실이 아닙니다' 기사",
+        "angle": "'이게 왜 난리냐면' 형식으로 보도 내용과 은퇴설 부인을 구분해 정리. 의혹은 보도 인용임을 명확히 하고 선수 건강을 조롱하지 않는 톤 유지",
+        "target": "분데스리가·뮌헨·김민재 팬",
+        "fun_score": 6,
+        "risk": "high",
+        "risk_note": "실존 선수의 건강 문제와 은폐 의혹은 민감한 사생활 영역. 확인되지 않은 보도임을 명시하고 은퇴설은 사실이 아니라는 점을 분명히 할 것"
+      },
+      {
+        "rank": 9,
+        "keyword": "랜드로버 디펜더",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "디펜더, 영국 적십자 파트너십 2029년까지 연장",
+          "디펜더, 영국 적십자와 협력 2029년까지 연장…\"NGO 사양 110·130 추가 투입\"",
+          "디펜더, 영국 적십자와 파트너십 2029년까지 연장"
+        ],
+        "topic": "디펜더, 영국 적십자 파트너십 2029년까지 연장… NGO 사양 110·130 추가 투입",
+        "why_now": "'디펜더, 영국 적십자와 협력 2029년까지 연장\"NGO 사양 110·130 추가 투입\"' 기사",
+        "angle": "'오프로드 차가 구호 현장에서 일하는 법' 디펜더 NGO 사양을 일반 모델과 비교하는 30초 정리. 뉴스에 없는 세부 스펙은 넣지 않기",
+        "target": "자동차 팬, 오프로드·SUV 관심층",
+        "fun_score": 4,
+        "risk": "low",
+        "risk_note": ""
+      }
+    ],
+    "trend_count": 10,
+    "excluded": [
+      {
+        "keyword": "주진우",
+        "blocked_by": "탄핵"
+      }
+    ]
+  },
+  "selected_attempt": 2,
+  "plan": {
+    "chosen_rank": 2,
+    "reason": "1위 크리켓(2000+)과 2위(1000+)의 검색량 차이는 두 배 정도지만 재미 점수는 4 대 8로 2위가 압도적이고, 한국 시청자의 공감과 댓글 싸움 가능성도 2위가 큽니다. QA 피드백에 따라 제우스는 뉴스 제목에 직접 언급이 없어 화제 이유를 확인할 수 없으므로 제목, 훅, 설명, 태그에서 모두 뺐고 스토브리그 전체 이슈로만 다뤘습니다. 사용한 사실은 젠지의 시우, 샤벨, 클라우드 영입 소식과 한화생명이 카나비가 떠난 자리에 김건부를 영입했다는 소식뿐이며, 공식 발표 여부는 제목만으로 확인할 수 없어 소식이라는 표현으로 처리했습니다. 맥락 설명이 불가능한 쇼메이커 허수 기사는 삭제했습니다. 계산은 없습니다.",
+    "title": "LCK 이적시장 쇼핑몰 오픈런 터진 이유",
+    "hook": "지금 LCK 이적시장, 쇼핑몰 오픈런처럼 터졌습니다.",
+    "bgm_mood": "funny",
+    "style": "vibrant 3D cartoon, soft lighting, bright colors, high detail, vertical composition, full bodies fully visible inside the frame",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "지금 LCK 이적시장, 쇼핑몰 오픈런처럼 터졌습니다. 새로고침 누를 때마다 상품이 바뀌어요.",
+        "on_screen_text": "오픈런 터짐",
+        "image_prompt": "One excited cartoon cat standing in front of a giant glowing shopping website screen on a gaming arena stage, the cat's whole body visible, bright colorful background"
+      },
+      {
+        "id": 2,
+        "narration": "젠지가 시우, 샤벨, 클라우드를 영입했다는 소식입니다. 장바구니에 세 개를 한 번에 담았어요.",
+        "on_screen_text": "한 번에 셋?",
+        "image_prompt": "One happy cartoon tiger pushing a shopping cart that holds exactly three shiny golden trophies in a row, the tiger and the whole cart visible, bright arena background"
+      },
+      {
+        "id": 3,
+        "narration": "한화생명도 카나비가 떠난 자리에 캐니언 김건부를 영입했다고 합니다. 품절되자마자 재입고예요.",
+        "on_screen_text": "재입고 완료",
+        "image_prompt": "One cartoon orange fox carrying a single cardboard box into an empty cozy gaming room, one small bird waving goodbye at the door, the whole fox visible"
+      },
+      {
+        "id": 4,
+        "narration": "이쯤 되면 로스터 보는 게 택배 추적 수준입니다. 어제 본 조합이 오늘은 없어요.",
+        "on_screen_text": "조합 실종",
+        "image_prompt": "One confused cartoon panda holding a long paper receipt and looking at an empty shelf with three question mark bubbles above its head, the panda fully visible"
+      },
+      {
+        "id": 5,
+        "narration": "근데 반전이 있습니다. 장바구니에 담았다고 끝이 아니에요. 진짜 별점 리뷰는 내년 시즌에 달립니다.",
+        "on_screen_text": "진짜는 지금부터",
+        "image_prompt": "One cartoon owl holding up a board with exactly five glowing stars next to a closed gift box, the owl fully visible, soft spotlight"
+      },
+      {
+        "id": 6,
+        "narration": "제일 무서운 건 응원팀 유니폼은 환불이 안 된다는 겁니다. 내년 우승은 젠지냐 나머지 전부냐, 댓글로 싸웁시다.",
+        "on_screen_text": "유니폼 환불불가",
+        "image_prompt": "One big cartoon tiger on the left side and exactly six small cartoon animals on the right side facing each other with one golden trophy in the center, all animals fully visible and not cropped, dramatic lighting"
+      }
+    ],
+    "description": "지금 LCK 스토브리그 이적시장을 쇼핑몰 오픈런에 빗대어 풀었습니다. 젠지와 한화생명의 영입 소식까지 한 번에 정리! 내년 우승은 누가 가져갈까요?\n#LCK #스토브리그 #이적시장",
+    "tags": [
+      "LCK",
+      "스토브리그",
+      "젠지",
+      "한화생명",
+      "김건부",
+      "롤",
+      "이적시장",
+      "e스포츠",
+      "리그오브레전드"
+    ],
+    "comment_question": "내년 LCK 우승은 젠지 vs 나머지 전부, 여러분의 선택은?"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 6
+    }
+  },
+  "effects": {
+    "duration": 48.04,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Fluffing a Duck",
+    "bgm_mood": "funny",
+    "bgm_credit": "Music: \"Fluffing a Duck\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "지금 LCK 이적시장, 쇼핑몰 오픈런처럼 터졌습니다. 새로고침 누를 때마다 상품이 바뀌어요.",
+      "on_screen_text": "오픈런 터짐",
+      "image": "runs/2026-11-25/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "젠지가 시우, 샤벨, 클라우드를 영입했다는 소식입니다. 장바구니에 세 개를 한 번에 담았어요.",
+      "on_screen_text": "한 번에 셋?",
+      "image": "runs/2026-11-25/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "한화생명도 카나비가 떠난 자리에 캐니언 김건부를 영입했다고 합니다. 품절되자마자 재입고예요.",
+      "on_screen_text": "재입고 완료",
+      "image": "runs/2026-11-25/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "이쯤 되면 로스터 보는 게 택배 추적 수준입니다. 어제 본 조합이 오늘은 없어요.",
+      "on_screen_text": "조합 실종",
+      "image": "runs/2026-11-25/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "근데 반전이 있습니다. 장바구니에 담았다고 끝이 아니에요. 진짜 별점 리뷰는 내년 시즌에 달립니다.",
+      "on_screen_text": "진짜는 지금부터",
+      "image": "runs/2026-11-25/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "제일 무서운 건 응원팀 유니폼은 환불이 안 된다는 겁니다. 내년 우승은 젠지냐 나머지 전부냐, 댓글로 싸웁시다.",
+      "on_screen_text": "유니폼 환불불가",
+      "image": "runs/2026-11-25/scene_06.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-11-25/thumbnail.jpg",
+  "video_file": "videos/2026-11-25.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "QA 불합격"
+  },
+  "finished_at": "2026-11-25T04:14:25+09:00"
+}

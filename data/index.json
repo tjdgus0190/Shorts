@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-25",
+    "status": "qa_failed",
+    "title": "LCK 이적시장 쇼핑몰 오픈런 터진 이유",
+    "overall": 60,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-11-25/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 48.04
+  },
+  {
     "date": "2026-11-24",
     "status": "qa_failed",
     "title": "투 미 마이 엑스맨 한 줄에 마블 팬들 난리난 이유",
