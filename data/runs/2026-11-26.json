@@ -1,0 +1,492 @@
+{
+  "date": "2026-11-26",
+  "status": "success",
+  "started_at": "2026-11-26T03:13:37+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-11-26T03:13:37+09:00",
+      "note": "",
+      "seconds": 19.3
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-26T03:13:56+09:00",
+      "note": "",
+      "seconds": 17.7
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-26T03:14:14+09:00",
+      "note": "",
+      "seconds": 37.3
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-26T03:14:51+09:00",
+      "note": "",
+      "seconds": 36.9
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-26T03:15:28+09:00",
+      "note": "1차",
+      "seconds": 19.6
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-26T03:15:48+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 19.0
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-26T03:16:07+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 42.2
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-26T03:16:49+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 35.5
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-26T03:17:24+09:00",
+      "note": "2차",
+      "seconds": 17.9
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-26T03:17:42+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 21.4
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-26T03:18:04+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 24.6
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-26T03:18:28+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 32.4
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-26T03:19:01+09:00",
+      "note": "3차",
+      "seconds": 17.1
+    },
+    {
+      "name": "uploader",
+      "label": "업로드",
+      "status": "done",
+      "started_at": "2026-11-26T03:19:18+09:00",
+      "note": "",
+      "seconds": 0.0
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 50,
+        "hook": 62,
+        "clarity": 60,
+        "visual": 78,
+        "subtitle": 78,
+        "safety": 78
+      },
+      "overall": 64,
+      "pass": false,
+      "issues": [
+        "fun: 반전이나 드립이 없고 같은 상황('황당한 질문이 나왔다')을 장면 2~5에서 계속 반복해서, 40초가 길고 늘어짐. 장면 5의 '여기서 반전'은 실제 반전 없이 말로만 때움.",
+        "clarity: 질문을 누가 받았는지(야말 본인인지 감독인지), 질문자가 누구인지, 답변이 어땠는지가 빠져 있음. 영상이 '헛웃음이 터졌다'에서 끝나서 핵심 정보가 비어 있음. 곰이 누구를 뜻하는지도 불분명함.",
+        "hook: 첫 문장이 '야말이 GTA 하려고 챔스 빠졌냐'로 궁금증은 있지만, 화면은 놀란 고양이 기자뿐이라 '이게 질문이냐'라는 자막과 함께 봐도 임팩트가 약함. 야말이 뭘 했는지/왜 빠졌는지 맥락이 없음.",
+        "사실 확인 필요: 사바(Sabah) 대 바르셀로나 경기, 바쿠 기자회견, 야말 GTA 질문이 실제로 있었는지 근거가 기획서에 없음. 실존 인물(야말) 관련 내용이라 출처 확인이 필요함. 결장 사유가 부상이면 조롱처럼 보일 수 있음.",
+        "visual: 곰 캐릭터의 디자인이 장면 2(갈색 곰, 정장)와 장면 4(주황빛 곰, 얼굴 모양 다름)에서 서로 다름. 장면 6의 개가 든 빨간 카드가 유니폼과 겹쳐 잘 안 보임. 장면 5(공 캐릭터)는 이 프레임에서는 확인 못 함.",
+        "subtitle: 상단 박스 자막과 하단 자막이 동시에 떠서 중복이고 산만함. 하단 자막이 캐릭터 몸통을 일부 가리지만 읽기에는 문제없음.",
+        "자동 측정상 해상도, 오디오, 음량은 정상. TTS는 edge(기본 TTS)라 감정 표현이 약할 수 있음."
+      ],
+      "retry_target": "planner",
+      "feedback": "대본을 다시 써 주세요. 1) 근거 있는 사실만 쓰세요. 질문한 기자가 누구인지, 누가 답했는지, 실제 답변이 무엇이었는지(출처 확인 필요)를 넣으세요. 확인이 안 되면 단정하지 말고 '~라는 질문이 나왔다' 정도로 표현하세요. 2) 야말이 결장한 사유가 부상이면 조롱처럼 보이지 않게 톤을 조절하세요. 3) 같은 말의 반복(장면 2~5)을 줄이고, 질문 → 답변 → 반응 순서로 짧게 만드세요. 실제 답변이 웃긴 반전이면 그게 핵심이므로 장면 4~5에 두세요. 4) 목표 길이는 25~30초이고 장면은 5개 이하로 줄이세요. 5) 훅은 '챔스 기자회견에서 이런 질문이 나왔다'처럼 궁금증을 주는 문장으로 바꾸고, 야말을 직접 언급하는 이유가 드러나게 하세요. 6) 마지막 질문(센스 vs 선 넘음)은 유지하세요. 댓글을 유도하기에 좋습니다. 7) 곰 같은 반복 캐릭터는 이미지 프롬프트에서 외형(털 색, 넥타이 색)을 고정해 장면마다 달라지지 않게 하세요."
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 55,
+        "hook": 68,
+        "clarity": 72,
+        "visual": 78,
+        "subtitle": 80,
+        "safety": 78
+      },
+      "overall": 69,
+      "pass": false,
+      "issues": [
+        "fun: 구성이 '상황 설명 → 단정 금지 → 투표 유도'라 뉴스 전달에 가깝다. 반전이나 드립이 약하고 장면 3의 '헛웃음'이 유일한 웃음 포인트다. 장면 4는 흐름이 늘어진다.",
+        "hook: 첫 문장은 궁금증을 만들지만 '이런 질문이 나왔습니다'가 밋밋하다. 첫 프레임 자막 '이게 질문?'은 좋다. 다만 프레임 f0에서 고양이의 엄지척 손 모양이 충격 표정과 어긋난다.",
+        "visual: 장면 2의 곰은 평면 일러스트 스타일이다. 장면 3과 5는 3D 픽사풍이라 화풍이 섞여 일관성이 떨어진다. 장면 2의 곰은 장면 3의 곰보다 얼굴이 다르다.",
+        "visual: 장면 2는 '사바와 붙기를 앞두고' 자막이 나올 때 곰이 아무 반응 없이 앉아 있어 밋밋하다.",
+        "subtitle: 하단 자막이 캐릭터 몸통과 손을 일부 가린다. 가독성은 좋고 얼굴은 가리지 않는다. 상단 검은 박스 자막과 하단 자막이 동시에 떠서 다소 산만하다.",
+        "safety: 실존 선수(야말)의 결장 사유를 GTA와 엮은 질문이 소재다. 장면 4에서 '확인된 게 없다', '부상일 수도 있다'고 유보해 위험은 낮췄다. 다만 질문이 실제로 나왔는지, 담브라우스카스 감독이 사바 감독이 맞는지, 경기 일정과 장소는 정확한지 확인 필요하다. 장면 2 문장은 누가 기자회견을 했는지 모호하다.",
+        "safety: 설명란 '황당한 질문'이라는 표현은 질문한 기자를 조롱하는 느낌을 줄 수 있다. 출처를 밝히면 안전하다."
+      ],
+      "retry_target": null,
+      "feedback": "합격이지만 개선 여지가 있다. 1) 훅을 '야말이 안 나왔는데 기자가 물은 게 \"GTA 하려고요?\"'처럼 결과부터 터뜨리는 문장으로 바꾼다. 2) 장면 4의 단정 금지 멘트는 한 줄로 줄이고, 감독의 재치 있는 답변이나 반응 같은 반전 한 방을 넣는다. 3) 이미지 프롬프트에 'consistent 3D Pixar-style'을 명시해 장면 2의 화풍과 곰 얼굴을 맞춘다. 4) 첫 장면 고양이는 엄지척을 빼고 놀란 포즈로 지시한다. 5) 설명란이나 고정 댓글에 기사 출처를 달고, 감독 이름과 소속, 경기 일정을 확인한다."
+    },
+    {
+      "attempt": 3,
+      "scores": {
+        "fun": 62,
+        "hook": 78,
+        "clarity": 68,
+        "visual": 78,
+        "subtitle": 80,
+        "safety": 80
+      },
+      "overall": 72,
+      "pass": true,
+      "issues": [
+        "장면 4의 '여기서 반전'은 자막으로 반전이라고 말만 할 뿐, 실제 반전(곰의 구체적인 대답이나 상황)이 없어 재미가 약함. 돌아온 게 '헛웃음'이라는 근거도 불분명함.",
+        "장면 5 '진짜 결장 이유는 확인된 게 없어서 단정은 못 해요'는 안전한 문장이지만 영상 중간에 리듬이 꺾이고 교과서 같은 톤이 됨. 이 장면의 이미지(공 캐릭터)도 이야기와 연결이 약함.",
+        "질문에 답한 사람이 누구인지(감독인지 선수인지) 나레이션에 없음. 곰 캐릭터가 누구인지 시청자가 알 수 없고, 담브라우스카스 이름은 설명란에만 나옴.",
+        "사실 확인 필요: 바르셀로나 대 사바의 바쿠 경기, 'GTA 하려고요?' 질문, 담브라우스카스 기자회견이라는 내용은 모두 뉴스 제목 기준이며 원문 확인이 안 됨. 설명란에 '원문 확인 필요'라고 적혀 있어 단정 표현은 피하고 있음.",
+        "장면 3 이미지에서 컨트롤러를 곰이 손에 쥐고 있어 프롬프트(공중에 떠 있음)와 다르고, 기자가 아니라 곰이 게임을 하는 것처럼 읽혀 대본 의미와 어긋남.",
+        "장면 6 마지막 프레임에서 고양이의 초록 카드가 가장자리에 잘려 있고 카드가 두 장으로 보임. 자막 '센스 있는 돌직구였다'가 공 위에 걸쳐 있음. 큰 결함은 아님."
+      ],
+      "retry_target": null,
+      "feedback": "합격입니다. 개선 팁: (1) 장면 4에 곰의 실제 답변(예: 짧은 대사 한 줄)이나 어이없는 표정 컷을 넣어 '반전' 자막이 실제 웃음으로 이어지게 하세요. (2) 장면 5의 미확인 고지는 한 문장으로 줄이거나 마지막 장면에 합치고, 공 캐릭터 장면 대신 질문 직후의 정적 리액션 컷으로 리듬을 살리세요. (3) 곰이 감독인지 선수인지 나레이션에 한 번 밝히세요. (4) 장면 3의 컨트롤러는 프롬프트대로 기자 쪽에서 곰에게 향하도록 구도를 수정하세요. (5) 장면 6의 투표 유도 CTA는 좋으니 유지하세요."
+    }
+  ],
+  "marketer": {
+    "summary": "AI 매도 쇼크로 엔비디아·나스닥이 롤러코스터를 탄 가운데, 챔피언스리그 바르셀로나 원정, 시그널2 티저 논란, KBS 연예대상 MC 발표 등 연예·스포츠 이슈가 함께 검색된 하루",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "sabah 대 바르셀로나",
+        "traffic": "2000+",
+        "traffic_num": 2000,
+        "news": [
+          "발다스 담브라우스카스, 바르셀로나전 앞두고 바쿠서 기자회견",
+          "“야말, 집에서 GTA 하려고 UCL 결장했나”…황당 질문에 헛웃음 터뜨렸다",
+          "챔피언스 리그 사바 대 바르셀로나 생중계 링크"
+        ],
+        "topic": "바르셀로나가 날아간 아제르바이잔 바쿠 원정, 기자회견에서 나온 '야말 GTA 결장설' 황당 질문",
+        "why_now": "'야말, 집에서 GTA 하려고 UCL 결장했나…황당 질문에 헛웃음' 기사와 담브라우스카스 감독의 바쿠 기자회견",
+        "angle": "\"기자회견에서 이런 질문이 나왔다고?\" 30초 상황극. 질문 → 헛웃음 반응 → 실제 결장 사유 순으로 정리하고 팬 드립 곁들이기",
+        "target": "축구 팬, 20~30대 남성",
+        "fun_score": 8,
+        "risk": "low",
+        "risk_note": ""
+      },
+      {
+        "rank": 2,
+        "keyword": "성유리",
+        "traffic": "2000+",
+        "traffic_num": 2000,
+        "news": [
+          "성유리, 중학생 때 모든 과목 '수' 성적표 공개…교수父· 의사 오빠 잇던 수재",
+          "성유리, 중학교 성적표 공개…전 과목 '수' 받은 모범생",
+          "\"오빠가 의사\"..성유리, 의대 대신 핑클 데뷔..전 과목 '올 수' 성적표 공개"
+        ],
+        "topic": "전 과목 '수' 중학교 성적표 공개, 교수 아버지·의사 오빠를 둔 핑클 멤버의 반전 학창시절",
+        "why_now": "'성유리, 중학교 성적표 공개…전 과목 수', '의대 대신 핑클 데뷔' 기사",
+        "angle": "\"내 성적표 vs 성유리 성적표\" 비교 밈. 올 수 성적표 → 의대 대신 아이돌이라는 반전을 짧게 정리",
+        "target": "30~40대, 핑클 세대 및 학부모",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": ""
+      },
+      {
+        "rank": 3,
+        "keyword": "매일경제",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "하루 만에 314조 원 증발…엔비디아 시총 이틀간 ‘롤러코스터’",
+          "뉴욕증시, AI주 매도 우려에 급락…나스닥 장 초반 4%대↓",
+          "젠슨 황 랠리 하루 만에 반납, 반도체 −7.9%… 코스피 5,000 오늘 지킬까, 볼 숫자 4개"
+        ],
+        "topic": "하루 만에 314조 원 증발, 엔비디아 시총 이틀간 롤러코스터",
+        "why_now": "'엔비디아 시총 하루 314조 증발', '나스닥 장 초반 4%대 급락', '코스피 5,000 지킬까'",
+        "angle": "\"314조가 어느 정도냐면\" 숫자 비교 쇼츠. 이틀간 오르내린 흐름과 코스피 5,000 관전 포인트 4가지를 빠르게 정리",
+        "target": "주식 투자자, 20~40대 직장인",
+        "fun_score": 8,
+        "risk": "medium",
+        "risk_note": "투자 권유로 읽히지 않도록 사실 전달 위주로 구성하고 전망은 단정하지 않기"
+      },
+      {
+        "rank": 4,
+        "keyword": "시그널",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "김은희 작가의 '시그널2', 조진웅 복귀 무대 되나",
+          "’시그널2’ 첫 티저 공개…이제훈·김혜수 목소리만",
+          "“소년범이 TV에 나와도 되나요?”…‘시그널2’ 첫 티저에 싸늘한 반응"
+        ],
+        "topic": "'시그널2' 첫 티저 공개, 이제훈·김혜수 목소리 출연과 엇갈린 반응",
+        "why_now": "'시그널2 첫 티저 공개', '조진웅 복귀 무대 되나', '소년범이 TV에 나와도 되나' 싸늘한 반응",
+        "angle": "\"티저가 왜 갈렸냐면\" 팬들의 기대와 논란 포인트를 나란히 정리하고 1편 명장면 회상 곁들이기",
+        "target": "드라마 팬, 30~40대",
+        "fun_score": 6,
+        "risk": "high",
+        "risk_note": "출연자 관련 논란(소년범 이슈)이 얽혀 있어 특정 인물 옹호나 비난 없이 반응만 중립적으로 전달할 것"
+      },
+      {
+        "rank": 5,
+        "keyword": "정부",
+        "traffic": "500+",
+        "traffic_num": 500,
+        "news": [
+          "미, 14개국에 과잉생산 관세…“한국 15% 상한 유지”",
+          "美 무역대표, 韓 투자 지원 계획 비판…\"실제 수요 없이 공급만 확대\"",
+          "[속보] 미 USTR, 14개 경제주체에 과잉생산 관세···“한국·일본·EU 등은 관세 15% 상한 유지”"
+        ],
+        "topic": "미국, 14개국에 과잉생산 관세 부과, 한국은 15% 상한 유지",
+        "why_now": "'[속보] 미 USTR 14개 경제주체에 과잉생산 관세, 한국·일본·EU 15% 상한 유지', 'USTR, 韓 투자 지원 계획 비판'",
+        "angle": "\"그래서 우리 관세 어떻게 됐냐면\" 30초 요약. 15% 유지 여부와 USTR이 지적한 내용을 쉬운 말로 풀기",
+        "target": "직장인, 수출·경제 관심층",
+        "fun_score": 5,
+        "risk": "high",
+        "risk_note": "정치·통상 이슈라 정부 평가나 진영 논리 없이 기사에 있는 사실만 전달할 것"
+      },
+      {
+        "rank": 6,
+        "keyword": "sabah vs barcelona",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "Pronóstico Sabah FA vs Barcelona: ¿Continuarán los visitantes con su racha ganadora?",
+          "De '¿Quién quiere ser millonario?' a enfrentarse al Barça en Champions",
+          "Desde el Atlético de Madrid a Fernando Alonso: La relación con España de Azerbaiyán, país en el que juega el Barça contra el Sabah"
+        ],
+        "topic": "퀴즈쇼 출신 선수가 있는 아제르바이잔 팀 사바, 바르셀로나와 맞붙다",
+        "why_now": "'De ¿Quién quiere ser millonario? a enfrentarse al Barça en Champions' 기사와 바쿠 원정 관련 보도",
+        "angle": "\"퀴즈쇼에서 챔스까지\" 언더독 스토리 형식. 사바의 챔스 도전기를 바르셀로나 원정과 대비해 소개",
+        "target": "해외축구 팬",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": "기사 제목 외 선수 신상은 지어내지 말고 확인된 내용만 쓸 것"
+      },
+      {
+        "rank": 7,
+        "keyword": "qqq",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "QQQ traded across nearly $5. Why was Balance of Power near zero? for NASDAQ:QQQ by Investrade",
+          "Nasdaq sinks about 4% as AI rout, fresh Trump tariffs spook Wall St",
+          "The Nasdaq Is Approaching Bear Market Territory: 2 Stocks Down 22% and 37% to Buy Right Now"
+        ],
+        "topic": "나스닥 4% 급락, AI 매도와 트럼프 신규 관세가 겹친 날",
+        "why_now": "'Nasdaq sinks about 4% as AI rout, fresh Trump tariffs spook Wall St', '나스닥 베어마켓 접근'",
+        "angle": "\"QQQ 들고 있는 사람들 표정\" 상황극과 급락 요인 2가지(AI 매도, 관세) 정리",
+        "target": "미국 ETF 투자자, 20~40대",
+        "fun_score": 7,
+        "risk": "medium",
+        "risk_note": "투자 조언처럼 보이지 않게 하고 종목 매수 추천은 피할 것"
+      },
+      {
+        "rank": 8,
+        "keyword": "성시경",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "‘40돌’ KBS 연예대상, 신동엽·성시경·나연 MC 발탁",
+          "[잇슈 컬처] 장성규·최수영·문상민, ‘2026 KBS 연기대상’ MC 호흡",
+          "[공식] 신동엽·성시경·나연, ‘2026 KBS 연예대상’ MC 확정"
+        ],
+        "topic": "신동엽·성시경·나연, 40주년 KBS 연예대상 MC 확정",
+        "why_now": "'[공식] 신동엽·성시경·나연, 2026 KBS 연예대상 MC 확정', '40돌 KBS 연예대상'",
+        "angle": "\"이 조합 어떻게 생각해?\" MC 라인업 소개와 기대 포인트, 연기대상 MC까지 묶은 연말 시상식 예고편",
+        "target": "예능 시청자, 20~40대",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": ""
+      },
+      {
+        "rank": 9,
+        "keyword": "양준혁",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "이벤트 원조 ‘자선야구대회’ 왜 멈춰섰나",
+          "양준혁, 자선야구대회 취소 입장문…“준비 부족해”",
+          "\"내 야구 인생의 자부심이었는데…\" 양준혁, 자선야구대회 취소에 삼킨 아쉬움"
+        ],
+        "topic": "원조 이벤트 자선야구대회, 왜 갑자기 취소됐나",
+        "why_now": "'양준혁, 자선야구대회 취소 입장문…준비 부족해', '내 야구 인생의 자부심이었는데'",
+        "angle": "\"자선야구대회가 멈춘 이유\" 입장문 내용과 대회의 지난 역사를 짧게 정리하는 다큐 톤",
+        "target": "야구 팬, 30~50대",
+        "fun_score": 5,
+        "risk": "medium",
+        "risk_note": "취소 사유를 추측하지 말고 입장문에 나온 내용만 인용하며 비난 어조 피하기"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": [
+      {
+        "keyword": "선수",
+        "blocked_by": "사망"
+      }
+    ]
+  },
+  "selected_attempt": 3,
+  "plan": {
+    "chosen_rank": 1,
+    "reason": "검색량 2000+로 가장 높고 재미 점수 8, 리스크 low다. QA 피드백 반영: 1) 훅을 결과부터 터뜨리는 문장으로 교체. 2) 단정 금지 멘트는 한 줄로 줄이고 그 앞에 헛웃음 반전 장면을 따로 넣었다. 감독의 재치 있는 답변은 제목에 없어서 지어내지 않고, 제목에 있는 '헛웃음 터뜨렸다'만 반전으로 썼다. 3) 모든 이미지 프롬프트에 consistent 3D Pixar-style을 넣고 곰 캐릭터 묘사를 동일하게 맞췄다. 4) 첫 장면 고양이는 엄지척 없이 놀란 포즈로, 마지막 장면도 엄지척을 빼고 카드로만 표현했다. 5) 설명란과 고정 댓글에 출처를 달았다. 확인 한계: 뉴스 제목만으로는 담브라우스카스 감독의 소속팀, 경기 일정, 질문한 사람, 헛웃음을 지은 사람, 실제 결장 사유를 확인할 수 없어 영상에서 단정하지 않았다. 경기 일정과 감독 소속은 업로드 전에 원문 기사로 확인이 필요하다. 계산은 없다.",
+    "title": "야말 결장에 기자가 물은 말이 GTA였다",
+    "hook": "야말이 안 나왔는데 기자가 물은 게 GTA 하려고요?",
+    "bgm_mood": "funny",
+    "style": "consistent 3D Pixar-style cartoon, soft cinematic lighting, bright colors, high detail, vertical composition",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "야말이 안 나왔는데 기자가 물은 게 GTA 하려고요? 챔스 기자회견에서 진짜 나온 질문입니다.",
+        "on_screen_text": "GTA 하려고요?",
+        "image_prompt": "consistent 3D Pixar-style, a startled orange cat reporter with a white collar leaning back with both paws raised in surprise, wide eyes and open mouth, a small game controller floating above its head, press conference room with camera flashes"
+      },
+      {
+        "id": 2,
+        "narration": "바르셀로나가 아제르바이잔 바쿠까지 날아가서 사바와 붙기를 앞두고 있던 자리였어요.",
+        "on_screen_text": "바쿠 기자회견",
+        "image_prompt": "consistent 3D Pixar-style, a brown bear in a navy blue suit with a red necktie sitting at a press conference table with several microphones, round friendly face, a seaside city skyline through the window, calm serious mood"
+      },
+      {
+        "id": 3,
+        "narration": "전술이나 선발 얘기가 나올 줄 알았는데, 날아온 건 게임 질문이었죠.",
+        "on_screen_text": "전술 아니고 게임",
+        "image_prompt": "consistent 3D Pixar-style, several orange cats with white collars holding microphones toward a brown bear in a navy blue suit with a red necktie, a small game controller floating in the air between them, press conference room"
+      },
+      {
+        "id": 4,
+        "narration": "그런데 돌아온 건 명답이 아니라 헛웃음이었대요.",
+        "on_screen_text": "여기서 반전",
+        "image_prompt": "consistent 3D Pixar-style, a brown bear in a navy blue suit with a red necktie laughing in disbelief with one paw on its forehead, round friendly face, sweat drops flying, microphones in the foreground"
+      },
+      {
+        "id": 5,
+        "narration": "진짜 결장 이유는 확인된 게 없어서 단정은 못 해요.",
+        "on_screen_text": "이유는 미확인",
+        "image_prompt": "consistent 3D Pixar-style, a cute cartoon soccer ball character sitting quietly on a bench in a stadium, thoughtful face with a small question mark above it, soft warm lighting"
+      },
+      {
+        "id": 6,
+        "narration": "센스 있는 돌직구였다 대 선 넘은 질문이었다. 여러분은 어느 쪽이에요?",
+        "on_screen_text": "센스 vs 선넘",
+        "image_prompt": "consistent 3D Pixar-style, a split scene with a smiling orange cat holding a green card on the left and a frowning gray dog holding a red card on the right, soccer field background"
+      }
+    ],
+    "description": "야말 결장을 두고 챔스 기자회견에서 'GTA 하려고요?'라는 황당한 질문이 나왔다고? 센스 있는 돌직구일까, 선 넘은 질문일까? 출처: 야말 GTA 결장 질문 보도 및 담브라우스카스 바쿠 기자회견 보도(뉴스 제목 기준, 원문 확인 필요) #챔피언스리그 #바르셀로나 #야말",
+    "tags": [
+      "챔피언스리그",
+      "바르셀로나",
+      "야말",
+      "사바",
+      "담브라우스카스",
+      "기자회견",
+      "GTA",
+      "바쿠",
+      "축구",
+      "쇼츠"
+    ],
+    "comment_question": "야말 GTA 질문, 센스 있는 돌직구 vs 선 넘은 질문, 여러분의 선택은? (출처: 야말 GTA 결장 질문 보도, 담브라우스카스 바쿠 기자회견 보도)"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 6
+    }
+  },
+  "effects": {
+    "duration": 34.33,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Fluffing a Duck",
+    "bgm_mood": "funny",
+    "bgm_credit": "Music: \"Fluffing a Duck\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "야말이 안 나왔는데 기자가 물은 게 GTA 하려고요? 챔스 기자회견에서 진짜 나온 질문입니다.",
+      "on_screen_text": "GTA 하려고요?",
+      "image": "runs/2026-11-26/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "바르셀로나가 아제르바이잔 바쿠까지 날아가서 사바와 붙기를 앞두고 있던 자리였어요.",
+      "on_screen_text": "바쿠 기자회견",
+      "image": "runs/2026-11-26/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "전술이나 선발 얘기가 나올 줄 알았는데, 날아온 건 게임 질문이었죠.",
+      "on_screen_text": "전술 아니고 게임",
+      "image": "runs/2026-11-26/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "그런데 돌아온 건 명답이 아니라 헛웃음이었대요.",
+      "on_screen_text": "여기서 반전",
+      "image": "runs/2026-11-26/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "진짜 결장 이유는 확인된 게 없어서 단정은 못 해요.",
+      "on_screen_text": "이유는 미확인",
+      "image": "runs/2026-11-26/scene_05.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 6,
+      "narration": "센스 있는 돌직구였다 대 선 넘은 질문이었다. 여러분은 어느 쪽이에요?",
+      "on_screen_text": "센스 vs 선넘",
+      "image": "runs/2026-11-26/scene_06.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-11-26/thumbnail.jpg",
+  "video_file": "videos/2026-11-26.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "YT_* 시크릿 없음"
+  },
+  "finished_at": "2026-11-26T03:19:18+09:00"
+}
