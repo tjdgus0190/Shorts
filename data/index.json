@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-27",
+    "status": "qa_failed",
+    "title": "머스크가 사겠다는데 '그래서 뭘 해줄 건데?'",
+    "overall": 62,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-11-27/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 36.43
+  },
+  {
     "date": "2026-11-26",
     "status": "success",
     "title": "야말 결장에 기자가 물은 말이 GTA였다",

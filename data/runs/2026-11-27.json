@@ -1,0 +1,490 @@
+{
+  "date": "2026-11-27",
+  "status": "qa_failed",
+  "started_at": "2026-11-27T02:56:26+09:00",
+  "llm_provider": "claude_cli",
+  "stages": [
+    {
+      "name": "marketer",
+      "label": "마케터",
+      "status": "done",
+      "started_at": "2026-11-27T02:56:26+09:00",
+      "note": "",
+      "seconds": 25.0
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-27T02:56:51+09:00",
+      "note": "",
+      "seconds": 14.4
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-27T02:57:05+09:00",
+      "note": "",
+      "seconds": 29.0
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-27T02:57:34+09:00",
+      "note": "",
+      "seconds": 32.6
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-27T02:58:07+09:00",
+      "note": "1차",
+      "seconds": 24.7
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-27T02:58:32+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 19.1
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-27T02:58:51+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 22.5
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-27T02:59:13+09:00",
+      "note": "QA 1차 피드백 반영",
+      "seconds": 26.6
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-27T02:59:40+09:00",
+      "note": "2차",
+      "seconds": 21.6
+    },
+    {
+      "name": "planner",
+      "label": "기획자",
+      "status": "done",
+      "started_at": "2026-11-27T03:00:01+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 18.8
+    },
+    {
+      "name": "producer",
+      "label": "제작자",
+      "status": "done",
+      "started_at": "2026-11-27T03:00:20+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 40.4
+    },
+    {
+      "name": "effector",
+      "label": "이펙터",
+      "status": "done",
+      "started_at": "2026-11-27T03:01:01+09:00",
+      "note": "QA 2차 피드백 반영",
+      "seconds": 24.1
+    },
+    {
+      "name": "qa",
+      "label": "QA",
+      "status": "done",
+      "started_at": "2026-11-27T03:01:25+09:00",
+      "note": "3차",
+      "seconds": 20.6
+    }
+  ],
+  "qa": [
+    {
+      "attempt": 1,
+      "scores": {
+        "fun": 52,
+        "hook": 55,
+        "clarity": 58,
+        "visual": 55,
+        "subtitle": 70,
+        "safety": 68
+      },
+      "overall": 58,
+      "pass": false,
+      "issues": [
+        "계산: fun 52×0.3=15.6, hook 55×0.2=11.0, 나머지 4개 항목(clarity 58, visual 55, subtitle 70, safety 68) 평균 62.75×0.5=31.4. 합계 약 58~59점으로 합격선에 못 미침.",
+        "훅이 불명확함. '머스크가 메모리 장기로 살게요 했는데 그럼 뭘 해줄 건데?'는 누가 누구에게 한 말인지 알 수 없음. 첫 3초에 상황 맥락이 없어서 스크롤을 멈출 힘이 약함.",
+        "핵심 사실 관계는 모두 확인 필요. 머스크가 메모리 장기구매를 제안했다는 점, 삼성전자·SK하이닉스 장기공급계약이 '물음표'라는 점, '장부에 받은 돈이 없다'는 점. 출처가 없고 단정적으로 들려서 허위 사실이나 명예훼손 소지가 있음. 대사에 '~라는 얘기가 나와요', '~래요'가 있어 일부 완화되지만 출처 표기는 필요함.",
+        "해시태그 #이재용은 대본 어디에도 나오지 않음. 특정 실존 인물과 무관한 내용을 엮어 어그로를 끄는 것으로 보일 수 있어 삭제 권장.",
+        "설명에는 '30초 만에'라고 되어 있으나 실제 길이는 45.5초. 쇼츠로는 길고 7장면 구성이 늘어짐. 설명과 실제 길이가 불일치함.",
+        "장면 간 연결이 약함. 5·6번 장면은 '받은 돈 0'과 '통장은 조용'으로 같은 말을 반복함. 마지막 질문도 '그럼 뭘 해줄 건데'라는 멋짐 vs 너무함 구도가 앞 내용과 이어지지 않아 반전·드립이 약하고 설명조에 가까움.",
+        "장면 1 이미지의 쇼핑카트에 깨진 글자 'AKTAN'이 보임.",
+        "장면 3 이미지가 프롬프트와 다름. 왕관을 쓴 작은 캐릭터가 황금 칩 왕좌를 향해 손을 모으고 있어, '고객이 굽신거리고 칩이 왕처럼 앉아 있는' 구도가 아니라 고객이 왕처럼 보임. 갑을 역전 메시지가 뒤집혀 전달될 수 있음.",
+        "장면 4 이미지에서 칩 캐릭터가 칩이 아니라 감자나 이모지처럼 보임. 계약서의 'CAIP: CONTRATON' 글자도 깨짐.",
+        "장면 7 이미지에서 두 캐릭터가 모두 엄지 척(👍)을 하고 있어 프롬프트의 찬반 대립 구도가 구현되지 않음. 칩의 'memoryClp' 글자도 깨짐.",
+        "자막 위치 문제. 하단 내레이션 자막이 캐릭터 몸통과 소품(장면 2·4 등)을 가림. 상단 검정 박스는 가독성은 좋지만 투박하고 배경이 블러 처리된 레터박스로 보임."
+      ],
+      "retry_target": "planner",
+      "feedback": "주제·대본을 다시 잡으세요. (1) 훅은 누가 누구에게 무엇을 말했는지 한 줄에 드러나게 바꾸세요. 예: '세계 1위 부자가 메모리 사겠다니까 돌아온 답이 \"그래서 뭘 해줄 건데?\"'. 첫 3초 안에 상황과 반전 포인트를 모두 넣으세요. (2) 머스크 발언, 삼성·SK하이닉스 장기계약, '장부에 받은 돈 없음'은 출처를 확인하고 '~라는 보도가 나왔다'처럼 출처를 밝히거나, 확인되지 않으면 단정형 문장을 빼세요. (3) 5·6번 장면의 중복을 합치고 총 길이를 30초 안팎(장면 5~6개)으로 줄이세요. 설명에 쓴 '30초'와 실제 길이를 맞추세요. (4) 상식 정리 톤 대신 '계약서는 두꺼운데 통장은 조용하다' 같은 드립과 반전 한 방을 중심에 두세요. (5) 해시태그 #이재용은 삭제하고 #머스크 #HBM #반도체 등 내용과 맞는 태그로 바꾸세요. 이미지 쪽은 재작업 시 다음을 반영하세요. 장면 3은 고객 캐릭터에 왕관을 빼고 칩 왕좌에 왕관을 두세요. 장면 4는 칩 캐릭터를 분명한 칩 모양으로 하고 글자는 넣지 마세요. 장면 7은 한쪽 엄지 위, 한쪽 엄지 아래로 지정하세요. 모든 프롬프트에 'no text, no letters'를 추가하세요."
+    },
+    {
+      "attempt": 2,
+      "scores": {
+        "fun": 50,
+        "hook": 58,
+        "clarity": 52,
+        "visual": 66,
+        "subtitle": 78,
+        "safety": 68
+      },
+      "overall": 60,
+      "pass": false,
+      "issues": [
+        "훅 문장이 길고 평평하다. 'X했다는 보도가 나왔어요'는 뉴스 전달 톤이라 첫 3초에 스크롤을 멈추게 하기 어렵다. 화면에 드립이 없고 텍스트는 '갑을 실화냐'뿐이다.",
+        "'메모리 장기로 사겠다'가 모호하다. 장기(長期)가 신체 장기(臟器)로 들리거나 읽힐 수 있다. TTS 발음과 자막 모두 오해 소지가 있고, 제목·훅에서 '장기'의 뜻을 풀어주지 않는다. 이 오해가 의도한 웃음인지도 불분명하다.",
+        "핵심 사실관계가 보도 한 건에만 기대고 있다. '머스크가 사겠다고 했고 이재용이 \"그럼 뭘 해줄 건데\"라고 답했다', '삼성·SK하이닉스 장기공급계약에 받은 돈이 없다'는 내용이다. 출처, 발언 시점, 맥락이 영상에 없다. 실명 두 사람의 발언을 사실처럼 전하고 있어 확인 필요(명예훼손·허위 위험). '장부에 받은 돈이 없다'가 선수금 미수령인지, 계약 자체가 없다는 뜻인지도 확인 필요.",
+        "씬 4와 씬 5가 같은 내용(계약은 있는데 받은 돈이 없다)을 반복해서 리듬이 늘어진다. 반전 뒤의 전개가 없다. 씬 6은 '멋있다 vs 너무한다' 질문만 던지고 끝나 강한 펀치라인이 없다.",
+        "마지막 프레임(씬 6)은 프롬프트에 엄지 업/다운 구도를 지정했지만 두 캐릭터 모두 엄지를 올린 모습이다. 찬반 대결 구도가 성립하지 않는다. 가운데 칩에 'MEMORY CAPE'라는 깨진 글자가 나온다(no text 지시 위반).",
+        "씬 2 프레임에서 고객 캐릭터가 대머리 정장 인물이다. 특정 인물 풍자로 읽힐 수 있다. 칩 왕좌 일러스트 자체는 깔끔하다. 씬 3 프롬프트는 장부/계약 장면이지만 씬 3 프레임은 확인하지 못했다.",
+        "기획서 설명은 '30초 썰'인데 실제 길이는 39.2초다. 씬 1 프레임의 로켓과 칩 캐릭터가 각각 머스크와 이재용인지 시청자가 알기 어렵다.",
+        "자막 줄바꿈이 어색하다(씬 2의 '거죠'와 '갑을이 완전히 뒤바뀐'). 하단 자막이 이미지 중앙을 일부 가린다. 상단 검은 박스 자막은 읽기 쉽다."
+      ],
+      "retry_target": "planner",
+      "feedback": "1) 훅을 다시 쓰세요. 결과부터 던지는 한 줄이 좋습니다. 예: '머스크가 \"사겠다\" 했는데, 이재용 답이 \"그래서 뭘 해줄 건데?\"'. 2) '장기'는 '장기(오래 쓰는) 계약'처럼 한 번 풀어 쓰거나 '길게 사겠다'로 바꿔 장기(臟器) 오해를 막으세요. 3) 씬 4와 5를 하나로 합치고 빈 자리에 새 반전이나 웃긴 비유를 넣으세요(예: '계약서는 한 권, 입금은 0원'). 4) 기사 출처와 시점을 대본이나 설명란에 명시하고 '~라는 보도'로 일관되게 헤지하세요. 실명 발언은 단정하지 마세요. 5) 마지막 질문 씬은 찬반 구도가 분명해야 합니다. 이미지 프롬프트에 'left thumbs up, right thumbs down'을 강조하고 칩 위의 글자는 제거하세요(producer 재생성 시 확인). 6) 길이를 30초 안팎으로 맞추세요. 7) 개선 팁: 자막 줄바꿈을 의미 단위로 끊고, 하단 자막 위치를 조금 내리세요."
+    },
+    {
+      "attempt": 3,
+      "scores": {
+        "fun": 55,
+        "hook": 62,
+        "clarity": 55,
+        "visual": 68,
+        "subtitle": 72,
+        "safety": 68
+      },
+      "overall": 62,
+      "pass": false,
+      "issues": [
+        "씬 3과 씬 4가 서로 모순됩니다. 씬 3은 공급계약이 아직 물음표라고 하고, 씬 4는 '계약서는 한 권'이라고 합니다. 계약이 있다는 건지 없다는 건지 알 수 없습니다. '장부에 받은 돈이 없다'가 무엇을 뜻하는지도 설명이 없습니다. 씬 4 프레임은 첨부되지 않아 대본으로만 판단했습니다.",
+        "첫 문장이 '머스크가 메모리를 오래 길게 사겠다고 했는데'로 어색하고 깁니다. 수식어가 겹쳐 있고, 3초 안에 핵심 갈등이 한눈에 들어오지 않습니다.",
+        "재미 요소가 약합니다. 반전은 '여기서 반전'이라고 말로만 알리고 실제 놀라움은 없습니다. 마지막의 '너는 어느 편?'은 흔한 댓글 유도 멘트입니다. 드립은 '입금은 영원히 로딩 중' 하나뿐입니다.",
+        "설명란에 '확인된 사실만 다뤘다'고 적었지만 본문은 보도 한 건을 근거로 합니다. 실존 인물(머스크, 이재용)과 기업(삼성전자, SK하이닉스)의 '받은 돈이 없다'는 단정은 확인 필요이며 명예훼손 소지가 있습니다. 출처 언론사가 명시돼 있지 않습니다.",
+        "씬 2 이미지에서 토끼가 왕좌 뒤에 가려져 작고 잘 보이지 않습니다. 왕관은 왕좌 위에 떠 있고, 대본의 '조건을 되묻는 손님이 절하는 모습'이 전달되지 않습니다.",
+        "씬 3 이미지의 칩 캐릭터들은 활짝 웃고 있어 '머리를 긁적이며 고민하는' 프롬프트와 맞지 않습니다. 두루마리도 계약서로 읽히지 않습니다.",
+        "씬 5 이미지에서 칩이 두 캐릭터 사이에 작게 떠 있어 의미가 없고, 자막이 캐릭터 몸통과 칩을 가립니다. 씬 3의 자막도 캐릭터 얼굴과 몸에 겹칩니다.",
+        "화면 상단과 하단의 블러 배경 때문에 이미지가 화면 중앙에 갇혀 보이고, 하단 여백이 낭비됩니다."
+      ],
+      "retry_target": "planner",
+      "feedback": "대본 중심으로 다시 써 주세요. (1) 훅을 '머스크: 메모리 다 살게요 / 이재용: 그래서 뭘 해줄 건데?'처럼 두 사람의 대사를 맞붙이는 한 줄로 바꾸세요. (2) 씬 3~4의 논리를 정리하세요. 보도에 근거해 '공급계약이 확정되지 않았다'와 '어떤 대가나 선금이 오갔는지는 확인되지 않았다' 중 무엇을 말하는지 하나로 정하고, '장부에 받은 돈이 없다'는 단정 대신 '~라는 보도'로 쓰세요. 출처 언론사도 밝히세요. (3) 반전을 실제로 만드세요. 예를 들어 '사겠다는 쪽이 갑인 줄 알았는데 갑은 메모리 쪽이었다'는 구도에 구체적인 숫자나 상황 비유를 넣으세요. 에필로그의 '어느 편?'은 더 구체적인 질문으로 바꾸세요. (4) 씬 2의 이미지 프롬프트는 손님 캐릭터가 왕좌 앞쪽 정면에서 크게 보이도록 구도를 지정하세요. 이 항목은 이후 producer 단계에도 전달해 주세요. 씬 3은 캐릭터 표정을 당황하거나 곤란한 모습으로 지정하세요. 자막은 캐릭터를 덜 가리도록 화면 하단 쪽으로 내리는 것도 effector와 조율해 주세요."
+    }
+  ],
+  "marketer": {
+    "summary": "머스크도 퇴짜 맞은 메모리 장기계약 논란부터 헌재 노동쟁의 위헌 결정, 추성훈 사커킥 후일담, 블랙프라이데이 세일까지 – 오늘은 '반전 있는 뒷이야기'가 먹히는 날",
+    "topics": [
+      {
+        "rank": 1,
+        "keyword": "반도체 메모리",
+        "traffic": "2000+",
+        "traffic_num": 2000,
+        "news": [
+          "\"이재용, '반도체 장기구매할게' 머스크에 '그럼 뭘 해줄건데'\"",
+          "삼성전자·SK하이닉스 장기공급계약 '물음표'…장부에 받은 돈이 없다",
+          "머스크도 퇴짜 맞은 메모리… 이재용 \"뭘 더 해줄 건데?\""
+        ],
+        "topic": "머스크가 메모리 장기구매 하겠다니 이재용이 '그럼 뭘 해줄 건데?' – 이 대화가 난리인 이유 30초 정리",
+        "why_now": "뉴스 제목: '이재용, 반도체 장기구매할게 머스크에 그럼 뭘 해줄건데', '삼성전자·SK하이닉스 장기공급계약 물음표…장부에 받은 돈이 없다'",
+        "angle": "'갑을이 뒤바뀐 대화' 상황극 + 장기공급계약인데 장부에 받은 돈이 없다는 반전 포인트를 숫자·자막으로 정리. 인보도 인용 형식으로 사실만 전달",
+        "target": "20~40대 직장인, 주식·테크 관심층",
+        "fun_score": 8,
+        "risk": "medium",
+        "risk_note": "실존 인물 발언 인용이므로 제목 외 내용 추측 금지, 조롱 톤 지양. 투자 권유로 보이지 않게 주의"
+      },
+      {
+        "rank": 2,
+        "keyword": "김민",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "[ET포토] 김민, '인상파'",
+          "[영상] 박하선, 꿀피부",
+          "[사진]김민, 야생마 같은 매력"
+        ],
+        "topic": "'인상파', '야생마 같은 매력' – 김민 포토 화보 제목이 이렇게 웃긴 이유",
+        "why_now": "뉴스 제목: '[ET포토] 김민, 인상파', '[사진]김민, 야생마 같은 매력'",
+        "angle": "포토 기사 제목 드립 모음(제목 vs 실제 느낌) 형식의 가벼운 리뷰. 어떤 김민인지 뉴스 제목만으로 특정이 어려워 확인된 정보만 사용",
+        "target": "연예 뉴스 소비하는 10~30대",
+        "fun_score": 4,
+        "risk": "medium",
+        "risk_note": "동명이인 가능성이 있어 인물 특정 오류 위험. 사진 사용 시 저작권 주의"
+      },
+      {
+        "rank": 3,
+        "keyword": "강소휘",
+        "traffic": "1000+",
+        "traffic_num": 1000,
+        "news": [
+          "[영상] 기업은행 노장의 분노, 그리고 이소영 딜레마?",
+          "마나베 IBK 감독 \"적이 우리 코트에 있다…자멸한 경기\"",
+          "'모마·마미, 13점씩' 도로공사, 6연승 질주"
+        ],
+        "topic": "IBK 감독 '적이 우리 코트에 있다, 자멸한 경기' – 도로공사 6연승 뒤 터진 한마디",
+        "why_now": "뉴스 제목: '마나베 IBK 감독 적이 우리 코트에 있다…자멸한 경기', '모마·마미 13점씩 도로공사 6연승'",
+        "angle": "경기 결과 30초 정리 + '적이 우리 코트에 있다' 명언 밈화. 승패를 한 문장 드립으로 요약",
+        "target": "배구 팬, 스포츠 하이라이트 소비층",
+        "fun_score": 6,
+        "risk": "low",
+        "risk_note": ""
+      },
+      {
+        "rank": 4,
+        "keyword": "스파이",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "From Chinese Factory Town to the Nvidia Scandal: The Rise of Alice Huang",
+          "No Evidence China Orchestrated Jensen Huang’s Affair, Officials Brief Congress",
+          "EXCLUSIVE: Alice Huang-linked firms listed $270 million in AI servers in China, records show"
+        ],
+        "topic": "엔비디아 스캔들, 앨리스 황은 누구인가 – 의회 브리핑 '중국 배후 증거 없음'까지",
+        "why_now": "뉴스 제목: 'No Evidence China Orchestrated Jensen Huang's Affair, Officials Brief Congress', 'Alice Huang-linked firms listed $270 million in AI servers in China'",
+        "angle": "'스파이설 vs 브리핑 결과' 구도로 지금까지 알려진 것/아직 확인 안 된 것을 구분해 정리하는 이슈 요약",
+        "target": "테크·해외 뉴스 관심층 20~40대",
+        "fun_score": 6,
+        "risk": "high",
+        "risk_note": "실존 인물의 사생활 및 스파이 의혹. 공식 브리핑상 증거 없음이라는 점을 반드시 명시하고 단정·조롱 금지"
+      },
+      {
+        "rank": 5,
+        "keyword": "크리스 리벤",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "\"맞자마자 반칙이라고 생각\" 추성훈에게 맞고 안와골절…'사커킥 맞은 순간' 떠올린 크리스 리벤",
+          "“용돈 괜찮으니 아프지 마”…폭풍성장 사랑이 ‘은퇴’ 추성훈 응원",
+          "'15세' 추사랑, 벌써 키 172cm..유창한 영어로 국제학교 친구들 소개 ('편스토랑')"
+        ],
+        "topic": "추성훈에게 맞고 안와골절 – 크리스 리벤이 떠올린 '사커킥 맞은 순간'",
+        "why_now": "뉴스 제목: '맞자마자 반칙이라고 생각 추성훈에게 맞고 안와골절…사커킥 맞은 순간 떠올린 크리스 리벤'",
+        "angle": "'맞은 사람의 1인칭 증언' 형식으로 당시 상황 재구성 + 격투기 팬 반응. 이어 딸 사랑이 응원 이슈로 훈훈하게 마무리",
+        "target": "격투기·추성훈 팬, 예능 시청층",
+        "fun_score": 7,
+        "risk": "medium",
+        "risk_note": "부상 관련 내용이므로 가볍게 웃음거리로 만들지 않기. 제목에 없는 경기 세부사항 지어내지 않기"
+      },
+      {
+        "rank": 6,
+        "keyword": "u17 việt nam",
+        "traffic": "200+",
+        "traffic_num": 200,
+        "news": [
+          "Kết quả bóng đá U17 Việt Nam vs U17 Mali: Cái kết nghiệt ngã",
+          "HLV Mali gọi U17 Việt Nam là \"đội bóng mạnh\", yêu cầu đội nhà cảnh giác",
+          "HLV Roland khóc nức nở: 'Xin cảm ơn U.17 Việt Nam vì đã can đảm chiến đấu và cống hiến đến cùng’"
+        ],
+        "topic": "U17 베트남, 말리에 석패 – 상대 감독도 '강한 팀'이라 인정, 베트남 감독은 눈물",
+        "why_now": "뉴스 제목: 'U17 Việt Nam vs U17 Mali: Cái kết nghiệt ngã', 'HLV Roland khóc nức nở: Xin cảm ơn U.17 Việt Nam'",
+        "angle": "'져도 박수받은 경기' 감동 스토리 30초 정리. 한국 축구 팬이 관심 갖는 동남아 축구 포인트로 연결",
+        "target": "축구 팬, 베트남 관련 관심층(재한 베트남인 포함)",
+        "fun_score": 5,
+        "risk": "low",
+        "risk_note": "한국 내 검색 맥락이 약해 조회수 불확실. 제목 외 경기 내용은 확인 후 사용"
+      },
+      {
+        "rank": 7,
+        "keyword": "아마존",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "I found the 84 best Amazon Black Friday deals on AirPods, Bissell vacuums and more",
+          "Amazon Black Friday deals: Live updates on the biggest sales from Apple, Yeti, Ninja, Ring, KitchenAid and more during Cyber Week 2026",
+          "Amazon’s 85 Best Black Friday Deals to Shop on Thanksgiving Start at 27 Cents Apiece — Up to 75% Off"
+        ],
+        "topic": "블랙프라이데이 아마존, 27센트부터 최대 75% – 지금 직구 전에 알아야 할 것",
+        "why_now": "뉴스 제목: 'Amazon's 85 Best Black Friday Deals…Start at 27 Cents Apiece — Up to 75% Off', 'Cyber Week 2026'",
+        "angle": "'27센트짜리가 진짜 있다고?' 숫자 충격 + 직구 전 체크 포인트 상황극. 장바구니 지름신 드립",
+        "target": "직구족, 20~40대 쇼핑 관심층",
+        "fun_score": 7,
+        "risk": "low",
+        "risk_note": "특정 상품 추천 시 광고·제휴 표기 필요. 가격·할인율은 시점 변동 가능성 명시"
+      },
+      {
+        "rank": 8,
+        "keyword": "정연",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "이서진, 11살 어린 한지민에 \"갱년기 중년 女\"…막말 비하 논란 - 머니투데이",
+          "‘80세’ 김용건, 허리 수술 받았는데 “하루에 만보 걸어..병원 부지런히 다닌다” (‘그사친’)",
+          "도합 85년 우정 여행…한지민 \"나이·성별 떠나 친구 됐죠\""
+        ],
+        "topic": "이서진 '갱년기 중년 女' 발언 논란 – 한지민과의 85년 우정 여행에서 무슨 일이",
+        "why_now": "뉴스 제목: '이서진, 11살 어린 한지민에 갱년기 중년 女…막말 비하 논란', '도합 85년 우정 여행…한지민 나이·성별 떠나 친구 됐죠'",
+        "angle": "'논란 제목 vs 실제 분위기' 구도로 맥락 정리. 한지민의 '친구 됐죠' 발언과 함께 균형 있게 전달",
+        "target": "예능 시청층 20~50대",
+        "fun_score": 5,
+        "risk": "high",
+        "risk_note": "실존 인물 발언 논란. 어느 한쪽 비난 금지, 기사 제목 범위 내 사실만 다루고 '정연' 키워드와의 관련성 불분명하므로 확인 필요"
+      },
+      {
+        "rank": 9,
+        "keyword": "노동쟁의",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "헌재 “다른 노조 파업 지원했다고 처벌한 옛 노동법은 위헌”",
+          "신군부가 범죄로 규정한 노동자들의 ‘연대’…헌재, 36년 만에 위헌 결정",
+          "헌재 ‘노동쟁의 제3자 개입 금지’ 위헌 결정…36년만에 판단 뒤집어"
+        ],
+        "topic": "36년 만에 뒤집힌 '제3자 개입 금지' – 다른 노조 파업 도왔다고 처벌하던 법, 헌재 위헌",
+        "why_now": "뉴스 제목: '헌재 노동쟁의 제3자 개입 금지 위헌 결정…36년만에 판단 뒤집어', '신군부가 범죄로 규정한 노동자들의 연대'",
+        "angle": "'연대했더니 범죄였던 시절' 상황극 + 36년 타임라인 숫자 비교. 이게 왜 난리냐면 형식으로 쉽게 설명",
+        "target": "직장인, 시사·사회 관심층 20~50대",
+        "fun_score": 6,
+        "risk": "high",
+        "risk_note": "노동·정치 민감 주제. 헌재 결정 내용만 사실 위주로 전달하고 특정 진영 편들기·논평 지양"
+      },
+      {
+        "rank": 10,
+        "keyword": "정은경",
+        "traffic": "100+",
+        "traffic_num": 100,
+        "news": [
+          "[동정] 복지장관, 동대문구-우체국 협업 '찾아가는 그냥드림' 점검",
+          "생계 막막할 때 받는 ‘그냥드림’ 아시나요",
+          "정은경 장관, 그냥드림과 우체국 협업한 찾아가는 서비스 운영 점검"
+        ],
+        "topic": "생계 막막할 때 받는 '그냥드림', 이제 우체국이 찾아간다",
+        "why_now": "뉴스 제목: '정은경 장관, 그냥드림과 우체국 협업한 찾아가는 서비스 운영 점검', '생계 막막할 때 받는 그냥드림 아시나요'",
+        "angle": "'이름부터 파격적인 제도 그냥드림, 뭘 그냥 주는데?' 호기심 유도 + 이용 방법 30초 정리",
+        "target": "2030 자취생·취약계층 관심층, 부모 세대",
+        "fun_score": 5,
+        "risk": "medium",
+        "risk_note": "정부 정책 홍보로 보이지 않게 주의. 지원 대상·조건은 공식 안내 확인 후 정확히 전달"
+      }
+    ],
+    "trend_count": 10,
+    "excluded": []
+  },
+  "selected_attempt": 3,
+  "plan": {
+    "chosen_rank": 1,
+    "reason": "검색량 2000+로 후보 중 가장 높고 재미 점수(8)도 가장 큼. QA 피드백 반영: 훅을 결과부터 던지는 한 줄로 교체, '장기'는 '오래 길게 사겠다', '오래 가는 공급계약'으로 풀어 장기(臟器) 오해 방지, 씬 4와 5를 하나로 합쳐 5장면으로 줄이고 '계약서는 한 권, 입금은 0원' 반전 추가, 실명 발언은 '~라는 보도'로 헤지, 출처와 시점(2026-11-26 보도)은 설명란에 명시, 마지막 씬은 좌 찬성 우 반대 구도로 강조하고 칩 위 글자 요소 제거, 이미지 프롬프트의 부정 표현 삭제. 숫자 계산은 없음.",
+    "title": "머스크가 사겠다는데 '그래서 뭘 해줄 건데?'",
+    "hook": "머스크가 사겠다고 했는데, 이재용 답이 그래서 뭘 해줄 건데였다는 보도가 나왔어요.",
+    "bgm_mood": "funny",
+    "style": "vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters, clean plain background",
+    "scenes": [
+      {
+        "id": 1,
+        "narration": "머스크가 메모리를 오래 길게 사겠다고 했는데, 이재용 답이 그래서 뭘 해줄 건데였다는 보도가 나왔어요.",
+        "on_screen_text": "사겠다는데\n뭘 해줄 건데?",
+        "image_prompt": "A shocked cartoon rocket character pushing a shopping cart, facing a calm smug cartoon computer chip character with arms crossed, funny confrontation, vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters, clean plain background"
+      },
+      {
+        "id": 2,
+        "narration": "사겠다는 손님한테 조건을 되묻는 상황이라니. 갑을이 완전히 뒤집힌 거죠.",
+        "on_screen_text": "갑을 역전",
+        "image_prompt": "A tiny cartoon customer bunny bowing politely in front of a giant golden memory chip sitting on a throne with a shiny crown, funny scene, vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters, clean plain background"
+      },
+      {
+        "id": 3,
+        "narration": "근데 여기서 반전. 삼성전자와 SK하이닉스의 오래 가는 공급계약이 아직 물음표라는 보도예요.",
+        "on_screen_text": "여기서 반전",
+        "image_prompt": "Two cute square cartoon computer chip characters with small metal pins along their sides, scratching their heads with big question marks floating above them, a long rolled scroll on the ground, vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters, clean plain background"
+      },
+      {
+        "id": 4,
+        "narration": "계약서는 한 권인데 장부에는 받은 돈이 없다는 거예요. 계약서는 한 권, 입금은 영원히 로딩 중.",
+        "on_screen_text": "계약서 한 권\n입금은 0원",
+        "image_prompt": "A surprised cartoon owl accountant holding a thick fancy contract book in one wing and looking at a completely empty piggy bank on the desk, comedic shocked expression, vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters, clean plain background"
+      },
+      {
+        "id": 5,
+        "narration": "그래서 뭘 해줄 건데 하고 되묻는 거, 멋있다 대 너무한다. 너는 어느 편이야?",
+        "on_screen_text": "너는 어느 편?",
+        "image_prompt": "Two cute cartoon animal characters standing side by side facing the viewer with a smooth glowing round chip floating between them, the left animal clearly giving a big thumbs up with a happy smile, the right animal clearly giving a big thumbs down with a grumpy frown, playful debate scene, vibrant 3D cartoon, soft lighting, high detail, bright colors, cute characters, clean plain background"
+      }
+    ],
+    "description": "2026년 11월 26일 보도 기준, 머스크가 메모리를 길게 사겠다고 하자 이재용 회장이 '그래서 뭘 해줄 건데'라고 되물었다는 내용과, 삼성전자·SK하이닉스 공급계약 장부에 받은 돈이 없다는 보도를 썰 풀듯 정리했어요. 보도 내용이며 확인된 사실만 다뤘고 투자 권유가 아닙니다.\n#머스크 #반도체 #메모리",
+    "tags": [
+      "머스크",
+      "이재용",
+      "반도체",
+      "메모리",
+      "삼성전자",
+      "SK하이닉스",
+      "공급계약",
+      "쇼츠",
+      "이슈"
+    ],
+    "comment_question": "머스크한테도 '그래서 뭘 해줄 건데?' 되묻는 거, 멋있다 vs 너무한다? 너라면 뭘 해준다고 답할래?"
+  },
+  "production": {
+    "image_providers": {
+      "cloudflare": 5
+    }
+  },
+  "effects": {
+    "duration": 36.43,
+    "tts_provider": "edge",
+    "voice": "ko-KR-SunHiNeural",
+    "bgm": "Thatched Villagers",
+    "bgm_mood": "funny",
+    "bgm_credit": "Music: \"Thatched Villagers\" Kevin MacLeod (incompetech.com)\nLicensed under Creative Commons: By Attribution 4.0\nhttps://creativecommons.org/licenses/by/4.0/"
+  },
+  "storyboard": [
+    {
+      "id": 1,
+      "narration": "머스크가 메모리를 오래 길게 사겠다고 했는데, 이재용 답이 그래서 뭘 해줄 건데였다는 보도가 나왔어요.",
+      "on_screen_text": "사겠다는데\n뭘 해줄 건데?",
+      "image": "runs/2026-11-27/scene_01.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 2,
+      "narration": "사겠다는 손님한테 조건을 되묻는 상황이라니. 갑을이 완전히 뒤집힌 거죠.",
+      "on_screen_text": "갑을 역전",
+      "image": "runs/2026-11-27/scene_02.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 3,
+      "narration": "근데 여기서 반전. 삼성전자와 SK하이닉스의 오래 가는 공급계약이 아직 물음표라는 보도예요.",
+      "on_screen_text": "여기서 반전",
+      "image": "runs/2026-11-27/scene_03.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 4,
+      "narration": "계약서는 한 권인데 장부에는 받은 돈이 없다는 거예요. 계약서는 한 권, 입금은 영원히 로딩 중.",
+      "on_screen_text": "계약서 한 권\n입금은 0원",
+      "image": "runs/2026-11-27/scene_04.jpg",
+      "provider": "cloudflare"
+    },
+    {
+      "id": 5,
+      "narration": "그래서 뭘 해줄 건데 하고 되묻는 거, 멋있다 대 너무한다. 너는 어느 편이야?",
+      "on_screen_text": "너는 어느 편?",
+      "image": "runs/2026-11-27/scene_05.jpg",
+      "provider": "cloudflare"
+    }
+  ],
+  "thumbnail": "runs/2026-11-27/thumbnail.jpg",
+  "video_file": "videos/2026-11-27.mp4",
+  "upload": {
+    "status": "skipped",
+    "reason": "QA 불합격"
+  },
+  "finished_at": "2026-11-27T03:01:45+09:00"
+}
