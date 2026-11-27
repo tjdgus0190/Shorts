@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-28",
+    "status": "qa_failed",
+    "title": "5억짜리 장구를 쳐야 한다면? 박서진 초긴장",
+    "overall": 42,
+    "qa_attempts": 3,
+    "thumbnail": "runs/2026-11-28/thumbnail.jpg",
+    "youtube_url": null,
+    "upload_status": "skipped",
+    "duration": 42.98
+  },
+  {
     "date": "2026-11-27",
     "status": "qa_failed",
     "title": "머스크가 사겠다는데 '그래서 뭘 해줄 건데?'",
